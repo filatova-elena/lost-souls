@@ -1,0 +1,370 @@
+{
+  "rumors": [
+    {
+      "id": 1,
+      "text": "Sebastian Crane was known as \"The Alchemist\" and ran mysterious operations at the harbor with the Romano family",
+      "possession": "HEIRESS",
+      "truth": true
+    },
+    {
+      "id": 2,
+      "text": "Cordelia Montrose disappeared for months in early 1925. Nobody would say where she went.",
+      "possession": "INFLUENCER",
+      "truth": true
+    },
+    {
+      "id": 3,
+      "text": "The Sullivan bakery fire wasn't an accident. Someone wanted that family gone.",
+      "possession": "HEIRESS",
+      "truth": true
+    },
+    {
+      "id": 4,
+      "text": "Alice Whitmore was strange—had visions, knew things before they happened. Some called her a witch.",
+      "possession": "HEIRESS",
+      "truth": true
+    },
+    {
+      "id": 5,
+      "text": "The Romano family controlled everything that moved through the port. Frankie Romano's reach was everywhere.",
+      "possession": "INFLUENCER",
+      "truth": true
+    },
+    {
+      "id": 6,
+      "text": "The Montrose family had an illegitimate child, a granddaughter they gave away.",
+      "possession": "HEIRESS",
+      "truth": true
+    },
+    {
+      "id": 7,
+      "text": "Elias Monroe was obsessed with Cordelia. His heart was broken when she got engaged to someone else.",
+      "possession": "HEIRESS",
+      "truth": true
+    },
+    {
+      "id": 8,
+      "text": "The Montrose family paid off officials and the mortician to cover up what really happened in October 1925.",
+      "possession": "INFLUENCER",
+      "truth": false
+    },
+    {
+      "id": 9,
+      "text": "Frankie Romano had Sebastian Crane killed because he wanted out of the operation.",
+      "possession": "HEIRESS",
+      "truth": false
+    },
+    {
+      "id": 10,
+      "text": "Cordelia died of a broken heart after Sebastian was killed. Literally pined away for love.",
+      "possession": "INFLUENCER",
+      "truth": false
+    },
+    {
+      "id": 11,
+      "text": "Alice fell down the mansion stairs while drunk on bootleg liquor. She was always fragile and troubled.",
+      "possession": "HEIRESS",
+      "truth": false
+    },
+    {
+      "id": 12,
+      "text": "The Montrose family has always been respectable, honest, and upstanding. Whatever happened was just terrible luck.",
+      "possession": "INFLUENCER",
+      "truth": false
+    },
+    {
+      "id": 13,
+      "text": "Sebastian deliberately poisoned Cordelia because he was jealous and obsessive.",
+      "possession": "HEIRESS",
+      "truth": false
+    },
+    {
+      "id": 14,
+      "text": "There was a strange girl—Alice Whitmore—involved with Dr. Crane somehow. It was hush-hush.",
+      "possession": "OTHER",
+      "truth": true
+    },
+    {
+      "id": 15,
+      "text": "Cordelia had been given special rose bread by a baker—it was her favorite.",
+      "possession": "OTHER",
+      "truth": true
+    },
+    {
+      "id": 16,
+      "text": "The mortician's family received a large payment from the Montrose fortune right after those deaths.",
+      "possession": "OTHER",
+      "truth": true
+    },
+    {
+      "id": 17,
+      "text": "On September 4, 1925, there was an astronomical event—planets aligning. Sebastian was obsessed with dates like that.",
+      "possession": "OTHER",
+      "truth": true
+    },
+    {
+      "id": 18,
+      "text": "The dressmaker made a wedding dress for Cordelia—beautiful work. But she never wore it. Never even got to wear white.",
+      "possession": "OTHER",
+      "truth": true
+    },
+    {
+      "id": 19,
+      "text": "Fancy Venetian glass bottles were imported through the Romano operation for 'medicinal purposes' during Prohibition.",
+      "possession": "OTHER",
+      "truth": true
+    },
+    {
+      "id": 20,
+      "text": "Eleanor Sullivan was not a Sullivan at all—I heard she was adopted. Some respected family had a scandal covered up.",
+      "possession": "OTHER",
+      "truth": true
+    },
+    {
+      "id": 21,
+      "text": "They say Cordelia Montrose's ghost haunts that mansion—people who've been in there claim she was murdered, that something horrible happened to her, that's why she can't rest.",
+      "possession": "OTHER",
+      "truth": true
+    },
+    {
+      "id": 22,
+      "text": "Alice Whitmore took her own life out of guilt. She threw herself down the stairs.",
+      "possession": "OTHER",
+      "truth": false
+    },
+    {
+      "id": 23,
+      "text": "Dr. Crane was having an affair with Cordelia—that's why everything went wrong.",
+      "possession": "OTHER",
+      "truth": false
+    },
+    {
+      "id": 24,
+      "text": "The Crane family changed their name from Sinclair back in 1965 to distance themselves from criminal past.",
+      "possession": "OTHER",
+      "truth": false
+    },
+    {
+      "id": 25,
+      "text": "I heard someone paid the mortician for his discretion—kept him quiet about something",
+      "possession": "INFLUENCER",
+      "truth": true
+    },
+    {
+      "id": 39,
+      "text": "Harbor Import & Trading Co was supposedly a legitimate import business at the Port of Long Beach, but everyone knew it was Frankie Romano's operation. They brought in more than just tropical fruits.",
+      "possession": "PROFESSOR",
+      "truth": true
+    },
+    {
+      "id": 40,
+      "text": "Harbor Import & Trading Co was under federal investigation for years. The feds knew exactly what Frankie Romano was doing, but they couldn't make the charges stick until the 1960s. Politicians had their hands in it.",
+      "possession": "INFLUENCER",
+      "truth": true
+    },
+    {
+      "id": 41,
+      "text": "I heard a university professor was doing 'consulting work' for Harbor Import & Trading Co—verifying botanical shipments, they said. But everyone knew that university man was up to something shady. What respectable professor works for a mob operation?",
+      "possession": "HEIRESS",
+      "truth": true
+    },
+    {
+      "id": 42,
+      "text": "I heard the apothecary Sebastian Crane was blackmailing Frankie Romano over some botanical secret. Harbor Import & Trading Co paid him off to keep quiet.",
+      "possession": "PROFESSOR",
+      "truth": false
+    },
+    {
+      "id": 43,
+      "text": "They say Harbor Import & Trading Co was shut down by federal authorities in 1923 for smuggling Chinese opium. Frankie Romano disappeared for five years after that.",
+      "possession": "HEIRESS",
+      "truth": false
+    },
+    {
+      "id": 44,
+      "text": "A servant at the Montrose Estate reported seeing Dr. Thaddeus Crane in Sebastian's laboratory late one night in August 1925. He was alone with the supply bottles, and the servant thought it odd that he was there without Sebastian.",
+      "possession": "BAKER",
+      "truth": true
+    },
+    {
+      "id": 45,
+      "text": "Cordelia Montrose was quite the socialite—flirted with every eligible man in Long Beach. I heard she vanished for months in early 1924, and when she returned, she was all too friendly with that dressmaker, Elias Monroe.",
+      "possession": "INFLUENCER",
+      "truth": false
+    },
+    {
+      "id": 46,
+      "text": "I heard Cordelia Montrose and Elias Monroe, the dressmaker, were carrying on behind closed doors. How scandalous for someone of her standing!",
+      "possession": "HEIRESS",
+      "truth": false
+    },
+    {
+      "id": 47,
+      "text": "Elias Monroe, that talented dressmaker, was absolutely smitten with Cordelia Montrose. Everyone could see it—the way he looked at her, the way he talked about her. The poor fellow never had a chance once she got engaged.",
+      "possession": "OTHER",
+      "truth": true
+    },
+    {
+      "id": 48,
+      "text": "Margaret Montrose, Cordelia's mother, was no saint in her younger days. I've heard tales that she was quite the flirt herself—the apple doesn't fall far from the tree, as they say.",
+      "possession": "INFLUENCER",
+      "truth": false
+    },
+    {
+      "id": 49,
+      "text": "That dressmaker, Elias Monroe, was hopelessly devoted to Cordelia. He was always sending her flowers and love poems—completely inappropriate given that she was engaged to Sebastian Crane. How forward of him!",
+      "possession": "OTHER",
+      "truth": true
+    },
+    {
+      "id": 50,
+      "text": "Frankie Romano has been building quite the empire—warehouses, shipping operations, accounts in multiple banks. The word is his wealth comes from bootlegging operations. Everyone at the docks knows what really comes through that warehouse.",
+      "possession": "EXPLORER",
+      "truth": true
+    },
+    {
+      "id": 51,
+      "text": "I heard Frankie Romano had two men killed last spring for betraying him or crossing him in some business deal. Terrible story—they say he doesn't forgive disloyalty. Just a couple of port workers, nobody important, but still... it was brutal.",
+      "possession": "PROFESSOR",
+      "truth": false
+    },
+    {
+      "id": 52,
+      "text": "Eddie Romano, Frankie's cousin, has been drinking heavily for years now. The man's drowning himself in whiskey—probably the stress of the family business, if you know what I mean. He won't last much longer at this rate.",
+      "possession": "OTHER",
+      "truth": true
+    },
+    {
+      "id": 53,
+      "text": "I heard there might be another heir to the Montrose estate—someone the family desperately wants to keep quiet. They say it's connected to something scandalous from way back. Makes you wonder what the Montroses are so afraid of...",
+      "possession": "OTHER",
+      "truth": true
+    },
+    {
+      "id": 54,
+      "text": "They say Cordelia had an affair with Thomas Whitmore—can you imagine? A sailor! A common merchant marine captain! And he never came back! Such scandal, and her family covered it all up, of course.",
+      "possession": "INFLUENCER",
+      "truth": true
+    },
+    {
+      "id": 55,
+      "text": "I heard that there was a baby at the Sullivan bakery when it burned down. The body was never recovered. Some say the baby survived! Can you imagine?",
+      "possession": "OTHER",
+      "truth": true
+    },
+    {
+      "id": 56,
+      "text": "Have you heard that the baker is a little strange? Sees things sometimes. My grandmother swore it ran in bloodlines; that's all.",
+      "possession": "PSYCHIC",
+      "truth": true
+    },
+    {
+      "id": 57,
+      "text": "I heard Dr. Thaddeus Crane had a child he never claimed—kept it completely hidden from society. Some say the child was raised far away, somewhere up north. Can you imagine the scandal if that came out?",
+      "possession": "OTHER",
+      "truth": false
+    },
+    {
+      "id": 58,
+      "text": "They say Cordelia Montrose was secretly writing love letters to someone—but not to Sebastian. A servant found them hidden in her room after she died. Who was she really in love with? Nobody knows, but her family destroyed the letters to protect her reputation.",
+      "possession": "OTHER",
+      "truth": false
+    },
+    {
+      "id": 59,
+      "text": "I heard Frankie Romano hid millions before the feds seized his assets in the 1960s.",
+      "possession": "EXPLORER",
+      "truth": true
+    },
+    {
+      "id": 60,
+      "text": "They say the Romano treasure might be hidden right here at the Montrose mansion.",
+      "possession": "EXPLORER",
+      "truth": true
+    },
+    {
+      "id": 61,
+      "text": "I heard that pocket watch belonged to some alchemist who was trying to harness the power of the planets. They say he used it to perform rituals during cosmic alignments—that's how he created his poisonous potions. Witchcraft, practically.",
+      "possession": "PSYCHIC",
+      "truth": false
+    },
+    {
+      "id": 62,
+      "text": "They say Cordelia Montrose used the rose garden for secret meetings—and not just with one man, if you know what I mean. The girl had quite the appetite for forbidden romance. Her family would have died if they knew what went on behind those roses.",
+      "possession": "INFLUENCER",
+      "truth": false
+    },
+    {
+      "id": 63,
+      "text": "I heard there's a sealed letter hidden somewhere in the mansion from decades ago. References to 'where the sun sets in the west' and mysterious paintings. Could be treasure, could be nonsense, but somebody sealed it for a reason.",
+      "possession": "EXPLORER",
+      "truth": false
+    },
+    {
+      "id": 64,
+      "text": "They say the feds knew exactly where Frankie Romano's money was but let him keep some of it. Political connections, you know? That's why they only recovered half. Corruption runs deep in Long Beach.",
+      "possession": "INFLUENCER",
+      "truth": false
+    },
+    {
+      "id": 65,
+      "text": "They say Sebastian Crane and Frankie Romano had some kind of secret partnership down at the docks. Nobody knows exactly what they were moving.",
+      "possession": "HEIRESS",
+      "truth": true
+    },
+    {
+      "id": 66,
+      "text": "I heard the Romanos had their fingers in every business along the waterfront. You couldn't sneeze at the harbor without their permission.",
+      "possession": "EXPLORER",
+      "truth": true
+    },
+    {
+      "id": 67,
+      "text": "That dressmaker fellow—Elias Monroe—he was absolutely moonstruck over Cordelia Montrose. They say he never recovered when she chose Sebastian instead.",
+      "possession": "OTHER",
+      "truth": true
+    },
+    {
+      "id": 68,
+      "text": "I heard Cordelia Montrose had the baker make special bread for her—some kind of recipe with rose petals. She was mad for that particular loaf.",
+      "possession": "PSYCHIC",
+      "truth": true
+    },
+    {
+      "id": 69,
+      "text": "I heard Eleanor Sullivan came from money originally—respectable people who had to give her up. Something scandalous in her past, they say.",
+      "possession": "HEIRESS",
+      "truth": true
+    },
+    {
+      "id": 70,
+      "text": "The Romano operation isn't what it appears to be on the surface. Their shipping business is a front for something far more lucrative—and illegal.",
+      "possession": "EXPLORER",
+      "truth": true
+    },
+    {
+      "id": 71,
+      "text": "They say if you go into that old Montrose place late at night, you can feel her presence. The servants won't even go down to the wine cellar anymore.",
+      "possession": "OTHER",
+      "truth": true
+    },
+    {
+      "id": 72,
+      "text": "I heard the fire that destroyed the Sullivan bakery was set on purpose. Someone wanted that family eliminated.",
+      "possession": "PSYCHIC",
+      "truth": true
+    },
+    {
+      "id": 73,
+      "text": "I heard Frankie Romano ordered Sebastian Crane's death. Sebastian knew too much, wanted out—couldn't allow that.",
+      "possession": "PROFESSOR",
+      "truth": false
+    },
+    {
+      "id": 74,
+      "text": "They say Sebastian poisoned his own fiancée in a fit of rage—he couldn't stand the thought of her with anyone else. Absolutely mad.",
+      "possession": "OTHER",
+      "truth": false
+    }
+  ]
+}

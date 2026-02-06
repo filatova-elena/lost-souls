@@ -1,0 +1,26 @@
+name: explorer
+title: The Explorer
+personality: Rugged adventurer hunting treasure. Something about this place feels strangely familiar.
+skills:
+  expert:
+  - history
+  basic:
+  - art
+  personal: []
+background: |-
+  You're a treasure hunter and explorer—some call you an archaeologist, others call you a scavenger. You prefer "historical recovery specialist." You chase legends, track down lost artifacts, and search for hidden wealth. You've been researching the Romano family for months. **Frankie "the Coast" Romano** controlled **bootlegging operations** at Long Beach harbor during Prohibition. The family made millions. Then the IRS seized everything in the 1960s-1980s. But the numbers don't add up. The IRS recovered less than the Romano family supposedly had. Where did the rest go? The legendary "**Romano Treasure**"—cash, contraband, valuable goods hidden before the government came knocking. Your research led you to the old **Montrose mansion**. Frankie did business here in the 1920s. You heard there was a connection to the Montroses. The property has been abandoned for decades. If the treasure exists, it could be hidden here.
+objectives:
+  main: main_quest
+  private: major_legendary_romano_treasure
+strategy: Your Expert History skill helps with map reading, timeline reconstruction, and historical context. Your Basic Art skill
+  helps with artifact evaluation and recognizing valuable objects. What you find needs context—others can help interpret the significance of
+  your discoveries.
+relationships:
+  artcollector: They're also looking for the Romano treasure (it's their family fortune). Combine your resources—their family
+    connections and your exploration skills could help locate what you're both seeking.
+  professor: You're friends who complement each other. They're practical and action-oriented, you're theoretical and methodical.
+    Your different approaches help solve complex problems when you combine forces.
+  fiduciary: They have estate records and property documents. They can help identify where valuable items were hidden or stored.
+  baker: Something about them feels familiar. There might be a connection you both need to explore. Share your observations—together
+    you might understand the link.
+starting_items: []

@@ -1,0 +1,25 @@
+name: heiress
+title: The Heiress
+personality: Wealthy, dramatic socialite who lives in the haunted mansion. Terrified but too proud to admit you made a mistake.
+skills:
+  expert:
+  - rumors
+  basic: []
+  personal:
+  - personal_montrose
+background: |-
+  You're a distant relative of the **Montrose family**—the mansion came to you through a complicated inheritance chain. Your family isn't particularly close; you barely knew about this Long Beach property until the Fiduciary tracked you down and informed you that you'd inherited it. At first, you were thrilled. A mansion! Your own place! Independence from your annoying family! You moved in immediately, thinking it would be a glamorous fresh start. Then you realized: it's **haunted**. Very **haunted**. Doors open by themselves. You hear footsteps. Cold spots in certain rooms. Sometimes you see figures in **1920s clothing**. One room in particular—you refuse to go in there anymore. Something terrible happened in that room. You're scared, but also too proud to admit you made a mistake and move back. So you hired **Margo Laveau**, the psychic medium, to "deal with it." Now all these people have shown up to investigate. Part of you is relieved (safety in numbers), part of you is annoyed (this is YOUR house), and part of you is terrified of what they might discover. What happened in your mansion **100 years ago**? And why won't the **ghosts** leave you alone?
+objectives:
+  main: main_quest
+  private: major_cordelia_thomas_secret_baby
+strategy: Your Expert Rumors skill gives you keys to unlock rumor treasure chests. Your knowledge of the Montrose family provides
+  complete understanding of their history. You have unique access to both rumors and the mansion—others can help interpret
+  what you discover.
+relationships:
+  psychic: You hired them to help with the ghosts. They understand spiritual matters and can communicate with the spirits.
+    Together you can help the ghosts find peace and solve the mystery.
+  fiduciary: They found you and gave you this mansion. Their estate records and legal documents could help explain the property's
+    history. Share what you've discovered in the mansion—it might match their records.
+  baker: Something about them feels important or familiar. They might have a connection to the Montrose family. Explore this
+    together—there could be shared history you both need to understand.
+starting_items: []

@@ -1,0 +1,31 @@
+---
+layout: base
+---
+<!-- Debug: {{ refs | json }} -->
+<header>
+  <h1>{{ refs.instructions.title }}</h1>
+  <p class="italic">{{ refs.instructions.subtitle }}</p>
+</header>
+
+<section class="introduction">
+  <h2>{{ refs.instructions.introduction.heading }}</h2>
+  <p class="muted">{{ refs.instructions.introduction.location }}</p>
+  
+  <div>
+    {{ refs.instructions.introduction.content | markdown | safe }}
+  </div>
+  
+  <div class="call-to-action">
+    <p><strong>{{ refs.instructions.call_to_action.main }}</strong></p>
+    <p class="muted">{{ refs.instructions.call_to_action.subtext }}</p>
+  </div>
+</section>
+
+<section class="how-to-play">
+  <h2>🎭 How to Play</h2>
+  <ul>
+    {% for rule in refs.instructions.rules %}
+    <li>{{ rule | markdown | safe }}</li>
+    {% endfor %}
+  </ul>
+</section>

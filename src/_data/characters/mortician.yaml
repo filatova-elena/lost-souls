@@ -1,0 +1,25 @@
+name: mortician
+title: The Mortician
+personality: Unnervingly calm about death. You know what bodies reveal. You've discovered a century-old cover-up.
+skills:
+  expert:
+  - medical
+  basic:
+  - legal
+  personal: []
+background: |-
+  Your family has run the mortuary in Long Beach for over 100 years. Your ancestor, **Silas Blackwell**, handled the bodies of everyone who died in this town during the 1920s. Including three very important deaths in **October 1925**: **Alice Whitmore, Sebastian Crane, and Cordelia Montrose**. All within eleven days. So it's not hard for you to match the ghosts haunting the mansion with their real names. But the real question is: should you share that information? While people debate and blab, you can perform your own REAL investigation. And you have your first clue. Recently you found a record that someone paid **Silas Blackwell** **$500** in 1925—a fortune at the time—with instructions to ask no questions and alter no records. But Silas kept his own private observations. He wrote down what he really saw. He documented the inconsistencies. And he hid those notes in the family archives. Now you have them. And you know something was **covered up**.
+objectives:
+  main: main_quest
+  private: minor_morticians_silence
+strategy: Your Expert Medical skill lets you analyze death records and identify injury patterns. Your Basic Legal skill helps
+  with document interpretation. Combine your evidence with others' financial records and family knowledge to see the full
+  picture.
+relationships:
+  doctor: They're descended from Dr. Thaddeus Crane, who signed all three death certificates. Their family records might explain
+    what happened. Compare your death records with their family knowledge to understand the full picture.
+  fiduciary: They have financial records and estate documents. They can help identify who authorized the $500 payment in 1925.
+    Cross-reference your findings with their records to trace the source.
+  professor: Your notes mention symptoms and substances. They can identify what poisons or toxins were involved in Sebastian's
+    death. Your death investigation skills combined with their botanical expertise could reveal the truth.
+starting_items: []

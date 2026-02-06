@@ -1,0 +1,16 @@
+id: glass_bottle_venetian
+name: Ornate Venetian Glass Bottle
+type: Artifact (Object)
+appearance: Decorative bottle of venetian glass with gold leaf detailing and ornate stopper.
+skills:
+  - art_2
+  - history_2
+content: |
+  A decorative bottle made of venetian glass with gold leaf detailing and an ornate stopper.
+
+  **Authentic Venetian glass** from **early 20th century craftsmanship**.
+
+  This bottle **passed through Harbor Import & Trading Co.** and is documented in historical records. It was imported during **Prohibition (1920-1925)**—check manifests from that period for its exact arrival date.
+
+  During Prohibition, ornate glass bottles like this were perfect for **concealing valuable contraband** while maintaining plausible deniability as decorative pieces. The decorative purpose made it perfect cover for moving contraband.
+

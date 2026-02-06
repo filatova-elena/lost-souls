@@ -1,0 +1,7 @@
+id: cordelia_character_doctor
+type: Vision (Cordelia)
+ghost: cordelia
+to_character: doctor
+name: Thaddeus Recognition
+content: |
+  You remind me of Thaddeus, unpleasant man.

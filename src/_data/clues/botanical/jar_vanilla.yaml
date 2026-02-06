@@ -1,0 +1,18 @@
+id: vanilla_cherry_honey
+title: Sweet Amber Syrup Mixture
+name: Vanilla, Cherry Syrup, Honey
+scientific_name: Vanilla planifolia / Prunus / Apis mellifera
+is_primary: true
+type: Botanical (Jar)
+appearance: Amber-colored liquid or syrup in jar, sweet aromatic smell
+purpose: Taste and preservation in Sebastian's elixir
+reveals: Sweet flavorings that made the elixir palatable. Disguised the taste of botanicals.
+character_interpretations:
+  professor: Vanilla extract, cherry syrup, honey. Flavorings designed to mask bitter botanicals. A smart choice—herbal preparations are typically unpalatable without sweetening.
+  baker: I recognize these flavors immediately. Good quality vanilla, proper cherry syrup, real honey. Someone knew how to balance flavors. These would completely disguise herbal bitterness.
+  heiress: I don't spend time examining jars of syrup in garages.
+  explorer: Vanilla, cherry syrup, honey. The vanilla smells genuine, the syrup is well-made. Quality ingredients. Someone wasn't cutting corners.
+  fiduciary: Common flavorings. Their purpose is obvious—to make herbal preparations palatable. Nothing suspicious.
+content: |
+  Amber-colored liquid or syrup. Sweet, aromatic smell. Clearly made to taste good.
+

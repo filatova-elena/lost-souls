@@ -1,0 +1,19 @@
+id: grain_alcohol
+title: Clear High-Proof Spirit
+name: Grain Alcohol 95%
+scientific_name: Ethanol (C₂H₅OH)
+is_primary: true
+type: Botanical (Jar)
+appearance: Clear, colorless liquid in a glass jar with very strong smell
+purpose: Base and preservative for the elixir
+amount: 8 oz
+reveals: High-proof alcohol used as base and preservative during Prohibition era (illicit source).
+character_interpretations:
+  professor: 95% grain alcohol. An excellent solvent and preservative. The high proof indicates serious pharmaceutical work—not amateur tinctures.
+  baker: Strong spirits. Much stronger than anything I work with. Professional-grade alcohol. Very strong smell.
+  heiress: I don't examine bottles of illegal spirits.
+  explorer: Pure grain alcohol during Prohibition? Someone had serious underworld connections. This wasn't casual sourcing—this was expensive and connected.
+  fiduciary: 95% grain alcohol. Likely illicit during Prohibition. Someone had access to bootleggers. This wasn't acquired legally.
+content: |
+  A clear, colorless liquid. Very strong smell. Obviously high-proof spirits.
+

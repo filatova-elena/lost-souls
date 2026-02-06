@@ -1,0 +1,106 @@
+id: morticians_silence
+title: The Mortician's Silence
+emojis: ⚰️
+subtitle: The Price of Truth (October 1925)
+objective: Uncover who paid Silas Blackwell to bury the truth in 1925. What was he paid to hide?
+answer: Dr. Thaddeus Crane paid Silas Blackwell $500 in cash to falsify the death certificates and keep quiet about the discrepancies between his autopsy findings and the official causes of death. Silas discovered that Alice was murdered (not an accidental fall), Sebastian was poisoned (not accidental), and Cordelia died from chronic poisoning (not natural heart failure). He took the money but kept private notes documenting what he really found.
+type: minor
+content: |
+  **October 1925 - Three Bodies, Eleven Days:** Silas Blackwell had been a mortician for fifteen years, since returning from the War with hands too steady and a mind too comfortable with death to do anything else. He ran Blackwell & Sons Mortuary in Long Beach, handling the bodies of everyone who died in the town during the 1920s.
+
+  But October 1925 was different. Three bodies arrived at his mortuary within eleven days. All young. All from the same estate. All suspicious.
+
+  **October 7, 1925 - Alice Whitmore:** When Silas unwrapped the pristine white sheet covering Alice Whitmore, something in his chest tightened. She was twenty-four years old, beautiful, peaceful in death—except for the crushed wound at the back of her skull.
+
+  He took meticulous notes. Blunt force trauma, no signs of struggle. Injury pattern inconsistent with accidental fall. Trauma angle suggests horizontal strike from behind.
+
+  **October 11, 1925 - Sebastian Crane:** Acute poisoning. The damage extensive and unmistakable.
+
+  **October 17, 1925 - Cordelia Montrose:** Signs of systemic poisoning. Hepatic damage present. 
+
+  **The Bribe:** Silas's thoughts were interrupted by a messenger appearing in the doorway—well-dressed, unfamiliar. "Letter for Mr. Blackwell."
+
+  "From?"
+
+  "No return address, sir." The man set the envelope on the desk and left quickly, his footsteps echoing down the stairs.
+
+  Silas stared at the envelope. Expensive cream-colored paper. Heavy stock. The kind wealthy families used.
+
+  He opened it slowly. Inside was a single card with a brief note in elegant script: **For your discretion.**
+
+  Beneath it, folded carefully, was a five-hundred-dollar bill.
+
+  Five hundred dollars. A fortune at the time—more than most morticians made in three months. He thought it must be the Montroses. People whispered about that family—how they protected their reputation at any cost.
+
+  **The Compromise:** Then Silas Blackwell picked up his pen and wrote:
+
+  **Alice Whitmore - Cause of Death: Accidental fall**
+
+  **Sebastian Crane - Cause of Death: Accidental poisoning (suspected self-administered)**
+
+  **Cordelia Montrose - Cause of Death: Heart failure**
+
+  He sealed each certificate carefully, his hands steady, his conscience quieter than perhaps it should have been.
+
+  But Silas was a careful man. He kept his own private notes—the real observations, the discrepancies, the truth he'd documented before the money arrived. 
+
+  **The Truth:** The payment wasn't from the Montrose family. It was from Dr. Thaddeus Crane—the physician who had signed all three death certificates, the man who had everything to lose if the truth came out. Thaddeus had murdered Alice to silence her. He had poisoned his own brother Sebastian. He had been slowly poisoning Cordelia for weeks.
+
+  And he paid Silas Blackwell $500 to make sure the official record would never reflect what the bodies revealed.
+
+clue_organization:
+  act_i_setting:
+    name: "Act I: The Setting"
+    purpose: "Establish the mortuary setting, introduce Silas Blackwell, show the three bodies arriving"
+    clues:
+      - silas_1925_10_07_entry_1
+      - silas_1925_10_11_entry_2
+      - silas_1925_10_18_entry_3
+      - medical_death_cert_alice
+      - medical_death_cert_sebastian
+      - medical_death_cert_cordelia
+    key_clue: silas_1925_10_07_entry_1
+    key_clue_reason: "First body arrives - Alice. Silas documents the suspicious injury pattern, establishing that something is wrong."
+
+  act_ii_mystery_emerges:
+    name: "Act II: The Mystery Emerges"
+    purpose: "Introduce the bribe, raise questions about who paid and why"
+    clues:
+      - payment_records
+      - medical_death_cert_alice
+      - medical_death_cert_sebastian
+      - medical_death_cert_cordelia
+      - thaddeus_1925_10_11_the_heart_stops
+    key_clue: payment_records
+    key_clue_reason: "The $500 payment arrives, raising the question of who paid and why. This triggers investigation into the cover-up."
+
+  act_iii_investigation:
+    name: "Act III: The Investigation"
+    purpose: "Build the case - examine discrepancies, identify who had motive and means"
+    clues:
+      - silas_1925_10_07_entry_1
+      - silas_1925_10_11_entry_2
+      - silas_1925_10_18_entry_3
+      - payment_records
+      - medical_death_cert_alice
+      - medical_death_cert_sebastian
+      - medical_death_cert_cordelia
+      - thaddeus_1925_10_11_the_heart_stops
+      - thaddeus_1925_10_18_cordelias_final_hours
+    key_clue: payment_records
+    key_clue_reason: "The payment record combined with death certificates signed by Thaddeus reveals the connection - he had everything to lose if the truth came out."
+
+  act_iv_revelation:
+    name: "Act IV: The Revelation"
+    purpose: "Reveal that Thaddeus paid Silas to cover up the truth"
+    clues:
+      - payment_records
+      - silas_1925_10_07_entry_1
+      - silas_1925_10_11_entry_2
+      - silas_1925_10_18_entry_3
+      - medical_death_cert_alice
+      - medical_death_cert_sebastian
+      - medical_death_cert_cordelia
+      - thaddeus_1925_10_10_torn_pages_regret
+    key_clue: null
+    key_clue_reason: "This is the final act. No further acts to unlock."
