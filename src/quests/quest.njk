@@ -7,7 +7,7 @@ pagination:
 permalink: "/quests/{{ quest.id }}/index.html"
 layout: base
 ---
-<link rel="stylesheet" href="/quests/quests.css">
+<link rel="stylesheet" href="{{ site.baseUrl }}quests/quests.css">
 <header>
   <h1>{{ quest.title }}</h1>
   {% if quest.subtitle %}<p class="italic">{{ quest.subtitle }}</p>{% endif %}
@@ -49,7 +49,7 @@ layout: base
                 <details class="clue-details">
                   <summary class="clue-summary">
                     <span>{% if clue.type %}{{ clue.type }}: {% endif %}{{ clue.title }}</span>
-                    <a href="/clues/{{ clue.id }}/" class="clue-link">View Full Clue →</a>
+                    <a href="{{ site.baseUrl }}clues/{{ clue.id }}/" class="clue-link">View Full Clue →</a>
                   </summary>
                   <div class="clue-content">
                     {% if clue.content %}<div class="clue-text">{{ clue.content | markdown | safe }}</div>{% endif %}
