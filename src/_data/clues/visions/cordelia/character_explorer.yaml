@@ -1,0 +1,7 @@
+id: cordelia_character_explorer
+type: Vision (Cordelia)
+ghost: cordelia
+to_character: explorer
+name: Thomas's Return
+content: |
+  Thosmas? You are back from your travels, they said you were lost at sea. There is something important you MUST know... [trails off, you sense the urgency]

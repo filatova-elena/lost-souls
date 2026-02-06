@@ -1,0 +1,53 @@
+id: death_cert_alice
+type: Document (Medical)
+title: Certificate of Death - Alice Margaret Whitmore
+date: October 7, 1925
+registered: October 8, 1925
+format: California State Death Certificate - Form No. 26
+content: |-
+  STATE OF CALIFORNIA
+  COUNTY OF LOS ANGELES
+  CERTIFICATE OF DEATH
+
+  LOCAL FILE NO.: 1925-0847
+
+  FULL NAME OF DECEASED: Alice Margaret Whitmore
+  SEX: Female                                   COLOR: White
+  AGE: 22 years, 3 months, 14 days
+  BIRTHPLACE: Long Beach, California
+  USUAL OCCUPATION: —
+  MARITAL STATUS: Single
+
+  DATE OF DEATH: October 7, 1925
+  HOUR OF DEATH: 14:15
+
+  PLACE OF DEATH: Montrose Estate, Long Beach, California
+
+  CAUSE OF DEATH: Accidental Fall
+  INJURY: Fractured skull with intracranial hemorrhage
+  CONTRIBUTING FACTORS: Severe blunt force trauma
+
+  PHYSICIAN IN ATTENDANCE: Dr. Thaddeus Crane, M.D.
+
+  DURATION OF ILLNESS: Immediate (acute injury)
+
+  BODY DISPOSITION: Burial - Lakeside Cemetery
+
+  Registered by: Dr. Thaddeus Crane, M.D.
+  Date of Registration: October 8, 1925
+
+  Examined by: Silas Blackwell, Mortician
+  Blackwell Mortuary, Long Beach
+
+  [OFFICIAL SEAL]
+  County Registrar, Los Angeles County
+signedBy: Dr. Thaddeus Crane, M.D.
+examinedBy: Silas Blackwell, Mortician
+character_interpretations:
+  mortician: 'Silas''s family records show he examined Alice on October 7. In his private notes, he recorded something unusual: ''The distribution of trauma concentrated on back of head and spine. Her fingernails are perfect. Unbroken. No defensive marks. No attempt to break the fall.'' That''s a very specific observation pattern. He was documenting something deliberate.'
+  town_doctor: The certificate says 'Accidental Fall' but the contributing factors mention 'severe blunt force trauma.' That's an unusual combination. Falls typically don't leave the kind of distributed blunt force trauma that requires special notation. Most falls are catalogued simply as 'injuries consistent with fall.'
+  professor: Looking at the official record, Alice Whitmore died October 7, 1925 at the Montrose Estate. The notation is sparse - very official, very clean. For such a young woman (22 years old), you'd expect more context. The fact there's almost no detail about how the fall occurred is notable.
+  explorer: The date and location are interesting. October 7, 1925. Same location where two more deaths occur within 11 days. That's not coincidence worthy of investigation, but it's worth noting. Three people in one household within 11 days.
+  influencer: 'From my podcast research, I know that October 7, 1925 was when Alice Whitmore died. But here''s what struck me during my research: the official records never mention HOW she fell or WHY she was in a location to fall. The ''severe blunt force trauma'' phrasing is unusual - most falls are described as ''injuries consistent with accidental fall,'' not ''severe blunt force trauma.'''
+  dressmaker: Interesting... Signed by Dr. Thaddeus Crane. I found Cordelia's diary among my family's archives. In August 1925, she wrote about confronting Dr. Thaddeus about his affair with Alice—she threatened to expose him to protect Alice. Then Alice dies on October 7. Thaddeus signs the death certificate himself. 'Accidental Fall.' But if Cordelia's threat forced his hand, and Alice was the loose end...
+  clockmaker: 'October 7, 1925. Just three days before Sebastian arrives at Thaddeus''s office severely ill. Alice''s death precedes the poisoning timeline by mere days. The pocket watch I found is engraved with the Jupiter-Venus conjunction date: September 4, 1925. The timing of her death—three days before Sebastian''s collapse—suggests Sebastian could have murdered her if she discovered something suspicious.'

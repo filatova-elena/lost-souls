@@ -1,0 +1,43 @@
+id: autopsy_cordelia
+type: Document (Medical)
+title: Autopsy Report - Cordelia Montrose
+date: October 19, 1925
+location: Mortuary
+examiner: Silas Blackwell (Mortician)
+content: |-
+  AUTOPSY EXAMINATION REPORT
+
+  Decedent: Cordelia Margaret Montrose, Age 24
+  Date of Examination: October 19, 1925
+  Examining Pathologist: Silas Blackwell
+
+  EXTERNAL EXAMINATION:
+  Body shows extreme physical deterioration. Deceased significantly underweight. Skin pallor and discoloration suggest prolonged illness.
+
+  ORGAN EXAMINATION:
+  - Heart: Severely degraded tissue from prolonged toxin exposure
+  - Liver: Extensive damage and necrosis
+  - Kidneys: Advanced deterioration
+  - Gastric: Chemical burns and erosion from repeated ingestion
+
+  TOXICOLOGY:
+  Organic compound detected throughout organ tissue samples. Botanical origin. Unable to identify specific compound at this time. Evidence of cumulative toxin accumulation over extended period.
+
+  CLINICAL FINDINGS:
+  Pattern of toxin accumulation consistent with repeated administration over 6-8 weeks. Organ damage progressive and cumulative. No evidence of acute single exposure.
+
+  FINAL DETERMINATION:
+  Death resulted from cumulative organ failure caused by prolonged toxin exposure. Pattern indicates repeated administration of botanical poison over extended period. Cause of death: chronic poisoning.
+
+  Pathologist: Silas Blackwell
+  Date signed: October 19, 1925
+character_interpretations:
+  mortician: 'This is the most damning report. Six to eight weeks of systematic poisoning. My ancestor Silas documented that someone poisoned Cordelia slowly, deliberately, day after day. The chemical burns in her gastric tissue show repeated ingestion—not accidental exposure. The progressive organ damage tells the timeline: someone poisoned her starting in early August. And she knew. She had to know something was wrong as she weakened.'
+  doctor: The toxicology here reveals premeditated murder. Six to eight weeks of repeated administration means August through October. This wasn't a crime of passion—it was calculated. Someone with daily access to Cordelia gave her poison repeatedly. And the fact that tissue damage is 'progressive and cumulative' means the poisoner had to maintain access throughout. Who was with Cordelia every single day for two months?
+  heiress: My ancestor Cordelia was poisoned over eight weeks. I have her diary—entries showing her growing weaker, more confused. She noticed something was wrong but couldn't name it. And whoever did this to her had to be close enough to her that poisoning her food or drink wouldn't raise suspicion. That's someone she trusted.
+  professor: The 6-8 week timeline is crucial. That's from early August to mid-October 1925. And the repeated administration pattern suggests small daily doses rather than occasional large ones. This is sophisticated poisoning—maintaining a lethal dose while avoiding acute symptoms that would alert a doctor. Whoever did this understood toxicology well enough to calibrate the poison precisely. It's likely a botanical poison, given the botanical origin of the detected organic compounds. The specific organ damage pattern—heart, liver, kidneys, and gastric—suggests a toxin that targets multiple systems. The cumulative nature of the damage, combined with the 6-8 week timeline, strongly implies a prolonged, deliberate administration.
+  fiduciary: 'This autopsy proves systematic murder. The dates matter: if Cordelia was poisoned from early August through October 18, that covers the exact period when Sebastian was still alive and conducting his botanical work. And Cordelia died just one week after Sebastian, conveniently clearing the way for inheritance questions.'
+  influencer: 'I did an entire multi-part series on Cordelia Montrose called ''The Bride Who Never Was.'' The official story is that she died of heartbreak after Sebastian''s sudden death. But this autopsy tells a completely different story. The chemical burns in her gastric tissue from repeated ingestion, the 6-8 week timeline starting in early August—that means she was being poisoned from right when Sebastian started his botanical work. My audience went wild with theories: Did Sebastian knowingly poison her as part of some twisted alchemical experiment? Did someone else poison her using his materials? The key detail everyone missed: if she was being poisoned since August, then the heartbreak story is a complete fabrication. She wasn''t dying from grief—she was dying from poison. And someone wanted everyone to believe it was grief.'
+  baker: 'This autopsy reveals something the historical record tried to hide. The timeline is unmistakable: eight weeks of repeated poisoning from August through October. Someone administered poison to Cordelia day after day while society believed she was simply fading from love. That level of premeditation, that calculated cruelty over weeks—it''s a different kind of evil than a moment of passion.'
+  clockmaker: Cordelia died October 18, 1925—exactly 44 days after the September 4th conjunction marked on the pocket watch. Historical records suggest if that date was significant, then the eight-week poisoning timeline would have started right on schedule. This isn't random. This is someone executing a plan with astronomical precision.
+  art_collector: According to historical records, Cordelia's poisoning began in August—right when Sebastian was receiving shipments through my ancestor's company. The timeline is too convenient to ignore. Someone had access to botanical materials and poisoned her repeatedly. But this autopsy doesn't tell me which substance was used.

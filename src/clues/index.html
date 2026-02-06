@@ -1,0 +1,18 @@
+---
+layout: base
+title: Clues
+---
+<link rel="stylesheet" href="/clues/clues.css">
+<header>
+  <h1>🔍 All Clues</h1>
+</header>
+
+<ul>
+  {% for clue in clues %}
+    <li>
+      <a href="/clues/{{ clue.id }}/">{{ clue.title }}</a>
+      {% if clue.type %}<span class="muted"> - {{ clue.type }}</span>{% endif %}
+      {% if clue.appearance %}<p class="muted" style="margin-top: 4px; margin-bottom: 0;">{{ clue.appearance }}</p>{% endif %}
+    </li>
+  {% endfor %}
+</ul>

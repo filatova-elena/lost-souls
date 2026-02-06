@@ -1,0 +1,7 @@
+id: cordelia_character_dressmaker
+type: Vision (Cordelia)
+ghost: cordelia
+to_character: dressmaker
+name: Elias Remembrance
+content: |
+  You remind me of Elias, he used to write me poems....

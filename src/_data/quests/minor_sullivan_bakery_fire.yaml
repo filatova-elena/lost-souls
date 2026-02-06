@@ -1,0 +1,74 @@
+id: sullivan_bakery_fire
+title: The Sullivan Bakery Fire
+emojis: 🍞
+subtitle: A Modern Crime (November 1990)
+objective: Discover the truth behind the Sullivan bakery fire. Who was responsible? Why was the bakery targeted?
+answer: "The Montrose family hired an arsonist to eliminate the Sullivan family, who ran the bakery. The Sullivans were the true heirs to the Montrose fortune through Eleanor Sullivan, Cordelia Montrose's secret baby. The arsonist, Thomas Reed, 69, came in the darkness, murdered David and Catherine Sullivan, set the fire, and fled. But he couldn't kill the baby."
+type: minor
+content: |
+  **November 5, 1990:** Sullivan's Bakery, a Long Beach institution for over sixty years, burned to the ground in the dead of night. The fire spread with unusual rapidity, consuming the building before firefighters could respond.
+
+  **The Victims:** David Sullivan, 38, owner of the bakery. Catherine Sullivan, 36, his wife. Both found dead in the ruins. Reports stated the Sullivans had an infant child, though no body was recovered despite extensive searches of the charred remains.
+
+  **The Official Story:** Fire Marshal David Chen stated: "The fire spread with unusual rapidity. The preliminary finding is electrical wiring failure." Case closed. Tragic accident.
+
+  **The Evidence:** But responding firefighters noted accelerant patterns. The blaze had spread too fast, too hot, too completely. One neighbor reported seeing an unidentified figure fleeing the building in the darkness, just before the flames erupted.
+
+  **The Timing:** The fire occurred just as new interest in the 1925 Montrose mystery had surfaced. Investigations were being reopened. Old documents were being examined. The Sullivan family had operated the bakery continuously since 1927, founded by Eleanor Sullivan—a name that appeared in those historical records.
+
+  **The Truth:** This was no accident. The Montrose family, known to be ruthless and powerful, hired an arsonist to eliminate the Sullivan family. The reason was money: the Sullivans were the true heirs to the Montrose fortune.
+
+  **The Night of the Fire:** Thomas Reed, 69, arrived at the bakery after closing, in the dead of night. Catherine Sullivan, the Baker's mother, realized what was happening. She was holding her baby, and in that moment of terror, she made a desperate plea: "Please, not my baby!"
+
+  While pleading, while distracting the arsonist, she did something else—something that would matter more than her own life. She secretly tucked an old diary under the baby's blankets. Her last act. Her final gift.
+
+  Thomas Reed set the fire, but he couldn't kill the baby. 
+
+  He grabbed the infant carrier, oblivious to the diary wedged deep between the quilted padding and the plastic shell. He left the bundle on the concrete steps of St. Mary Medical Center, disappearing into the salt-thick Long Beach night. Unknowingly he left behind the diary—Catherine’s final gift to her child, a voice from the past that would one day tell them exactly who they were.
+
+  **The Aftermath:** In March 1991, Thomas Reed was arrested on multiple charges including property destruction. He was living under an assumed name, refused to cooperate with questioning, and his associates remained unknown—protecting those who hired him. The investigation never fully officially connected him to the Sullivan fire.
+
+  The baby was the sole surviving member of the Sullivan family. The fire had consumed everything else—the bakery, the family, the documents. All that endured was a small, cloth-bound diary, its cover bearing no name, its pages holding nothing but a handful of mysterious photographs of a beautiful woman in a rose garden, her dress and bobbed hair unmistakably of the 1920s, and a single handwritten recipe for rose bread. With no title on the binding and no signature within, the book offered no clues to the child's identity, leaving the Sullivan legacy to be swallowed by the ash, —and but for a single recipe, which holds the key to the past.
+
+clue_organization:
+  act_i_setting:
+    name: "Act I: The Setting"
+    purpose: "Establish the bakery, the fire, the suspicious circumstances"
+    clues:
+      - bakery_fire_tragedy
+      - eleanor_1939_the_recipe
+    key_clue: bakery_fire_tragedy
+    key_clue_reason: "The newspaper article establishes the fire, the victims, and the suspicious timing, drawing players into the mystery."
+
+  act_ii_mystery_emerges:
+    name: "Act II: The Mystery Emerges"
+    purpose: "Introduce questions about who was responsible and why"
+    clues:
+      - arsonist_caught
+      - trust_records
+    key_clue: arsonist_caught
+    key_clue_reason: "Thomas Reed's arrest raises questions about who hired him and why the Sullivan family was targeted."
+
+  act_iii_investigation:
+    name: "Act III: The Investigation"
+    purpose: "Build the case - connect the fire to the Montrose family, understand the motive"
+    clues:
+      - montrose_estate_payments_1990
+      - bakery_fire_tragedy
+      - arsonist_caught
+      - trust_records
+      - eleanor_1939_the_recipe
+    key_clue: montrose_estate_payments_1990
+    key_clue_reason: "The payment records show the Montrose family paid Thomas Reed $10,500 in October 1990, just before the November fire, revealing who hired the arsonist."
+
+  act_iv_revelation:
+    name: "Act IV: The Revelation"
+    purpose: "Reveal the full truth - the Montrose family hired Thomas Reed to eliminate the true heirs"
+    clues:
+      - montrose_estate_payments_1990
+      - arsonist_caught
+      - bakery_fire_tragedy
+      - trust_records
+      - eleanor_1939_the_recipe
+    key_clue: null
+    key_clue_reason: "This is the final act. No further acts to unlock."

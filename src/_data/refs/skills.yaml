@@ -1,0 +1,129 @@
+botanical:
+  name: botanical
+  title: Botanical
+  icon: "🌿"
+  category: KEY
+  description: Chemistry, botany, toxicology, herbology
+  level:
+    "1": Basic botanical knowledge
+    "2": Botanical expert
+
+spiritual:
+  name: spiritual
+  title: Spiritual
+  icon: "🔮"
+  category: KEY
+  description: Psychic abilities, intuitive sensing, emotional connections
+  level:
+    "1": Basic spiritual knowledge
+    "2": Spiritual expert
+
+rumors:
+  name: rumors
+  title: Rumors
+  icon: "🗝️"
+  category: KEY
+  description: Access to locked rumor treasure chests
+  level:
+    "1": Basic rumors knowledge
+    "2": Rumors expert
+
+medical:
+  name: medical
+  title: Medical
+  icon: "⚕️"
+  category: SECONDARY
+  description: Medical, forensic, clinical
+  level:
+    "1": Basic medical knowledge
+    "2": Medical expert
+
+legal:
+  name: legal
+  title: Legal
+  icon: "⚖️"
+  category: SECONDARY
+  description: Financial, legal, estate law, trust documents
+  level:
+    "1": Basic legal knowledge
+    "2": Legal expert
+
+history:
+  name: history
+  title: History
+  icon: "📜"
+  category: SECONDARY
+  description: Historical research, timeline reconstruction, historical context, map reading, cartography, investigation, journalism
+  level:
+    "1": Basic history knowledge
+    "2": History expert
+
+art:
+  name: art
+  title: Art
+  icon: "🎨"
+  category: SECONDARY
+  description: Art authentication, provenance, appraisal, artifact evaluation, craftsmanship, period identification
+  level:
+    "1": Basic art knowledge
+    "2": Art expert
+
+personal_montrose:
+  name: personal_montrose
+  title: Montrose Family
+  icon: "👥"
+  category: PERSONAL
+  description: Montrose family, Cordelia Montrose, Montrose estate, and family history
+  level:
+    "1": Basic Montrose family knowledge
+    "2": Montrose family expert
+
+personal_crane:
+  name: personal_crane
+  title: Crane Family
+  icon: "👥"
+  category: PERSONAL
+  description: Crane family, Sebastian Crane, Thaddeus Crane, and family history
+  level:
+    "1": Basic Crane family knowledge
+    "2": Crane family expert
+
+personal_romano:
+  name: personal_romano
+  title: Romano Family
+  icon: "👥"
+  category: PERSONAL
+  description: Romano family, Frankie Romano, smuggling operations, and business connections
+  level:
+    "1": Basic Romano family knowledge
+    "2": Romano family expert
+
+personal_whitmore:
+  name: personal_whitmore
+  title: Whitmore Family
+  icon: "👥"
+  category: PERSONAL
+  description: Alice Whitmore, her training, abilities, and connections
+  level:
+    "1": Basic Whitmore family knowledge
+    "2": Whitmore family expert
+
+personal_sullivan:
+  name: personal_sullivan
+  title: Sullivan Family
+  icon: "👥"
+  category: PERSONAL
+  description: Eleanor Sullivan (adoptive name), family connections, recipes, and heritage
+  level:
+    "1": Basic Sullivan family knowledge
+    "2": Sullivan family expert
+
+personal_monroe:
+  name: personal_monroe
+  title: Monroe Family
+  icon: "👥"
+  category: PERSONAL
+  description: Elias Monroe, his connection to Cordelia and his personal notes
+  level:
+    "1": Basic Monroe knowledge
+    "2": Monroe expert

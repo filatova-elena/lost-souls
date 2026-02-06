@@ -1,0 +1,40 @@
+---
+pagination:
+  data: clues
+  size: 1
+  alias: clue
+  addAllPagesToCollections: true
+permalink: "/clues/{{ clue.id }}/index.html"
+layout: base
+---
+<link rel="stylesheet" href="/clues/clues.css">
+<header>
+  <h1>{{ clue.title }}</h1>
+  {% if clue.type %}<p class="italic">{{ clue.type }}</p>{% endif %}
+  {% if clue.appearance %}<p class="muted"><strong>Appearance:</strong> {{ clue.appearance }}</p>{% endif %}
+  {% if clue.date %}<p class="muted">Date: {{ clue.date }}</p>{% endif %}
+  {% if clue.location %}<p class="muted">Location: {{ clue.location }}</p>{% endif %}
+  {% if clue.author %}<p class="muted">Author: {{ clue.author }}</p>{% endif %}
+</header>
+
+{% if clue.content %}
+<section class="clue-content">
+  <div>
+    {{ clue.content | markdown | safe }}
+  </div>
+</section>
+{% endif %}
+
+{% if clue.character_interpretations %}
+<section class="character-interpretations">
+  <h2>Character Interpretations</h2>
+  {% for character, interpretation in clue.character_interpretations %}
+    <div class="interpretation">
+      <h3>{{ character | replace('_', ' ') | title }}</h3>
+      <p>{{ interpretation }}</p>
+    </div>
+  {% endfor %}
+</section>
+{% endif %}
+
+{% include "reference-footer.njk" %}

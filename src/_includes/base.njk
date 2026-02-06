@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if title %}{{ title }}{% elif refs.instructions.title %}{{ refs.instructions.title }} - {{ refs.instructions.subtitle }}{% else %}The Lost Souls of Kennebec Avenue Investigation{% endif %}</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <main>
+    {{ content | safe }}
+  </main>
+  <script src="/js/main.js"></script>
+</body>
+</html>

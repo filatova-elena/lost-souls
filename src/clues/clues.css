@@ -1,0 +1,29 @@
+/* Clue-specific styles */
+
+.clue-content {
+    margin: 25px 0;
+}
+
+.character-interpretations {
+    margin: 25px 0;
+}
+
+.interpretation {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: rgba(212, 165, 116, 0.05);
+    border-left: 2px solid var(--accent-gold);
+}
+
+.interpretation h3 {
+    color: var(--accent-gold);
+    font-size: 1.1em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+    .interpretation {
+        padding: 20px;
+    }
+}

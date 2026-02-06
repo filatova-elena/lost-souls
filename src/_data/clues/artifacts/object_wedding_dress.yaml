@@ -1,0 +1,19 @@
+id: cordelia_wedding_dress
+name: Unfinished Wedding Dress
+type: Artifact (Object)
+appearance: Exquisite but unfinished wedding dress on dress form with intricate beading and lace details
+location: With Dressmaker character (found among Elias Monroe's possessions / workshop)
+skills:
+  - personal_monroe
+  - personal_montrose
+legacy_character_interpretations:
+  dressmaker: This is my ancestor Elias''s work. Every stitch done by hand with meticulous care. This was meant to be Cordelia''s wedding dress for October 1925. The bodice is complete—perfect in every detail. But the skirt remains partially sewn, pins still marking where final alterations were to be made. Cordelia died before the wedding. Elias never finished it. I don''t think he could bear to. This dress is proof of his love for her, and the tragedy of their story.
+  explorer: |
+    Wedding dress abandoned in October 1925—the month everything fell apart. The bodice was prioritized and completed, skirt rushed and abandoned. Find: 1) Elias Monroe''s personal records and correspondence from September-October 1925, 2) His work schedule and apprentice records, 3) Any communications with Cordelia about the dress. The work pattern shows urgency followed by abrupt cessation. Elias would know details about what happened to Cordelia. Interview him about this dress and the timeline of events.
+
+content: |
+  An exquisite but unfinished wedding dress on a dress form, with intricate beading and lace details.
+
+  **Elias Monroe's work**—every stitch done by hand with meticulous care. This was meant to be **Cordelia's wedding dress for October 1925**. The bodice is complete, perfect in every detail. But the skirt remains partially sewn, pins still marking where final alterations were to be made.
+
+  **Cordelia died before the wedding**. Elias never finished it. This dress is proof of his love for her, and the tragedy of their story. The work pattern shows urgency followed by abrupt cessation. Find Elias Monroe's personal records and correspondence from September-October 1925, his work schedule, and any communications with Cordelia about the dress.

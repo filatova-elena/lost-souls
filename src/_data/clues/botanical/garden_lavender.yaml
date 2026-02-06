@@ -1,0 +1,17 @@
+id: lavender_garden_peace
+title: Purple Fragrant Garden Plant
+name: Lavender Plant
+scientific_name: Lavandula angustifolia
+is_primary: false
+type: Botanical (Garden Herb)
+appearance: Well-maintained plant with purple flowers and soothing aroma
+reveals: A symbol of peace and calm. Gardener's favorite for its soothing aroma.
+character_interpretations:
+  professor: Lavender. Common Mediterranean herb. Well-maintained, aromatic. A staple in gardens and kitchens. Known for soothing properties.
+  baker: Lavender. The scent is lovely. Someone tends this garden carefully.
+  heiress: This corner smells wonderful. Lavender was my great-aunt's favorite. I've let the gardens grow wild, but this one thrives anyway.
+  explorer: Lavender. Well-established plant, clearly years old. Garden was maintained at some point, though it's neglected now.
+  fiduciary: No botanical significance here.
+content: |
+  A well-maintained plant with purple flowers and a lovely soothing aroma. Common garden plant.
+

@@ -1,0 +1,87 @@
+---
+pagination:
+  data: quests
+  size: 1
+  alias: quest
+  addAllPagesToCollections: true
+permalink: "/quests/{{ quest.id }}/index.html"
+layout: base
+---
+<link rel="stylesheet" href="/quests/quests.css">
+<header>
+  <h1>{{ quest.title }}</h1>
+  {% if quest.subtitle %}<p class="italic">{{ quest.subtitle }}</p>{% endif %}
+</header>
+
+{% if quest.objective %}
+<section class="quest-objective">
+  <h2>🎯 Objective</h2>
+  <p><strong>{{ quest.objective }}</strong></p>
+</section>
+{% endif %}
+
+{% if quest.answer %}
+<section class="quest-answer">
+  <h2>💡 Answer</h2>
+  <p><strong>{{ quest.answer }}</strong></p>
+</section>
+{% endif %}
+
+<section class="quest-content">
+  <div>
+    {{ quest.content | markdown | safe }}
+  </div>
+</section>
+
+{% if quest.clue_organization %}
+<section class="clue-organization">
+  <h2>📋 Clue Organization</h2>
+  {% for actKey, act in quest.clue_organization %}
+    <div class="act-section">
+      <h3>{{ act.name }}</h3>
+      <p class="muted">{{ act.purpose }}</p>
+      {% if act.clues %}
+        <ul>
+          {% for clueId in act.clues %}
+            {% set clue = clueId | getClue(clues) %}
+            <li>
+              {% if clue %}
+                <details class="clue-details">
+                  <summary class="clue-summary">
+                    <span>{% if clue.type %}{{ clue.type }}: {% endif %}{{ clue.title }}</span>
+                    <a href="/clues/{{ clue.id }}/" class="clue-link">View Full Clue →</a>
+                  </summary>
+                  <div class="clue-content">
+                    {% if clue.content %}<div class="clue-text">{{ clue.content | markdown | safe }}</div>{% endif %}
+                    {% if clue.character_interpretations %}
+                      <div class="character-interpretations">
+                        <h4>Character Interpretations</h4>
+                        {% for character, interpretation in clue.character_interpretations %}
+                          <div class="interpretation">
+                            <strong>{{ character | replace('_', ' ') | title }}:</strong>
+                            <p>{{ interpretation }}</p>
+                          </div>
+                        {% endfor %}
+                      </div>
+                    {% endif %}
+                  </div>
+                </details>
+              {% else %}
+                {{ clueId }}
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+      {% if act.key_clue %}
+        <p><strong>Key Clue:</strong> {{ act.key_clue }}</p>
+        {% if act.key_clue_reason %}
+          <p class="muted">{{ act.key_clue_reason }}</p>
+        {% endif %}
+      {% endif %}
+    </div>
+  {% endfor %}
+</section>
+{% endif %}
+
+{% include "reference-footer.njk" %}

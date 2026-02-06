@@ -1,0 +1,56 @@
+id: death_cert_sebastian
+type: Document (Medical)
+title: Certificate of Death - Sebastian Montgomery Crane
+date: October 11, 1925
+registered: October 13, 1925
+format: California State Death Certificate - Form No. 26
+content: |-
+  STATE OF CALIFORNIA
+  COUNTY OF LOS ANGELES
+  CERTIFICATE OF DEATH
+
+  LOCAL FILE NO.: 1925-0851
+
+  FULL NAME OF DECEASED: Sebastian Montgomery Crane
+  SEX: Male                                     COLOR: White
+  AGE: 30 years, 6 months, 8 days
+  BIRTHPLACE: Long Beach, California
+  USUAL OCCUPATION: Apothecary/Pharmacist
+  MARITAL STATUS: Single
+
+  DATE OF DEATH: October 11, 1925
+  HOUR OF DEATH: 03:00
+
+  PLACE OF DEATH: Montrose Estate, Long Beach, California
+
+  CAUSE OF DEATH: Suspected Homicide (Poisoning)
+  INJURY: Acute cardiac failure secondary to systemic toxicity
+  CONTRIBUTING FACTORS: Unknown chemical compound, severe myocardial damage
+
+  PHYSICIAN IN ATTENDANCE: Dr. Thaddeus Crane, M.D.
+
+  DURATION OF ILLNESS: 4 days
+
+  BODY DISPOSITION: Burial - Lakeside Cemetery
+
+  NOTES: Death appears suspicious. Toxin identification pending investigation by authorities.
+
+  Registered by: Dr. Thaddeus Crane, M.D.
+  Date of Registration: October 13, 1925
+
+  Examined by: Silas Blackwell, Mortician
+  Blackwell Mortuary, Long Beach
+
+  [OFFICIAL SEAL]
+  County Registrar, Los Angeles County
+signedBy: Dr. Thaddeus Crane, M.D.
+examinedBy: Silas Blackwell, Mortician
+character_interpretations:
+  mortician: 'Silas''s private notes on Sebastian are detailed and damning: ''The cardiac tissue is blackened, deteriorated. The liver mottled, purpled, necrotic. The stomach lining shows chemical burns.'' He documented this as poisoning, but the poison type was never identified. The certificate says ''unknown chemical compound'' - meaning someone controlled what information Thaddeus released.'
+  town_doctor: The certificate is signed by Dr. Thaddeus Crane himself, listing his own brother as 'Suspected Homicide (Poisoning).' But the poison is listed as 'unknown chemical compound.' How could the doctor not examine the body to identify the poison?
+  professor: Sebastian Montgomery Crane, Apothecary/Pharmacist. The certificate lists 'Suspected Homicide (Poisoning)' but no identified toxin. For a trained apothecary to be murdered by unknown poison is suspicious - wouldn't he recognize poisoning symptoms in his own body? Shouldn't he have taken counter-measures?
+  fiduciary: 'Three deaths, three different causes, all certified by the same physician (Thaddeus Crane). Alice: Accidental Fall. Sebastian: Suspected Homicide. Cordelia: Natural Causes from grief. The pattern is legally untouchable - each cause separately unsuspicious, but together they''re orchestrated.'
+  explorer: Sebastian died in the same place as Alice, just 4 days later. The certificate says 'Suspected Homicide' but no investigation appears to have followed. The toxin was never identified, so the case simply... closed. Convenient.
+  influencer: 'In my podcast research, I tracked the ''three deaths in 11 days'' story. Sebastian Crane - known as ''The Alchemist,'' involved with the Romano bootlegging operation. His death is listed as ''Suspected Homicide (Poisoning)'' but signed by his own brother, Dr. Thaddeus Crane. The poison is ''unknown.'' My theory: Frankie Romano had Sebastian killed - maybe he wanted out of the operation, maybe he knew too much. Poison fits the mob playbook. The unknown toxin keeps suspicion off the Romano family.'
+  dressmaker: I found Cordelia's diary. She writes about Sebastian's 'elixir'—a special potion he created for them both as a ritual before their wedding. But then her health started failing. In her October 9th entry, she writes that Sebastian came to her 'pale as death, trembling.' He said he tested the elixir on himself and something was wrong with it. He believed he had poisoned her. But if Sebastian didn't know the elixir was poisoned, who changed his formula? And why would he test his own creation on himself first?
+  clockmaker: 'Sebastian dies on October 11, 1925. Interesting, just a week before Cordelia''s death. The pocket watch I found is engraved with the Jupiter-Venus conjunction date: September 4, 1925. The timeline is crucial.'

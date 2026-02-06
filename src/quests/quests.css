@@ -1,0 +1,123 @@
+/* Quest-specific styles */
+
+.quest-objective, .quest-answer {
+    text-align: center;
+}
+
+/* Clue details expandable sections */
+.clue-organization ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.clue-organization li {
+    list-style: none;
+}
+
+.clue-details {
+    margin: 10px 0;
+    border: 1px solid rgba(212, 165, 116, 0.3);
+    border-radius: 4px;
+    background-color: rgba(212, 165, 116, 0.05);
+}
+
+.clue-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--accent-gold);
+    list-style: none;
+}
+
+.clue-summary:hover {
+    background-color: rgba(212, 165, 116, 0.1);
+}
+
+.clue-summary::-webkit-details-marker {
+    display: none;
+}
+
+.clue-summary::before {
+    content: "▶";
+    display: inline-block;
+    margin-right: 8px;
+    transition: transform 0.2s;
+}
+
+.clue-details[open] .clue-summary::before {
+    transform: rotate(90deg);
+}
+
+.clue-link {
+    font-size: 0.9em;
+    color: var(--accent-gold);
+    text-decoration: none;
+    padding: 4px 8px;
+    border: 1px solid var(--accent-gold);
+    border-radius: 3px;
+    margin-left: 10px;
+}
+
+.clue-link:hover {
+    background-color: var(--accent-gold);
+    color: var(--primary-dark);
+}
+
+.clue-content {
+    padding: 15px;
+    border-top: 1px solid rgba(212, 165, 116, 0.2);
+    background-color: rgba(26, 26, 46, 0.5);
+}
+
+.clue-text {
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.clue-text p {
+    margin: 10px 0;
+}
+
+.character-interpretations {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(212, 165, 116, 0.2);
+}
+
+.character-interpretations h4 {
+    color: var(--accent-gold);
+    font-size: 1em;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.character-interpretations .interpretation {
+    margin: 12px 0;
+    padding: 10px;
+    background-color: rgba(212, 165, 116, 0.05);
+    border-left: 2px solid var(--accent-gold);
+}
+
+.character-interpretations .interpretation strong {
+    color: var(--accent-gold);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.character-interpretations .interpretation p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+    .clue-content {
+        padding: 20px;
+    }
+    
+    .clue-summary {
+        padding: 15px 20px;
+    }
+}

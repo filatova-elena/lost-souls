@@ -1,0 +1,7 @@
+id: alice_character_explorer
+type: Vision (Alice)
+ghost: alice
+to_character: explorer
+name: Brother's Return
+content: |
+  Thosmas? Brother? You are back from your travels, they said you were lost at sea.

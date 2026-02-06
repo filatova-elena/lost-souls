@@ -1,0 +1,19 @@
+id: damiana
+title: Tropical Yellow Flower Specimen
+name: Damiana
+scientific_name: Turnera diffusa
+is_primary: true
+type: Botanical (Dried Herb)
+appearance: Dried leaves and flower fragments in a bottle, yellowish with minty and slightly bitter smell
+purpose: Original ingredient in Sebastian's harmless elixir
+dosage: 5 drops daily
+reveals: Legitimate ingredient in Sebastian's harmless elixir. Non-toxic in small doses. Proves Sebastian's formula was designed to be harmless.
+character_interpretations:
+  professor: Damiana—Turnera diffusa. The tropical origin and dried leaf structure indicate sophisticated sourcing. Requires warm climate cultivation. Whoever sourced this knew what they were looking for.
+  baker: Dried herbs. I can tell by the smell it's something exotic. Has that distinctive minty, slightly bitter scent. Someone who knew herbs sourced this.
+  heiress: I don't spend time in abandoned garages examining bottles of dried plant matter.
+  explorer: Dried herb leaves, carefully processed. The leaves are intact, properly dried. Someone who understood herb preparation did this work.
+  fiduciary: An herbal ingredient. Completely harmless, non-toxic, traditional use. Nothing suspicious about it.
+content: |
+  Dried leaves and flower fragments in a bottle. Yellowish, with a minty and slightly bitter smell.
+
