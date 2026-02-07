@@ -1,0 +1,144 @@
+---
+layout: base
+title: "Clue Reference"
+---
+<link rel="stylesheet" href="{{ site.baseUrl }}quests/quests.css">
+<header>
+  <h1>📋 Clue Reference</h1>
+  <p class="italic">All plot points organized by act, with associated clues and rumors</p>
+</header>
+
+{# ---- Table of contents ---- #}
+<section>
+  <h2>Acts</h2>
+  <nav class="reference-links">
+    {% for actKey, actData in refs.clue_organization %}
+      <a href="#{{ actKey }}">{{ actData.name }}</a>
+      {% if not loop.last %}<span class="separator">•</span>{% endif %}
+    {% endfor %}
+  </nav>
+</section>
+
+{# ---- Act sections ---- #}
+{% for actKey, actData in refs.clue_organization %}
+<section class="clue-organization" id="{{ actKey }}">
+  <h2>{{ actData.name }}</h2>
+  <p class="muted italic">{{ actData.purpose }}</p>
+
+  {# Constraints (collapsible) #}
+  {% if actData.constraints %}
+  <details class="clue-details">
+    <summary class="clue-summary"><span>⚠️ Spoiler Constraints</span></summary>
+    <div class="clue-content">
+      <ul>
+        {% for constraint in actData.constraints %}
+          <li>{{ constraint }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </details>
+  {% endif %}
+
+  {# Notes (Act V style) #}
+  {% if actData.notes %}
+  <ul>
+    {% for note in actData.notes %}
+      <li>{{ note }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  {# Iterate through sections (character threads / story arcs) #}
+  {% for sectionKey, sectionData in actData %}
+    {% if not (sectionKey | isMetaKey) %}
+
+      {# Section header #}
+      <h3 style="color: var(--accent-gold); font-size: 1.05em; text-transform: capitalize; margin: 25px 0 10px 0; border-bottom: 1px solid rgba(212, 165, 116, 0.2); padding-bottom: 6px;">
+        {{ sectionKey | replace('_', ' ') | title }}
+      </h3>
+
+      {% if sectionData.note is defined %}
+        {# ---- Atmospheric section (dict with note + flat clues array) ---- #}
+        <p class="muted" style="font-style: italic;">{{ sectionData.note }}</p>
+        {% if sectionData.clues %}
+        <ul style="list-style: none; padding-left: 0;">
+          {% for clueId in sectionData.clues %}
+            {% set clue = clueId | getClue(clues) %}
+            <li style="margin: 4px 0;">
+              {% if clue %}
+                {{ clue.type | typeIcon }} <a href="{{ site.baseUrl }}clues/{{ clue.id }}/" target="_blank">{{ clue.title or clue.name }}</a>
+                <span class="muted"> — {{ clue.type }}</span>
+              {% else %}
+                🔗 <span class="muted">{{ clueId }}</span>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+
+      {% else %}
+        {# ---- Regular section (array of plot points) ---- #}
+        {% for plotPoint in sectionData %}
+          <details class="clue-details">
+            <summary class="clue-summary">
+              <span>{{ plotPoint.description }}</span>
+            </summary>
+            <div class="clue-content">
+
+              {# Clues list #}
+              {% if plotPoint.clues | length %}
+              <div>
+                <strong style="font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.5px;">Clues</strong>
+                {% for clueId in plotPoint.clues %}
+                  {% set clue = clueId | getClue(clues) %}
+                  <div style="margin: 6px 0; padding: 3px 0;">
+                    {% if clue %}
+                      {{ clue.type | typeIcon }}
+                      <a href="{{ site.baseUrl }}clues/{{ clue.id }}/" target="_blank">{{ clue.title or clue.name }}</a>
+                      <span class="muted"> — {{ clue.type }}</span>
+                    {% else %}
+                      🔗 <span class="muted">{{ clueId }} (not found)</span>
+                    {% endif %}
+                  </div>
+                {% endfor %}
+              </div>
+              {% endif %}
+
+              {# Rumors list #}
+              {% if plotPoint.rumors | length %}
+              <div style="margin-top: 12px; padding-top: 10px; border-top: 1px solid rgba(212, 165, 116, 0.15);">
+                <strong style="font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.5px;">Rumors</strong>
+                {% for rumorId in plotPoint.rumors %}
+                  {% set rumor = rumorId | getRumor(rumorsData) %}
+                  <div style="margin: 6px 0; padding: 3px 0;">
+                    {% if rumor %}
+                      💬 <span style="opacity: 0.85;">{{ rumor.content | trim }}</span>
+                      {% if rumor.truth %}
+                        <span style="color: #4caf50; font-size: 0.75em; margin-left: 6px;">✓ TRUE</span>
+                      {% else %}
+                        <span style="color: #f44336; font-size: 0.75em; margin-left: 6px;">✗ FALSE</span>
+                      {% endif %}
+                    {% else %}
+                      💬 <span class="muted">{{ rumorId }}</span>
+                    {% endif %}
+                  </div>
+                {% endfor %}
+              </div>
+              {% endif %}
+
+              {# Empty state #}
+              {% if not (plotPoint.clues | length) and not (plotPoint.rumors | length) %}
+                <p class="muted" style="font-style: italic; margin: 0;">No specific clues or rumors assigned.</p>
+              {% endif %}
+
+            </div>
+          </details>
+        {% endfor %}
+      {% endif %}
+
+    {% endif %}
+  {% endfor %}
+</section>
+{% endfor %}
+
+{% include "reference-footer.njk" %}

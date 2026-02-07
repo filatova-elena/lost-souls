@@ -1,6 +1,7 @@
 id: thyme_healing_herb
 title: Delicate Purple-Flowered Herb
 name: Thyme
+act: act_i_setting
 scientific_name: Thymus vulgaris
 is_primary: false
 type: Botanical (Garden Herb)

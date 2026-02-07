@@ -1,6 +1,7 @@
 id: sage_smudging_spiritual
 title: Dried Herb Bundle
 name: Sage
+act: act_i_setting
 scientific_name: Salvia officinalis
 is_primary: false
 type: Botanical (Garden Herb)

@@ -1,6 +1,7 @@
 id: lavender_garden_peace
 title: Purple Fragrant Garden Plant
 name: Lavender Plant
+act: act_i_setting
 scientific_name: Lavandula angustifolia
 is_primary: false
 type: Botanical (Garden Herb)

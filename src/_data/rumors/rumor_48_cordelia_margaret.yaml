@@ -1,4 +1,5 @@
 id: rumor_48
+act: act_iii_investigation
 type: Rumor
 possession: INFLUENCER
 truth: false

@@ -1,45 +1,48 @@
 id: autopsy_alice
 type: Document (Medical)
 title: Autopsy Report - Alice Whitmore
-date: October 8, 1925
+act: act_iii_investigation
+date: October 11, 1925
 location: Mortuary
 examiner: Silas Blackwell (Mortician)
 content: |-
-  AUTOPSY EXAMINATION REPORT
-
-  Decedent: Alice Whitmore, Age 28
-  Date of Examination: October 8, 1925
-  Examining Pathologist: Silas Blackwell
-
-  EXTERNAL EXAMINATION:
+  # AUTOPSY EXAMINATION REPORT
+  
+  **Decedent:** Alice Whitmore  
+  **Age:** 24 years  
+  **Date of Examination:** October 11, 1925  
+  **Examining Pathologist:** Silas Blackwell
+  
+  ## EXTERNAL EXAMINATION
+  
   Body in moderate state of preservation. Significant lacerations and contusions observed on head. No defensive wounds on hands or arms.
-
-  HEAD TRAUMA:
+  
+  ## HEAD TRAUMA
+  
   - Posterior skull fracture with concentrated impact point
   - Bone fragmentation pattern
   - Blunt force trauma consistent with single heavy object impact
   - No evidence of multiple impacts
   - No defensive bruising on arms or hands
-
-  INTERNAL EXAMINATION:
-  - Cardiovascular: Normal for age
-  - Pulmonary: Normal
-  - Gastric contents: Indicates death 2-4 hours post-prandial
-  - Organ systems: No abnormal findings
-
-  FINAL DETERMINATION:
-  Death resulted from blunt force trauma to the posterior skull. Injury pattern is consistent with impact from heavy object delivered to unaware victim.
-
-  Pathologist: Silas Blackwell
-  Date signed: October 8, 1925
-character_interpretations:
-  mortician: I have my ancestor Silas's private notes about this examination. This official report says blunt force trauma—he documented the same thing. But Silas wrote privately that the injury pattern wasn't consistent with a fall down stairs. A concentrated impact point on the posterior skull indicates a single, deliberate strike with a heavy object. The bone fragmentation shows significant force. Someone struck her from behind while she was unaware. No defensive marks—she never saw it coming.
-  doctor: 'The medical findings here are clinically clear to me: posterior skull fracture with bone fragmentation from concentrated impact. That''s not accidental. The gastric contents show she died 2-4 hours after eating, which helps establish timeline. And notably, there are no defensive wounds. She didn''t fight back. She was struck from behind without warning. This was deliberate violence.'
-  psychic_medium: Alice's spirit carries the memory of this moment. The sudden violence, the impact from behind. She didn't see it coming. She was struck while unaware. There was an intention to kill her, not to cause injury that happened to be fatal. And fear—her fear is still bound to this place.
-  explorer: The injury pattern tells me about the crime scene. One concentrated impact point means one weapon, one assailant. That's not stairs; that's intention. Someone used the staircase as cover for what was actually a murder.
-  fiduciary: I have the death certificate signed by Dr. Thaddeus Crane that ruled this an accidental fall. But this autopsy report documents blunt force trauma from a heavy object. The medical findings don't support an accident—they support homicide. And yet the official determination was 'accidental.' Someone influenced that determination.
-  influencer: My podcast episode on 'The Three Deaths of October 1925' broke down Alice's case extensively. The official narrative is that she fell down the grand staircase at Montrose Estate. But I interviewed a structural engineer who reviewed the property layout—he said the way the injuries are described, you'd need an impact point on the back of the skull that doesn't match any staircase configuration at that mansion. My listeners have been speculating about this autopsy report for years. The concentrated impact suggests something much more deliberate than an accident.
-  baker: Alice Whitmore. She was just 22 years old when she died. The historical records say she was known for psychic abilities and strange visions. Reading this autopsy now—the concentrated head trauma, the injury pattern—I understand why people questioned the 'accidental fall' narrative even back then. My family has always passed down stories about strange happenings at that mansion. Maybe Alice's death was the beginning.
-  clockmaker: 'Alice Whitmore died October 7, 1925. The pocket watch I inherited has the Jupiter-Venus conjunction date: September 4, 1925. Historical records suggest Alice was sensitive to celestial patterns. If she noticed something significant about that alignment, if it connected to what was happening at the mansion... that could have made her dangerous to someone.'
-  dressmaker: Historical records mention Alice was very close to Cordelia—best friends, some sources say. My ancestor Elias's notes documented that Alice had unusual perceptive abilities that 'frightened people.' If Alice somehow sensed what was happening, if she started asking questions... she would have become a liability. An 'accidental fall' is the perfect way to silence someone permanently.
-  heiress: Alice Whitmore was Cordelia's closest friend. Reading this autopsy now, I understand why the 'accidental fall' story never satisfied historians. The concentrated impact point on her skull—that's not from falling down stairs. If she'd fallen, she'd have bruises on her arms from trying to catch herself, bruises on her legs from hitting steps. She has none of that. No defensive wounds at all. She was struck from behind while unaware. Someone murdered her deliberately. And the timing—just days before Sebastian's death and two weeks before Cordelia's—it's all connected to the tragedy that destroyed my family.
+  
+  ## INTERNAL EXAMINATION
+  
+  - **Cardiovascular:** Normal for age
+  - **Pulmonary:** Normal
+  - **Gastric contents:** Indicates death 2-4 hours post-prandial
+  - **Organ systems:** No abnormal findings
+  
+  ## FINAL DETERMINATION
+  
+  Death resulted from **blunt force trauma to the posterior skull**. Injury pattern is consistent with impact from heavy object delivered to unaware victim. Injury pattern inconsistent with accidental fall.
+  
+  ---
+  
+  **Pathologist:** Silas Blackwell  
+  **Date signed:** October 11, 1925
+  
+  ---
+  
+  **MARGIN NOTES:**
+  
+  **Concentrated impact point on posterior skull suggests deliberate strike from behind. No defensive wounds indicate victim was unaware. Injury pattern inconsistent with fall down stairs—recommend investigation into discrepancy between official cause of death and autopsy findings.**

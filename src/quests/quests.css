@@ -32,6 +32,10 @@
     list-style: none;
 }
 
+.clue-summary span {
+    flex: 1;
+}
+
 .clue-summary:hover {
     background-color: rgba(212, 165, 116, 0.1);
 }

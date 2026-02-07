@@ -1,6 +1,7 @@
 id: valerian_root
 title: Dried Earthen Root Powder
 name: Valerian Root
+act: act_iii_investigation
 scientific_name: Valeriana officinalis
 is_primary: true
 type: Botanical (Dried Herb)

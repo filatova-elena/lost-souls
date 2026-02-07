@@ -1,6 +1,7 @@
 id: vanilla_cherry_honey
 title: Sweet Amber Syrup Mixture
 name: Vanilla, Cherry Syrup, Honey
+act: act_iii_investigation
 scientific_name: Vanilla planifolia / Prunus / Apis mellifera
 is_primary: true
 type: Botanical (Jar)

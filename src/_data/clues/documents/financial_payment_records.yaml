@@ -1,6 +1,7 @@
 id: payment_records
 type: Document (Financial)
 title: Payment Records
+act: act_i_setting
 date: October 1925
 location: Mortuary
 content: |-

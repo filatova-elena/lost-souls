@@ -1,6 +1,7 @@
 id: ginger_root_preserved
 title: Tan Root Pieces in Jar
 name: Ginger Root
+act: act_i_setting
 scientific_name: Zingiber officinale
 is_primary: false
 type: Botanical (Dried Herb)

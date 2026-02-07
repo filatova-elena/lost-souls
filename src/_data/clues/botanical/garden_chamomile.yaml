@@ -1,6 +1,7 @@
 id: chamomile_calming_tea
 title: White and Yellow Flowered Plant
 name: Chamomile
+act: act_i_setting
 scientific_name: Matricaria chamomilla
 is_primary: false
 type: Botanical (Garden Herb)

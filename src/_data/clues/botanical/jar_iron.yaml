@@ -1,6 +1,7 @@
 id: iron_citrate
 title: Reddish-Brown Powder
 name: Iron Citrate
+act: act_iii_investigation
 scientific_name: C₆H₅O₇Fe
 is_primary: true
 type: Botanical (Jar)

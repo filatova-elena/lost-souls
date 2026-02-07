@@ -1,6 +1,7 @@
 id: foxglove_poison
 title: Purple Spotted Flowering Plant
 name: Foxglove
+act: act_iii_investigation
 scientific_name: Digitalis purpurea
 is_primary: true
 type: Botanical (Garden Herb)

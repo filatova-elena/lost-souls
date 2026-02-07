@@ -21,6 +21,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/fonts");
   eleventyConfig.addPassthroughCopy("src/quests/*.css");
   eleventyConfig.addPassthroughCopy("src/clues/*.css");
+  eleventyConfig.addPassthroughCopy("src/refs/*.css");
 
   // Add filters
   eleventyConfig.addFilter("json", function(value) {
@@ -37,6 +38,29 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("getClue", function(clueId, cluesData) {
     if (!clueId || !cluesData) return null;
     return cluesData.find(clue => clue.id === clueId) || null;
+  });
+
+  // Get rumor by ID
+  eleventyConfig.addFilter("getRumor", function(rumorId, rumorsData) {
+    if (!rumorId || !rumorsData) return null;
+    return rumorsData.find(rumor => rumor.id === rumorId) || null;
+  });
+
+  // Check if a key is a metadata key (for clue organization template)
+  eleventyConfig.addFilter("isMetaKey", function(key) {
+    return ["name", "purpose", "constraints", "notes"].includes(key);
+  });
+
+  // Get emoji icon for clue type
+  eleventyConfig.addFilter("typeIcon", function(type) {
+    if (!type) return "📝";
+    const t = type.toLowerCase();
+    if (t.includes("vision")) return "👁️";
+    if (t.includes("artifact") || t.includes("object")) return "🏺";
+    if (t.includes("document") || t.includes("medical") || t.includes("legal") || t.includes("financial")) return "📄";
+    if (t.includes("botanical")) return "🌿";
+    if (t.includes("newspaper")) return "📰";
+    return "📝";
   });
 
   // Add collection for characters

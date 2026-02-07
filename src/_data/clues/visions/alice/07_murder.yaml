@@ -2,4 +2,5 @@ id: alice_murder
 type: Vision (Alice)
 ghost: alice
 name: The Murder
+act: act_iii_investigation
 content: I died quickly! In seconds, maybe. Before I even understood what happened. A shadowy figure approached, I felt something heavy hit my head, then nothing. I was murdered, but that's all I know. [You feel the impact of violence. A sudden end. A mystery.]

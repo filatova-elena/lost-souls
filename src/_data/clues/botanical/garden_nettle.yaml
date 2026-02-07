@@ -1,6 +1,7 @@
 id: nettle_forgotten_patch
 title: Overgrown Stinging Plant Patch
 name: Stinging Nettle
+act: act_i_setting
 scientific_name: Urtica dioica
 is_primary: false
 type: Botanical (Garden Herb)
