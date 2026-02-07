@@ -1,4 +1,5 @@
 id: rumor_17
+act: act_i_setting
 type: Rumor
 possession: OTHER
 truth: true

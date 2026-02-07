@@ -1,6 +1,7 @@
 id: damiana
 title: Tropical Yellow Flower Specimen
 name: Damiana
+act: act_iii_investigation
 scientific_name: Turnera diffusa
 is_primary: true
 type: Botanical (Dried Herb)

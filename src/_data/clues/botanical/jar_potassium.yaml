@@ -1,6 +1,7 @@
 id: potassium_bromide
 title: White Crystalline Powder
 name: Potassium Bromide
+act: act_iii_investigation
 scientific_name: KBr
 is_primary: true
 type: Botanical (Jar)

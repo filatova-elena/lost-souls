@@ -1,5 +1,6 @@
 id: glass_bottle_venetian
 name: Ornate Venetian Glass Bottle
+act: act_i_setting
 type: Artifact (Object)
 appearance: Decorative bottle of venetian glass with gold leaf detailing and ornate stopper.
 skills:

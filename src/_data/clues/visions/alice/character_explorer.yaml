@@ -3,5 +3,6 @@ type: Vision (Alice)
 ghost: alice
 to_character: explorer
 name: Brother's Return
+act: act_iii_investigation
 content: |
   Thosmas? Brother? You are back from your travels, they said you were lost at sea.

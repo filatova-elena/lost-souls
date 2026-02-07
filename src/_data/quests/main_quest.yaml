@@ -1,5 +1,5 @@
 id: main_quest
-title: The Lost Souls of Kennebec Avenue
+title: The Lost Souls Murder Mystery
 emojis: 👻
 subtitle: The Complete Mystery
 type: major
@@ -10,7 +10,7 @@ content: |
 
   **Miss Montrose,**
 
-  "We are writing to inform you that you are the heir to the Montrose family estate located at 266 Kennebec Avenue, Long Beach, California. The property has been held in trust for several decades, and our records indicate you are the closest living relative with a legal claim..."
+  "We are writing to inform you that you are the heir to the Montrose family estate located at Montrose Mansion, Long Beach, California. The property has been held in trust for several decades, and our records indicate you are the closest living relative with a legal claim..."
 
   The Heiress—tired of her overbearing family, hungry for independence—saw opportunity. A mansion of her own? In Long Beach? How glamorous. How perfect.
 
@@ -86,17 +86,17 @@ content: |
 
   He stages it to look like an accidental fall. People will believe it—Alice was "unstable," she had "episodes." A tragic accident.
 
-  ### October 12-13, 1925 - Sebastian Dies
+  ### October 11, 1925 - Sebastian Dies
 
   Sebastian Crane succumbs to foxglove poisoning. He dies thinking his own formula failed, that his "Great Work" was flawed.
 
   He never knows the truth: his brother corrupted his harmless elixir. He was innocent all along.
 
-  Official cause: Poisoning, suspected homicide. Everyone believes the mob (Frankie Romano) or his criminal dealings caught up with him.
+  Official cause: Suspected accidental poisoning. Everyone believes the mob (Frankie Romano) or his criminal dealings caught up with him.
 
-  ### October 18, 1925 - Cordelia's Death
+  ### October 17, 1925 - Cordelia's Death
 
-  Six weeks after the first poisoned dose, Cordelia Montrose dies. Her body, weakened by 44 days of accumulated foxglove, gives out. Cardiac arrest. Multiple organ failure.
+  Six weeks after the first poisoned dose, Cordelia Montrose dies. Her body, weakened by 43 days of accumulated foxglove, gives out. Cardiac arrest. Multiple organ failure.
 
   Official cause: Heart failure, natural causes. Rumors spread that she died of a broken heart, devastated by Sebastian's death.
 
@@ -133,9 +133,9 @@ content: |
 
   ### The Cursed Alchemist - Sebastian Montgomery Crane
 
-  **Age at death:** 32 years old  
-  **Date of death:** October 12-13, 1925  
-  **Official cause:** Poisoning, suspected homicide  
+  **Age at death:** 30 years old  
+  **Date of death:** October 11, 1925  
+  **Official cause:** Suspected accidental poisoning  
   **Actual cause:** Accidentally poisoned by his own formula (which his brother had sabotaged)
 
   Sebastian was a talented apothecary and bootlegger known as "The Alchemist" in Frankie Romano's organization. He created an "Elixir of Eternal Love"—a harmless romantic potion designed to strengthen his bond with his fiancée Cordelia.
@@ -153,7 +153,7 @@ content: |
   **Age at death:** 26 years old  
   **Date of death:** October 18, 1925  
   **Official cause:** Heart failure, natural causes  
-  **Actual cause:** Slow poisoning with foxglove over 44 days
+  **Actual cause:** Slow poisoning with foxglove over 43 days
 
   Cordelia appears by the piano, playing a haunting melody, crying for her lost daughter and lost loves. She was once a romantic dreamer who believed in destiny.
 
@@ -225,9 +225,9 @@ content: |
 
   #### ✅ TRUTH: Dr. Thaddeus Poisoned Cordelia
 
-  **Reality:** Dr. Thaddeus sabotaged Sebastian's harmless elixir by adding concentrated foxglove, intending to kill Cordelia to prevent her from exposing his affair. Sebastian unknowingly administered the poison daily from September 4 to October 6. Cordelia died October 18 from accumulated toxin damage.
+  **Reality:** Dr. Thaddeus sabotaged Sebastian's harmless elixir by adding concentrated foxglove, intending to kill Cordelia to prevent her from exposing his affair. Sebastian unknowingly administered the poison daily from September 4 to October 6. Cordelia died October 17 from accumulated toxin damage.
 
-  **Evidence:** Dr. Thaddeus's confession, medical analysis showing cumulative foxglove poisoning over 6 weeks, Sebastian's original harmless formula vs. corrupted version, Cordelia's diary showing she threatened Thaddeus, timeline (first dose Sept 4, death Oct 18 = 44 days).
+  **Evidence:** Dr. Thaddeus's confession, medical analysis showing cumulative foxglove poisoning over 6 weeks, Sebastian's original harmless formula vs. corrupted version, Cordelia's diary showing she threatened Thaddeus, timeline (first dose Sept 4, death Oct 17 = 43 days).
 
 clue_organization:
   act_i_setting:

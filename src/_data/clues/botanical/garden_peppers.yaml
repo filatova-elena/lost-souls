@@ -1,6 +1,7 @@
 id: spicy_peppers_garden
 title: Colorful Fruiting Garden Plants
 name: Spicy Peppers
+act: act_i_setting
 scientific_name: Capsicum annuum
 is_primary: false
 type: Botanical (Garden Herb)

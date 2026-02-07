@@ -1,77 +1,694 @@
-# Clue organization structure for quests
+# Comprehensive Plot Points by Act
+# Organized by story arcs / character threads
+# Each plot point has description, clues array, and rumors array (when available)
+# Backup of previous version saved as clue_organization_backup.yaml
+
+# ============================================================
+# ACT I: THE SETTING
+# ============================================================
 act_i_setting:
   name: "Act I: The Setting"
-  purpose: "Draw players into the world, establish relationships, set the scene"
-  contains:
-    - "Character relationships and dynamics"
-    - "Poetic/atmospheric elements that set the mood"
-    - "The 'normal' state before the mystery"
-    - "Romantic, emotional, or historical context"
-    - "World-building details"
-  examples:
-    - "Romantic philosophy and visions"
-    - "Beautiful artifacts and vessels"
-    - "Character introductions and relationships"
-    - "Historical context and family dynamics"
-    - "Emotional moments and tender scenes"
+  purpose: "Establish the haunted mansion, introduce the three ghosts, set up the mystery"
+  constraints:
+    - NO Alice Whitmore ghost yet
+    - NO Sebastian visions (romantic nature shown through written notes only)
+    - NO formula details or "great work" references
+    - NO elixir mentioned
+    - NO Thomas Whitmore romance details
+    - NO Thaddeus-Alice romance explicitly stated
+    - NO Elias Monroe feelings for Cordelia
+    - NO death details or causes
+    - NO Eleanor identity or name
 
+  arrival_and_ghosts:
+    - description: "Heiress identified as heir tracked down by Fiduciary"
+      clues: []
+    - description: "Three ghosts identified: Cordelia, Sebastian, Alice"
+      clues: []
+      rumors:
+        - rumor_21
+        - rumor_71
+    - description: "Sebastian is Thaddeus's brother and is engaged to Cordelia"
+      clues:
+        - birth_cert_sebastian
+        - prenup_agreement
+    - description: "Alice is established as Cordelia's friend"
+      clues: []
+      rumors:
+        - rumor_04
+    - description: "Thomas Whitmore mentioned vaguely"
+      clues: []
+
+  cordelia:
+    - description: "Cordelia's romantic nature established through her diary - meeting Sebastian in garden, mentions Thomas vaguely"
+      clues:
+        - cordelia_1925_08_15_sebastian
+        - portrait_young_cordelia
+    - description: "Benign atmospheric visions (NO elixir, NO deaths, NO confrontation) - mentions Thomas and Sebastian, romantic nature, sees Thaddeus and Alice together, concern for friend, vague sense of doom"
+      clues:
+        - cordelia_lost_loves
+        - cordelia_garden_betrayal
+        - cordelia_premonition
+        - cordelia_character_dressmaker
+        - cordelia_character_doctor
+        - cordelia_character_explorer
+
+  sebastian:
+    - description: "Black sheep of the family, romantic philosopher - romantic philosophy about love as chemistry (1920, pre-elixir context)"
+      clues:
+        - sebastian_1920_03_15_first_principles
+
+  thaddeus:
+    - description: "Respected doctor whose patient notes reveal arrogance and condescension - dismissive attitude, pattern of dismissiveness"
+      clues:
+        - thaddeus_patient_1924_06_15_alice_whitmore
+        - thaddeus_patient_1924_07_02_alice_whitmore_followup
+        - thaddeus_patient_1924_07_15_mrs_catherine_harrington
+        - thaddeus_patient_1925_08_12_alice_whitmore
+        - thaddeus_patient_1925_08_20_mr_edmund_ashford
+        - thaddeus_patient_1925_09_05_miss_violet_chen
+    - description: "Early fascination with Alice through diary entries - intellectual superiority, philosophical notes, first diary mention of Alice, fascination with Alice, acknowledges risk of his fascination"
+      clues:
+        - thaddeus_1924_03_11_on_dr_morrison_and_lesser_minds
+        - thaddeus_1924_03_15_on_patients_and_belief
+        - thaddeus_1924_07_02_alice
+        - thaddeus_1924_07_02_electric_contact
+        - thaddeus_1924_07_03_the_risk
+      rumors:
+        - rumor_14
+    - description: "Cold perspective on love and family - dismissive of love, 'biological impulse dressed up in sentiment'"
+      clues:
+        - thaddeus_1925_03_14_sebastians_engagement
+
+  elias:
+    - description: "Wedding dress clue unlocked - unfinished dress, Cordelia died before wedding - the physical artifact, professional measurements, no feelings"
+      clues:
+        - cordelia_wedding_dress
+        - elias_1925_09_15_measurements_wedding_dress_cordelia_montrose
+      rumors:
+        - rumor_18
+    - description: "Elias Monroe introduced as the dressmaker (NOT his feelings about Cordelia yet)"
+      clues: []
+
+  romano:
+    - description: "Frankie Romano's reputation at the port established - photograph establishing Romano, business manifests from port operations"
+      clues:
+        - vintage_photograph_romano
+        - shipping_manifests_romano
+      rumors:
+        - rumor_05
+        - rumor_39
+        - rumor_50
+        - rumor_66
+        - rumor_70
+
+  mysterious_objects:
+    - description: "Pocket watch exists with engraving 'September 4, 1925 - 6:14 AM' and astronomical symbols - connection unclear"
+      clues:
+        - pocket_watch
+      rumors:
+        - rumor_61
+    - description: "Venetian glass bottle exists, passed through Harbor Import & Trading Co. - connection unclear"
+      clues:
+        - glass_bottle_venetian
+      rumors:
+        - rumor_19
+    - description: "Botanical ingredients found but nothing connecting them to any elixir"
+      clues:
+        - ginseng_root
+        - rose_otto
+
+  cover_up_hints:
+    - description: "Someone paid off the mortician but we don't know who or what for - $500 payment, recipient and payer unclear"
+      clues:
+        - payment_records
+      rumors:
+        - rumor_25
+        - rumor_16
+
+  eleanor_hints:
+    - description: "Eleanor's recipe found (1939) - vague connection to Montrose family"
+      clues:
+        - eleanor_1939_the_recipe
+    - description: "Photograph of unknown baby found among possessions"
+      clues:
+        - photograph_eleanor_baby
+
+  rumors:
+    - description: "Sebastian Crane known as 'The Alchemist' - mysterious operations at harbor with Romano family"
+      clues: []
+      rumors:
+        - rumor_01
+    - description: "Sebastian obsessed with astronomical events and planetary alignments"
+      clues: []
+      rumors:
+        - rumor_17
+    - description: "Montrose family has always been respectable, honest, upstanding"
+      clues: []
+      rumors:
+        - rumor_12
+    - description: "Romano family controlled everything at the port"
+      clues: []
+      rumors:
+        - rumor_05
+        - rumor_66
+    - description: "Harbor Import & Trading Co. was Frankie Romano's operation - legitimate front for bootlegging"
+      clues: []
+      rumors:
+        - rumor_39
+        - rumor_70
+    - description: "Frankie Romano's bootlegging empire - warehouses, shipping operations"
+      clues: []
+      rumors:
+        - rumor_50
+    - description: "Venetian glass bottles imported through Romano operation for 'medicinal purposes'"
+      clues: []
+      rumors:
+        - rumor_19
+    - description: "Cordelia's favorite was special rose bread from a baker"
+      clues: []
+      rumors:
+        - rumor_15
+        - rumor_68
+    - description: "Wedding dress was made for Cordelia but she never wore it"
+      clues: []
+      rumors:
+        - rumor_18
+    - description: "Cordelia Montrose's ghost haunts the mansion"
+      clues: []
+      rumors:
+        - rumor_21
+        - rumor_71
+    - description: "Alice Whitmore was strange - had visions, knew things before they happened"
+      clues: []
+      rumors:
+        - rumor_04
+
+  atmospheric:
+    note: "Decorative and atmospheric clues available throughout the experience"
+    clues:
+      - portrait_margaret_montrose
+      - rose_garden_bed
+      - ray_turner_book
+      - woman_on_balcony
+      - bears_in_forest
+      - flamenco_dancer
+      - chamomile_calming_tea
+      - lavender_garden_peace
+      - rosemary_herb_clue
+      - sage_smudging_spiritual
+      - thyme_healing_herb
+      - nettle_forgotten_patch
+      - spicy_peppers_garden
+      - ginger_root_preserved
+      - plant_specimens
+
+# ============================================================
+# ACT II: THE MYSTERY EMERGES
+# ============================================================
 act_ii_mystery_emerges:
   name: "Act II: The Mystery Emerges"
-  purpose: "Introduce the problem, raise questions, begin investigation"
-  contains:
-    - "First signs something is wrong"
-    - "Initial symptoms or anomalies"
-    - "Early suspicions or questions"
-    - "Beginning of the investigation"
-    - "Characters noticing problems"
-  examples:
-    - "Characters becoming ill or showing symptoms"
-    - "Realizations that something is wrong"
-    - "Initial confusion and questions"
-    - "First suspicious observations"
+  purpose: "Introduce the three deaths, reveal romances, raise questions about what really happened"
+  constraints:
+    - NO baby (Cordelia/Thomas romance revealed without baby)
+    - NO Cordelia discovering Thaddeus-Alice affair (romance revealed, not her discovery or confrontation)
+    - NO exact formula or complete ingredient list with proportions
+    - NO treasure location, map, or purple/gold vase
+    - NO death record discrepancies (official causes accepted at face value)
+    - NO who murdered them or who paid mortician
+    - "NO Eleanor's name mentioned anywhere"
+    - NO inheritance questions or trust records
+    - "NO Sebastian dying or realizing he is affected (he notices Cordelia sick only)"
 
+  cordelia:
+    - description: "Romance with Thomas Whitmore revealed - first love lost at sea (NOT the baby) - mentions Thomas in context of moving on, Sebastian proposed"
+      clues:
+        - cordelia_1925_09_02_the_proposal
+      rumors:
+        - rumor_54
+        - rumor_02
+    - description: "Cordelia begins the elixir ritual, sees it as romantic gesture from Sebastian - first dose, 'sacred ceremony,' taste described, vision of Sebastian giving it with tenderness"
+      clues:
+        - cordelia_1925_09_04_the_ritual_begins
+        - cordelia_the_elixir
+    - description: "Cordelia develops symptoms but attributes them to stress - heaviness, irregular heartbeat, Sebastian notices, exhaustion, nausea, keeps drinking elixir, vision of headaches and trembling"
+      clues:
+        - cordelia_1925_10_06_unease
+        - cordelia_1925_10_08_fatigue
+        - cordelia_symptoms
+
+  sebastian:
+    - description: "Sebastian's elixir introduced as his 'great work' (NOT exact formula or proportions) - saw Cordelia, spoke to Hartley, mentions ginseng, formula testing, Thaddeus asked about foxglove, names 'Elixir of Eternal Love,' Venetian bottle, jealousy of Elias, faith in elixir ritual, ritual begins, Cordelia drinks"
+      clues:
+        - sebastian_1925_08_01_cordelia
+        - sebastian_1925_08_15_refinement_and_urgency
+        - sebastian_1925_08_18_the_vessel
+        - sebastian_1925_08_25_the_dressmaker
+        - sebastian_1925_09_04_the_beginning
+      rumors:
+        - rumor_01
+        - rumor_41
+    - description: "Sebastian visions introduce the elixir as his masterpiece - Jupiter-Venus conjunction, administered elixir Sept 4, vision of flawless formula, years of work, vision of brother recognition"
+      clues:
+        - sebastian_conjunction
+        - sebastian_masterpiece
+        - sebastian_character_doctor
+      rumors:
+        - rumor_17
+    - description: "Hartley consultations establish the elixir was verified harmless (NOT formula details) - ingredients approved, entirely harmless, ginseng inert at those concentrations, all ratios appropriate, no toxic components"
+      clues:
+        - hartley_1925_08_02_initial_inquiry_the_young_pharmacist
+        - hartley_1925_08_10_second_consultation_refinements_and_questions
+        - hartley_1925_08_22_third_consultation_the_final_formula
+    - description: "Pocket watch connection to conjunction timing established - Thaddeus gave watch engraved with conjunction date, card explains watch as engagement gift"
+      clues:
+        - sebastian_1925_08_15_the_watch
+        - thaddeus_1925_08_15_engagement_present_card_from_thaddeus
+      rumors:
+        - rumor_61
+    - description: "Sebastian notices Cordelia getting sick, grows suspicious of the elixir - taste is off, color different, tests small dose, Cordelia fatigued, vision of noticing headaches, nausea, trembling, vision of asking Thaddeus, told 'nothing serious, just nerves'"
+      clues:
+        - sebastian_1925_10_05_discrepancy
+        - sebastian_cordelia_sick
+        - sebastian_thaddeus_advice
+
+  thaddeus:
+    - description: "Romance of Thaddeus and Alice becomes known through rumors and context of Act I patient notes"
+      clues: []
+      rumors:
+        - rumor_14
+    - description: "No new Thaddeus clue IDs in Act II - the romance is revealed through Act I entries gaining context plus rumors"
+      clues: []
+
+  elias:
+    - description: "Elias Monroe's unrequited love for Cordelia revealed - love poem: 'My heart lies shattered on her garden floor,' watching her fade, stitching love into seams"
+      clues:
+        - elias_1925_08_20_for_cordelia_unsent
+        - elias_1925_10_08_watching_her_unsent
+      rumors:
+        - rumor_07
+        - rumor_47
+        - rumor_49
+        - rumor_67
+    - description: "Elias notices Cordelia is unwell, suspects Sebastian's 'tonic' - sees Cordelia pale, trembling, mentions tonic: 'What kind of tonic makes someone this ill?'"
+      clues:
+        - elias_1925_09_25_something_is_wrong
+
+  romano:
+    - description: "Frankie's port operation connected to Sebastian - smuggling and shipping - Harbor Import & Trading Co. shipping records, purchase records, Crane Apothecary, 'La Stella Nuova' boat registry"
+      clues:
+        - romano_shipping
+        - sebastian_pharmacy_orders
+        - boat_registration_marina
+      rumors:
+        - rumor_65
+        - rumor_40
+        - rumor_41
+    - description: "Sebastian's argument with Frankie at the port (rumored/implied)"
+      clues: []
+      rumors:
+        - rumor_42
+        - rumor_43
+        - rumor_51
+        - rumor_52
+    - description: "Some clues pointing at treasure existence (NO location, NO map, NO vase)"
+      clues: []
+      rumors:
+        - rumor_59
+        - rumor_60
+
+  deaths_official:
+    - description: "Three death certificates available with official causes - Accidental Fall, Suspected Accidental Poisoning, Heart Failure (natural causes from grief)"
+      clues:
+        - death_cert_alice
+        - death_cert_sebastian
+        - death_cert_cordelia
+    - description: "All three deaths within 11 days at Montrose Estate, all signed by Dr. Thaddeus Crane"
+      clues: []
+    - description: "Sebastian's death reported in newspaper"
+      clues:
+        - sebastian_crane_death_newspaper
+    - description: "Official causes accepted at face value - suspicions raised only through rumors"
+      clues: []
+
+  rumors:
+    - description: "Frankie Romano killed Sebastian (dock argument, mob retaliation, wanted out of operation)"
+      clues: []
+      rumors:
+        - rumor_09
+        - rumor_73
+    - description: "Montrose family killed Sebastian (eliminated him to protect reputation)"
+      clues: []
+    - description: "Elias Monroe killed Sebastian (jealous dressmaker obsessed with Cordelia)"
+      clues: []
+      rumors:
+        - rumor_07
+    - description: "Cordelia died of broken heart (pined away after Sebastian's death)"
+      clues: []
+      rumors:
+        - rumor_10
+    - description: "Sebastian poisoned Cordelia (jealous, obsessive, deliberate poisoning)"
+      clues: []
+      rumors:
+        - rumor_13
+        - rumor_74
+    - description: "Alice fell down stairs (accidental fall, possibly drunk, fragile and troubled)"
+      clues: []
+      rumors:
+        - rumor_11
+    - description: "Alice committed suicide (unstable, took her own life)"
+      clues: []
+      rumors:
+        - rumor_22
+    - description: "Montrose family paid off mortician/officials to protect reputation"
+      clues: []
+      rumors:
+        - rumor_08
+        - rumor_16
+    - description: "Sebastian and Frankie had secret partnership at docks"
+      clues: []
+      rumors:
+        - rumor_65
+    - description: "Romano treasure might be hidden at Montrose mansion"
+      clues: []
+      rumors:
+        - rumor_60
+    - description: "Elias Monroe was obsessed with Cordelia"
+      clues: []
+      rumors:
+        - rumor_07
+        - rumor_45
+        - rumor_46
+        - rumor_47
+        - rumor_67
+    - description: "Cordelia had romance with Thomas Whitmore (baby NOT mentioned)"
+      clues: []
+      rumors:
+        - rumor_54
+    - description: "Dr. Crane was having an affair with Cordelia (FALSE - misdirection, truth is Thaddeus-Alice)"
+      clues: []
+      rumors:
+        - rumor_23
+    - description: "Cordelia secretly writing love letters not to Sebastian (FALSE - misdirection)"
+      clues: []
+      rumors:
+        - rumor_58
+    - description: "Cordelia used rose garden for secret meetings (FALSE - misdirection)"
+      clues: []
+      rumors:
+        - rumor_62
+    - description: "Cordelia socialite, vanished for months in 1924, friendly with Elias (FALSE)"
+      clues: []
+      rumors:
+        - rumor_45
+    - description: "Sebastian was blackmailing Frankie Romano over botanical secret (FALSE)"
+      clues: []
+      rumors:
+        - rumor_42
+
+# ============================================================
+# ACT III: THE INVESTIGATION
+# ============================================================
 act_iii_investigation:
   name: "Act III: The Investigation"
-  purpose: "Provide informational clues, build the case, narrow possibilities"
-  contains:
-    - "Factual documentation (formulas, records, certificates)"
-    - "Expert consultations and verifications"
-    - "Individual pieces of evidence"
-    - "Suspicious behavior or inconsistencies"
-    - "Autopsy reports, medical findings"
-    - "Timeline reconstruction"
-  examples:
-    - "Complete formula documentation"
-    - "Expert consultations proving safety/harmlessness"
-    - "Individual ingredient/artifact details"
-    - "Suspicious behavior and cover-up attempts"
-    - "Medical reports and autopsy findings"
-    - "Financial records and documents"
+  purpose: "Build the case - evidence contradicts official story, competing narratives examined, suspicions increase"
+  constraints:
+    - NO who murdered them (Thaddeus not identified as killer)
+    - NO who paid off mortician
+    - NO crystal ball
+    - NO blood specs on silver candleholder (murder weapon)
+    - NO trust records revealing inheritance to Eleanor
+    - NO Eleanor identified as Cordelia's daughter
+    - "Torn diary pages visible but damaged - guilt fragments readable, full confession NOT readable"
+    - "Sebastian blames himself in all his visions - does NOT implicate Thaddeus"
 
+  alice:
+    - description: "Ghost of Alice Whitmore appears to share her autopsy report - inconsistent with 'Accidental Fall' - 'Finally someone can hear me! Cordelia was dying and she didn't even know it.'"
+      clues:
+        - alice_first_contact
+    - description: "Alice's visions reveal her story - she knew about the poisoning, urged confession, was murdered - 'It's that tea! I KNOW!' knows about the poisoned elixir, Thaddeus believed her psychic abilities when no one else would, 'I tried to tell Thaddeus. He did nothing,' 'I told him I'd tell EVERYONE. I urged him to confess!' vague accusation doesn't name who, 'A shadowy figure approached, something heavy hit my head' doesn't identify murderer"
+      clues:
+        - alice_the_tea
+        - alice_he_believed_me
+        - alice_thaddeus_inaction
+        - alice_urged_confession
+        - alice_dangerous_knowledge
+        - alice_murder
+      rumors:
+        - rumor_04
+        - rumor_56
+    - description: "Alice character visions (atmospheric, character-specific) - 'Thaddeus??? Is that you?' 'Thomas? Brother? You are back from your travels'"
+      clues:
+        - alice_character_doctor
+        - alice_character_explorer
+
+  deaths_and_cover_up:
+    - description: "All three autopsy reports become available, revealing inconsistencies with official causes - injury pattern inconsistent with accidental fall, organ damage shows systematic poisoning over time, poisoning pattern shows 6-8 weeks cumulative toxin accumulation"
+      clues:
+        - autopsy_alice
+        - autopsy_sebastian
+        - autopsy_cordelia
+      rumors:
+        - rumor_08
+        - rumor_16
+        - rumor_25
+    - description: "Silas Blackwell's private journal confirms suspicions about all three deaths - first observations and suspicions, more suspicions after second death, confirms cover-up, documenting discrepancies"
+      clues:
+        - silas_1925_10_07_entry_1
+        - silas_1925_10_11_entry_2
+        - silas_1925_10_18_entry_3
+      rumors:
+        - rumor_25
+        - rumor_16
+
+  sebastian:
+    - description: "Sebastian's complete elixir formula discovered with exact proportions - complete formula document, detailed proportions: damiana 3 parts, valerian 2, etc."
+      clues:
+        - sebastian_elixir_formula
+        - sebastian_1920_07_22_the_component_mathematics
+      rumors:
+        - rumor_01
+    - description: "Remaining elixir ingredients found and identifiable"
+      clues:
+        - damiana
+        - valerian_root
+        - potassium_bromide
+        - calcium_lactate
+        - iron_citrate
+        - grain_alcohol
+        - vanilla_cherry_honey
+    - description: "Hartley's later notes confirm formula was harmless - raise questions about what changed - Thaddeus asks about safety, 'seemed disappointed,' 'The formula was safe. I verified this. Didn't I?'"
+      clues:
+        - hartley_1925_10_15_unusual_visit_the_brother
+        - hartley_1925_10_20_reflection_news_of_tragedy
+    - description: "Sebastian realizes something is terribly wrong (blames himself, NOT Thaddeus) - 'I am dying. And I deserve to be.' Self-blame, vision of Cordelia getting worse, doesn't understand why, vision of testing concentrated dose on self, vision of drinking directly from bottle, vision of flawed great work and arrogance, vision of brother trying to help (makes Thaddeus look sympathetic), vision of Frankie Romano didn't do this, vision of apology to Cordelia, vision of dying worried about Cordelia"
+      clues:
+        - sebastian_1925_10_06_understanding
+        - sebastian_growing_horror
+        - sebastian_self_test
+        - sebastian_poisoned
+        - sebastian_guilt
+        - sebastian_brother_helped
+        - sebastian_not_romano
+        - sebastian_apology
+        - sebastian_final_moments
+
+  thaddeus:
+    - description: "Thaddeus's diary discovered (everything EXCEPT hidden/torn pages) - dismisses 'Elixir of Eternal Love,' examines elixir, 'noted every ingredient,' mentions foxglove to Sebastian for 'cardiac applications,' sleeplessness, observations about the ritual, Sebastian arrives ill, examines Sebastian, herbal tea notes, observation notes, 'Sebastian is dead. His heart simply... stopped.'"
+      clues:
+        - thaddeus_1925_08_04_sebastians_foolish_formula
+        - thaddeus_1925_08_06_the_bottle
+        - thaddeus_1925_09_01_on_foxglove
+        - thaddeus_1925_10_06_insomnia
+        - thaddeus_1925_10_07_the_ritual
+        - thaddeus_1925_10_09_sebastians_arrival
+        - thaddeus_1925_10_09_the_examination
+        - thaddeus_1925_10_09_the_herbal_tea
+        - thaddeus_1925_10_11_observation
+        - thaddeus_1925_10_11_the_heart_stops
+      rumors:
+        - rumor_44
+    - description: "Torn/water-damaged pages visible showing fragments of guilt - full text unreadable - NOTE: torn_pages_regret exists but full content is Act IV"
+      clues: []
+    - description: "Thaddeus's antidote search notes reveal increasing panic and desperation - calm initial assessment of Sebastian, seeks expert help, trying remedy combinations, final desperate attempt"
+      clues:
+        - thaddeus_1925_10_07_initial_assessment
+        - thaddeus_1925_10_07_request_for_botanical_consultation
+        - thaddeus_1925_10_09_hawthorn_and_willow_bark_combination
+        - thaddeus_1925_10_11_morning_october_11
+    - description: "Foxglove investigation - Thaddeus's requests and the plant itself - handwritten request for foxglove, purple spotted flowering plant with toxic properties"
+      clues:
+        - thaddeus_foxglove_request
+        - foxglove_poison
+
+  cordelia:
+    - description: "Cordelia discovers Thaddeus and Alice affair, confronts him - went to Thaddeus, threatened to expose, he dismissed her, vision: 'I confronted him. I told him I would expose him.'"
+      clues:
+        - cordelia_1925_09_10_alice
+        - cordelia_confrontation
+      rumors:
+        - rumor_23
+    - description: "Cordelia's world unravels - Sebastian dying, getting sicker, Alice dead - Sebastian confesses something wrong with elixir, 'Sebastian is dead.' Processing grief, barely leave bed, Thaddeus says grief, learns Alice dead, guilt about not protecting her, vision of terrible news, vision of Alice didn't fall, vision of Sebastian too poisoned, vision of Thaddeus visits, she begins to suspect"
+      clues:
+        - cordelia_1925_10_09_sebastian_is_dying
+        - cordelia_1925_10_11_alone
+        - cordelia_1925_10_15_the_weight_increases
+        - cordelia_1925_10_17_alice_is_dead
+        - cordelia_terrible_news
+        - cordelia_alice_death
+        - cordelia_sebastian_death
+        - cordelia_thaddeus_visit
+
+  eleanor:
+    - description: "Progression of photographs hint at Eleanor's existence but not exact identity - child photograph, adolescent photograph"
+      clues:
+        - photograph_eleanor_child
+        - photograph_eleanor_adolescent
+      rumors:
+        - rumor_06
+        - rumor_53
+    - description: "Margaret's letter hints at secret baby without stating outright"
+      clues:
+        - margaret_1925_05_letter_regarding_discretion_and_family_arrangement
+      rumors:
+        - rumor_06
+        - rumor_48
+    - description: "Rose bread recipe from Cordelia mentions Eleanor by name (first explicit name mention) - 'I want Eleanor to have this'"
+      clues:
+        - elias_1925_10_02_rose_bread_recipe_from_cordelia
+      rumors:
+        - rumor_15
+        - rumor_68
+    - description: "Eleanor begins searching for her origins - Eleanor learns she was adopted, sees birth mother's photo"
+      clues:
+        - eleanor_1939_the_photographs
+      rumors:
+        - rumor_20
+        - rumor_69
+    - description: "Dr. Thaddeus Crane had a child he never claimed (FALSE - misdirection about who the parent is)"
+      clues: []
+      rumors:
+        - rumor_57
+
+# ============================================================
+# ACT IV: THE REVELATION
+# ============================================================
 act_iv_revelation:
   name: "Act IV: The Revelation"
-  purpose: "Directly answer the quest objective"
-  contains:
-    - "The key piece that solves the mystery"
-    - "Confession or definitive proof"
-    - "The 'who,' 'what,' or 'how' revealed"
-    - "The truth that answers the objective"
-  examples:
-    - "The poison/murder weapon revealed"
-    - "Confessions and admissions"
-    - "Expert confirmations of the truth"
-    - "The tragic truth and final realizations"
+  purpose: "Reveal the complete truth - Thaddeus murdered all three, the motive, the method, the cover-up"
 
-act_v_aftermath:
-  name: "Act V: The Aftermath"
-  purpose: "Show consequences, complete the picture, emotional resolution"
-  optional: true
-  contains:
-    - "Long-term consequences"
-    - "Character reflections"
-    - "Historical context or legacy"
-    - "Final emotional beats"
-  examples:
-    - "Later reflections and character thoughts"
-    - "Impact on other characters"
-    - "Historical documentation of consequences"
+  thaddeus_confession:
+    - description: "Hidden diary pages now fully readable - Thaddeus poisoned the elixir with foxglove - FULL TEXT: confesses poisoning formula with foxglove, Alice confronted him, admits he's a murderer and coward"
+      clues:
+        - thaddeus_1925_10_10_torn_pages_regret
+      rumors:
+        - rumor_44
+    - description: "Thaddeus's final diary entries reveal his perspective on Cordelia's death - sat with Cordelia as she died, clinical notes, 'She was innocent... A casualty of circumstances,' 'I have become something else entirely'"
+      clues:
+        - thaddeus_1925_10_18_cordelias_final_hours
+        - thaddeus_1925_10_18_the_aftermath
+        - thaddeus_1925_10_19_the_man_i_was
+
+  murder_evidence:
+    - description: "Physical evidence confirms the murders - Alice's crystal ball, key evidence, blood on silver candleholder, weapon that killed Alice"
+      clues:
+        - crystal_ball
+        - blood_specs
+
+  cordelia_final_truth:
+    - description: "Cordelia's final entries reveal Eleanor is her daughter - 'Eleanor. My daughter.' Full revelation of secret baby"
+      clues:
+        - cordelia_1925_10_18_final_thoughts
+      rumors:
+        - rumor_06
+        - rumor_02
+        - rumor_53
+    - description: "Cordelia's visions reveal maternal longing and final moments - vision: 'My daughter. The baby I had to give away,' vision: 'So many secrets still buried'"
+      clues:
+        - cordelia_thoughts_of_eleanor
+        - cordelia_final_moments
+
+  alice_final_revelations:
+    - description: "Alice's remaining visions reveal family connections and the full truth - 'I am NOT crazy! They were VISIONS!' 'My brother Thomas... he loved her too' (Thomas is Alice's brother), 'Thaddeus, I still love him,' 'Tell her what he did! Tell her it wasn't her fault!' 'Thomas and Cordelia. 1924. She disappeared for months...' (hints at baby timeline)"
+      clues:
+        - alice_not_crazy
+        - alice_brother_thomas
+        - alice_love_for_thaddeus
+        - alice_message_for_cordelia
+        - alice_timeline_discovery
+      rumors:
+        - rumor_04
+        - rumor_14
+        - rumor_56
+
+  eleanor_identity:
+    - description: "Eleanor's full identity revealed - Cordelia's secret daughter with Thomas Whitmore - inheritance records revealing Eleanor, Crane family name change documentation, Elena DiMarco marriage certificate, Sebastian Crane and Cordelia Montrose prenup"
+      clues:
+        - trust_records
+        - name_change_docs
+        - marriage_certificate_dimarco
+        - prenup_agreement
+      rumors:
+        - rumor_06
+        - rumor_20
+        - rumor_24
+        - rumor_53
+        - rumor_69
+    - description: "Eleanor's own writings reveal her search for identity - 'Who Am I?' searching for truth about her origins, more questions about identity, discovery of the truth, 'I Don't Belong Anywhere'"
+      clues:
+        - eleanor_1939_who_am_i
+        - eleanor_1944_questions
+        - eleanor_1948_discovery
+        - eleanor_1948_i_dont_belong_anywhere
+      rumors:
+        - rumor_20
+        - rumor_69
+    - description: "Financial records confirm Eleanor's connection to Montrose estate - post-1960s bank statements, estate payment ledger"
+      clues:
+        - bank_statement_fragments
+        - montrose_estate_payments_1990
+
+  romano_treasure:
+    - description: "Treasure location and map revealed - map to treasure in rose garden, purple and gold dragon vase (treasure container)"
+      clues:
+        - rose_garden_map
+        - decorative_vase_dragon
+      rumors:
+        - rumor_59
+        - rumor_60
+        - rumor_63
+    - description: "Frankie's letter to Vincent reveals the full scope of hidden fortune - four treasure locations described"
+      clues:
+        - frankie_1962_03_12_to_vincent_when_youre_ready
+      rumors:
+        - rumor_59
+        - rumor_64
+
+  remaining_evidence:
+    - description: "Elias's final entry - the dress is complete, she will never wear it - 'She will never wear it now'"
+      clues:
+        - elias_1925_10_17_the_dress_is_complete
+      rumors:
+        - rumor_18
+        - rumor_47
+        - rumor_67
+    - description: "Historical newspaper context - Sullivan bakery fire, arson revealed"
+      clues:
+        - bakery_fire_tragedy
+        - arsonist_caught
+      rumors:
+        - rumor_03
+        - rumor_55
+        - rumor_72
+
+# ============================================================
+# ACT V: CONCLUSIONS
+# ============================================================
+act_v_conclusions:
+  name: "Act V: Conclusions"
+  purpose: "Guests can read full quest text, all clues available, complete story accessible"
+  notes:
+    - "All quest text is fully readable"
+    - "All clues are unlocked"
+    - "Complete narrative can be pieced together from all available evidence"
+    - "Players can revisit any clue from any act"

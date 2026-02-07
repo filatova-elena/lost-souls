@@ -1,6 +1,7 @@
 id: blood_specs
 is_primary: true
 name: Silver Candle Holder
+act: act_iv_revelation
 type: Artifact (Object)
 appearance: Ornate silver candle holder with intricate decorative patterns, noticeably heavy
 skills:

@@ -1,6 +1,7 @@
 id: ginseng_root
 title: Precious Forked Root Specimen
 name: Ginseng Root
+act: act_i_setting
 scientific_name: Panax ginseng
 is_primary: true
 type: Botanical (Dried Herb)

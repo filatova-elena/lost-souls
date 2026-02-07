@@ -1,6 +1,7 @@
 id: rosemary_herb_clue
 title: Grey-Green Needled Herb Plant
 name: Rosemary Plant
+act: act_i_setting
 scientific_name: Rosmarinus officinalis
 is_primary: false
 type: Botanical (Garden Herb)

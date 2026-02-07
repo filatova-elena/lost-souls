@@ -1,6 +1,7 @@
 id: plant_specimens
 title: Collection of Preserved Plant Samples
 name: Plant Specimens in Jars
+act: act_i_setting
 scientific_name: Various botanical specimens
 is_primary: true
 type: Botanical (Dried Herb)

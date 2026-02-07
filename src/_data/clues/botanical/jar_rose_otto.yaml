@@ -1,6 +1,7 @@
 id: rose_otto
 title: Precious Floral Essential Oil
 name: Rose Otto
+act: act_i_setting
 scientific_name: Rosa x damascena
 is_primary: true
 type: Botanical (Jar)

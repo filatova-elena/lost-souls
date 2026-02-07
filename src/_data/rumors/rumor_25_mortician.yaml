@@ -1,4 +1,5 @@
 id: rumor_25
+act: act_i_setting
 type: Rumor
 possession: INFLUENCER
 truth: true

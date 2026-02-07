@@ -1,6 +1,7 @@
 id: grain_alcohol
 title: Clear High-Proof Spirit
 name: Grain Alcohol 95%
+act: act_iii_investigation
 scientific_name: Ethanol (C₂H₅OH)
 is_primary: true
 type: Botanical (Jar)

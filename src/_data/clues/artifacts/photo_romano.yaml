@@ -1,6 +1,7 @@
 id: vintage_photograph_romano
 is_primary: false
 name: Faded Photograph - The Romano Family at Harbor
+act: act_i_setting
 type: Artifact (Photograph)
 appearance: Black and white photograph showing group of well-dressed people standing near waterfront location
 location: Art Collector's office, framed on desk

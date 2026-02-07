@@ -1,6 +1,7 @@
 id: calcium_lactate
 title: Fine White Powder
 name: Calcium Lactate
+act: act_iii_investigation
 scientific_name: C₆H₁₀CaO₆
 is_primary: true
 type: Botanical (Jar)
