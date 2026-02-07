@@ -59,7 +59,7 @@ act_i_setting:
         - sebastian_1920_03_15_first_principles
 
   thaddeus:
-    - description: "Respected doctor whose patient notes reveal arrogance and condescension - dismissive attitude, pattern of dismissiveness"
+    - description: "Respected doctor whose patient notes reveal arrogance and condescension - dismissive attitude, pattern of dismissiveness, intellectual superiority, philosophical notes on patients and belief"
       clues:
         - thaddeus_patient_1924_06_15_alice_whitmore
         - thaddeus_patient_1924_07_02_alice_whitmore_followup
@@ -67,15 +67,8 @@ act_i_setting:
         - thaddeus_patient_1925_08_12_alice_whitmore
         - thaddeus_patient_1925_08_20_mr_edmund_ashford
         - thaddeus_patient_1925_09_05_miss_violet_chen
-    - description: "Early fascination with Alice through diary entries - intellectual superiority, philosophical notes, first diary mention of Alice, fascination with Alice, acknowledges risk of his fascination"
-      clues:
         - thaddeus_1924_03_11_on_dr_morrison_and_lesser_minds
         - thaddeus_1924_03_15_on_patients_and_belief
-        - thaddeus_1924_07_02_alice
-        - thaddeus_1924_07_02_electric_contact
-        - thaddeus_1924_07_03_the_risk
-      rumors:
-        - rumor_14
     - description: "Cold perspective on love and family - dismissive of love, 'biological impulse dressed up in sentiment'"
       clues:
         - thaddeus_1925_03_14_sebastians_engagement
@@ -273,12 +266,16 @@ act_ii_mystery_emerges:
         - sebastian_thaddeus_advice
 
   thaddeus:
+    - description: "Early fascination with Alice through diary entries - first diary mention of Alice, fascination with Alice, electric contact"
+      clues:
+        - thaddeus_1924_07_02_alice
+        - thaddeus_1924_07_02_electric_contact
+      rumors:
+        - rumor_14
     - description: "Romance of Thaddeus and Alice becomes known through rumors and context of Act I patient notes"
       clues: []
       rumors:
         - rumor_14
-    - description: "No new Thaddeus clue IDs in Act II - the romance is revealed through Act I entries gaining context plus rumors"
-      clues: []
 
   elias:
     - description: "Elias Monroe's unrequited love for Cordelia revealed - love poem: 'My heart lies shattered on her garden floor,' watching her fade, stitching love into seams"
@@ -520,6 +517,9 @@ act_iii_investigation:
       clues:
         - thaddeus_foxglove_request
         - foxglove_poison
+    - description: "Thaddeus acknowledges the risk of his fascination with Alice"
+      clues:
+        - thaddeus_1924_07_03_the_risk
 
   cordelia:
     - description: "Cordelia discovers Thaddeus and Alice affair, confronts him - went to Thaddeus, threatened to expose, he dismissed her, vision: 'I confronted him. I told him I would expose him.'"
