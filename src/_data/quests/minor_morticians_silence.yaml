@@ -60,9 +60,9 @@ clue_organization:
     - 1925_10_07_entry_1_43_43_43_43_43_43_43
     - 1925_10_11_entry_2_44_44_44_44_44_44_44
     - 1925_10_18_entry_3_45_45_45_45_45_45_45
-    - medical_death_cert_alice
-    - medical_death_cert_sebastian
-    - medical_death_cert_cordelia
+    - document_medical_alice_death_cert
+    - document_medical_sebastian_death_cert
+    - document_medical_cordelia_death_cert
     key_clue: silas_1925_10_07_entry_1
     key_clue_reason: First body arrives - Alice. Silas documents the suspicious injury
       pattern, establishing that something is wrong.
@@ -70,11 +70,11 @@ clue_organization:
     name: 'Act II: The Mystery Emerges'
     purpose: Introduce the bribe, raise questions about who paid and why
     clues:
-    - document_120_financial_payment_records
-    - medical_death_cert_alice
-    - medical_death_cert_sebastian
-    - medical_death_cert_cordelia
-    - 1925_10_11_the_heart_stops_66_66_66_66_66_66_66
+    - document_financial_120_payment_records
+    - document_medical_alice_death_cert
+    - document_medical_sebastian_death_cert
+    - document_medical_cordelia_death_cert
+    - writings_thaddeus_diary_66_1925_10_11_the_heart_stops
     key_clue: payment_records
     key_clue_reason: The $500 payment arrives, raising the question of who paid and
       why. This triggers investigation into the cover-up.
@@ -85,12 +85,12 @@ clue_organization:
     - 1925_10_07_entry_1_43_43_43_43_43_43_43
     - 1925_10_11_entry_2_44_44_44_44_44_44_44
     - 1925_10_18_entry_3_45_45_45_45_45_45_45
-    - document_120_financial_payment_records
-    - medical_death_cert_alice
-    - medical_death_cert_sebastian
-    - medical_death_cert_cordelia
-    - 1925_10_11_the_heart_stops_66_66_66_66_66_66_66
-    - 1925_10_18_cordelias_final_hours_67_67_67_67_67_67_67
+    - document_financial_120_payment_records
+    - document_medical_alice_death_cert
+    - document_medical_sebastian_death_cert
+    - document_medical_cordelia_death_cert
+    - writings_thaddeus_diary_66_1925_10_11_the_heart_stops
+    - writings_thaddeus_diary_67_1925_10_18_cordelias_final_hours
     key_clue: payment_records
     key_clue_reason: The payment record combined with death certificates signed by
       Thaddeus reveals the connection - he had everything to lose if the truth came
@@ -99,13 +99,13 @@ clue_organization:
     name: 'Act IV: The Revelation'
     purpose: Reveal that Thaddeus paid Silas to cover up the truth
     clues:
-    - document_120_financial_payment_records
+    - document_financial_120_payment_records
     - 1925_10_07_entry_1_43_43_43_43_43_43_43
     - 1925_10_11_entry_2_44_44_44_44_44_44_44
     - 1925_10_18_entry_3_45_45_45_45_45_45_45
-    - medical_death_cert_alice
-    - medical_death_cert_sebastian
-    - medical_death_cert_cordelia
-    - 1925_10_10_torn_pages_regret_64_64_64_64_64_64_64
+    - document_medical_alice_death_cert
+    - document_medical_sebastian_death_cert
+    - document_medical_cordelia_death_cert
+    - writings_thaddeus_diary_64_1925_10_10_torn_pages_regret
     key_clue: null
     key_clue_reason: This is the final act. No further acts to unlock.

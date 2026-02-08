@@ -71,7 +71,7 @@ clue_organization:
     purpose: Introduce the pocket watch, the engraving, the astronomical significance
     clues:
     - artifact_81_object_pocket_watch
-    - 1925_08_15_refinement_and_urgency_35_35_35_35_35_35_35
+    - writings_sebastian_35_1925_08_15_refinement_and_urgency
     key_clue: pocket_watch
     key_clue_reason: The pocket watch with its mysterious engraving draws the Clockmaker
       into the investigation.
@@ -79,9 +79,9 @@ clue_organization:
     name: 'Act II: The Mystery Emerges'
     purpose: Connect the watch to the deaths, raise questions about timing
     clues:
-    - 1925_08_15_the_watch_36_36_36_36_36_36_36
-    - 1925_09_04_the_beginning_39_39_39_39_39_39_39
-    - vision_168_sebastian_conjunction
+    - writings_sebastian_36_1925_08_15_the_watch
+    - writings_sebastian_39_1925_09_04_the_beginning
+    - vision_sebastian_168_conjunction
     key_clue: sebastian_1925_08_15_the_watch
     key_clue_reason: Sebastian's diary entry reveals the watch was a gift from Thaddeus,
       connecting it to the engagement and elixir timing.
@@ -89,13 +89,13 @@ clue_organization:
     name: 'Act III: The Investigation'
     purpose: Discover the origin of the watch, understand its significance
     clues:
-    - 1925_08_15_engagement_present_card_from_thaddeus_70_70_70_70_70_70_70
-    - 1925_08_15_the_watch_36_36_36_36_36_36_36
-    - 1925_09_04_the_beginning_39_39_39_39_39_39_39
-    - vision_168_sebastian_conjunction
-    - medical_death_cert_sebastian
-    - medical_death_cert_cordelia
-    - medical_death_cert_alice
+    - writings_thaddeus_notes_70_1925_08_15_engagement_present_card_from_thaddeus
+    - writings_sebastian_36_1925_08_15_the_watch
+    - writings_sebastian_39_1925_09_04_the_beginning
+    - vision_sebastian_168_conjunction
+    - document_medical_sebastian_death_cert
+    - document_medical_cordelia_death_cert
+    - document_medical_alice_death_cert
     key_clue: thaddeus_1925_08_15_engagement_present_card_from_thaddeus
     key_clue_reason: Thaddeus's card reveals he gave the watch as an engagement gift,
       engraved with the Jupiter-Venus conjunction date.
@@ -103,10 +103,10 @@ clue_organization:
     name: 'Act IV: The Revelation'
     purpose: Reveal the full truth about the watch and its connection to the elixir
     clues:
-    - 1925_08_15_engagement_present_card_from_thaddeus_70_70_70_70_70_70_70
-    - 1925_08_15_the_watch_36_36_36_36_36_36_36
-    - 1925_09_04_the_beginning_39_39_39_39_39_39_39
-    - vision_168_sebastian_conjunction
+    - writings_thaddeus_notes_70_1925_08_15_engagement_present_card_from_thaddeus
+    - writings_sebastian_36_1925_08_15_the_watch
+    - writings_sebastian_39_1925_09_04_the_beginning
+    - vision_sebastian_168_conjunction
     - artifact_81_object_pocket_watch
     key_clue: null
     key_clue_reason: This is the final act. No further acts to unlock.

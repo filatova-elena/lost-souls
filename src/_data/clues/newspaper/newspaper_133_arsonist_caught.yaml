@@ -1,24 +1,21 @@
 id: N133
 title: Long Beach Gazette - March 10, 1991
-act: act_iv_revelation
+act: act_ii_mystery_emerges
 type: Newspaper Article
 date: March 10, 1991
 location: Found in newspaper archives
 headline: THOMAS REED ARRESTED ON MULTIPLE CHARGES - Long Beach Man Linked to Various Criminal Activities
 subheadline: Decades-Old Criminal with Murky Background Finally Apprehended
-content: THOMAS REED, 69, was arrested yesterday evening at a property in Inland Empire on charges including grand theft, extortion, and property destruction. The Long Beach Police Department declined to detail specific charges, citing ongoing investigation. "Mr. Reed has had a long history of criminal activity," Detective William Castellano stated. "We've been monitoring him for some time. When the opportunity arose, we acted." Reed's background includes suspected involvement in illegal contracting work, intimidation, and various insurance-related schemes. A 1989 warehouse fire in the harbor district is being examined in connection with the investigation, though authorities have not confirmed Reed's involvement. "We're looking at several incidents," Castellano said, "but at this point our focus is on current charges." Reed was discovered living under an assumed name. His associates remain unknown. The property where he was arrested contained tools, cash, and documentation investigators
-  are still reviewing. Reed has refused to cooperate with questioning, requesting an attorney immediately upon arrest. The investigation remains ongoing.
-reveals: Thomas Reed arrested on multiple charges including grand theft and extortion. A 1989 harbor warehouse fire is being examined. Associates and hired work remain unknown. Investigation is ongoing.
-character_interpretations:
-  baker: The article doesn't really explain what he was actually doing or who he worked for. Strange story.
-  fiduciary: The article emphasizes that 'his associates remain unknown.' That's the key detail. Who was he working with?
-  heiress: Why so secretive? What are they protecting? What is the police department not telling us?
-  explorer: Thomas Reed arrested in March 1991, just months after the November 1990 Sullivan bakery fire. A 1989 warehouse fire is being examined. That's code for 'we're protecting someone or still digging.'
-  art_collector: The article is careful language. Protective language. Someone important is involved.
-  professor: The police statement is deliberately vague. This suggests either they're building a larger case or they're protecting other interests.
-  psychic: The spirits whisper around him—criminal, hired work, fire somewhere in the past. Someone important remains unnamed.
-  clockmaker: A warehouse fire in 1989. The Sullivan bakery fire was November 1990. March 1991 arrest. Are these connected?
-  dressmaker: I don't know what this has to do with the Montrose mystery, but it feels like there are secrets buried in this story.
-  influencer: His 'associates remain unknown'—that's definitely code for someone important is involved! This could be massive if the right person is implicated!
-  mortician: The article mentions various charges but no specific details about any deaths or bodies involved. The secrecy suggests there's more to this story.
-  doctor: Without medical records or specific details about injuries or deaths, I can't evaluate any medical aspects. The lack of detail suggests either incomplete investigation or protected information.
+skills: []
+content: |-
+  **THOMAS REED**, 69, was arrested yesterday evening at a property in Inland Empire on charges including grand theft, extortion, and property destruction. The Long Beach Police Department declined to detail specific charges, citing ongoing investigation.
+
+  "Mr. Reed has had a long history of criminal activity," Detective William Castellano stated. "We've been monitoring him for some time. When the opportunity arose, we acted."
+
+  Reed's background includes suspected involvement in illegal contracting work, intimidation, and various insurance-related schemes. A **1989 warehouse fire** in the harbor district is being examined in connection with the investigation, though authorities have not confirmed Reed's involvement.
+
+  "We're looking at several incidents," Castellano said, "but at this point our focus is on current charges."
+
+  Reed was discovered **living under an assumed name**. His associates remain unknown. The property where he was arrested contained tools, cash, and documentation investigators are still reviewing.
+
+  Reed has refused to cooperate with questioning, requesting an attorney immediately upon arrest. The investigation remains ongoing.

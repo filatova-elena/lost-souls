@@ -35,9 +35,9 @@ clue_organization:
       dress
     clues:
     - artifact_85_object_wedding_dress
-    - 1925_08_25_the_dressmaker_38_38_38_38_38_38_38
-    - 1925_10_17_the_dress_is_complete_24_24_24_24_24_24_24
-    - vision_152_cordelia_character_dressmaker
+    - writings_sebastian_38_1925_08_25_the_dressmaker
+    - writings_elias_24_1925_10_17_the_dress_is_complete
+    - vision_cordelia_152_character_dressmaker
     key_clue: cordelia_wedding_dress
     key_clue_reason: The unfinished wedding dress represents Elias's unrequited love
       and devotion to Cordelia.
@@ -45,9 +45,9 @@ clue_organization:
     name: 'Act II: The Mystery Emerges'
     purpose: Cordelia's final request, the secret about Eleanor
     clues:
-    - 1925_10_02_rose_bread_recipe_from_cordelia_22_22_22_22_22_22_22
-    - 1925_10_17_alice_is_dead_11_11_11_11_11_11_11
-    - 1925_09_25_something_is_wrong_21_21_21_21_21_21_21
+    - writings_elias_22_1925_10_02_rose_bread_recipe_from_cordelia
+    - writings_cordelia_11_1925_10_17_alice_is_dead
+    - writings_elias_21_1925_09_25_something_is_wrong
     key_clue: elias_1925_10_02_rose_bread_recipe_from_cordelia
     key_clue_reason: Cordelia entrusts Elias with the rose bread recipe for Eleanor,
       revealing the secret she shared with him.
@@ -58,8 +58,8 @@ clue_organization:
     - artifact_89_photo_eleanor_baby
     - artifact_90_photo_eleanor_child
     - artifact_88_photo_eleanor_adolescent
-    - 1939_07_05_the_recipe_13_13_13_13_13_13_13
-    - 1925_05_letter_regarding_discretion_and_family_arrangement_31_31_31_31_31_31_31
+    - writings_eleanor_13_1939_07_05_the_recipe
+    - writings_margaret_31_1925_05_letter_regarding_discretion_and_family_arrangement
     key_clue: eleanor_1939_the_recipe
     key_clue_reason: Eleanor receives the recipe in 1939, confirming Elias kept his
       promise and revealing the connection.
@@ -67,8 +67,8 @@ clue_organization:
     name: 'Act IV: The Revelation'
     purpose: Reveal the full story - Elias's unrequited love and the secret he kept
     clues:
-    - 1925_10_02_rose_bread_recipe_from_cordelia_22_22_22_22_22_22_22
-    - 1939_07_05_the_recipe_13_13_13_13_13_13_13
+    - writings_elias_22_1925_10_02_rose_bread_recipe_from_cordelia
+    - writings_eleanor_13_1939_07_05_the_recipe
     - artifact_89_photo_eleanor_baby
     - artifact_90_photo_eleanor_child
     - artifact_88_photo_eleanor_adolescent

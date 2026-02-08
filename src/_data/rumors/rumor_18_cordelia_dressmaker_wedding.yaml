@@ -3,5 +3,7 @@ act: act_i_setting
 type: Rumor
 possession: OTHER
 truth: true
+hashtags:
+  - elias_unrequited_love
 content: |
   The dressmaker made a wedding dress for Cordelia—beautiful work. But she never wore it. Never even got to wear white.

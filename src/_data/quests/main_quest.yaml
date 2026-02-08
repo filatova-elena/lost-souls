@@ -173,12 +173,12 @@ clue_organization:
     purpose: Establish the haunted mansion, introduce the three ghosts, set up the
       mystery
     clues:
-    - 1925_08_01_cordelia_34_34_34_34_34_34_34
-    - 1920_03_15_first_principles_32_32_32_32_32_32_32
-    - 1924_07_02_alice_52_52_52_52_52_52_52
-    - 1924_07_02_electric_contact_53_53_53_53_53_53_53
-    - vision_156_cordelia_garden_betrayal
-    - vision_168_sebastian_conjunction
+    - writings_sebastian_34_1925_08_01_cordelia
+    - writings_sebastian_32_1920_03_15_first_principles
+    - writings_thaddeus_diary_52_1924_07_02_alice
+    - writings_thaddeus_diary_53_1924_07_02_electric_contact
+    - vision_cordelia_156_garden_betrayal
+    - vision_sebastian_168_conjunction
     key_clue: sebastian_1925_08_01_cordelia
     key_clue_reason: Sebastian's diary entry establishes the romantic context and
       the elixir project, setting up the mystery of what went wrong.
@@ -186,14 +186,14 @@ clue_organization:
     name: 'Act II: The Mystery Emerges'
     purpose: Introduce the three deaths, raise questions about what really happened
     clues:
-    - medical_death_cert_alice
-    - medical_death_cert_sebastian
-    - medical_death_cert_cordelia
-    - 1925_10_06_understanding_41_41_41_41_41_41_41
-    - vision_175_sebastian_poisoned
-    - 1925_09_25_something_is_wrong_21_21_21_21_21_21_21
-    - 1925_10_09_sebastian_is_dying_8_8_8_8_8_8_8
-    - 1925_10_09_sebastians_arrival_61_61_61_61_61_61_61
+    - document_medical_alice_death_cert
+    - document_medical_sebastian_death_cert
+    - document_medical_cordelia_death_cert
+    - writings_sebastian_41_1925_10_06_understanding
+    - vision_sebastian_175_poisoned
+    - writings_elias_21_1925_09_25_something_is_wrong
+    - writings_cordelia_8_1925_10_09_sebastian_is_dying
+    - writings_thaddeus_diary_61_1925_10_09_sebastians_arrival
     key_clue: sebastian_1925_10_06_understanding
     key_clue_reason: Sebastian's realization that he's dying triggers the investigation
       phase. Players now know something is wrong and need to investigate what happened.
@@ -202,26 +202,26 @@ clue_organization:
     purpose: Build the case - examine competing narratives, gather evidence, narrow
       possibilities
     clues:
-    - sebastian_elixir_formula_42_42_42_42_42_42_42
-    - 1925_08_02_initial_inquiry_the_young_pharmacist_26_26_26_26_26_26_26
-    - 1925_08_22_third_consultation_the_final_formula_28_28_28_28_28_28_28
-    - 1925_08_04_sebastians_foolish_formula_56_56_56_56_56_56_56
-    - 1925_09_01_on_foxglove_58_58_58_58_58_58_58
-    - thaddeus_foxglove_request_71_71_71_71_71_71_71
-    - 1925_10_07_initial_assessment_46_46_46_46_46_46_46
-    - 1925_10_07_request_for_botanical_consultation_47_47_47_47_47_47_47
-    - 1925_10_09_sebastians_arrival_61_61_61_61_61_61_61
-    - 1925_10_10_torn_pages_regret_64_64_64_64_64_64_64
+    - writings_sebastian_42_sebastian_elixir_formula
+    - writings_hartley_26_1925_08_02_initial_inquiry_the_young_pharmacist
+    - writings_hartley_28_1925_08_22_third_consultation_the_final_formula
+    - writings_thaddeus_diary_56_1925_08_04_sebastians_foolish_formula
+    - writings_thaddeus_diary_58_1925_09_01_on_foxglove
+    - writings_thaddeus_notes_71_thaddeus_foxglove_request
+    - writings_thaddeus_antidote_search_46_1925_10_07_initial_assessment
+    - writings_thaddeus_antidote_search_47_1925_10_07_request_for_botanical_consultation
+    - writings_thaddeus_diary_61_1925_10_09_sebastians_arrival
+    - writings_thaddeus_diary_64_1925_10_10_torn_pages_regret
     - 1925_10_07_entry_1_43_43_43_43_43_43_43
     - 1925_10_11_entry_2_44_44_44_44_44_44_44
     - 1925_10_18_entry_3_45_45_45_45_45_45_45
-    - document_120_financial_payment_records
-    - 1925_09_10_alice_5_5_5_5_5_5_5
-    - vision_154_cordelia_confrontation
-    - vision_142_alice_love_for_thaddeus
-    - vision_146_alice_thaddeus_inaction
+    - document_financial_120_payment_records
+    - writings_cordelia_5_1925_09_10_alice
+    - vision_cordelia_154_confrontation
+    - vision_alice_142_love_for_thaddeus
+    - vision_alice_146_thaddeus_inaction
     - object_crystal_ball
-    - 1925_10_15_unusual_visit_the_brother_29_29_29_29_29_29_29
+    - writings_hartley_29_1925_10_15_unusual_visit_the_brother
     key_clue: thaddeus_1925_10_10_torn_pages_regret
     key_clue_reason: Thaddeus's torn diary pages show his guilt and regret, revealing
       he was involved in the deaths. This is the key clue that unlocks the revelation.
@@ -230,22 +230,22 @@ clue_organization:
     purpose: Reveal the complete truth - Thaddeus murdered all three, the motive,
       the method, the cover-up
     clues:
-    - 1925_10_10_torn_pages_regret_64_64_64_64_64_64_64
-    - 1925_10_19_the_man_i_was_69_69_69_69_69_69_69
-    - 1925_10_18_the_aftermath_68_68_68_68_68_68_68
-    - 1925_10_20_reflection_news_of_tragedy_30_30_30_30_30_30_30
-    - sebastian_elixir_formula_42_42_42_42_42_42_42
-    - 1925_09_01_on_foxglove_58_58_58_58_58_58_58
-    - thaddeus_foxglove_request_71_71_71_71_71_71_71
-    - 1925_09_10_alice_5_5_5_5_5_5_5
-    - vision_154_cordelia_confrontation
+    - writings_thaddeus_diary_64_1925_10_10_torn_pages_regret
+    - writings_thaddeus_diary_69_1925_10_19_the_man_i_was
+    - writings_thaddeus_diary_68_1925_10_18_the_aftermath
+    - writings_hartley_30_1925_10_20_reflection_news_of_tragedy
+    - writings_sebastian_42_sebastian_elixir_formula
+    - writings_thaddeus_diary_58_1925_09_01_on_foxglove
+    - writings_thaddeus_notes_71_thaddeus_foxglove_request
+    - writings_cordelia_5_1925_09_10_alice
+    - vision_cordelia_154_confrontation
     - 1925_10_07_entry_1_43_43_43_43_43_43_43
     - 1925_10_11_entry_2_44_44_44_44_44_44_44
     - 1925_10_18_entry_3_45_45_45_45_45_45_45
-    - document_120_financial_payment_records
-    - medical_death_cert_alice
-    - medical_death_cert_sebastian
-    - medical_death_cert_cordelia
+    - document_financial_120_payment_records
+    - document_medical_alice_death_cert
+    - document_medical_sebastian_death_cert
+    - document_medical_cordelia_death_cert
     - object_crystal_ball
     key_clue: null
     key_clue_reason: This is the final act. No further acts to unlock.

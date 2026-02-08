@@ -34,10 +34,16 @@ module.exports = function(eleventyConfig) {
     return md.render(value);
   });
 
-  // Get clue by name
+  // Get clue by name - throws error if not found
   eleventyConfig.addFilter("getClue", function(name, cluesData) {
-    if (!name || !cluesData) return null;
-    return cluesData.byName?.get(name) || null;
+    if (!name || !cluesData) {
+      throw new Error(`getClue: Missing name or cluesData. name=${name}, cluesData=${!!cluesData}`);
+    }
+    const clue = cluesData.byName?.get(name);
+    if (!clue) {
+      throw new Error(`Clue not found: "${name}". Available clues: ${Array.from(cluesData.byName?.keys() || []).slice(0, 10).join(', ')}...`);
+    }
+    return clue;
   });
 
   // Get rumor by name

@@ -5,5 +5,7 @@ author: thaddeus
 date: '1925-09-05'
 patient: Miss Violet Chen
 chief_complaint: Recurring abdominal pain
+hashtags:
+  - thaddeus_respected
 notes: |
   Patient reports digestive distress. Likely poor diet or digestive weakness. Suggested bland foods and prescribed bismuth. Provided dietary guidance. Patient appeared satisfied with recommendations. Straightforward case.

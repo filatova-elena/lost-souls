@@ -4,5 +4,8 @@ ghost: cordelia
 to_character: dressmaker
 name: Elias Remembrance
 act: act_i_setting
+hashtags:
+  - cordelia_romantic
+  - elias_unrequited_love
 content: |
   You remind me of Elias, he used to write me poems....

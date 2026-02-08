@@ -3,5 +3,7 @@ act: act_ii_mystery_emerges
 type: Rumor
 possession: HEIRESS
 truth: true
+hashtags:
+  - elias_unrequited_love
 content: |
   Elias Monroe was obsessed with Cordelia. His heart was broken when she got engaged to someone else.

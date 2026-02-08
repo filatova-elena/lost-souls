@@ -2,14 +2,17 @@ id: DL123
 type: Document (Legal)
 title: Marine Registry Document - 'La Stella Nuova'
 act: act_ii_mystery_emerges
+skills:
+  - history_1
+  - personal_romano
 date: 1930-1968
 location: Marina office records
-content: |-
+content: |
   MARINE VESSEL REGISTRATION
 
-  Vessel Name: La Stella Nuova (The New Star)
+  Vessel Name: La Stella Nuova
   Registration Number: CA-1924-7731
-  Type: Private Yacht (60-foot luxury vessel)
+  Type: 60-foot luxury vessel
   Owner: Frankie Romano
   Home Port: Long Beach Marina
   Construction Year: 1928
@@ -30,10 +33,13 @@ content: |-
   Sale Price: $75,000
   Buyer Location: Unknown
   Current Status: Unknown
-character_interpretations:
-  explorer: Thirty-eight years berthed at Long Beach Marina. La Stella Nuova sat at the same location from 1930-1968—stable, dependable, waiting. But in 1965, the maintenance records show 'cargo hold reinforcement and structural modifications.' That's not routine. That's preparation for something specific. Cargo that needed hiding. Then the boat disappeared in 1968 with a mystery buyer.
-  art_collector: La Stella Nuova was Frankie's crown jewel. I've seen photographs of her in family records—a beautiful yacht, well-maintained. But in 1965, when the IRS investigation intensified, she underwent extensive modifications. The cargo hold reinforcement in particular. By August 1965, Frankie had specifically reinforced the hold. What was she planning to load?
-  fiduciary: The timing is impeccable. The boat was modified in 1965 when IRS seizures were happening. Three months of structural work specifically on cargo capacity. Then sold mysteriously in October 1968, right after the major seizures concluded. Someone loaded that boat with valuables and sailed away to avoid government seizure.
-  dressmaker: Frankie Romano owned that beautiful yacht. I remember hearing stories about her parties on the boat, the glamour of it all. But that same boat carried something else—the family's hidden wealth, carefully loaded into reinforced holds. My ancestor Elias worked in that world, knew those people. How much did he know about what Frankie was hiding?
-  baker: A boat leaves Long Beach harbor in 1968 carrying unknown cargo to an unknown destination. And it never reappears in any records. That's not just treasure—that's a complete escape. Whoever was on that boat knew it was their last chance to disappear.
-influencer: 'La Stella Nuova is one of my favorite unsolved mysteries. I did an entire episode called ''The Ghost Ship'' about how Frankie Romano''s beautiful yacht just... disappeared in 1968. The buyer was a ''private individual'' with a redacted name. My speculation: someone was waiting to buy that boat, possibly even a family member under an assumed name, and escape with the fortune before the government could seize it. The mysterious buyer, the unknown destination, the cargo hold modifications—it all points to a planned escape that actually succeeded. Somewhere in the world, La Stella Nuova might still exist under a different name. That boat sailed away with millions.'
+
+  ---
+
+  ## You observe
+
+  - **La Stella Nuova** is Italian for "The New Star."
+
+  - The sale in **1968** to an anonymous buyer is unusual. Private vessel sales in this era typically included full buyer documentation.
+
+  - The **1965 maintenance records** show three consecutive months of structural work, focused heavily on the cargo hold. That's unusual for a pleasure vessel.

@@ -3,5 +3,7 @@ act: act_iii_investigation
 type: Rumor
 possession: OTHER
 truth: true
+hashtags:
+  - secret_baby
 content: |
   Eleanor Sullivan was not a Sullivan at all—I heard she was adopted. Some respected family had a scandal covered up.

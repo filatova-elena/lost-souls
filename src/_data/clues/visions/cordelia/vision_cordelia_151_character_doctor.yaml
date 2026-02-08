@@ -4,5 +4,7 @@ ghost: cordelia
 to_character: doctor
 name: Thaddeus Recognition
 act: act_i_setting
+hashtags:
+  - thaddeus_arrogant
 content: |
   You remind me of Thaddeus, unpleasant man.

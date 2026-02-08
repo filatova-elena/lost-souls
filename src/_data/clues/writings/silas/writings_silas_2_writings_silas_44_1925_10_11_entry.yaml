@@ -2,11 +2,17 @@ id: WS2
 type: Writing (Silas's Journal)
 author: silas
 date: '1925-10-11'
-title: null
+title: Private Observations — Sebastian Crane
 act: act_iii_investigation
-content: ''
-character_interpretations:
-  mortician: Silas documented systematic organ failure. The pattern shows a poison that attacked multiple systems over time. Not quick. Not merciful. This was intentional and monitored.
-  town_doctor: The organ damage pattern is consistent with cardiac glycoside poisoning—foxglove or similar. But the liver and stomach damage suggest something MORE was added. Possibly combined with another compound to accelerate the effect.
-  botanist: Sebastian's purchase records show he acquired damiana, valerian, rose otto. Harmless herbs. If someone substituted an ingredient... the sweet herbal base would mask bitter alkaloids. Whoever did this knew exactly what they were doing.
-  fiduciary: Silas found 'chemical burns' in the stomach lining. Whatever killed Sebastian was delivered in liquid form.
+skills:
+  - medical_2
+content: |
+  ## Body of Sebastian Crane — October 11, 1925
+
+  Systematic organ failure. The pattern shows a poison that attacked **multiple systems over time**. Not quick. Not merciful. This was intentional and monitored.
+
+  The organ damage is consistent with **cardiac glycoside poisoning** — foxglove or similar.
+
+  **Chemical burns in the stomach lining.** Whatever killed Sebastian was delivered in liquid form.
+
+  Sebastian was a pharmacist. Unlikely he would have ingested a poison accidentally. Suspicious.

@@ -3,5 +3,7 @@ act: act_i_setting
 type: Rumor
 possession: OTHER
 truth: true
+hashtags:
+  - rose_bread
 content: |
   Cordelia had been given special rose bread by a baker—it was her favorite.

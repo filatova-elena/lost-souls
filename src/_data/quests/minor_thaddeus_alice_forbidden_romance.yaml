@@ -50,10 +50,10 @@ clue_organization:
     clues:
     - thaddeus_1924_06_15_alice_whitmore
     - thaddeus_1924_07_02_alice_whitmore_followup
-    - 1924_07_02_alice_52_52_52_52_52_52_52
-    - 1924_07_02_electric_contact_53_53_53_53_53_53_53
-    - 1924_07_03_the_risk_54_54_54_54_54_54_54
-    - 1924_03_15_on_patients_and_belief_51_51_51_51_51_51_51
+    - writings_thaddeus_diary_52_1924_07_02_alice
+    - writings_thaddeus_diary_53_1924_07_02_electric_contact
+    - writings_thaddeus_diary_54_1924_07_03_the_risk
+    - writings_thaddeus_diary_51_1924_03_15_on_patients_and_belief
     key_clue: thaddeus_1924_07_02_alice
     key_clue_reason: Thaddeus's early diary entry shows his fascination with Alice,
       establishing the foundation of their relationship.
@@ -61,10 +61,10 @@ clue_organization:
     name: 'Act II: The Mystery Emerges'
     purpose: Cordelia discovers the affair, confronts Thaddeus
     clues:
-    - vision_156_cordelia_garden_betrayal
-    - 1925_09_10_alice_5_5_5_5_5_5_5
-    - vision_154_cordelia_confrontation
-    - 1925_08_12_alice_whitmore_75_75_75_75_75_75_75
+    - vision_cordelia_156_garden_betrayal
+    - writings_cordelia_5_1925_09_10_alice
+    - vision_cordelia_154_confrontation
+    - writings_thaddeus_patient_notes_75_1925_08_12_alice_whitmore
     key_clue: cordelia_1925_09_10_alice
     key_clue_reason: Cordelia's diary entry documents her confrontation with Thaddeus,
       establishing the threat that becomes the motive.
@@ -72,11 +72,11 @@ clue_organization:
     name: 'Act III: The Investigation'
     purpose: Build the case - examine the affair, understand the motive
     clues:
-    - vision_142_alice_love_for_thaddeus
-    - vision_146_alice_thaddeus_inaction
-    - 1925_09_10_alice_5_5_5_5_5_5_5
-    - vision_156_cordelia_garden_betrayal
-    - vision_154_cordelia_confrontation
+    - vision_alice_142_love_for_thaddeus
+    - vision_alice_146_thaddeus_inaction
+    - writings_cordelia_5_1925_09_10_alice
+    - vision_cordelia_156_garden_betrayal
+    - vision_cordelia_154_confrontation
     key_clue: cordelia_1925_09_10_alice
     key_clue_reason: Cordelia's diary entry documents her confrontation with Thaddeus,
       revealing the connection to the murders.
@@ -85,11 +85,11 @@ clue_organization:
     purpose: Reveal the full truth about the forbidden affair and its connection to
       the murders
     clues:
-    - 1924_07_02_alice_52_52_52_52_52_52_52
-    - 1924_07_02_electric_contact_53_53_53_53_53_53_53
-    - 1925_09_10_alice_5_5_5_5_5_5_5
-    - vision_156_cordelia_garden_betrayal
-    - vision_154_cordelia_confrontation
-    - vision_142_alice_love_for_thaddeus
+    - writings_thaddeus_diary_52_1924_07_02_alice
+    - writings_thaddeus_diary_53_1924_07_02_electric_contact
+    - writings_cordelia_5_1925_09_10_alice
+    - vision_cordelia_156_garden_betrayal
+    - vision_cordelia_154_confrontation
+    - vision_alice_142_love_for_thaddeus
     key_clue: null
     key_clue_reason: This is the final act. No further acts to unlock.

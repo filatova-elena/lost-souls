@@ -66,7 +66,7 @@ clue_organization:
     purpose: Establish Sebastian's dual identity, his connection to Romano operations
     clues:
     - artifact_79_object_bottle_venetian
-    - sebastian_elixir_formula_42_42_42_42_42_42_42
+    - writings_sebastian_42_sebastian_elixir_formula
     - artifact_91_photo_romano
     key_clue: sebastian_elixir_formula
     key_clue_reason: The rumor establishes Sebastian's connection to the Romano family
@@ -86,7 +86,7 @@ clue_organization:
     purpose: Build the case - examine Harbor Import & Trading Co., understand the
       bootlegging operation
     clues:
-    - sebastian_elixir_formula_42_42_42_42_42_42_42
+    - writings_sebastian_42_sebastian_elixir_formula
     - artifact_79_object_bottle_venetian
     - business_manifests_romano
     - business_shipping_romano
@@ -100,7 +100,7 @@ clue_organization:
     purpose: Reveal Sebastian's full identity as 'The Alchemist' and his role in the
       bootlegging operation
     clues:
-    - sebastian_elixir_formula_42_42_42_42_42_42_42
+    - writings_sebastian_42_sebastian_elixir_formula
     - artifact_79_object_bottle_venetian
     - business_manifests_romano
     - business_shipping_romano

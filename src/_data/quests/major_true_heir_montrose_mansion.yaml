@@ -70,9 +70,9 @@ clue_organization:
     purpose: Establish the inheritance mystery, the Baker's connection to Eleanor,
       the rose bread recipe
     clues:
-    - 1939_07_05_the_recipe_13_13_13_13_13_13_13
-    - 1925_10_02_rose_bread_recipe_from_cordelia_22_22_22_22_22_22_22
-    - document_121_financial_trust_records
+    - writings_eleanor_13_1939_07_05_the_recipe
+    - writings_elias_22_1925_10_02_rose_bread_recipe_from_cordelia
+    - document_financial_121_trust_records
     - artifact_89_photo_eleanor_baby
     key_clue: eleanor_1939_the_recipe
     key_clue_reason: Eleanor's diary entry establishes the rose bread recipe connection,
@@ -82,9 +82,9 @@ clue_organization:
     purpose: Introduce questions about who the true heir is, the adoption that was
       never finalized
     clues:
-    - document_121_financial_trust_records
+    - document_financial_121_trust_records
     - newspaper_134_bakery_fire_tragedy
-    - 1925_05_letter_regarding_discretion_and_family_arrangement_31_31_31_31_31_31_31
+    - writings_margaret_31_1925_05_letter_regarding_discretion_and_family_arrangement
     key_clue: trust_records
     key_clue_reason: The trust records mention Eleanor Sullivan as the illegitimate
       daughter, raising questions about the true heir.
@@ -95,11 +95,11 @@ clue_organization:
     - artifact_89_photo_eleanor_baby
     - artifact_90_photo_eleanor_child
     - artifact_88_photo_eleanor_adolescent
-    - 1939_07_05_the_recipe_13_13_13_13_13_13_13
-    - 1925_10_02_rose_bread_recipe_from_cordelia_22_22_22_22_22_22_22
+    - writings_eleanor_13_1939_07_05_the_recipe
+    - writings_elias_22_1925_10_02_rose_bread_recipe_from_cordelia
     - newspaper_134_bakery_fire_tragedy
-    - document_121_financial_trust_records
-    - 1925_05_letter_regarding_discretion_and_family_arrangement_31_31_31_31_31_31_31
+    - document_financial_121_trust_records
+    - writings_margaret_31_1925_05_letter_regarding_discretion_and_family_arrangement
     key_clue: bakery_fire_tragedy
     key_clue_reason: The bakery fire article connects Eleanor Sullivan to the bakery
       and the rose bread recipe, linking the Baker to the inheritance.
@@ -108,9 +108,9 @@ clue_organization:
     purpose: Reveal that the Baker is the true heir, direct descendant of Eleanor
       Sullivan
     clues:
-    - document_121_financial_trust_records
-    - 1939_07_05_the_recipe_13_13_13_13_13_13_13
-    - 1925_10_02_rose_bread_recipe_from_cordelia_22_22_22_22_22_22_22
+    - document_financial_121_trust_records
+    - writings_eleanor_13_1939_07_05_the_recipe
+    - writings_elias_22_1925_10_02_rose_bread_recipe_from_cordelia
     - newspaper_134_bakery_fire_tragedy
     - artifact_89_photo_eleanor_baby
     - artifact_90_photo_eleanor_child
