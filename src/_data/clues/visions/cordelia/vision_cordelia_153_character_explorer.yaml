@@ -1,0 +1,8 @@
+id: VC153
+type: Vision (Cordelia)
+ghost: cordelia
+to_character: explorer
+name: Thomas's Return
+act: act_i_setting
+content: |
+  Thosmas? You are back from your travels, they said you were lost at sea. There is something important you MUST know... [trails off, you sense the urgency]

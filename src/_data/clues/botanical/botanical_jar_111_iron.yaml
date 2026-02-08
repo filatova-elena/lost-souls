@@ -1,0 +1,20 @@
+id: BJ111
+title: Reddish-Brown Powder
+name: Iron Citrate
+act: act_iii_investigation
+scientific_name: C₆H₅O₇Fe
+is_primary: true
+type: Botanical (Jar)
+appearance: Reddish-brown powder in jar, distinctive color, clearly a chemical or mineral compound
+purpose: Original ingredient in Sebastian's harmless elixir
+dosage: 3 grains
+character_interpretations:
+  professor: Iron citrate. A specialized form of iron. The fact it's in solution shows knowledge of bioavailable supplements. Someone understood modern nutritional science.
+  baker: More powder. I can't identify this. The color is unusual—reddish-brown.
+  heiress: I've lost interest in the jars.
+  explorer: An iron supplement. The color and consistency match pharmaceutical preparations. Someone was thorough in health supplementation.
+  fiduciary: Iron citrate. A standard tonic of the era. Non-toxic, intended for health. No concerns.
+  doctor: Iron citrate. An excellent bioavailable form of iron. Particularly valuable for women preparing for major life changes. Shows thoughtful care for wellbeing and health.
+content: |
+  A reddish-brown powder. Distinctive color. Clearly a chemical or mineral compound.
+

@@ -3,69 +3,104 @@ title: The Psychic Who Couldn't Save Her
 emojis: 🔮
 subtitle: Célestine Laveau & Alice Whitmore (1925)
 type: minor
-content: |
-  Célestine Laveau was world-famous long before she arrived in California. The French psychic medium had dazzled European aristocracy with her abilities—reading minds, communing with spirits, predicting futures with unsettling accuracy. When the spiritualism boom swept America in the 1920s, she came west, and Long Beach society clamored for her attention.
+content: 'Célestine Laveau was world-famous long before she arrived in California.
+  The French psychic medium had dazzled European aristocracy with her abilities—reading
+  minds, communing with spirits, predicting futures with unsettling accuracy. When
+  the spiritualism boom swept America in the 1920s, she came west, and Long Beach
+  society clamored for her attention.
 
-  Most of her clients were wealthy dilettantes playing at the occult. Parlor tricks for bored housewives. Theatrical séances for thrill-seekers.
+
+  Most of her clients were wealthy dilettantes playing at the occult. Parlor tricks
+  for bored housewives. Theatrical séances for thrill-seekers.
+
 
   Then Alice Whitmore walked into her salon.
 
-  Célestine knew immediately—this girl was different. Alice wasn't performing. She wasn't pretending. She had the genuine gift, raw and untrained, manifesting in dreams and visions she couldn't control. The spirits spoke to Alice whether she wanted them to or not.
 
-  "You have a rare ability, ma chérie," Célestine told her. "But it is dangerous without training. Let me teach you."
+  Célestine knew immediately—this girl was different. Alice wasn''t performing. She
+  wasn''t pretending. She had the genuine gift, raw and untrained, manifesting in
+  dreams and visions she couldn''t control. The spirits spoke to Alice whether she
+  wanted them to or not.
 
-  Alice was eager to learn, desperate to understand the visions that haunted her. Célestine began mentoring her—teaching her to focus, to protect herself, to distinguish between true spiritual communication and her own fears.
 
-  But Alice was also reckless. Impulsive. She fell into an affair with Dr. Thaddeus, ignored warnings, pushed boundaries. Célestine sensed darkness gathering around the girl but couldn't make her listen.
+  "You have a rare ability, ma chérie," Célestine told her. "But it is dangerous without
+  training. Let me teach you."
+
+
+  Alice was eager to learn, desperate to understand the visions that haunted her.
+  Célestine began mentoring her—teaching her to focus, to protect herself, to distinguish
+  between true spiritual communication and her own fears.
+
+
+  But Alice was also reckless. Impulsive. She fell into an affair with Dr. Thaddeus,
+  ignored warnings, pushed boundaries. Célestine sensed darkness gathering around
+  the girl but couldn''t make her listen.
+
 
   Then in October 1925, Alice was murdered.
 
-  **The Haunting:** Célestine felt it immediately—Alice's spirit, trapped, confused, unable to move on. The violence of her death, the secrets she carried, the unfinished business—it all anchored her to the mortal world.
 
-  Célestine tried everything. Séances, rituals, prayers. But Alice's spirit was bound by something stronger than death—by truth that needed telling, by justice that needed finding, by a story that refused to stay buried.
+  **The Haunting:** Célestine felt it immediately—Alice''s spirit, trapped, confused,
+  unable to move on. The violence of her death, the secrets she carried, the unfinished
+  business—it all anchored her to the mortal world.
 
-  Célestine Laveau, the famous psychic who had helped countless spirits find peace, could not save the one that mattered most. She died in 1947, her greatest failure haunting her legacy.
 
-  Nearly a century later, her great-granddaughter Margo arrived in Long Beach, carrying the family name and the weight of unfinished business. Alice Whitmore was still calling. Still waiting.
+  Célestine tried everything. Séances, rituals, prayers. But Alice''s spirit was bound
+  by something stronger than death—by truth that needed telling, by justice that needed
+  finding, by a story that refused to stay buried.
+
+
+  Célestine Laveau, the famous psychic who had helped countless spirits find peace,
+  could not save the one that mattered most. She died in 1947, her greatest failure
+  haunting her legacy.
+
+
+  Nearly a century later, her great-granddaughter Margo arrived in Long Beach, carrying
+  the family name and the weight of unfinished business. Alice Whitmore was still
+  calling. Still waiting.
+
 
   Some debts echo through generations.
 
+  '
 clue_organization:
   act_i_setting:
-    name: "Act I: The Setting"
-    purpose: "Establish Célestine Laveau's reputation, Alice's genuine gift, their mentorship"
+    name: 'Act I: The Setting'
+    purpose: Establish Célestine Laveau's reputation, Alice's genuine gift, their
+      mentorship
     clues:
-      - alice_not_crazy
-      - thaddeus_1924_06_15_alice_whitmore
-      - thaddeus_1924_07_02_alice_whitmore_followup
+    - vision_145_alice_not_crazy
+    - thaddeus_1924_06_15_alice_whitmore
+    - thaddeus_1924_07_02_alice_whitmore_followup
     key_clue: thaddeus_1924_06_15_alice_whitmore
-    key_clue_reason: "Thaddeus's patient notes show Alice's genuine psychic abilities, establishing her as different from other patients."
-
+    key_clue_reason: Thaddeus's patient notes show Alice's genuine psychic abilities,
+      establishing her as different from other patients.
   act_ii_mystery_emerges:
-    name: "Act II: The Mystery Emerges"
-    purpose: "Alice's death, Célestine's failure to help her move on"
+    name: 'Act II: The Mystery Emerges'
+    purpose: Alice's death, Célestine's failure to help her move on
     clues:
-      - medical_death_cert_alice
-      - silas_1925_10_07_entry_1
-      - alice_not_crazy
+    - medical_death_cert_alice
+    - 1925_10_07_entry_1_43_43_43_43_43_43_43
+    - vision_145_alice_not_crazy
     key_clue: medical_death_cert_alice
-    key_clue_reason: "Alice's death certificate marks the moment Célestine's greatest failure begins - she cannot help Alice's spirit find peace."
-
+    key_clue_reason: Alice's death certificate marks the moment Célestine's greatest
+      failure begins - she cannot help Alice's spirit find peace.
   act_iii_investigation:
-    name: "Act III: The Investigation"
-    purpose: "Understand why Alice's spirit is trapped, what unfinished business keeps her bound"
+    name: 'Act III: The Investigation'
+    purpose: Understand why Alice's spirit is trapped, what unfinished business keeps
+      her bound
     clues:
-      - alice_not_crazy
-      - alice_love_for_thaddeus
-      - alice_thaddeus_inaction
+    - vision_145_alice_not_crazy
+    - vision_142_alice_love_for_thaddeus
+    - vision_146_alice_thaddeus_inaction
     key_clue: alice_love_for_thaddeus
-    key_clue_reason: "Alice's love for Thaddeus and her inaction reveal the secrets that keep her spirit bound."
-
+    key_clue_reason: Alice's love for Thaddeus and her inaction reveal the secrets
+      that keep her spirit bound.
   act_iv_revelation:
-    name: "Act IV: The Revelation"
-    purpose: "Reveal Célestine's failure and the legacy passed to Margo"
+    name: 'Act IV: The Revelation'
+    purpose: Reveal Célestine's failure and the legacy passed to Margo
     clues:
-      - alice_not_crazy
-      - alice_love_for_thaddeus
+    - vision_145_alice_not_crazy
+    - vision_142_alice_love_for_thaddeus
     key_clue: null
-    key_clue_reason: "This is the final act. No further acts to unlock."
+    key_clue_reason: This is the final act. No further acts to unlock.

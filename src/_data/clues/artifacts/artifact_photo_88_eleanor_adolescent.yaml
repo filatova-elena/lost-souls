@@ -1,0 +1,15 @@
+id: APH88
+name: Photograph - Eleanor at Age 10
+act: act_iii_investigation
+type: Artifact (Photograph)
+appearance: Black and white photograph of young girl standing in front of house with mature expression
+location: With Dressmaker character (found among Elias Monroe's possessions)
+skills:
+  - history_1
+legacy_character_interpretations:
+  dressmaker: Eleanor at age 10, the final photograph in the sequence. She''s old enough now that her mother''s features are becoming visible in her face. Elias kept all three photographs hidden together—documentation of Eleanor''s childhood that Cordelia could never experience directly. If he preserved them so carefully, it means Cordelia knew about these photographs too. Their secret was shared between them.
+  explorer: |
+      explorer: The final photograph in the sequence—this might be a deliberate endpoint. Compare Eleanor''s facial features to known photographs of Cordelia Montrose. The resemblance should be obvious by age 10. Find: 1) What happened after this final photograph (1935), 2) Whether there are later photographs or why they stopped, 3) Whether Eleanor was ever told about Cordelia. The sequence suggests either a planned endpoint or a sudden interruption. This photograph might be the last contact between the families.
+
+content: |
+  A black and white photograph of a young girl standing in front of a house, with a more mature expression.

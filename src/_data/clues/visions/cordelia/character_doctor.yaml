@@ -1,8 +1,0 @@
-id: cordelia_character_doctor
-type: Vision (Cordelia)
-ghost: cordelia
-to_character: doctor
-name: Thaddeus Recognition
-act: act_i_setting
-content: |
-  You remind me of Thaddeus, unpleasant man.

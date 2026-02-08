@@ -1,0 +1,16 @@
+id: APH91
+is_primary: false
+name: Faded Photograph - The Romano Family at Harbor
+act: act_i_setting
+type: Artifact (Photograph)
+appearance: Black and white photograph showing group of well-dressed people standing near waterfront location
+location: Art Collector's office, framed on desk
+skills:
+  - history_1
+legacy_character_interpretations:
+  art_collector: This photograph shows Frankie Romano with family members at the harbor. I can identify Frankie—he''s in the center, commanding position. His right hand is that man there... I''ve seen his name in Harbor Import & Trading Co. records, but I can''t quite place him in the context. But wait—who is that man standing slightly back from Frankie''s left? The positioning is interesting. He''s not family, not clearly Romano.
+  explorer: Long Beach''s working waterfront—those warehouse structures match Harbor Import & Trading Co. records. Professional photography like this wasn''t common unless it documented something important. There are likely other records or artifacts from this business.
+  influencer: Wait, this photograph! I''ve researched the Long Beach Mysteries extensively. I recognize that warehouse structure in the background—Harbor Import & Trading Co. That''s the same operation mentioned in the Ray Turner historical accounts I covered in my podcast series. And that''s Frankie Romano in the center. I''ve read about him in archived newspaper accounts. But more importantly—look at the dating of this photograph. Early 1930s? That matches the timeline in my research. This is actual documentary evidence of the smuggling operation I''ve been investigating. If I can identify the other people in this photograph, I might have solved a mystery that''s been buried in Long Beach history for decades.
+
+content: |
+  A black and white photograph showing a group of well-dressed people standing near a waterfront location.

@@ -1,0 +1,18 @@
+id: BG100
+title: Colorful Fruiting Garden Plants
+name: Spicy Peppers
+act: act_i_setting
+scientific_name: Capsicum annuum
+is_primary: false
+type: Botanical (Garden Herb)
+appearance: Pepper plants with vibrant red, yellow, and green peppers, clearly thriving
+reveals: Found in Montrose garden. Suggests the household chef enjoyed culinary experimentation.
+character_interpretations:
+  professor: Pepper plants. Culinary varieties. Common garden vegetable.
+  baker: Jalapeño, habanero, serrano. Chef liked heat. Good for bold flavors.
+  heiress: Colorful vegetables. Still growing.
+  explorer: Multiple pepper varieties. Intentional planting.
+  fiduciary: No significance.
+content: |
+  Pepper plants with vibrant red, yellow, and green peppers. Common garden vegetable. Clearly thriving.
+

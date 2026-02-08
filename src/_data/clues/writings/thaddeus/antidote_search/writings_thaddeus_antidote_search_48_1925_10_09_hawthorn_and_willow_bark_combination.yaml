@@ -1,0 +1,22 @@
+id: WTAS48
+type: Writing (Thaddeus's Antidote Search)
+author: thaddeus
+date: '1925-10-09'
+title: Hawthorn and Willow Bark Combination
+act: act_iii_investigation
+is_spoiler: false
+content: |-
+  [Handwriting deteriorating]
+
+  Hawthorn strengthens heart tissue. Willow bark reduces inflammation. Combined with additional potassium and strychnine for cardiac stimulation.
+
+  Dosed patient this morning. Monitoring continuously.
+
+  [Hours later, same page]: NOTHING. No improvement. The heart continues to fail. Why doesn't the body respond to treatment?
+
+  Unless the concentration of toxin is so extreme that my standard protocols cannot compete with it.
+
+  Unless I am fundamentally misunderstanding something about how the poison works.
+character_interpretations:
+  doctor: He's combining botanical with pharmaceutical now. The realization in that second note is crucial—he's beginning to understand this isn't a typical overdose. The toxin concentration might be in ranges standard treatment simply cannot overcome.
+  professor: Thaddeus is using hawthorn and willow bark correctly. But the failure suggests the poisoning is beyond what any botanical remedy can address. His question—'how does the poison work?'—suggests he doesn't fully understand what he's treating.

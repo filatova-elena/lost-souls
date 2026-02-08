@@ -34,16 +34,16 @@ module.exports = function(eleventyConfig) {
     return md.render(value);
   });
 
-  // Get clue by ID
-  eleventyConfig.addFilter("getClue", function(clueId, cluesData) {
-    if (!clueId || !cluesData) return null;
-    return cluesData.find(clue => clue.id === clueId) || null;
+  // Get clue by name
+  eleventyConfig.addFilter("getClue", function(name, cluesData) {
+    if (!name || !cluesData) return null;
+    return cluesData.byName?.get(name) || null;
   });
 
-  // Get rumor by ID
-  eleventyConfig.addFilter("getRumor", function(rumorId, rumorsData) {
-    if (!rumorId || !rumorsData) return null;
-    return rumorsData.find(rumor => rumor.id === rumorId) || null;
+  // Get rumor by name
+  eleventyConfig.addFilter("getRumor", function(name, rumorsData) {
+    if (!name || !rumorsData) return null;
+    return rumorsData.byName?.get(name) || null;
   });
 
   // Check if a key is a metadata key (for clue organization template)

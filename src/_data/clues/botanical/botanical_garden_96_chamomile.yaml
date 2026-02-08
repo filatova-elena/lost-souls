@@ -1,0 +1,18 @@
+id: BG96
+title: White and Yellow Flowered Plant
+name: Chamomile
+act: act_i_setting
+scientific_name: Matricaria chamomilla
+is_primary: false
+type: Botanical (Garden Herb)
+appearance: Cheerful white and yellow flowers, dried bundles hanging nearby
+reveals: Soothing garden plant found in the Montrose mansion kitchen. Commonly used for teas.
+character_interpretations:
+  professor: Chamomile. Common and harmless. A gentle herb. Known for soothing properties.
+  baker: Chamomile. Used for tea. Kitchen herb. Mild flavor.
+  heiress: White flowers. Pretty dried.
+  explorer: Chamomile. Old bundles, dried properly. Common sight in gardens and kitchens.
+  fiduciary: No significance.
+content: |
+  Cheerful white and yellow flowers. Dried bundles hanging nearby. Common garden plant.
+

@@ -62,14 +62,14 @@ title: "Clue Reference"
         <p class="muted" style="font-style: italic;">{{ sectionData.note }}</p>
         {% if sectionData.clues %}
         <ul style="list-style: none; padding-left: 0;">
-          {% for clueId in sectionData.clues %}
-            {% set clue = clueId | getClue(clues) %}
+          {% for name in sectionData.clues %}
+            {% set clue = name | getClue(clues) %}
             <li style="margin: 4px 0;">
               {% if clue %}
-                {{ clue.type | typeIcon }} <a href="{{ site.baseUrl }}clues/{{ clue.id }}/" target="_blank">{{ clue.title or clue.name }}</a>
+                {{ clue.type | typeIcon }} <a href="{{ site.baseUrl }}clues/{{ clue.name }}/" target="_blank">{{ clue.title or clue.name }}</a>
                 <span class="muted"> — {{ clue.type }}</span>
               {% else %}
-                🔗 <span class="muted">{{ clueId }}</span>
+                🔗 <span class="muted">{{ name }}</span>
               {% endif %}
             </li>
           {% endfor %}
@@ -89,15 +89,15 @@ title: "Clue Reference"
               {% if plotPoint.clues | length %}
               <div>
                 <strong style="font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.5px;">Clues</strong>
-                {% for clueId in plotPoint.clues %}
-                  {% set clue = clueId | getClue(clues) %}
+                {% for name in plotPoint.clues %}
+                  {% set clue = name | getClue(clues) %}
                   <div style="margin: 6px 0; padding: 3px 0;">
                     {% if clue %}
                       {{ clue.type | typeIcon }}
-                      <a href="{{ site.baseUrl }}clues/{{ clue.id }}/" target="_blank">{{ clue.title or clue.name }}</a>
+                      <a href="{{ site.baseUrl }}clues/{{ clue.name }}/" target="_blank">{{ clue.title or clue.name }}</a>
                       <span class="muted"> — {{ clue.type }}</span>
                     {% else %}
-                      🔗 <span class="muted">{{ clueId }} (not found)</span>
+                      🔗 <span class="muted">{{ name }} (not found)</span>
                     {% endif %}
                   </div>
                 {% endfor %}
@@ -108,8 +108,8 @@ title: "Clue Reference"
               {% if plotPoint.rumors | length %}
               <div style="margin-top: 12px; padding-top: 10px; border-top: 1px solid rgba(212, 165, 116, 0.15);">
                 <strong style="font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.5px;">Rumors</strong>
-                {% for rumorId in plotPoint.rumors %}
-                  {% set rumor = rumorId | getRumor(rumorsData) %}
+                {% for name in plotPoint.rumors %}
+                  {% set rumor = name | getRumor(rumorsData) %}
                   <div style="margin: 6px 0; padding: 3px 0;">
                     {% if rumor %}
                       💬 <span style="opacity: 0.85;">{{ rumor.content | trim }}</span>
@@ -119,7 +119,7 @@ title: "Clue Reference"
                         <span style="color: #f44336; font-size: 0.75em; margin-left: 6px;">✗ FALSE</span>
                       {% endif %}
                     {% else %}
-                      💬 <span class="muted">{{ rumorId }}</span>
+                      💬 <span class="muted">{{ name }}</span>
                     {% endif %}
                   </div>
                 {% endfor %}

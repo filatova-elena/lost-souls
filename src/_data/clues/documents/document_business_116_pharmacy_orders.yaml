@@ -1,0 +1,48 @@
+id: DB116
+type: Document (Business)
+title: Purchase Records - Crane Apothecary & Pharmaceutical Supplies
+act: act_ii_mystery_emerges
+date: August-October 1925
+format: Order ledger with supplier information and costs
+location: Sebastian's Laboratory at Montrose Estate
+content: |-
+  AUGUST 1925 - SUPPLY ORDERS
+
+  Date       Supplier                          Item                          Qty      Unit Price    Total
+  08/02/25   Cal. Medicinal Spirits Co.       Grain Alcohol (95%)          10 gal    $4.50/gal    $45.00
+  08/05/25   Pacific Chemical Supply          Potassium Bromide            1 lb      $3.50        $3.50
+  08/08/25   Western Drug Wholesale           Calcium Lactate              8 oz      $2.25        $2.25
+  08/08/25   Western Drug Wholesale           Iron Citrate                 8 oz      $2.75        $2.75
+  08/12/25   Harbor Import & Trading Co.      Digitalis (Foxglove)         4 oz      $6.00        $6.00
+  08/12/25   Harbor Import & Trading Co.      Damiana leaf                 2 oz      $3.50        $3.50
+  08/15/25   Harbor Import & Trading Co.      Valerian Root                4 oz      $2.50        $2.50
+  08/18/25   Harbor Import & Trading Co.      Ginseng Root                 1 oz      $8.00        $8.00
+  08/20/25   Crown Essential Oils, Ltd.       Rose Otto oil                1/2 oz    $12.00       $12.00
+  08/22/25   Turner & Sons Provisions         Vanilla Extract              16 oz     $4.50        $4.50
+  08/22/25   Turner & Sons Provisions         Cherry Syrup                 32 oz     $3.00        $3.00
+  08/25/25   Riverside Apiary                 Pure Honey                   5 lbs     $6.50        $6.50
+
+                                                                     AUGUST TOTAL:         $99.50
+
+  SEPTEMBER 1925 - ADDITIONAL ORDERS
+
+  09/01/25   Harbor Import & Trading Co.      Digitalis (Foxglove)         2 oz      $3.00        $3.00
+  09/08/25   Pacific Chemical Supply          Aspirin Tablets (5 gr)       1000      $2.50        $2.50
+  09/15/25   Western Drug Wholesale           Quinine Sulfate              4 oz      $4.75        $4.75
+
+                                                                    SEPTEMBER TOTAL:      $10.25
+
+  OCTOBER 1925 - ADDITIONAL ORDERS
+
+  10/02/25   Turner & Sons Provisions         Castor Oil                   32 oz     $1.50        $1.50
+  10/10/25   Crown Essential Oils, Ltd.       Peppermint Oil               2 oz      $3.25        $3.25
+  10/20/25   Western Drug Wholesale           Epsom Salt (medicinal)       5 lbs     $0.75        $0.75
+
+                                                                     OCTOBER TOTAL:       $5.50
+signedBy: Sebastian Montgomery Crane, Proprietor
+character_interpretations:
+  professor: 'Looking at these orders, I can identify the botanical components immediately. Digitalis purpurea—foxglove—appears twice: 4 ounces in August and 2 ounces in September. As a botanist, I find this interesting. Damiana, valerian, ginseng root—these are all legitimate botanical suppliers. But the foxglove purchases in such quantities, combined with rose otto oil and those essential compounds... The August formula seems deliberately complex. My ancestor''s consultation notes mentioned similar ingredient requests.'
+  doctor: The chemical compounds here are significant. Potassium bromide, calcium lactate, iron citrate, quinine sulfate—these are all standard pharmaceutical ingredients. But the foxglove (digitalis) is noteworthy. Four ounces in August, then another two ounces in September. That's substantial dosing for pharmaceutical work. And look at the timing—the September re-order occurs just days after the August shipment. Either he exhausted a batch quickly, or he was experimenting.
+  art_collector: 'These manifests show a familiar pattern from my family''s business—mixed legitimate purchases alongside imports from Harbor Import & Trading Co. My ancestors controlled that company. So Sebastian was sourcing botanicals through a Romano operation. The suppliers vary: medicinal spirits, chemical companies, essential oils. It''s a network of legitimate suppliers. But Harbor Import & Trading handled the exotic botanicals—the ones that required... discretion. My family made sure those items reached who they needed to reach.'
+  explorer: From a historical perspective, the 1920s pharmaceutical trade was fascinating. Prohibition created demand for grain alcohol and creative sourcing. The mixing of standard pharmaceutical chemicals with imported botanicals suggests someone building a complete supply chain. Harbor Import & Trading Co. appears multiple times—a legitimate import operation, certainly, but one that could source unusual materials. The pattern shows systematic acquisition over three months, carefully documented.
+  fiduciary: 'The financial pattern is clear. August represents the major investment—$99.50 spent acquiring diverse ingredients and materials. September shows a modest re-order of $10.25, likely replenishing a key ingredient. October is minimal at $5.50. The accounts are properly recorded, itemized, dated. Everything documented. The suppliers are mixed: some local chemical suppliers, some from established import companies. It''s all by the books—nothing legally suspicious in the purchasing pattern itself.'

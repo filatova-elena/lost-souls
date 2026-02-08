@@ -42,14 +42,14 @@ layout: base
       <p class="muted">{{ act.purpose }}</p>
       {% if act.clues %}
         <ul>
-          {% for clueId in act.clues %}
-            {% set clue = clueId | getClue(clues) %}
+          {% for name in act.clues %}
+            {% set clue = name | getClue(clues) %}
             <li>
               {% if clue %}
                 <details class="clue-details">
                   <summary class="clue-summary">
                     <span>{% if clue.type %}{{ clue.type }}: {% endif %}{{ clue.title }}</span>
-                    <a href="{{ site.baseUrl }}clues/{{ clue.id }}/" class="clue-link">View Full Clue →</a>
+                    <a href="{{ site.baseUrl }}clues/{{ clue.name }}/" class="clue-link">View Full Clue →</a>
                   </summary>
                   <div class="clue-content">
                     {% if clue.content %}<div class="clue-text">{{ clue.content | markdown | safe }}</div>{% endif %}
@@ -67,7 +67,7 @@ layout: base
                   </div>
                 </details>
               {% else %}
-                {{ clueId }}
+                {{ name }}
               {% endif %}
             </li>
           {% endfor %}

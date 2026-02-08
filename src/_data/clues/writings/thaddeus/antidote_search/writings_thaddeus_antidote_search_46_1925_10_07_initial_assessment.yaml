@@ -1,0 +1,18 @@
+id: WTAS46
+type: Writing (Thaddeus's Antidote Search)
+author: thaddeus
+date: '1925-10-07'
+title: Initial Assessment
+act: act_iii_investigation
+is_spoiler: false
+content: |-
+  Sebastian has ingested foxglove derivative. Dosage unknown but acute symptoms present. The compound can be managed with proper intervention. Cardiac glycosides respond to electrolyte management and cardiac support.
+
+  First approach: Gastric lavage immediately to remove remaining toxin from digestive tract. High-dose potassium supplementation. Strict bed rest with cardiac monitoring.
+
+  Second approach: Diuretics to increase urine output and flush toxin from system.
+
+  This is manageable. I have handled toxin cases before. I am managing it.
+character_interpretations:
+  doctor: These are standard 1920s protocols for cardiac glycoside poisoning. Textbook first response. But the confidence here is concerning—he's underestimating the severity. Most cases of foxglove poisoning this acute don't respond to standard electrolyte management.
+  professor: Hartley was being consulted but wasn't engaged yet. Standard medical approach first. Shows Thaddeus understood the chemistry but was missing botanical solutions.

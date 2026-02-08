@@ -1,0 +1,25 @@
+id: AO78
+is_primary: true
+name: Silver Candle Holder
+act: act_iv_revelation
+type: Artifact (Object)
+appearance: Ornate silver candle holder with intricate decorative patterns, noticeably heavy
+skills:
+  - medical_2
+content: |
+  An ornate silver candle holder with intricate decorative patterns, noticeably heavy and substantial.
+
+  ## Blood Evidence
+
+  Upon close examination, **tiny blood splatter is visible on the surface**—red specks that could potentially be tested for **DNA to match against victims**.
+
+  ## Splatter Pattern Analysis
+
+  The splatter pattern reveals critical forensic details:
+  - Droplets are **concentrated on one side** and radiate outward
+  - Indicates the impact came from a **specific direction**
+
+  ## Weapon Analysis
+
+  The substantial weight of the candle holder, combined with **visible impact marks**, confirms this object could have caused **serious, potentially fatal injury**.
+
