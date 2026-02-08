@@ -10,7 +10,7 @@ title: Clues
 <ul>
   {% for clue in clues %}
     <li>
-      <a href="{{ site.baseUrl }}clues/{{ clue.id }}/">{{ clue.title }}</a>
+      <a href="{{ site.baseUrl }}clues/{{ clue.name }}/">{{ clue.title }}</a>
       {% if clue.type %}<span class="muted"> - {{ clue.type }}</span>{% endif %}
       {% if clue.appearance %}<p class="muted" style="margin-top: 4px; margin-bottom: 0;">{{ clue.appearance }}</p>{% endif %}
     </li>

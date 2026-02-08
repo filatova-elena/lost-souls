@@ -1,0 +1,18 @@
+id: BG102
+title: Dried Herb Bundle
+name: Sage
+act: act_i_setting
+scientific_name: Salvia officinalis
+is_primary: false
+type: Botanical (Garden Herb)
+appearance: Bundled dried herb tied with string, strong aromatic smell, spiritual in appearance
+reveals: Alice used this for spiritual practices. Shows her spiritual search for peace.
+character_interpretations:
+  professor: Dried sage. Aromatic herb. Commonly used for spiritual practices.
+  baker: Sage bundle. For cleansing. Strong aroma.
+  heiress: Something spiritual. Alice's things.
+  explorer: Sage bundle, ceremonial preparation. Strong aromatic smoke.
+  fiduciary: No significance.
+content: |
+  A bundled dried herb tied with string. Strong aromatic smell. Spiritual in appearance.
+

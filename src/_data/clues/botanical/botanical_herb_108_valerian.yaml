@@ -1,0 +1,18 @@
+id: BH108
+title: Dried Earthen Root Powder
+name: Valerian Root
+act: act_iii_investigation
+scientific_name: Valeriana officinalis
+is_primary: true
+type: Botanical (Dried Herb)
+appearance: Fine powder made from dried roots, earthy and musty aroma, consistent texture
+reveals: Legitimate ingredient in Sebastian's harmless elixir. Safe sedative herb. Chosen to calm the bride and create intimacy.
+character_interpretations:
+  professor: Valeriana officinalis root. Properly dried and ground to powder. The earthy scent is distinctive. The grinding is consistent—prepared by someone with knowledge of traditional herbal methods.
+  baker: I know this by smell. Earthy, musty, distinctive. The grinding is fine and even. Whoever made this knew herbalism.
+  heiress: I don't examine jars in dark garages.
+  explorer: A properly harvested and dried root. The preparation shows knowledge—roots were dug at the right season, dried correctly, ground finely. Not casual collection.
+  fiduciary: Root powder. Completely safe. Standard herbal preparation. No toxicological concerns whatsoever.
+content: |
+  A powder made from dried roots. Earthy, musty aroma. Fine, consistent texture.
+

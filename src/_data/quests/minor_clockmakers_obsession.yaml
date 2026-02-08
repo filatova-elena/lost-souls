@@ -2,74 +2,111 @@ id: clockmakers_obsession
 title: The Clockmaker's Obsession
 emojis: ⏰
 subtitle: Time, Consciousness, and Sacred Timing
-objective: Discover the origin and meaning of the pocket watch that led the Clockmaker to the Montrose mansion.
-answer: The pocket watch was a gift from Thaddeus Crane to Sebastian Crane, his brother, on the occasion of his engagement to Cordelia Montrose. It was engraved with the date of the Jupiter-Venus conjunction when Sebastian first administered his Elixir of Eternal Love that ultimately led to Cordelia's death.
+objective: Discover the origin and meaning of the pocket watch that led the Clockmaker
+  to the Montrose mansion.
+answer: The pocket watch was a gift from Thaddeus Crane to Sebastian Crane, his brother,
+  on the occasion of his engagement to Cordelia Montrose. It was engraved with the
+  date of the Jupiter-Venus conjunction when Sebastian first administered his Elixir
+  of Eternal Love that ultimately led to Cordelia's death.
 type: minor
-content: |
-  The Clockmaker talks a mile a minute while their hands are always tinkering. Caffeine-fueled chaos. Sleep? Never heard of her. Covered in tiny gears and oil stains.
+content: 'The Clockmaker talks a mile a minute while their hands are always tinkering.
+  Caffeine-fueled chaos. Sleep? Never heard of her. Covered in tiny gears and oil
+  stains.
 
-  They see the world as one giant clock that's slightly out of sync. And they're obsessed with fixing it.
 
-  **The Pocket Watch:** For years, they've been restoring an antique pocket watch from 1925. Beautiful craftsmanship. Intricate mechanism. But there's something engraved inside: **September 4** and strange astronomical symbols.
+  They see the world as one giant clock that''s slightly out of sync. And they''re
+  obsessed with fixing it.
 
-  The Clockmaker calculated it: September 4, 1925, at 6:14 AM—a rare Jupiter-Venus conjunction. The alignment happens once in decades. Someone thought this date was important enough to engrave it permanently.
 
-  **The Research:** The Clockmaker became obsessed. What happened on September 4, 1925? Why did someone commemorate this conjunction? They researched alchemical timing traditions, studied historical records, made endless calculations.
+  **The Pocket Watch:** For years, they''ve been restoring an antique pocket watch
+  from 1925. Beautiful craftsmanship. Intricate mechanism. But there''s something
+  engraved inside: **September 4** and strange astronomical symbols.
 
-  Then the Influencer featured them in "Long Beach Urban Legends"—the mysterious watch, the conjunction, the timing. The episode led them both to the Montrose mansion, to three deaths in October 1925, exactly five weeks after that sacred conjunction.
 
-  **The Helmet Project:** But the Clockmaker isn't just about external time. They're building something revolutionary: a device exploring the intersection of neuroscience and mystical experience. A "consciousness helmet" that maps brain activity during moments of spiritual significance.
+  The Clockmaker calculated it: September 4, 1925, at 6:14 AM—a rare Jupiter-Venus
+  conjunction. The alignment happens once in decades. Someone thought this date was
+  important enough to engrave it permanently.
 
-  The Influencer thinks it's pseudoscience. "You're just measuring brain chemistry. There's nothing mystical about it."
 
-  The Clockmaker disagrees: "Just because you can measure something doesn't mean it isn't real. The mystics were right about timing. The alchemists understood something we've forgotten. Consciousness isn't just neurons firing—it's part of a larger pattern. A cosmic clock."
+  **The Research:** The Clockmaker became obsessed. What happened on September 4,
+  1925? Why did someone commemorate this conjunction? They researched alchemical timing
+  traditions, studied historical records, made endless calculations.
 
-  They argue constantly. The Influencer documents everything for content. The Clockmaker keeps building, keeps calculating, keeps tinkering.
 
-  **The Truth About September 4:** Thaddeus Crane engraved that watch to commemorate Sebastian's engagement to Cordelia Montrose. Thaddeus knew his brother Sebastian well: Sebastian told him all about his "Great Work" and the Jupiter-Venus conjunction when he was planning to administer his Elixir of Eternal Love to Cordelia. Sebastian believed cosmic timing would amplify the formula's power.
+  Then the Influencer featured them in "Long Beach Urban Legends"—the mysterious watch,
+  the conjunction, the timing. The episode led them both to the Montrose mansion,
+  to three deaths in October 1925, exactly five weeks after that sacred conjunction.
 
+
+  **The Helmet Project:** But the Clockmaker isn''t just about external time. They''re
+  building something revolutionary: a device exploring the intersection of neuroscience
+  and mystical experience. A "consciousness helmet" that maps brain activity during
+  moments of spiritual significance.
+
+
+  The Influencer thinks it''s pseudoscience. "You''re just measuring brain chemistry.
+  There''s nothing mystical about it."
+
+
+  The Clockmaker disagrees: "Just because you can measure something doesn''t mean
+  it isn''t real. The mystics were right about timing. The alchemists understood something
+  we''ve forgotten. Consciousness isn''t just neurons firing—it''s part of a larger
+  pattern. A cosmic clock."
+
+
+  They argue constantly. The Influencer documents everything for content. The Clockmaker
+  keeps building, keeps calculating, keeps tinkering.
+
+
+  **The Truth About September 4:** Thaddeus Crane engraved that watch to commemorate
+  Sebastian''s engagement to Cordelia Montrose. Thaddeus knew his brother Sebastian
+  well: Sebastian told him all about his "Great Work" and the Jupiter-Venus conjunction
+  when he was planning to administer his Elixir of Eternal Love to Cordelia. Sebastian
+  believed cosmic timing would amplify the formula''s power.
+
+  '
 clue_organization:
   act_i_setting:
-    name: "Act I: The Setting"
-    purpose: "Introduce the pocket watch, the engraving, the astronomical significance"
+    name: 'Act I: The Setting'
+    purpose: Introduce the pocket watch, the engraving, the astronomical significance
     clues:
-      - pocket_watch
-      - sebastian_1925_08_15_refinement_and_urgency
+    - artifact_81_object_pocket_watch
+    - 1925_08_15_refinement_and_urgency_35_35_35_35_35_35_35
     key_clue: pocket_watch
-    key_clue_reason: "The pocket watch with its mysterious engraving draws the Clockmaker into the investigation."
-
+    key_clue_reason: The pocket watch with its mysterious engraving draws the Clockmaker
+      into the investigation.
   act_ii_mystery_emerges:
-    name: "Act II: The Mystery Emerges"
-    purpose: "Connect the watch to the deaths, raise questions about timing"
+    name: 'Act II: The Mystery Emerges'
+    purpose: Connect the watch to the deaths, raise questions about timing
     clues:
-      - sebastian_1925_08_15_the_watch
-      - sebastian_1925_09_04_the_beginning
-      - sebastian_conjunction
+    - 1925_08_15_the_watch_36_36_36_36_36_36_36
+    - 1925_09_04_the_beginning_39_39_39_39_39_39_39
+    - vision_168_sebastian_conjunction
     key_clue: sebastian_1925_08_15_the_watch
-    key_clue_reason: "Sebastian's diary entry reveals the watch was a gift from Thaddeus, connecting it to the engagement and elixir timing."
-
+    key_clue_reason: Sebastian's diary entry reveals the watch was a gift from Thaddeus,
+      connecting it to the engagement and elixir timing.
   act_iii_investigation:
-    name: "Act III: The Investigation"
-    purpose: "Discover the origin of the watch, understand its significance"
+    name: 'Act III: The Investigation'
+    purpose: Discover the origin of the watch, understand its significance
     clues:
-      - thaddeus_1925_08_15_engagement_present_card_from_thaddeus
-      - sebastian_1925_08_15_the_watch
-      - sebastian_1925_09_04_the_beginning
-      - sebastian_conjunction
-      - medical_death_cert_sebastian
-      - medical_death_cert_cordelia
-      - medical_death_cert_alice
+    - 1925_08_15_engagement_present_card_from_thaddeus_70_70_70_70_70_70_70
+    - 1925_08_15_the_watch_36_36_36_36_36_36_36
+    - 1925_09_04_the_beginning_39_39_39_39_39_39_39
+    - vision_168_sebastian_conjunction
+    - medical_death_cert_sebastian
+    - medical_death_cert_cordelia
+    - medical_death_cert_alice
     key_clue: thaddeus_1925_08_15_engagement_present_card_from_thaddeus
-    key_clue_reason: "Thaddeus's card reveals he gave the watch as an engagement gift, engraved with the Jupiter-Venus conjunction date."
-
+    key_clue_reason: Thaddeus's card reveals he gave the watch as an engagement gift,
+      engraved with the Jupiter-Venus conjunction date.
   act_iv_revelation:
-    name: "Act IV: The Revelation"
-    purpose: "Reveal the full truth about the watch and its connection to the elixir"
+    name: 'Act IV: The Revelation'
+    purpose: Reveal the full truth about the watch and its connection to the elixir
     clues:
-      - thaddeus_1925_08_15_engagement_present_card_from_thaddeus
-      - sebastian_1925_08_15_the_watch
-      - sebastian_1925_09_04_the_beginning
-      - sebastian_conjunction
-      - pocket_watch
+    - 1925_08_15_engagement_present_card_from_thaddeus_70_70_70_70_70_70_70
+    - 1925_08_15_the_watch_36_36_36_36_36_36_36
+    - 1925_09_04_the_beginning_39_39_39_39_39_39_39
+    - vision_168_sebastian_conjunction
+    - artifact_81_object_pocket_watch
     key_clue: null
-    key_clue_reason: "This is the final act. No further acts to unlock."
+    key_clue_reason: This is the final act. No further acts to unlock.

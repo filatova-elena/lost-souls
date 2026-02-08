@@ -1,0 +1,15 @@
+id: AO82
+name: The Rose Garden Bed - Montrose Estate
+act: act_i_setting
+type: Artifact (Object)
+appearance: Carefully maintained garden bed filled with deep red and white roses
+location: Montrose Estate gardens (accessible to multiple characters during investigations)
+skills:
+  - history_1
+legacy_character_interpretations:
+  heiress: The rose garden has always been beautiful, but I''ve recently learned it holds secrets. My ancestor allowed it to be used as a storage location by someone connected to the smuggling operations. I wonder what lies beneath the soil.
+  explorer: |
+    The hand-drawn map points here. Use the paced measurements from the map as your guide to find the exact location. Check: 1) Soil composition for disturbance layers, 2) Subsurface structures (check for buried containers, boxes, or vaults), 3) Garden maintenance records (when was the soil last turned, re-seeded, or disturbed?). Rose gardens'' disturbed soil is easily explained as ''gardening.'' Multiple burial/retrieval cycles are evident. Bring digging equipment and investigate below the surface where the map indicates.
+
+content: |
+  A carefully maintained garden bed filled with deep red and white roses.

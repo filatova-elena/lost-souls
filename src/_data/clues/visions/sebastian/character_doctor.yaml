@@ -1,8 +1,0 @@
-id: sebastian_character_doctor
-type: Vision (Sebastian)
-ghost: sebastian
-to_character: doctor
-name: Brother Recognition
-act: act_ii_mystery_emerges
-content: |
-  You remind me of my brother

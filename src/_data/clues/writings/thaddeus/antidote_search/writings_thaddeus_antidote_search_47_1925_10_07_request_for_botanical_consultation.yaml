@@ -1,0 +1,20 @@
+id: WTAS47
+type: Writing (Thaddeus's Antidote Search)
+author: thaddeus
+date: '1925-10-07'
+title: Request for Botanical Consultation
+act: act_iii_investigation
+is_spoiler: false
+content: |-
+  Dear Professor Hartley,
+
+  I write regarding a confidential medical matter. A patient has been exposed to concentrated foxglove derivative. I am formulating a counter-treatment and require your expertise on botanical remedies.
+
+  Specifically: Are there known plants or compounds known to counteract cardiac distress from digitalis poisoning? Any botanical knowledge that might provide cardiac support would be invaluable.
+
+  Your discretion is appreciated.
+
+  Dr. Thaddeus Crane
+character_interpretations:
+  doctor: He's reaching out to botanical expertise. Good instinct—standard medical treatments might not be enough. The confidentiality request suggests he knew the patient personally.
+  professor: Thaddeus is being evasive about details. 'A patient' not 'my patient.' Professional courtesy but also hiding something. The foxglove concentration being 'concentrated' is specific—he was worried it was worse than typical.

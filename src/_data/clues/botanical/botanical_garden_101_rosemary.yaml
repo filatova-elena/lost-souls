@@ -1,0 +1,18 @@
+id: BG101
+title: Grey-Green Needled Herb Plant
+name: Rosemary Plant
+act: act_i_setting
+scientific_name: Rosmarinus officinalis
+is_primary: false
+type: Botanical (Garden Herb)
+appearance: Fragrant grey-green plant with needle-like leaves and tiny purple flowers
+reveals: Found growing in the Montrose garden.
+character_interpretations:
+  professor: Rosemary. Common herb with good circulatory properties. A choice that suggests someone was trying to help with cardiac health.
+  baker: Rosemary from the garden. Fragrant, strong flavor. A helpful herb.
+  heiress: Rosemary grows wild here. I didn't know it was medicinal.
+  explorer: Rosemary. Mediterranean origin, grows reliably in this climate. Been here for years.
+  fiduciary: Garden herb. No suspicion.
+content: |
+  A fragrant grey-green plant with needle-like leaves and tiny purple flowers. Grows sturdy and well-maintained.
+

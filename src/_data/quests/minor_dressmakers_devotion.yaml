@@ -2,73 +2,76 @@ id: dressmakers_devotion
 title: The Dressmaker's Devotion
 emojis: 👗
 subtitle: Elias Monroe's Unrequited Love (1925)
-objective: Discover the true nature of Elias Monroe's relationship with Cordelia Montrose and the secret she shared with him before her death.
-answer: Elias Monroe harbored unrequited feelings for Cordelia Montrose. She entrusted him with her beloved rose bread recipe, asking him to deliver it to her daughter, Eleanor.
+objective: Discover the true nature of Elias Monroe's relationship with Cordelia Montrose
+  and the secret she shared with him before her death.
+answer: Elias Monroe harbored unrequited feelings for Cordelia Montrose. She entrusted
+  him with her beloved rose bread recipe, asking him to deliver it to her daughter,
+  Eleanor.
 type: minor
-content: |
-  Elias Monroe was a dressmaker with an artist's eye and a romantic's heart. The day Cordelia Montrose walked into his shop, he fell in love.
-
-  He sent her flowers, wrote her poems, made her dresses that would make other women weep with envy. Each stitch was a declaration of devotion she never seemed to see. She smiled at him kindly, but her eyes never lingered.
-
-  Then she disappeared for months in early 1925. When she returned, the lightness had gone out of her. She carried something heavy, something unspeakable. 
-
-  Then came Sebastian Crane—dark-mysterious, charming, yet stable, not like her first love Thomas Whitmore. Cordelia fell like a moth to flame. Elias tried to tell her that Sebastian was not the man for her, that he was too dangerous, but she dismissed him.
-
-  So he made her wedding dress instead. White silk and lace, every stitch a prayer. He tucked a lock of her hair into the hem—a secret goodbye.
-
-  By September, she looked pale, thin, trembling. 
-
-  In her final moments, Cordelia called for Elias. She gave him a handwritten rose bread recipe and entrusted him to deliver it to her only child, Eleanor.
-
-  Elias kept his promise.
-
-  **1939:** On Eleanor's fifteenth birthday, her adoptive mother gave her a small box. Inside were photographs of her birth mother, a letter addressed to Eleanor, written in meticulous handwriting, and a recipe for rose bread with a simple note: "From a friend of your mother's. She wanted you to have this. It was her favorite!" 
-
-  Eleanor would make the rose bread every day for the rest of her life.
-
+content: "Elias Monroe was a dressmaker with an artist's eye and a romantic's heart.\
+  \ The day Cordelia Montrose walked into his shop, he fell in love.\n\nHe sent her\
+  \ flowers, wrote her poems, made her dresses that would make other women weep with\
+  \ envy. Each stitch was a declaration of devotion she never seemed to see. She smiled\
+  \ at him kindly, but her eyes never lingered.\n\nThen she disappeared for months\
+  \ in early 1925. When she returned, the lightness had gone out of her. She carried\
+  \ something heavy, something unspeakable. \n\nThen came Sebastian Crane—dark-mysterious,\
+  \ charming, yet stable, not like her first love Thomas Whitmore. Cordelia fell like\
+  \ a moth to flame. Elias tried to tell her that Sebastian was not the man for her,\
+  \ that he was too dangerous, but she dismissed him.\n\nSo he made her wedding dress\
+  \ instead. White silk and lace, every stitch a prayer. He tucked a lock of her hair\
+  \ into the hem—a secret goodbye.\n\nBy September, she looked pale, thin, trembling.\
+  \ \n\nIn her final moments, Cordelia called for Elias. She gave him a handwritten\
+  \ rose bread recipe and entrusted him to deliver it to her only child, Eleanor.\n\
+  \nElias kept his promise.\n\n**1939:** On Eleanor's fifteenth birthday, her adoptive\
+  \ mother gave her a small box. Inside were photographs of her birth mother, a letter\
+  \ addressed to Eleanor, written in meticulous handwriting, and a recipe for rose\
+  \ bread with a simple note: \"From a friend of your mother's. She wanted you to\
+  \ have this. It was her favorite!\" \n\nEleanor would make the rose bread every\
+  \ day for the rest of her life.\n"
 clue_organization:
   act_i_setting:
-    name: "Act I: The Setting"
-    purpose: "Establish Elias's devotion, his relationship with Cordelia, the wedding dress"
+    name: 'Act I: The Setting'
+    purpose: Establish Elias's devotion, his relationship with Cordelia, the wedding
+      dress
     clues:
-      - cordelia_wedding_dress
-      - sebastian_1925_08_25_the_dressmaker
-      - elias_1925_10_17_the_dress_is_complete
-      - cordelia_character_dressmaker
+    - artifact_85_object_wedding_dress
+    - 1925_08_25_the_dressmaker_38_38_38_38_38_38_38
+    - 1925_10_17_the_dress_is_complete_24_24_24_24_24_24_24
+    - vision_152_cordelia_character_dressmaker
     key_clue: cordelia_wedding_dress
-    key_clue_reason: "The unfinished wedding dress represents Elias's unrequited love and devotion to Cordelia."
-
+    key_clue_reason: The unfinished wedding dress represents Elias's unrequited love
+      and devotion to Cordelia.
   act_ii_mystery_emerges:
-    name: "Act II: The Mystery Emerges"
-    purpose: "Cordelia's final request, the secret about Eleanor"
+    name: 'Act II: The Mystery Emerges'
+    purpose: Cordelia's final request, the secret about Eleanor
     clues:
-      - elias_1925_10_02_rose_bread_recipe_from_cordelia
-      - cordelia_1925_10_17_alice_is_dead
-      - elias_1925_09_25_something_is_wrong
+    - 1925_10_02_rose_bread_recipe_from_cordelia_22_22_22_22_22_22_22
+    - 1925_10_17_alice_is_dead_11_11_11_11_11_11_11
+    - 1925_09_25_something_is_wrong_21_21_21_21_21_21_21
     key_clue: elias_1925_10_02_rose_bread_recipe_from_cordelia
-    key_clue_reason: "Cordelia entrusts Elias with the rose bread recipe for Eleanor, revealing the secret she shared with him."
-
+    key_clue_reason: Cordelia entrusts Elias with the rose bread recipe for Eleanor,
+      revealing the secret she shared with him.
   act_iii_investigation:
-    name: "Act III: The Investigation"
-    purpose: "Discover who Eleanor is, understand the significance of the recipe"
+    name: 'Act III: The Investigation'
+    purpose: Discover who Eleanor is, understand the significance of the recipe
     clues:
-      - photograph_eleanor_baby
-      - photograph_eleanor_child
-      - photograph_eleanor_adolescent
-      - eleanor_1939_the_recipe
-      - margaret_1925_05_letter_regarding_discretion_and_family_arrangement
+    - artifact_89_photo_eleanor_baby
+    - artifact_90_photo_eleanor_child
+    - artifact_88_photo_eleanor_adolescent
+    - 1939_07_05_the_recipe_13_13_13_13_13_13_13
+    - 1925_05_letter_regarding_discretion_and_family_arrangement_31_31_31_31_31_31_31
     key_clue: eleanor_1939_the_recipe
-    key_clue_reason: "Eleanor receives the recipe in 1939, confirming Elias kept his promise and revealing the connection."
-
+    key_clue_reason: Eleanor receives the recipe in 1939, confirming Elias kept his
+      promise and revealing the connection.
   act_iv_revelation:
-    name: "Act IV: The Revelation"
-    purpose: "Reveal the full story - Elias's unrequited love and the secret he kept"
+    name: 'Act IV: The Revelation'
+    purpose: Reveal the full story - Elias's unrequited love and the secret he kept
     clues:
-      - elias_1925_10_02_rose_bread_recipe_from_cordelia
-      - eleanor_1939_the_recipe
-      - photograph_eleanor_baby
-      - photograph_eleanor_child
-      - photograph_eleanor_adolescent
-      - cordelia_wedding_dress
+    - 1925_10_02_rose_bread_recipe_from_cordelia_22_22_22_22_22_22_22
+    - 1939_07_05_the_recipe_13_13_13_13_13_13_13
+    - artifact_89_photo_eleanor_baby
+    - artifact_90_photo_eleanor_child
+    - artifact_88_photo_eleanor_adolescent
+    - artifact_85_object_wedding_dress
     key_clue: null
-    key_clue_reason: "This is the final act. No further acts to unlock."
+    key_clue_reason: This is the final act. No further acts to unlock.

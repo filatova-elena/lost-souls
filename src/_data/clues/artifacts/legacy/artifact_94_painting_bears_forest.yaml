@@ -1,0 +1,19 @@
+id: AP94
+name: Oil Painting - Bears in the Forest
+act: act_i_setting
+type: Artifact (Legacy Painting)
+appearance: Painting depicting bears in wilderness setting, captured with striking detail and emotion
+location: Montrose Mansion - Drawing Room
+skills:
+  - art_2
+legacy_character_interpretations:
+  art_collector: A Russian masterwork from the 1890s. The composition shows genuine artistic skill—the sense of power and untamed nature is masterfully rendered. This is one of three major paintings from the Romano family collection, valued at thousands in 1925. The brushwork and color palette indicate a trained artist of significant reputation. This piece was deliberately acquired as part of a curated collection.
+  explorer: |
+    Russian Peredvizhniki movement work—imported through Long Beach in the 1920s as European collections were dispersed. One of three coordinated masterworks suggests deliberate assembling of a legacy collection. Search for: 1) Harbor Import & Trading Co. shipping manifests for Russian artwork arrivals, 2) Insurance documents or appraisals from 1925-1926, 3) any correspondence between Frankie Romano and European art dealers. These three paintings are evidence of significant international smuggling connections beyond simple bootlegging.
+
+content: |
+  A painting depicting bears in a wilderness setting, captured with striking detail and emotion.
+
+  A **Russian masterwork from the 1890s**—the composition shows genuine artistic skill. The sense of power and untamed nature is masterfully rendered. This is **one of three major paintings** from the Romano family collection, valued at thousands in 1925. The brushwork and color palette indicate a trained artist of significant reputation.
+
+  **Russian Peredvizhniki movement work**—imported through Long Beach in the 1920s as European collections were dispersed. One of three coordinated masterworks suggests deliberate assembling of a legacy collection. These paintings are evidence of **significant international smuggling connections** beyond simple bootlegging. Search for Harbor Import & Trading Co. shipping manifests for Russian artwork arrivals, insurance documents or appraisals from 1925-1926, and correspondence between Frankie Romano and European art dealers.

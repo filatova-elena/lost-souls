@@ -1,0 +1,15 @@
+id: AO83
+is_primary: false
+name: Hand-Drawn Map - Rose Garden Location
+act: act_iv_revelation
+type: Artifact (Object)
+appearance: Faded hand-drawn map on aged paper showing Montrose Estate grounds with marked location
+location: Hidden compartment inside the decorative dragon vase (Montrose Mansion main hallway)
+skills:
+  - history_1
+legacy_character_interpretations:
+  art_collector: This is Frankie''s handwriting—I''ve seen it on shipping documents and business correspondence. The precision of these measurements, the careful notation system—this wasn''t a casual drawing. Someone invested time and care into mapping this location. The rose garden, specifically marked. This is a record of something deliberately hidden.
+  explorer: Military-grade surveying measurements in paces—this person had training. The rose garden location is isolated from main structures, perfect for unobserved burial and retrieval. The distances are precise enough to recover items later. This is a storage location map. You need to examine the rose garden bed itself—look for soil disturbance, subsurface structures, anything indicating repeated excavation. The measurements on this map should guide your digging.
+
+content: |
+  A faded hand-drawn map on aged paper showing the Montrose Estate grounds with a marked location.
