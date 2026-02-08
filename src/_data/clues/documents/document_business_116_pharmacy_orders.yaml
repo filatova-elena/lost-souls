@@ -2,6 +2,9 @@ id: DB116
 type: Document (Business)
 title: Purchase Records - Crane Apothecary & Pharmaceutical Supplies
 act: act_ii_mystery_emerges
+skills:
+  - medical_1
+  - bontanical_1
 date: August-October 1925
 format: Order ledger with supplier information and costs
 location: Sebastian's Laboratory at Montrose Estate
@@ -39,10 +42,17 @@ content: |-
   10/20/25   Western Drug Wholesale           Epsom Salt (medicinal)       5 lbs     $0.75        $0.75
 
                                                                      OCTOBER TOTAL:       $5.50
-signedBy: Sebastian Montgomery Crane, Proprietor
-character_interpretations:
-  professor: 'Looking at these orders, I can identify the botanical components immediately. Digitalis purpurea—foxglove—appears twice: 4 ounces in August and 2 ounces in September. As a botanist, I find this interesting. Damiana, valerian, ginseng root—these are all legitimate botanical suppliers. But the foxglove purchases in such quantities, combined with rose otto oil and those essential compounds... The August formula seems deliberately complex. My ancestor''s consultation notes mentioned similar ingredient requests.'
-  doctor: The chemical compounds here are significant. Potassium bromide, calcium lactate, iron citrate, quinine sulfate—these are all standard pharmaceutical ingredients. But the foxglove (digitalis) is noteworthy. Four ounces in August, then another two ounces in September. That's substantial dosing for pharmaceutical work. And look at the timing—the September re-order occurs just days after the August shipment. Either he exhausted a batch quickly, or he was experimenting.
-  art_collector: 'These manifests show a familiar pattern from my family''s business—mixed legitimate purchases alongside imports from Harbor Import & Trading Co. My ancestors controlled that company. So Sebastian was sourcing botanicals through a Romano operation. The suppliers vary: medicinal spirits, chemical companies, essential oils. It''s a network of legitimate suppliers. But Harbor Import & Trading handled the exotic botanicals—the ones that required... discretion. My family made sure those items reached who they needed to reach.'
-  explorer: From a historical perspective, the 1920s pharmaceutical trade was fascinating. Prohibition created demand for grain alcohol and creative sourcing. The mixing of standard pharmaceutical chemicals with imported botanicals suggests someone building a complete supply chain. Harbor Import & Trading Co. appears multiple times—a legitimate import operation, certainly, but one that could source unusual materials. The pattern shows systematic acquisition over three months, carefully documented.
-  fiduciary: 'The financial pattern is clear. August represents the major investment—$99.50 spent acquiring diverse ingredients and materials. September shows a modest re-order of $10.25, likely replenishing a key ingredient. October is minimal at $5.50. The accounts are properly recorded, itemized, dated. Everything documented. The suppliers are mixed: some local chemical suppliers, some from established import companies. It''s all by the books—nothing legally suspicious in the purchasing pattern itself.'
+  SIGNED
+  Sebastian Montgomery Crane, Proprietor
+
+  ---
+
+  ## You observe
+
+  - **Grain Alcohol (95%)** — 10 gallons is a substantial quantity during Prohibition. This could supply a small speakeasy or suggest someone is running liquor under the guise of medicinal sales.
+
+  - **Digitalis (Foxglove)** appears twice: 4 ounces in August and 2 ounces in September. Digitalis was a common cardiac remedy in the 1920s, but these quantities seem high for a small operation.
+
+  - **Potassium Bromide** was a widely used sedative, but it was also falling out of medical favor by the mid-1920s due to reports of chronic toxicity. An unusual choice for a reputable practitioner.
+
+  - **Damiana leaf** and **Rose Otto oil** together suggest someone was perhaps formulating an aphrodisiac tonic — a popular but disreputable product in this era.

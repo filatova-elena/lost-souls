@@ -3,5 +3,7 @@ act: act_i_setting
 type: Rumor
 possession: PSYCHIC
 truth: true
+hashtags:
+  - rose_bread
 content: |
   I heard Cordelia Montrose had the baker make special bread for her—some kind of recipe with rose petals. She was mad for that particular loaf.

@@ -3,5 +3,7 @@ act: act_iii_investigation
 type: Rumor
 possession: HEIRESS
 truth: true
+hashtags:
+  - secret_baby
 content: |
   I heard Eleanor Sullivan came from money originally—respectable people who had to give her up. Something scandalous in her past, they say.

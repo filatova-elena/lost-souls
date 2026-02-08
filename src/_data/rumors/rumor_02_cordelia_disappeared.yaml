@@ -3,5 +3,7 @@ act: act_ii_mystery_emerges
 type: Rumor
 possession: INFLUENCER
 truth: true
+hashtags:
+  - secret_baby
 content: |
   Cordelia Montrose disappeared for months in early 1925. Nobody would say where she went.

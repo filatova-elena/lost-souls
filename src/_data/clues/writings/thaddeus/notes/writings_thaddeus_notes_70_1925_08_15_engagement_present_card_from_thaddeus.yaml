@@ -5,7 +5,9 @@ date: '1925-08-15'
 title: Engagement Present - Card from Thaddeus
 act: act_ii_mystery_emerges
 is_spoiler: false
-content: |-
+skills:
+  - personal_crane
+content: |
   My Dear Brother,
 
   I present to you this timepiece on the occasion of your engagement to Miss Montrose. It marks not merely the hours and minutes of our earthly existence, but something far more significant.
@@ -18,5 +20,3 @@ content: |-
 
   Your devoted brother,
   Thaddeus
-character_interpretations:
-  clockmaker: Wait—WAIT. This is IT. This is the watch. The pocket watch I've been restoring for YEARS. The one engraved with September 4 and the conjunction symbols. THIS CARD proves it. Thaddeus gave this to his brother as an engagement gift, engraved with the date of the Jupiter-Venus conjunction. September 4, 1925.

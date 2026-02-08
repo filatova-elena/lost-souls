@@ -4,12 +4,14 @@ title: Payment Records
 act: act_i_setting
 date: October 1925
 location: Mortuary
-content: |-
+skills:
+  - legal_1
+content: |
   MORTUARY PAYMENT LEDGER
 
   Date: October 1925
   Amount: $500
-  Purpose: Discretionary Services - Confidentiality Agreement
+  Purpose: Discretionary Services
   Paid by: [Unsigned - Cash Payment]
   Authorized by: [No signature on file]
   Notes: 'Special arrangement regarding recent examinations. No further documentation required.'
@@ -20,10 +22,3 @@ content: |-
   No itemized description of services
   Payment marked as complete
   File closed - no follow-up correspondence
-character_interpretations:
-  mortician: This $500 payment. I have my ancestor Silas's private notes about it. He was paid to keep quiet. To alter findings, to soften conclusions, to make murders look like accidents. This payment is the smoking gun—someone paid to have the truth buried. Silas kept records, kept notes about what was really observed versus what was officially reported. And he was paid $500 to maintain the cover-up.
-  fiduciary: As the keeper of records, I see the irregularity immediately. This payment was made in cash with no documentation trail. In a legitimate business, that's impossible. But mortuary services were often conducted informally. Still, this payment represents someone deliberately obscuring their identity while paying for silence. Guilt.
-  doctor: 'Someone paid Silas $500 to keep quiet about the autopsy findings. And my ancestor Thaddeus signed the death certificates that contradicted those findings. The connection is obvious: Thaddeus arranged the payment to silence the one person who knew the truth. And Silas took the money—whether from fear or corruption, I don''t know.'
-  baker: In our town, everyone knows everyone. Silas Blackwell suddenly had extra money in October 1925, right when three people died. People talk. The Mortician was paid to keep quiet about something. I heard the whispers at the bakery counter. But who had the money and the reason to pay? That's the question.
-  explorer: Follow the money. Cash payment, no identification, marked as 'discretionary services.' This is how professional cover-ups work. Someone with resources wanted the truth buried and was willing to pay for silence. The amount—$500—was carefully calculated. Enough to be persuasive, not so much it would raise questions.
-  influencer: 'This $500 payment became a major plot point on my podcast. I did an investigation segment called ''The Price of Silence: Who Paid Silas Blackwell?'' The timing—October 1925, right when three people died—combined with the ''no questions asked'' notation, screams cover-up. My audience came up with detailed theories about who had $500 to spare and a reason to silence the mortician. The fact that it was cash, no identification, no proper documentation—that''s not just unusual, it''s downright criminal. Someone needed Silas to keep quiet about what he found in those bodies.'

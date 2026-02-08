@@ -69,7 +69,7 @@ clue_organization:
     purpose: Establish Célestine Laveau's reputation, Alice's genuine gift, their
       mentorship
     clues:
-    - vision_145_alice_not_crazy
+    - vision_alice_145_not_crazy
     - thaddeus_1924_06_15_alice_whitmore
     - thaddeus_1924_07_02_alice_whitmore_followup
     key_clue: thaddeus_1924_06_15_alice_whitmore
@@ -79,10 +79,10 @@ clue_organization:
     name: 'Act II: The Mystery Emerges'
     purpose: Alice's death, Célestine's failure to help her move on
     clues:
-    - medical_death_cert_alice
+    - document_medical_alice_death_cert
     - 1925_10_07_entry_1_43_43_43_43_43_43_43
-    - vision_145_alice_not_crazy
-    key_clue: medical_death_cert_alice
+    - vision_alice_145_not_crazy
+    key_clue: document_medical_alice_death_cert
     key_clue_reason: Alice's death certificate marks the moment Célestine's greatest
       failure begins - she cannot help Alice's spirit find peace.
   act_iii_investigation:
@@ -90,9 +90,9 @@ clue_organization:
     purpose: Understand why Alice's spirit is trapped, what unfinished business keeps
       her bound
     clues:
-    - vision_145_alice_not_crazy
-    - vision_142_alice_love_for_thaddeus
-    - vision_146_alice_thaddeus_inaction
+    - vision_alice_145_not_crazy
+    - vision_alice_142_love_for_thaddeus
+    - vision_alice_146_thaddeus_inaction
     key_clue: alice_love_for_thaddeus
     key_clue_reason: Alice's love for Thaddeus and her inaction reveal the secrets
       that keep her spirit bound.
@@ -100,7 +100,7 @@ clue_organization:
     name: 'Act IV: The Revelation'
     purpose: Reveal Célestine's failure and the legacy passed to Margo
     clues:
-    - vision_145_alice_not_crazy
-    - vision_142_alice_love_for_thaddeus
+    - vision_alice_145_not_crazy
+    - vision_alice_142_love_for_thaddeus
     key_clue: null
     key_clue_reason: This is the final act. No further acts to unlock.

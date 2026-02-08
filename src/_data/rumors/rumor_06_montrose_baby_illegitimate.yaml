@@ -3,5 +3,7 @@ act: act_iii_investigation
 type: Rumor
 possession: HEIRESS
 truth: true
+hashtags:
+  - secret_baby
 content: |
   The Montrose family had an illegitimate child, a granddaughter they gave away.

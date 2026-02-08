@@ -3,5 +3,7 @@ act: act_iii_investigation
 type: Rumor
 possession: OTHER
 truth: true
+hashtags:
+  - secret_baby
 content: |
   I heard there might be another heir to the Montrose estate—someone the family desperately wants to keep quiet. They say it's connected to something scandalous from way back. Makes you wonder what the Montroses are so afraid of...

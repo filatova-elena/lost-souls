@@ -59,7 +59,7 @@ clue_organization:
     purpose: Establish the bakery, the fire, the suspicious circumstances
     clues:
     - newspaper_134_bakery_fire_tragedy
-    - 1939_07_05_the_recipe_13_13_13_13_13_13_13
+    - writings_eleanor_13_1939_07_05_the_recipe
     key_clue: bakery_fire_tragedy
     key_clue_reason: The newspaper article establishes the fire, the victims, and
       the suspicious timing, drawing players into the mystery.
@@ -68,7 +68,7 @@ clue_organization:
     purpose: Introduce questions about who was responsible and why
     clues:
     - newspaper_133_arsonist_caught
-    - document_121_financial_trust_records
+    - document_financial_121_trust_records
     key_clue: arsonist_caught
     key_clue_reason: Thomas Reed's arrest raises questions about who hired him and
       why the Sullivan family was targeted.
@@ -77,11 +77,11 @@ clue_organization:
     purpose: Build the case - connect the fire to the Montrose family, understand
       the motive
     clues:
-    - document_119_financial_estate_payments
+    - document_financial_119_estate_payments
     - newspaper_134_bakery_fire_tragedy
     - newspaper_133_arsonist_caught
-    - document_121_financial_trust_records
-    - 1939_07_05_the_recipe_13_13_13_13_13_13_13
+    - document_financial_121_trust_records
+    - writings_eleanor_13_1939_07_05_the_recipe
     key_clue: montrose_estate_payments_1990
     key_clue_reason: The payment records show the Montrose family paid Thomas Reed
       $10,500 in October 1990, just before the November fire, revealing who hired
@@ -91,10 +91,10 @@ clue_organization:
     purpose: Reveal the full truth - the Montrose family hired Thomas Reed to eliminate
       the true heirs
     clues:
-    - document_119_financial_estate_payments
+    - document_financial_119_estate_payments
     - newspaper_133_arsonist_caught
     - newspaper_134_bakery_fire_tragedy
-    - document_121_financial_trust_records
-    - 1939_07_05_the_recipe_13_13_13_13_13_13_13
+    - document_financial_121_trust_records
+    - writings_eleanor_13_1939_07_05_the_recipe
     key_clue: null
     key_clue_reason: This is the final act. No further acts to unlock.

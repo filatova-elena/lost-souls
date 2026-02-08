@@ -105,15 +105,15 @@ clue_organization:
       Botanical entry point.
     clues:
     - botanical_106_herb_ginseng
-    - 1925_08_01_cordelia_34_34_34_34_34_34_34
-    - 1925_08_10_second_consultation_refinements_and_questions_27_27_27_27_27_27_27
-    - 1920_03_15_first_principles_32_32_32_32_32_32_32
-    - 1925_08_15_refinement_and_urgency_35_35_35_35_35_35_35
-    - 1925_08_18_the_vessel_37_37_37_37_37_37_37
-    - vision_163_cordelia_the_elixir
+    - writings_sebastian_34_1925_08_01_cordelia
+    - writings_hartley_27_1925_08_10_second_consultation_refinements_and_questions
+    - writings_sebastian_32_1920_03_15_first_principles
+    - writings_sebastian_35_1925_08_15_refinement_and_urgency
+    - writings_sebastian_37_1925_08_18_the_vessel
+    - vision_cordelia_163_the_elixir
     - botanical_113_jar_rose_otto
-    - 1925_08_04_sebastians_foolish_formula_56_56_56_56_56_56_56
-    - 1925_08_06_the_bottle_57_57_57_57_57_57_57
+    - writings_thaddeus_diary_56_1925_08_04_sebastians_foolish_formula
+    - writings_thaddeus_diary_57_1925_08_06_the_bottle
     key_clue: ginseng_root
     key_clue_reason: The missing piece that completed the formula. Finding it means
       the formula is complete, setting up the investigation of what went wrong.
@@ -121,11 +121,11 @@ clue_organization:
     name: 'Act II: The Mystery Emerges'
     purpose: Introduce the problem, raise questions, begin investigation
     clues:
-    - 1925_09_25_something_is_wrong_21_21_21_21_21_21_21
-    - 1925_10_09_sebastian_is_dying_8_8_8_8_8_8_8
-    - 1925_10_09_sebastians_arrival_61_61_61_61_61_61_61
-    - 1925_10_06_understanding_41_41_41_41_41_41_41
-    - vision_175_sebastian_poisoned
+    - writings_elias_21_1925_09_25_something_is_wrong
+    - writings_cordelia_8_1925_10_09_sebastian_is_dying
+    - writings_thaddeus_diary_61_1925_10_09_sebastians_arrival
+    - writings_sebastian_41_1925_10_06_understanding
+    - vision_sebastian_175_poisoned
     key_clue: sebastian_1925_10_06_understanding
     key_clue_reason: Sebastian's realization that he's dying triggers the investigation
       phase. Players now know something is wrong and need to investigate what happened.
@@ -133,18 +133,18 @@ clue_organization:
     name: 'Act III: The Investigation'
     purpose: Provide informational clues, build the case, narrow possibilities
     clues:
-    - sebastian_elixir_formula_42_42_42_42_42_42_42
-    - 1925_08_02_initial_inquiry_the_young_pharmacist_26_26_26_26_26_26_26
-    - 1925_08_22_third_consultation_the_final_formula_28_28_28_28_28_28_28
+    - writings_sebastian_42_sebastian_elixir_formula
+    - writings_hartley_26_1925_08_02_initial_inquiry_the_young_pharmacist
+    - writings_hartley_28_1925_08_22_third_consultation_the_final_formula
     - botanical_104_herb_damiana
     - botanical_106_herb_ginseng
     - botanical_113_jar_rose_otto
-    - 1925_09_01_on_foxglove_58_58_58_58_58_58_58
-    - thaddeus_foxglove_request_71_71_71_71_71_71_71
-    - 1925_08_15_refinement_and_urgency_35_35_35_35_35_35_35
-    - 1925_10_07_initial_assessment_46_46_46_46_46_46_46
-    - 1925_10_07_request_for_botanical_consultation_47_47_47_47_47_47_47
-    - 1925_10_15_unusual_visit_the_brother_29_29_29_29_29_29_29
+    - writings_thaddeus_diary_58_1925_09_01_on_foxglove
+    - writings_thaddeus_notes_71_thaddeus_foxglove_request
+    - writings_sebastian_35_1925_08_15_refinement_and_urgency
+    - writings_thaddeus_antidote_search_46_1925_10_07_initial_assessment
+    - writings_thaddeus_antidote_search_47_1925_10_07_request_for_botanical_consultation
+    - writings_hartley_29_1925_10_15_unusual_visit_the_brother
     - 1925_10_11_entry_2_44_44_44_44_44_44_44
     key_clue: foxglove_poison
     key_clue_reason: Foxglove identified as the poison. This reveals what corrupted
@@ -154,8 +154,8 @@ clue_organization:
     purpose: Directly answer the quest objective
     clues:
     - botanical_97_garden_foxglove
-    - 1925_10_10_torn_pages_regret_64_64_64_64_64_64_64
-    - 1925_10_20_reflection_news_of_tragedy_30_30_30_30_30_30_30
-    - 1925_10_06_understanding_41_41_41_41_41_41_41
+    - writings_thaddeus_diary_64_1925_10_10_torn_pages_regret
+    - writings_hartley_30_1925_10_20_reflection_news_of_tragedy
+    - writings_sebastian_41_1925_10_06_understanding
     key_clue: null
     key_clue_reason: This is the final act. No further acts to unlock.

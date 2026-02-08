@@ -3,5 +3,7 @@ act: act_ii_mystery_emerges
 type: Rumor
 possession: INFLUENCER
 truth: false
+hashtags:
+  - cordelia_romantic
 content: |
   Cordelia died of a broken heart after Sebastian was killed. Literally pined away for love.

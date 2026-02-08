@@ -65,12 +65,8 @@ title: "Clue Reference"
           {% for name in sectionData.clues %}
             {% set clue = name | getClue(clues) %}
             <li style="margin: 4px 0;">
-              {% if clue %}
-                {{ clue.type | typeIcon }} <a href="{{ site.baseUrl }}clues/{{ clue.name }}/" target="_blank">{{ clue.title or clue.name }}</a>
-                <span class="muted"> — {{ clue.type }}</span>
-              {% else %}
-                🔗 <span class="muted">{{ name }}</span>
-              {% endif %}
+              {{ clue.type | typeIcon }} <a href="{{ site.baseUrl }}clues/{{ clue.name }}/" target="_blank">{{ clue.title or clue.name }}</a>
+              <span class="muted"> — {{ clue.type }}</span>
             </li>
           {% endfor %}
         </ul>
@@ -92,13 +88,9 @@ title: "Clue Reference"
                 {% for name in plotPoint.clues %}
                   {% set clue = name | getClue(clues) %}
                   <div style="margin: 6px 0; padding: 3px 0;">
-                    {% if clue %}
-                      {{ clue.type | typeIcon }}
-                      <a href="{{ site.baseUrl }}clues/{{ clue.name }}/" target="_blank">{{ clue.title or clue.name }}</a>
-                      <span class="muted"> — {{ clue.type }}</span>
-                    {% else %}
-                      🔗 <span class="muted">{{ name }} (not found)</span>
-                    {% endif %}
+                    {{ clue.type | typeIcon }}
+                    <a href="{{ site.baseUrl }}clues/{{ clue.name }}/" target="_blank">{{ clue.title or clue.name }}</a>
+                    <span class="muted"> — {{ clue.type }}</span>
                   </div>
                 {% endfor %}
               </div>
