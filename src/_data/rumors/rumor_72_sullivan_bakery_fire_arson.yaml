@@ -3,5 +3,9 @@ act: act_iv_revelation
 type: Rumor
 possession: PSYCHIC
 truth: true
+hashtags:
+  - bakery_fire
+  - david_sullivan
+  - catherine_sullivan
 content: |
   I heard the fire that destroyed the Sullivan bakery was set on purpose. Someone wanted that family eliminated.

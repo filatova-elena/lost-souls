@@ -186,9 +186,9 @@ clue_organization:
     name: 'Act II: The Mystery Emerges'
     purpose: Introduce the three deaths, raise questions about what really happened
     clues:
-    - document_medical_alice_death_cert
-    - document_medical_sebastian_death_cert
-    - document_medical_cordelia_death_cert
+    - document_medical_129_death_cert_alice
+    - document_medical_131_death_cert_sebastian
+    - document_medical_130_death_cert_cordelia
     - writings_sebastian_41_1925_10_06_understanding
     - vision_sebastian_175_poisoned
     - writings_elias_21_1925_09_25_something_is_wrong
@@ -212,15 +212,15 @@ clue_organization:
     - writings_thaddeus_antidote_search_47_1925_10_07_request_for_botanical_consultation
     - writings_thaddeus_diary_61_1925_10_09_sebastians_arrival
     - writings_thaddeus_diary_64_1925_10_10_torn_pages_regret
-    - 1925_10_07_entry_1_43_43_43_43_43_43_43
-    - 1925_10_11_entry_2_44_44_44_44_44_44_44
-    - 1925_10_18_entry_3_45_45_45_45_45_45_45
+    - writings_silas_1_writings_silas_43_1925_10_07_entry
+    - writings_silas_2_writings_silas_44_1925_10_11_entry
+    - writings_silas_3_writings_silas_45_1925_10_18_entry
     - document_financial_120_payment_records
     - writings_cordelia_5_1925_09_10_alice
     - vision_cordelia_154_confrontation
     - vision_alice_142_love_for_thaddeus
     - vision_alice_146_thaddeus_inaction
-    - object_crystal_ball
+    - artifact_object_80_crystal_ball
     - writings_hartley_29_1925_10_15_unusual_visit_the_brother
     key_clue: thaddeus_1925_10_10_torn_pages_regret
     key_clue_reason: Thaddeus's torn diary pages show his guilt and regret, revealing
@@ -239,13 +239,13 @@ clue_organization:
     - writings_thaddeus_notes_71_thaddeus_foxglove_request
     - writings_cordelia_5_1925_09_10_alice
     - vision_cordelia_154_confrontation
-    - 1925_10_07_entry_1_43_43_43_43_43_43_43
-    - 1925_10_11_entry_2_44_44_44_44_44_44_44
-    - 1925_10_18_entry_3_45_45_45_45_45_45_45
+    - writings_silas_1_writings_silas_43_1925_10_07_entry
+    - writings_silas_2_writings_silas_44_1925_10_11_entry
+    - writings_silas_3_writings_silas_45_1925_10_18_entry
     - document_financial_120_payment_records
-    - document_medical_alice_death_cert
-    - document_medical_sebastian_death_cert
-    - document_medical_cordelia_death_cert
-    - object_crystal_ball
+    - document_medical_129_death_cert_alice
+    - document_medical_131_death_cert_sebastian
+    - document_medical_130_death_cert_cordelia
+    - artifact_object_80_crystal_ball
     key_clue: null
     key_clue_reason: This is the final act. No further acts to unlock.

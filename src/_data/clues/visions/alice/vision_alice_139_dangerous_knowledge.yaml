@@ -3,4 +3,7 @@ type: Vision (Alice)
 ghost: alice
 name: Dangerous Knowledge
 act: act_iii_investigation
+hashtags:
+  - alice_whitmore
+  - thaddeus_crane
 content: '[Agitated] It was him, him all along! But how can I even say such things out loud? I can''t and I won''t! [Frustration and fear surge through you. Someone knows something dangerous but cannot speak it.]'

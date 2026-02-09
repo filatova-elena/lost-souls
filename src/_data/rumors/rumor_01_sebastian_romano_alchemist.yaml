@@ -3,5 +3,10 @@ act: act_i_setting
 type: Rumor
 possession: HEIRESS
 truth: true
+hashtags:
+  - the_alchemist
+  - harbor_hustle
+  - sebastian_crane
+  - frankie_romano
 content: |
   Sebastian Crane was known as "The Alchemist" and ran mysterious operations at the harbor with the Romano family

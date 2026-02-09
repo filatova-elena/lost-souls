@@ -3,5 +3,7 @@ act: act_i_setting
 type: Rumor
 possession: INFLUENCER
 truth: false
+hashtags:
+  - margaret_montrose
 content: |
   The Montrose family has always been respectable, honest, and upstanding. Whatever happened was just terrible luck.

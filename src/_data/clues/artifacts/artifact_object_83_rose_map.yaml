@@ -5,6 +5,9 @@ act: act_iv_revelation
 type: Artifact (Object)
 appearance: Faded hand-drawn map on aged paper showing Montrose Estate grounds with marked location
 location: Inside the purple and gold vase
+hashtags:
+  - romano_treasure
+  - frankie_romano
 skills:
   - history_1
 content: |
@@ -12,4 +15,4 @@ content: |
 
   This is **Frankie Romano's handwriting** — recognizable from shipping documents and business correspondence. The precision of these measurements, the careful notation system — this wasn't a casual drawing. 
 
-  The rose garden location is circled and red x is drawn next to it. The distances are precise enough to recover items later. This is a **storage location map**. The measurements should guide your digging — look for soil disturbance, subsurface structures, anything indicating repeated excavation.
+  The rose garden location is circled and red x is drawn next to it. 

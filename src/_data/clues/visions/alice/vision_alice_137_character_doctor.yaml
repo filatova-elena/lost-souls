@@ -4,5 +4,8 @@ ghost: alice
 to_character: doctor
 name: Recognition
 act: act_iii_investigation
+hashtags:
+  - alice_whitmore
+  - thaddeus_crane
 content: |
   Thaddeus??? Is that you? [You sense this isn't about you but someone from the ghost's past]

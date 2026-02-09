@@ -48,8 +48,8 @@ clue_organization:
     purpose: Establish the doctor-patient relationship, Thaddeus's fascination with
       Alice
     clues:
-    - thaddeus_1924_06_15_alice_whitmore
-    - thaddeus_1924_07_02_alice_whitmore_followup
+    - writings_thaddeus_patient_notes_72_1924_06_15_alice_whitmore
+    - writings_thaddeus_patient_notes_73_1924_07_02_alice_whitmore_followup
     - writings_thaddeus_diary_52_1924_07_02_alice
     - writings_thaddeus_diary_53_1924_07_02_electric_contact
     - writings_thaddeus_diary_54_1924_07_03_the_risk

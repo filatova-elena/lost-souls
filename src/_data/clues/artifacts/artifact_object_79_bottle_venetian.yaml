@@ -3,6 +3,10 @@ name: Ornate Venetian Glass Bottle
 act: act_i_setting
 type: Artifact (Object)
 appearance: Decorative bottle of venetian glass with gold leaf detailing and ornate stopper.
+hashtags:
+  - venetian_bottle
+  - elixir_of_love
+  - sebastian_crane
 skills:
   - art_2
   - history_2

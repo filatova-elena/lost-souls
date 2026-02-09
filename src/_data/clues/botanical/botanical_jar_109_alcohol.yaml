@@ -4,6 +4,8 @@ name: Grain Alcohol 95%
 act: act_iii_investigation
 scientific_name: Ethanol (C₂H₅OH)
 is_primary: true
+hashtags:
+  - sebastian_crane
 type: Botanical (Jar)
 appearance: Clear, colorless liquid in a glass jar with very strong smell
 purpose: Base and preservative for the elixir

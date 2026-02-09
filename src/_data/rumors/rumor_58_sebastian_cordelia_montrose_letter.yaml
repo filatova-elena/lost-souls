@@ -3,5 +3,8 @@ act: act_ii_mystery_emerges
 type: Rumor
 possession: OTHER
 truth: false
+hashtags:
+  - cordelia_montrose
+  - sebastian_crane
 content: |
   They say Cordelia Montrose was secretly writing love letters to someone—but not to Sebastian. A servant found them hidden in her room after she died. Who was she really in love with? Nobody knows, but her family destroyed the letters to protect her reputation.

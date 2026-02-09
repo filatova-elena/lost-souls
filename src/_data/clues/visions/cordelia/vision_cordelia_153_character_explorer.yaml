@@ -4,5 +4,8 @@ ghost: cordelia
 to_character: explorer
 name: Thomas's Return
 act: act_i_setting
+hashtags:
+  - cordelia_montrose
+  - thomas_whitmore
 content: |
   Thosmas? You are back from your travels, they said you were lost at sea. There is something important you MUST know... [trails off, you sense the urgency]

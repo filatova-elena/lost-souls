@@ -4,6 +4,8 @@ name: Potassium Bromide
 act: act_iii_investigation
 scientific_name: KBr
 is_primary: true
+hashtags:
+  - sebastian_crane
 type: Botanical (Jar)
 appearance: White powder with visible crystals in jar, looks pharmaceutical or chemical
 purpose: Original ingredient in Sebastian's harmless elixir

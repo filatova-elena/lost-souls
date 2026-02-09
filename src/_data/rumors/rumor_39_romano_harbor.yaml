@@ -3,5 +3,9 @@ act: act_i_setting
 type: Rumor
 possession: PROFESSOR
 truth: true
+hashtags:
+  - harbor_hustle
+  - romano_dynasty
+  - frankie_romano
 content: |
   Harbor Import & Trading Co was supposedly a legitimate import business at the Port of Long Beach, but everyone knew it was Frankie Romano's operation. They brought in more than just tropical fruits.

@@ -3,5 +3,8 @@ act: act_i_setting
 type: Rumor
 possession: HEIRESS
 truth: true
+hashtags:
+  - alice_second_sight
+  - alice_whitmore
 content: |
   Alice Whitmore was strange—had visions, knew things before they happened. Some called her a witch.

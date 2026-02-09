@@ -1,0 +1,178 @@
+id: psychic_who_couldnt_save_her_play
+title: The Psychic Who Couldn't Save Her
+type: minor
+emojis: 🔮
+acts:
+  act_i:
+    name: "Act I: The Setting"
+    purpose: "Establish Célestine Laveau's reputation, Alice's genuine gift, their mentorship"
+    scenes:
+      - scene: 1
+        title: "The Famous Psychic"
+        location: "Célestine Laveau's Salon, 1920s"
+        characters:
+          - CÉLESTINE LAVEAU
+          - NARRATOR
+        content: |
+          [CÉLESTINE LAVEAU was world-famous long before she arrived in California. The French psychic medium had dazzled European aristocracy with her abilities.]
+
+          NARRATOR: Reading minds, communing with spirits, predicting futures with unsettling accuracy. When the spiritualism boom swept America in the 1920s, she came west, and Long Beach society clamored for her attention.
+
+          Most of her clients were wealthy dilettantes playing at the occult. Parlor tricks for bored housewives. Theatrical séances for thrill-seekers.
+
+      - scene: 2
+        title: "Alice Whitmore"
+        location: "Célestine Laveau's Salon"
+        characters:
+          - CÉLESTINE LAVEAU
+          - ALICE WHITMORE
+        content: |
+          [Then ALICE WHITMORE walks into her salon.]
+
+          CÉLESTINE: You have a rare ability, ma chérie. But it is dangerous without training. Let me teach you.
+
+          ALICE: You believe me? You actually believe I'm not mad?
+
+          CÉLESTINE: I know immediately—this girl is different. Alice wasn't performing. She wasn't pretending. She had the genuine gift, raw and untrained, manifesting in dreams and visions she couldn't control. The spirits spoke to Alice whether she wanted them to or not.
+
+      - scene: 3
+        title: "The Mentorship"
+        location: "Célestine Laveau's Salon"
+        characters:
+          - CÉLESTINE LAVEAU
+          - ALICE WHITMORE
+        content: |
+          [CÉLESTINE begins mentoring ALICE.]
+
+          CÉLESTINE: I'll teach you to focus, to protect yourself, to distinguish between true spiritual communication and your own fears.
+
+          ALICE: I'm eager to learn. I'm desperate to understand the visions that haunt me.
+
+          [But ALICE is also reckless. Impulsive. She falls into an affair with Dr. Thaddeus, ignores warnings, pushes boundaries.]
+
+          CÉLESTINE: I sense darkness gathering around you, Alice. Please, be careful.
+
+          ALICE: I'll be fine, Célestine. I know what I'm doing.
+
+  act_ii:
+    name: "Act II: The Mystery Emerges"
+    purpose: "Alice's death, Célestine's failure to help her move on"
+    scenes:
+      - scene: 1
+        title: "The Death"
+        location: "Célestine Laveau's Salon, October 1925"
+        characters:
+          - CÉLESTINE LAVEAU
+        content: |
+          [In October 1925, ALICE is murdered.]
+
+          CÉLESTINE: I felt it immediately—Alice's spirit, trapped, confused, unable to move on. The violence of her death, the secrets she carried, the unfinished business—it all anchored her to the mortal world.
+
+      - scene: 2
+        title: "The Attempt"
+        location: "Célestine Laveau's Salon"
+        characters:
+          - CÉLESTINE LAVEAU
+        content: |
+          [CÉLESTINE tries everything to help ALICE's spirit find peace.]
+
+          CÉLESTINE: Séances, rituals, prayers. But Alice's spirit was bound by something stronger than death—by truth that needed telling, by justice that needed finding, by a story that refused to stay buried.
+
+          [CÉLESTINE, the famous psychic who had helped countless spirits find peace, could not save the one that mattered most.]
+
+      - scene: 3
+        title: "The Failure"
+        location: "Célestine Laveau's Salon, 1947"
+        characters:
+          - CÉLESTINE LAVEAU
+        content: |
+          [CÉLESTINE dies in 1947, her greatest failure haunting her legacy.]
+
+          CÉLESTINE: I couldn't save her. I couldn't help her move on. Alice's spirit remains trapped, waiting for someone to finally listen to the truth she's been screaming for a hundred years.
+
+  act_iii:
+    name: "Act III: The Investigation"
+    purpose: "Understand why Alice's spirit is trapped, what unfinished business keeps her bound"
+    scenes:
+      - scene: 1
+        title: "Alice's Love"
+        location: "Alice's Garden, 1924-1925"
+        characters:
+          - ALICE WHITMORE
+          - DR. THADDEUS CRANE
+        content: |
+          [ALICE falls in love with DR. THADDEUS CRANE, her doctor.]
+
+          ALICE: He believes me. He sees me. He understands my gift. I love him.
+
+          [But their affair is forbidden. Doctor and patient. It violates every ethical boundary.]
+
+      - scene: 2
+        title: "The Inaction"
+        location: "The Mansion, October 1925"
+        characters:
+          - ALICE WHITMORE
+          - DR. THADDEUS CRANE
+        content: |
+          [THADDEUS confesses his crimes to ALICE.]
+
+          THADDEUS: I poisoned Sebastian's elixir. I killed Cordelia. I'm responsible for everything.
+
+          ALICE: You have to confess, Thaddeus. Maybe it's not too late. Maybe we can still save Cordelia.
+
+          THADDEUS: I can't, Alice. I can't lose everything I've built.
+
+          ALICE: Then I'll expose you. I can't stay silent about this.
+
+          [But ALICE never gets the chance. THADDEUS murders her to silence her.]
+
+      - scene: 3
+        title: "The Unfinished Business"
+        location: "The Mansion, Present Day"
+        characters:
+          - ALICE WHITMORE (ghost)
+        content: |
+          [ALICE's spirit is trapped because of unfinished business.]
+
+          ALICE (ghost): I know the truth. I know that Thaddeus poisoned Sebastian's elixir with foxglove and that it killed Cordelia and Sebastian. But I will not give away that secret easily. I know that someone murdered me—I felt a shadowy figure approaching, then something hit my head and I was dead.
+
+          But I don't know that Thaddeus was the one who murdered me. That's why I'm trapped. That's why I can't move on.
+
+  act_iv:
+    name: "Act IV: The Revelation"
+    purpose: "Reveal Célestine's failure and the legacy passed to Margo"
+    scenes:
+      - scene: 1
+        title: "The Legacy"
+        location: "Montrose Mansion, Present Day"
+        characters:
+          - MARGO LAVEAU
+          - ALICE WHITMORE (ghost)
+        content: |
+          [Nearly a century later, CÉLESTINE's great-granddaughter MARGO arrives in Long Beach, carrying the family name and the weight of unfinished business.]
+
+          MARGO: Alice Whitmore is still calling. Still waiting. Some debts echo through generations.
+
+          ALICE (ghost): Célestine couldn't save me. But perhaps you can, Margo. Perhaps you can finally help me find peace.
+
+      - scene: 2
+        title: "The Revelation"
+        location: "Montrose Mansion"
+        characters:
+          - MARGO LAVEAU
+          - ALICE WHITMORE (ghost)
+          - THE INVESTIGATOR
+        content: |
+          [THE INVESTIGATOR reveals the truth to ALICE's spirit.]
+
+          THE INVESTIGATOR: Thaddeus Crane was the one who murdered you, Alice. He killed you to silence you after you threatened to expose his crimes.
+
+          ALICE (ghost): Thaddeus? The man I loved? He killed me?
+
+          [ALICE's spirit finally understands. The truth is revealed. Her unfinished business is complete.]
+
+          MARGO: Célestine couldn't save you, Alice. But the truth has been revealed. You can finally rest.
+
+          ALICE (ghost): Yes. I can finally rest. The truth is known. Justice has been found.
+
+          [ALICE's spirit fades, finally at peace. Célestine's failure has been redeemed by her great-granddaughter. The psychic who couldn't save her has been succeeded by one who could.]

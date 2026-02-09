@@ -73,7 +73,7 @@ clue_organization:
     - writings_eleanor_13_1939_07_05_the_recipe
     - writings_elias_22_1925_10_02_rose_bread_recipe_from_cordelia
     - document_financial_121_trust_records
-    - artifact_89_photo_eleanor_baby
+    - artifact_photo_89_eleanor_baby
     key_clue: eleanor_1939_the_recipe
     key_clue_reason: Eleanor's diary entry establishes the rose bread recipe connection,
       drawing the Baker into the inheritance mystery.
@@ -92,9 +92,9 @@ clue_organization:
     name: 'Act III: The Investigation'
     purpose: Build the case - connect Eleanor to Cordelia, prove the Baker's lineage
     clues:
-    - artifact_89_photo_eleanor_baby
-    - artifact_90_photo_eleanor_child
-    - artifact_88_photo_eleanor_adolescent
+    - artifact_photo_89_eleanor_baby
+    - artifact_photo_90_eleanor_child
+    - artifact_photo_88_eleanor_adolescent
     - writings_eleanor_13_1939_07_05_the_recipe
     - writings_elias_22_1925_10_02_rose_bread_recipe_from_cordelia
     - newspaper_134_bakery_fire_tragedy
@@ -112,8 +112,8 @@ clue_organization:
     - writings_eleanor_13_1939_07_05_the_recipe
     - writings_elias_22_1925_10_02_rose_bread_recipe_from_cordelia
     - newspaper_134_bakery_fire_tragedy
-    - artifact_89_photo_eleanor_baby
-    - artifact_90_photo_eleanor_child
-    - artifact_88_photo_eleanor_adolescent
+    - artifact_photo_89_eleanor_baby
+    - artifact_photo_90_eleanor_child
+    - artifact_photo_88_eleanor_adolescent
     key_clue: null
     key_clue_reason: This is the final act. No further acts to unlock.

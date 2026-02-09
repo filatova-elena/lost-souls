@@ -3,5 +3,8 @@ act: act_ii_mystery_emerges
 type: Rumor
 possession: OTHER
 truth: false
+hashtags:
+  - sebastian_crane
+  - cordelia_montrose
 content: |
   They say Sebastian poisoned his own fiancée in a fit of rage—he couldn't stand the thought of her with anyone else. Absolutely mad.

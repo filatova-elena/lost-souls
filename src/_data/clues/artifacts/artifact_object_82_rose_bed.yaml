@@ -4,6 +4,9 @@ act: act_iv_revelation
 type: Artifact (Object)
 appearance: Carefully maintained garden bed filled with deep red and white roses
 location: Montrose Mansion Grounds, Rose Garden Bed
+hashtags:
+  - cordelia_montrose
+  - frankie_romano
 skills:
   - history_1
   - botanical_1

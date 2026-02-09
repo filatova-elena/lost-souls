@@ -57,6 +57,13 @@ module.exports = function(eleventyConfig) {
     return ["name", "purpose", "constraints", "notes"].includes(key);
   });
 
+  // Concatenate arrays (for building tag lists in templates)
+  eleventyConfig.addFilter("concat", function(arr, items) {
+    if (!Array.isArray(arr)) return items || [];
+    if (!Array.isArray(items)) return arr;
+    return arr.concat(items);
+  });
+
   // Get emoji icon for clue type
   eleventyConfig.addFilter("typeIcon", function(type) {
     if (!type) return "📝";

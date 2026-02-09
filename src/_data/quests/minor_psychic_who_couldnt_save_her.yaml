@@ -70,8 +70,8 @@ clue_organization:
       mentorship
     clues:
     - vision_alice_145_not_crazy
-    - thaddeus_1924_06_15_alice_whitmore
-    - thaddeus_1924_07_02_alice_whitmore_followup
+    - writings_thaddeus_patient_notes_72_1924_06_15_alice_whitmore
+    - writings_thaddeus_patient_notes_73_1924_07_02_alice_whitmore_followup
     key_clue: thaddeus_1924_06_15_alice_whitmore
     key_clue_reason: Thaddeus's patient notes show Alice's genuine psychic abilities,
       establishing her as different from other patients.
@@ -79,10 +79,10 @@ clue_organization:
     name: 'Act II: The Mystery Emerges'
     purpose: Alice's death, Célestine's failure to help her move on
     clues:
-    - document_medical_alice_death_cert
-    - 1925_10_07_entry_1_43_43_43_43_43_43_43
+    - document_medical_129_death_cert_alice
+    - writings_silas_1_writings_silas_43_1925_10_07_entry
     - vision_alice_145_not_crazy
-    key_clue: document_medical_alice_death_cert
+    key_clue: document_medical_129_death_cert_alice
     key_clue_reason: Alice's death certificate marks the moment Célestine's greatest
       failure begins - she cannot help Alice's spirit find peace.
   act_iii_investigation:

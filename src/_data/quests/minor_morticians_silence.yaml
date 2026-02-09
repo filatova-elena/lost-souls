@@ -57,12 +57,12 @@ clue_organization:
     purpose: Establish the mortuary setting, introduce Silas Blackwell, show the three
       bodies arriving
     clues:
-    - 1925_10_07_entry_1_43_43_43_43_43_43_43
-    - 1925_10_11_entry_2_44_44_44_44_44_44_44
-    - 1925_10_18_entry_3_45_45_45_45_45_45_45
-    - document_medical_alice_death_cert
-    - document_medical_sebastian_death_cert
-    - document_medical_cordelia_death_cert
+    - writings_silas_1_writings_silas_43_1925_10_07_entry
+    - writings_silas_2_writings_silas_44_1925_10_11_entry
+    - writings_silas_3_writings_silas_45_1925_10_18_entry
+    - document_medical_129_death_cert_alice
+    - document_medical_131_death_cert_sebastian
+    - document_medical_130_death_cert_cordelia
     key_clue: silas_1925_10_07_entry_1
     key_clue_reason: First body arrives - Alice. Silas documents the suspicious injury
       pattern, establishing that something is wrong.
@@ -71,9 +71,9 @@ clue_organization:
     purpose: Introduce the bribe, raise questions about who paid and why
     clues:
     - document_financial_120_payment_records
-    - document_medical_alice_death_cert
-    - document_medical_sebastian_death_cert
-    - document_medical_cordelia_death_cert
+    - document_medical_129_death_cert_alice
+    - document_medical_131_death_cert_sebastian
+    - document_medical_130_death_cert_cordelia
     - writings_thaddeus_diary_66_1925_10_11_the_heart_stops
     key_clue: payment_records
     key_clue_reason: The $500 payment arrives, raising the question of who paid and
@@ -82,13 +82,13 @@ clue_organization:
     name: 'Act III: The Investigation'
     purpose: Build the case - examine discrepancies, identify who had motive and means
     clues:
-    - 1925_10_07_entry_1_43_43_43_43_43_43_43
-    - 1925_10_11_entry_2_44_44_44_44_44_44_44
-    - 1925_10_18_entry_3_45_45_45_45_45_45_45
+    - writings_silas_1_writings_silas_43_1925_10_07_entry
+    - writings_silas_2_writings_silas_44_1925_10_11_entry
+    - writings_silas_3_writings_silas_45_1925_10_18_entry
     - document_financial_120_payment_records
-    - document_medical_alice_death_cert
-    - document_medical_sebastian_death_cert
-    - document_medical_cordelia_death_cert
+    - document_medical_129_death_cert_alice
+    - document_medical_131_death_cert_sebastian
+    - document_medical_130_death_cert_cordelia
     - writings_thaddeus_diary_66_1925_10_11_the_heart_stops
     - writings_thaddeus_diary_67_1925_10_18_cordelias_final_hours
     key_clue: payment_records
@@ -100,12 +100,12 @@ clue_organization:
     purpose: Reveal that Thaddeus paid Silas to cover up the truth
     clues:
     - document_financial_120_payment_records
-    - 1925_10_07_entry_1_43_43_43_43_43_43_43
-    - 1925_10_11_entry_2_44_44_44_44_44_44_44
-    - 1925_10_18_entry_3_45_45_45_45_45_45_45
-    - document_medical_alice_death_cert
-    - document_medical_sebastian_death_cert
-    - document_medical_cordelia_death_cert
+    - writings_silas_1_writings_silas_43_1925_10_07_entry
+    - writings_silas_2_writings_silas_44_1925_10_11_entry
+    - writings_silas_3_writings_silas_45_1925_10_18_entry
+    - document_medical_129_death_cert_alice
+    - document_medical_131_death_cert_sebastian
+    - document_medical_130_death_cert_cordelia
     - writings_thaddeus_diary_64_1925_10_10_torn_pages_regret
     key_clue: null
     key_clue_reason: This is the final act. No further acts to unlock.

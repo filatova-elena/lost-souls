@@ -1,0 +1,178 @@
+id: legendary_treasure_play
+title: The Legendary Treasure
+type: major
+emojis: 💰
+acts:
+  act_i:
+    name: "Act I: The Setting"
+    purpose: "Establish the Romano family history, the treasure rumors, the Montrose mansion connection"
+    scenes:
+      - scene: 1
+        title: "The Glory Days"
+        location: "Port of Long Beach, 1920s"
+        characters:
+          - FRANKIE ROMANO
+          - SEBASTIAN CRANE
+        content: |
+          [In the shadows of Prohibition, FRANKIE "THE COAST" ROMANO built an empire from the Port of Long Beach.]
+
+          FRANKIE: Rum running from Mexico. Bootleg alcohol disguised as medicine. Exotic goods smuggled through Harbor Import & Trading Co. I control what others can't have.
+
+          [SEBASTIAN CRANE, "The Alchemist," supplies bootleg spirits and rare botanical specimens.]
+
+          SEBASTIAN: The paperwork is impeccable. Medical supplies. Medicinal tonics. All perfectly legal, of course.
+
+          FRANKIE: You're one of my most valuable assets, Sebastian. Don't forget that.
+
+      - scene: 2
+        title: "The Betrayal"
+        location: "The Docks, February 1925"
+        characters:
+          - FRANKIE ROMANO
+          - SEBASTIAN CRANE
+        content: |
+          [SEBASTIAN approaches FRANKIE at the docks.]
+
+          SEBASTIAN: Frankie, I'm getting married. I want out of the operation.
+
+          FRANKIE: What? You don't just WALK AWAY from Frankie Romano!
+
+          [The argument is public. Loud. Dock workers turn to look.]
+
+          FRANKIE: You're making a mistake, Sebastian. A big mistake.
+
+          [When Sebastian died days later, everyone assumed Frankie did it. But Frankie didn't kill Sebastian.]
+
+      - scene: 3
+        title: "The Fall"
+        location: "Various Locations, 1960s-1980s"
+        characters:
+          - NARRATOR
+        content: |
+          [The Romano family went "legitimate"—nightclubs, gambling, early film industry connections. Flashy parties with starlets and producers. New money at its trashiest and most visible.]
+
+          NARRATOR: Until they weren't. The IRS investigations began in the 1960s and dragged on through the 1980s. The government seized everything—the nightclubs, the properties, the legitimate businesses. Bank accounts frozen. Assets auctioned. The Romano name became synonymous with scandal and downfall.
+
+          [But there were rumors. Whispers passed down through the family like heirlooms. Hidden wealth that had escaped the IRS. Gold, cash, jewelry—secreted away before the feds came knocking. The legendary "Romano treasure."]
+
+  act_ii:
+    name: "Act II: The Mystery Emerges"
+    purpose: "Introduce questions about whether the treasure exists, where it might be hidden"
+    scenes:
+      - scene: 1
+        title: "The Perfect Hiding Place"
+        location: "Montrose Mansion, 1960s"
+        characters:
+          - ROMANO FAMILY MEMBER
+        content: |
+          [When the investigations began, someone in the Romano family made a desperate decision.]
+
+          ROMANO FAMILY MEMBER: The Montrose mansion has been abandoned since the deaths in 1925. Sitting in legal limbo—a forgotten property, a perfect hiding place. No one would think to look there. No one would connect the Romano family to a Montrose estate.
+
+          [They move the most valuable pieces there. Art. Jewelry. Cash. Gold. And they leave behind a map—a cryptic guide for future generations to find.]
+
+      - scene: 2
+        title: "The Vase"
+        location: "Montrose Mansion, Present Day"
+        characters:
+          - THE ART COLLECTOR
+          - THE EXPLORER
+        content: |
+          [THE ART COLLECTOR and THE EXPLORER examine a decorative vase—purple and gold, with dragon motifs.]
+
+          THE ART COLLECTOR: This vase... it's valuable. But there's something else. Something hidden inside.
+
+          THE EXPLORER: A map? Directions? Coordinates?
+
+          THE ART COLLECTOR: Perhaps. The Romano family was known for hiding things in plain sight.
+
+      - scene: 3
+        title: "The Business Records"
+        location: "The Investigation Room"
+        characters:
+          - THE INVESTIGATOR
+        content: |
+          [Business manifests and shipping records from Harbor Import & Trading Co. reveal the scope of the Romano operation.]
+
+          THE INVESTIGATOR: Exotic goods. Rare botanical specimens. Art. Jewelry. All documented. But some items... they just disappear from the records. Where did they go?
+
+  act_iii:
+    name: "Act III: The Investigation"
+    purpose: "Build the case - find the map, understand where the treasure is buried"
+    scenes:
+      - scene: 1
+        title: "Finding the Map"
+        location: "Montrose Mansion"
+        characters:
+          - THE EXPLORER
+          - THE ART COLLECTOR
+        content: |
+          [THE EXPLORER reaches inside the purple and gold vase, pulling out a rolled-up map.]
+
+          THE EXPLORER: There it is! A map!
+
+          THE ART COLLECTOR: Let me see. It points to... the garden. The rose garden.
+
+          THE EXPLORER: There's a spot marked. Next to the rose planter. That's where the treasure is buried.
+
+      - scene: 2
+        title: "Deciphering the Map"
+        location: "The Investigation Room"
+        characters:
+          - THE EXPLORER
+          - THE ART COLLECTOR
+        content: |
+          [The map shows paintings, symbols, and directions.]
+
+          THE ART COLLECTOR: Look at these symbols. A woman on a balcony. Bears in a forest. A flamenco dancer. These are clues. References to the art pieces hidden with the treasure.
+
+          THE EXPLORER: And the location... the rose garden bed. That's where we need to dig.
+
+      - scene: 3
+        title: "The Rose Garden"
+        location: "Montrose Mansion Garden"
+        characters:
+          - THE EXPLORER
+          - THE ART COLLECTOR
+        content: |
+          [They examine the rose garden bed, comparing it to the map.]
+
+          THE EXPLORER: According to the map, the treasure is buried right here. Next to the rose planter.
+
+          THE ART COLLECTOR: The Romano family chose this spot carefully. Hidden in plain sight, in a place no one would think to look.
+
+  act_iv:
+    name: "Act IV: The Revelation"
+    purpose: "Reveal the treasure location and that it is real"
+    scenes:
+      - scene: 1
+        title: "The Discovery"
+        location: "Montrose Mansion Garden"
+        characters:
+          - THE EXPLORER
+          - THE ART COLLECTOR
+        content: |
+          [They dig in the spot marked on the map. Their shovels hit something solid.]
+
+          THE EXPLORER: There's something here!
+
+          [They uncover a metal chest, buried deep in the earth.]
+
+          THE ART COLLECTOR: The Romano treasure. It's real. It's actually real.
+
+      - scene: 2
+        title: "The Treasure"
+        location: "Montrose Mansion Garden"
+        characters:
+          - THE EXPLORER
+          - THE ART COLLECTOR
+        content: |
+          [They open the chest. Inside: gold, cash, jewelry, art pieces.]
+
+          THE EXPLORER: Gold. Cash. Jewelry. Art. Everything the Romano family hid from the IRS.
+
+          THE ART COLLECTOR: The woman on the balcony. The bears in the forest. The flamenco dancer. All here. All preserved.
+
+          THE EXPLORER: The treasure is real. The map was real. The legend was true.
+
+          [The Romano treasure, hidden for decades, has finally been found.]

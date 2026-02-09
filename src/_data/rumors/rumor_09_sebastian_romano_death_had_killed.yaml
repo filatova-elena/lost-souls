@@ -3,5 +3,9 @@ act: act_ii_mystery_emerges
 type: Rumor
 possession: HEIRESS
 truth: false
+hashtags:
+  - the_alchemist
+  - frankie_romano
+  - sebastian_crane
 content: |
   Frankie Romano had Sebastian Crane killed because he wanted out of the operation.

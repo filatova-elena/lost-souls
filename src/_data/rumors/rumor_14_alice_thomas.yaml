@@ -3,5 +3,9 @@ act: act_i_setting
 type: Rumor
 possession: OTHER
 truth: true
+hashtags:
+  - doctor_and_patient
+  - alice_whitmore
+  - thaddeus_crane
 content: |
   There was a strange girl—Alice Whitmore—involved with Dr. Crane somehow. It was hush-hush.

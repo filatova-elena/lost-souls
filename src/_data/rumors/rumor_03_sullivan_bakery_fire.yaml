@@ -3,5 +3,9 @@ act: act_iv_revelation
 type: Rumor
 possession: HEIRESS
 truth: true
+hashtags:
+  - bakery_fire
+  - david_sullivan
+  - catherine_sullivan
 content: |
   The Sullivan bakery fire wasn't an accident. Someone wanted that family gone.

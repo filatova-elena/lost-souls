@@ -4,5 +4,8 @@ ghost: alice
 to_character: explorer
 name: Brother's Return
 act: act_iii_investigation
+hashtags:
+  - alice_whitmore
+  - thomas_whitmore
 content: |
   Thosmas? Brother? You are back from your travels, they said you were lost at sea.

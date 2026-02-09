@@ -1,0 +1,125 @@
+id: clockmakers_obsession_play
+title: The Clockmaker's Obsession
+type: minor
+emojis: ⏰
+acts:
+  act_i:
+    name: "Act I: The Setting"
+    purpose: "Introduce the pocket watch, the engraving, the astronomical significance"
+    scenes:
+      - scene: 1
+        title: "The Pocket Watch"
+        location: "The Clockmaker's Workshop"
+        characters:
+          - THE CLOCKMAKER
+          - THE INFLUENCER
+        content: |
+          [THE CLOCKMAKER works on a gold-plated pocket watch.]
+
+          THE CLOCKMAKER: For years, I've been restoring this watch. Gold-plated brass. Intricate mechanism. But there's something engraved inside: "September 4, 1925 - 6:14 AM" with astronomical symbols.
+
+          THE INFLUENCER: What do they mean?
+
+          THE CLOCKMAKER: I calculated it. September 4, 1925, at 6:14 AM—a rare Jupiter-Venus conjunction. The alignment happens once in decades. Someone thought this date was important enough to engrave it permanently.
+
+      - scene: 2
+        title: "The Obsession"
+        location: "The Clockmaker's Workshop"
+        characters:
+          - THE CLOCKMAKER
+        content: |
+          [THE CLOCKMAKER becomes obsessed with the watch and the conjunction.]
+
+          THE CLOCKMAKER: What happened on September 4, 1925? Why did someone commemorate this conjunction? I've researched alchemical timing traditions, studied historical records, made endless calculations. There's something here. Something important.
+
+  act_ii:
+    name: "Act II: The Mystery Emerges"
+    purpose: "Connect the watch to the deaths, raise questions about timing"
+    scenes:
+      - scene: 1
+        title: "The Connection"
+        location: "The Clockmaker's Workshop"
+        characters:
+          - THE CLOCKMAKER
+          - THE INFLUENCER
+        content: |
+          [THE INFLUENCER features THE CLOCKMAKER in "Long Beach Urban Legends."]
+
+          THE INFLUENCER: The mysterious watch, the conjunction, the timing. It led us to the Montrose mansion, to three deaths in October 1925, exactly five weeks after that sacred conjunction.
+
+          THE CLOCKMAKER: Five weeks. The timing is significant. The alchemists understood something we've forgotten. Consciousness isn't just neurons firing—it's part of a larger pattern. A cosmic clock.
+
+      - scene: 2
+        title: "The Watch as a Gift"
+        location: "Sebastian's Laboratory, August 15, 1925"
+        characters:
+          - SEBASTIAN CRANE
+        content: |
+          [SEBASTIAN writes in his diary about receiving the watch.]
+
+          SEBASTIAN (writing): August 15, 1925. Thaddeus gave me a pocket watch today. An engagement present. Beautiful craftsmanship. He had it engraved with the date of the Jupiter-Venus conjunction—September 4, 1925, 6:14 AM. The exact moment I plan to administer my Elixir of Eternal Love to Cordelia. He knows how important the celestial timing is to my Great Work.
+
+      - scene: 3
+        title: "The Beginning"
+        location: "The Mansion, September 4, 1925"
+        characters:
+          - SEBASTIAN CRANE
+          - CORDELIA MONTROSE
+        content: |
+          [At 6:14 AM, during the Jupiter-Venus conjunction, SEBASTIAN administers the first dose of his elixir to CORDELIA.]
+
+          SEBASTIAN: The conjunction is perfect. The timing is sacred. This will bind us together forever, Cordelia.
+
+          CORDELIA: I trust you, Sebastian.
+
+          [But the elixir has been corrupted. The poison has already been added.]
+
+  act_iii:
+    name: "Act III: The Investigation"
+    purpose: "Discover the origin of the watch, understand its significance"
+    scenes:
+      - scene: 1
+        title: "The Engagement Present"
+        location: "Dr. Thaddeus Crane's Office, August 15, 1925"
+        characters:
+          - DR. THADDEUS CRANE
+        content: |
+          [THADDEUS writes a card to accompany the watch.]
+
+          THADDEUS (writing): August 15, 1925. Engagement present for Sebastian. A pocket watch, engraved with the date of the Jupiter-Venus conjunction—September 4, 1925, 6:14 AM. Sebastian told me all about his "Great Work" and the conjunction when he was planning to administer his Elixir of Eternal Love to Cordelia. He believes cosmic timing will amplify the formula's power. I know my brother well. I know what he values. This watch commemorates the moment he believes will change everything.
+
+      - scene: 2
+        title: "The Tragic Irony"
+        location: "The Investigation Room"
+        characters:
+          - THE CLOCKMAKER
+          - THE INVESTIGATOR
+        content: |
+          [THE CLOCKMAKER and THE INVESTIGATOR piece together the story.]
+
+          THE INVESTIGATOR: Thaddeus gave Sebastian the watch as an engagement gift. He engraved it with the date of the Jupiter-Venus conjunction—the exact moment Sebastian first administered his elixir to Cordelia.
+
+          THE CLOCKMAKER: But that elixir was poisoned. Thaddeus had already corrupted it with foxglove. So the watch commemorates not just the beginning of Sebastian's Great Work, but the beginning of the end. The moment that would lead to three deaths.
+
+          THE INVESTIGATOR: The tragic irony. Thaddeus gave his brother a gift to commemorate a moment of love and devotion, but he had already planned to destroy it.
+
+  act_iv:
+    name: "Act IV: The Revelation"
+    purpose: "Reveal the full truth about the watch and its connection to the elixir"
+    scenes:
+      - scene: 1
+        title: "The Complete Truth"
+        location: "The Clockmaker's Workshop"
+        characters:
+          - THE CLOCKMAKER
+          - THE INVESTIGATOR
+        content: |
+          [THE CLOCKMAKER holds the watch, understanding its full significance.]
+
+          THE CLOCKMAKER: The pocket watch was a gift from Thaddeus Crane to Sebastian Crane, his brother, on August 15, 1925, on the occasion of his engagement to Cordelia Montrose. It was engraved with "September 4, 1925 - 6:14 AM"—the Jupiter-Venus conjunction when Sebastian first administered his Elixir of Eternal Love.
+
+          THE INVESTIGATOR: But Thaddeus had already corrupted that elixir with foxglove. So the watch commemorates the moment that would ultimately lead to Cordelia's death on October 18, 1925.
+
+          THE CLOCKMAKER: The conjunction that was supposed to bind lovers together forever became the moment that began their destruction.
+
+          [THE CLOCKMAKER understands now. The watch is not just a timepiece. It's a monument to love corrupted, to timing perverted, to a moment that changed everything.]

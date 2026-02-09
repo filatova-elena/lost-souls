@@ -3,5 +3,8 @@ act: act_ii_mystery_emerges
 type: Rumor
 possession: INFLUENCER
 truth: true
+hashtags:
+  - cordelia_montrose
+  - thomas_whitmore
 content: |
   They say Cordelia had an affair with Thomas Whitmore—can you imagine? A sailor! A common merchant marine captain! And he never came back! Such scandal, and her family covered it all up, of course.

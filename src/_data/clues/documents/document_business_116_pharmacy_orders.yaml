@@ -2,6 +2,9 @@ id: DB116
 type: Document (Business)
 title: Purchase Records - Crane Apothecary & Pharmaceutical Supplies
 act: act_ii_mystery_emerges
+hashtags:
+  - elixir_of_love
+  - sebastian_crane
 skills:
   - medical_1
   - bontanical_1

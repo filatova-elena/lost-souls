@@ -1,0 +1,224 @@
+id: sebastians_elixir_play
+title: Sebastian's Elixir
+type: minor
+emojis: 🧪
+acts:
+  act_i:
+    name: "Act I: The Setting"
+    purpose: "Draw players into the world, establish relationships, set the scene. Botanical entry point."
+    scenes:
+      - scene: 1
+        title: "Five Years of Research"
+        location: "Sebastian's Laboratory, 1920-1925"
+        characters:
+          - SEBASTIAN CRANE
+        content: |
+          [SEBASTIAN CRANE began working on his "Elixir of Eternal Love" in 1920, driven by a romantic belief.]
+
+          SEBASTIAN (writing): What is love but chemistry? I believe in the marriage of science and mysticism—that the right formula could transform attraction into devotion, desire into permanence.
+
+          [For years, he refined the formula. Consulted botanical experts. Adjusted ratios. Crossed out failed attempts.]
+
+      - scene: 2
+        title: "The Missing Piece"
+        location: "Professor Hartley's Office, January 1925"
+        characters:
+          - SEBASTIAN CRANE
+          - PROFESSOR HARTLEY
+        content: |
+          [In January 1925, SEBASTIAN found it—the ginseng root.]
+
+          HARTLEY: Ginseng root. Three-thousand-year history in Chinese medicine. It represents permanence, endurance, and the binding of souls. Just a small amount. Enough to whisper 'forever' into the formula.
+
+          SEBASTIAN: This is it. The missing piece. The binding agent for eternal love.
+
+      - scene: 3
+        title: "The Formula"
+        location: "Sebastian's Laboratory, August 1925"
+        characters:
+          - SEBASTIAN CRANE
+        content: |
+          [SEBASTIAN writes his final formula.]
+
+          SEBASTIAN (writing): Botanical Ingredients: Damiana (3 parts) for desire and awakening. Valerian root (2 parts) for calm and trust. Rose otto (1 drop only)—the pure essential oil from Milano, representing Venus and transcendence. Ginseng root (smallest pinch)—the precious Korean variety, the binding agent for eternal love.
+
+          Pharmaceutical Compounds: Potassium bromide (10 grains) as a mild sedative. Calcium lactate (5 grains) for fortification. Iron citrate (3 grains) as a blood tonic. All standard, all safe.
+
+          Base & Flavorings: Grain alcohol (8 oz at 95% proof) as the carrier and preservative. Vanilla extract, cherry syrup, and honey to mask the bitter botanicals and create something palatable. Even pleasant.
+
+          Every ingredient is harmless. Every component is safe.
+
+      - scene: 4
+        title: "Professor Hartley's Verification"
+        location: "Professor Hartley's Office, August 1925"
+        characters:
+          - SEBASTIAN CRANE
+          - PROFESSOR HARTLEY
+        content: |
+          [Throughout August 1925, SEBASTIAN made three visits to PROFESSOR HARTLEY's botanical consultation service to refine his formula.]
+
+          HARTLEY: Completely sound, all ratios appropriate, no toxic components, no harmful interactions. I warn you about storage conditions, but the formula itself is harmless.
+
+          SEBASTIAN: So it's safe?
+
+          HARTLEY: The formula is safe. Someone would have to corrupt it.
+
+  act_ii:
+    name: "Act II: The Mystery Emerges"
+    purpose: "Introduce the problem, raise questions, begin investigation"
+    scenes:
+      - scene: 1
+        title: "The Celestial Timing"
+        location: "Montrose Mansion, Montrose Mansion, September 4, 1925, 6:14 AM"
+        characters:
+          - SEBASTIAN CRANE
+          - CORDELIA MONTROSE
+        content: |
+          [SEBASTIAN timed the elixir for the Jupiter-Venus conjunction.]
+
+          SEBASTIAN: At 6:14 AM, I will administer the first dose to Cordelia. The celestial timing will amplify the formula's power.
+
+          [At 6:14 AM, during the Jupiter-Venus conjunction, SEBASTIAN administers the first dose to CORDELIA.]
+
+          CORDELIA: I trust you, Sebastian.
+
+      - scene: 2
+        title: "Something Is Wrong"
+        location: "The Mansion, September 25, 1925"
+        characters:
+          - ELIAS MONROE
+          - CORDELIA MONTROSE
+        content: |
+          [Every morning, SEBASTIAN adds the elixir to CORDELIA's tea. After weeks of daily doses, CORDELIA isn't developing "unwavering devotion"—she's getting sick.]
+
+          ELIAS: Cordelia, you look pale. Thin. Something is wrong.
+
+          CORDELIA: I'm fine, Elias. Just tired. Sebastian says it's normal.
+
+          ELIAS: Normal? You're getting sicker every day. Weakness. Nausea. Confusion. Cardiac irregularities.
+
+      - scene: 3
+        title: "Sebastian's Realization"
+        location: "Sebastian's Laboratory, October 6, 1925"
+        characters:
+          - SEBASTIAN CRANE
+        content: |
+          [SEBASTIAN grows concerned. Confused and worried, he does what any arrogant alchemist would do: he tests it on himself.]
+
+          SEBASTIAN: I'll test it. I'll drink a concentrated dose directly from the bottle. If it's safe, I'll know. If it's not... I'll know that too.
+
+          [He drinks a concentrated dose. Within hours, he's violently ill.]
+
+          SEBASTIAN (writing): October 6, 1925. I am dying. I understand now. The elixir... it's killing me. I gave her poison thinking it was poetry. What have I done?
+
+      - scene: 4
+        title: "The Arrival"
+        location: "The Mansion, October 9, 1925"
+        characters:
+          - DR. THADDEUS CRANE
+          - SEBASTIAN CRANE
+        content: |
+          [THADDEUS arrives at the mansion, finding SEBASTIAN dying.]
+
+          THADDEUS: Sebastian! What happened?
+
+          SEBASTIAN: The elixir... I tested it... I'm dying, Thaddeus. I'm dying.
+
+          [THADDEUS's face shows horror, guilt, desperation. He realizes: He's murdered his own brother.]
+
+  act_iii:
+    name: "Act III: The Investigation"
+    purpose: "Provide informational clues, build the case, narrow possibilities"
+    scenes:
+      - scene: 1
+        title: "The Harmless Formula"
+        location: "Professor Hartley's Office"
+        characters:
+          - PROFESSOR HARTLEY
+          - THE INVESTIGATOR
+        content: |
+          [PROFESSOR HARTLEY's notes show the original formula was harmless.]
+
+          HARTLEY: I verified each ingredient. Damiana, valerian, rose otto, ginseng, and the pharmaceutical compounds. All ratios appropriate. No toxic components. No harmful interactions. The formula was safe. Someone had to have corrupted it.
+
+      - scene: 2
+        title: "The Foxglove"
+        location: "Dr. Thaddeus Crane's Office, September 1925"
+        characters:
+          - DR. THADDEUS CRANE
+        content: |
+          [THADDEUS writes about foxglove.]
+
+          THADDEUS (writing): September 1, 1925. On foxglove: Digitalis purpurea. Beautiful flowering plant. Commonly used for cardiac conditions. But in concentrated doses... deadly. Cardiac glycosides cause severe heart irregularities, organ failure, death.
+
+          [He requests concentrated foxglove extract from a supplier.]
+
+      - scene: 3
+        title: "The Corruption"
+        location: "Sebastian's Laboratory, September 1925"
+        characters:
+          - DR. THADDEUS CRANE
+        content: |
+          [THADDEUS secretly adds concentrated foxglove extract to SEBASTIAN's prepared elixir.]
+
+          THADDEUS: I examined Sebastian's formula—it was harmless. Foolish and romantic, but not dangerous. I saw an opportunity. I secretly added concentrated foxglove extract, making it deadly.
+
+          The bitter taste of the foxglove is masked by the honey, vanilla, and cherry syrup Sebastian had included. The daily doses will accumulate in Cordelia's system over weeks, slowly poisoning her.
+
+      - scene: 4
+        title: "The Antidote Search"
+        location: "Dr. Thaddeus Crane's Office, October 7-11, 1925"
+        characters:
+          - DR. THADDEUS CRANE
+        content: |
+          [THADDEUS frantically searches for an antidote.]
+
+          THADDEUS: I've murdered my own brother. Sebastian was never supposed to taste the elixir! I must find an antidote. I must save him.
+
+          [But foxglove is unforgiving. He can't save Sebastian. This research leaves a trail of evidence.]
+
+      - scene: 5
+        title: "The Mortician's Notes"
+        location: "Blackwell & Sons Mortuary, October 11, 1925"
+        characters:
+          - SILAS BLACKWELL
+        content: |
+          [SILAS examines SEBASTIAN's body.]
+
+          SILAS (writing): October 11, 1925. Sebastian Crane. Acute poisoning. Extensive damage. Unmistakable. The symptoms match exactly: cardiac distress, nausea, confusion, weakness, and ultimately organ failure.
+
+  act_iv:
+    name: "Act IV: The Revelation"
+    purpose: "Directly answer the quest objective"
+    scenes:
+      - scene: 1
+        title: "The Truth About the Elixir"
+        location: "The Investigation Room"
+        characters:
+          - THE INVESTIGATOR
+        content: |
+          [THE INVESTIGATOR pieces together the complete story.]
+
+          THE INVESTIGATOR: Sebastian's "Elixir of Eternal Love" was a harmless romantic potion. The formula contained: damiana (3 parts), valerian root (2 parts), rose otto (1 drop), ginseng root (smallest pinch), potassium bromide (10 grains), calcium lactate (5 grains), iron citrate (3 grains), grain alcohol (8 oz at 95% proof), vanilla extract, cherry syrup, and honey.
+
+          Professor Hartley verified the formula was completely safe. All ratios appropriate. No toxic components. No harmful interactions.
+
+          But Thaddeus Crane corrupted the formula with Digitalis purpurea—foxglove. He secretly added concentrated foxglove extract to Sebastian's prepared elixir, making it deadly.
+
+          Foxglove contains cardiac glycosides that cause severe heart irregularities, organ failure, and death. The bitter taste was masked by the honey, vanilla, and cherry syrup.
+
+          The daily doses accumulated in Cordelia's system over 44 days, slowly poisoning her. When Sebastian tested a concentrated dose on himself on October 7, 1925, the acute poisoning killed him within days.
+
+      - scene: 2
+        title: "The Tragic Truth"
+        location: "Sebastian's Laboratory"
+        characters:
+          - SEBASTIAN CRANE (ghost)
+        content: |
+          [SEBASTIAN's ghost reflects on his Great Work.]
+
+          SEBASTIAN (ghost): I died believing I had killed the woman I loved. I wrote in my final notebook entry: "I gave her poison thinking it was poetry." I died thinking my Great Work had failed.
+
+          But I was innocent all along. My formula was harmless. My brother corrupted it. I never knew the truth. I died thinking I was a murderer, when I was actually a victim.
+
+          [Sebastian's elixir was meant to be a gift of love. But it became a weapon of death. The tragic truth: he was innocent, but he died believing he was guilty.]

@@ -3,5 +3,7 @@ act: act_iv_revelation
 type: Rumor
 possession: OTHER
 truth: false
+hashtags:
+  - thaddeus_crane
 content: |
   The Crane family changed their name from Sinclair back in 1965 to distance themselves from criminal past.

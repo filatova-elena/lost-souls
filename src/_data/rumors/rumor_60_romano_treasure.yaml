@@ -3,5 +3,8 @@ act: act_ii_mystery_emerges
 type: Rumor
 possession: EXPLORER
 truth: true
+hashtags:
+  - romano_treasure
+  - frankie_romano
 content: |
   They say the Romano treasure might be hidden right here at the Montrose mansion.

@@ -5,6 +5,10 @@ date: '1925-10-17'
 title: Alice is Dead
 act: act_iii_investigation
 is_spoiler: false
+hashtags:
+  - cordelia_montrose
+  - alice_whitmore
+  - thaddeus_crane
 content: |-
   I learned today that Alice is dead. They said she fell. An accident.
 

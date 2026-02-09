@@ -1,0 +1,181 @@
+id: true_heir_montrose_mansion_play
+title: The True Heir of Montrose Mansion
+type: major
+emojis: 👑
+acts:
+  act_i:
+    name: "Act I: The Setting"
+    purpose: "Establish the inheritance mystery, the Baker's connection to Eleanor, the rose bread recipe"
+    scenes:
+      - scene: 1
+        title: "Cordelia's Final Gift"
+        location: "The Mansion, October 1925"
+        characters:
+          - CORDELIA MONTROSE
+          - ELIAS MONROE
+        content: |
+          [CORDELIA, dying, calls for ELIAS MONROE, the dressmaker.]
+
+          CORDELIA: Elias, I have a daughter. Her name is Eleanor. I never got to hold her. Never got to tell her I loved her. They took her away immediately—said it was for the best.
+
+          [She presses a folded paper into his hand. It's a recipe, written in her careful hand: "Rose Bread - My favorite."]
+
+          CORDELIA: I want Eleanor to have this—to know she is connected to something beautiful, even if she doesn't know all the reasons why.
+
+          ELIAS: I'll find her, Cordelia. I promise.
+
+      - scene: 2
+        title: "Eleanor's Fifteenth Birthday"
+        location: "Sullivan Bakery, July 5, 1939"
+        characters:
+          - ELEANOR SULLIVAN (age 15)
+          - MRS. SULLIVAN
+        content: |
+          [MRS. SULLIVAN gives ELEANOR a small box on her fifteenth birthday.]
+
+          MRS. SULLIVAN: This is your birth mother. She loved you very much. She wasn't able to raise you, but she wanted you to know what she looked like. To know she hadn't forgotten.
+
+          [ELEANOR finds photographs of her birth mother—Cordelia Montrose—and a letter with a recipe for rose bread.]
+
+          ELEANOR: Rose bread. Her favorite.
+
+          [ELEANOR will make this recipe every day for the rest of her life. It is her only connection to the woman in the photograph.]
+
+      - scene: 3
+        title: "The Baker's Inheritance"
+        location: "St. Mary Medical Center, 1990"
+        characters:
+          - NARRATOR
+        content: |
+          [When THE BAKER was left as an infant, an orphan, on the concrete steps of St. Mary Medical Center, they had only one thing: a worn leather journal belonging to someone named Eleanor.]
+
+          NARRATOR: The journal contained a faded black-and-white photograph of a striking young woman with large brown eyes and long dark hair, standing in a garden surrounded by roses. And two recipes for rose bread: one old, fading, handwritten, and one new, written in a neat, precise hand.
+
+          No note. No explanation. Just the journal, the photograph, and the recipe.
+
+          That recipe was the Baker's only inheritance. It was why they chose to be a baker—to feel closer to family even if they never knew who they were.
+
+  act_ii:
+    name: "Act II: The Mystery Emerges"
+    purpose: "Introduce questions about who the true heir is, the adoption that was never finalized"
+    scenes:
+      - scene: 1
+        title: "The Trust Records"
+        location: "The Fiduciary's Office"
+        characters:
+          - THE FIDUCIARY
+          - THE INVESTIGATOR
+        content: |
+          [THE FIDUCIARY examines trust records.]
+
+          THE FIDUCIARY: The records mention Eleanor Sullivan as the illegitimate daughter of Cordelia Montrose. But the adoption... it was never legally finalized.
+
+          THE INVESTIGATOR: What does that mean?
+
+          THE FIDUCIARY: On paper, Eleanor Sullivan remained Cordelia Montrose's legitimate biological heir. And every descendant after her inherited that legal status.
+
+      - scene: 2
+        title: "The Bakery Fire"
+        location: "Sullivan Bakery, November 1990"
+        characters:
+          - NARRATOR
+        content: |
+          [Sullivan's Bakery burned to the ground in the dead of night.]
+
+          NARRATOR: The fire spread with unusual rapidity. David and Catherine Sullivan were found dead in the ruins. Reports stated the Sullivans had an infant child, though no body was recovered. The baby was the sole surviving member of the Sullivan family.
+
+      - scene: 3
+        title: "The Connection"
+        location: "Montrose Mansion, Present Day"
+        characters:
+          - THE BAKER
+          - THE INFLUENCER
+        content: |
+          [THE BAKER brings rose bread to the investigation.]
+
+          THE INFLUENCER: There's this whole crazy story about a bakery that burned down in the 1990s? It was supposed to be famous for rose bread.
+
+          THE BAKER: Rose bread? That's... that's the recipe from Eleanor's journal. The one I've been making my whole life.
+
+  act_iii:
+    name: "Act III: The Investigation"
+    purpose: "Build the case - connect Eleanor to Cordelia, prove the Baker's lineage"
+    scenes:
+      - scene: 1
+        title: "The Photographs"
+        location: "The Investigation Room"
+        characters:
+          - THE INVESTIGATOR
+        content: |
+          [Photographs of Eleanor at different ages: baby, child, adolescent. All show the same person, growing up.]
+
+          THE INVESTIGATOR: Eleanor Sullivan. Born 1925. Adopted by the Sullivan family. But the adoption was never legally finalized. She remained Cordelia Montrose's biological heir.
+
+      - scene: 2
+        title: "The Recipe Connection"
+        location: "The Investigation Room"
+        characters:
+          - THE INVESTIGATOR
+          - THE BAKER
+        content: |
+          [THE INVESTIGATOR compares the recipe from Cordelia to the recipe from Eleanor's journal.]
+
+          THE INVESTIGATOR: The same recipe. Rose bread. Cordelia's favorite. Passed from Cordelia to Eleanor to you.
+
+          THE BAKER: Eleanor's journal... it was my only inheritance. The only thing I had when I was left at the hospital.
+
+          THE INVESTIGATOR: Eleanor Sullivan founded Sullivan's Bakery in the 1940s. The bakery was famous for the family's rose bread recipe passed down through generations.
+
+      - scene: 3
+        title: "The Line of Inheritance"
+        location: "The Investigation Room"
+        characters:
+          - THE FIDUCIARY
+          - THE INVESTIGATOR
+        content: |
+          [THE FIDUCIARY traces the line of inheritance.]
+
+          THE FIDUCIARY: Cordelia Rose Montrose died in 1925. She was the legal owner of the estate. Eleanor Sullivan was born in 1925—Cordelia's biological daughter. The adoption was never finalized, so Eleanor remained the legitimate heir. Eleanor's descendants—the Sullivan family—ran the bakery for generations. The Baker is a direct descendant of Eleanor Sullivan.
+
+          THE INVESTIGATOR: So the Baker is the true heir?
+
+          THE FIDUCIARY: Yes. The Baker is standing in their own family's mansion.
+
+  act_iv:
+    name: "Act IV: The Revelation"
+    purpose: "Reveal that the Baker is the true heir, direct descendant of Eleanor Sullivan"
+    scenes:
+      - scene: 1
+        title: "The Revelation"
+        location: "Montrose Mansion"
+        characters:
+          - THE BAKER
+          - THE FIDUCIARY
+          - THE INVESTIGATOR
+        content: |
+          [THE FIDUCIARY presents the evidence to THE BAKER.]
+
+          THE FIDUCIARY: You are the true heir of the Montrose family. You are the direct descendant of Cordelia Montrose's and Thomas Whitmore's secret baby, Eleanor Sullivan.
+
+          THE BAKER: I'm... I'm the heir? This is my family's mansion?
+
+          THE INVESTIGATOR: The rose bread recipe—Cordelia's favorite—was the legacy she left for her only child. A memory of warmth and roses woven through generations, passed from Cordelia to Eleanor to you.
+
+          THE BAKER: All this time... I've been making her recipe. Feeling connected to family I never knew. And now I know. I'm home.
+
+      - scene: 2
+        title: "The Whitmore Bloodline"
+        location: "Montrose Mansion"
+        characters:
+          - THE INVESTIGATOR
+          - THE BAKER
+        content: |
+          [THE INVESTIGATOR explains the full story.]
+
+          THE INVESTIGATOR: Eleanor's father was Thomas Edward Whitmore—the merchant marine captain who loved Cordelia, and Alice Whitmore's older brother. Alice was truly psychic, gifted with visions and premonitions. Your spiritual sensitivity, your ability to sense things others miss—it comes from the Whitmore bloodline. From Alice's gift, passed down through her brother's descendants.
+
+          THE BAKER: So I'm not just the heir to the Montrose estate. I'm also connected to the Whitmore family. To Alice's gift.
+
+          THE INVESTIGATOR: You carry both bloodlines. Montrose and Whitmore. The mansion and the gift.
+
+          [THE BAKER stands in the mansion, finally understanding who they are and where they come from.]

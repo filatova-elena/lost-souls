@@ -3,5 +3,9 @@ act: act_i_setting
 type: Rumor
 possession: INFLUENCER
 truth: true
+hashtags:
+  - romano_dynasty
+  - harbor_hustle
+  - frankie_romano
 content: |
   The Romano family controlled everything that moved through the port. Frankie Romano's reach was everywhere.

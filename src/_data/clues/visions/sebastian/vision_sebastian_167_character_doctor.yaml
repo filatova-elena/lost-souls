@@ -4,5 +4,8 @@ ghost: sebastian
 to_character: doctor
 name: Brother Recognition
 act: act_ii_mystery_emerges
+hashtags:
+  - sebastian_crane
+  - thaddeus_crane
 content: |
   You remind me of my brother

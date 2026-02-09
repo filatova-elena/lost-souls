@@ -4,6 +4,8 @@ name: Vanilla, Cherry Syrup, Honey
 act: act_iii_investigation
 scientific_name: Vanilla planifolia / Prunus / Apis mellifera
 is_primary: true
+hashtags:
+  - sebastian_crane
 type: Botanical (Jar)
 appearance: Amber-colored liquid or syrup in jar, sweet aromatic smell
 purpose: Taste and preservation in Sebastian's elixir
