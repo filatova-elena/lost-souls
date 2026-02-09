@@ -34,12 +34,11 @@ permalink: refs/clues/
   <div class="tag-filters" data-act="{{ actKey }}"></div>
 
   {# ---- Clues list ---- #}
-  {% if actData.clues and actData.clues.length %}
+  {% set actClues = clues | filterByAct(actKey) %}
+  {% if actClues.length %}
   <h3 class="section-subheader">🔍 Clues <span class="item-count clue-count"></span></h3>
   <ul class="clue-list" data-act="{{ actKey }}">
-    {% for clueName in actData.clues %}
-      {% set clue = clueName | getClue(clues) %}
-      {% if clue %}
+    {% for clue in actClues %}
       <li class="clue-item" data-tags="{{ clue.hashtags | join(',') if clue.hashtags else '' }}">
         <div class="clue-item-main">
           {{ clue.type | typeIcon }}
@@ -55,18 +54,16 @@ permalink: refs/clues/
         </div>
         {% endif %}
       </li>
-      {% endif %}
     {% endfor %}
   </ul>
   {% endif %}
 
   {# ---- Rumors list ---- #}
-  {% if actData.rumors and actData.rumors.length %}
+  {% set actRumors = rumorsData | filterByAct(actKey) %}
+  {% if actRumors.length %}
   <h3 class="section-subheader">💬 Rumors <span class="item-count rumor-count"></span></h3>
   <ul class="rumor-list" data-act="{{ actKey }}">
-    {% for rumorName in actData.rumors %}
-      {% set rumor = rumorName | getRumor(rumorsData) %}
-      {% if rumor %}
+    {% for rumor in actRumors %}
       <li class="rumor-item" data-tags="{{ rumor.hashtags | join(',') if rumor.hashtags else '' }}">
         <div class="rumor-item-main">
           <span class="rumor-content">{{ rumor.content | trim }}</span>
@@ -84,16 +81,11 @@ permalink: refs/clues/
         </div>
         {% endif %}
       </li>
-      {% else %}
-      <li class="rumor-item">
-        <span class="muted">{{ rumorName }}</span>
-      </li>
-      {% endif %}
     {% endfor %}
   </ul>
   {% endif %}
 
-  {% if not actData.clues and not actData.rumors %}
+  {% if not actClues.length and not actRumors.length %}
     <p class="muted italic">All clues unlocked. Complete narrative can be pieced together from all available evidence.</p>
   {% endif %}
 

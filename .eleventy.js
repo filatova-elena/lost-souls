@@ -52,6 +52,12 @@ module.exports = function(eleventyConfig) {
     return rumorsData.byFilename?.get(filename) || null;
   });
 
+  // Filter items by act
+  eleventyConfig.addFilter("filterByAct", function(items, actKey) {
+    if (!Array.isArray(items)) return [];
+    return items.filter(item => item.act === actKey);
+  });
+
   // Check if a key is a metadata key (for clue organization template)
   eleventyConfig.addFilter("isMetaKey", function(key) {
     return ["name", "purpose", "constraints", "notes"].includes(key);
