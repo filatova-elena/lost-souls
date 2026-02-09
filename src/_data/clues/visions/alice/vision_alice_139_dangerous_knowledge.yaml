@@ -1,8 +1,11 @@
 id: VA139
 type: Vision (Alice)
 ghost: alice
-name: Dangerous Knowledge
+title: The Lonely Ghost
+subtitle: Dangerous Knowledge
 act: act_iii_investigation
+skills:
+  - spiritual_2
 hashtags:
   - alice_whitmore
   - thaddeus_crane

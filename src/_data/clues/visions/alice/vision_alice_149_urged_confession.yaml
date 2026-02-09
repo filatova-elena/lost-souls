@@ -1,8 +1,11 @@
 id: VA149
 type: Vision (Alice)
 ghost: alice
-name: Urged Confession
+title: The Lonely Ghost
+subtitle: Urged Confession
 act: act_iii_investigation
+skills:
+  - spiritual_2
 hashtags:
   - alice_whitmore
   - thaddeus_crane

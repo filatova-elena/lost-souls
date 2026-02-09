@@ -1,8 +1,11 @@
 id: VC154
 type: Vision (Cordelia)
 ghost: cordelia
-name: The Confrontation
+title: The Heartbroken Ghost
+subtitle: The Confrontation
 act: act_iii_investigation
+skills:
+  - spiritual_2
 hashtags:
   - cordelia_montrose
   - thaddeus_crane

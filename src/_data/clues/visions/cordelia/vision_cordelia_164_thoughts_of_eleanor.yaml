@@ -1,8 +1,11 @@
 id: VC164
 type: Vision (Cordelia)
 ghost: cordelia
-name: Thoughts of Eleanor
+title: The Heartbroken Ghost
+subtitle: Thoughts of Eleanor
 act: act_iv_revelation
+skills:
+  - spiritual_2
 hashtags:
   - secret_baby
   - cordelia_montrose

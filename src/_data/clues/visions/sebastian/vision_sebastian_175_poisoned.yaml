@@ -1,8 +1,11 @@
 id: VS175
 type: Vision (Sebastian)
 ghost: sebastian
-name: Poisoned
+title: The Ghost of the Cursed Alchemist
+subtitle: Poisoned
 act: act_iii_investigation
+skills:
+  - spiritual_2
 hashtags:
   - sebastian_crane
 content: I drank it directly from the bottle. [Sudden realization of a terrible mistake.] Within hours, I was violently ill. My stomach burned. My heart raced. I couldn't breathe. This wasn't meant to happen! This was my formula, my creation! What did I do wrong? I failed! [Panic and confusion surge through you.]

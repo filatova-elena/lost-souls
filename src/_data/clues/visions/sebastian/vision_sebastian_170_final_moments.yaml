@@ -1,8 +1,11 @@
 id: VS170
 type: Vision (Sebastian)
 ghost: sebastian
-name: Final Moments
-act: act_iii_investigation
+title: The Ghost of the Cursed Alchemist
+subtitle: Final Moments
+act: act_ii_mystery_emerges
+skills:
+  - spiritual_2
 hashtags:
   - sebastian_crane
   - cordelia_montrose

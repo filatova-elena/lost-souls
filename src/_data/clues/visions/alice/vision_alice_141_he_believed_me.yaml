@@ -1,8 +1,11 @@
 id: VA141
 type: Vision (Alice)
 ghost: alice
-name: He Believed Me
+title: The Lonely Ghost
+subtitle: He Believed Me
 act: act_iii_investigation
+skills:
+  - spiritual_1
 hashtags:
   - alice_whitmore
   - thaddeus_crane

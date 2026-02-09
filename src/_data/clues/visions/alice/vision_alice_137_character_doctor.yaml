@@ -1,9 +1,11 @@
 id: VA137
 type: Vision (Alice)
 ghost: alice
-to_character: doctor
-name: Recognition
+title: The Lonely Ghost
+subtitle: Recognition
 act: act_iii_investigation
+skills:
+  - is_character_doctor
 hashtags:
   - alice_whitmore
   - thaddeus_crane

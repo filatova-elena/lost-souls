@@ -1,9 +1,11 @@
 id: VC153
 type: Vision (Cordelia)
 ghost: cordelia
-to_character: explorer
-name: Thomas's Return
+title: The Heartbroken Ghost
+subtitle: Thomas's Return
 act: act_i_setting
+skills:
+  - is_character_explorer
 hashtags:
   - cordelia_montrose
   - thomas_whitmore

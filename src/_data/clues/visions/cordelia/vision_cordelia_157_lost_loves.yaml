@@ -1,8 +1,11 @@
 id: VC157
 type: Vision (Cordelia)
 ghost: cordelia
-name: Lost Loves
-act: act_i_setting
+title: The Heartbroken Ghost
+subtitle: Lost Loves
+act: act_iii_investigation
+skills:
+  - spiritual_1
 hashtags:
   - cordelia_romantic
   - cordelia_montrose

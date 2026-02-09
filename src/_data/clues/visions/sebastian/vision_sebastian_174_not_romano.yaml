@@ -1,9 +1,12 @@
 id: VS174
 type: Vision (Sebastian)
 ghost: sebastian
-name: Not Romano
-act: act_iii_investigation
+title: The Ghost of the Cursed Alchemist
+subtitle: On Frankie Romano
+act: act_ii_mystery_emerges
+skills:
+  - spiritual_2
 hashtags:
   - sebastian_crane
   - frankie_romano
-content: Frankie Romano didn't do this. When we argued at the docks that day, I thought he would kill me. [Laughs darkly] I destroyed everything with my own hands! My formula, my love, my life—all ruined by my own incompetence. [Despair and self-hatred are total and absolute.]
+content: Frankie Romano at the docks was tough to deal with. When we argued at the docks that day, I thought he would let it go. But he was so angry, so determined to get what he wanted!

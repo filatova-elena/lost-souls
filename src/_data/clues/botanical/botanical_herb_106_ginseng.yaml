@@ -1,8 +1,8 @@
 id: BH106
-title: Precious Forked Root Specimen
-name: Ginseng Root
+name: Precious Forked Root Specimen
 act: act_i_setting
-scientific_name: Panax ginseng
+skills:
+  - botanical_1
 is_primary: true
 hashtags:
   - sebastian_crane
@@ -10,13 +10,5 @@ type: Botanical (Dried Herb)
 appearance: Pale root with distinctive forked, human-like shape, unusual and expensive-looking
 purpose: Original ingredient in Sebastian's harmless elixir
 dosage: Smallest pinch
-reveals: Alchemical 'binding' agent with mystical significance. Symbolic rather than pharmacologically significant. Shows Sebastian's romantic, mystical approach to the formula.
-character_interpretations:
-  professor: Ginseng root—precious, difficult to source, very expensive. The fact that this is here shows significant botanical knowledge and considerable expense. Not someone casually dabbling in herbalism.
-  baker: I don't recognize this root. The shape is strange—looks like it has limbs. Very unusual and ritualistically prepared. Out of my knowledge.
-  heiress: I don't spend time examining curiosities in abandoned garages.
-  explorer: A genuine ginseng root. Very difficult to cultivate and expensive. Only serious practitioners would source this. Someone went to significant effort and considerable expense.
-  fiduciary: Ginseng root. Prized in Eastern traditions and magical practices. Completely harmless. But its presence is unusual and costly.
 content: |
-  A pale root with a distinctive forked, human-like shape. Unusual appearance. Very expensive-looking.
-
+  **Ginseng Root [Panax ginseng]**. A pale root with a distinctive forked, human-like shape. Precious, difficult to source, and very expensive — only serious practitioners would seek it out. Prized in Eastern traditions for its mystical binding properties. Whoever sourced this had significant botanical knowledge and went to considerable expense. Symbolic rather than pharmacologically significant, showing a romantic, mystical approach.

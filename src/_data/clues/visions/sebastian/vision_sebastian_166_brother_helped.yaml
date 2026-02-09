@@ -1,8 +1,11 @@
 id: VS166
 type: Vision (Sebastian)
 ghost: sebastian
-name: Brother Tried to Help
+title: The Ghost of the Cursed Alchemist
+subtitle: Brother Tried to Help
 act: act_iii_investigation
+skills:
+  - spiritual_1
 hashtags:
   - sebastian_crane
   - thaddeus_crane

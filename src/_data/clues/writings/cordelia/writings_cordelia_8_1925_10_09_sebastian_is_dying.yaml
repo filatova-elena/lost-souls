@@ -5,6 +5,8 @@ date: '1925-10-09'
 title: Sebastian is Dying
 act: act_iii_investigation
 is_spoiler: false
+skills:
+  - personal_montrose
 hashtags:
   - cordelia_montrose
   - sebastian_crane

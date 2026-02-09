@@ -219,6 +219,11 @@ silver_candle_holder:
   description: |
     The silver candle holder — the murder weapon. Still carrying Alice's blood a century later. The object Thaddeus reached for in a moment of desperation, and the proof he could never fully erase.
 
+murder_weapon:
+  name: murder_weapon
+  description: |
+    Physical evidence tied directly to the killing — the instrument of death and the traces it left behind.
+
 # ===========================
 # Botanicals
 # ===========================

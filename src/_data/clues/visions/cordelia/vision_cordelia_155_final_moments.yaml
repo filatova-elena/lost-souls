@@ -1,8 +1,11 @@
 id: VC155
 type: Vision (Cordelia)
 ghost: cordelia
-name: Final Moments
-act: act_iv_revelation
+title: The Heartbroken Ghost
+subtitle: Final Moments
+act: act_iii_revelation
+skills:
+  - spiritual_1
 hashtags:
   - secret_baby
   - cordelia_montrose

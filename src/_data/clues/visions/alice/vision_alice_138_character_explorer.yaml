@@ -2,7 +2,8 @@ id: VA138
 type: Vision (Alice)
 ghost: alice
 to_character: explorer
-name: Brother's Return
+title: The Lonely Ghost
+subtitle: Brother's Return
 act: act_iii_investigation
 hashtags:
   - alice_whitmore

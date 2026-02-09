@@ -1,8 +1,11 @@
 id: VC156
 type: Vision (Cordelia)
 ghost: cordelia
-name: Garden Betrayal
-act: act_i_setting
+title: The Heartbroken Ghost
+subtitle: Garden Betrayal
+act: act_iii_investigation
+skills:
+  - spiritual_2
 hashtags:
   - cordelia_montrose
   - thaddeus_crane

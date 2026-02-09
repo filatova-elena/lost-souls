@@ -1,9 +1,11 @@
 id: VC151
 type: Vision (Cordelia)
 ghost: cordelia
-to_character: doctor
-name: Thaddeus Recognition
+title: The Heartbroken Ghost
+subtitle: Recognition
 act: act_i_setting
+skills:
+  - is_character_doctor
 hashtags:
   - thaddeus_arrogant
   - cordelia_montrose
