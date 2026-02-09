@@ -574,8 +574,7 @@ act_iii_investigation:
     - rumor_68_cordelia_rose_bread_recipe
   - description: Eleanor begins searching for her origins - Eleanor learns she was
       adopted, sees birth mother's photo
-    clues:
-    - writings_eleanor_14_1939_the_photographs
+    clues: []
     rumors:
     - rumor_20_sullivan_coverup
     - rumor_69_sullivan_respectable
@@ -676,7 +675,7 @@ act_iv_revelation:
   - description: Treasure location and map revealed - map to treasure in rose garden,
       purple and gold dragon vase (treasure container)
     clues:
-    - artifact_83_object_rose_map
+    - artifact_paper_83_rose_map
     - artifact_84_object_vase_purple
     rumors:
     - rumor_59_romano_feds_millions

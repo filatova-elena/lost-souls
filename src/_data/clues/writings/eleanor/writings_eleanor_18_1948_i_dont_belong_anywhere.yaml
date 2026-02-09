@@ -1,9 +1,11 @@
 id: WEL18
 type: Writing (Eleanor's Diary)
 author: eleanor
-date: '1948'
-title: I Don't Belong Anywhere
-act: act_iv_revelation
+title: Eleanor's Diary
+subtitle: 1948 - I Don't Belong Anywhere
+act: act_ii_mystery_emerges
+skills:
+  - personal_sullivan
 hashtags:
   - secret_baby
   - eleanor_sullivan
@@ -11,8 +13,6 @@ hashtags:
 content: |+
   Today I stood in the bakery kneading dough, and Mother complimented my technique. 'You have a gift for this,' she said. 'It's in your blood.'
 
-  And I thought: which blood? The Sullivan blood, from the people who raised me? Or the blood of my birth mother?
+  And I thought: which blood? The Sullivan blood, from the people who raised me? Or the blood of my birth parents?
 
-  FMother taught me bread-making when I could barely reach the counter. This is the legacy I've been given.
-
-...
+  Mother taught me bread-making when I could barely reach the counter. This is the legacy I've been given.

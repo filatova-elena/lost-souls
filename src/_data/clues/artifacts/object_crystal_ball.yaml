@@ -3,6 +3,7 @@ name: Crystal Ball - Antique Scrying Sphere
 act: act_iv_revelation
 type: Artifact (Object)
 appearance: A clear quartz crystal sphere mounted on an ornate brass stand, with subtle internal cloud patterns.
+location: The Attic
 skills:
   - spiritual_2
 story_gates:

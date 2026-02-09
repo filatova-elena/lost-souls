@@ -1,8 +1,8 @@
 id: WC11
 type: Writing (Cordelia's Diary)
 author: cordelia
-date: '1925-10-17'
-title: Alice is Dead
+title: Cordelia Montrose's Diary
+subtitle: October 17, 1925 - Alice is Dead
 act: act_iii_investigation
 skills:
   - personal_montrose

@@ -3,97 +3,67 @@
 # ===========================
 
 secret_baby:
-  name: secret_baby
+  type: story_arc
   description: |
     Cordelia's illegitimate child — Eleanor — given away by the Montrose family and raised in secret. Covers the pregnancy, disappearance, adoption, Sullivan identity, and the heir trail.
 
 elias_unrequited_love:
-  name: elias_unrequited_love
+  type: story_arc
   description: |
     Elias Monroe's hopeless devotion to Cordelia Montrose. The dressmaker who loved her from afar, made her wedding dress, and never recovered when she chose Sebastian, but ultimately kept his promise to her and delivered the rose bread recipe to her daughter, Eleanor.
 
 rose_bread:
-  name: rose_bread
+  type: story_arc
   description: |
     The rose bread recipe passed down through generations — from Cordelia's grandmother, to Cordelia, to Elias, and eventually to Eleanor. A thread connecting mother and daughter across time.
 
-cordelia_romantic:
-  name: cordelia_romantic
-  description: |
-    Cordelia's romantic nature and emotional world — her loves, her heartbreak, and the idea that she died of a broken heart after Sebastian's death.
-
-sebastian_romantic:
-  name: sebastian_romantic
-  description: |
-    Sebastian's romantic idealism — his obsession with planetary alignments, the Elixir of Eternal Love, and the belief that love could be perfected through alchemy and the stars.
-
 generational_orphans:
-  name: generational_orphans
+  type: story_arc
   description: |
     The generational cycle of orphaned children — the Sullivan bakery fire that killed David and Catherine Sullivan, the infant whose body was never found, and the echoes of loss across decades.
 
 elixir_of_love:
-  name: elixir_of_love
+  type: story_arc
   description: |
     Sebastian's Elixir of Eternal Love — the formula, its ingredients, the Jupiter-Venus conjunction timing, the contamination, and the illness and deaths it caused.
 
 the_alchemist:
-  name: the_alchemist
+  type: story_arc
   description: |
     Sebastian's true nature — the brilliant black sheep who mixed bootleg spirits by night and an elixir of eternal love by day. His duality, his idealism, his recklessness, and the tragedy of a man destroyed by his own creation.
 
-crane_brothers:
-  name: crane_brothers
-  description: |
-    The golden child and the black sheep — Thaddeus the respected physician, Sebastian the reckless alchemist. One brother's jealousy corrupted the other's creation. The ultimate family betrayal: poison disguised as a gift.
-
-thaddeus_arrogant:
-  name: thaddeus_arrogant
-  description: |
-    Thaddeus Crane's arrogant, manipulative side — his clinical detachment, intellectual superiority, and the dark calculus behind his medical advice to Sebastian.
-
-thaddeus_respected:
-  name: thaddeus_respected
-  description: |
-    Thaddeus Crane as the competent, trusted physician — his professional patient consultations, careful diagnoses, and the respectable façade that conceals his darker nature.
-
 doctor_and_patient:
-  name: doctor_and_patient
+  type: story_arc
   description: |
     The forbidden affair between Alice and Thaddeus — the one person who believed her became her secret lover, and then her killer. Trust betrayed in the most intimate way possible. She still loves him. He never deserved it.
 
 alice_second_sight:
-  name: alice_second_sight
+  type: story_arc
   description: |
     The psychic gift as a living thread — Alice had it raw and untrained, Célestine recognized it, and now it persists through bloodlines. Margo Laveau inherits the Laveau legacy, the Baker may carry traces through the Whitmore line. The gift doesn't die. It just keeps finding its way back.
 
-laveau_debt:
-  name: laveau_debt
-  description: |
-    Célestine's greatest failure — she couldn't save Alice, and the guilt became a family inheritance. A century of a restless spirit calling and generations of Laveaus listening, until Margo finally arrives to finish what her ancestor started.
-
 harbor_hustle:
-  name: harbor_hustle
+  type: story_arc
   description: |
     The Prohibition underworld — Frankie Romano's empire at the port, the smuggling, the bootlegging, the partnerships, and the dangerous game of controlling what others couldn't have.
 
 romano_dynasty:
-  name: romano_dynasty
+  type: story_arc
   description: |
     The weight of the Romano name — an empire built on charm and ruthlessness, golden years of untouchable glamour, a spectacular collapse, and a descendant still living in the shadow, one foot in legitimacy, one in the shadows. The Romano way.
 
 romano_treasure:
-  name: romano_treasure
+  type: story_arc
   description: |
     A family myth that refuses to die — hidden wealth that escaped the feds, passed down as whispers through generations of Romanos. Is it real, or just a story broke people tell themselves? And then someone actually finds it.
 
 morticians_silence:
-  name: morticians_silence
+  type: story_arc
   description: |
     The cover-up that kept the truth buried for a century. Silas Blackwell, three suspicious bodies in eleven days, a $500 bribe, falsified death certificates — and the private notes he couldn't bring himself to destroy.
 
 bakery_fire:
-  name: bakery_fire
+  type: story_arc
   description: |
     The 1990 arson that erased the Sullivan family — an empire protecting its secrets by eliminating the true heirs. A hired killer, a mother's last act hiding a diary in the baby's blankets, and an infant left on hospital steps with nothing but a recipe and a photograph.
 
@@ -102,67 +72,67 @@ bakery_fire:
 # ===========================
 
 cordelia_montrose:
-  name: cordelia_montrose
+  type: character
   description: |
     The romantic dreamer at the center of everything — a sheltered heiress who fell in love twice, bore a secret child, lost everyone she cared about, and died slowly without ever knowing why. Her final thoughts were of the daughter she never got to hold.
 
 margaret_montrose:
-  name: margaret_montrose
+  type: character
   description: |
     Cordelia's mother — the iron will behind the Montrose reputation. Arranged the secret adoption, managed the scandal, protected the family name at any cost. The kind of love that looks like cruelty.
 
 alice_whitmore:
-  name: alice_whitmore
+  type: character
   description: |
     The psychic who saw everything except her own death. Brilliant, gifted, dismissed as hysterical by everyone but the man who would kill her. She loved too deeply, trusted the wrong person, and became the restless spirit that wouldn't stop calling.
 
 thomas_whitmore:
-  name: thomas_whitmore
+  type: character
   description: |
     The sailor who never came home in time — Cordelia's first love, Alice's brother, the merchant marine who was reported dead at sea but returned in 1926 to find everyone gone. He sailed away and never looked back. But his bloodline didn't end.
 
 sebastian_crane:
-  name: sebastian_crane
+  type: character
   description: |
     The alchemist, the bootlegger, the romantic — a pharmacist who believed love could be perfected through chemistry and the stars. Died thinking his own formula killed the woman he loved. He never knew his brother poisoned it.
 
 thaddeus_crane:
-  name: thaddeus_crane
+  type: character
   description: |
     The respected physician who murdered three people to protect his reputation. Brilliant, calculating, charming — he signed their death certificates himself. The most dangerous man in Long Beach, hiding in plain sight behind a stethoscope.
 
 frankie_romano:
-  name: frankie_romano
+  type: character
   description: |
     "The Coast" — the rum runner who controlled everything moving through Long Beach harbor during Prohibition. Ruthless, connected, loud. Everyone blamed him for Sebastian's death. He didn't do it. But he's not innocent either.
 
 elias_monroe:
-  name: elias_monroe
+  type: character
   description: |
     The dressmaker who loved Cordelia from the first moment she walked into his shop. Made her wedding dress for another man, watched her waste away, and kept the one promise she asked of him — delivering the rose bread recipe to the daughter she'd never see.
 
 silas_blackwell:
-  name: silas_blackwell
+  type: character
   description: |
     The mortician who knew the truth and took the money anyway. Three bodies, three lies on the death certificates, $500 in his safe, and private notes hidden in the family archives. The dead were already dead, and he had a family to feed.
 
 celestine_laveau:
-  name: celestine_laveau
+  type: character
   description: |
     The world-famous French psychic who could help everyone except the one who mattered most. She recognized Alice's gift, tried to mentor her, and spent her remaining years failing to free Alice's trapped spirit. Died in 1947 with unfinished business.
 
 eleanor_sullivan:
-  name: eleanor_sullivan
+  type: character
   description: |
     Cordelia's secret daughter — given away at birth, raised by the Sullivan family, never knowing her true origins. She baked rose bread every day of her life, her only connection to a mother she'd never meet. The link between the Montrose fortune and the Baker.
 
 edmund_hartley:
-  name: edmund_hartley
+  type: character
   description: |
     The botany professor who verified Sebastian's formula was safe — and spent the rest of his life wondering if he missed something. His consultation records, passed down through generations, became the key to proving the elixir was deliberately corrupted.
 
 margo_laveau:
-  name: margo_laveau
+  type: character
   description: |
     Célestine's great-great-granddaughter — carrying the family name, the gift, and a century of unfinished business. Alice Whitmore has been calling the Laveau line for 100 years. Margo is the one who finally answers.
 
@@ -171,22 +141,22 @@ margo_laveau:
 # ===========================
 
 thomas_reed:
-  name: thomas_reed
+  type: character
   description: |
     The arsonist — hired by the Montrose family to burn Sullivan's Bakery and eliminate the true heirs. Age 69, arrested in 1991 living under an assumed name. Refused to talk, protected his employers to the end.
 
 david_sullivan:
-  name: david_sullivan
+  type: character
   description: |
     The Baker's father — owner of Sullivan's Bakery, age 38, killed in the 1990 fire. A descendant of Eleanor, carrying on the family bakery tradition without knowing his bloodline led straight back to the Montrose fortune.
 
 catherine_sullivan:
-  name: catherine_sullivan
+  type: character
   description: |
     The Baker's mother — age 36, killed in the fire. Her last act: tucking Eleanor's diary into the baby's blankets while pleading for her child's life. The arsonist took the baby but never noticed the diary. Catherine's final gift saved the family's identity.
 
 elena_dimarco:
-  name: elena_dimarco
+  type: character
   description: |
     A ghost identity — a woman who appeared in Reno in 1960, married someone whose name was redacted, then vanished completely. No death certificate, no property trail, nothing. A temporary persona created for a financial transaction disguised as a wedding certificate. The Italian surname says everything.
 
@@ -195,32 +165,30 @@ elena_dimarco:
 # ===========================
 
 venetian_bottle:
-  name: venetian_bottle
+  type: object
   description: |
     The Venetian glass bottle — smuggled through Frankie's operation, chosen by Sebastian because his elixir deserved a container as beautiful as the love it was meant to create. A bootlegger's contraband that became a romantic's chalice, and the last piece of the Romano legacy the Art Collector couldn't sell.
 
 pocket_watch:
-  name: pocket_watch
+  type: object
   description: |
     The pocket watch — engraved with the exact second of the Jupiter-Venus conjunction, 6:14 AM, September 4, 1925. A timestamp of the moment Sebastian believed he perfected love. Time stopped, literally.
 
 wedding_dress:
-  name: wedding_dress
+  type: object
   description: |
     The unfinished wedding dress — every stitch by Elias's hand, the bodice perfect, the skirt abandoned mid-pin. She died before she could wear it. He couldn't bring himself to finish it.
 
 crystal_ball:
-  name: crystal_ball
+  type: object
   description: |
     The scrying sphere — Célestine's, then Margo's. The lens that finally reveals the truth after 100 years. The only witness to Alice's murder, waiting for someone with the gift to look inside.
 
 silver_candle_holder:
-  name: silver_candle_holder
   description: |
     The silver candle holder — the murder weapon. Still carrying Alice's blood a century later. The object Thaddeus reached for in a moment of desperation, and the proof he could never fully erase.
 
 murder_weapon:
-  name: murder_weapon
   description: |
     Physical evidence tied directly to the killing — the instrument of death and the traces it left behind.
 
@@ -229,11 +197,9 @@ murder_weapon:
 # ===========================
 
 foxglove:
-  name: foxglove
   description: |
     Digitalis purpurea — the beautiful garden plant that killed three people. A routine medicine in the 1920s doctor's cabinet, deadly when the dose crosses the line. Thaddeus knew exactly where that line was.
 
 ginseng:
-  name: ginseng
   description: |
     The missing piece — the rare Korean root Sebastian spent years searching for. The binding agent for eternal love, three thousand years of Chinese medicine distilled into the smallest pinch. It completed the formula. The formula that killed him.

@@ -2,8 +2,11 @@ id: WEI19
 type: Writing (Elias's Letters)
 author: elias
 date: '1925-08-20'
-title: For Cordelia (Unsent)
+title: Elias Monroe's Notes
+subtitle: August 20, 1925 - For Cordelia (Unsent)
 act: act_ii_mystery_emerges
+skills:
+  - personal_monroe
 hashtags:
   - elias_unrequited_love
   - elias_monroe
@@ -16,5 +19,3 @@ content: |-
 
   I tell her of the flowers, nothing more.
   My heart lies shattered on her garden floor.
-character_interpretations:
-  dressmaker: Reading Elias's words, I understand what he never said aloud. 'My heart lies shattered on her garden floor.' He loved her so completely, so hopelessly. Yet Cordelia chose someone else. She chose a man who was poisoning her, so unfair. And Elias—my ancestor—had to watch. Had to see her fade while he remained silent, unable to speak his love. He chose to be the faithful witness instead.

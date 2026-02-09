@@ -4,7 +4,6 @@ type: Rumor
 possession: INFLUENCER
 truth: false
 hashtags:
-  - cordelia_romantic
   - cordelia_montrose
   - sebastian_crane
 content: |

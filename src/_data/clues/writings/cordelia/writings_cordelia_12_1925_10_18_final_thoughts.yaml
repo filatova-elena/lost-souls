@@ -1,9 +1,10 @@
 id: WC12
 type: Writing (Cordelia's Diary)
 author: cordelia
-date: '1925-10-18'
-title: Final Thoughts
+title: Cordelia Montrose's Diary
+subtitle: October 18, 1925 - Final Thoughts
 act: act_iv_revelation
+location: The Attic
 is_spoiler: true
 hashtags:
   - secret_baby

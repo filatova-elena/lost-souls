@@ -1,9 +1,9 @@
 id: WEL13
 type: Writing (Eleanor's Diary)
 author: eleanor
-date: '1939-07-05'
-title: The Recipe
-act: act_i_setting
+title: Eleanor's Diary
+subtitle: July 5, 1939 - The Recipe
+act: act_iii_investigation
 hashtags:
   - secret_baby
   - rose_bread

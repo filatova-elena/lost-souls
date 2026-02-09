@@ -2,7 +2,8 @@ id: WEI20
 type: Writing (Elias's Letters)
 author: elias
 date: '1925-09-15'
-title: Measurements - Wedding Dress (Cordelia Montrose)
+title: Elias Monroe's Notes
+subtitle: September 15, 1925 - Measurements - Wedding Dress (Cordelia Montrose)
 act: act_i_setting
 hashtags:
   - elias_unrequited_love
@@ -10,6 +11,7 @@ hashtags:
   - cordelia_montrose
 skills:
   - personal_monroe
+no_access_message: These are Elias's personal notes. You need to find someone with access to his personal records to read this.
 content: |-
   Bust: 34 inches
   Waist: 24 inches
@@ -23,7 +25,3 @@ content: |-
 
   Completion date: October 10, 1925
   Status: In progress. Making the most careful stitches of my life.
-
-  ---
-
-  **You observe:** These measurements aren't just numbers. Cordelia is **getting thinner**. Her frame is becoming more delicate, her waist narrower than it should be. Every fitting required new adjustments. Cordelia was getting sicker — and Elias was documenting the changes with meticulous care.

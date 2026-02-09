@@ -3,6 +3,7 @@ title: Crystal Ball - Antique Scrying Sphere
 act: act_iv_revelation
 type: Artifact (Object)
 appearance: A clear quartz crystal sphere mounted on an ornate brass stand, with subtle internal cloud patterns.
+location: The Attic
 hashtags:
   - crystal_ball
   - alice_second_sight
@@ -10,10 +11,6 @@ hashtags:
   - alice_whitmore
 skills:
   - spiritual_2
-story_gates:
-  main_quest:
-    act: act_iv_revelation
-    reason: "Reveals the vision of Thaddeus murdering Alice with the silver candle holder - definitive proof of who killed her and how"
 content: |
   *As you gaze into the crystal sphere, the internal cloud patterns begin to swirl, coalescing into something more than mist. The world around you fades—*
 

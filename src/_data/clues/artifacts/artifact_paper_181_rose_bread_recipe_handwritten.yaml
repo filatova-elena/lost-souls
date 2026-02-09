@@ -1,0 +1,36 @@
+id: AP181
+title: Handwritten RoseBread Recipe
+act: act_i_setting
+type: Artifact (Paper)
+appearance: Faded handwritten recipe on aged paper, written in careful but unpolished script
+location: The Bakery
+hashtags:
+  - rose_bread
+  - eleanor_sullivan
+  - cordelia_montrose
+skills:
+  - personal_sullivan
+no_access_message: You need to find someone with access to Eleanor's personal records to read this.
+content: |-
+  **Rose Bread**
+
+  500g bread flour
+  350ml warm water (bath temp!!)
+  7g yeast
+  10g salt
+  15g honey
+  30ml olive oil
+  1/4 tsp rose water — NOT MORE. seriously.
+  2 tbsp dried rose petals, ground fine
+
+  Mix everything except rose water + petals.
+  Knead ~10 min til windowpane.
+  Rise 1-2 hrs.
+  Fold in rose water & petals — gentle!!
+  Long rise 4-6 hrs (or fridge overnight — better flavor)
+  Shape round. Final rise 2-3 hrs.
+  450° — 35-40 min.
+  Honey glaze last 5 min.
+
+  [scrawled in margin:] "the petals lose color when baked — normal, don't panic"
+  [at bottom, underlined twice:] "DO NOT double the rose water. I learned this the hard way."
