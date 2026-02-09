@@ -43,7 +43,7 @@ permalink: refs/clues/
       <li class="clue-item" data-tags="{{ clue.hashtags | join(',') if clue.hashtags else '' }}">
         <div class="clue-item-main">
           {{ clue.type | typeIcon }}
-          <a href="{{ site.baseUrl }}clues/{{ clue.name }}/" target="_blank">{{ clue.title or clue.name }}</a>
+          <a href="{{ site.baseUrl }}clues/{{ clue.title }}/" target="_blank">{{ clue.title }}</a>
           <span class="muted type-label"> — {{ clue.type }}</span>
         </div>
         {% if clue.hashtags %}
