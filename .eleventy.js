@@ -34,22 +34,22 @@ module.exports = function(eleventyConfig) {
     return md.render(value);
   });
 
-  // Get clue by name - throws error if not found
-  eleventyConfig.addFilter("getClue", function(name, cluesData) {
-    if (!name || !cluesData) {
-      throw new Error(`getClue: Missing name or cluesData. name=${name}, cluesData=${!!cluesData}`);
+  // Get clue by filename - throws error if not found
+  eleventyConfig.addFilter("getClue", function(filename, cluesData) {
+    if (!filename || !cluesData) {
+      throw new Error(`getClue: Missing filename or cluesData. filename=${filename}, cluesData=${!!cluesData}`);
     }
-    const clue = cluesData.byName?.get(name);
+    const clue = cluesData.byFilename?.get(filename);
     if (!clue) {
-      throw new Error(`Clue not found: "${name}". Available clues: ${Array.from(cluesData.byName?.keys() || []).slice(0, 10).join(', ')}...`);
+      throw new Error(`Clue not found: "${filename}". Available clues: ${Array.from(cluesData.byFilename?.keys() || []).slice(0, 10).join(', ')}...`);
     }
     return clue;
   });
 
-  // Get rumor by name
-  eleventyConfig.addFilter("getRumor", function(name, rumorsData) {
-    if (!name || !rumorsData) return null;
-    return rumorsData.byName?.get(name) || null;
+  // Get rumor by filename
+  eleventyConfig.addFilter("getRumor", function(filename, rumorsData) {
+    if (!filename || !rumorsData) return null;
+    return rumorsData.byFilename?.get(filename) || null;
   });
 
   // Check if a key is a metadata key (for clue organization template)

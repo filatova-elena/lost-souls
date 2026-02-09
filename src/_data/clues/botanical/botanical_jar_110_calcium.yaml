@@ -1,5 +1,5 @@
 id: BJ110
-name: Fine White Powder
+title: Fine White Powder
 act: act_iii_investigation
 skills:
   - medical_1

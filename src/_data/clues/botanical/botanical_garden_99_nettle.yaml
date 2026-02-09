@@ -1,5 +1,5 @@
 id: BG99
-name: Overgrown Stinging Plant Patch
+title: Overgrown Stinging Plant Patch
 act: act_i_setting
 skills:
   - botanical_1

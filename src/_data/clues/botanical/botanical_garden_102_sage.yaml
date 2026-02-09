@@ -1,5 +1,5 @@
 id: BG102
-name: Dried Herb Bundle
+title: Dried Herb Bundle
 act: act_i_setting
 skills:
   - botanical_1

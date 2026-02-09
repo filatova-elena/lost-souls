@@ -19,7 +19,7 @@ function loadYamlDir(dir, recursive = true) {
       try {
         const item = yaml.load(fs.readFileSync(filePath, 'utf8'));
         if (item) {
-          item.name = path.basename(filePath, path.extname(filePath));
+          item.filename = path.basename(filePath, path.extname(filePath));
           items.push(item);
         }
       } catch (error) {
@@ -28,8 +28,8 @@ function loadYamlDir(dir, recursive = true) {
     }
   }
 
-  items.sort((a, b) => a.name.localeCompare(b.name));
-  items.byName = new Map(items.map(i => [i.name, i]));
+  items.sort((a, b) => a.filename.localeCompare(b.filename));
+  items.byFilename = new Map(items.map(i => [i.filename, i]));
 
   return items;
 }

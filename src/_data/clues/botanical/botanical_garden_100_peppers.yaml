@@ -1,5 +1,5 @@
 id: BG100
-name: Colorful Fruiting Garden Plants
+title: Colorful Fruiting Garden Plants
 act: act_i_setting
 skills:
   - botanical_1
