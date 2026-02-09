@@ -1,8 +1,11 @@
 id: VA146
 type: Vision (Alice)
 ghost: alice
-name: Thaddeus Did Nothing
+title: The Lonely Ghost
+subtitle: Thaddeus Did Nothing
 act: act_iii_investigation
+skills:
+  - spiritual_2
 hashtags:
   - alice_whitmore
   - thaddeus_crane

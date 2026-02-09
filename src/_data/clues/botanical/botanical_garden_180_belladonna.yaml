@@ -1,10 +1,8 @@
 id: BG180
-title: Dark Berried Nightshade
-name: Belladonna
+name: Dark Berried Nightshade
 act: act_iii_investigation
 skills:
   - botanical_2
-scientific_name: Atropa belladonna
 is_primary: false
 type: Botanical (Garden Herb)
 appearance: Bushy plant with dull green leaves, bell-shaped purple-brown flowers, and glossy black berries

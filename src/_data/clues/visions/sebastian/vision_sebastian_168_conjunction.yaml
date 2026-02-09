@@ -1,8 +1,11 @@
 id: VS168
 type: Vision (Sebastian)
 ghost: sebastian
-name: The Conjunction
+title: The Ghost of the Cursed Alchemist
+subtitle: The Conjunction
 act: act_ii_mystery_emerges
+skills:
+  - spiritual_1
 hashtags:
   - sebastian_romantic
   - sebastian_crane

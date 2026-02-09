@@ -1,8 +1,11 @@
 id: VA148
 type: Vision (Alice)
 ghost: alice
-name: Timeline Discovery
-act: act_iv_revelation
+title: The Lonely Ghost
+subtitle: Timeline Discovery
+act: act_iii_investigation
+skills:
+  - spiritual_2
 hashtags:
   - alice_whitmore
   - thomas_whitmore

@@ -1,6 +1,6 @@
 id: AO83
 is_primary: false
-name: Hand-Drawn Map - Rose Garden Location
+title: Hand-Drawn Map - Rose Garden Location
 act: act_iv_revelation
 type: Artifact (Object)
 appearance: Faded hand-drawn map on aged paper showing Montrose Estate grounds with marked location

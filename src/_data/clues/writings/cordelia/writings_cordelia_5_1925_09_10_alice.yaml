@@ -4,6 +4,8 @@ author: cordelia
 date: '1925-09-10'
 title: Alice
 act: act_iii_investigation
+skills:
+  - personal_montrose
 is_spoiler: false
 hashtags:
   - cordelia_montrose

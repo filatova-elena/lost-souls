@@ -1,17 +1,10 @@
 id: BH107
-title: Collection of Preserved Plant Samples
-name: Plant Specimens in Jars
+name: Collection of Preserved Plant Samples
 act: act_i_setting
-scientific_name: Various botanical specimens
+skills:
+  - botanical_1
 is_primary: true
 type: Botanical (Dried Herb)
 appearance: Multiple glass jars containing dried plant materials - leaves, roots, flowers, seeds in various colors and textures
-character_interpretations:
-  professor: An entire collection of preserved specimens. This shows systematic botanical study. The preservation methods are careful, the organization methodical. Someone was conducting serious botanical research and cataloging plants. Significant botanical knowledge.
-  baker: Jars of dried plants. I recognize some, but not all. Someone was definitely studying these carefully.
-  heiress: A collection of odd jars. I don't know what most of these are.
-  explorer: Preserved botanical specimens organized carefully. The care taken in preservation shows serious study. Someone was building a reference collection.
-  fiduciary: Multiple plant specimens preserved. Evidence of deliberate botanical research and study.
 content: |
-  Multiple glass jars containing dried plant materials—leaves, roots, flowers, seeds. Various colors and textures. Carefully preserved.
-
+  Multiple glass jars containing dried plant materials — leaves, roots, flowers, seeds. Various colors and textures. The preservation methods are careful and the organization methodical, suggesting systematic botanical study and research. Someone was building a reference collection with serious knowledge. The care taken shows this was not casual — it was deliberate, cataloged botanical work.

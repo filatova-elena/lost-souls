@@ -1,8 +1,11 @@
 id: VC161
 type: Vision (Cordelia)
 ghost: cordelia
-name: Terrible News
+title: The Heartbroken Ghost
+subtitle: Terrible News
 act: act_iii_investigation
+skills:
+  - spiritual_1
 hashtags:
   - cordelia_montrose
   - sebastian_crane

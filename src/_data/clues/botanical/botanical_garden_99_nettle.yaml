@@ -1,18 +1,10 @@
 id: BG99
-title: Overgrown Stinging Plant Patch
-name: Stinging Nettle
+name: Overgrown Stinging Plant Patch
 act: act_i_setting
-scientific_name: Urtica dioica
+skills:
+  - botanical_1
 is_primary: false
 type: Botanical (Garden Herb)
 appearance: Overgrown patch with distinctive stinging hairs on leaves and stems
-reveals: Found in old gardener's log mentioning medicinal benefits. Dr. Thaddeus ordered nettle tea during this period.
-character_interpretations:
-  professor: Stinging nettle. Common medicinal herb. High mineral content. Its stinging hairs are a defense mechanism, but the roots contain compounds beneficial for health.
-  baker: Nettle. Good for tea. Medicinal. Bitter, astringent flavor.
-  heiress: Stinging plants. Better to avoid. Its hairs can be painful.
-  explorer: Nettle patch. Wild, established. Used to be cultivated. The plant is useful medicinally.
-  fiduciary: Medicinal plant. No crime here.
 content: |
-  An overgrown patch of plants with distinctive stinging hairs on the leaves and stems. Grows wild in a forgotten corner.
-
+  **Stinging Nettle [Urtica dioica]**. An overgrown patch with distinctive stinging hairs on the leaves and stems. Grows wild in a forgotten corner. Common medicinal herb with high mineral content — good for tea, though bitter and astringent. The roots contain compounds beneficial for health. The old gardener's log mentions medicinal benefits, and Dr. Thaddeus ordered nettle tea during this period.

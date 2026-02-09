@@ -1,8 +1,11 @@
 id: VA140
 type: Vision (Alice)
 ghost: alice
-name: First Contact
-act: act_iii_investigation
+title: The Lonely Ghost
+subtitle: First Contact
+act: act_ii_mystery_emerges
+skills:
+  - spiritual_1
 hashtags:
   - alice_whitmore
   - cordelia_montrose

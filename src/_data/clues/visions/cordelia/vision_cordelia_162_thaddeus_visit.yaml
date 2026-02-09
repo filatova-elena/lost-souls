@@ -1,8 +1,11 @@
 id: VC162
 type: Vision (Cordelia)
 ghost: cordelia
-name: Thaddeus's Visit
+title: The Heartbroken Ghost
+subtitle: Thaddeus's Visit
 act: act_iii_investigation
+skills:
+  - spiritual_1
 hashtags:
   - thaddeus_respected
   - cordelia_montrose

@@ -1,9 +1,12 @@
 id: VS173
 type: Vision (Sebastian)
 ghost: sebastian
-name: The Masterpiece
+title: The Ghost of the Cursed Alchemist
+subtitle: The Masterpiece
 act: act_ii_mystery_emerges
+skills:
+  - spiritual_1
 hashtags:
   - sebastian_romantic
   - sebastian_crane
-content: My formula was flawless. Years of work, years of research! Damiana, Valerian, Rose Otto... all the finest ingredients. I was so proud. This was going to be my masterpiece! [You feel the satisfaction of a craftsman perfecting their work.]
+content: My formula was flawless. Years of work, years of research! Damiana, Valerian, Rose Otto, Ginseng Root - the binding ingredient... [You feel the satisfaction of a craftsman perfecting their work.]

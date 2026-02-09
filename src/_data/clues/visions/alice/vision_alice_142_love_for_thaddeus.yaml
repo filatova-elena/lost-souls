@@ -1,8 +1,11 @@
 id: VA142
 type: Vision (Alice)
 ghost: alice
-name: Love for Thaddeus
-act: act_iv_revelation
+title: The Lonely Ghost
+subtitle: Love for Thaddeus
+act: act_iii_revelation
+skills:
+  - spiritual_2
 hashtags:
   - alice_whitmore
   - thaddeus_crane

@@ -1,7 +1,8 @@
 id: VA143
 type: Vision (Alice)
 ghost: alice
-name: Message for Cordelia
+title: The Lonely Ghost
+subtitle: Message for Cordelia
 act: act_iv_revelation
 hashtags:
   - alice_whitmore

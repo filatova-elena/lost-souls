@@ -1,8 +1,11 @@
 id: VS171
 type: Vision (Sebastian)
 ghost: sebastian
-name: Growing Horror
+title: The Ghost of the Cursed Alchemist
+subtitle: Growing Horror
 act: act_iii_investigation
+skills:
+  - spiritual_2
 hashtags:
   - sebastian_crane
   - cordelia_montrose

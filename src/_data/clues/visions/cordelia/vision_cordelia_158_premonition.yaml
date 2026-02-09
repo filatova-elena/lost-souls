@@ -1,8 +1,11 @@
 id: VC158
 type: Vision (Cordelia)
 ghost: cordelia
-name: Premonition
-act: act_i_setting
+title: The Heartbroken Ghost
+subtitle: Premonition
+act: act_ii_mystery_emerges
+skills:
+  - spiritual_1
 hashtags:
   - cordelia_montrose
 content: That must have been when he decided. But I didn't know. I didn't know what was coming. [A cold chill runs through you, a premonition of doom.]

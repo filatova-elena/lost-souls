@@ -2,8 +2,11 @@ id: VC152
 type: Vision (Cordelia)
 ghost: cordelia
 to_character: dressmaker
-name: Elias Remembrance
+title: The Heartbroken Ghost
+subtitle: Remembrance
 act: act_i_setting
+skills:
+  - spiritual_1
 hashtags:
   - cordelia_romantic
   - elias_unrequited_love

@@ -1,10 +1,11 @@
 id: AO78
 is_primary: true
-name: Silver Candle Holder
+title: Silver Candle Holder
 act: act_iv_revelation
 type: Artifact (Object)
 appearance: Ornate silver candle holder with intricate decorative patterns, noticeably heavy
 hashtags:
+  - murder_weapon
   - silver_candle_holder
   - doctor_and_patient
   - thaddeus_crane

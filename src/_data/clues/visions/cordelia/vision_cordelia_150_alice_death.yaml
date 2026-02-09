@@ -1,8 +1,9 @@
 id: VC150
 type: Vision (Cordelia)
 ghost: cordelia
-name: Alice's Death
-act: act_iii_investigation
+title: The Heartbroken Ghost
+subtitle: Alice's Death
+act: act_ii_mystery_emerges
 hashtags:
   - cordelia_montrose
   - alice_whitmore
