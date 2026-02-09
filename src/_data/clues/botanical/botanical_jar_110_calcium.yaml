@@ -4,6 +4,8 @@ name: Calcium Lactate
 act: act_iii_investigation
 scientific_name: C₆H₁₀CaO₆
 is_primary: true
+hashtags:
+  - sebastian_crane
 type: Botanical (Jar)
 appearance: Fine white powder in jar, very uniform texture, appears chemical or medicinal
 purpose: Original ingredient in Sebastian's harmless elixir

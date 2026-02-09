@@ -3,5 +3,9 @@ act: act_i_setting
 type: Rumor
 possession: EXPLORER
 truth: true
+hashtags:
+  - harbor_hustle
+  - romano_dynasty
+  - frankie_romano
 content: |
   The Romano operation isn't what it appears to be on the surface. Their shipping business is a front for something far more lucrative—and illegal.

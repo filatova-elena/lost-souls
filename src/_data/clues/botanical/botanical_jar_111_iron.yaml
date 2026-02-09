@@ -4,6 +4,8 @@ name: Iron Citrate
 act: act_iii_investigation
 scientific_name: C₆H₅O₇Fe
 is_primary: true
+hashtags:
+  - sebastian_crane
 type: Botanical (Jar)
 appearance: Reddish-brown powder in jar, distinctive color, clearly a chemical or mineral compound
 purpose: Original ingredient in Sebastian's harmless elixir

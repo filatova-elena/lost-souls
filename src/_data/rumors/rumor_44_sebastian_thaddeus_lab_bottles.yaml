@@ -3,5 +3,10 @@ act: act_iii_investigation
 type: Rumor
 possession: BAKER
 truth: true
+hashtags:
+  - crane_brothers
+  - elixir_of_love
+  - thaddeus_crane
+  - sebastian_crane
 content: |
   A servant at the Montrose Estate reported seeing Dr. Thaddeus Crane in Sebastian's laboratory late one night in August 1925. He was alone with the supply bottles, and the servant thought it odd that he was there without Sebastian.

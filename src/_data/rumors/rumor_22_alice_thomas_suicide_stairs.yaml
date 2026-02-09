@@ -3,5 +3,7 @@ act: act_ii_mystery_emerges
 type: Rumor
 possession: OTHER
 truth: false
+hashtags:
+  - alice_whitmore
 content: |
   Alice Whitmore took her own life out of guilt. She threw herself down the stairs.

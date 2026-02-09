@@ -3,4 +3,7 @@ type: Vision (Cordelia)
 ghost: cordelia
 name: Terrible News
 act: act_iii_investigation
+hashtags:
+  - cordelia_montrose
+  - sebastian_crane
 content: Days blurred together. I remember Sebastian looking worried. I remember wanting to lie down, just wanting to sleep forever. And then... terrible news came. [Confusion and despair flood through you.]

@@ -3,5 +3,9 @@ act: act_ii_mystery_emerges
 type: Rumor
 possession: EXPLORER
 truth: true
+hashtags:
+  - romano_treasure
+  - romano_dynasty
+  - frankie_romano
 content: |
   I heard Frankie Romano hid millions before the feds seized his assets in the 1960s.

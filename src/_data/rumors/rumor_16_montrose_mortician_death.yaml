@@ -3,5 +3,9 @@ act: act_i_setting
 type: Rumor
 possession: OTHER
 truth: true
+hashtags:
+  - morticians_silence
+  - silas_blackwell
+  - margaret_montrose
 content: |
   The mortician's family received a large payment from the Montrose fortune right after those deaths.

@@ -3,5 +3,9 @@ act: act_ii_mystery_emerges
 type: Rumor
 possession: PROFESSOR
 truth: false
+hashtags:
+  - the_alchemist
+  - frankie_romano
+  - sebastian_crane
 content: |
   I heard Frankie Romano ordered Sebastian Crane's death. Sebastian knew too much, wanted out—couldn't allow that.

@@ -3,5 +3,8 @@ act: act_iii_investigation
 type: Rumor
 possession: INFLUENCER
 truth: false
+hashtags:
+  - margaret_montrose
+  - cordelia_montrose
 content: |
   Margaret Montrose, Cordelia's mother, was no saint in her younger days. I've heard tales that she was quite the flirt herself—the apple doesn't fall far from the tree, as they say.

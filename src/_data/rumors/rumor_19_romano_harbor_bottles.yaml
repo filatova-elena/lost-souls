@@ -3,5 +3,9 @@ act: act_i_setting
 type: Rumor
 possession: OTHER
 truth: true
+hashtags:
+  - venetian_bottle
+  - harbor_hustle
+  - frankie_romano
 content: |
   Fancy Venetian glass bottles were imported through the Romano operation for 'medicinal purposes' during Prohibition.

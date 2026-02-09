@@ -4,6 +4,9 @@ act: act_iv_revelation
 type: Artifact (Object)
 appearance: Decorative vase made of purple clay with gold accents, standing on ornate wooden stand
 location: Montrose Mansion Dining Room Display
+hashtags:
+  - romano_treasure
+  - frankie_romano
 skills:
   - art_2
 content: |

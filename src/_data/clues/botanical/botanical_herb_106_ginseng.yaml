@@ -4,6 +4,8 @@ name: Ginseng Root
 act: act_i_setting
 scientific_name: Panax ginseng
 is_primary: true
+hashtags:
+  - sebastian_crane
 type: Botanical (Dried Herb)
 appearance: Pale root with distinctive forked, human-like shape, unusual and expensive-looking
 purpose: Original ingredient in Sebastian's harmless elixir

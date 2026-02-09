@@ -1,0 +1,218 @@
+/* Tag filter navigation */
+.tag-filters {
+    margin: 15px 0;
+    padding: 12px;
+    background-color: rgba(212, 165, 116, 0.05);
+    border: 1px solid rgba(212, 165, 116, 0.15);
+    border-radius: 4px;
+}
+
+.tag-filter-label {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--accent-gold);
+    margin-bottom: 8px;
+    font-family: sans-serif;
+}
+
+.tag-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.tag-pill {
+    background: transparent;
+    border: 1px solid rgba(212, 165, 116, 0.4);
+    color: var(--text-light);
+    padding: 3px 10px;
+    font-size: 0.75em;
+    font-family: sans-serif;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: all 0.15s ease;
+    text-transform: lowercase;
+    margin: 0;
+    display: inline-block;
+}
+
+.tag-pill:hover {
+    border-color: var(--accent-gold);
+    background-color: rgba(212, 165, 116, 0.1);
+    color: var(--accent-gold);
+}
+
+.tag-pill.active {
+    background-color: var(--accent-gold);
+    color: var(--primary-dark);
+    border-color: var(--accent-gold);
+    font-weight: 600;
+}
+
+.tag-pill.tag-clear {
+    border-color: rgba(244, 67, 54, 0.4);
+    color: rgba(244, 67, 54, 0.7);
+}
+
+.tag-pill.tag-clear:hover {
+    border-color: #f44336;
+    background-color: rgba(244, 67, 54, 0.15);
+    color: #f44336;
+}
+
+/* Section subheaders */
+.section-subheader {
+    color: var(--accent-gold);
+    font-size: 1em;
+    margin: 20px 0 8px 0;
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgba(212, 165, 116, 0.15);
+}
+
+.item-count {
+    font-weight: normal;
+    font-size: 0.85em;
+    opacity: 0.7;
+}
+
+/* Clue list */
+.clue-list, .rumor-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.clue-item, .rumor-item {
+    margin: 0;
+    padding: 6px 8px;
+    border-bottom: 1px solid rgba(212, 165, 116, 0.07);
+    transition: opacity 0.15s ease;
+}
+
+.clue-item:hover, .rumor-item:hover {
+    background-color: rgba(212, 165, 116, 0.04);
+}
+
+.clue-item-main {
+    font-size: 0.9em;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+.type-label {
+    font-size: 0.85em;
+}
+
+/* Tag badges on items */
+.clue-item-tags {
+    margin-top: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.tag-badge {
+    font-size: 0.65em;
+    font-family: sans-serif;
+    padding: 1px 6px;
+    border-radius: 8px;
+    background-color: rgba(212, 165, 116, 0.1);
+    color: rgba(224, 224, 224, 0.6);
+    text-transform: lowercase;
+    transition: all 0.15s ease;
+}
+
+.tag-badge.highlighted {
+    background-color: var(--accent-gold);
+    color: var(--primary-dark);
+    font-weight: 600;
+}
+
+/* Rumor items */
+.rumor-item-main {
+    font-size: 0.85em;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+.rumor-content {
+    opacity: 0.85;
+}
+
+.truth-badge {
+    font-size: 0.7em;
+    margin-left: 6px;
+    font-weight: 600;
+}
+
+.truth-true {
+    color: #4caf50;
+}
+
+.truth-false {
+    color: #f44336;
+}
+
+/* Index page styles */
+.ref-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+@media (min-width: 768px) {
+    .ref-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.ref-card {
+    display: block;
+    padding: 16px;
+    border: 1px solid rgba(212, 165, 116, 0.3);
+    border-radius: 4px;
+    background-color: rgba(212, 165, 116, 0.05);
+    text-decoration: none;
+    transition: all 0.15s ease;
+}
+
+.ref-card:hover {
+    border-color: var(--accent-gold);
+    background-color: rgba(212, 165, 116, 0.12);
+    text-decoration: none;
+}
+
+.ref-card-icon {
+    font-size: 1.5em;
+    margin-bottom: 6px;
+}
+
+.ref-card-title {
+    color: var(--accent-gold);
+    font-size: 1em;
+    font-weight: 600;
+    margin-bottom: 4px;
+    font-family: sans-serif;
+}
+
+.ref-card-desc {
+    color: var(--text-light);
+    font-size: 0.8em;
+    opacity: 0.7;
+    font-family: sans-serif;
+    line-height: 1.4;
+}
+
+.ref-card-todo {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+.ref-card-todo .ref-card-title::after {
+    content: " (coming soon)";
+    font-weight: normal;
+    font-size: 0.8em;
+    opacity: 0.6;
+}

@@ -3,5 +3,8 @@ act: act_ii_mystery_emerges
 type: Rumor
 possession: HEIRESS
 truth: false
+hashtags:
+  - sebastian_crane
+  - cordelia_montrose
 content: |
   Sebastian deliberately poisoned Cordelia because he was jealous and obsessive.

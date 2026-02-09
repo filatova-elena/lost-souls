@@ -4,6 +4,11 @@ act: act_i_setting
 type: Artifact (Object)
 appearance: Gold-plated pocket watch with glass face and inner inscriptions
 location: With Clockmaker character
+hashtags:
+  - pocket_watch
+  - elixir_of_love
+  - sebastian_crane
+  - thaddeus_crane
 skills:
   - history_1
   - spiritual_1

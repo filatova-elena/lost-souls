@@ -3,5 +3,8 @@ act: act_ii_mystery_emerges
 type: Rumor
 possession: HEIRESS
 truth: true
+hashtags:
+  - harbor_hustle
+  - edmund_hartley
 content: |
   I heard a university professor was doing 'consulting work' for Harbor Import & Trading Co—verifying botanical shipments, they said. But everyone knew that university man was up to something shady. What respectable professor works for a mob operation?

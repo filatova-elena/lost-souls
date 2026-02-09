@@ -3,5 +3,9 @@ act: act_ii_mystery_emerges
 type: Rumor
 possession: INFLUENCER
 truth: false
+hashtags:
+  - morticians_silence
+  - margaret_montrose
+  - silas_blackwell
 content: |
   The Montrose family paid off officials and the mortician to cover up what really happened in October 1925.

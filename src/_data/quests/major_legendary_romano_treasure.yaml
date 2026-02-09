@@ -79,9 +79,9 @@ clue_organization:
     purpose: Establish the Romano family history, the treasure rumors, the Montrose
       mansion connection
     clues:
-    - artifact_91_photo_romano
-    - artifact_79_object_bottle_venetian
-    - business_manifests_romano
+    - artifact_photo_91_romano
+    - artifact_object_79_bottle_venetian
+    - document_business_115_manifests_romano
     key_clue: vintage_photograph_romano
     key_clue_reason: The rumor establishes the legendary Romano treasure, drawing
       players into the search.
@@ -90,9 +90,9 @@ clue_organization:
     purpose: Introduce questions about whether the treasure exists, where it might
       be hidden
     clues:
-    - artifact_84_object_vase_purple
-    - business_manifests_romano
-    - business_shipping_romano
+    - artifact_object_84_vase_purple
+    - document_business_115_manifests_romano
+    - document_business_117_shipping_romano
     key_clue: decorative_vase_dragon
     key_clue_reason: The purple and gold vase suggests a hiding place, raising questions
       about what it contains.
@@ -100,14 +100,14 @@ clue_organization:
     name: 'Act III: The Investigation'
     purpose: Build the case - find the map, understand where the treasure is buried
     clues:
-    - artifact_83_object_rose_map
-    - artifact_84_object_vase_purple
+    - artifact_object_83_rose_map
+    - artifact_object_84_vase_purple
     - artifact_92_object_ray_turner
     - artifact_93_painting_balcony
     - artifact_94_painting_bears_forest
     - artifact_95_painting_flamenco
-    - business_manifests_romano
-    - artifact_82_object_rose_bed
+    - document_business_115_manifests_romano
+    - artifact_object_82_rose_bed
     key_clue: rose_garden_map
     key_clue_reason: The map found in the vase points to the rose garden location
       where the treasure is buried.
@@ -115,9 +115,9 @@ clue_organization:
     name: 'Act IV: The Revelation'
     purpose: Reveal the treasure location and that it is real
     clues:
-    - artifact_83_object_rose_map
-    - artifact_84_object_vase_purple
-    - artifact_82_object_rose_bed
+    - artifact_object_83_rose_map
+    - artifact_object_84_vase_purple
+    - artifact_object_82_rose_bed
     - artifact_92_object_ray_turner
     key_clue: null
     key_clue_reason: This is the final act. No further acts to unlock.

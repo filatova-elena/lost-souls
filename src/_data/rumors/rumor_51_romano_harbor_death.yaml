@@ -3,5 +3,8 @@ act: act_ii_mystery_emerges
 type: Rumor
 possession: PROFESSOR
 truth: false
+hashtags:
+  - romano_dynasty
+  - frankie_romano
 content: |
   I heard Frankie Romano had two men killed last spring for betraying him or crossing him in some business deal. Terrible story—they say he doesn't forgive disloyalty. Just a couple of port workers, nobody important, but still... it was brutal.

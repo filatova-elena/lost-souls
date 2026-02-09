@@ -65,9 +65,9 @@ clue_organization:
     name: 'Act I: The Setting'
     purpose: Establish Sebastian's dual identity, his connection to Romano operations
     clues:
-    - artifact_79_object_bottle_venetian
+    - artifact_object_79_bottle_venetian
     - writings_sebastian_42_sebastian_elixir_formula
-    - artifact_91_photo_romano
+    - artifact_photo_91_romano
     key_clue: sebastian_elixir_formula
     key_clue_reason: The rumor establishes Sebastian's connection to the Romano family
       and his identity as 'The Alchemist'.
@@ -75,9 +75,9 @@ clue_organization:
     name: 'Act II: The Mystery Emerges'
     purpose: Introduce questions about Sebastian's secret operations
     clues:
-    - artifact_91_photo_romano
-    - business_manifests_romano
-    - business_shipping_romano
+    - artifact_photo_91_romano
+    - document_business_115_manifests_romano
+    - document_business_117_shipping_romano
     key_clue: vintage_photograph_romano
     key_clue_reason: The photograph shows Frankie Romano at the harbor, connecting
       Sebastian to the Harbor Import & Trading Co. operation.
@@ -87,11 +87,11 @@ clue_organization:
       bootlegging operation
     clues:
     - writings_sebastian_42_sebastian_elixir_formula
-    - artifact_79_object_bottle_venetian
-    - business_manifests_romano
-    - business_shipping_romano
-    - jar_alcohol
-    - artifact_91_photo_romano
+    - artifact_object_79_bottle_venetian
+    - document_business_115_manifests_romano
+    - document_business_117_shipping_romano
+    - botanical_jar_109_alcohol
+    - artifact_photo_91_romano
     key_clue: sebastian_elixir_formula
     key_clue_reason: The formula shows Harbor Import & Trading Co. sourced the botanical
       ingredients, revealing Sebastian's connection to the Romano smuggling operation.
@@ -101,10 +101,10 @@ clue_organization:
       bootlegging operation
     clues:
     - writings_sebastian_42_sebastian_elixir_formula
-    - artifact_79_object_bottle_venetian
-    - business_manifests_romano
-    - business_shipping_romano
-    - artifact_91_photo_romano
-    - jar_alcohol
+    - artifact_object_79_bottle_venetian
+    - document_business_115_manifests_romano
+    - document_business_117_shipping_romano
+    - artifact_photo_91_romano
+    - botanical_jar_109_alcohol
     key_clue: null
     key_clue_reason: This is the final act. No further acts to unlock.

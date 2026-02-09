@@ -3,5 +3,10 @@ act: act_ii_mystery_emerges
 type: Rumor
 possession: HEIRESS
 truth: true
+hashtags:
+  - harbor_hustle
+  - the_alchemist
+  - sebastian_crane
+  - frankie_romano
 content: |
   They say Sebastian Crane and Frankie Romano had some kind of secret partnership down at the docks. Nobody knows exactly what they were moving.

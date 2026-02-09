@@ -4,6 +4,8 @@ name: Valerian Root
 act: act_iii_investigation
 scientific_name: Valeriana officinalis
 is_primary: true
+hashtags:
+  - sebastian_crane
 type: Botanical (Dried Herb)
 appearance: Fine powder made from dried roots, earthy and musty aroma, consistent texture
 reveals: Legitimate ingredient in Sebastian's harmless elixir. Safe sedative herb. Chosen to calm the bride and create intimacy.

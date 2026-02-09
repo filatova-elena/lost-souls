@@ -3,5 +3,8 @@ act: act_i_setting
 type: Rumor
 possession: INFLUENCER
 truth: true
+hashtags:
+  - morticians_silence
+  - silas_blackwell
 content: |
   I heard someone paid the mortician for his discretion—kept him quiet about something

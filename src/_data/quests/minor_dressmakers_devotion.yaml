@@ -34,7 +34,7 @@ clue_organization:
     purpose: Establish Elias's devotion, his relationship with Cordelia, the wedding
       dress
     clues:
-    - artifact_85_object_wedding_dress
+    - artifact_object_85_wedding_dress
     - writings_sebastian_38_1925_08_25_the_dressmaker
     - writings_elias_24_1925_10_17_the_dress_is_complete
     - vision_cordelia_152_character_dressmaker
@@ -55,9 +55,9 @@ clue_organization:
     name: 'Act III: The Investigation'
     purpose: Discover who Eleanor is, understand the significance of the recipe
     clues:
-    - artifact_89_photo_eleanor_baby
-    - artifact_90_photo_eleanor_child
-    - artifact_88_photo_eleanor_adolescent
+    - artifact_photo_89_eleanor_baby
+    - artifact_photo_90_eleanor_child
+    - artifact_photo_88_eleanor_adolescent
     - writings_eleanor_13_1939_07_05_the_recipe
     - writings_margaret_31_1925_05_letter_regarding_discretion_and_family_arrangement
     key_clue: eleanor_1939_the_recipe
@@ -69,9 +69,9 @@ clue_organization:
     clues:
     - writings_elias_22_1925_10_02_rose_bread_recipe_from_cordelia
     - writings_eleanor_13_1939_07_05_the_recipe
-    - artifact_89_photo_eleanor_baby
-    - artifact_90_photo_eleanor_child
-    - artifact_88_photo_eleanor_adolescent
-    - artifact_85_object_wedding_dress
+    - artifact_photo_89_eleanor_baby
+    - artifact_photo_90_eleanor_child
+    - artifact_photo_88_eleanor_adolescent
+    - artifact_object_85_wedding_dress
     key_clue: null
     key_clue_reason: This is the final act. No further acts to unlock.

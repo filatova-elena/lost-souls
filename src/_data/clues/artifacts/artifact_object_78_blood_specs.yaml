@@ -4,6 +4,11 @@ name: Silver Candle Holder
 act: act_iv_revelation
 type: Artifact (Object)
 appearance: Ornate silver candle holder with intricate decorative patterns, noticeably heavy
+hashtags:
+  - silver_candle_holder
+  - doctor_and_patient
+  - thaddeus_crane
+  - alice_whitmore
 skills:
   - medical_2
 content: |

@@ -4,6 +4,8 @@ name: Damiana
 act: act_iii_investigation
 scientific_name: Turnera diffusa
 is_primary: true
+hashtags:
+  - sebastian_crane
 type: Botanical (Dried Herb)
 appearance: Dried leaves and flower fragments in a bottle, yellowish with minty and slightly bitter smell
 purpose: Original ingredient in Sebastian's harmless elixir

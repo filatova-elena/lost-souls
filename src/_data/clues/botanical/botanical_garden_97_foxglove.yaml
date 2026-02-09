@@ -6,6 +6,9 @@ skills:
   - botanical_2
 scientific_name: Digitalis purpurea
 is_primary: true
+hashtags:
+  - thaddeus_crane
+  - sebastian_crane
 type: Botanical (Garden Herb)
 appearance: Tall flowering plant with tubular flowers in pink, purple, white, or yellow, distinctive spotted throats
 symptoms: Weakness, nausea, confusion, vision problems, cardiac distress, heart failure

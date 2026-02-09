@@ -3,5 +3,8 @@ act: act_ii_mystery_emerges
 type: Rumor
 possession: OTHER
 truth: false
+hashtags:
+  - cordelia_montrose
+  - thaddeus_crane
 content: |
   Dr. Crane was having an affair with Cordelia—that's why everything went wrong.

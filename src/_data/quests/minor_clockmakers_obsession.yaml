@@ -70,7 +70,7 @@ clue_organization:
     name: 'Act I: The Setting'
     purpose: Introduce the pocket watch, the engraving, the astronomical significance
     clues:
-    - artifact_81_object_pocket_watch
+    - artifact_object_81_pocket_watch
     - writings_sebastian_35_1925_08_15_refinement_and_urgency
     key_clue: pocket_watch
     key_clue_reason: The pocket watch with its mysterious engraving draws the Clockmaker
@@ -93,9 +93,9 @@ clue_organization:
     - writings_sebastian_36_1925_08_15_the_watch
     - writings_sebastian_39_1925_09_04_the_beginning
     - vision_sebastian_168_conjunction
-    - document_medical_sebastian_death_cert
-    - document_medical_cordelia_death_cert
-    - document_medical_alice_death_cert
+    - document_medical_131_death_cert_sebastian
+    - document_medical_130_death_cert_cordelia
+    - document_medical_129_death_cert_alice
     key_clue: thaddeus_1925_08_15_engagement_present_card_from_thaddeus
     key_clue_reason: Thaddeus's card reveals he gave the watch as an engagement gift,
       engraved with the Jupiter-Venus conjunction date.
@@ -107,6 +107,6 @@ clue_organization:
     - writings_sebastian_36_1925_08_15_the_watch
     - writings_sebastian_39_1925_09_04_the_beginning
     - vision_sebastian_168_conjunction
-    - artifact_81_object_pocket_watch
+    - artifact_object_81_pocket_watch
     key_clue: null
     key_clue_reason: This is the final act. No further acts to unlock.

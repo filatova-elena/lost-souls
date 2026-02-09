@@ -3,4 +3,7 @@ type: Vision (Alice)
 ghost: alice
 name: Thaddeus Did Nothing
 act: act_iii_investigation
+hashtags:
+  - alice_whitmore
+  - thaddeus_crane
 content: I tried to tell Thaddeus. He wanted to believe me... I could see it in his eyes. But he just nodded and did nothing. He didn't even try to stop it. He just let it happen. [You feel torn and frustrated, betrayed by someone who should have acted.]

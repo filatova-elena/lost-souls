@@ -104,14 +104,14 @@ clue_organization:
     purpose: Draw players into the world, establish relationships, set the scene.
       Botanical entry point.
     clues:
-    - botanical_106_herb_ginseng
+    - botanical_herb_106_ginseng
     - writings_sebastian_34_1925_08_01_cordelia
     - writings_hartley_27_1925_08_10_second_consultation_refinements_and_questions
     - writings_sebastian_32_1920_03_15_first_principles
     - writings_sebastian_35_1925_08_15_refinement_and_urgency
     - writings_sebastian_37_1925_08_18_the_vessel
     - vision_cordelia_163_the_elixir
-    - botanical_113_jar_rose_otto
+    - botanical_jar_113_rose_otto
     - writings_thaddeus_diary_56_1925_08_04_sebastians_foolish_formula
     - writings_thaddeus_diary_57_1925_08_06_the_bottle
     key_clue: ginseng_root
@@ -136,16 +136,16 @@ clue_organization:
     - writings_sebastian_42_sebastian_elixir_formula
     - writings_hartley_26_1925_08_02_initial_inquiry_the_young_pharmacist
     - writings_hartley_28_1925_08_22_third_consultation_the_final_formula
-    - botanical_104_herb_damiana
-    - botanical_106_herb_ginseng
-    - botanical_113_jar_rose_otto
+    - botanical_herb_104_damiana
+    - botanical_herb_106_ginseng
+    - botanical_jar_113_rose_otto
     - writings_thaddeus_diary_58_1925_09_01_on_foxglove
     - writings_thaddeus_notes_71_thaddeus_foxglove_request
     - writings_sebastian_35_1925_08_15_refinement_and_urgency
     - writings_thaddeus_antidote_search_46_1925_10_07_initial_assessment
     - writings_thaddeus_antidote_search_47_1925_10_07_request_for_botanical_consultation
     - writings_hartley_29_1925_10_15_unusual_visit_the_brother
-    - 1925_10_11_entry_2_44_44_44_44_44_44_44
+    - writings_silas_2_writings_silas_44_1925_10_11_entry
     key_clue: foxglove_poison
     key_clue_reason: Foxglove identified as the poison. This reveals what corrupted
       the formula, unlocking the revelation of who did it and why.
@@ -153,7 +153,7 @@ clue_organization:
     name: 'Act IV: The Revelation'
     purpose: Directly answer the quest objective
     clues:
-    - botanical_97_garden_foxglove
+    - botanical_garden_97_foxglove
     - writings_thaddeus_diary_64_1925_10_10_torn_pages_regret
     - writings_hartley_30_1925_10_20_reflection_news_of_tragedy
     - writings_sebastian_41_1925_10_06_understanding
