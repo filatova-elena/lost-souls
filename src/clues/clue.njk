@@ -24,17 +24,3 @@ layout: base
   </div>
 </section>
 {% endif %}
-
-{% if clue.character_interpretations %}
-<section class="character-interpretations">
-  <h2>Character Interpretations</h2>
-  {% for character, interpretation in clue.character_interpretations %}
-    <div class="interpretation">
-      <h3>{{ character | replace('_', ' ') | title }}</h3>
-      <p>{{ interpretation }}</p>
-    </div>
-  {% endfor %}
-</section>
-{% endif %}
-
-{% include "reference-footer.njk" %}
