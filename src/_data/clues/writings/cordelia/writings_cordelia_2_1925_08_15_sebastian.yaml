@@ -1,12 +1,11 @@
 id: WC2
 type: Writing (Cordelia's Diary)
 author: cordelia
-date: '1925-08-15'
-title: Sebastian
+title: Cordelia Montrose's Diary
+subtitle: August 15, 1925 - Sebastian
 act: act_i_setting
 is_spoiler: false
 hashtags:
-  - cordelia_romantic
   - cordelia_montrose
   - sebastian_crane
   - thomas_whitmore

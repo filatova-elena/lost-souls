@@ -1,15 +1,15 @@
 id: WC3
 type: Writing (Cordelia's Diary)
 author: cordelia
-date: '1925-09-02'
-title: The Proposal
+title: Cordelia Montrose's Diary
+subtitle: September 2, 1925 - The Proposal
 act: act_ii_mystery_emerges
 is_spoiler: false
 hashtags:
-  - cordelia_romantic
   - cordelia_montrose
   - sebastian_crane
   - thomas_whitmore
+  - elixir_or_love
 content: |-
   He proposed today. On his knee in the same garden where we met weeks ago. The ring is beautiful—not ostentatious, but thoughtful. He said he's been working on something special. An elixir. For us.
 

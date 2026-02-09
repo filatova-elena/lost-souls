@@ -1,8 +1,8 @@
 id: WC5
 type: Writing (Cordelia's Diary)
 author: cordelia
-date: '1925-09-10'
-title: Alice
+title: Cordelia Montrose's Diary
+subtitle: September 10, 1925 - Alice
 act: act_iii_investigation
 skills:
   - personal_montrose

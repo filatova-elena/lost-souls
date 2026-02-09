@@ -1,9 +1,11 @@
 id: WEL17
 type: Writing (Eleanor's Diary)
 author: eleanor
-date: '1948'
-title: Discovery
-act: act_iv_revelation
+title: Eleanor's Diary
+subtitle: 1948 - Discovery
+act: act_iii_investigation
+skills:
+  - personal_sullivan
 hashtags:
   - secret_baby
   - eleanor_sullivan

@@ -1,12 +1,14 @@
 id: VA138
 type: Vision (Alice)
 ghost: alice
-to_character: explorer
 title: The Lonely Ghost
 subtitle: Brother's Return
 act: act_iii_investigation
+skills:
+  - is_character_explorer
 hashtags:
   - alice_whitmore
   - thomas_whitmore
+narrative: A young woman materializes before you, her expression shifting from confusion to desperate hope. She steps forward, reaching out as if to embrace you.
 content: |
-  Thosmas? Brother? You are back from your travels, they said you were lost at sea.
+  Thomas? Brother? You are back from your travels, they said you were lost at sea.

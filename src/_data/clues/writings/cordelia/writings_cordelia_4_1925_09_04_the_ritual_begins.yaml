@@ -1,12 +1,11 @@
 id: WC4
 type: Writing (Cordelia's Diary)
 author: cordelia
-date: '1925-09-04'
-title: The Ritual Begins
+title: Cordelia Montrose's Diary
+subtitle: September 4, 1925 - The Ritual Begins
 act: act_ii_mystery_emerges
 is_spoiler: false
 hashtags:
-  - cordelia_romantic
   - cordelia_montrose
   - sebastian_crane
 content: |-

@@ -100,7 +100,7 @@ clue_organization:
     name: 'Act III: The Investigation'
     purpose: Build the case - find the map, understand where the treasure is buried
     clues:
-    - artifact_object_83_rose_map
+    - artifact_paper_83_rose_map
     - artifact_object_84_vase_purple
     - artifact_92_object_ray_turner
     - artifact_93_painting_balcony
@@ -115,7 +115,7 @@ clue_organization:
     name: 'Act IV: The Revelation'
     purpose: Reveal the treasure location and that it is real
     clues:
-    - artifact_object_83_rose_map
+    - artifact_paper_83_rose_map
     - artifact_object_84_vase_purple
     - artifact_object_82_rose_bed
     - artifact_92_object_ray_turner
