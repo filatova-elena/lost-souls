@@ -12,7 +12,7 @@ date: August-October 1925
 format: Order ledger with supplier information and costs
 location: Sebastian's Laboratory at Montrose Estate
 content: |-
-  AUGUST 1925 - SUPPLY ORDERS
+  **AUGUST 1925 - SUPPLY ORDERS**
 
   Date       Supplier                          Item                          Qty      Unit Price    Total
   08/02/25   Cal. Medicinal Spirits Co.       Grain Alcohol (95%)          10 gal    $4.50/gal    $45.00
@@ -50,7 +50,7 @@ content: |-
 
   ---
 
-  ## You observe
+  **YOU OBSERVE:**
 
   - **Grain Alcohol (95%)** — 10 gallons is a substantial quantity during Prohibition. This could supply a small speakeasy or suggest someone is running liquor under the guise of medicinal sales.
 
