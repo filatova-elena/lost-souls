@@ -1,5 +1,5 @@
 id: BG101
-name: Grey-Green Needled Herb Plant
+title: Grey-Green Needled Herb Plant
 act: act_i_setting
 skills:
   - botanical_1

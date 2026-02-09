@@ -1,5 +1,5 @@
 id: BJ112
-name: White Crystalline Powder
+title: White Crystalline Powder
 act: act_iii_investigation
 skills:
   - medical_1

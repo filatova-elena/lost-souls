@@ -1,5 +1,5 @@
 id: BH108
-name: Dried Earthen Root Powder
+title: Dried Earthen Root Powder
 act: act_iii_investigation
 skills:
   - botanical_1
