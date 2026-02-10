@@ -1,29 +1,36 @@
 /* Clue-specific styles */
 
+.clue-subtitle {
+    font-style: italic;
+    font-size: 1.1em;
+    color: var(--accent-gold);
+    opacity: 0.85;
+    margin-top: 0;
+}
+
+.clue-narration {
+    margin: 20px 0;
+    padding: 15px 20px;
+    background-color: rgba(212, 165, 116, 0.06);
+    border-left: 3px solid var(--accent-gold);
+    font-style: italic;
+    font-family: Georgia, serif;
+    line-height: 1.7;
+    color: var(--text-light);
+    opacity: 0.9;
+}
+
+.clue-narration p {
+    font-family: Georgia, serif;
+    font-style: italic;
+}
+
 .clue-content {
     margin: 25px 0;
 }
 
-.character-interpretations {
-    margin: 25px 0;
-}
-
-.interpretation {
-    margin: 20px 0;
-    padding: 15px;
-    background-color: rgba(212, 165, 116, 0.05);
-    border-left: 2px solid var(--accent-gold);
-}
-
-.interpretation h3 {
-    color: var(--accent-gold);
-    font-size: 1.1em;
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
 @media (min-width: 768px) {
-    .interpretation {
-        padding: 20px;
+    .clue-narration {
+        padding: 20px 25px;
     }
 }

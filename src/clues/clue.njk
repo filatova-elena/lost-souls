@@ -10,12 +10,16 @@ layout: base
 <link rel="stylesheet" href="{{ site.baseUrl }}clues/clues.css">
 <header>
   <h1>{{ clue.title }}</h1>
-  {% if clue.type %}<p class="italic">{{ clue.type }}</p>{% endif %}
-  {% if clue.appearance %}<p class="muted"><strong>Appearance:</strong> {{ clue.appearance }}</p>{% endif %}
-  {% if clue.date %}<p class="muted">Date: {{ clue.date }}</p>{% endif %}
-  {% if clue.location %}<p class="muted">Location: {{ clue.location }}</p>{% endif %}
-  {% if clue.author %}<p class="muted">Author: {{ clue.author }}</p>{% endif %}
+  {% if clue.subtitle %}<p class="clue-subtitle">{{ clue.subtitle }}</p>{% endif %}
 </header>
+
+{% if clue.narration %}
+<section class="clue-narration">
+  <div>
+    {{ clue.narration | markdown | safe }}
+  </div>
+</section>
+{% endif %}
 
 {% if clue.content %}
 <section class="clue-content">

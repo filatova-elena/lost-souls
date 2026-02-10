@@ -66,6 +66,7 @@ permalink: refs/clues/
     {% for rumor in actRumors %}
       <li class="rumor-item" data-tags="{{ rumor.hashtags | join(',') if rumor.hashtags else '' }}">
         <div class="rumor-item-main">
+          {% if clue.id %}<span class="clue-id">{{ clue.id }}</span> {% endif %}
           <span class="rumor-content">{{ rumor.content | trim }}</span>
           {% if rumor.truth %}
             <span class="truth-badge truth-true">✓ TRUE</span>

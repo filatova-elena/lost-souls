@@ -2,12 +2,16 @@ id: WTAS46
 type: Writing (Thaddeus's Antidote Search)
 author: thaddeus
 date: '1925-10-07'
-title: Initial Assessment
+title: Thaddeus Crane's Medical Notes
+subtitle: October 7, 1925 - Initial Assessment
 act: act_iii_investigation
 is_spoiler: false
 hashtags:
   - thaddeus_crane
   - sebastian_crane
+skills:
+  - medical_2
+  - botanical_2
 content: |-
   Sebastian has ingested foxglove derivative. Dosage unknown but acute symptoms present. The compound can be managed with proper intervention. Cardiac glycosides respond to electrolyte management and cardiac support.
 

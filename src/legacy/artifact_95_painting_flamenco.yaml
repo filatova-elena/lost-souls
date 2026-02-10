@@ -1,0 +1,19 @@
+id: AP95
+title: Oil Painting - The Flamenco Dancer
+act: act_i_setting
+type: Artifact (Legacy Painting)
+appearance: Painting depicting dancer in mid-performance, captured with vibrant colors and dynamic movement
+location: Montrose Mansion - Library
+skills:
+  - art_2
+legacy_character_interpretations:
+  art_collector: A Spanish masterpiece from the 1880s. The artist captured energy, passion, and human emotion in a single moment. The red dress practically glows with life. The facial expression shows concentration and grace. This is masterwork-level painting—one of three significant pieces in the Romano family collection. Historical records show this eventually entered the Getty Museum collection as part of a 1926 Montrose family donation.
+  explorer: |
+    Spanish origin connects to Mediterranean smuggling routes through Long Beach harbor. The 1926 Getty donation is suspicious—why donate suddenly after 1925? Check for: 1) Getty Museum records of the 1926 Montrose donation, 2) Any cash flow or financial distress in 1926, 3) Insurance claims or valuations before/after the donation. This painting was likely liquidated or transferred to cover tracks. The timing suggests this art was connected to the 1925 deaths and required disposal.
+
+content: |
+  A painting depicting a dancer in mid-performance, captured with vibrant colors and dynamic movement.
+
+  A **Spanish masterpiece from the 1880s**. The artist captured energy, passion, and human emotion in a single moment. The red dress practically glows with life. The facial expression shows concentration and grace. This is masterwork-level painting—**one of three significant pieces** in the Romano family collection.
+
+  **Spanish origin connects to Mediterranean smuggling routes** through Long Beach harbor. Historical records show this eventually entered the Getty Museum collection as part of a **1926 Montrose family donation**. The timing is suspicious—why donate suddenly after 1925? This painting was likely liquidated or transferred to cover tracks. The timing suggests this art was connected to the 1925 deaths and required disposal. Check Getty Museum records of the 1926 Montrose donation, any cash flow or financial distress in 1926, and insurance claims or valuations before/after the donation.
