@@ -2,7 +2,7 @@ id: R16
 act: act_i_setting
 type: Rumor
 possession: OTHER
-truth: true
+truth: false
 hashtags:
   - morticians_silence
   - silas_blackwell

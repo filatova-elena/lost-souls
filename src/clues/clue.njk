@@ -13,7 +13,19 @@ layout: base
   {% if clue.subtitle %}<p class="clue-subtitle">{{ clue.subtitle }}</p>{% endif %}
 </header>
 
-{% if clue.narration %}
+{% if clue.type and 'Vision' in clue.type and clue.narrative %}
+<section class="clue-narration">
+  <div>
+    {{ clue.narrative | markdown | safe }}
+  </div>
+</section>
+{% elif clue.appearance %}
+<section class="clue-narration">
+  <div>
+    {{ clue.appearance | markdown | safe }}
+  </div>
+</section>
+{% elif clue.narration %}
 <section class="clue-narration">
   <div>
     {{ clue.narration | markdown | safe }}
