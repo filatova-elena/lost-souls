@@ -1,0 +1,38 @@
+id: crystal_ball
+name: Crystal Ball - Antique Scrying Sphere
+act: act_iv_revelation
+type: Artifact (Object)
+appearance: A clear quartz crystal sphere mounted on an ornate brass stand, with subtle internal cloud patterns.
+location: The Attic
+skills:
+  - spiritual_2
+story_gates:
+  main_quest:
+    act: act_iv_revelation
+    reason: "Reveals the vision of Thaddeus murdering Alice with the silver candle holder - definitive proof of who killed her and how"
+content: |
+  *As you gaze into the crystal sphere, the internal cloud patterns begin to swirl, coalescing into something more than mist. The world around you fades—*
+
+  *The grand staircase. October 11, 1925. Late evening.*
+
+  *Alice Whitmore stands on the landing. Her posture perfect—back straight, shoulders set. She turns—*
+
+  *"Thaddeus, you must confess. You must go to the authorities—" Her voice steady, but something else there. Hope. "Maybe there is still time—" trails off*
+
+  *The vision blurs. Alice starting towards the stairs. Her face—disappointment and determination. Still hoping—*
+
+  *Behind her. Dr. Thaddeus Crane. Frozen. His face in dim light—desperation warring with something darker. His hands shaking. In those hands—*
+
+  *A silver candle holder. Decorative patterns catching light—*
+
+  *The strike—*
+
+  *Without warning. The silver candle holder arcs through air. Light catches it for one terrible moment—*
+
+  *The sound—wrong. Not the crack of bone against wood. Something sharper. More concentrated. A single, precise impact.*
+
+  *Alice's body goes rigid. Her hands freeze mid-air. One impossible second—she remains standing. Then—*
+
+  *Her knees buckle. She collapses forward. Graceful even in falling—*
+
+  *Thaddeus stands over her. The candle holder still clutched. His breathing ragged. Looks down—horror. Then—hardens. Sets the candle holder down carefully. Arranges her body. A physician. He knows how to stage—*

@@ -3,10 +3,12 @@ act: act_i_setting
 type: Writing (Thaddeus's Patient Notes)
 author: thaddeus
 date: '1924-07-02'
-patient: Alice Whitmore
-chief_complaint: Follow-up consultation
+title: Thaddeus Crane's Patient Notes
+subtitle: July 2, 1924 - Alice Whitmore Follow-up
 hashtags:
   - thaddeus_crane
   - alice_whitmore
+skills:
+  - personal_crane
 notes: |
   Sleep improved but irritability continues. Patient describes others' circumstances with uncanny precision. She simply said: 'I listen to what people don't say.' Remarkable insight. Extended consultation beyond protocol.

@@ -3,11 +3,11 @@ type: Writing (Thaddeus's Notes)
 title: Handwritten Note - Foxglove Request
 act: act_iii_investigation
 date: September 1, 1925
-format: Handwritten note on torn paper
-location: Found loose among Sebastian's laboratory papers
-condition: Faded ink, creased, appears to have been crumpled and smoothed out
+location: Sebastian's Laboratory
+appearance: Handwritten note on torn paper, faded ink, creased
+skills:
+  - personal_crane
 hashtags:
   - thaddeus_crane
   - sebastian_crane
 content: Sebastian - need more concentrated foxglove extract for my cardiac cases. Can you prepare another batch? - Thaddeus
-reveals: A routine request from Dr. Thaddeus to his brother Sebastian for pharmaceutical preparation. Foxglove extract was a standard cardiac medicine in the 1920s.
