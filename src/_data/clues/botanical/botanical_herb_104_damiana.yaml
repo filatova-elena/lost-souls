@@ -1,6 +1,6 @@
 id: BH104
 title: Tropical Yellow Flower Specimen
-act: act_iii_investigation
+act: act_ii_mystery_emerges
 skills:
   - botanical_1
 is_primary: true
@@ -11,4 +11,4 @@ appearance: Dried leaves and flower fragments in a bottle, yellowish with minty 
 purpose: Original ingredient in Sebastian's harmless elixir
 dosage: 5 drops daily
 content: |
-  **Damiana [Turnera diffusa]**. Dried leaves and flower fragments in a bottle. Yellowish, with a minty and slightly bitter smell. The tropical origin and dried leaf structure indicate sophisticated sourcing — requires warm climate cultivation. Whoever obtained this knew exactly what they were looking for. Non-toxic in small doses. A legitimate ingredient, proving the formula was designed to be harmless.
+  **Damiana [Turnera diffusa]**. Dried leaves and flower fragments in a bottle. Yellowish, with a minty and slightly bitter smell. The tropical origin and dried leaf structure indicate sophisticated sourcing — requires warm climate cultivation. Whoever obtained this knew exactly what they were looking for. Non-toxic in small doses.

@@ -1,10 +1,9 @@
 id: BG98
-title: Purple Fragrant Garden Plant
+title: Lavender
 act: act_i_setting
-skills:
-  - botanical_1
 is_primary: false
 type: Botanical (Garden Herb)
 appearance: Well-maintained plant with purple flowers and soothing aroma
+skills: []
 content: |
   **Lavender [Lavandula angustifolia]**. A well-maintained plant with purple flowers and a lovely soothing aroma. Common Mediterranean herb — a staple in gardens and kitchens, known for soothing properties. Someone tends this garden carefully. The plant is clearly years old and thriving even as the rest of the garden grows neglected.

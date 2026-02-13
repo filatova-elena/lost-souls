@@ -11,6 +11,10 @@ hashtags:
   - elixir_of_love
   - sebastian_crane
   - silas_blackwell
+is_key: true
+skills:
+  - medical_2
+  - botanical_2
 content: |-
   **AUTOPSY EXAMINATION REPORT**
 

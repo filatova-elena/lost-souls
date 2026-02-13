@@ -1,10 +1,9 @@
 id: BG102
-title: Dried Herb Bundle
+title: Sage
 act: act_i_setting
-skills:
-  - botanical_1
 is_primary: false
 type: Botanical (Garden Herb)
 appearance: Bundled dried herb tied with string, strong aromatic smell, spiritual in appearance
+skills: []
 content: |
   **Sage [Salvia officinalis]**. A bundled dried herb tied with string. Strong aromatic smell. Prepared ceremonially — for spiritual cleansing. Found among Alice's things, suggesting her spiritual practices and search for peace.

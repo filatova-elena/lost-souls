@@ -10,6 +10,10 @@ hashtags:
   - foxglove
   - cordelia_montrose
   - silas_blackwell
+is_key: true
+skills:
+  - medical_2
+  - botanical_2
 content: |-
   **AUTOPSY EXAMINATION REPORT**
 

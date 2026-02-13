@@ -1,23 +1,21 @@
 id: WS2
 type: Writing (Silas's Journal)
 author: silas
-date: '1925-10-11'
+date: '1925-10-19'
 title: Silas Blackwell's Journal
-subtitle: October 11, 1925 - Sebastian Crane
+subtitle: October 19, 1925 - Three in Eleven Days
 act: act_iii_investigation
 hashtags:
   - morticians_silence
   - silas_blackwell
+  - alice_whitmore
   - sebastian_crane
-skills:
-  - medical_2
+  - cordelia_montrose
 content: |
-  ## Body of Sebastian Crane — October 11, 1925
-
-  Systematic organ failure. The pattern shows a poison that attacked **multiple systems over time**. Not quick. Not merciful. This was intentional and monitored.
-
-  The organ damage is consistent with **cardiac glycoside poisoning** — foxglove or similar.
-
-  **Chemical burns in the stomach lining.** Whatever killed Sebastian was delivered in liquid form.
-
-  Sebastian was a pharmacist. Unlikely he would have ingested a poison accidentally. Suspicious.
+  Three bodies in eleven days. All young. Business is business, but this is starting to feel less like coincidence and more like somebody's hobby.
+  
+  Fifteen years I've done this. The War cured me of squeamishness and the Spanish Lady cured me of grief. I've made grandmothers look thirty years younger and put dock workers back together like jigsaw puzzles. None of it keeps me up at night.
+  
+  But three in eleven days, all under thirty-five, all from the same stretch of town? That's not God's work and it's not bad luck. That's arithmetic.
+  
+  Not my arithmetic, though.

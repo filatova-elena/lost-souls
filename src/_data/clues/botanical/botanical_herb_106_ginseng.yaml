@@ -2,8 +2,8 @@ id: BH106
 title: Precious Forked Root Specimen
 act: act_i_setting
 skills:
-  - botanical_1
-is_primary: true
+  - botanical_2
+is_key: true
 hashtags:
   - sebastian_crane
 type: Botanical (Dried Herb)
