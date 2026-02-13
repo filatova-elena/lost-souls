@@ -5,6 +5,7 @@ type: Artifact (Object)
 appearance: A carved German cuckoo clock with maple leaf detailing
 location: Bembridge House, Downstairs Hallway
 skills: []
-is_atmospheric: true
+hashtags:
+  - atmospheric
 content: |
   A **German Black Forest cuckoo clock** with carved maple leaves. These clocks were produced in the workshops of the Schwarzwald region and exported worldwide. The Montrose family had a taste for German craftsmanship — this clock, the German mantel clocks elsewhere in the house, and the Bavarian print upstairs all point to strong ties with Central Europe. Whether from travel or from heritage, the German thread runs through this house.
