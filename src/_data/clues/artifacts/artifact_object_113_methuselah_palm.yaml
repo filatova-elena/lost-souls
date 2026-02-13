@@ -1,17 +1,18 @@
 id: AO113
 type: Artifact (Object)
-author: frankie
-date: '1962-03-12'
 title: Mexican Fan Palm, nicknamed "Methuselah"
 act: act_ii_mystery_emerges
+date: '1962-03-12'
+location: Bembridge House, Garden, palm tree by the Carriage House
+appearance: A large, tall palm tree that appears to be very old.
 hashtags:
   - frankie_romano
+  - romano_treasure
 skills:
   - personal_romano
   - history_2
-location: Bembridge House, Garden, palm tree by the Carriage House
-appearance: A large, tall palm tree that appears to be very old.
-is_key: true
+is_key:
+  - romano_treasure
 content: |-
   METHUSELAH
   Washingtonia robusta — Mexican Fan Palm
@@ -28,3 +29,4 @@ content: |-
   It reads:
 
   *Two. **The paintings we love**—those beautiful works that caught our eye in dark rooms and summer galleries. They are safe in places of honor, in the care of those who appreciate beauty and ask no questions.*
+

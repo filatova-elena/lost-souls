@@ -5,7 +5,8 @@ possession: PSYCHIC
 truth: false
 hashtags:
   - pocket_watch_mystery
-  - elixir_of_love
   - sebastian_crane
+is_key:
+  - pocket_watch_mystery
 content: |
   I heard that pocket watch belonged to some alchemist who was trying to harness the power of the planets. They say he used it to perform rituals during cosmic alignments—that's how he created his poisonous potions. Witchcraft, practically.

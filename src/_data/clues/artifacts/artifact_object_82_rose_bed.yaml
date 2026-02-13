@@ -1,16 +1,19 @@
 id: AO82
+type: Artifact (Object)
 title: The Rose Garden Bed - Montrose Estate
 act: act_iv_revelation
-type: Artifact (Object)
+location: Bembridge House, Garden, Rose Garden Bed by the Aviary
 appearance: Carefully maintained garden bed filled with deep red and white roses
-location: The Attic
 hashtags:
   - cordelia_montrose
   - frankie_romano
+  - romano_treasure
 skills:
   - history_1
   - botanical_1
   - personal_romano
+is_key:
+  - romano_treasure
 content: |
   A carefully maintained garden bed filled with deep red and white roses.
 

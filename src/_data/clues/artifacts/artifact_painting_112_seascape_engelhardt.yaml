@@ -1,16 +1,17 @@
 id: AP112
 type: Artifact (Painting)
-author: frankie
-date: '1962-03-12'
 title: Seascape — Walter Engelhardt
 act: act_iii_investigation
-hashtags:
-  - frankie_romano
-skills:
-  - personal_romano
-is_key: true
+date: '1962-03-12'
 location: Bembridge House, Parlor
 appearance: A bold seascape of waves crashing against rocks
+hashtags:
+  - frankie_romano
+  - romano_treasure
+skills:
+  - personal_romano
+is_key:
+  - romano_treasure
 content: |-
   **SEASCAPE**
   Oil on canvas, signed and labeled
@@ -26,3 +27,4 @@ content: |-
   It reads:
 
   *Four. **The boats know our secrets**. Where the water runs deep between the islands, where a man can anchor without being seen, where the tide rises and falls by the moon's hand—there we have placed what cannot be traced.* 
+

@@ -1,13 +1,12 @@
 id: VA140
 type: Vision (Alice)
-ghost: alice
 title: The Lonely Ghost
 subtitle: First Contact
 act: act_ii_mystery_emerges
-skills:
-  - spiritual_1
+narrative: A pale figure shimmers into existence, her delicate features flooding with relief. Tears stream down translucent cheeks as she reaches toward you with trembling hands.
 hashtags:
   - alice_whitmore
   - cordelia_montrose
-narrative: A pale figure shimmers into existence, her delicate features flooding with relief. Tears stream down translucent cheeks as she reaches toward you with trembling hands.
+skills:
+  - spiritual_1
 content: Finally. FINALLY someone can hear me! I've been calling out for so long... Cordelia. My dear, sweet friend Cordelia. She was dying and she didn't even know it. [A profound longing and relief wash over you as she speaks.]

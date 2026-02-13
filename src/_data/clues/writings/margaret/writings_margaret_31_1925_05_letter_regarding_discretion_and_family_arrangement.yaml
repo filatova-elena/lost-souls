@@ -1,17 +1,18 @@
 id: WM31
 type: Writing (Margaret's Letter)
-author: margaret
-date: 1925-05
 title: Margaret Montrose's Letter
 subtitle: May 1925
 act: act_iii_investigation
+date: 1925-05
 hashtags:
   - secret_baby
   - margaret_montrose
   - cordelia_montrose
+  - rose_bread_legacy
 skills: 
   - personal_montrose
-narraive: Personal correspondence of Margaret Montrose
+is_key:
+  - secret_baby
 content: |-
   Cordelia,
 
@@ -30,3 +31,4 @@ content: |-
   Your Mother
 
   P.S. - Do not attempt to write to the child. Any correspondence will be destroyed.
+

@@ -1,10 +1,8 @@
 id: WC6
 type: Writing (Cordelia's Diary)
-author: cordelia
 title: Cordelia Montrose's Diary
 subtitle: October 6, 1925 - Unease
 act: act_ii_mystery_emerges
-is_spoiler: false
 hashtags:
   - cordelia_montrose
   - sebastian_crane
@@ -18,3 +16,4 @@ content: |-
   I said no. Of course not. The problem is not the elixir. The problem is the weight of everything else. The weight of my past. The weight of decisions made long ago that I cannot unmake.
 
   The elixir is the only thing that feels true anymore.
+

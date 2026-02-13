@@ -1,17 +1,17 @@
 id: WEI23
 type: Writing (Elias's Letters)
-author: elias
-date: '1925-10-08'
 title: Elias Monroe's Notes
 subtitle: October 8, 1925 - Watching Her (Unsent)
 act: act_ii_mystery_emerges
-skills:
-  - personal_monroe
+date: '1925-10-08'
 hashtags:
   - elias_unrequited_love
   - elias_monroe
   - cordelia_montrose
-no_access_message: These are Elias's personal notes. You need to find someone with access to his personal records to read this.
+skills:
+  - personal_monroe
+is_key:
+  - elias_unrequited_love
 content: |-
   She wears the dress like sorrow wears a crown.
   I pin the hem and do not let her down.
@@ -20,3 +20,4 @@ content: |-
 
   I stitch my love into each seam so true,
   And hope that somehow she might know it's you.
+

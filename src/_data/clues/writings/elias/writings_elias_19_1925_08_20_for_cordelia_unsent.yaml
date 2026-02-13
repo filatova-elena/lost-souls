@@ -1,16 +1,17 @@
 id: WEI19
 type: Writing (Elias's Letters)
-author: elias
-date: '1925-08-20'
 title: Elias Monroe's Notes
 subtitle: August 20, 1925 - For Cordelia (Unsent)
 act: act_ii_mystery_emerges
-skills:
-  - personal_monroe
+date: '1925-08-20'
 hashtags:
   - elias_unrequited_love
   - elias_monroe
   - cordelia_montrose
+skills:
+  - personal_monroe
+is_key:
+  - elias_unrequited_love
 content: |-
   She turns to roses in the garden light,
   Not knowing I have fallen into night.
@@ -19,3 +20,4 @@ content: |-
 
   I tell her of the flowers, nothing more.
   My heart lies shattered on her garden floor.
+

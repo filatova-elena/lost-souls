@@ -29,6 +29,19 @@
     margin: 25px 0;
 }
 
+.clue-no-access {
+    padding: 20px;
+    background-color: rgba(212, 165, 116, 0.1);
+    border-left: 3px solid var(--accent-gold);
+    margin: 20px 0;
+}
+
+.clue-no-access p {
+    font-style: italic;
+    color: var(--accent-gold);
+    margin: 0;
+}
+
 @media (min-width: 768px) {
     .clue-narration {
         padding: 20px 25px;

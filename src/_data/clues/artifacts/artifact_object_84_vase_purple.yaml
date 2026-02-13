@@ -3,13 +3,15 @@ title: Purple and Gold Decorative Vase
 act: act_iv_revelation
 type: Artifact (Object)
 appearance: Decorative vase made of purple clay with gold accents, standing on ornate wooden stand
-location: Montrose Mansion Attic
+location: The Attic
 hashtags:
   - romano_treasure
   - frankie_romano
 skills:
   - art_2
   - history_2
+is_key:
+  - romano_treasure
 content: |
   A decorative vase made of purple clay with gold accents, standing on an ornate wooden stand.
 

@@ -4,13 +4,11 @@ title: Autopsy Report - Alice Whitmore
 act: act_iii_investigation
 date: October 11, 1925
 location: Mortuary
-examiner: Silas Blackwell (Mortician)
 hashtags:
   - morticians_silence
   - foxglove
   - alice_whitmore
   - silas_blackwell
-is_key: true
 content: |-
   **AUTOPSY EXAMINATION REPORT**
   
@@ -50,3 +48,4 @@ content: |-
   **MARGIN NOTES:**
   
   **Concentrated impact point on posterior skull suggests deliberate strike from behind. No defensive wounds indicate victim was unaware. Injury pattern inconsistent with fall down stairs—recommend investigation into discrepancy between official cause of death and autopsy findings.**
+

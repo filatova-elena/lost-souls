@@ -1,14 +1,13 @@
 id: VC151
 type: Vision (Cordelia)
-ghost: cordelia
 title: The Heartbroken Ghost
 subtitle: Recognition
 act: act_i_setting
-skills:
-  - is_character_doctor
+narrative: A young woman materializes before you, her wavy hair framing a face twisted with recognition. She recoils slightly, her eyes narrowing.
 hashtags:
   - cordelia_montrose
   - thaddeus_crane
-narrative: A young woman materializes before you, her wavy hair framing a face twisted with recognition. She recoils slightly, her eyes narrowing.
+skills:
+  - is_character_doctor
 content: |
   You remind me of Thaddeus, unpleasant man.

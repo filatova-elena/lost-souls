@@ -1,7 +1,7 @@
 id: DL132
 title: Pre-nuptial Agreement - Sebastian Crane & Cordelia Montrose
 act: act_i_setting
-type: legal_document
+type: Document (Financial)
 date: '1925-08-15'
 location: Montrose Mansion - 1st floor
 hashtags:
@@ -10,7 +10,6 @@ hashtags:
 skills:
    - personal_montrose
    - personal_crane
-   - legal_1
 content: |-
   **PRE-NUPTIAL AGREEMENT**
 

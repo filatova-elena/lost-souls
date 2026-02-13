@@ -1,14 +1,16 @@
 id: VC156
 type: Vision (Cordelia)
-ghost: cordelia
 title: The Heartbroken Ghost
 subtitle: Garden Betrayal
 act: act_iii_investigation
-skills:
-  - spiritual_2
+narrative: A vision of a young woman materializes, her hand pressed over her mouth, brown eyes wide with shock and hurt. She looks as though she has just witnessed something she cannot unsee.
 hashtags:
   - cordelia_montrose
   - thaddeus_crane
   - alice_whitmore
-narrative: A vision of a young woman materializes, her hand pressed over her mouth, brown eyes wide with shock and hurt. She looks as though she has just witnessed something she cannot unsee.
+  - doctor_and_patient
+skills:
+  - spiritual_2
+is_key:
+  - doctor_and_patient
 content: I saw them together. In the garden at twilight. His hand on her face. Alice! How could he? She is his patient! She is vulnerable! He is taking advantage of her, I just feel it in my bones, I have to do something! [Your heart clenches with betrayal and worry for a friend.]

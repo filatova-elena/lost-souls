@@ -1,10 +1,8 @@
 id: WC7
 type: Writing (Cordelia's Diary)
-author: cordelia
 title: Cordelia Montrose's Diary
 subtitle: October 8, 1925 - Fatigue
 act: act_ii_mystery_emerges
-is_spoiler: false
 hashtags:
   - cordelia_montrose
   - margaret_montrose
@@ -16,3 +14,4 @@ content: |-
   But I keep drinking the elixir. Because when I drink it, for just a moment, I feel like everything might be all right. Like Sebastian's devotion might be enough to heal whatever is broken in me.
 
   Mother asked if I was ill. I told her no. I told her I was fine.
+

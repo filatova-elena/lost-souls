@@ -1,5 +1,6 @@
-name: dressmaker
+id: dressmaker
 title: The Dressmaker
+image: assets/images/dressmaker.png
 personality: Obsessed with the bride who never wore her dress. Preserving a tragic love story from 1925.
 skills:
   expert: []
@@ -12,7 +13,7 @@ background: |-
   You're descended from **Elias Monroe**, the dressmaker who created **Cordelia Montrose**'s **wedding dress** in 1925. The dress that was **never worn**. The bride who never made it to the altar. Your family has preserved everything from Elias's workshop—his tools, his sketches, his correspondence. But most importantly: the dress itself. **White silk**, delicate lace, perfect in every detail. A masterpiece that was **never worn**. Elias was in love with Cordelia. Everyone in your family knows this story. He sent her flowers, wrote her poems, and begged her not to marry **Sebastian Crane**. Yes, not everyone knows who Cordelia was engaged to. Few people even remember that name: **Sebastian Crane**. It's as if he was erased from history. But you grew up with this story. You grew up with the dress. You can't stop thinking about Cordelia—the romantic, tragic bride. You preserve her dress like a shrine. You research her life, her death, what could have been. Some people say your fixation is unhealthy. Maybe they're right. But you need to know the truth. What happened to Cordelia? Why did she die?
 objectives:
   main: main_quest
-  private: minor_dressmakers_devotion
+  private: minor_elias_unrequited_love
 strategy: Your knowledge of the Montrose family gives you complete understanding of Cordelia and her family history. Your
   Basic Spiritual ability helps you sense emotional connections. Your insights are valuable—others can help verify and expand
   on what you know.

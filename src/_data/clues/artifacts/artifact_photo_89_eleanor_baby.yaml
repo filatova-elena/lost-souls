@@ -1,14 +1,16 @@
 id: APH89
+type: Artifact (Photo)
 title: Photograph of an infant
 act: act_i_setting
-type: Artifact (Photograph)
-appearance: Black and white photograph of infant in formal white christening gown
 location: Found among Elias Monroe's possessions
-skills:
-  - personal_monroe
+appearance: Black and white photograph of infant in formal white christening gown
 hashtags:
   - secret_baby
   - eleanor_sullivan
+  - rose_bread_legacy
+  - elias_unrequited_love
+skills:
+  - personal_monroe
 content: |
   A black and white photograph of an infant in formal white christening gown, professionally photographed in expensive studio portraiture.
 

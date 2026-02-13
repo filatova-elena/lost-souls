@@ -9,7 +9,8 @@ hashtags:
   - silas_blackwell
 skills:
   - legal_1
-is_key: true
+is_key:
+  - morticians_silence
 content: |
   MORTUARY PAYMENT LEDGER
 

@@ -1,12 +1,11 @@
 id: VC158
 type: Vision (Cordelia)
-ghost: cordelia
 title: The Heartbroken Ghost
 subtitle: Premonition
 act: act_ii_mystery_emerges
-skills:
-  - spiritual_1
+narrative: A vision of a young woman flickers before you, her delicate features pale and drawn. A shiver passes through her translucent form, as though a cold wind blows only for her.
 hashtags:
   - cordelia_montrose
-narrative: A vision of a young woman flickers before you, her delicate features pale and drawn. A shiver passes through her translucent form, as though a cold wind blows only for her.
+skills:
+  - spiritual_1
 content: That must have been when he decided. But I didn't know. I didn't know what was coming. [A cold chill runs through you, a premonition of doom.]

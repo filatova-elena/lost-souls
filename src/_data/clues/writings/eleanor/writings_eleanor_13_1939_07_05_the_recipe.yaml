@@ -1,17 +1,20 @@
 id: WEL13
 type: Writing (Eleanor's Diary)
-author: eleanor
 title: Eleanor's Diary
 subtitle: July 5, 1939 - The Recipe
 act: act_iii_investigation
-skills:
-  - personal_sullivan
 hashtags:
-  - secret_baby
   - rose_bread_legacy
+  - bakery_fire
   - eleanor_sullivan
   - cordelia_montrose
   - elias_monroe
+  - elias_unrequited_love
+skills:
+  - personal_sullivan
+is_key:
+  - bakery_fire
+  - elias_unrequited_love
 content: |-
   Mother gave me a small box today when I turned fifteen. She said I was old enough to understand. Inside were photographs—a woman with dark hair and sad eyes, beautiful in a way that made my chest ache.
 
@@ -24,3 +27,4 @@ content: |-
   Rose bread.
 
   The note read: 'From a friend of your mother's. She wanted you to have this. It was her favorite!' I will make this recipe. It's my only connection to her.
+

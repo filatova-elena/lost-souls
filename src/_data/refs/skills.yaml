@@ -113,3 +113,14 @@ personal_hartley:
   icon: "👥"
   category: PERSONAL
   description: Professor Edmund Hartley, his botanical consultations, and family history
+
+is_character_*:
+  name: is_character_*
+  title: Character-Specific Skills
+  icon: "👤"
+  category: EXCEPTION
+  description: |
+    Rare exception - Used in vision clues to indicate which character the vision is meant for.
+    Format: is_character_[character_name].
+    Examples: is_character_doctor, is_character_explorer, is_character_dressmaker.
+    These are NOT standard skills and should only be used in rare cases where a vision needs to be character-specific rather than skill-based.

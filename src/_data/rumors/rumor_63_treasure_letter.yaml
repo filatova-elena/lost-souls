@@ -5,5 +5,7 @@ possession: EXPLORER
 truth: false
 hashtags:
   - romano_treasure
+is_key:
+  - romano_treasure
 content: |
   I heard there's a sealed letter hidden somewhere in the mansion from decades ago. References to 'where the sun sets in the west' and mysterious paintings. Could be treasure, could be nonsense, but somebody sealed it for a reason.

@@ -1,16 +1,15 @@
 id: WEL17
 type: Writing (Eleanor's Diary)
-author: eleanor
 title: Eleanor's Diary
 subtitle: 1948 - Discovery
 act: act_iii_investigation
-skills:
-  - personal_sullivan
 hashtags:
-  - secret_baby
   - eleanor_sullivan
   - cordelia_montrose
   - sebastian_crane
+  - rose_bread_legacy
+skills:
+  - personal_sullivan
 content: |-
   I was helping Mother organize the library when I found an old newspaper clipping. I wasn't looking for it—it fell from a book.
 
@@ -23,3 +22,4 @@ content: |-
   I looked up the name in the society pages. The Montrose family—wealthy, prominent, rigidly respectable. The woman who gave me life was born into privilege and secrets.
 
   I haven't told anyone what I found.
+

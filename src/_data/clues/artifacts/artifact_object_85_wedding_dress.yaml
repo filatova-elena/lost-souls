@@ -1,9 +1,9 @@
 id: AO85
+type: Artifact (Object)
 title: Unfinished Wedding Dress
 act: act_i_setting
-type: Artifact (Object)
-appearance: Exquisite but unfinished wedding dress on dress form with intricate beading and lace details
 location: With Dressmaker character (found among Elias Monroe's possessions / workshop)
+appearance: Exquisite but unfinished wedding dress on dress form with intricate beading and lace details
 hashtags:
   - wedding_dress
   - elias_unrequited_love
@@ -12,6 +12,8 @@ hashtags:
 skills:
   - personal_monroe
   - personal_montrose
+is_key:
+  - elias_unrequited_love
 content: |
   An exquisite but unfinished wedding dress on a dress form, with intricate beading and lace details.
 

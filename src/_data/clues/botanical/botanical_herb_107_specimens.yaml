@@ -1,8 +1,7 @@
 id: BH107
+type: Botanical (Dried Herb)
 title: Collection of Preserved Plant Samples
 act: act_i_setting
-is_primary: true
-type: Botanical (Dried Herb)
 appearance: Multiple glass jars containing dried plant materials - leaves, roots, flowers, seeds in various colors and textures
 skills: []
 content: |

@@ -2,15 +2,16 @@ id: DL123
 type: Document (Legal)
 title: Marine Registry Document - 'La Stella Nuova'
 act: act_ii_mystery_emerges
+date: 1930-1968
+location: Marina office records
 hashtags:
   - harbor_hustle
   - romano_dynasty
   - frankie_romano
+  - romano_treasure
 skills:
   - history_1
   - personal_romano
-date: 1930-1968
-location: Marina office records
 content: |
   **MARINE VESSEL REGISTRATION**
 

@@ -1,13 +1,15 @@
 id: WC4
 type: Writing (Cordelia's Diary)
-author: cordelia
 title: Cordelia Montrose's Diary
 subtitle: September 4, 1925 - The Ritual Begins
 act: act_ii_mystery_emerges
-is_spoiler: false
 hashtags:
   - cordelia_montrose
   - sebastian_crane
+  - elixir_of_love
+  - pocket_watch_mystery
+is_key:
+  - elixir_of_love
 content: |-
   This morning, Sebastian gave me the elixir. He called it a sacred ceremony. A gift before our wedding.
 
@@ -18,3 +20,4 @@ content: |-
   I felt something shift inside me. Not magic, not in the way the old stories speak of magic. But something real. A sense of rightness. Of belonging to someone completely, and having them belong to me.
 
   Every morning now. This will be our ritual.
+

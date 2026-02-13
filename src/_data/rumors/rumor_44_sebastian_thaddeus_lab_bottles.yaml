@@ -4,7 +4,6 @@ type: Rumor
 possession: BAKER
 truth: true
 hashtags:
-  - elixir_of_love
   - thaddeus_crane
   - sebastian_crane
 content: |

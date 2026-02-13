@@ -1,18 +1,21 @@
 id: N134
+type: Newspaper Article
 title: Long Beach Gazette - November 5, 1990
+subtitle: DEVASTATING BLAZE DESTROYS SULLIVAN BAKERY - Beloved Long Beach Institution Lost to Suspicious Fire
 act: act_iii_investigation
-skills:
-  - history_1
+date: November 5, 1990
+location: Found in local newspaper archives
 hashtags:
   - bakery_fire
   - rose_bread_legacy
   - david_sullivan
   - catherine_sullivan
   - eleanor_sullivan
-type: Newspaper Article
-date: November 5, 1990
-location: Found in local newspaper archives
-subtitle: DEVASTATING BLAZE DESTROYS SULLIVAN BAKERY - Beloved Long Beach Institution Lost to Suspicious Fire
+skills:
+  - history_1
+is_key:
+  - rose_bread_legacy
+  - bakery_fire
 content: |-
   **SULLIVAN'S BAKERY**, a Long Beach institution for over sixty years, burned to the ground late last night in a fire that left **two dead** and raised troubling questions about the blaze's origin. The bodies have been identified as **David Sullivan**, 38, owner of the bakery, and **Catherine Sullivan**, 36, his wife.
 
@@ -23,4 +26,3 @@ content: |-
   **Accelerant patterns** were noted by responding firefighters, and one neighbor reported seeing an **unidentified figure fleeing** the building in the darkness.
 
   Sullivan's Bakery had operated continuously since 1927, founded by **Eleanor Sullivan** and famous for the family's **rose bread recipe** passed down through generations. The timing is notable: this fire occurs just as new interest in the 1925 Montrose mystery has surfaced. The official investigation concludes electrical failure, yet questions linger about the accelerant evidence and the Sullivan family connection to those historical events.
-

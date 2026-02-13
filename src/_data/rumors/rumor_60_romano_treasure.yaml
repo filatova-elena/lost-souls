@@ -6,5 +6,7 @@ truth: true
 hashtags:
   - romano_treasure
   - frankie_romano
+is_key:
+  - romano_treasure
 content: |
   They say the Romano treasure might be hidden right here at the Montrose mansion.

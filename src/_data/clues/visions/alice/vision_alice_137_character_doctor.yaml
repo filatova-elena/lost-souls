@@ -1,14 +1,14 @@
 id: VA137
 type: Vision (Alice)
-ghost: alice
 title: The Lonely Ghost
 subtitle: Recognition
 act: act_iii_investigation
-skills:
-  - is_character_doctor
+narrative: A young woman appears before you, her bright eyes wide with recognition. She reaches toward you with a trembling, gloved hand.
 hashtags:
   - alice_whitmore
   - thaddeus_crane
-narrative: A young woman appears before you, her bright eyes wide with recognition. She reaches toward you with a trembling, gloved hand.
+  - doctor_and_patient
+skills:
+  - is_character_doctor
 content: |
   Thaddeus??? Is that you? [You sense this isn't about you but someone from the ghost's past]

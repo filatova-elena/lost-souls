@@ -1,17 +1,18 @@
 id: WF25b
 type: Writing (Frankie's Letter)
-author: frankie
-date: '1962-03-12'
 title: Frankie Romano's Letter to Vincent
 subtitle: March 12, 1962 - My mark is your guide
 act: act_iii_investigation
+date: '1962-03-12'
+location: Bembridge House, Office, on the desk by the boats
+appearance: A piece of paper, weathered and folded.
 hashtags:
   - frankie_romano
+  - romano_treasure
 skills:
   - personal_romano
-is_key: true
-appearance: A piece of paper, weathered and folded.
-location: Bembridge House, Office, on the desk by the boats
+is_key:
+  - romano_treasure
 content: |-
   Five. **Let my mark be your guide** and **the Colonel** your trusted ally.
 
@@ -23,3 +24,4 @@ content: |-
 
   Your uncle who loves you,
   Frankie
+

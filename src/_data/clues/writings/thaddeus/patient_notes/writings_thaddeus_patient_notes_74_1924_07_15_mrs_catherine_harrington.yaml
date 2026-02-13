@@ -1,13 +1,13 @@
 id: WTPN74
-act: act_i_setting
 type: Writing (Thaddeus's Patient Notes)
-author: thaddeus
-date: '1924-07-15'
 title: Thaddeus Crane's Patient Notes
 subtitle: "July 15, 1924 - Mrs. Catherine Harrington. Chief Complaint: Persistent headaches and fatigue"
+act: act_i_setting
+date: '1924-07-15'
 hashtags:
   - thaddeus_crane
 skills:
   - personal_crane
 content: |
   Patient reports chronic headaches and low energy. Likely dietary deficiency or insufficient sleep. Prescribed iron tonic and advised regular meals. Patient appeared reassured by explanation. 10 minutes.
+

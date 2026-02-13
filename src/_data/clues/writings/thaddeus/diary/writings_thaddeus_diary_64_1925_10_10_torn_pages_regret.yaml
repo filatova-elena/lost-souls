@@ -1,12 +1,10 @@
 id: WTD64
 type: Writing (Thaddeus's Diary)
-author: thaddeus
-date: '1925-10-10'
 title: Thaddeus Crane's Diary
 subtitle: October 10, 1925 - Torn Pages - Regret
 act: act_iv_revelation
+date: '1925-10-10'
 location: The Attic
-is_spoiler: true
 hashtags:
   - thaddeus_crane
   - sebastian_crane
@@ -36,3 +34,4 @@ content: |-
   I am a coward. A murderer and a coward. This is what I am. This is what I have always been, beneath the veneer of superiority. Alice sees it now. She sees me clearly for the first time, and she is disgusted.
 
   I cannot confess. But I cannot live with this either. I am trapped between two impossible truths, and I have no path forward that does not end in destruction.
+

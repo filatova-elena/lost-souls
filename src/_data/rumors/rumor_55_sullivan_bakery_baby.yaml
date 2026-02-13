@@ -4,10 +4,11 @@ type: Rumor
 possession: OTHER
 truth: true
 hashtags:
-  - secret_baby
   - bakery_fire
   - rose_bread_legacy
   - david_sullivan
   - catherine_sullivan
+is_key:
+  - bakery_fire
 content: |
   I heard that there was a baby at the Sullivan bakery when it burned down. The body was never recovered. Some say the baby survived! Can you imagine?

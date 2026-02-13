@@ -58,6 +58,40 @@ module.exports = function(eleventyConfig) {
     return items.filter(item => item.act === actKey);
   });
 
+  // Check if item is key for a quest
+  eleventyConfig.addFilter("isKeyForQuest", function(item, questHashtag) {
+    if (!item || !questHashtag || !item.is_key) return false;
+    if (Array.isArray(item.is_key)) {
+      return item.is_key.includes(questHashtag);
+    }
+    return item.is_key === questHashtag;
+  });
+
+  // Filter items by quest hashtag (all related items)
+  eleventyConfig.addFilter("filterByQuestHashtag", function(items, questHashtag) {
+    if (!Array.isArray(items) || !questHashtag) return [];
+    return items.filter(item => {
+      // Must have the quest hashtag
+      return item.hashtags && item.hashtags.includes(questHashtag);
+    });
+  });
+
+  // Filter items by quest hashtag and is_key
+  eleventyConfig.addFilter("filterByQuestKey", function(items, questHashtag) {
+    if (!Array.isArray(items) || !questHashtag) return [];
+    return items.filter(item => {
+      // Must have the quest hashtag
+      if (!item.hashtags || !item.hashtags.includes(questHashtag)) return false;
+      // Must be marked as key for this quest
+      if (!item.is_key) return false;
+      // Handle both array and single value (for backwards compatibility)
+      if (Array.isArray(item.is_key)) {
+        return item.is_key.includes(questHashtag);
+      }
+      return item.is_key === questHashtag;
+    });
+  });
+
   // Check if a key is a metadata key (for clue organization template)
   eleventyConfig.addFilter("isMetaKey", function(key) {
     return ["name", "purpose", "constraints", "notes"].includes(key);
@@ -68,6 +102,12 @@ module.exports = function(eleventyConfig) {
     if (!Array.isArray(arr)) return items || [];
     if (!Array.isArray(items)) return arr;
     return arr.concat(items);
+  });
+
+  // Convert object to array of [key, value] pairs for iteration
+  eleventyConfig.addFilter("items", function(obj) {
+    if (!obj || typeof obj !== 'object') return [];
+    return Object.entries(obj);
   });
 
   // Get emoji icon for clue type

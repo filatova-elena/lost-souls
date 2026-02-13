@@ -2,15 +2,14 @@ id: DB116
 type: Document (Business)
 title: Purchase Records - Crane Apothecary & Pharmaceutical Supplies
 act: act_ii_mystery_emerges
+date: August-October 1925
+location: Sebastian's Laboratory at Montrose Estate
 hashtags:
   - elixir_of_love
   - sebastian_crane
 skills:
   - medical_1
   - botanical_1
-date: August-October 1925
-format: Order ledger with supplier information and costs
-location: Sebastian's Laboratory at Montrose Estate
 content: |-
   **AUGUST 1925 - SUPPLY ORDERS**
 
@@ -59,3 +58,4 @@ content: |-
   - **Potassium Bromide** was a widely used sedative, but it was also falling out of medical favor by the mid-1920s due to reports of chronic toxicity. An unusual choice for a reputable practitioner.
 
   - **Damiana leaf** and **Rose Otto oil** together suggest someone was perhaps formulating an aphrodisiac tonic — a popular but disreputable product in this era.
+

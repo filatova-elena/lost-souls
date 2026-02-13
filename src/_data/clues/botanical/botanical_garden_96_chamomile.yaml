@@ -1,9 +1,7 @@
 id: BG96
-title: Chamomile
 type: Botanical (Garden Herb)
-appearance: Cheerful white and yellow flowers, dried bundles hanging nearby
+title: Chamomile
 act: act_i_setting
-is_primary: false
+appearance: Cheerful white and yellow flowers, dried bundles hanging nearby
 content: |
   **Chamomile [Matricaria chamomilla]**. Common and harmless. A gentle herb. Known for soothing properties.
-

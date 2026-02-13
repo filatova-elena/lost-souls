@@ -1,15 +1,18 @@
 id: WH30
 type: Writing (Hartley's Notes)
-author: hartley
-date: '1925-10-20'
 title: Professor Hartley's Notes
 subtitle: October 20, 1925 - Reflection
 act: act_iii_investigation
+date: '1925-10-20'
 hashtags:
   - edmund_hartley
   - sebastian_crane
   - thaddeus_crane
   - cordelia_montrose
+skills:
+  - personal_hartley
+  - botanical_1
+
 content: |-
   [Written in different ink, with hesitation marks]
 
@@ -20,6 +23,3 @@ content: |-
   Though I do wonder why the doctor asked such specific questions about the ginseng root's safety. As if he was searching for me to confirm something particular.
 
   The formula was safe. I verified this. Didn't I?
-skills:
-  - personal_hartley
-  - botanical_1

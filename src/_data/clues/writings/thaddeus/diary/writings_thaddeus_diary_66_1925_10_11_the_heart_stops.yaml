@@ -1,11 +1,9 @@
 id: WTD66
 type: Writing (Thaddeus's Diary)
-author: thaddeus
-date: '1925-10-11'
 title: Thaddeus Crane's Diary
 subtitle: October 11, 1925 - The Heart Stops
 act: act_iii_investigation
-is_spoiler: false
+date: '1925-10-11'
 hashtags:
   - thaddeus_crane
   - sebastian_crane
@@ -15,3 +13,4 @@ content: |-
   His heart simply... stopped. I was present when it happened. His breathing had become labored. His vision was nearly gone. And then his heart, damaged beyond capacity to continue, simply ceased its function.
 
   I stood there for a long moment, watching him. He is gone, the fool that he was.
+

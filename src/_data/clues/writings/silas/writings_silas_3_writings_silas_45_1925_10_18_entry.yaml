@@ -1,13 +1,14 @@
 id: WS3
 type: Writing (Silas's Journal)
-author: silas
-date: '1925-10-20'
 title: Silas Blackwell's Journal
 subtitle: October 20, 1925 - For Your Discretion
 act: act_iii_investigation
+date: '1925-10-20'
 hashtags:
   - morticians_silence
   - silas_blackwell
+is_key:
+  - morticians_silence
 content: |
   A messenger came to the mortuary this afternoon. Well-dressed. Set an envelope on my desk and left before I could open it.
 

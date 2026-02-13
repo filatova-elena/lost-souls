@@ -1,5 +1,6 @@
-name: clockmaker
+id: clockmaker
 title: The Clockmaker
+image: assets/images/clockmaker.png
 personality: Time obsessive who sees patterns everywhere. A mysterious pocket watch led you here.
 skills:
   expert:
@@ -11,7 +12,7 @@ background: |-
   You're a clockmaker and horologist—obsessed with time, timing, and the mechanisms that measure it. But you're not just about clocks. You study astronomical timing, consciousness, synchronicities. You believe the universe has patterns, that timing matters, that mystical experiences are real phenomena we're only beginning to measure. For years, you've been obsessing over an antique **pocket watch** from 1925. You inherited it, been trying to fix/restore it, studying every detail. Inside, you discovered an engraving: **September 4th** and astronomical symbols you recognized immediately—the **Jupiter-Venus conjunction**. You calculated it. **September 4, 1925**, at 6:14 AM. A rare conjunction that happens once in decades. Someone thought this date was important enough to engrave it permanently. The Influencer featured you and your **pocket watch** in their "Long Beach Urban Legends" series. You explained the conjunction, the timing, the mystery. They were skeptical (as always—they think your helmet project is pseudoscience too). But the episode led you both here, to this mansion, to **October 1925 deaths** that happened exactly five weeks after that sacred conjunction. This can't be a coincidence. The universe doesn't work that way.
 objectives:
   main: main_quest
-  private: minor_clockmakers_obsession
+  private: minor_pocket_watch_mystery
 strategy: Your Expert History skill lets you authenticate artifacts and reconstruct timelines. Your Basic Spiritual ability
   helps you sense timing significance. Your chronological theories need verification—others' knowledge can confirm or challenge
   your findings.

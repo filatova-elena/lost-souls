@@ -1,9 +1,9 @@
 id: AO110
+type: Artifact (Object)
 title: Ostrich Egg
 act: act_ii_mystery_emerges
-type: Artifact (Object)
-appearance: A decorated ostrich egg on an ornate carved wooden stand, painted with birds and flowers
 location: Bembridge House, Middle Parlor, Shelf
+appearance: A decorated ostrich egg on an ornate carved wooden stand, painted with birds and flowers
 hashtags:
   - romano_treasure
 skills:

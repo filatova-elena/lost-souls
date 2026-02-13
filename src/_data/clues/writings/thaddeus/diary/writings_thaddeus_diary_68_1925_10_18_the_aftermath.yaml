@@ -1,13 +1,12 @@
 id: WTD68
 type: Writing (Thaddeus's Diary)
-author: thaddeus
-date: '1925-10-18'
 title: Thaddeus Crane's Diary
 subtitle: October 18, 1925 - The Aftermath
 act: act_iv_revelation
+date: '1925-10-18'
 location: The Attic
-is_spoiler: false
 hashtags:
   - thaddeus_crane
   - cordelia_montrose
 content: She was innocent, you understand. Merely... unfortunate. A casualty of circumstances beyond her control. When her breathing stopped, I felt something crack inside me.
+

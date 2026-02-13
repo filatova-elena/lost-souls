@@ -1,13 +1,12 @@
 id: VS166
 type: Vision (Sebastian)
-ghost: sebastian
 title: The Ghost of the Cursed Alchemist
 subtitle: Brother Tried to Help
 act: act_iii_investigation
-skills:
-  - spiritual_1
+narrative: A young man materializes, his dark eyes wide with gratitude and sorrow. He presses one hand to his chest, the other reaching out as if grasping for someone just beyond his reach.
 hashtags:
   - sebastian_crane
   - thaddeus_crane
-narrative: A young man materializes, his dark eyes wide with gratitude and sorrow. He presses one hand to his chest, the other reaching out as if grasping for someone just beyond his reach.
+skills:
+  - spiritual_1
 content: My brother tried to help me. He searched and searched for the answer, he consulted with experts, purchased every chemical he could find. But nothing worked. I was dying and there was nothing he could do. [You sense his desperation, his guilt, his love for you trying to save you.]

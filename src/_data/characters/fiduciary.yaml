@@ -1,5 +1,6 @@
-name: fiduciary
+id: fiduciary
 title: The Fiduciary
+image: assets/images/fiduciary.png
 personality: Pedantic record-keeper obsessed with documentation. You hold all the secrets in your files.
 skills:
   expert:
@@ -11,7 +12,7 @@ background: |-
   You work for a generational wealth management firm that has managed the estates of the **Montrose, Crane, and Whitmore families** for decades. These properties have been a professional frustration—the haunted mansion has been an eyesore and wasted asset for generations. While researching the Montrose estate, you traced the lineage to find the Heiress and contacted her about the unclaimed property. You hoped she'd take possession and finally do something with it. During your research, you discovered records about the **Crane family name change**—they became the **Sinclairs** in the 1960s, apparently for political reasons. You found a box of old papers connecting Dr. Thaddeus Crane to a brother named **Sebastian Crane**. You've never heard of **Sebastian Crane**, and you've been managing the estates for years! You sent this box to Dr. Sinclair, curious about their reaction. Now you've noticed some disturbing inconsistencies in **death records from 1925**, and you're determined to finally understand what happened. You've heard rumors about the ghosts haunting the mansion, and you can't shake off a strange feeling.
 objectives:
   main: main_quest
-  private: major_true_heir_montrose_mansion
+  private: major_rose_bread_legacy
 strategy: Your Expert Legal skill lets you analyze estate documents and financial records. Your Basic Medical skill provides
   limited forensic understanding. Share your documents—others' expertise can reveal what you might miss.
 relationships:
