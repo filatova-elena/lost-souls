@@ -1,14 +1,13 @@
 id: BJ112
 title: White Crystalline Powder
-act: act_iii_investigation
+act: act_ii_mystery_emerges
 skills:
   - medical_1
+  - botanical_2
 is_primary: true
 hashtags:
   - sebastian_crane
 type: Botanical (Jar)
 appearance: White powder with visible crystals in jar, looks pharmaceutical or chemical
-purpose: Original ingredient in Sebastian's harmless elixir
-dosage: 10 grains
 content: |
-  **Potassium Bromide [KBr]**. A white powder with visible crystals. Looks pharmaceutical or chemical in nature. A documented 1920s pharmaceutical — a mild sedative, safe in prescribed doses. The well-formed crystals and purity indicate careful preparation. Shows someone blending traditional herbal knowledge with established pharmaceutical compounds.
+  **Potassium Bromide [KBr]**. A white powder with visible crystals. Looks pharmaceutical or chemical in nature. A documented 1920s pharmaceutical — a mild sedative, safe in prescribed doses. The well-formed crystals and purity indicate careful preparation.

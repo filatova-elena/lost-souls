@@ -64,9 +64,6 @@ art:
   icon: "🎨"
   category: SECONDARY
   description: Art authentication, provenance, appraisal, artifact evaluation, craftsmanship, period identification
-  level:
-    "1": Basic art knowledge
-    "2": Art expert
 
 personal_montrose:
   name: personal_montrose
@@ -74,9 +71,6 @@ personal_montrose:
   icon: "👥"
   category: PERSONAL
   description: Montrose family, Cordelia Montrose, Montrose estate, and family history
-  level:
-    "1": Basic Montrose family knowledge
-    "2": Montrose family expert
 
 personal_crane:
   name: personal_crane
@@ -84,9 +78,6 @@ personal_crane:
   icon: "👥"
   category: PERSONAL
   description: Crane family, Sebastian Crane, Thaddeus Crane, and family history
-  level:
-    "1": Basic Crane family knowledge
-    "2": Crane family expert
 
 personal_romano:
   name: personal_romano
@@ -94,9 +85,6 @@ personal_romano:
   icon: "👥"
   category: PERSONAL
   description: Romano family, Frankie Romano, smuggling operations, and business connections
-  level:
-    "1": Basic Romano family knowledge
-    "2": Romano family expert
 
 personal_whitmore:
   name: personal_whitmore
@@ -104,9 +92,6 @@ personal_whitmore:
   icon: "👥"
   category: PERSONAL
   description: Alice Whitmore, her training, abilities, and connections
-  level:
-    "1": Basic Whitmore family knowledge
-    "2": Whitmore family expert
 
 personal_sullivan:
   name: personal_sullivan
@@ -114,9 +99,6 @@ personal_sullivan:
   icon: "👥"
   category: PERSONAL
   description: Eleanor Sullivan (adoptive name), family connections, recipes, and heritage
-  level:
-    "1": Basic Sullivan family knowledge
-    "2": Sullivan family expert
 
 personal_monroe:
   name: personal_monroe
@@ -124,6 +106,10 @@ personal_monroe:
   icon: "👥"
   category: PERSONAL
   description: Elias Monroe, his connection to Cordelia and his personal notes
-  level:
-    "1": Basic Monroe knowledge
-    "2": Monroe expert
+
+personal_hartley:
+  name: personal_hartley
+  title: Hartley Family
+  icon: "👥"
+  category: PERSONAL
+  description: Professor Edmund Hartley, his botanical consultations, and family history

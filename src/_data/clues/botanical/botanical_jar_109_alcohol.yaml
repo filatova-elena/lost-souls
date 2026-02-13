@@ -1,8 +1,10 @@
 id: BJ109
 title: Clear High-Proof Spirit
-act: act_iii_investigation
+act: act_ii_mystery_emerges
 skills:
+  - medical_1
   - botanical_1
+  - history_1
 is_primary: true
 hashtags:
   - sebastian_crane
@@ -11,4 +13,4 @@ appearance: Clear, colorless liquid in a glass jar with very strong smell
 purpose: Base and preservative for the elixir
 amount: 8 oz
 content: |
-  **Grain Alcohol, 95% [Ethanol, C₂H₅OH]**. A clear, colorless liquid. Very strong smell. Obviously high-proof spirits. An excellent solvent and preservative — the high proof indicates serious pharmaceutical work, not amateur tinctures. During Prohibition, someone with serious underworld connections sourced this. Not acquired legally.
+  **Grain Alcohol, 95% [Ethanol, C₂H₅OH]**. A clear, colorless liquid. Very strong smell. Obviously high-proof spirits. An excellent solvent and preservative — the high proof indicates serious pharmaceutical work, not amateur tinctures. During Prohibition, challnging to source legally.

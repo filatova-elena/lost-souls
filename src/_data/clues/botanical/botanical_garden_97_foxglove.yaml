@@ -3,7 +3,7 @@ title: Purple Spotted Flowering Plant
 act: act_iii_investigation
 skills:
   - botanical_2
-is_primary: true
+is_key: true
 hashtags:
   - murder_weapon
   - thaddeus_crane

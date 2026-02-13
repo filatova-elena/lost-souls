@@ -1,8 +1,9 @@
 id: BJ111
 title: Reddish-Brown Powder
-act: act_iii_investigation
+act: act_ii_mystery_emerges
 skills:
   - medical_1
+  - botanical_2
 is_primary: true
 hashtags:
   - sebastian_crane
@@ -11,4 +12,4 @@ appearance: Reddish-brown powder in jar, distinctive color, clearly a chemical o
 purpose: Original ingredient in Sebastian's harmless elixir
 dosage: 3 grains
 content: |
-  **Iron Citrate [C₆H₅O₇Fe]**. A reddish-brown powder. Distinctive color. Clearly a chemical or mineral compound. A specialized bioavailable form of iron — standard tonic of the era. Particularly valuable for women preparing for major life changes. Shows thoughtful care for wellbeing and health.
+  **Iron Citrate [C₆H₅O₇Fe]**. A reddish-brown powder. Distinctive color. Clearly a chemical or mineral compound. A specialized bioavailable form of iron — standard tonic of the 1920sera. Particularly valuable for women preparing for major life changes.

@@ -1,10 +1,8 @@
 id: BG96
-title: White and Yellow Flowered Plant
+title: Chamomile
 type: Botanical (Garden Herb)
 appearance: Cheerful white and yellow flowers, dried bundles hanging nearby
 act: act_i_setting
-skills:
-  - botanical_1
 is_primary: false
 content: |
   **Chamomile [Matricaria chamomilla]**. Common and harmless. A gentle herb. Known for soothing properties.

@@ -4,7 +4,7 @@ type: Rumor
 possession: OTHER
 truth: true
 hashtags:
-  - rose_bread
+  - rose_bread_legacy
   - cordelia_montrose
   - eleanor_sullivan
 content: |

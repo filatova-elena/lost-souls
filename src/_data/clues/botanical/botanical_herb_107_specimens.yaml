@@ -1,10 +1,9 @@
 id: BH107
 title: Collection of Preserved Plant Samples
 act: act_i_setting
-skills:
-  - botanical_1
 is_primary: true
 type: Botanical (Dried Herb)
 appearance: Multiple glass jars containing dried plant materials - leaves, roots, flowers, seeds in various colors and textures
+skills: []
 content: |
   Multiple glass jars containing dried plant materials — leaves, roots, flowers, seeds. Various colors and textures. The preservation methods are careful and the organization methodical, suggesting systematic botanical study and research. Someone was building a reference collection with serious knowledge. The care taken shows this was not casual — it was deliberate, cataloged botanical work.

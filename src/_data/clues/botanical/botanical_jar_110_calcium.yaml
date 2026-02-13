@@ -1,8 +1,9 @@
 id: BJ110
 title: Fine White Powder
-act: act_iii_investigation
+act: act_ii_mystery_emerges
 skills:
   - medical_1
+  - botanical_2
 is_primary: true
 hashtags:
   - sebastian_crane
@@ -11,4 +12,4 @@ appearance: Fine white powder in jar, very uniform texture, appears chemical or 
 purpose: Original ingredient in Sebastian's harmless elixir
 dosage: 5 grains
 content: |
-  **Calcium Lactate [C₆H₁₀CaO₆]**. A fine white powder. Very uniform texture. Appears chemical or medicinal. A pharmaceutical supplement used to improve calcium absorption — common in 1920s health tonics. Particularly valued for women's health. Shows deliberate, knowledgeable supplementation — someone combining botanicals with modern nutritional science.
+  **Calcium Lactate [C₆H₁₀CaO₆]**. A fine white powder. Very uniform texture. Appears chemical or medicinal. A pharmaceutical supplement used to improve calcium absorption — common in 1920s health tonics. Particularly valued for women's health.

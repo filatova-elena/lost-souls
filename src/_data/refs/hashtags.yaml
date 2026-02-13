@@ -12,15 +12,10 @@ elias_unrequited_love:
   description: |
     Elias Monroe's hopeless devotion to Cordelia Montrose. The dressmaker who loved her from afar, made her wedding dress, and never recovered when she chose Sebastian, but ultimately kept his promise to her and delivered the rose bread recipe to her daughter, Eleanor.
 
-rose_bread:
+rose_bread_legacy:
   type: story_arc
   description: |
-    The rose bread recipe passed down through generations — from Cordelia's grandmother, to Cordelia, to Elias, and eventually to Eleanor. A thread connecting mother and daughter across time.
-
-generational_orphans:
-  type: story_arc
-  description: |
-    The generational cycle of orphaned children — the Sullivan bakery fire that killed David and Catherine Sullivan, the infant whose body was never found, and the echoes of loss across decades.
+    The true heir of the Montrose mansion — a legacy woven in rose bread. The recipe passed from Cordelia's grandmother, to Cordelia, to Elias, to Eleanor, and finally to the Baker. A generational thread of orphaned children, secret adoptions, the Sullivan bakery fire, and the proof that the Baker is the rightful heir.
 
 elixir_of_love:
   type: story_arc
@@ -169,10 +164,10 @@ venetian_bottle:
   description: |
     The Venetian glass bottle — smuggled through Frankie's operation, chosen by Sebastian because his elixir deserved a container as beautiful as the love it was meant to create. A bootlegger's contraband that became a romantic's chalice, and the last piece of the Romano legacy the Art Collector couldn't sell.
 
-pocket_watch:
-  type: object
+pocket_watch_mystery:
+  type: story_arc
   description: |
-    The pocket watch — engraved with the exact second of the Jupiter-Venus conjunction, 6:14 AM, September 4, 1925. A timestamp of the moment Sebastian believed he perfected love. Time stopped, literally.
+    The pocket watch mystery — a gold-plated timepiece engraved with the Jupiter-Venus conjunction of September 4, 1925. A gift from Thaddeus to Sebastian on his engagement, marking the exact moment the elixir was first administered. The Clockmaker's obsession with this watch led them to the Montrose mansion and the truth behind three deaths.
 
 wedding_dress:
   type: object

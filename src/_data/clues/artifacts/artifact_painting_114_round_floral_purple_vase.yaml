@@ -1,0 +1,23 @@
+id: AP114
+title: Round Floral Still Life (Flowers in a Purple Vase)
+act: act_iii_investigation
+type: Artifact (Painting)
+appearance: A circular oil painting of a colorful bouquet bursting from a purple vase, with a pink draped cloth
+location: Bembridge House, Downstairs Parlor, Next to Fireplace
+hashtags:
+  - romano_treasure
+skills:
+  - history_1
+  - art_1
+  - personal_romano
+is_key: true
+content: |
+  A circular oil painting — a tondo — of a colorful bouquet in a purple vase, with a pink draped cloth. Signed "H. de..." Delphiniums, snapdragons, hydrangeas, roses, zinnias — a riot of garden flowers bursting from that distinctive purple vessel.
+
+  **YOU OBSERVE**
+
+  As you look closely at the painting, you see a note, hidden gently between the frame and the canvas.
+
+  It reads:
+
+  Three. **Purple is the color of royalty. Gold is the color of wealth.** If only one could find such a vessel, in his hand, he would hold the power of the Romanos.

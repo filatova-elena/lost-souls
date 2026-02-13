@@ -4,9 +4,11 @@ author: eleanor
 title: Eleanor's Diary
 subtitle: July 5, 1939 - The Recipe
 act: act_iii_investigation
+skills:
+  - personal_sullivan
 hashtags:
   - secret_baby
-  - rose_bread
+  - rose_bread_legacy
   - eleanor_sullivan
   - cordelia_montrose
   - elias_monroe

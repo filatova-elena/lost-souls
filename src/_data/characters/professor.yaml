@@ -6,7 +6,8 @@ skills:
   - botanical
   basic:
   - medical
-  personal: []
+  personal:
+  - personal_hartley
 background: |-
   You're a botany professor, descended from **Professor Edmund Hartley** who ran a botanical garden and consultation service in 1920s Long Beach. You followed in his footsteps—plant toxicology, medicinal botany, historical uses of plants. Going through old family papers, you found Edmund's consultation records from 1925. A "pharmaceutical professional" (anonymous) came to him asking about: **Digitalis purpurea (Foxglove)**—extraction methods, dosing; Damiana, Valerian, Mandrake—sourcing and preparation; How to mask bitter flavors in medicinal preparations. The notes also contain consultation records with **Harbor Import & Trading Co**. The specifics raise your suspicions about what exactly this company was and what your ancestor was involved in. You've been obsessed with this mystery ever since. When you heard about the investigation at the **Montrose mansion**, you had to come. You have a feeling it's all connected.
 objectives:
