@@ -156,6 +156,15 @@ elena_dimarco:
     A ghost identity — a woman who appeared in Reno in 1960, married someone whose name was redacted, then vanished completely. No death certificate, no property trail, nothing. A temporary persona created for a financial transaction disguised as a wedding certificate. The Italian surname says everything.
 
 # ===========================
+# Tags
+# ===========================
+
+atmospheric:
+  type: tag
+  description: |
+    Decorative objects, furnishings, and period details that build the world of the mansion without advancing a specific quest. These items reward curiosity and create immersion.
+
+# ===========================
 # Objects & Artifacts
 # ===========================
 

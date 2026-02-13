@@ -5,6 +5,7 @@ type: Artifact (Painting)
 appearance: Four oval photographic portraits in a single frame — Romantic-era composers
 location: Bembridge House, Middle Parlor
 skills: []
-is_atmospheric: true
+hashtags:
+  - atmospheric
 content: |
   Four oval photographic portraits in a single frame: Franz Liszt (unmistakable white mane), and three other Romantic-era composers — likely Mendelssohn, Chopin, and Wagner. Standard fixture in any serious music household of the period.

@@ -5,6 +5,7 @@ type: Artifact (Object)
 appearance: A complete pressed glass punch bowl set with matching cups, displayed on a sideboard
 location: Bembridge House, Dining Room
 skills: []
-is_atmospheric: true
+hashtags:
+  - atmospheric
 content: |
   A complete Early American Pattern Glass punch bowl set with matching cups. Late 1800s, possibly U.S. Glass Company or Indiana Glass. Essential equipment for entertaining in an era when a well-set punch table was the mark of a proper hostess.
