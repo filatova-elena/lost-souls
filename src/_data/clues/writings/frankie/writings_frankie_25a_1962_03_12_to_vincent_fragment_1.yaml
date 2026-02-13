@@ -1,18 +1,19 @@
 id: WF25a
 type: Writing (Frankie's Dead Drops)
-author: frankie
-date: '1962-03-12'
 title: Frankie's Dead Drops
 subtitle: March 12, 1962 - My Dear Vincent
 act: act_ii_mystery_emerges
+date: '1962-03-12'
+location: Bembridge House, Desk in the Foyer
+appearance: A piece of paper, weathered and folded.
 hashtags:
   - frankie_romano
+  - romano_treasure
 skills:
   - personal_romano
   - history_2
-is_key: true
-location: Bembridge House, Desk in the Foyer
-appearance: A piece of paper, weathered and folded.
+is_key:
+  - romano_treasure
 content: |-
   My dear Vincent,
 
@@ -28,3 +29,4 @@ content: |-
   **YOU OBSERVE**
 
   The sun, the wind... Old Methuselah... What could it be? A statue? A fountain maybe? Must be something large and old.
+

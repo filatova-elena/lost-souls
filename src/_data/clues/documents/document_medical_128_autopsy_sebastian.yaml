@@ -4,14 +4,11 @@ title: Autopsy Report - Sebastian Crane
 act: act_iii_investigation
 date: October 14, 1925
 location: Mortuary
-examiner: Silas Blackwell (Mortician)
 hashtags:
   - morticians_silence
   - foxglove
-  - elixir_of_love
   - sebastian_crane
   - silas_blackwell
-is_key: true
 skills:
   - medical_2
   - botanical_2
@@ -48,3 +45,4 @@ content: |-
   **MARGIN NOTES:**
 
   **Findings suggest acute poisoning. Death certificate suggest accidental ingestion, however, decedent was trained apothecary—unlikely to accidentally ingest concentrated botanical toxin. Recommend investigation into source and method of administration.**
+

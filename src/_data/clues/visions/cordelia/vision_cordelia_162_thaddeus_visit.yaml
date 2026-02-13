@@ -1,13 +1,13 @@
 id: VC162
 type: Vision (Cordelia)
-ghost: cordelia
 title: The Heartbroken Ghost
 subtitle: Thaddeus's Visit
 act: act_iii_investigation
-skills:
-  - spiritual_1
+narrative: A vision of a young woman appears propped up in bed, her form frail and translucent. She looks up at you with large, trusting brown eyes, her expression confused and vulnerable.
 hashtags:
   - cordelia_montrose
   - thaddeus_crane
-narrative: A vision of a young woman appears propped up in bed, her form frail and translucent. She looks up at you with large, trusting brown eyes, her expression confused and vulnerable.
+  - doctor_and_patient
+skills:
+  - spiritual_1
 content: The doctor came. Dr. Thaddeus came to see me. He looked so concerned, so caring. I think he was trying to help! Maybe I was to harsh with him after I found them together. I feel the end coming and I feel such a weight on my chest... [You feel a terrible, sickening realization creeping in—but not yet complete.]

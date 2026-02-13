@@ -8,6 +8,7 @@ permalink: "/quests/{{ quest.id }}/index.html"
 layout: base
 ---
 <link rel="stylesheet" href="{{ site.baseUrl }}quests/quests.css">
+<link rel="stylesheet" href="{{ site.baseUrl }}refs/refs.css">
 <header>
   <h1>{{ quest.title }}</h1>
   {% if quest.subtitle %}<p class="italic">{{ quest.subtitle }}</p>{% endif %}
@@ -32,5 +33,146 @@ layout: base
     {{ quest.content | markdown | safe }}
   </div>
 </section>
+
+{# ---- Related Clues and Rumors ---- #}
+{% if quest.hashtag %}
+  {% set allClues = clues | filterByQuestHashtag(quest.hashtag) %}
+  {% set allRumors = rumorsData | filterByQuestHashtag(quest.hashtag) %}
+  {% set keyClues = clues | filterByQuestKey(quest.hashtag) %}
+  {% set keyRumors = rumorsData | filterByQuestKey(quest.hashtag) %}
+
+  {% if allClues.length > 0 or allRumors.length > 0 %}
+  <section class="quest-clues-section" data-quest-hashtag="{{ quest.hashtag }}">
+    <h2>🔍 Related Clues & Rumors</h2>
+    <p class="italic muted">All clues and rumors related to this quest</p>
+
+    {# ---- Filter toggle ---- #}
+    <div class="quest-filter-toggle">
+      <button class="tag-pill quest-filter-btn" data-filter="all" id="filter-all">All ({{ allClues.length + allRumors.length }})</button>
+      <button class="tag-pill quest-filter-btn active" data-filter="key" id="filter-key">Key Only ({{ keyClues.length + keyRumors.length }})</button>
+    </div>
+
+    {# ---- Clues list ---- #}
+    {% if allClues.length %}
+    <h3 class="section-subheader">🔍 Clues <span class="item-count clue-count">({{ keyClues.length }}/{{ allClues.length }})</span></h3>
+    <ul class="clue-list">
+      {% for clue in allClues %}
+        {% set isKey = clue | isKeyForQuest(quest.hashtag) %}
+        <li class="clue-item" data-is-key="{% if isKey %}true{% else %}false{% endif %}" data-tags="{{ clue.hashtags | join(',') if clue.hashtags else '' }}">
+          <div class="clue-item-main">
+            {{ clue.type | typeIcon }}
+            {% if clue.id %}<span class="clue-id">{{ clue.id }}</span> | {% endif %}
+            <a href="{{ site.baseUrl }}clues/{{ clue.filename }}/" target="_blank">{{ clue.title }}</a>
+            <span class="muted type-label"> — {{ clue.type }}</span>
+            {% if isKey %}<span class="key-badge">🔑 KEY</span>{% endif %}
+          </div>
+          {% if clue.hashtags %}
+          <div class="clue-item-tags">
+            {% for tag in clue.hashtags %}
+              <span class="tag-badge" data-tag="{{ tag }}">{{ tag | replace("_", " ") }}</span>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+    {# ---- Rumors list ---- #}
+    {% if allRumors.length %}
+    <h3 class="section-subheader">💬 Rumors <span class="item-count rumor-count">({{ keyRumors.length }}/{{ allRumors.length }})</span></h3>
+    <ul class="rumor-list">
+      {% for rumor in allRumors %}
+        {% set isKey = rumor | isKeyForQuest(quest.hashtag) %}
+        <li class="rumor-item" data-is-key="{% if isKey %}true{% else %}false{% endif %}" data-tags="{{ rumor.hashtags | join(',') if rumor.hashtags else '' }}">
+          <div class="rumor-item-main">
+            {% if rumor.id %}<span class="clue-id">{{ rumor.id }}</span> | {% endif %}
+            <span class="rumor-content">{{ rumor.content | trim }}</span>
+            {% if rumor.truth %}
+              <span class="truth-badge truth-true">✓ TRUE</span>
+            {% else %}
+              <span class="truth-badge truth-false">✗ FALSE</span>
+            {% endif %}
+            {% if isKey %}<span class="key-badge">🔑 KEY</span>{% endif %}
+          </div>
+          {% if rumor.hashtags %}
+          <div class="clue-item-tags">
+            {% for tag in rumor.hashtags %}
+              <span class="tag-badge" data-tag="{{ tag }}">{{ tag | replace("_", " ") }}</span>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </section>
+  {% endif %}
+{% endif %}
+
+<script>
+(function() {
+  const section = document.querySelector('.quest-clues-section');
+  if (!section) return;
+
+  const filterAllBtn = document.getElementById('filter-all');
+  const filterKeyBtn = document.getElementById('filter-key');
+  const items = section.querySelectorAll('.clue-item, .rumor-item');
+  let showKeyOnly = true; // Start with key only
+
+  function updateFilter() {
+    let visibleClues = 0, visibleRumors = 0;
+
+    items.forEach(item => {
+      const isKey = item.dataset.isKey === 'true';
+      if (showKeyOnly) {
+        item.style.display = isKey ? '' : 'none';
+      } else {
+        item.style.display = '';
+      }
+      if (item.style.display !== 'none') {
+        if (item.classList.contains('clue-item')) visibleClues++;
+        if (item.classList.contains('rumor-item')) visibleRumors++;
+      }
+    });
+
+    // Update button states
+    filterAllBtn.classList.toggle('active', !showKeyOnly);
+    filterKeyBtn.classList.toggle('active', showKeyOnly);
+
+    // Update counts
+    const clueCount = section.querySelector('.clue-count');
+    const rumorCount = section.querySelector('.rumor-count');
+    const totalClues = section.querySelectorAll('.clue-item').length;
+    const totalKeyClues = section.querySelectorAll('.clue-item[data-is-key="true"]').length;
+    const totalRumors = section.querySelectorAll('.rumor-item').length;
+    const totalKeyRumors = section.querySelectorAll('.rumor-item[data-is-key="true"]').length;
+
+    if (clueCount) {
+      clueCount.textContent = showKeyOnly 
+        ? `(${visibleClues}/${totalClues})` 
+        : `(${totalKeyClues}/${totalClues})`;
+    }
+    if (rumorCount) {
+      rumorCount.textContent = showKeyOnly 
+        ? `(${visibleRumors}/${totalRumors})` 
+        : `(${totalKeyRumors}/${totalRumors})`;
+    }
+  }
+
+  filterAllBtn.addEventListener('click', () => {
+    showKeyOnly = false;
+    updateFilter();
+  });
+
+  filterKeyBtn.addEventListener('click', () => {
+    showKeyOnly = true;
+    updateFilter();
+  });
+
+  // Initial filter
+  updateFilter();
+})();
+</script>
 
 {% include "reference-footer.njk" %}

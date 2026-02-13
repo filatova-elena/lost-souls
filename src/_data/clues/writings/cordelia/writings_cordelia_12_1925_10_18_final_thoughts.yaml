@@ -1,17 +1,17 @@
 id: WC12
 type: Writing (Cordelia's Diary)
-author: cordelia
 title: Cordelia Montrose's Diary
 subtitle: October 18, 1925 - Final Thoughts
 act: act_iv_revelation
 location: The Attic
-is_spoiler: true
 hashtags:
   - secret_baby
   - cordelia_montrose
   - eleanor_sullivan
   - thomas_whitmore
   - margaret_montrose
+is_key:
+  - secret_baby
 content: |-
   I am dying. I know this now with absolute certainty.
 
@@ -24,3 +24,4 @@ content: |-
   Instead, I chose stability. But nothing was ever safe. Thomas left me. My family betrayed me. And I am running out of time.
 
   If there is any mercy in this world, let Eleanor know that her mother loved her. That I think of her in these final moments. That I would give anything to see her face.
+

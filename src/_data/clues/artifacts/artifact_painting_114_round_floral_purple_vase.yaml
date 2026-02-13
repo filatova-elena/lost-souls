@@ -1,16 +1,17 @@
 id: AP114
+type: Artifact (Painting)
 title: Round Floral Still Life (Flowers in a Purple Vase)
 act: act_iii_investigation
-type: Artifact (Painting)
-appearance: A circular oil painting of a colorful bouquet bursting from a purple vase, with a pink draped cloth
 location: Bembridge House, Downstairs Parlor, Next to Fireplace
+appearance: A circular oil painting of a colorful bouquet bursting from a purple vase, with a pink draped cloth
 hashtags:
   - romano_treasure
 skills:
   - history_1
   - art_1
   - personal_romano
-is_key: true
+is_key:
+  - romano_treasure
 content: |
   A circular oil painting — a tondo — of a colorful bouquet in a purple vase, with a pink draped cloth. Signed "H. de..." Delphiniums, snapdragons, hydrangeas, roses, zinnias — a riot of garden flowers bursting from that distinctive purple vessel.
 

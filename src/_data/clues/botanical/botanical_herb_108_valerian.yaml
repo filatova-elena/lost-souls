@@ -1,14 +1,14 @@
 id: BH108
+type: Botanical (Dried Herb)
 title: Dried Earthen Root Powder
 act: act_i_setting
+appearance: Fine powder made from dried roots, earthy and musty aroma, consistent texture
+hashtags:
+  - sebastian_crane
+  - elixir_of_love
 skills:
   - botanical_1
   - medical_1
-is_primary: true
-hashtags:
-  - sebastian_crane
-type: Botanical (Dried Herb)
-appearance: Fine powder made from dried roots, earthy and musty aroma, consistent texture
-purpose: Original ingredient in Sebastian's harmless elixir
 content: |
   **Valerian Root [Valeriana officinalis]**. A powder made from dried roots. Earthy, musty aroma. Fine, consistent texture. A safe sedative herb.
+

@@ -1,10 +1,8 @@
 id: WC10
 type: Writing (Cordelia's Diary)
-author: cordelia
 title: Cordelia Montrose's Diary
 subtitle: October 15, 1925 - The Weight Increases
 act: act_iii_investigation
-is_spoiler: false
 hashtags:
   - cordelia_montrose
   - thaddeus_crane
@@ -18,3 +16,4 @@ content: |-
   But I don't think that's what this is.
 
   I am afraid.
+

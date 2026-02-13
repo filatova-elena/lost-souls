@@ -1,14 +1,14 @@
 id: BG185
+type: Botanical (Garden Tree)
 title: "Mexican Fan Palm — \"Methuselah\""
 act: act_i_setting
+location: Bembridge House, Garden, palm tree by the Carriage House
+appearance: A large, tall palm tree that appears to be very old
+hashtags:
+  - atmospheric
 skills:
   - botanical_1
   - history_2
-type: Botanical (Garden Tree)
-appearance: A large, tall palm tree that appears to be very old
-location: Bembridge House, Garden, palm tree by the Carriage House
-hashtags:
-  - atmospheric
 content: |
   **Washingtonia robusta** — Mexican Fan Palm
 

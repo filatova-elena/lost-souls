@@ -1,14 +1,15 @@
 id: WS1
 type: Writing (Silas's Journal)
-author: silas
-date: '1925-10-07'
 title: Silas Blackwell's Journal
 subtitle: October 7, 1925 - Alice Whitmore
 act: act_iii_investigation
+date: '1925-10-07'
 hashtags:
   - morticians_silence
   - silas_blackwell
   - alice_whitmore
+is_key:
+  - morticians_silence
 content: |
   Alice Whitmore. Twenty-four. Delicate bone structure, the kind of face you see on cameos. Lovely girl. Terrible skull fracture.
   

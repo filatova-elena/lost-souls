@@ -1,14 +1,15 @@
 id: WS36
 type: Writing (Sebastian's Notebook)
-author: sebastian
-date: '1925-08-15'
 title: Sebastian Crane's Notebook
 subtitle: August 15, 1925 - The Watch
 act: act_ii_mystery_emerges
+date: '1925-08-15'
 hashtags:
   - sebastian_crane
   - thaddeus_crane
   - edmund_hartley
+  - pocket_watch_mystery
+is_key:
   - pocket_watch_mystery
 content: |-
   Thaddeus gave me a pocket watch for my engagement. Extraordinary—it's engraved inside with September 4, 1925, 6:14 AM. The conjunction of Jupiter and Venus.
@@ -18,3 +19,4 @@ content: |-
   I took it to a craftsman and had the conjunction symbols engraved around the numerals. Beautiful. I will carry it always.
 
   Thaddeus's card spoke of timing written in the stars. Perhaps he understands what I'm attempting.
+

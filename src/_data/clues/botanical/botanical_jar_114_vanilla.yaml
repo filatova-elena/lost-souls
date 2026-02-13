@@ -1,15 +1,15 @@
 id: BJ114
+type: Botanical (Jar)
 title: Vanilla Syrup
 act: act_ii_mystery_emerges
+appearance: Amber-colored liquid or syrup in jar, sweet aromatic smell
+hashtags:
+  - sebastian_crane
+  - elixir_of_love
 skills:
   - botanical_1
   - medical_1
   - history_1
-is_primary: true
-hashtags:
-  - sebastian_crane
-type: Botanical (Jar)
-appearance: Amber-colored liquid or syrup in jar, sweet aromatic smell
-purpose: Taste and preservation in Sebastian's elixir
 content: |
   **Vanilla, Cherry Syrup, Honey [Vanilla planifolia / Prunus / Apis mellifera]**. Amber-colored syrup. Sweet, aromatic smell. Good quality vanilla, proper cherry syrup, real honey. These flavorings are commonly used in medicinal tonics to disguise herbal bitterness, making any preparation palatable.
+

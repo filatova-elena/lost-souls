@@ -1,17 +1,15 @@
 id: WEI20
 type: Writing (Elias's Letters)
-author: elias
-date: '1925-09-15'
 title: Elias Monroe's Notes
 subtitle: September 15, 1925 - Measurements - Wedding Dress (Cordelia Montrose)
 act: act_i_setting
+date: '1925-09-15'
 hashtags:
   - elias_unrequited_love
   - elias_monroe
   - cordelia_montrose
 skills:
   - personal_monroe
-no_access_message: These are Elias's personal notes. You need to find someone with access to his personal records to read this.
 content: |-
   Bust: 34 inches
   Waist: 24 inches
@@ -25,3 +23,4 @@ content: |-
 
   Completion date: October 10, 1925
   Status: In progress. Making the most careful stitches of my life.
+

@@ -1,16 +1,17 @@
 id: WC5
 type: Writing (Cordelia's Diary)
-author: cordelia
 title: Cordelia Montrose's Diary
 subtitle: September 10, 1925 - Alice
 act: act_iii_investigation
-skills:
-  - personal_montrose
-is_spoiler: false
 hashtags:
   - cordelia_montrose
   - alice_whitmore
   - thaddeus_crane
+  - doctor_and_patient
+skills:
+  - personal_montrose
+is_key:
+  - doctor_and_patient
 content: |-
   I saw her today. Alice. My dearest friend, or she used to be. We've barely spoken in months. It's been easier that way.
 
@@ -21,3 +22,4 @@ content: |-
   He just smiled at me. And said: 'How very protective of you, Cordelia. How very noble.'
 
   I've never liked him.
+

@@ -1,12 +1,11 @@
 id: VS176
 type: Vision (Sebastian)
-ghost: sebastian
 title: The Ghost of the Cursed Alchemist
 subtitle: The Self Test
 act: act_iii_investigation
-skills:
-  - spiritual_1
+narrative: A young man materializes holding an invisible bottle, his dark eyes steady with determination. He raises it to his lips with the calm certainty of a scientist.
 hashtags:
   - sebastian_crane
-narrative: A young man materializes holding an invisible bottle, his dark eyes steady with determination. He raises it to his lips with the calm certainty of a scientist.
+skills:
+  - spiritual_1
 content: I had to test it, you see. I had to make sure it worked. I had to make sure it was safe. I had to make sure it was effective. I had to make sure it was perfect.

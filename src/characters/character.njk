@@ -1,0 +1,99 @@
+---
+pagination:
+  data: characters
+  size: 1
+  alias: character
+  addAllPagesToCollections: true
+permalink: "/characters/{{ character.id }}/index.html"
+layout: base
+---
+<header>
+  <h1>{{ character.title }}</h1>
+  {% if character.image %}
+  <div style="text-align: center; margin: 20px 0;">
+    <img src="{{ site.baseUrl }}{{ character.image }}" alt="{{ character.title }}" style="max-width: 300px; width: 100%; height: auto; border: 2px solid var(--accent-gold);">
+  </div>
+  {% endif %}
+</header>
+
+{% if character.personality %}
+<section>
+  <h2>Personality</h2>
+  <p>{{ character.personality }}</p>
+</section>
+{% endif %}
+
+{% if character.background %}
+<section>
+  <h2>Background</h2>
+  <div>
+    {{ character.background | markdown | safe }}
+  </div>
+</section>
+{% endif %}
+
+{% if character.skills %}
+<section>
+  <h2>Skills</h2>
+  <ul>
+    {% if character.skills.expert and character.skills.expert.length > 0 %}
+    <li><strong>Expert:</strong> {{ character.skills.expert | join(", ") }}</li>
+    {% endif %}
+    {% if character.skills.basic and character.skills.basic.length > 0 %}
+    <li><strong>Basic:</strong> {{ character.skills.basic | join(", ") }}</li>
+    {% endif %}
+    {% if character.skills.personal and character.skills.personal.length > 0 %}
+    <li><strong>Personal:</strong> {{ character.skills.personal | join(", ") }}</li>
+    {% endif %}
+  </ul>
+</section>
+{% endif %}
+
+{% if character.objectives %}
+<section>
+  <h2>Objectives</h2>
+  <ul>
+    {% if character.objectives.main %}
+    <li><strong>Main:</strong> {{ character.objectives.main }}</li>
+    {% endif %}
+    {% if character.objectives.private %}
+    <li><strong>Private:</strong> {{ character.objectives.private }}</li>
+    {% endif %}
+  </ul>
+</section>
+{% endif %}
+
+{% if character.strategy %}
+<section>
+  <h2>Strategy</h2>
+  <div>
+    {{ character.strategy | markdown | safe }}
+  </div>
+</section>
+{% endif %}
+
+{% if character.relationships %}
+<section>
+  <h2>Relationships</h2>
+  <ul>
+    {% for relationship in character.relationships | items %}
+    <li><strong>{{ relationship[0] | replace("_", " ") | title }}:</strong> {{ relationship[1] }}</li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+{% if character.starting_items and character.starting_items.length > 0 %}
+<section>
+  <h2>Starting Items</h2>
+  <ul>
+    {% for item in character.starting_items %}
+    <li>{% if item.link %}<a href="{{ item.link }}">{{ item.name }}</a>{% else %}{{ item.name }}{% endif %}</li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+<section style="text-align: center; margin-top: 40px;">
+  <a href="{{ site.baseUrl }}" class="button">Begin Investigation as {{ character.title }}</a>
+</section>

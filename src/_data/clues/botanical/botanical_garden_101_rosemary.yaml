@@ -1,10 +1,9 @@
 id: BG101
+type: Botanical (Garden Herb)
 title: Rosemary
 act: act_i_setting
+appearance: Fragrant grey-green plant with needle-like leaves and tiny purple flowers
 skills:
   - botanical_1
-is_primary: false
-type: Botanical (Garden Herb)
-appearance: Fragrant grey-green plant with needle-like leaves and tiny purple flowers
 content: |
   **Rosemary [Rosmarinus officinalis]**. A fragrant grey-green plant with needle-like leaves and tiny purple flowers. Common herb with circulatory properties — traditionally used to support cardiac health. Grows sturdy and well-maintained. Mediterranean origin, reliable in this climate — been here for years.

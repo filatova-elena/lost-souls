@@ -1,11 +1,9 @@
 id: WTD65
 type: Writing (Thaddeus's Diary)
-author: thaddeus
-date: '1925-10-11'
 title: Thaddeus Crane's Diary
 subtitle: October 11, 1925 - Observation
 act: act_iii_investigation
-is_spoiler: false
+date: '1925-10-11'
 hashtags:
   - thaddeus_crane
   - sebastian_crane
@@ -14,3 +12,4 @@ content: |-
   Sebastian is worse. Cordelia is sick. Both show signs of cardiac distress. I have been monitoring their conditions closely.
 
   I wonder how long until it ends. I've been searching restlessly, but I've found nothing.
+

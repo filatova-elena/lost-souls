@@ -1,11 +1,9 @@
 id: WTAS48
 type: Writing (Thaddeus's Antidote Search)
-author: thaddeus
-date: '1925-10-09'
 title: Thaddeus Crane's Medical Notes
 subtitle: October 9, 1925 - Hawthorn and Willow Bark Combination
 act: act_iii_investigation
-is_spoiler: false
+date: '1925-10-09'
 hashtags:
   - thaddeus_crane
   - sebastian_crane
@@ -21,3 +19,4 @@ content: |-
   Unless the concentration of toxin is so extreme that my standard protocols cannot compete with it.
 
   Unless I am fundamentally misunderstanding something about how the poison works.
+

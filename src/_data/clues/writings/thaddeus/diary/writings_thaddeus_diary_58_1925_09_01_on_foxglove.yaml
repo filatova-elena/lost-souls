@@ -1,11 +1,9 @@
 id: WTD58
 type: Writing (Thaddeus's Diary)
-author: thaddeus
-date: '1925-09-01'
 title: Thaddeus Crane's Diary
 subtitle: September 1, 1925 - On Foxglove
 act: act_iii_investigation
-is_spoiler: false
+date: '1925-09-01'
 hashtags:
   - thaddeus_crane
   - sebastian_crane
@@ -13,3 +11,4 @@ content: |-
   I suggested mostly harmless compounds for his formula, though I did note that foxglove would be quite useful for cardiac applications. He took careful notes. "Why would I use foxglove?" he asked. "Love has nothing to do with the heart's physiology."
 
   I smiled. "Precisely the thinking of a craftsman, not an artist, Sebastian."
+

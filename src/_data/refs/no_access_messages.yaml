@@ -1,0 +1,260 @@
+# ============================================================================
+# NO ACCESS MESSAGES
+# ============================================================================
+#
+# HOW IT WORKS:
+#   1. For each missing skill on a clue, pick a random phrase from skill_phrases
+#   2. Join with Oxford-comma "or"
+#   3. Look up wrappers by exact clue type string (e.g. "Artifact (Painting)")
+#   4. Fall back to _default if no match
+#   5. Pick a random wrapper, replace {requirements}
+#
+# EXAMPLE (Rose Garden Bed, type: "Botanical (Garden Herb)"):
+#   skills needed: history_1, botanical_1, personal_romano
+#   phrases: ["a historian", "someone with botanical training", "a Romano family insider"]
+#   wrapper: "The soil has stories to tell, but not to you. You'd need {requirements}."
+#   result: "The soil has stories to tell, but not to you. You'd need a historian,
+#            someone with botanical training, or a Romano family insider."
+# ============================================================================
+
+
+# ----------------------------------------------------------------------------
+# WRAPPERS — by clue type
+# ----------------------------------------------------------------------------
+
+wrappers:
+
+  "Artifact (Object)":
+    - "You turn the object over in your hands, but its secrets stay hidden. You'd need {requirements}."
+    - "There's something about this object you can't quite place. You'd need {requirements}."
+    - "It feels significant—heavier than it should be, somehow. But you'd need {requirements} to understand why."
+
+  "Artifact (Painting)":
+    - "The painting watches you, but reveals nothing. You'd need {requirements}."
+    - "There's something in the brushwork—a message, maybe—but it's lost on you. You'd need {requirements}."
+    - "The canvas holds a secret in plain sight. You'd need {requirements} to read it."
+
+  "Artifact (Photo)":
+    - "The faces stare back at you, frozen in time. You'd need {requirements} to understand what you're seeing."
+    - "There's a story in this photograph, but you can't read it. You'd need {requirements}."
+    - "Something about this image nags at you—a detail just out of reach. You'd need {requirements}."
+
+  "Artifact (Paper)":
+    - "The paper is old and fragile, its meaning equally delicate. You'd need {requirements}."
+    - "You can see the writing, but the significance escapes you. You'd need {requirements}."
+    - "The document crinkles under your fingers, guarding its meaning. You'd need {requirements}."
+
+  "Document (Medical)":
+    - "The medical terminology swims before your eyes. You'd need {requirements} to decipher it."
+    - "Charts, dosages, clinical notes—it's all Greek to you. You'd need {requirements}."
+    - "The diagnosis is right here in front of you, but you can't read it. You'd need {requirements}."
+
+  "Document (Financial)":
+    - "Columns of numbers, transaction records, account names—meaningless without context. You'd need {requirements}."
+    - "The money trail is here, but you can't follow it. You'd need {requirements}."
+    - "Ledgers don't lie—but they don't speak plainly either. You'd need {requirements}."
+
+  "Document (Business)":
+    - "The business records are dense and deliberate. You'd need {requirements} to spot what matters."
+    - "Contracts, correspondence, deals—the important details are buried. You'd need {requirements}."
+    - "There's an arrangement hidden in this paperwork. You'd need {requirements} to find it."
+
+  "Botanical (Garden Herb)":
+    - "It looks like an ordinary plant to you. You'd need {requirements} to know better."
+    - "The soil has stories to tell, but not to you. You'd need {requirements}."
+    - "Green leaves, fragrant stems—but what species? What properties? You'd need {requirements}."
+
+  "Botanical (Dried Herb)":
+    - "Dried leaves and stems, carefully preserved. Their purpose eludes you. You'd need {requirements}."
+    - "Someone kept these for a reason. You'd need {requirements} to understand why."
+    - "The brittle herbs crumble between your fingers, taking their secrets with them. You'd need {requirements}."
+
+  "Botanical (Jar)":
+    - "The jar's contents are murky and unidentifiable. You'd need {requirements}."
+    - "A sealed jar, its label faded or missing. You'd need {requirements} to identify what's inside."
+    - "Something was preserved in here with great care. You'd need {requirements} to know what—and why."
+
+  "Writing (Sebastian's Notebook)":
+    - "Sebastian's handwriting is cramped and hurried. The meaning slips past you. You'd need {requirements}."
+    - "The notebook is full of Sebastian's private thoughts—but they're opaque to you. You'd need {requirements}."
+
+  "Writing (Cordelia's Diary)":
+    - "Cordelia's elegant script fills the pages, but her meaning is veiled. You'd need {requirements}."
+    - "The diary entries are intimate and guarded. You'd need {requirements} to read between the lines."
+
+  "Writing (Thaddeus's Diary)":
+    - "Thaddeus kept his diary in meticulous detail—details that mean nothing to you. You'd need {requirements}."
+    - "The diary is obsessive, methodical. You'd need {requirements} to follow where it leads."
+
+  "Writing (Thaddeus's Notes)":
+    - "Thaddeus's notes are dense with abbreviations and references. You'd need {requirements} to decode them."
+    - "Scattered notes in a precise hand. The system behind them eludes you. You'd need {requirements}."
+
+  "Writing (Thaddeus's Patient Notes)":
+    - "Patient charts, symptoms, treatments—clinical shorthand you can't parse. You'd need {requirements}."
+    - "These patient records hold something critical, but the medical notation is beyond you. You'd need {requirements}."
+
+  "Writing (Thaddeus's Antidote Search)":
+    - "Formulas, dosages, crossed-out attempts—Thaddeus was searching desperately. You'd need {requirements} to follow his work."
+    - "These notes chart a frantic search for a cure. The chemistry is beyond you. You'd need {requirements}."
+
+  "Writing (Silas's Journal)":
+    - "Silas's journal entries are cryptic and unsettling. You'd need {requirements} to make sense of them."
+    - "The journal is filled with Silas's ramblings—some lucid, some not. You'd need {requirements}."
+
+  "Writing (Hartley's Notes)":
+    - "The professor's research notes are dense with botanical Latin and cross-references. You'd need {requirements}."
+    - "Hartley's academic shorthand is impenetrable without the right background. You'd need {requirements}."
+
+  "Writing (Elias's Letters)":
+    - "Elias chose his words carefully—too carefully. The real message is hidden. You'd need {requirements}."
+    - "The letters are tender on the surface, but something deeper is coded into them. You'd need {requirements}."
+
+  "Writing (Eleanor's Diary)":
+    - "Eleanor's diary is warm but guarded—family recipes mixed with veiled references. You'd need {requirements}."
+    - "The diary reads like a cookbook at first, but there's more beneath the surface. You'd need {requirements}."
+
+  "Vision (Sebastian)":
+    - "A cold presence washes over you... but the vision won't form. You'd need {requirements}."
+    - "You feel Sebastian's restless energy, but can't see what he's trying to show you. You'd need {requirements}."
+    - "Something flickers at the edge of your awareness—angry, desperate—then fades. You'd need {requirements}."
+
+  "Vision (Cordelia)":
+    - "A faint scent of perfume, a whisper of silk... then nothing. You'd need {requirements}."
+    - "Cordelia's presence lingers here like a half-remembered dream. You'd need {requirements} to see it clearly."
+    - "For a moment, you feel a profound sadness that isn't yours. Then it's gone. You'd need {requirements}."
+
+  "Vision (Alice)":
+    - "A sharp intuition cuts through you—then vanishes before you can grasp it. You'd need {requirements}."
+    - "Someone trained and watchful once stood here. You feel it, but can't see it. You'd need {requirements}."
+    - "The echo of a keen, observing mind brushes against yours... then withdraws. You'd need {requirements}."
+
+  "Newspaper Article":
+    - "The newsprint is faded and the context is lost on you. You'd need {requirements} to see why this matters."
+    - "It's an old clipping—but what's significant about it? You'd need {requirements}."
+    - "Headlines from another era. The story between the lines escapes you. You'd need {requirements}."
+
+  _default:
+    - "The meaning here escapes you. You'd need {requirements}."
+    - "Something important is hidden here, but you'd need {requirements} to see it."
+    - "You sense there's more than meets the eye. You'd need {requirements}."
+    - "This is beyond you—for now. It would take {requirements}."
+
+wrappers_level_insufficient:
+  - "You're close—your training tells you this matters. But you'd need {requirements} to see the full picture."
+  - "You recognize the significance, but the deeper meaning stays out of focus. You'd need {requirements}."
+  - "Your instincts are right, but instinct isn't enough. You'd need {requirements}."
+
+
+# ----------------------------------------------------------------------------
+# SKILL PHRASES
+# ----------------------------------------------------------------------------
+# Short fragments that complete "You'd need ___."
+# Personal skills have no levels — flat list.
+# ----------------------------------------------------------------------------
+
+skill_phrases:
+
+  botanical:
+    level_1:
+      - "someone with botanical training"
+      - "someone who knows their way around a garden"
+      - "a basic knowledge of plants and herbs"
+    level_2:
+      - "a botanical expert"
+      - "someone with deep knowledge of plant chemistry"
+      - "a master herbalist's eye"
+
+  spiritual:
+    level_1:
+      - "someone with psychic sensitivity"
+      - "a touch of spiritual intuition"
+      - "someone attuned to the unseen"
+    level_2:
+      - "a true medium"
+      - "someone with powerful spiritual gifts"
+      - "a psychic of real ability"
+
+  rumors:
+    level_1:
+      - "someone with an ear for gossip"
+      - "access to the local rumor mill"
+      - "someone who knows where secrets are kept"
+    level_2:
+      - "a well-connected insider"
+      - "someone deeply embedded in the rumor network"
+
+  medical:
+    level_1:
+      - "someone with medical training"
+      - "a doctor's eye"
+      - "basic clinical knowledge"
+    level_2:
+      - "a medical expert"
+      - "someone with forensic expertise"
+      - "a trained forensic eye"
+
+  legal:
+    level_1:
+      - "someone versed in the law"
+      - "a basic legal education"
+      - "someone who can read a contract"
+    level_2:
+      - "a legal expert"
+      - "someone fluent in estate law"
+      - "a sharp legal mind"
+
+  history:
+    level_1:
+      - "a historian's perspective"
+      - "someone trained in historical research"
+      - "a keen sense of the past"
+    level_2:
+      - "a seasoned historian"
+      - "someone with deep archival expertise"
+      - "a scholar of the era"
+
+  art:
+    level_1:
+      - "someone with a trained eye for art"
+      - "basic knowledge of art and craftsmanship"
+      - "someone who can read a painting"
+    level_2:
+      - "an art authentication expert"
+      - "a trained appraiser's eye"
+      - "someone who knows provenance and period"
+
+  personal_montrose:
+    - "someone with a personal connection to the Montrose family"
+    - "a Montrose family insider"
+    - "someone who knows Cordelia's secrets"
+
+  personal_crane:
+    - "someone close to the Crane family"
+    - "a Crane family connection"
+    - "someone who knows the Crane history"
+
+  personal_romano:
+    - "someone with ties to the Romano family"
+    - "a Romano family insider"
+    - "someone who grew up on Romano family stories"
+
+  personal_whitmore:
+    - "someone in Alice Whitmore's inner circle"
+    - "a personal connection to the Whitmores"
+    - "someone who knows Alice's secrets"
+
+  personal_sullivan:
+    - "someone with a Sullivan family bond"
+    - "a connection to Eleanor's heritage"
+    - "someone who shares the Sullivan traditions"
+
+  personal_monroe:
+    - "someone who knew Elias Monroe personally"
+    - "a Monroe family connection"
+    - "someone privy to Monroe's private world"
+
+  personal_hartley:
+    - "someone in Professor Hartley's confidence"
+    - "a Hartley family connection"
+    - "someone who knows Edmund's real findings"

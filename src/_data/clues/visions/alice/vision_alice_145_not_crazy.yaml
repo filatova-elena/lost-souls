@@ -1,14 +1,15 @@
 id: VA145
 type: Vision (Alice)
-ghost: alice
 title: The Lonely Ghost
 subtitle: Not Crazy
 act: act_ii_mystery_emerges
-skills:
-  - spiritual_1
+narrative: A vision of a young woman flickers into view, stamping her foot, her form crackling with furious energy. Her hair whips around her face as her voice rises to fill the room.
 hashtags:
   - alice_whitmore
   - celestine_laveau
   - alice_second_sight
-narrative: A vision of a young woman flickers into view, stamping her foot, her form crackling with furious energy. Her hair whips around her face as her voice rises to fill the room.
+skills:
+  - spiritual_1
+is_key:
+  - alice_second_sight
 content: I am NOT crazy! They were VISIONS! Premonitions! Just like Ms. Laveau said! But they all thought I was the crazy one! Me! ME! They're the ones who are CRAZY! [You understand this feeling—being different, seeing things others cannot, and not being believed.]

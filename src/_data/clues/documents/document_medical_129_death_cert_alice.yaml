@@ -6,7 +6,9 @@ date: October 11, 1925
 hashtags:
   - morticians_silence
   - alice_whitmore
-is_key: true
+skills:
+  - medical_1
+  - legal_1
 content: |-
   **STATE OF CALIFORNIA**
   **COUNTY OF LOS ANGELES**

@@ -1,12 +1,11 @@
 id: VS172
 type: Vision (Sebastian)
-ghost: sebastian
 title: The Ghost of the Cursed Alchemist
 subtitle: Crushing Guilt
 act: act_iii_investigation
-skills:
-  - spiritual_2
+narrative: A young man appears hunched over, his arms wrapped around himself. His dark eyes are hollow with self-loathing, his whole form shaking.
 hashtags:
   - sebastian_crane
-narrative: A young man appears hunched over, his arms wrapped around himself. His dark eyes are hollow with self-loathing, his whole form shaking.
+skills:
+  - spiritual_2
 content: It's my fault! All of this is my fault! My great work, my masterpiece—it was flawed from the beginning! I was arrogant! I was incompetent! [Crushing guilt and self-recrimination.]

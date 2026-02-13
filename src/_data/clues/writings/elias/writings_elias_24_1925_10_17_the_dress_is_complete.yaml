@@ -1,18 +1,16 @@
 id: WEI24
 type: Writing (Elias's Letters)
-author: elias
-date: '1925-10-17'
 title: Elias Monroe's Notes
 subtitle: October 17, 1925 - The Dress Is Complete
 act: act_iv_revelation
+date: '1925-10-17'
 location: The Attic
-skills:
-  - personal_monroe
 hashtags:
   - elias_unrequited_love
   - elias_monroe
   - cordelia_montrose
-no_access_message: These are Elias's personal notes. You need to find someone with access to his personal records to read this.
+skills:
+  - personal_monroe
 content: |-
   I finished the wedding dress today.
 
@@ -31,3 +29,4 @@ content: |-
   Maybe someday someone will understand what this dress means. What it meant to make it. What it means to love someone you can never have.
 
   Maybe keeping it will be enough.
+

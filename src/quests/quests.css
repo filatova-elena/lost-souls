@@ -4,6 +4,28 @@
     text-align: center;
 }
 
+/* Quest filter toggle */
+.quest-filter-toggle {
+    margin: 15px 0;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.quest-filter-btn {
+    font-size: 0.85em;
+    padding: 6px 14px;
+}
+
+/* Key badge */
+.key-badge {
+    font-size: 0.7em;
+    margin-left: 8px;
+    color: var(--accent-gold);
+    font-weight: 600;
+    opacity: 0.9;
+}
+
 /* Clue details expandable sections */
 .clue-organization ul {
     list-style: none;

@@ -1,9 +1,9 @@
 id: AP109
+type: Artifact (Painting)
 title: Paul de Longpré Print — "Daisies and Poppies"
 act: act_i_setting
-type: Artifact (Painting)
-appearance: A chromolithographic art print of daisies and poppies arranged in a vase
 location: Bembridge House, Parlor Wall
+appearance: A chromolithographic art print of daisies and poppies arranged in a vase
 hashtags:
   - romano_treasure
 skills:

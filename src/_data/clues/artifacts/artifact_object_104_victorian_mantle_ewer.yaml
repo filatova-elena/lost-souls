@@ -1,9 +1,9 @@
 id: AO104
+type: Artifact (Object)
 title: Victorian Mantle Ewer
 act: act_i_setting
-type: Artifact (Object)
-appearance: A hand-painted opaline glass ewer with pink roses, mounted in an ornate cast brass Rococo frame
 location: Bembridge House, Middle Parlor, Shelf
+appearance: A hand-painted opaline glass ewer with pink roses, mounted in an ornate cast brass Rococo frame
 hashtags:
   - romano_treasure
 skills: 

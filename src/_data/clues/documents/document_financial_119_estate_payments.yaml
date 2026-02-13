@@ -2,14 +2,17 @@ id: DF119
 type: Document (Financial)
 title: Montrose Estate Payment Ledger - 1990
 act: act_iii_investigation
+date: October-November 1990
+location: Montrose Estate Records
 hashtags:
   - margaret_montrose
+  - bakery_fire
 skills:
   - legal_1
   - history_1
   - personal_montrose
-date: October-November 1990
-location: Montrose Estate Records
+is_key:
+  - bakery_fire
 content: |-
   **MONTROSE FAMILY ESTATE**
   PAYMENT LEDGER - 1990

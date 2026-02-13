@@ -6,5 +6,7 @@ truth: true
 hashtags:
   - morticians_silence
   - silas_blackwell
+is_key:
+  - morticians_silence
 content: |
   I heard someone paid the mortician for his discretion—kept him quiet about something

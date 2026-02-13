@@ -8,12 +8,15 @@ location: The Attic (DL121, DL182 and DL183 go together)
 hashtags:
   - secret_baby
   - rose_bread_legacy
+  - bakery_fire
   - cordelia_montrose
   - eleanor_sullivan
   - margaret_montrose
 skills:
   - legal_2
-is_key: true
+is_key:
+  - rose_bread_legacy
+  - bakery_fire
 content: |
    ** HARWICK, LANE & ASSOCIATES**
    **Attorneys-at-Law**

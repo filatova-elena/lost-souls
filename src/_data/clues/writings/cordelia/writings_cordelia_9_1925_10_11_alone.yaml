@@ -1,15 +1,13 @@
 id: WC9
 type: Writing (Cordelia's Diary)
-author: cordelia
 title: Cordelia Montrose's Diary
 subtitle: October 11, 1925 - Alone
 act: act_iii_investigation
-is_spoiler: false
-skills:
-  - personal_montrose
 hashtags:
   - cordelia_montrose
   - sebastian_crane
+skills:
+  - personal_montrose
 content: |-
   Sebastian is dead.
 
@@ -20,3 +18,4 @@ content: |-
   I don't understand what happened. I don't understand any of it.
 
   All I know is that I am alone again. And something inside me is breaking.
+

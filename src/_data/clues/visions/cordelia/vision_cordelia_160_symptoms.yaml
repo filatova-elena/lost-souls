@@ -1,12 +1,11 @@
 id: VC160
 type: Vision (Cordelia)
-ghost: cordelia
 title: The Heartbroken Ghost
 subtitle: The Symptoms
 act: act_ii_mystery_emerges
-skills:
-  - spiritual_1
+narrative: A vision of a young woman materializes, unsteady on her feet. Her wavy hair hangs loose, her skin ashen, one hand pressed to her temple as if fighting a terrible headache.
 hashtags:
   - cordelia_montrose
-narrative: A vision of a young woman materializes, unsteady on her feet. Her wavy hair hangs loose, her skin ashen, one hand pressed to her temple as if fighting a terrible headache.
+skills:
+  - spiritual_1
 content: Something was wrong! My head ached. My hands trembled. Food made me sick. I couldn't think clearly. Everyone said it was stress from the wedding preparations, from family pressures. But it grew worse. [Your body echoes her weakness, nausea rising in your throat.]

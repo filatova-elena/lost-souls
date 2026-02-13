@@ -2,15 +2,19 @@ id: DB117
 type: Document (Business)
 title: Harbor Import & Trading Co. - Shipping Records
 act: act_ii_mystery_emerges
+date: 1920-1925
+location: Harbor Archive
 hashtags:
   - harbor_hustle
   - elixir_of_love
   - frankie_romano
   - sebastian_crane
+  - romano_treasure
+  - the_alchemist
 skills:
   - botanical_1
-date: 1920-1925
-location: Harbor Archive
+is_key:
+  - the_alchemist
 content: |-
   "HARBOR IMPORT & TRADING CO.
   Long Beach Harbor, California

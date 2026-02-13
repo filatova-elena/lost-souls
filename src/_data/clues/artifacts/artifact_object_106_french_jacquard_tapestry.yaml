@@ -1,9 +1,9 @@
 id: AO106
+type: Artifact (Object)
 title: French Jacquard Tapestry Panel
 act: act_i_setting
-type: Artifact (Object)
-appearance: A machine-woven tapestry in a walnut frame depicting an 18th-century French Rococo salon scene
 location: Bembridge House, Downstairs Hallway
+appearance: A machine-woven tapestry in a walnut frame depicting an 18th-century French Rococo salon scene
 hashtags:
   - romano_treasure
 skills:

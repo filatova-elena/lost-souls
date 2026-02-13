@@ -1,11 +1,9 @@
 id: WTAS46
 type: Writing (Thaddeus's Antidote Search)
-author: thaddeus
-date: '1925-10-07'
 title: Thaddeus Crane's Medical Notes
 subtitle: October 7, 1925 - Initial Assessment
 act: act_iii_investigation
-is_spoiler: false
+date: '1925-10-07'
 hashtags:
   - thaddeus_crane
   - sebastian_crane
@@ -20,3 +18,4 @@ content: |-
   Second approach: Diuretics to increase urine output and flush toxin from system.
 
   This is manageable. I have handled toxin cases before. I am managing it.
+

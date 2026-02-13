@@ -1,5 +1,6 @@
-name: doctor
+id: doctor
 title: The Town Doctor
+image: assets/images/doctor.png
 personality: Brilliant physician haunted by your family's secrets. Searching for answers about your own bloodline.
 skills:
   expert:
@@ -11,7 +12,7 @@ background: |-
   Your family name is **Sinclair**, but it wasn't always. You eventually discovered that your family changed their name in the 1960s for political reasons—your ancestors were the **Crane family** of Long Beach. You knew you descended from **Dr. Thaddeus Crane**, a respectable town doctor from the 1920s. That's ALL you knew—the family buried everything else. Recently, you received a **mysterious box** from the **Fiduciary** containing old estate papers. Inside, you discover something shocking: **Dr. Thaddeus Crane** had a brother you've never heard about!
 objectives:
   main: main_quest
-  private: minor_thaddeus_alice_forbidden_romance
+  private: minor_doctor_and_patient
 strategy: Your Expert Medical skill lets you interpret pharmaceutical formulas and analyze death certificates. Your knowledge
   of the Crane family gives you access to family secrets. Share what you discover—others' expertise can help verify and contextualize
   your findings.

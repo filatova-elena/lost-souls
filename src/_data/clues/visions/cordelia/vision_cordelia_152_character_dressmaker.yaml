@@ -1,16 +1,15 @@
 id: VC152
 type: Vision (Cordelia)
-ghost: cordelia
-to_character: dressmaker
 title: The Heartbroken Ghost
 subtitle: Remembrance
 act: act_i_setting
-skills:
-  - spiritual_1
+narrative: A vision of a young woman appears, her expression softening as she gazes at you. A wistful smile plays across her delicate features.
 hashtags:
   - elias_unrequited_love
   - cordelia_montrose
   - elias_monroe
-narrative: A vision of a young woman appears, her expression softening as she gazes at you. A wistful smile plays across her delicate features.
+skills:
+  - spiritual_1
 content: |
   You remind me of Elias, he used to write me poems....
+

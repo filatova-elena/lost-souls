@@ -1,14 +1,16 @@
 id: N133
-title: Long Beach Gazette - March 10, 1991
-act: act_ii_mystery_emerges
 type: Newspaper Article
+title: Long Beach Gazette - March 10, 1991
+subtitle: THOMAS REED ARRESTED ON MULTIPLE CHARGES - Long Beach Man Linked to Various Criminal Activities
+act: act_ii_mystery_emerges
 date: March 10, 1991
 location: Found in newspaper archives
-subtitle: THOMAS REED ARRESTED ON MULTIPLE CHARGES - Long Beach Man Linked to Various Criminal Activities
 hashtags:
   - bakery_fire
   - thomas_reed
 skills: []
+is_key:
+  - bakery_fire
 content: |-
   **THOMAS REED**, 69, was arrested yesterday evening at a property in Inland Empire on charges including grand theft, extortion, and property destruction. The Long Beach Police Department declined to detail specific charges, citing ongoing investigation.
 

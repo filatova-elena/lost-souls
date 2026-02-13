@@ -3,14 +3,14 @@ type: Newspaper Article
 title: Long Beach Gazette - October 12, 1925
 subtitle: MYSTERIOUS DEATH OF LOCAL APOTHECARY - Mob Connection Suspected
 act: act_ii_mystery_emerges
+date: October 12, 1925
+location: Found in local newspaper archives
 hashtags:
   - the_alchemist
   - harbor_hustle
   - sebastian_crane
   - frankie_romano
 skills: []
-date: October 12, 1925
-location: Found in local newspaper archives
 content: |-
   **SEBASTIAN CRANE**, 30, proprietor of Crane's Pharmaceutical Preparations on Ocean Boulevard, was found dead yesterday morning in his laboratory. Medical examiners initially attributed death to **acute cardiac failure**, but preliminary toxicology findings have raised **suspicions of poisoning**.
 
@@ -19,4 +19,3 @@ content: |-
   Mr. Crane's involvement in dubious pharmaceutical enterprises has been whispered about in certain quarters for some time. A source close to the **Montrose family** stated: "He had connections to the import business — the kind of imports that don't always come through official channels."
 
   Federal investigators have taken preliminary interest in Mr. Crane's business records and the **suspicious substances** found in his laboratory. The cause of death remains unclear. Was the young man the victim of mob retaliation? Or did his own pharmaceutical experiments prove fatal?
-

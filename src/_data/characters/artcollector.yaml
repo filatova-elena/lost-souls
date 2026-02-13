@@ -1,5 +1,6 @@
-name: artcollector
+id: artcollector
 title: The Art Collector
+image: assets/images/artcollector.png
 personality: Pretentious aesthete obsessed with artistic merit and provenance. One foot in legitimacy, one in the shadows.
 skills:
   expert:
@@ -11,7 +12,7 @@ background: |-
   Your family name carries weight in Long Beach—but not the kind you'd prefer. Your great-great-grandfather was **Frankie "the Coast" Romano**, the notorious rum runner who controlled **bootlegging operations** at the Port of Long Beach during Prohibition. The Romano family had it all in the 1920s-1950s: money, power, connections, glamour. Nightclubs, Hollywood parties, political influence. But then came the IRS investigations in the 1960s-1980s. The government seized everything. But there are rumors—whispers in the family about hidden wealth that escaped the IRS. The legendary "**Romano Treasure**." Is it real? Or just a desperate family myth? You learned the art world through necessity—selling salvaged family pieces to survive. But you discovered you actually had talent for it. You've built a legitimate art dealing business and made real money again. Though you still dabble in questionable provenance and black market connections when profitable. Old habits die hard. You kept the **ornate glass bottle** as a proud family heirloom—it's beautiful, mysterious, and one of the few things that survived the family's downfall. When you heard about the investigation at the old **Montrose mansion**—where your ancestor Frankie did business in the 1920s—you couldn't resist. Maybe the treasure is real. Maybe it's here.
 objectives:
   main: main_quest
-  private: major_legendary_romano_treasure
+  private: major_romano_treasure
 strategy: Your knowledge of the Romano family gives you complete understanding of their smuggling operations. Your Expert Art
   skill helps with art authentication and provenance. Your family knowledge is key—others' exploration and estate records
   can help locate what you're seeking.

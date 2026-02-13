@@ -1,16 +1,15 @@
 id: AP181
+type: Artifact (Paper)
 title: Handwritten Rose Bread Recipe
 act: act_i_setting
-type: Artifact (Paper)
-appearance: Faded handwritten recipe on aged paper, written in careful but unpolished script
 location: The Bakery
+appearance: Faded handwritten recipe on aged paper, written in careful but unpolished script
 hashtags:
   - rose_bread_legacy
   - eleanor_sullivan
   - cordelia_montrose
 skills:
   - personal_sullivan
-no_access_message: You need to find someone with access to Eleanor's personal records to read this.
 content: |-
   **Rose Bread**
 
@@ -34,3 +33,4 @@ content: |-
 
   [scrawled in margin:] "the petals lose color when baked — normal, don't panic"
   [at bottom, underlined twice:] "DO NOT double the rose water. I learned this the hard way."
+

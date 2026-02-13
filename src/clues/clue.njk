@@ -14,19 +14,19 @@ layout: base
 </header>
 
 {% if clue.type and 'Vision' in clue.type and clue.narrative %}
-<section class="clue-narration">
+<section class="clue-narration" style="display: none;">
   <div>
     {{ clue.narrative | markdown | safe }}
   </div>
 </section>
 {% elif clue.appearance %}
-<section class="clue-narration">
+<section class="clue-narration" style="display: none;">
   <div>
     {{ clue.appearance | markdown | safe }}
   </div>
 </section>
 {% elif clue.narration %}
-<section class="clue-narration">
+<section class="clue-narration" style="display: none;">
   <div>
     {{ clue.narration | markdown | safe }}
   </div>
@@ -34,9 +34,34 @@ layout: base
 {% endif %}
 
 {% if clue.content %}
-<section class="clue-content">
+<section class="clue-content" style="display: none;">
   <div>
     {{ clue.content | markdown | safe }}
   </div>
 </section>
 {% endif %}
+
+<script>
+(function() {
+  // Pass clue data and no_access_messages to JavaScript
+  const clueData = {{ clue | json }};
+  const noAccessMessages = {{ refs.no_access_messages | json }};
+  
+  // Initialize when DOM and deferred scripts are ready
+  function init() {
+    if (typeof initClueAccess === 'function') {
+      initClueAccess(clueData, noAccessMessages);
+    } else {
+      console.warn('initClueAccess function not found. Make sure main.js is loaded.');
+    }
+  }
+  
+  // Deferred scripts execute after DOMContentLoaded, so we can run immediately
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    // DOM already loaded, deferred scripts should be ready
+    init();
+  }
+})();
+</script>

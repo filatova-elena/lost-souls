@@ -1,17 +1,20 @@
 id: DL182
-title: Birth Certificate - Eleanor Montrose
 type: Document (Legal)
-date: '1925-06-28'
+title: Birth Certificate - Eleanor Montrose
 act: act_iv_revelation
+date: '1925-06-28'
 location: The Attic (DL121, DL182 and DL183 go together)
 hashtags:
   - secret_baby
   - eleanor_sullivan
   - cordelia_montrose
   - thomas_whitmore
+  - rose_bread_legacy
 skills:
   - legal_2
-is_key: true
+is_key:
+  - secret_baby
+  - rose_bread_legacy
 content: |-
   **COMMONWEALTH OF MASSACHUSETTS - DEPARTMENT OF PUBLIC HEALTH**
 

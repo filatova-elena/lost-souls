@@ -68,3 +68,26 @@ title: "Reference Hub"
 </section>
 
 {% include "reference-footer.njk" %}
+
+<script>
+(function() {
+  // When viewing reference materials, you automatically become the grandmother character
+  // (who has all skills, giving access to all clues in the reference pages)
+  function init() {
+    if (typeof storeCharacterProfile === 'function') {
+      const grandmother = {{ characters | json }}.find(char => char.id === 'grandmother');
+      if (grandmother && grandmother.skills) {
+        storeCharacterProfile(grandmother.id, grandmother.skills);
+      }
+    } else {
+      console.warn('storeCharacterProfile function not found. Make sure main.js is loaded.');
+    }
+  }
+  
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>

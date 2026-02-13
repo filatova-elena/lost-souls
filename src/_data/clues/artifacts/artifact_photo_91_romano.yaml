@@ -1,15 +1,18 @@
 id: APH91
-is_primary: false
+type: Artifact (Photo)
 title: Faded Photograph - The Romano Family at Harbor
 act: act_i_setting
-type: Artifact (Photograph)
-appearance: Black and white photograph showing group of well-dressed people standing near waterfront location
 location: Art Collector's office, framed on desk
+appearance: Black and white photograph showing group of well-dressed people standing near waterfront location
 hashtags:
   - frankie_romano
+  - romano_treasure
+  - the_alchemist
 skills:
   - personal_romano
   - history_2
+is_key:
+  - the_alchemist
 content: |
   A black and white photograph showing a group of well-dressed people standing near a waterfront location.
 

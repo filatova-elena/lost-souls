@@ -5,9 +5,9 @@ act: act_iii_investigation
 date: September 1, 1925
 location: Sebastian's Laboratory
 appearance: Handwritten note on torn paper, faded ink, creased
-skills:
-  - personal_crane
 hashtags:
   - thaddeus_crane
   - sebastian_crane
+skills:
+  - personal_crane
 content: Sebastian - need more concentrated foxglove extract for my cardiac cases. Can you prepare another batch? - Thaddeus

@@ -1,9 +1,9 @@
 id: AO81
+type: Artifact (Object)
 title: Antique Pocket Watch
 act: act_i_setting
-type: Artifact (Object)
-appearance: Gold-plated pocket watch with glass face and inner inscriptions
 location: With Clockmaker character
+appearance: Gold-plated pocket watch with glass face and inner inscriptions
 hashtags:
   - pocket_watch_mystery
   - elixir_of_love
@@ -12,6 +12,8 @@ hashtags:
 skills:
   - history_1
   - spiritual_1
+is_key:
+  - pocket_watch_mystery
 content: |
   A gold-plated pocket watch with a glass face and inner inscriptions.
 

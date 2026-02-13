@@ -1,12 +1,12 @@
 id: VA136
 type: Vision (Alice)
-ghost: alice
 title: The Lonely Ghost
 act: act_ii_mystery_emerges
-skills: 
-  - spiritual_1
+narrative: A young woman in a pale dress flickers into view, her hair framing a face that belongs in a painting.
 hashtags:
   - alice_whitmore
   - thomas_whitmore
-narrative: A young woman in a pale dress flickers into view, her hair framing a face that belongs in a painting.
+  - secret_baby
+skills: 
+  - spiritual_1
 content: My brother Thomas... he loved her too, you know. Before all this. Poor Thomas. Lost at sea with so many secrets left behind. [The name Thomas resonates in your chest. Why does it feel familiar? Someone is lost.]

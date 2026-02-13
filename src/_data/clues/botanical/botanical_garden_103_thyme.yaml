@@ -1,8 +1,7 @@
 id: BG103
+type: Botanical (Garden Herb)
 title: Thyme
 act: act_i_setting
-is_primary: false
-type: Botanical (Garden Herb)
 appearance: Delicate green herb with tiny purple flowers, pleasant aroma
 skills: []
 content: |

@@ -1,11 +1,11 @@
 id: AO97
+type: Artifact (Object)
 title: Wall-Mount Crank Telephone
 act: act_i_setting
-type: Artifact (Object)
-appearance: An oak-cased magneto wall telephone with a hand crank, mouthpiece, and earpiece receiver
 location: Bembridge House, Butler's Pantry
-skills: []
+appearance: An oak-cased magneto wall telephone with a hand crank, mouthpiece, and earpiece receiver
 hashtags:
   - atmospheric
+skills: []
 content: |
   An oak-cased magneto wall telephone, circa **1900–1920**. You'd turn the crank to signal the operator, then speak into the mouthpiece while pressing the receiver to your ear. Three generations of telephone technology exist in this house — this crank model, a candlestick phone from the 1920s, and a rotary dial from the 1940s.

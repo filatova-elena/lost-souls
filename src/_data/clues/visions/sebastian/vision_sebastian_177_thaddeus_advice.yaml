@@ -1,14 +1,13 @@
 id: VS177
 type: Vision (Sebastian)
-ghost: sebastian
 title: The Ghost of the Cursed Alchemist
 subtitle: Thaddeus's Advice
 act: act_ii_mystery_emerges
-skills:
-  - spiritual_1
+narrative: A vision of a young man appears, his expression easing into relief. His dark eyes soften as he speaks of someone he trusts completely.
 hashtags:
   - sebastian_crane
   - thaddeus_crane
   - cordelia_montrose
-narrative: A vision of a young man appears, his expression easing into relief. His dark eyes soften as he speaks of someone he trusts completely.
+skills:
+  - spiritual_1
 content: I asked my brother for advice. He said it could be nerves, but he would make sure to check on her in a few days. My brother always knows what to do and how to help. [You feel a sense of relief.]
