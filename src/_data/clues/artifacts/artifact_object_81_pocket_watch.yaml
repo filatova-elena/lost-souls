@@ -5,18 +5,27 @@ act: act_i_setting
 location: With Clockmaker character
 appearance: Gold-plated pocket watch with glass face and inner inscriptions
 hashtags:
-  - pocket_watch_mystery
-  - elixir_of_love
-  - sebastian_crane
-  - thaddeus_crane
+- pocket_watch_mystery
+- elixir_of_love
+- sebastian_crane
+- thaddeus_crane
+- main_quest
 skills:
-  - history_1
-  - spiritual_1
+- history_1
+- spiritual_1
 is_key:
-  - pocket_watch_mystery
-content: |
-  A gold-plated pocket watch with a glass face and inner inscriptions.
+- pocket_watch_mystery
+- main_quest
+content: 'A gold-plated pocket watch with a glass face and inner inscriptions.
 
-  The interior engraving reads **'September 4, 1925 - 6:14 AM'** with astronomical symbols around the numerals—a **Jupiter-Venus conjunction**. This wasn't just an engagement present. It's a deliberate record of a specific astronomical moment, calculated with precision.
 
-  Something significant happened at this exact moment—a ritual, a beginning, or a crucial event.
+  The interior engraving reads **''September 4, 1925 - 6:14 AM''** with astronomical
+  symbols around the numerals—a **Jupiter-Venus conjunction**. This wasn''t just an
+  engagement present. It''s a deliberate record of a specific astronomical moment,
+  calculated with precision.
+
+
+  Something significant happened at this exact moment—a ritual, a beginning, or a
+  crucial event.
+
+  '

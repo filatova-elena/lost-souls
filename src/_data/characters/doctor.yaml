@@ -3,11 +3,9 @@ title: The Town Doctor
 image: assets/images/doctor.png
 personality: Brilliant physician haunted by your family's secrets. Searching for answers about your own bloodline.
 skills:
-  expert:
-  - medical
-  basic: []
-  personal:
+  - medical_2
   - personal_crane
+  - is_character_doctor
 background: |-
   Your family name is **Sinclair**, but it wasn't always. You eventually discovered that your family changed their name in the 1960s for political reasons—your ancestors were the **Crane family** of Long Beach. You knew you descended from **Dr. Thaddeus Crane**, a respectable town doctor from the 1920s. That's ALL you knew—the family buried everything else. Recently, you received a **mysterious box** from the **Fiduciary** containing old estate papers. Inside, you discover something shocking: **Dr. Thaddeus Crane** had a brother you've never heard about!
 objectives:

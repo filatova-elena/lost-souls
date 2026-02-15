@@ -3,12 +3,10 @@ title: The Baker
 image: assets/images/baker.png
 personality: Genuinely cheerful, warm, perpetually covered in flour. An orphan with a mysterious past.
 skills:
-  expert: []
-  basic:
-  - spiritual
-  - history
-  personal:
+  - spiritual_1
+  - history_1
   - personal_sullivan
+  - is_character_baker
 background: |-
   You're an **orphan**. You never knew your parents or where you truly came from. All you have is an **old diary**—worn, fragile, precious—that somehow ended up with you. The diary was written by someone named **Eleanor**. She writes about being adopted, about not knowing her real parents. She writes about searching for identity, for belonging. You don't know if **Eleanor** was your grandmother, great-grandmother, or some other relative. But her words speak to you across the generations. The diary contains a bread recipe—"my grandmother bread recipe," **Eleanor** calls it. You've been baking this bread your whole life. It is why you chose to be a baker, to feel closer to your family even if you never knew who they were. Recently, you've started having **strange feelings**. Dreams. The face of a beautiful woman with a pearl necklace calling to you. A sense that you're connected to something bigger than yourself. When you heard about the investigation at the old **Montrose mansion**, something drew you here. You don't know why, but you feel like you need to be here.
 objectives:

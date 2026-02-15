@@ -3,39 +3,65 @@ type: Artifact (Object)
 title: Crystal Ball - Antique Scrying Sphere
 act: act_iv_revelation
 location: The Attic
-appearance: A clear quartz crystal sphere mounted on an ornate brass stand, with subtle internal cloud patterns.
+appearance: A clear quartz crystal sphere mounted on an ornate brass stand, with subtle
+  internal cloud patterns.
 hashtags:
-  - crystal_ball
-  - alice_second_sight
-  - thaddeus_crane
-  - alice_whitmore
+- crystal_ball
+- alice_second_sight
+- thaddeus_crane
+- alice_whitmore
+- main_quest
 skills:
-  - spiritual_2
+- spiritual_2
 is_key:
-  - alice_second_sight
-content: |
-  *As you gaze into the crystal sphere, the internal cloud patterns begin to swirl, coalescing into something more than mist. The world around you fades—*
+- alice_second_sight
+- main_quest
+content: '*As you gaze into the crystal sphere, the internal cloud patterns begin
+  to swirl, coalescing into something more than mist. The world around you fades—*
+
 
   *The grand staircase. October 11, 1925. Late evening.*
 
-  *Alice Whitmore stands on the landing. Her posture perfect—back straight, shoulders set. She turns—*
 
-  *"Thaddeus, you must confess. You must go to the authorities—" Her voice steady, but something else there. Hope. "Maybe there is still time—" trails off*
+  *Alice Whitmore stands on the landing. Her posture perfect—back straight, shoulders
+  set. She turns—*
 
-  *The vision blurs. Alice starting towards the stairs. Her face—disappointment and determination. Still hoping—*
 
-  *Behind her. Dr. Thaddeus Crane. Frozen. His face in dim light—desperation warring with something darker. His hands shaking. In those hands—*
+  *"Thaddeus, you must confess. You must go to the authorities—" Her voice steady,
+  but something else there. Hope. "Maybe there is still time—" trails off*
+
+
+  *The vision blurs. Alice starting towards the stairs. Her face—disappointment and
+  determination. Still hoping—*
+
+
+  *Behind her. Dr. Thaddeus Crane. Frozen. His face in dim light—desperation warring
+  with something darker. His hands shaking. In those hands—*
+
 
   *A silver candle holder. Decorative patterns catching light—*
 
+
   *The strike—*
 
-  *Without warning. The silver candle holder arcs through air. Light catches it for one terrible moment—*
 
-  *The sound—wrong. Not the crack of bone against wood. Something sharper. More concentrated. A single, precise impact.*
+  *Without warning. The silver candle holder arcs through air. Light catches it for
+  one terrible moment—*
 
-  *Alice's body goes rigid. Her hands freeze mid-air. One impossible second—she remains standing. Then—*
+
+  *The sound—wrong. Not the crack of bone against wood. Something sharper. More concentrated.
+  A single, precise impact.*
+
+
+  *Alice''s body goes rigid. Her hands freeze mid-air. One impossible second—she remains
+  standing. Then—*
+
 
   *Her knees buckle. She collapses forward. Graceful even in falling—*
 
-  *Thaddeus stands over her. The candle holder still clutched. His breathing ragged. Looks down—horror. Then—hardens. Sets the candle holder down carefully. Arranges her body. A physician. He knows how to stage—*
+
+  *Thaddeus stands over her. The candle holder still clutched. His breathing ragged.
+  Looks down—horror. Then—hardens. Sets the candle holder down carefully. Arranges
+  her body. A physician. He knows how to stage—*
+
+  '

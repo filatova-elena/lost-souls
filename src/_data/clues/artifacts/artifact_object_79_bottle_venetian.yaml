@@ -2,23 +2,35 @@ id: AO79
 type: Artifact (Object)
 title: Ornate Venetian Glass Bottle
 act: act_i_setting
-appearance: Decorative bottle of venetian glass with gold leaf detailing and ornate stopper.
+appearance: Decorative bottle of venetian glass with gold leaf detailing and ornate
+  stopper.
 hashtags:
-  - venetian_bottle
-  - elixir_of_love
-  - sebastian_crane
-  - the_alchemist
+- venetian_bottle
+- elixir_of_love
+- sebastian_crane
+- the_alchemist
+- main_quest
 skills:
-  - art_2
-  - history_2
+- art_2
+- history_2
 is_key:
-  - elixir_of_love
-  - the_alchemist
-content: |
-  A decorative bottle made of venetian glass with gold leaf detailing and an ornate stopper.
+- elixir_of_love
+- the_alchemist
+- main_quest
+content: 'A decorative bottle made of venetian glass with gold leaf detailing and
+  an ornate stopper.
+
 
   **Authentic Venetian glass** from **early 20th century craftsmanship**.
 
-  This bottle **passed through Harbor Import & Trading Co.** and is documented in historical records. It was imported during **Prohibition (1920-1925)**—check manifests from that period for its exact arrival date.
 
-  During Prohibition, ornate glass bottles like this were perfect for **concealing valuable contraband** while maintaining plausible deniability as decorative pieces. The decorative purpose made it perfect cover for moving contraband.
+  This bottle **passed through Harbor Import & Trading Co.** and is documented in
+  historical records. It was imported during **Prohibition (1920-1925)**—check manifests
+  from that period for its exact arrival date.
+
+
+  During Prohibition, ornate glass bottles like this were perfect for **concealing
+  valuable contraband** while maintaining plausible deniability as decorative pieces.
+  The decorative purpose made it perfect cover for moving contraband.
+
+  '

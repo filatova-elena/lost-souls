@@ -1,12 +1,11 @@
+(function() {
+'use strict';
+
 const CHARACTER_PROFILE_KEY = 'character_profile';
+const SCANNED_CLUES_KEY = 'scanned';
 
-const SKILL_SUFFIX = { expert: '_2', basic: '_1', personal: '' };
-
-function convertSkills(skills) {
-  return Object.entries(SKILL_SUFFIX).flatMap(([level, suffix]) =>
-    (skills[level] || []).filter(Boolean).map(skill => `${skill}${suffix}`)
-  );
-}
+// Skills functions are now imported from skills.js (loaded before this script)
+// Using window.parseSkill, window.convertSkills, window.hasSkillAccess
 
 function storeCharacterProfile(characterId, skills) {
   if (!characterId) {
@@ -16,7 +15,7 @@ function storeCharacterProfile(characterId, skills) {
 
   const profile = {
     characterId,
-    skills: convertSkills(skills)
+    skills: window.convertSkills(skills)
   };
 
   localStorage.setItem(CHARACTER_PROFILE_KEY, JSON.stringify(profile));
@@ -37,33 +36,30 @@ function clearCharacterProfile() {
 }
 
 /**
- * Parse a skill string into base name and level
- * @param {string} skill - Skill string (e.g., "botanical_2", "personal_romano")
- * @returns {Object|null} { base: string, level: number } or null if invalid
+ * Reset investigation - clears all localStorage data
  */
-function parseSkill(skill) {
-  const match = skill.match(/^(.+?)(?:_(\d+))?$/);
-  if (!match) return null;
-  return { base: match[1], level: match[2] ? parseInt(match[2], 10) : 0 };
+function resetInvestigation() {
+  localStorage.removeItem(CHARACTER_PROFILE_KEY);
+  localStorage.removeItem(SCANNED_CLUES_KEY);
 }
 
 /**
  * Check if user has access to a clue based on their skills
+ * Uses OR logic: user needs at least ONE of the required skills
  * @param {Array<string>} requiredSkills - Array of required skills (e.g., ["history_1", "botanical_1", "personal_romano"])
  * @param {Array<string>} userSkills - Array of user's skills
  * @returns {Object} { hasAccess: boolean, missingSkills: Array<string> }
  */
 function checkClueAccess(requiredSkills = [], userSkills = []) {
-  const missingSkills = requiredSkills.filter(required => {
-    const req = parseSkill(required);
-    if (!req) return true;
-    return !userSkills.some(userSkill => {
-      const user = parseSkill(userSkill);
-      return user && user.base === req.base && user.level >= req.level;
-    });
-  });
+  // Use shared hasSkillAccess function from skills.js
+  const hasAccess = window.hasSkillAccess(requiredSkills, userSkills);
+  
+  if (hasAccess) {
+    return { hasAccess: true, missingSkills: [] };
+  }
 
-  return { hasAccess: missingSkills.length === 0, missingSkills };
+  // User doesn't have any of the required skills - return all as missing
+  return { hasAccess: false, missingSkills: requiredSkills };
 }
 
 /**
@@ -100,7 +96,7 @@ function generateNoAccessMessage(missingSkills, clueType, noAccessMessages) {
   // Get skill phrases for missing skills
   const phrases = [];
   for (const skill of missingSkills) {
-    const parsed = parseSkill(skill);
+    const parsed = window.parseSkill(skill);
     if (!parsed) continue;
     
     const skillPhrases = noAccessMessages.skill_phrases[parsed.base];
@@ -132,14 +128,16 @@ function generateNoAccessMessage(missingSkills, clueType, noAccessMessages) {
   
   const wrapper = randomItem(wrappers);
   const requirements = joinWithOr(phrases);
+  const message = wrapper.replace('{requirements}', requirements);
   
-  return wrapper.replace('{requirements}', requirements);
+  return message;
 }
 
 /**
  * Check clue access (pure logic, no DOM manipulation)
- * @param {Object} clueData - Clue data object with skills, type, etc.
- * @returns {Object} { hasAccess: boolean, missingSkills: Array<string>, message?: string }
+ * @param {Object} clueData - Clue data object with skills, type, accessChars (pre-computed), etc.
+ * @param {Object} noAccessMessages - The no_access_messages data structure
+ * @returns {Object} { hasAccess: boolean, missingSkills: Array<string>, message?: string, suggestedCharacters?: Array<string> }
  */
 function checkAccess(clueData, noAccessMessages) {
   if (!clueData) {
@@ -155,6 +153,12 @@ function checkAccess(clueData, noAccessMessages) {
   
   if (!access.hasAccess && noAccessMessages) {
     access.message = generateNoAccessMessage(access.missingSkills, clueData.type, noAccessMessages);
+    
+    // Use pre-computed character list from build time (clueData.accessChars)
+    // This avoids client-side iteration over all characters
+    if (clueData.accessChars && Array.isArray(clueData.accessChars) && clueData.accessChars.length > 0) {
+      access.suggestedCharacters = clueData.accessChars;
+    }
   }
   
   return access;
@@ -163,48 +167,189 @@ function checkAccess(clueData, noAccessMessages) {
 /**
  * Render clue access control in the DOM
  * @param {Object} access - Access check result from checkAccess()
+ * @param {boolean} showLockFirst - If true, show lock even if hasAccess (for animation)
  */
-function renderClueAccess(access) {
+function renderClueAccess(access, showLockFirst = false) {
   const narrationSections = document.querySelectorAll('.clue-narration');
   const contentSections = document.querySelectorAll('.clue-content');
+  const lockSection = document.querySelector('.clue-no-access');
   
-  // Remove any existing no-access messages
-  const existingMessage = document.querySelector('.clue-no-access');
-  if (existingMessage) {
-    existingMessage.remove();
-  }
-  
-  if (access.hasAccess) {
-    // Show all content
+  if (access.hasAccess && !showLockFirst) {
+    // Show all content (already unlocked)
     narrationSections.forEach(section => section.style.display = '');
     contentSections.forEach(section => section.style.display = '');
+    // Hide lock
+    if (lockSection) {
+      lockSection.style.display = 'none';
+    }
   } else {
-    // Hide content
+    // Hide content (either locked or about to unlock)
     narrationSections.forEach(section => section.style.display = 'none');
     contentSections.forEach(section => section.style.display = 'none');
     
-    // Add no-access message if available
-    if (access.message) {
-      const messageSection = document.createElement('section');
-      messageSection.className = 'clue-no-access';
-      messageSection.innerHTML = `<p>${access.message}</p>`;
-      
-      // Insert after header, before any hidden sections
-      const header = document.querySelector('header');
-      if (header && header.parentNode) {
-        header.parentNode.insertBefore(messageSection, header.nextSibling);
-      }
+    // Show and populate lock message if needed
+    if (lockSection && (access.message || showLockFirst)) {
+      const message = access.message || '';
+      const lockHTML = generateLockHTML(message, access.suggestedCharacters);
+      lockSection.innerHTML = lockHTML;
+      lockSection.style.display = '';
+    } else if (lockSection) {
+      lockSection.style.display = 'none';
     }
   }
 }
 
 /**
  * Initialize clue access control on page load
- * @param {Object} clueData - Clue data object with skills, type, etc.
+ * @param {Object} clueData - Clue data object with skills, type, accessChars (pre-computed), etc.
  * @param {Object} noAccessMessages - The no_access_messages data structure
  */
 function initClueAccess(clueData, noAccessMessages) {
   const access = checkAccess(clueData, noAccessMessages);
-  renderClueAccess(access);
+  
+  // Check if this clue was already scanned
+  const scanned = getScannedClues();
+  const wasAlreadyScanned = scanned.all && scanned.all.includes(clueData.id);
+  
+  // If user has access, show content immediately - NO lock animation ever
+  if (access.hasAccess) {
+    renderClueAccess(access, false);
+    
+    // Mark as scanned if not already scanned
+    if (!wasAlreadyScanned) {
+      markClueAsScanned(clueData.id, clueData);
+      
+      // Check if this is a key clue and trigger celebration particles
+      const isKey = clueData.is_key || [];
+      const isKeyClue = Array.isArray(isKey) ? isKey.length > 0 : !!isKey;
+      if (isKeyClue && window.spawnParticles) {
+        window.spawnParticles();
+      }
+    }
+    
+    return access;
+  }
+  
+  // User doesn't have access - show lock (no animation, just locked state)
+  renderClueAccess(access, false);
+  
   return access;
 }
+
+/**
+ * Set character to grandmother (who has all skills)
+ * @param {Array<Object>} charactersData - Characters data array to find grandmother
+ * @returns {Object|null} The stored profile or null if failed
+ */
+function becomeGrandmother(charactersData) {
+  if (!charactersData || !Array.isArray(charactersData)) {
+    console.error('becomeGrandmother requires characters data array');
+    return null;
+  }
+  
+  // Find grandmother character from data
+  const grandmother = charactersData.find(char => char.id === 'grandmother');
+  if (!grandmother || !grandmother.skills) {
+    console.error('Grandmother character not found in characters data');
+    return null;
+  }
+  
+  return storeCharacterProfile('grandmother', grandmother.skills);
+}
+
+/**
+ * Get scanned clues from localStorage
+ * @returns {Object} Scanned clues object with structure: { all: [], quest1: [], quest2: [], ... }
+ */
+function getScannedClues() {
+  try {
+    const scanned = JSON.parse(localStorage.getItem(SCANNED_CLUES_KEY));
+    return scanned || { all: [] };
+  } catch {
+    return { all: [] };
+  }
+}
+
+/**
+ * Save scanned clues to localStorage
+ * @param {Object} scanned - Scanned clues object
+ */
+function saveScannedClues(scanned) {
+  try {
+    localStorage.setItem(SCANNED_CLUES_KEY, JSON.stringify(scanned));
+  } catch (error) {
+    console.error('Failed to save scanned clues:', error);
+  }
+}
+
+/**
+ * Mark a clue as scanned and update localStorage
+ * @param {string} clueId - The clue ID to mark as scanned
+ * @param {Object} clueData - Clue data object with is_key field (array of quest hashtags)
+ * @returns {Object} Updated scanned clues object
+ */
+function markClueAsScanned(clueId, clueData = {}) {
+  if (!clueId) {
+    console.error('Clue ID is required');
+    return null;
+  }
+
+  const scanned = getScannedClues();
+  
+  // Ensure 'all' array exists
+  if (!Array.isArray(scanned.all)) {
+    scanned.all = [];
+  }
+  
+  // Add to 'all' if not already present
+  if (!scanned.all.includes(clueId)) {
+    scanned.all.push(clueId);
+  }
+  
+  // Add to quest-specific arrays based on is_key
+  const isKey = clueData.is_key || [];
+  if (Array.isArray(isKey)) {
+    isKey.forEach(questHashtag => {
+      if (!questHashtag) return;
+      
+      // Initialize quest array if it doesn't exist
+      if (!Array.isArray(scanned[questHashtag])) {
+        scanned[questHashtag] = [];
+      }
+      
+      // Add clue ID if not already present
+      if (!scanned[questHashtag].includes(clueId)) {
+        scanned[questHashtag].push(clueId);
+      }
+    });
+  } else if (isKey) {
+    // Handle case where is_key is a single string (backwards compatibility)
+    const questHashtag = isKey;
+    if (!Array.isArray(scanned[questHashtag])) {
+      scanned[questHashtag] = [];
+    }
+    if (!scanned[questHashtag].includes(clueId)) {
+      scanned[questHashtag].push(clueId);
+    }
+  }
+  
+  saveScannedClues(scanned);
+  return scanned;
+}
+
+// Expose functions to global scope
+// Note: parseSkill, convertSkills, and hasSkillAccess are exposed by skills.js
+window.storeCharacterProfile = storeCharacterProfile;
+window.getCharacterProfile = getCharacterProfile;
+window.clearCharacterProfile = clearCharacterProfile;
+window.resetInvestigation = resetInvestigation;
+window.becomeGrandmother = becomeGrandmother;
+window.checkClueAccess = checkClueAccess;
+window.checkAccess = checkAccess;
+window.renderClueAccess = renderClueAccess;
+window.initClueAccess = initClueAccess;
+window.getScannedClues = getScannedClues;
+window.saveScannedClues = saveScannedClues;
+window.markClueAsScanned = markClueAsScanned;
+
+})();

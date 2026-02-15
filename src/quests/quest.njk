@@ -9,10 +9,11 @@ layout: base
 ---
 <link rel="stylesheet" href="{{ site.baseUrl }}quests/quests.css">
 <link rel="stylesheet" href="{{ site.baseUrl }}refs/refs.css">
-<header>
-  <h1>{{ quest.title }}</h1>
-  {% if quest.subtitle %}<p class="italic">{{ quest.subtitle }}</p>{% endif %}
-</header>
+<main>
+  <header>
+    <h1>{{ quest.title }}</h1>
+    {% if quest.subtitle %}<p class="italic">{{ quest.subtitle }}</p>{% endif %}
+  </header>
 
 {% if quest.objective %}
 <section class="quest-objective">
@@ -176,3 +177,4 @@ layout: base
 </script>
 
 {% include "reference-footer.njk" %}
+</main>

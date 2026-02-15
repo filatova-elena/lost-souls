@@ -1,18 +1,16 @@
 id: grandmother
 title: The Grandmother
 image: assets/images/townperson.png
+is_player: false
 personality: Mysterious elder rumored to be a witch. You've lived in Long Beach for generations and know more than you let on.
 skills:
-  expert:
-  - botanical
-  - spiritual
-  - rumors
-  - medical
-  - legal
-  - history
-  - art
-  basic: []
-  personal:
+  - botanical_2
+  - spiritual_2
+  - rumors_2
+  - medical_2
+  - legal_2
+  - history_2
+  - art_2
   - personal_montrose
   - personal_crane
   - personal_romano

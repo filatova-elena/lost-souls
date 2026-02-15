@@ -7,8 +7,9 @@ pagination:
 permalink: "/characters/{{ character.id }}/index.html"
 layout: base
 ---
-<header>
-  <h1>{{ character.title }}</h1>
+<main>
+  <header>
+    <h1>{{ character.title }}</h1>
   {% if character.image %}
   <div style="text-align: center; margin: 20px 0;">
     <img src="{{ site.baseUrl }}{{ character.image }}" alt="{{ character.title }}" style="max-width: 300px; width: 100%; height: auto; border: 2px solid var(--accent-gold);">
@@ -95,5 +96,31 @@ layout: base
 {% endif %}
 
 <section style="text-align: center; margin-top: 40px;">
-  <a href="{{ site.baseUrl }}" class="button">Begin Investigation as {{ character.title }}</a>
+  <a href="{{ site.baseUrl }}" class="button" id="begin-investigation-btn">Begin Investigation as {{ character.title }}</a>
 </section>
+
+<script>
+(function() {
+  const characterData = {{ character | json | safe }};
+  
+  function handleBeginInvestigation(e) {
+    if (characterData.skills) {
+      storeCharacterProfile(characterData.id, characterData.skills);
+    }
+  }
+  
+  function init() {
+    const button = document.getElementById('begin-investigation-btn');
+    if (button) {
+      button.addEventListener('click', handleBeginInvestigation);
+    }
+  }
+  
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+  })();
+</script>
+</main>

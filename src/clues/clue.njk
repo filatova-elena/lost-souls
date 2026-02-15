@@ -8,10 +8,21 @@ permalink: "/clues/{{ clue.filename }}/index.html"
 layout: base
 ---
 <link rel="stylesheet" href="{{ site.baseUrl }}clues/clues.css">
+<link rel="stylesheet" href="{{ site.baseUrl }}clues/lock.css">
+<link rel="stylesheet" href="{{ site.baseUrl }}clues/progress.css">
+
 <header>
-  <h1>{{ clue.title }}</h1>
-  {% if clue.subtitle %}<p class="clue-subtitle">{{ clue.subtitle }}</p>{% endif %}
+  {% include "clues/progress-tracker.njk" %}
 </header>
+
+<main>
+  <header>
+    <h1>{{ clue.title }}</h1>
+    {% if clue.subtitle %}<p class="clue-subtitle">{{ clue.subtitle }}</p>{% endif %}
+  </header>
+
+  {# Lock message section - will be populated by JavaScript #}
+  <section class="clue-no-access" style="display: none;"></section>
 
 {% if clue.type and 'Vision' in clue.type and clue.narrative %}
 <section class="clue-narration" style="display: none;">
@@ -42,26 +53,12 @@ layout: base
 {% endif %}
 
 <script>
-(function() {
-  // Pass clue data and no_access_messages to JavaScript
-  const clueData = {{ clue | json }};
-  const noAccessMessages = {{ refs.no_access_messages | json }};
+  // Pre-compute which characters have access to this clue (build-time optimization)
+  {% set accessChars = clue.skills | charactersWithAccess(characters) %}
   
-  // Initialize when DOM and deferred scripts are ready
-  function init() {
-    if (typeof initClueAccess === 'function') {
-      initClueAccess(clueData, noAccessMessages);
-    } else {
-      console.warn('initClueAccess function not found. Make sure main.js is loaded.');
-    }
-  }
-  
-  // Deferred scripts execute after DOMContentLoaded, so we can run immediately
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
-    // DOM already loaded, deferred scripts should be ready
-    init();
-  }
-})();
+  // Pass data to JavaScript - all build-time computed
+  window.__clueData = {{ clue | json | safe }};
+  window.__clueData.accessChars = {{ accessChars | json | safe }};
+  window.__noAccessMessages = {{ refs.no_access_messages | json | safe }};
 </script>
+</main>

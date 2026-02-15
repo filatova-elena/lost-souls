@@ -6,102 +6,56 @@ act: act_iii_investigation
 date: 1920-1925
 location: Sebastian's Laboratory and Personal Records
 hashtags:
-  - sebastian_crane
-  - elixir_of_love
-  - the_alchemist
+- sebastian_crane
+- elixir_of_love
+- the_alchemist
+- main_quest
 skills:
-  - botanical_2
+- botanical_2
 is_key:
-  - elixir_of_love
-  - the_alchemist
-content: |-
-  SEBASTIAN CRANE'S ELIXIR OF ETERNAL LOVE
-  Complete Formula Documentation
-
-  ===== BOTANICAL INGREDIENTS =====
-
-  1. DAMIANA (Turnera diffusa)
-     Quantity: 3 parts
-     Source: **Harbor Import & Trading Co.** (from South America)
-     Purpose: Desire, heat, awakening
-     Preparation: Dried leaf extract
-
-  2. VALERIAN ROOT (Valeriana officinalis)
-     Quantity: 2 parts
-     Source: **Harbor Import & Trading Co.**
-     Purpose: Calm, trust, grounding
-     Preparation: Dried root powder
-
-  3. ROSE OTTO (Rosa x damascena)
-     Quantity: 1 drop only
-     Source: **Harbor Import & Trading Co.** (from Milano/Ottoman distillation)
-     Purpose: Venus - transcendence, luxury, romantic intention
-     Preparation: Pure essential oil, highest quality
-
-  4. GINSENG ROOT (Panax ginseng)
-     Quantity: Smallest pinch only
-     Source: **Harbor Import & Trading Co.**
-     Purpose: Binding agent for eternal love, symbolic of vitality and longevity
-     Preparation: Precious dried root
-
-  ===== PHARMACEUTICAL INGREDIENTS =====
-
-  5. POTASSIUM BROMIDE (KBr)
-     Quantity: 10 grains
-     Source: **Pacific Chemical Supply**
-     Purpose: Mild sedative, medical knowledge component
-     Preparation: White crystalline powder
-
-  6. CALCIUM LACTATE (C₆H₁₀CaO₆)
-     Quantity: 5 grains
-     Source: **Western Drug Wholesale**
-     Purpose: Fortifying agent, strength
-     Preparation: Fine white powder
-
-  7. IRON CITRATE (C₆H₅O₇Fe)
-     Quantity: 3 grains
-     Source: **Western Drug Wholesale**
-     Purpose: Blood tonic, vitality
-     Preparation: Reddish-brown powder
-
-  ===== BASE & PRESERVATIVE =====
-
-  8. GRAIN ALCOHOL (95% Ethanol - C₂H₅OH)
-     Quantity: 8 oz
-     Source: **Cal. Medicinal Spirits Co.** (illicit during Prohibition)
-     Purpose: Base and preservative for the elixir
-     Preparation: Clear, high-proof spirit
-
-  ===== FLAVORINGS & SWEETENERS =====
-
-  9. VANILLA EXTRACT
-     Source: **Turner & Sons Provisions**
-     Purpose: Flavor masking, aromatics
-     Preparation: Pure vanilla extract
-
-  10. CHERRY SYRUP
-      Source: **Turner & Sons Provisions**
-      Purpose: Natural sweetener, flavor
-      Preparation: Well-made syrup from tart cherries
-
-  11. HONEY (Pure)
-      Source: **Riverside Apiary**
-      Purpose: Natural sweetener, preservation
-      Preparation: Premium quality honey
-      Quantity: 5 lbs total
-
-  ---
-
-  ## You observe:
-
-  The proportions show **mathematical thinking**, not folk remedy guessing. Three parts damiana and two parts valerian create a base — but damiana excites and awakens, while valerian calms and grounds.
-
-  Ginseng as a "binding agent for eternal love" is not traditional botanical use — it suggests **mystical thinking** rather than botanical science. 
-  
-  **Rose otto's** effects are primarily aromatic and psychological.
-
-  The formula as a whole would create a liquid that tastes pleasant, induces mild relaxation through the bromide and valerian, and leaves the drinker susceptible to suggestion through the powerfully aromatic rose otto. **The effect would be primarily psychological.**
-
-  ## Pharmaceutical Concerns
-
-  Potassium bromide at 10 grains is a standard sedative dosage. Calcium lactate and iron citrate are fortifying agents, nothing dangerous individually. But potassium bromide **interacts with certain plant alkaloids**. If storage failed and concentrations changed, or if someone miscalculated interactions, the 8 ounces of grain alcohol at 95% proof would accelerate degradation of certain compounds.
+- elixir_of_love
+- the_alchemist
+- main_quest
+content: "SEBASTIAN CRANE'S ELIXIR OF ETERNAL LOVE\nComplete Formula Documentation\n\
+  \n===== BOTANICAL INGREDIENTS =====\n\n1. DAMIANA (Turnera diffusa)\n   Quantity:\
+  \ 3 parts\n   Source: **Harbor Import & Trading Co.** (from South America)\n   Purpose:\
+  \ Desire, heat, awakening\n   Preparation: Dried leaf extract\n\n2. VALERIAN ROOT\
+  \ (Valeriana officinalis)\n   Quantity: 2 parts\n   Source: **Harbor Import & Trading\
+  \ Co.**\n   Purpose: Calm, trust, grounding\n   Preparation: Dried root powder\n\
+  \n3. ROSE OTTO (Rosa x damascena)\n   Quantity: 1 drop only\n   Source: **Harbor\
+  \ Import & Trading Co.** (from Milano/Ottoman distillation)\n   Purpose: Venus -\
+  \ transcendence, luxury, romantic intention\n   Preparation: Pure essential oil,\
+  \ highest quality\n\n4. GINSENG ROOT (Panax ginseng)\n   Quantity: Smallest pinch\
+  \ only\n   Source: **Harbor Import & Trading Co.**\n   Purpose: Binding agent for\
+  \ eternal love, symbolic of vitality and longevity\n   Preparation: Precious dried\
+  \ root\n\n===== PHARMACEUTICAL INGREDIENTS =====\n\n5. POTASSIUM BROMIDE (KBr)\n\
+  \   Quantity: 10 grains\n   Source: **Pacific Chemical Supply**\n   Purpose: Mild\
+  \ sedative, medical knowledge component\n   Preparation: White crystalline powder\n\
+  \n6. CALCIUM LACTATE (C₆H₁₀CaO₆)\n   Quantity: 5 grains\n   Source: **Western Drug\
+  \ Wholesale**\n   Purpose: Fortifying agent, strength\n   Preparation: Fine white\
+  \ powder\n\n7. IRON CITRATE (C₆H₅O₇Fe)\n   Quantity: 3 grains\n   Source: **Western\
+  \ Drug Wholesale**\n   Purpose: Blood tonic, vitality\n   Preparation: Reddish-brown\
+  \ powder\n\n===== BASE & PRESERVATIVE =====\n\n8. GRAIN ALCOHOL (95% Ethanol - C₂H₅OH)\n\
+  \   Quantity: 8 oz\n   Source: **Cal. Medicinal Spirits Co.** (illicit during Prohibition)\n\
+  \   Purpose: Base and preservative for the elixir\n   Preparation: Clear, high-proof\
+  \ spirit\n\n===== FLAVORINGS & SWEETENERS =====\n\n9. VANILLA EXTRACT\n   Source:\
+  \ **Turner & Sons Provisions**\n   Purpose: Flavor masking, aromatics\n   Preparation:\
+  \ Pure vanilla extract\n\n10. CHERRY SYRUP\n    Source: **Turner & Sons Provisions**\n\
+  \    Purpose: Natural sweetener, flavor\n    Preparation: Well-made syrup from tart\
+  \ cherries\n\n11. HONEY (Pure)\n    Source: **Riverside Apiary**\n    Purpose: Natural\
+  \ sweetener, preservation\n    Preparation: Premium quality honey\n    Quantity:\
+  \ 5 lbs total\n\n---\n\n## You observe:\n\nThe proportions show **mathematical thinking**,\
+  \ not folk remedy guessing. Three parts damiana and two parts valerian create a\
+  \ base — but damiana excites and awakens, while valerian calms and grounds.\n\n\
+  Ginseng as a \"binding agent for eternal love\" is not traditional botanical use\
+  \ — it suggests **mystical thinking** rather than botanical science. \n\n**Rose\
+  \ otto's** effects are primarily aromatic and psychological.\n\nThe formula as a\
+  \ whole would create a liquid that tastes pleasant, induces mild relaxation through\
+  \ the bromide and valerian, and leaves the drinker susceptible to suggestion through\
+  \ the powerfully aromatic rose otto. **The effect would be primarily psychological.**\n\
+  \n## Pharmaceutical Concerns\n\nPotassium bromide at 10 grains is a standard sedative\
+  \ dosage. Calcium lactate and iron citrate are fortifying agents, nothing dangerous\
+  \ individually. But potassium bromide **interacts with certain plant alkaloids**.\
+  \ If storage failed and concentrations changed, or if someone miscalculated interactions,\
+  \ the 8 ounces of grain alcohol at 95% proof would accelerate degradation of certain\
+  \ compounds."

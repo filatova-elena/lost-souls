@@ -3,11 +3,9 @@ title: The Influencer
 image: assets/images/influencer.png
 personality: Content creator documenting everything. This mystery is perfect for your series—if you can debunk the supernatural.
 skills:
-  expert:
-  - rumors
-  - history
-  basic: []
-  personal: []
+  - rumors_2
+  - history_2
+  - is_character_influencer
 background: |-
   You run a popular series called "**Long Beach Urban Legends & Mysteries**" covering local history, unsolved cases, and supernatural claims (which you approach skeptically). You've done episodes on: The **Haunted Montrose Mansion**—ghostly sightings, rumors of tragedy; The Mysterious **Sullivan Bakery Fire**—suspicious 1990s fire that destroyed a generations-old bakery; The **Romano Treasure** Legend—mob family wealth that supposedly escaped the IRS; Cursed Objects & Fatal Timing—featured your friend the Clockmaker and their mysterious pocket watch; The Vanishing Bride—a wealthy woman who disappeared in 1925 then died mysteriously; Long Beach Harbor Ghosts—bootleggers and smugglers at the Port; The Psychic Sisters—the famous Laveau family and 1920s spiritualism. Your latest research: **Three mysterious deaths in October 1925**. All at the same mansion. All within 11 days. And nobody talks about it. When you heard about this investigation at the Montrose mansion, you knew you had to be here. You brought the Clockmaker (who's obsessed with the timing). You're friends with the Baker (featured their bakery on your food channel). This is going to be your best episode yet.
 objectives:

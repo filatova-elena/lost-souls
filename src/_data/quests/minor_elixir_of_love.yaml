@@ -1,8 +1,9 @@
-id: sebastians_elixir
+id: minor_elixir_of_love
 hashtag: elixir_of_love
 title: Sebastian's Elixir
 emojis: 🧪
 subtitle: Cordelia & Sebastian's Fatal Love (1925)
+objective_short: Sebastian's Elixir
 objective: Discover the truth behind Sebastian's elixir. What were the exact ingredients
   and what was its purpose?
 answer: Sebastian's "Elixir of Eternal Love" was a harmless romantic potion designed
@@ -41,64 +42,3 @@ content: |
   The bitter taste of the foxglove was masked by the honey, vanilla, and cherry syrup Sebastian had included. The daily doses accumulated in Cordelia's system over weeks, slowly poisoning her. When Sebastian tested a concentrated dose on himself on October 7, the acute poisoning killed him within days.
 
   **The Tragic Truth:** Sebastian died believing he had killed the woman he loved. He wrote in his final notebook entry: "I gave her poison thinking it was poetry." He died thinking his Great Work had failed.
-clue_organization:
-  act_i_setting:
-    name: 'Act I: The Setting'
-    purpose: Draw players into the world, establish relationships, set the scene.
-      Botanical entry point.
-    clues:
-    - botanical_herb_106_ginseng
-    - writings_sebastian_34_1925_08_01_cordelia
-    - writings_hartley_27_1925_08_10_second_consultation_refinements_and_questions
-    - writings_sebastian_32_1920_03_15_first_principles
-    - writings_sebastian_35_1925_08_15_refinement_and_urgency
-    - writings_sebastian_37_1925_08_18_the_vessel
-    - vision_cordelia_163_the_elixir
-    - botanical_jar_113_rose_otto
-    - writings_thaddeus_diary_56_1925_08_04_sebastians_foolish_formula
-    - writings_thaddeus_diary_57_1925_08_06_the_bottle
-    key_clue: ginseng_root
-    key_clue_reason: The missing piece that completed the formula. Finding it means
-      the formula is complete, setting up the investigation of what went wrong.
-  act_ii_mystery_emerges:
-    name: 'Act II: The Mystery Emerges'
-    purpose: Introduce the problem, raise questions, begin investigation
-    clues:
-    - writings_elias_21_1925_09_25_something_is_wrong
-    - writings_cordelia_8_1925_10_09_sebastian_is_dying
-    - writings_thaddeus_diary_61_1925_10_09_sebastians_arrival
-    - writings_sebastian_41_1925_10_06_understanding
-    - vision_sebastian_175_poisoned
-    key_clue: sebastian_1925_10_06_understanding
-    key_clue_reason: Sebastian's realization that he's dying triggers the investigation
-      phase. Players now know something is wrong and need to investigate what happened.
-  act_iii_investigation:
-    name: 'Act III: The Investigation'
-    purpose: Provide informational clues, build the case, narrow possibilities
-    clues:
-    - writings_sebastian_42_sebastian_elixir_formula
-    - writings_hartley_26_1925_08_02_initial_inquiry_the_young_pharmacist
-    - writings_hartley_28_1925_08_22_third_consultation_the_final_formula
-    - botanical_herb_104_damiana
-    - botanical_herb_106_ginseng
-    - botanical_jar_113_rose_otto
-    - writings_thaddeus_diary_58_1925_09_01_on_foxglove
-    - writings_thaddeus_notes_71_thaddeus_foxglove_request
-    - writings_sebastian_35_1925_08_15_refinement_and_urgency
-    - writings_thaddeus_antidote_search_46_1925_10_07_initial_assessment
-    - writings_thaddeus_antidote_search_47_1925_10_07_request_for_botanical_consultation
-    - writings_hartley_29_1925_10_15_unusual_visit_the_brother
-    - writings_silas_2_writings_silas_44_1925_10_11_entry
-    key_clue: foxglove_poison
-    key_clue_reason: Foxglove identified as the poison. This reveals what corrupted
-      the formula, unlocking the revelation of who did it and why.
-  act_iv_revelation:
-    name: 'Act IV: The Revelation'
-    purpose: Directly answer the quest objective
-    clues:
-    - botanical_garden_97_foxglove
-    - writings_thaddeus_diary_64_1925_10_10_torn_pages_regret
-    - writings_hartley_30_1925_10_20_reflection_news_of_tragedy
-    - writings_sebastian_41_1925_10_06_understanding
-    key_clue: null
-    key_clue_reason: This is the final act. No further acts to unlock.

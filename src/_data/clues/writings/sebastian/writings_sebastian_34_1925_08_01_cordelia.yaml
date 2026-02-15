@@ -5,13 +5,19 @@ subtitle: August 1, 1925 - Cordelia
 act: act_ii_mystery_emerges
 date: '1925-08-01'
 hashtags:
-  - sebastian_crane
-  - cordelia_montrose
-  - edmund_hartley
-content: |-
-  I saw her. REALLY saw her. At the Montrose garden. She moved through the rosebushes like she WAS a rose—inevitable, perfect.
+- sebastian_crane
+- cordelia_montrose
+- edmund_hartley
+- main_quest
+is_key:
+- main_quest
+content: 'I saw her. REALLY saw her. At the Montrose garden. She moved through the
+  rosebushes like she WAS a rose—inevitable, perfect.
+
 
   All these years of theoretical work—this MEANS something.
 
-  I spoke to Hartley at the university. He confirmed my ingredients are sound. I know what I must do. The ginseng root is the answer—the binding agent. Small pinch only. Enough to SUGGEST eternity.
 
+  I spoke to Hartley at the university. He confirmed my ingredients are sound. I know
+  what I must do. The ginseng root is the answer—the binding agent. Small pinch only.
+  Enough to SUGGEST eternity.'
