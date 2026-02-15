@@ -219,11 +219,34 @@ function initClueAccess(clueData, noAccessMessages) {
     if (!wasAlreadyScanned) {
       markClueAsScanned(clueData.id, clueData);
       
-      // Check if this is a key clue and trigger celebration particles
+      // Check if this is a key clue relevant to current character
       const isKey = clueData.is_key || [];
-      const isKeyClue = Array.isArray(isKey) ? isKey.length > 0 : !!isKey;
-      if (isKeyClue && window.spawnParticles) {
+      const keyHashtags = Array.isArray(isKey) ? isKey : (isKey ? [isKey] : []);
+      
+      // Get current character's quests
+      const characterProfile = getCharacterProfile();
+      const currentCharacterId = characterProfile?.characterId;
+      const progressData = window.__progressData || {};
+      const characterSideQuests = progressData.sideQuests || {};
+      const sideQuestInfo = currentCharacterId ? characterSideQuests[currentCharacterId] : null;
+      const mainQuestHashtag = progressData.mainQuestHashtag || 'main_quest';
+      const sideQuestHashtag = sideQuestInfo?.hashtag;
+      
+      // Find which quest this clue is key for (if any) - only main quest or current character's side quest
+      let newlyFoundQuestHashtag = null;
+      if (keyHashtags.includes(mainQuestHashtag)) {
+        newlyFoundQuestHashtag = mainQuestHashtag;
+      } else if (sideQuestHashtag && keyHashtags.includes(sideQuestHashtag)) {
+        newlyFoundQuestHashtag = sideQuestHashtag;
+      }
+      
+      // If relevant key clue, update tracker with animation and spawn particles
+      if (newlyFoundQuestHashtag && window.renderProgressTracker && window.spawnParticles) {
+        window.renderProgressTracker(newlyFoundQuestHashtag);
         window.spawnParticles();
+      } else if (window.renderProgressTracker) {
+        // Still update tracker even if not a key clue
+        window.renderProgressTracker();
       }
     }
     

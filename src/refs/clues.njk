@@ -46,6 +46,11 @@ permalink: refs/clues/
           {% if clue.id %}<span class="clue-id">{{ clue.id }}</span> | {% endif %}
           <a href="{{ site.baseUrl }}clues/{{ clue.filename }}/" target="_blank">{{ clue.title }}</a>
           <span class="muted type-label"> — {{ clue.type }}</span>
+          {% if clue.is_key %}
+            {% for questHashtag in clue.is_key %}
+              {% if questHashtag %}<span class="key-badge">🔑 {{ questHashtag | replace("_", " ") }}</span>{% endif %}
+            {% endfor %}
+          {% endif %}
         </div>
         {% if clue.hashtags %}
         <div class="clue-item-tags">
