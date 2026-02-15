@@ -3,14 +3,16 @@ layout: base
 title: Quests
 ---
 <link rel="stylesheet" href="{{ site.baseUrl }}quests/quests.css">
-<header>
-  <h1>🎯 Quests</h1>
-</header>
+<main>
+  <header>
+    <h1>🎯 Quests</h1>
+  </header>
 
-<ul>
+  <ul>
   {% for quest in quests %}
     <li>
       <a href="{{ site.baseUrl }}quests/{{ quest.id }}/">{% if quest.emojis %}{{ quest.emojis }} {% endif %}{{ quest.title }}</a> - {% if quest.objective %}<span class="muted">{{ quest.objective }}</span>{% endif %}
     </li>
   {% endfor %}
-</ul>
+  </ul>
+</main>

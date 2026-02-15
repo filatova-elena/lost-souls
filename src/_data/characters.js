@@ -1,7 +1,7 @@
 const path = require('path');
 const loadYamlDir = require('../utils/loadYamlDir');
 
-// __dirname points to src/_data when this file is loaded by Eleventy
+// When Eleventy loads this file, __dirname points to src/_data
 const charactersDir = path.join(__dirname, 'characters');
 const characters = loadYamlDir(charactersDir, false);
 

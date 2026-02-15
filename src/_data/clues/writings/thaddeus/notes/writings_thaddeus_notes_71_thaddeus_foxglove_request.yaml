@@ -6,8 +6,12 @@ date: September 1, 1925
 location: Sebastian's Laboratory
 appearance: Handwritten note on torn paper, faded ink, creased
 hashtags:
-  - thaddeus_crane
-  - sebastian_crane
+- thaddeus_crane
+- sebastian_crane
+- main_quest
 skills:
-  - personal_crane
-content: Sebastian - need more concentrated foxglove extract for my cardiac cases. Can you prepare another batch? - Thaddeus
+- personal_crane
+is_key:
+- main_quest
+content: Sebastian - need more concentrated foxglove extract for my cardiac cases.
+  Can you prepare another batch? - Thaddeus

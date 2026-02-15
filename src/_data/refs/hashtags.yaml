@@ -2,6 +2,11 @@
 # Story Arcs
 # ===========================
 
+main_quest:
+  type: story_arc
+  description: |
+    The Lost Souls Murder Mystery — the complete truth behind three deaths in 1925. Dr. Thaddeus Crane murdered Cordelia Montrose, Sebastian Crane, and Alice Whitmore to protect his secret affair and reputation. The mystery spans from the forbidden romance to the poisoned elixir, the cover-up, and the century-long wait for justice.
+
 secret_baby:
   type: story_arc
   description: |

@@ -1,0 +1,263 @@
+/* ═══════════════════════════════════
+   LOCK ASSEMBLY
+   ═══════════════════════════════════ */
+
+.lock-assembly {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Glow behind lock */
+.lock-glow {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(212, 165, 116, 0.12), transparent 70%);
+    pointer-events: none;
+    animation: lockBreath 3.5s ease-in-out infinite;
+}
+
+@keyframes lockBreath {
+    0%, 100% {
+        opacity: 0.3;
+        transform: translate(-50%, -50%) scale(0.9);
+    }
+    50% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.15);
+    }
+}
+
+/* Shackle — pivots from bottom-right like a real padlock */
+.lock-shackle {
+    width: 32px;
+    height: 20px;
+    border: 3px solid var(--gold-dim);
+    border-bottom: none;
+    border-radius: 16px 16px 0 0;
+    margin-bottom: -2px;
+    position: relative;
+    z-index: 2;
+    transform-origin: 100% 100%;
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.lock-body {
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(160deg, var(--accent-gold), var(--gold-dim));
+    border-radius: 3px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+.keyhole {
+    position: relative;
+    width: 8px;
+    height: 14px;
+}
+
+.keyhole::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--secondary-dark);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.9);
+}
+
+.keyhole::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3.5px;
+    height: 8px;
+    background: var(--secondary-dark);
+    border-radius: 0 0 1.5px 1.5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.9);
+}
+
+
+/* ═══════════════════════════════════
+   UNLOCK ANIMATION — 3 phases
+   1. Shackle pops up, then swings open
+   2. Glow bursts, whole lock fades out
+   3. Section collapses
+   ═══════════════════════════════════ */
+
+/* Phase 1: Shackle lifts up then swings open from right hinge */
+.clue-page.unlocking .lock-shackle,
+main.unlocking .lock-shackle {
+    animation: shackleOpen 0.7s ease-out forwards;
+}
+
+@keyframes shackleOpen {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    35% {
+        transform: translateY(-6px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-6px) rotate(40deg);
+    }
+}
+
+/* Phase 2: Glow burst */
+.clue-page.unlocking .lock-glow,
+main.unlocking .lock-glow {
+    animation: unlockBurst 0.6s 0.5s ease-out forwards;
+}
+
+@keyframes unlockBurst {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(3.5);
+    }
+}
+
+/* Phase 2: Whole lock assembly fades out together */
+.clue-page.unlocking .lock-assembly,
+main.unlocking .lock-assembly {
+    animation: lockFadeOut 0.5s 0.7s ease-out forwards;
+}
+
+@keyframes lockFadeOut {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.85);
+    }
+}
+
+/* Phase 3: Section collapses */
+.clue-page.unlocking .clue-no-access,
+main.unlocking .clue-no-access {
+    animation: sectionCollapse 0.4s 1.1s ease-out forwards;
+}
+
+@keyframes sectionCollapse {
+    to {
+        opacity: 0;
+        max-height: 0;
+        padding: 0;
+        margin: 0;
+        border-width: 0;
+        overflow: hidden;
+    }
+}
+
+/* ── Unlocked Content ── */
+.clue-page.just-unlocked .clue-narration,
+main.just-unlocked .clue-narration {
+    animation: slideReveal 0.6s ease-out both;
+}
+
+.clue-page.just-unlocked .clue-content,
+main.just-unlocked .clue-content {
+    animation: slideReveal 0.6s 0.12s ease-out both;
+}
+
+@keyframes slideReveal {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ── Key Clue Badge ── */
+.key-clue-badge {
+    display: none;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    margin: 0 0 20px 0;
+    background: rgba(212, 165, 116, 0.08);
+    border: 1px solid var(--accent-gold);
+    text-align: center;
+    justify-content: center;
+}
+
+.key-clue-badge.visible {
+    display: flex;
+    animation: badgeAppear 0.5s ease-out both;
+}
+
+@keyframes badgeAppear {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.key-icon {
+    font-size: 14px;
+    line-height: 1;
+}
+
+.key-clue-text {
+    font-family: sans-serif;
+    font-size: 0.65em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent-gold);
+}
+
+.clue-page.is-key-clue,
+main.is-key-clue {
+    border-color: var(--gold-bright);
+    box-shadow: 0 0 25px rgba(212, 165, 116, 0.12), 0 0 50px rgba(212, 165, 116, 0.04);
+}
+
+.key-flash {
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(circle at center, rgba(212, 165, 116, 0.25), transparent 55%);
+    pointer-events: none;
+    z-index: 999;
+    animation: keyFlash 1.2s ease-out forwards;
+}
+
+@keyframes keyFlash {
+    0% {
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

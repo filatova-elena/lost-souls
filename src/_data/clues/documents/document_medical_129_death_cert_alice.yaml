@@ -4,33 +4,19 @@ title: Certificate of Death - Alice Margaret Whitmore
 act: act_ii_mystery_emerges
 date: October 11, 1925
 hashtags:
-  - morticians_silence
-  - alice_whitmore
+- morticians_silence
+- alice_whitmore
+- main_quest
 skills:
-  - medical_1
-  - legal_1
-content: |-
-  **STATE OF CALIFORNIA**
-  **COUNTY OF LOS ANGELES**
-  **CERTIFICATE OF DEATH**
-  
-  **LOCAL FILE NO.:** 1925-0847
-  
-  **FULL NAME OF DECEASED:** Alice Margaret Whitmore  
-  **AGE:** 24 years, 3 months, 7 days  
-  **BIRTHPLACE:** Long Beach, California  
-  **MARITAL STATUS:** Single
-  
-  **DATE OF DEATH:** October 11, 1925  
-  **HOUR OF DEATH:** 14:15
-  
-  **CAUSE OF DEATH:** Accidental Fall  
-  **INJURY:** Fractured skull with intracranial hemorrhage
-  
-  ---
-  
-  **Registered by:** Dr. Thaddeus Crane, M.D.  
-  **Date of Registration:** October 11, 1925
-  
-  [OFFICIAL SEAL]  
-  County Registrar, Los Angeles County
+- medical_1
+- legal_1
+is_key:
+- main_quest
+content: "**STATE OF CALIFORNIA**\n**COUNTY OF LOS ANGELES**\n**CERTIFICATE OF DEATH**\n\
+  \n**LOCAL FILE NO.:** 1925-0847\n\n**FULL NAME OF DECEASED:** Alice Margaret Whitmore\
+  \  \n**AGE:** 24 years, 3 months, 7 days  \n**BIRTHPLACE:** Long Beach, California\
+  \  \n**MARITAL STATUS:** Single\n\n**DATE OF DEATH:** October 11, 1925  \n**HOUR\
+  \ OF DEATH:** 14:15\n\n**CAUSE OF DEATH:** Accidental Fall  \n**INJURY:** Fractured\
+  \ skull with intracranial hemorrhage\n\n---\n\n**Registered by:** Dr. Thaddeus Crane,\
+  \ M.D.  \n**Date of Registration:** October 11, 1925\n\n[OFFICIAL SEAL]  \nCounty\
+  \ Registrar, Los Angeles County"

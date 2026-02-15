@@ -5,21 +5,32 @@ subtitle: October 6, 1925 - Understanding
 act: act_iii_investigation
 date: '1925-10-06'
 hashtags:
-  - sebastian_crane
-  - cordelia_montrose
-  - edmund_hartley
-content: |-
-  [Written in shaky hand]
+- sebastian_crane
+- cordelia_montrose
+- edmund_hartley
+- main_quest
+is_key:
+- main_quest
+content: '[Written in shaky hand]
+
 
   I am dying. And I deserve to be.
 
-  I spent years working on a formula I knew nothing about. Thought I could capture LOVE in liquid form. I, a man who once mixed the wrong ratio of potassium bromide and nearly went blind, could be trusted with Cordelia's wellbeing.
 
-  I did not verify storage conditions. Did not account for temperature fluctuations. I considered this only AFTER my fiancée began showing symptoms.
+  I spent years working on a formula I knew nothing about. Thought I could capture
+  LOVE in liquid form. I, a man who once mixed the wrong ratio of potassium bromide
+  and nearly went blind, could be trusted with Cordelia''s wellbeing.
 
-  I tested on myself—me, the least qualified person to test anything. Should have consulted more with Hartley. Should have been more careful.
+
+  I did not verify storage conditions. Did not account for temperature fluctuations.
+  I considered this only AFTER my fiancée began showing symptoms.
+
+
+  I tested on myself—me, the least qualified person to test anything. Should have
+  consulted more with Hartley. Should have been more careful.
+
 
   And now Cordelia is dying because I was careless. Because I was arrogant.
 
-  I gave her poison thinking it was poetry.
 
+  I gave her poison thinking it was poetry.'

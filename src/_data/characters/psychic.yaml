@@ -3,11 +3,8 @@ title: The Psychic Medium
 image: assets/images/psychic.png
 personality: Spiritualist descended from a legendary psychic. A restless spirit has waited 100 years for you.
 skills:
-  expert:
-  - spiritual
-  basic:
-  - history
-  personal: []
+  - spiritual_2
+  - is_character_psychic
 background: |-
   Your name is **Margo Laveau**, and you carry one of the most famous names in spiritualism. Your great-great-grandmother was **Célestine Laveau**, world-renowned French psychic who came to California during the spiritualism boom of the 1920s. In 1925, a young woman named **Alice Whitmore** came to Célestine seeking help. Alice had psychic abilities herself—visions, premonitions, knowledge of things she shouldn't know. She was frightened, misunderstood by doctors who called her unstable. Célestine recognized Alice's genuine gift and tried to mentor her. Then Alice died. **October 7, 1925**. Officially ruled an accident. But Alice's spirit reached out to Célestine immediately. She was trapped, restless, murdered. She needed help. Célestine tried to give her peace, tried to help her move on, but Alice's spirit remained bound to the place she died—the **Montrose mansion**. For **100 years**, Alice has been waiting. Calling out to the Laveau family. Generation after generation heard her plea but couldn't break through, couldn't help her find peace. You grew up hearing about "the restless spirit in Long Beach." The unfinished business. The young woman who died trying to save her friend. Your family's failure to help her. When the Heiress contacted you about the haunted mansion, you knew immediately: this is Alice. After a century, the time is finally right. You're here to finish what Célestine started.
 objectives:

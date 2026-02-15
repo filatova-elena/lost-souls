@@ -5,25 +5,41 @@ act: act_i_setting
 date: October 1925
 location: Mortuary
 hashtags:
-  - morticians_silence
-  - silas_blackwell
+- morticians_silence
+- silas_blackwell
+- main_quest
 skills:
-  - legal_1
+- legal_1
 is_key:
-  - morticians_silence
-content: |
-  MORTUARY PAYMENT LEDGER
+- morticians_silence
+- main_quest
+content: 'MORTUARY PAYMENT LEDGER
+
 
   Date: October 1925
+
   Amount: $500
+
   Purpose: Discretionary Services
+
   Paid by: [Unsigned - Cash Payment]
+
   Authorized by: [No signature on file]
-  Notes: 'Special arrangement regarding recent examinations. No further documentation required.'
+
+  Notes: ''Special arrangement regarding recent examinations. No further documentation
+  required.''
+
 
   **RECORD STATUS:**
+
   Payment received and recorded
+
   No identifying information regarding payer
+
   No itemized description of services
+
   Payment marked as complete
+
   File closed - no follow-up correspondence
+
+  '

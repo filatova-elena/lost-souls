@@ -1,5 +1,7 @@
 const markdownIt = require("markdown-it");
 const yaml = require("js-yaml");
+const { charactersWithAccess } = require("./src/lib/skills");
+
 const markdownItOptions = {
   html: true,
   breaks: true,
@@ -22,6 +24,11 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/quests/*.css");
   eleventyConfig.addPassthroughCopy("src/clues/*.css");
   eleventyConfig.addPassthroughCopy("src/refs/*.css");
+  
+  // Copy universal skills.js to output js directory
+  eleventyConfig.addPassthroughCopy({
+    "src/lib/skills.js": "js/skills.js"
+  });
 
   // Add filters
   eleventyConfig.addFilter("json", function(value) {
@@ -92,6 +99,19 @@ module.exports = function(eleventyConfig) {
     });
   });
 
+  // Filter items that are marked as key clues for a quest (checks is_key only, not hashtags)
+  eleventyConfig.addFilter("filterKeyClues", function(items, questHashtag) {
+    if (!Array.isArray(items) || !questHashtag) return [];
+    return items.filter(item => {
+      if (!item.is_key) return false;
+      // Handle both array and single value
+      if (Array.isArray(item.is_key)) {
+        return item.is_key.includes(questHashtag);
+      }
+      return item.is_key === questHashtag;
+    });
+  });
+
   // Check if a key is a metadata key (for clue organization template)
   eleventyConfig.addFilter("isMetaKey", function(key) {
     return ["name", "purpose", "constraints", "notes"].includes(key);
@@ -102,6 +122,21 @@ module.exports = function(eleventyConfig) {
     if (!Array.isArray(arr)) return items || [];
     if (!Array.isArray(items)) return arr;
     return arr.concat(items);
+  });
+
+  // Merge objects (for building object structures in templates)
+  eleventyConfig.addFilter("merge", function(obj, addition) {
+    if (!obj || typeof obj !== 'object') return addition || {};
+    if (!addition || typeof addition !== 'object') return obj;
+    return { ...obj, ...addition };
+  });
+
+  // Create an object with a single key-value pair (for dynamic keys in templates)
+  eleventyConfig.addFilter("obj", function(key, value) {
+    if (!key) return {};
+    const result = {};
+    result[key] = value;
+    return result;
   });
 
   // Convert object to array of [key, value] pairs for iteration
@@ -121,6 +156,11 @@ module.exports = function(eleventyConfig) {
     if (t.includes("newspaper")) return "📰";
     return "📝";
   });
+
+  // Pre-compute which characters have access to a clue's required skills
+  // This runs at build time to avoid client-side iteration
+  // Uses shared skills module for single source of truth
+  eleventyConfig.addFilter("charactersWithAccess", charactersWithAccess);
 
   // Add collection for characters
   eleventyConfig.addCollection("characters", function(collectionApi) {

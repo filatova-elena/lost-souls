@@ -5,17 +5,24 @@ subtitle: October 7, 1925 - Initial Assessment
 act: act_iii_investigation
 date: '1925-10-07'
 hashtags:
-  - thaddeus_crane
-  - sebastian_crane
+- thaddeus_crane
+- sebastian_crane
+- main_quest
 skills:
-  - medical_2
-  - botanical_2
-content: |-
-  Sebastian has ingested foxglove derivative. Dosage unknown but acute symptoms present. The compound can be managed with proper intervention. Cardiac glycosides respond to electrolyte management and cardiac support.
+- medical_2
+- botanical_2
+is_key:
+- main_quest
+content: 'Sebastian has ingested foxglove derivative. Dosage unknown but acute symptoms
+  present. The compound can be managed with proper intervention. Cardiac glycosides
+  respond to electrolyte management and cardiac support.
 
-  First approach: Gastric lavage immediately to remove remaining toxin from digestive tract. High-dose potassium supplementation. Strict bed rest with cardiac monitoring.
+
+  First approach: Gastric lavage immediately to remove remaining toxin from digestive
+  tract. High-dose potassium supplementation. Strict bed rest with cardiac monitoring.
+
 
   Second approach: Diuretics to increase urine output and flush toxin from system.
 
-  This is manageable. I have handled toxin cases before. I am managing it.
 
+  This is manageable. I have handled toxin cases before. I am managing it.'

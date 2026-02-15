@@ -1,0 +1,124 @@
+/* ═══════════════════════════════════
+   PROGRESS TRACKER — side by side
+═══════════════════════════════════ */
+.progress-tracker {
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid rgba(212, 165, 116, 0.12);
+  display: flex;
+  gap: 0;
+}
+
+.progress-track {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.progress-track.main {
+  flex: 1;
+  padding-right: 16px;
+}
+
+.progress-track.side {
+  padding-left: 16px;
+  border-left: 1px solid rgba(212, 165, 116, 0.12);
+  flex-shrink: 0;
+}
+
+.progress-track-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.progress-label {
+  font-family: sans-serif;
+  font-size: 0.7em;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.progress-count {
+  font-family: sans-serif;
+  font-size: 0.75em;
+  color: var(--accent-gold);
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.progress-pips {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* ── Diamond Pip ── */
+.pip {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  position: relative;
+  transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.pip svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.pip.empty .diamond-bg {
+  fill: transparent;
+  stroke: rgba(212, 165, 116, 0.4);
+  stroke-width: 1.4;
+}
+
+.pip.empty .keyhole-circle {
+  fill: rgba(212, 165, 116, 0.18);
+}
+
+.pip.empty .keyhole-rect {
+  fill: rgba(212, 165, 116, 0.18);
+}
+
+.pip.filled .diamond-bg {
+  fill: var(--accent-gold);
+  stroke: var(--accent-gold);
+  stroke-width: 0.8;
+}
+
+.pip.filled .keyhole-circle {
+  fill: var(--secondary-dark);
+}
+
+.pip.filled .keyhole-rect {
+  fill: var(--secondary-dark);
+}
+
+.pip.just-found {
+  animation: pipPop 0.7s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes pipPop {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

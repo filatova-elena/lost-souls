@@ -1,13 +1,15 @@
 ---
 layout: base
 title: Clues
+permalink: /clues/index.html
 ---
 <link rel="stylesheet" href="{{ site.baseUrl }}clues/clues.css">
-<header>
-  <h1>🔍 All Clues</h1>
-</header>
+<main>
+  <header>
+    <h1>🔍 All Clues</h1>
+  </header>
 
-<ul>
+  <ul>
   {% for clue in clues %}
     <li>
       <a href="{{ site.baseUrl }}clues/{{ clue.filename }}/">{{ clue.title }}</a>
@@ -15,4 +17,5 @@ title: Clues
       {% if clue.appearance %}<p class="muted" style="margin-top: 4px; margin-bottom: 0;">{{ clue.appearance }}</p>{% endif %}
     </li>
   {% endfor %}
-</ul>
+  </ul>
+</main>

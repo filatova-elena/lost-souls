@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lost Souls — Clue Design Prototype</title>
+  <style>
+    :root {
+      --primary-dark: #0a0a0a;
+      --secondary-dark: #1a1a2e;
+      --accent-gold: #d4a574;
+      --accent-purple: #4a148c;
+      --text-light: #e0e0e0;
+      --gold-bright: #e8be8a;
+      --gold-dim: #9e7a52;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background-color: var(--primary-dark);
+      color: var(--text-light);
+      font-family: Georgia, serif;
+      line-height: 1.6;
+      padding: 10px;
+      font-size: 16px;
+    }
+    @media (min-width: 768px) { body { padding: 20px; } }
+
+    .demo-shell { max-width: 1000px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px; }
+    .demo-header { text-align: center; padding: 15px 0; border-bottom: 1px solid rgba(212,165,116,0.15); }
+    .demo-header h2 { color: var(--accent-gold); font-size: 1em; text-transform: uppercase; letter-spacing: 2px; margin: 0; }
+    .demo-header p { font-family: sans-serif; font-size: 0.8em; opacity: 0.5; margin-top: 6px; }
+    .demo-controls { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
+    .demo-btn {
+      background-color: var(--accent-purple); color: var(--accent-gold);
+      border: 2px solid var(--accent-gold); padding: 8px 18px;
+      font-size: 0.85em; text-transform: uppercase; cursor: pointer;
+      font-family: sans-serif; transition: all 0.2s;
+    }
+    .demo-btn:hover { background-color: var(--accent-gold); color: var(--primary-dark); }
+    .demo-label {
+      text-align: center; font-size: 0.75em; font-family: sans-serif;
+      text-transform: uppercase; letter-spacing: 1.5px; color: var(--gold-dim); opacity: 0.6; margin-top: 10px;
+    }
+
+    .clue-page {
+      max-width: 1000px; margin: 0 auto;
+      background-color: var(--secondary-dark); border: 2px solid var(--accent-gold);
+      padding: 20px; text-align: left; position: relative;
+      transition: border-color 0.5s, box-shadow 0.5s;
+    }
+    @media (min-width: 768px) { .clue-page { padding: 40px; } }
+
+    /* ═══════════════════════════════════
+       PROGRESS — side by side
+    ═══════════════════════════════════ */
+    .progress-tracker {
+      padding-bottom: 16px; margin-bottom: 16px;
+      border-bottom: 1px solid rgba(212,165,116,0.12);
+      display: flex; gap: 0;
+    }
+    .progress-track { display: flex; flex-direction: column; gap: 6px; }
+    .progress-track.main { flex: 1; padding-right: 16px; }
+    .progress-track.side {
+      padding-left: 16px;
+      border-left: 1px solid rgba(212,165,116,0.12);
+      flex-shrink: 0;
+    }
+    .progress-track-header { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+    .progress-label {
+      font-family: sans-serif; font-size: 0.6em;
+      letter-spacing: 1.5px; text-transform: uppercase;
+      color: var(--gold-dim); white-space: nowrap;
+    }
+    .progress-count {
+      font-family: sans-serif; font-size: 0.65em;
+      color: var(--gold-dim); letter-spacing: 0.5px; white-space: nowrap;
+    }
+    .progress-pips { display: flex; gap: 4px; align-items: center; flex-wrap: wrap; }
+
+    /* ── Diamond Pip ── */
+    .pip {
+      width: 22px; height: 22px; flex-shrink: 0; position: relative;
+      transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .pip svg { display: block; width: 100%; height: 100%; }
+    .pip.empty .diamond-bg { fill: transparent; stroke: rgba(212,165,116,0.22); stroke-width: 1.2; }
+    .pip.empty .keyhole-circle { fill: rgba(212,165,116,0.10); }
+    .pip.empty .keyhole-rect { fill: rgba(212,165,116,0.10); }
+    .pip.filled .diamond-bg { fill: var(--accent-gold); stroke: var(--accent-gold); stroke-width: 0.8; }
+    .pip.filled .keyhole-circle { fill: var(--secondary-dark); }
+    .pip.filled .keyhole-rect { fill: var(--secondary-dark); }
+    .pip.just-found { animation: pipPop 0.7s cubic-bezier(0.34, 1.56, 0.64, 1); }
+    @keyframes pipPop {
+      0% { transform: scale(0); opacity: 0; }
+      50% { transform: scale(1.5); }
+      70% { transform: scale(0.9); }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    /* ── Title ── */
+    .clue-page h1 {
+      color: var(--accent-gold); font-size: 1.5em; margin-bottom: 12px;
+      text-transform: uppercase; letter-spacing: 1px;
+      border-bottom: 2px solid var(--accent-gold); padding-bottom: 12px; line-height: 1.3;
+    }
+    @media (min-width: 768px) {
+      .clue-page h1 { font-size: 2.2em; margin-bottom: 15px; letter-spacing: 2px; padding-bottom: 15px; }
+    }
+
+    /* ═══════════════════════════════════
+       LOCKED
+    ═══════════════════════════════════ */
+    .clue-no-access {
+      padding: 30px 20px; background-color: rgba(212,165,116,0.06);
+      border-left: 3px solid var(--accent-gold); margin: 20px 0;
+      text-align: center; overflow: hidden; transition: all 0.5s ease;
+    }
+    .lock-assembly {
+      display: inline-flex; flex-direction: column; align-items: center;
+      margin-bottom: 20px; position: relative;
+    }
+
+    /* Glow behind lock */
+    .lock-glow {
+      position: absolute; width: 90px; height: 90px; top: 50%; left: 50%;
+      transform: translate(-50%,-50%); border-radius: 50%;
+      background: radial-gradient(circle, rgba(212,165,116,0.12), transparent 70%);
+      animation: lockBreath 3.5s ease-in-out infinite; pointer-events: none;
+    }
+    @keyframes lockBreath {
+      0%,100% { opacity: 0.3; transform: translate(-50%,-50%) scale(0.9); }
+      50% { opacity: 1; transform: translate(-50%,-50%) scale(1.15); }
+    }
+
+    /* Shackle — pivots from bottom-right like a real padlock */
+    .lock-shackle {
+      width: 32px; height: 20px;
+      border: 3px solid var(--gold-dim);
+      border-bottom: none;
+      border-radius: 16px 16px 0 0;
+      margin-bottom: -2px;
+      position: relative; z-index: 2;
+      transform-origin: 100% 100%;
+      transition: transform 0.4s cubic-bezier(0.34,1.56,0.64,1);
+    }
+
+    .lock-body {
+      width: 40px; height: 30px;
+      background: linear-gradient(160deg, var(--accent-gold), var(--gold-dim));
+      border-radius: 3px; position: relative; z-index: 2;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.12);
+    }
+    .keyhole { position: relative; width: 8px; height: 14px; }
+    .keyhole::before {
+      content:''; position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+      width: 7px; height: 7px; border-radius: 50%;
+      background: var(--secondary-dark); box-shadow: inset 0 1px 3px rgba(0,0,0,0.9);
+    }
+    .keyhole::after {
+      content:''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
+      width: 3.5px; height: 8px; background: var(--secondary-dark);
+      border-radius: 0 0 1.5px 1.5px; box-shadow: inset 0 1px 3px rgba(0,0,0,0.9);
+    }
+    .clue-no-access p {
+      font-style: italic; color: var(--accent-gold); margin: 0;
+      font-family: Georgia, serif; line-height: 1.7; font-size: 1em; opacity: 0.85;
+    }
+    .locked-seek {
+      display: inline-block; margin-top: 14px; font-family: sans-serif;
+      font-size: 0.7em; letter-spacing: 1.5px; text-transform: uppercase;
+      color: var(--text-light); padding: 5px 14px;
+      border: 1px solid rgba(212,165,116,0.3); background: rgba(212,165,116,0.06); opacity: 0.6;
+    }
+
+    /* ═══════════════════════════════════
+       UNLOCK ANIMATION — 3 phases
+       1. Shackle pops up, then swings open
+       2. Glow bursts, whole lock fades out
+       3. Section collapses
+    ═══════════════════════════════════ */
+
+    /* Phase 1: Shackle lifts up then swings open from right hinge */
+    .clue-page.unlocking .lock-shackle {
+      animation: shackleOpen 0.7s ease-out forwards;
+    }
+    @keyframes shackleOpen {
+      0%   { transform: translateY(0) rotate(0deg); }
+      35%  { transform: translateY(-6px) rotate(0deg); }
+      100% { transform: translateY(-6px) rotate(40deg); }
+    }
+
+    /* Phase 2: Glow burst */
+    .clue-page.unlocking .lock-glow {
+      animation: unlockBurst 0.6s 0.5s ease-out forwards;
+    }
+    @keyframes unlockBurst {
+      0%   { opacity: 1; transform: translate(-50%,-50%) scale(1); }
+      100% { opacity: 0; transform: translate(-50%,-50%) scale(3.5); }
+    }
+
+    /* Phase 2: Whole lock assembly fades out together */
+    .clue-page.unlocking .lock-assembly {
+      animation: lockFadeOut 0.5s 0.7s ease-out forwards;
+    }
+    @keyframes lockFadeOut {
+      0%   { opacity: 1; transform: scale(1); }
+      100% { opacity: 0; transform: scale(0.85); }
+    }
+
+    /* Phase 3: Section collapses */
+    .clue-page.unlocking .clue-no-access {
+      animation: sectionCollapse 0.4s 1.1s ease-out forwards;
+    }
+    @keyframes sectionCollapse {
+      to { opacity: 0; max-height: 0; padding: 0; margin: 0; border-width: 0; overflow: hidden; }
+    }
+
+    /* ── Unlocked Content ── */
+    .clue-narration {
+      margin: 20px 0; padding: 15px 20px;
+      background-color: rgba(212,165,116,0.06); border-left: 3px solid var(--accent-gold);
+      font-style: italic; font-family: Georgia, serif;
+      line-height: 1.7; color: var(--text-light); opacity: 0.9;
+    }
+    .clue-narration p { font-family: Georgia, serif; font-style: italic; margin: 0; }
+    .clue-content { margin: 25px 0; }
+    .clue-content p { margin: 12px 0; font-size: 1em; font-family: sans-serif; line-height: 1.6; }
+    .clue-content strong { color: var(--accent-gold); }
+    .clue-page.just-unlocked .clue-narration { animation: slideReveal 0.6s ease-out both; }
+    .clue-page.just-unlocked .clue-content { animation: slideReveal 0.6s 0.12s ease-out both; }
+    @keyframes slideReveal { from { opacity:0; transform: translateY(10px); } to { opacity:1; transform: translateY(0); } }
+
+    /* ── Key Clue ── */
+    .key-clue-badge {
+      display: none; align-items: center; gap: 8px;
+      padding: 8px 16px; margin: 0 0 20px 0;
+      background: rgba(212,165,116,0.08); border: 1px solid var(--accent-gold);
+      text-align: center; justify-content: center;
+    }
+    .key-clue-badge.visible { display: flex; animation: badgeAppear 0.5s ease-out both; }
+    @keyframes badgeAppear { from { opacity:0; transform: translateY(-5px); } to { opacity:1; transform: translateY(0); } }
+    .key-icon { font-size: 14px; line-height: 1; }
+    .key-clue-text {
+      font-family: sans-serif; font-size: 0.65em;
+      letter-spacing: 2px; text-transform: uppercase; color: var(--accent-gold);
+    }
+    .clue-page.is-key-clue {
+      border-color: var(--gold-bright);
+      box-shadow: 0 0 25px rgba(212,165,116,0.12), 0 0 50px rgba(212,165,116,0.04);
+    }
+    .key-flash {
+      position: fixed; inset: 0;
+      background: radial-gradient(circle at center, rgba(212,165,116,0.25), transparent 55%);
+      pointer-events: none; z-index: 999; animation: keyFlash 1.2s ease-out forwards;
+    }
+    @keyframes keyFlash { 0% { opacity:0; } 15% { opacity:1; } 100% { opacity:0; } }
+    .celebration-container { position: fixed; inset: 0; pointer-events: none; z-index: 1000; overflow: hidden; }
+  </style>
+</head>
+<body>
+
+<div class="demo-shell">
+
+  <div class="demo-header">
+    <h2>Clue Design Prototype</h2>
+    <p>Click buttons to preview states on the interactive card</p>
+  </div>
+
+  <div class="demo-controls">
+    <button class="demo-btn" onclick="showLocked()">Locked</button>
+    <button class="demo-btn" onclick="triggerUnlock(false)">Unlock</button>
+    <button class="demo-btn" onclick="triggerUnlock(true)">Key Clue Unlock</button>
+    <button class="demo-btn" onclick="showUnlocked()">Already Unlocked</button>
+  </div>
+
+  <!-- ── Interactive Card ── -->
+  <div class="demo-label">Interactive · Main quest key clue</div>
+
+  <div class="clue-page" id="clueA">
+    <div class="progress-tracker">
+      <div class="progress-track main">
+        <div class="progress-track-header">
+          <span class="progress-label">Main Quest</span>
+          <span class="progress-count" id="countMain">7 / 20</span>
+        </div>
+        <div class="progress-pips" id="pipsMain"></div>
+      </div>
+      <div class="progress-track side">
+        <div class="progress-track-header">
+          <span class="progress-label">Side Quest</span>
+          <span class="progress-count" id="countSide">1 / 4</span>
+        </div>
+        <div class="progress-pips" id="pipsSide"></div>
+      </div>
+    </div>
+
+    <header><h1>Precious Forked Root Specimen</h1></header>
+
+    <section class="clue-no-access" id="lockA">
+      <div class="lock-assembly">
+        <div class="lock-glow"></div>
+        <div class="lock-shackle"></div>
+        <div class="lock-body"><div class="keyhole"></div></div>
+      </div>
+      <p>The brittle herbs crumble between your fingers, taking their secrets with them. You'd need someone with deep knowledge of plant chemistry.</p>
+      <span class="locked-seek">Seek out Botany Professor</span>
+    </section>
+
+    <section class="clue-narration" id="narrA" style="display:none;">
+      <p>Pale root with distinctive forked, human-like shape, unusual and expensive-looking</p>
+    </section>
+
+    <div class="key-clue-badge" id="badgeA">
+      <span class="key-icon">🗝</span>
+      <span class="key-clue-text">Key Evidence Discovered</span>
+    </div>
+
+    <section class="clue-content" id="contentA" style="display:none;">
+      <p><strong>Ginseng Root [Panax ginseng]</strong>. A pale root with a distinctive forked, human-like shape. Precious, difficult to source, and very expensive — only serious practitioners would seek it out.</p>
+      <p>Prized in Eastern traditions for its mystical binding properties. Whoever sourced this had significant botanical knowledge and went to considerable expense.</p>
+    </section>
+  </div>
+
+  <!-- ── Static: Unlocked ── -->
+  <div class="demo-label">Static · Unlocked regular clue</div>
+
+  <div class="clue-page">
+    <div class="progress-tracker">
+      <div class="progress-track main">
+        <div class="progress-track-header">
+          <span class="progress-label">Main Quest</span>
+          <span class="progress-count" id="countMainB">7 / 20</span>
+        </div>
+        <div class="progress-pips" id="pipsMainB"></div>
+      </div>
+      <div class="progress-track side">
+        <div class="progress-track-header">
+          <span class="progress-label">Side Quest</span>
+          <span class="progress-count" id="countSideB">1 / 4</span>
+        </div>
+        <div class="progress-pips" id="pipsSideB"></div>
+      </div>
+    </div>
+
+    <header><h1>Toby Jug (Top Hat Gentleman)</h1></header>
+
+    <section class="clue-narration">
+      <p>An English ceramic character jug depicting a cheerful gentleman in a top hat with a cane</p>
+    </section>
+
+    <section class="clue-content">
+      <p>An English ceramic character jug depicting a man wearing what appears to be a yellow crown or coronet. Possibly a royal or historical figure — Henry VIII was a popular subject.</p>
+      <p><strong>YOU OBSERVE</strong><br>
+      This piece has the weight and glaze of quality English ceramic. A gift? A purchase? Or something that arrived in someone else's luggage?</p>
+    </section>
+  </div>
+
+  <!-- ── Static: Locked ── -->
+  <div class="demo-label">Static · Locked vision clue</div>
+
+  <div class="clue-page">
+    <div class="progress-tracker">
+      <div class="progress-track main">
+        <div class="progress-track-header">
+          <span class="progress-label">Main Quest</span>
+          <span class="progress-count" id="countMainC">7 / 20</span>
+        </div>
+        <div class="progress-pips" id="pipsMainC"></div>
+      </div>
+      <div class="progress-track side">
+        <div class="progress-track-header">
+          <span class="progress-label">Side Quest</span>
+          <span class="progress-count" id="countSideC">1 / 4</span>
+        </div>
+        <div class="progress-pips" id="pipsSideC"></div>
+      </div>
+    </div>
+
+    <header><h1>Flickering Presence in the East Parlor</h1></header>
+
+    <section class="clue-no-access">
+      <div class="lock-assembly">
+        <div class="lock-glow"></div>
+        <div class="lock-shackle"></div>
+        <div class="lock-body"><div class="keyhole"></div></div>
+      </div>
+      <p>A cold presence washes over you... but the vision won't form. You'd need someone with powerful spiritual gifts.</p>
+      <span class="locked-seek">Seek out the Psychic Medium</span>
+    </section>
+  </div>
+
+</div>
+
+<div class="celebration-container" id="celebrationContainer"></div>
+
+<script>
+  function pipSVG() {
+    return `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <rect class="diamond-bg" x="4" y="4" width="16" height="16" rx="1.8" transform="rotate(45 12 12)"/>
+      <circle class="keyhole-circle" cx="12" cy="10.5" r="2.8"/>
+      <rect class="keyhole-rect" x="10.6" y="11.5" width="2.8" height="4.8" rx="0.8"/>
+    </svg>`;
+  }
+
+  const MAIN_TOTAL = 20, SIDE_TOTAL = 4;
+  let mainFound = 7, sideFound = 1;
+
+  function renderPips(container, countEl, count, total, justIdx) {
+    container.innerHTML = '';
+    for (let i = 0; i < total; i++) {
+      const el = document.createElement('div');
+      el.className = 'pip ' + (i < count ? 'filled' : 'empty');
+      if (i === justIdx) el.classList.add('just-found');
+      el.innerHTML = pipSVG();
+      container.appendChild(el);
+    }
+    countEl.textContent = count + ' / ' + total;
+  }
+
+  function renderAll(mainJust, sideJust) {
+    renderPips(document.getElementById('pipsMain'), document.getElementById('countMain'), mainFound, MAIN_TOTAL, mainJust);
+    renderPips(document.getElementById('pipsSide'), document.getElementById('countSide'), sideFound, SIDE_TOTAL, sideJust);
+    renderPips(document.getElementById('pipsMainB'), document.getElementById('countMainB'), mainFound, MAIN_TOTAL);
+    renderPips(document.getElementById('pipsSideB'), document.getElementById('countSideB'), sideFound, SIDE_TOTAL);
+    renderPips(document.getElementById('pipsMainC'), document.getElementById('countMainC'), mainFound, MAIN_TOTAL);
+    renderPips(document.getElementById('pipsSideC'), document.getElementById('countSideC'), sideFound, SIDE_TOTAL);
+  }
+
+  function showLocked() {
+    const card = document.getElementById('clueA');
+    card.className = 'clue-page';
+    document.getElementById('lockA').style.cssText = '';
+    document.getElementById('narrA').style.display = 'none';
+    document.getElementById('contentA').style.display = 'none';
+    document.getElementById('badgeA').classList.remove('visible');
+    mainFound = 7; sideFound = 1;
+    renderAll();
+  }
+
+  function showUnlocked() {
+    const card = document.getElementById('clueA');
+    card.className = 'clue-page';
+    document.getElementById('lockA').style.display = 'none';
+    document.getElementById('narrA').style.display = '';
+    document.getElementById('contentA').style.display = '';
+    document.getElementById('badgeA').classList.remove('visible');
+    mainFound = 7; sideFound = 1;
+    renderAll();
+  }
+
+  function triggerUnlock(isKey) {
+    showLocked();
+    const card = document.getElementById('clueA');
+    setTimeout(() => { card.classList.add('unlocking'); }, 250);
+    setTimeout(() => {
+      document.getElementById('lockA').style.display = 'none';
+      document.getElementById('narrA').style.display = '';
+      document.getElementById('contentA').style.display = '';
+      card.classList.remove('unlocking');
+      card.classList.add('just-unlocked');
+      if (isKey) {
+        card.classList.add('is-key-clue');
+        document.getElementById('badgeA').classList.add('visible');
+        const flash = document.createElement('div');
+        flash.className = 'key-flash';
+        document.body.appendChild(flash);
+        setTimeout(() => flash.remove(), 1400);
+        spawnParticles();
+        mainFound = Math.min(mainFound + 1, MAIN_TOTAL);
+        renderAll(mainFound - 1);
+      }
+    }, 1500);
+  }
+
+  function spawnParticles() {
+    const c = document.getElementById('celebrationContainer');
+    const colors = ['#d4a574','#e8be8a','#f0d080','#c9a060','#ffe4c4'];
+    for (let i = 0; i < 30; i++) {
+      const el = document.createElement('div');
+      const sz = 3 + Math.random() * 5;
+      const x = 15 + Math.random() * 70;
+      const drift = -40 + Math.random() * 80;
+      const dur = 1400 + Math.random() * 1200;
+      const delay = Math.random() * 500;
+      el.style.cssText = `position:absolute;left:${x}%;top:-5px;width:${sz}px;height:${sz}px;background:${colors[Math.floor(Math.random()*colors.length)]};border-radius:${Math.random()>0.4?'50%':'1px'};pointer-events:none;`;
+      el.animate([
+        { transform:'translateX(0) translateY(0) rotate(0deg)', opacity:1 },
+        { transform:`translateX(${drift}px) translateY(${250+Math.random()*200}px) rotate(${300+Math.random()*400}deg)`, opacity:0 }
+      ],{ duration:dur, delay, easing:'cubic-bezier(0.25,0.46,0.45,0.94)', fill:'forwards' });
+      c.appendChild(el);
+      setTimeout(() => el.remove(), dur+delay+100);
+    }
+  }
+
+  renderAll();
+</script>
+
+</body>
+</html>

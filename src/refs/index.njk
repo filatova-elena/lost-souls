@@ -3,10 +3,11 @@ layout: base
 title: "Reference Hub"
 ---
 <link rel="stylesheet" href="{{ site.baseUrl }}refs/refs.css">
-<header>
-  <h1>📚 Reference Hub</h1>
-  <p class="italic">All reference materials for The Lost Souls of Kennebec Avenue</p>
-</header>
+<main>
+  <header>
+    <h1>📚 Reference Hub</h1>
+    <p class="italic">All reference materials for The Lost Souls of Kennebec Avenue</p>
+  </header>
 
 <section>
   <h2>Reference Pages</h2>
@@ -68,20 +69,16 @@ title: "Reference Hub"
 </section>
 
 {% include "reference-footer.njk" %}
+</main>
 
 <script>
 (function() {
   // When viewing reference materials, you automatically become the grandmother character
   // (who has all skills, giving access to all clues in the reference pages)
+  const characters = {{ characters | json | safe }};
+  
   function init() {
-    if (typeof storeCharacterProfile === 'function') {
-      const grandmother = {{ characters | json }}.find(char => char.id === 'grandmother');
-      if (grandmother && grandmother.skills) {
-        storeCharacterProfile(grandmother.id, grandmother.skills);
-      }
-    } else {
-      console.warn('storeCharacterProfile function not found. Make sure main.js is loaded.');
-    }
+    becomeGrandmother(characters);
   }
   
   if (document.readyState === 'loading') {

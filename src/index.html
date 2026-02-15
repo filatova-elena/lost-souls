@@ -2,12 +2,13 @@
 layout: base
 ---
 <!-- Debug: {{ refs | json }} -->
-<header>
-  <h1>{{ refs.instructions.title }}</h1>
-  <p class="italic">{{ refs.instructions.subtitle }}</p>
-</header>
+<main>
+  <header>
+    <h1>{{ refs.instructions.title }}</h1>
+    <p class="italic">{{ refs.instructions.subtitle }}</p>
+  </header>
 
-<section class="introduction">
+  <section class="introduction">
   <h2>{{ refs.instructions.introduction.heading }}</h2>
   <p class="muted">{{ refs.instructions.introduction.location }}</p>
   
@@ -29,3 +30,38 @@ layout: base
     {% endfor %}
   </ul>
 </section>
+
+<section style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--accent-gold);">
+  <button id="reset-investigation-btn" class="button" style="background-color: var(--secondary-dark); border-color: var(--gold-dim); color: var(--gold-dim);">
+    Reset Investigation
+  </button>
+  <p class="muted" style="margin-top: 10px; font-size: 0.9em;">This will clear all progress and start fresh</p>
+</section>
+
+<script>
+(function() {
+  function handleResetInvestigation(e) {
+    if (confirm('Are you sure you want to reset your investigation? This will clear all progress, scanned clues, and your selected character.')) {
+      if (window.resetInvestigation) {
+        window.resetInvestigation();
+        alert('Investigation reset! The page will reload.');
+        window.location.reload();
+      }
+    }
+  }
+  
+  function init() {
+    const button = document.getElementById('reset-investigation-btn');
+    if (button) {
+      button.addEventListener('click', handleResetInvestigation);
+    }
+  }
+  
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
+</main>

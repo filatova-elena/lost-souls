@@ -245,9 +245,10 @@ skill_phrases:
     - "someone who knows Alice's secrets"
 
   personal_sullivan:
-    - "someone with a Sullivan family bond"
-    - "a connection to Eleanor's heritage"
-    - "someone who shares the Sullivan traditions"
+    - "someone who understands the language of baking"
+    - "a deep knowledge of traditional recipes"
+    - "someone who knows the secrets of family bread-making"
+    - "an understanding of heritage baking traditions"
 
   personal_monroe:
     - "someone who knew Elias Monroe personally"
