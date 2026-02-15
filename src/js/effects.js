@@ -29,8 +29,9 @@ function renderProgressPip(container, isFilled, isJustFound = false) {
  * Render progress tracker with pips for main and side quests
  * Reads progress data from data attributes on the tracker element
  * Filters side quest by current character from localStorage
+ * @param {string} newlyFoundQuestHashtag - Optional quest hashtag for the clue that was just found (for animation)
  */
-function renderProgressTracker() {
+function renderProgressTracker(newlyFoundQuestHashtag = null) {
   const tracker = document.querySelector('[data-progress-tracker]');
   if (!tracker) return;
   
@@ -58,7 +59,9 @@ function renderProgressTracker() {
   const mainTrack = tracker.querySelector('.progress-track.main');
   if (mainTrack) {
     const found = scanned[mainQuestHashtag]?.length || 0;
-    renderQuestProgress(mainTrack, found, mainQuestTotal);
+    // If this quest just had a clue found, animate the last pip
+    const newlyFoundIndex = (newlyFoundQuestHashtag === mainQuestHashtag) ? found - 1 : -1;
+    renderQuestProgress(mainTrack, found, mainQuestTotal, newlyFoundIndex);
   }
   
   // Render side quest progress for current character
@@ -76,7 +79,9 @@ function renderProgressTracker() {
     // Update side track attributes and show it
     sideTrack.setAttribute('data-quest', sideQuestData.hashtag);
     sideTrack.style.display = '';
-    renderQuestProgress(sideTrack, found, sideQuestData.total);
+    // If this quest just had a clue found, animate the last pip
+    const newlyFoundIndex = (newlyFoundQuestHashtag === sideQuestData.hashtag) ? found - 1 : -1;
+    renderQuestProgress(sideTrack, found, sideQuestData.total, newlyFoundIndex);
   } else if (sideTrack) {
     // Hide side quest if no character selected or no side quest for character
     sideTrack.style.display = 'none';
@@ -88,8 +93,9 @@ function renderProgressTracker() {
  * @param {HTMLElement} trackElement - The progress track element
  * @param {number} found - Number of found key clues
  * @param {number} total - Total number of key clues
+ * @param {number} newlyFoundIndex - Index of the pip that was just found (for animation), or -1 if none
  */
-function renderQuestProgress(trackElement, found, total) {
+function renderQuestProgress(trackElement, found, total, newlyFoundIndex = -1) {
   const pipsContainer = trackElement.querySelector('[data-pips]');
   const countElement = trackElement.querySelector('[data-count]');
   
@@ -104,7 +110,8 @@ function renderQuestProgress(trackElement, found, total) {
   // Render pips
   for (let i = 0; i < total; i++) {
     const isFilled = i < found;
-    renderProgressPip(pipsContainer, isFilled, false);
+    const isJustFound = i === newlyFoundIndex;
+    renderProgressPip(pipsContainer, isFilled, isJustFound);
   }
 }
 
