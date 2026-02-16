@@ -3,11 +3,17 @@ type: Vision (Alice)
 title: The Lonely Ghost
 subtitle: Thaddeus Did Nothing
 act: act_iii_investigation
-narrative: A young woman in a pale dress appears seated, posture rigid, hands clasped tightly in her lap. Her expression shifts between heartbreak and barely contained anger.
+narrative: A young woman in a pale dress appears seated, posture rigid, hands clasped
+  tightly in her lap. Her expression shifts between heartbreak and barely contained
+  anger.
 hashtags:
-  - alice_whitmore
-  - thaddeus_crane
-  - doctor_and_patient
+- alice_whitmore
+- thaddeus_crane
+- doctor_and_patient
 skills:
-  - spiritual_2
-content: I tried to tell Thaddeus. He wanted to believe me... I could see it in his eyes. But he just nodded and did nothing. He didn't even try to stop it. He just let it happen. [You feel torn and frustrated, betrayed by someone who should have acted.]
+- spiritual_2
+content: I tried to tell Thaddeus. He wanted to believe me... I could see it in his
+  eyes. But he just nodded and did nothing. He didn't even try to stop it. He just
+  let it happen. [You feel torn and frustrated, betrayed by someone who should have
+  acted.]
+unlock_code: '0247'

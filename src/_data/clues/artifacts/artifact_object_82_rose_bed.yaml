@@ -5,18 +5,22 @@ act: act_iv_revelation
 location: Bembridge House, Garden, Rose Garden Bed by the Aviary
 appearance: Carefully maintained garden bed filled with deep red and white roses
 hashtags:
-  - cordelia_montrose
-  - frankie_romano
-  - romano_treasure
+- cordelia_montrose
+- frankie_romano
+- romano_treasure
 skills:
-  - history_1
-  - botanical_1
-  - personal_romano
+- history_1
+- botanical_1
+- personal_romano
 is_key:
-  - romano_treasure
-content: |
-  A carefully maintained garden bed filled with deep red and white roses.
+- romano_treasure
+content: 'A carefully maintained garden bed filled with deep red and white roses.
+
 
   The rose garden has always been beautiful, but it holds secrets.
 
+
   You notice that the soil has been recently disturbed.
+
+  '
+unlock_code: '0247'

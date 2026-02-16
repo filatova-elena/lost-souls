@@ -3,11 +3,15 @@ type: Vision (Cordelia)
 title: The Heartbroken Ghost
 subtitle: The Elixir
 act: act_ii_mystery_emerges
-narrative: The air shimmers and a vision of ayoung woman materializes, a gentle smile on her face. She cradles something invisible in her hands, her brown eyes warm with love and trust.
+narrative: The air shimmers and a vision of ayoung woman materializes, a gentle smile
+  on her face. She cradles something invisible in her hands, her brown eyes warm with
+  love and trust.
 hashtags:
-  - cordelia_montrose
-  - sebastian_crane
-  - elixir_of_love
+- cordelia_montrose
+- sebastian_crane
+- elixir_of_love
 skills:
-  - spiritual_1
-content: The elixir. Sebastian gave it to me every morning with such tenderness, so devoted, so hopeful. It tasted sweet. [You feel warmth and happiness.]
+- spiritual_1
+content: The elixir. Sebastian gave it to me every morning with such tenderness, so
+  devoted, so hopeful. It tasted sweet. [You feel warmth and happiness.]
+unlock_code: '0267'

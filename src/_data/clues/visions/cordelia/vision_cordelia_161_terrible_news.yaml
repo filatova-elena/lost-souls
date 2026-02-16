@@ -3,10 +3,15 @@ type: Vision (Cordelia)
 title: The Heartbroken Ghost
 subtitle: Terrible News
 act: act_iii_investigation
-narrative: A translucent vision of a young woman appears, seated at the edge of a bed, her shoulders slumped. Her large brown eyes are unfocused, staring at something only she can see.
+narrative: A translucent vision of a young woman appears, seated at the edge of a
+  bed, her shoulders slumped. Her large brown eyes are unfocused, staring at something
+  only she can see.
 hashtags:
-  - cordelia_montrose
-  - sebastian_crane
+- cordelia_montrose
+- sebastian_crane
 skills:
-  - spiritual_1
-content: Days blurred together. I remember Sebastian looking worried. I remember wanting to lie down, just wanting to sleep forever. And then... terrible news came. [Confusion and despair flood through you.]
+- spiritual_1
+content: Days blurred together. I remember Sebastian looking worried. I remember wanting
+  to lie down, just wanting to sleep forever. And then... terrible news came. [Confusion
+  and despair flood through you.]
+unlock_code: '0345'

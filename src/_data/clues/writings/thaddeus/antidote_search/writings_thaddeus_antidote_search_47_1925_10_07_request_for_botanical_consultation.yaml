@@ -5,16 +5,23 @@ subtitle: October 7, 1925 - Request for Botanical Consultation
 act: act_iii_investigation
 date: '1925-10-07'
 hashtags:
-  - thaddeus_crane
-  - edmund_hartley
-content: |-
-  Dear Professor Hartley,
+- thaddeus_crane
+- edmund_hartley
+content: 'Dear Professor Hartley,
 
-  I write regarding a confidential medical matter. A patient has been exposed to concentrated foxglove derivative. I am formulating a counter-treatment and require your expertise on botanical remedies.
 
-  Specifically: Are there plants or compounds known to counteract cardiac distress from digitalis poisoning? Any botanical knowledge that might provide cardiac support would be invaluable.
+  I write regarding a confidential medical matter. A patient has been exposed to concentrated
+  foxglove derivative. I am formulating a counter-treatment and require your expertise
+  on botanical remedies.
+
+
+  Specifically: Are there plants or compounds known to counteract cardiac distress
+  from digitalis poisoning? Any botanical knowledge that might provide cardiac support
+  would be invaluable.
+
 
   Your discretion is appreciated.
 
-  Dr. Thaddeus Crane
 
+  Dr. Thaddeus Crane'
+unlock_code: '2346'

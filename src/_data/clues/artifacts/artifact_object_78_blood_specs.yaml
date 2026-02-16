@@ -3,28 +3,42 @@ type: Artifact (Object)
 title: Silver Candle Holder
 act: act_iv_revelation
 location: The Attic
-appearance: Ornate silver candle holder with intricate decorative patterns, noticeably heavy
+appearance: Ornate silver candle holder with intricate decorative patterns, noticeably
+  heavy
 hashtags:
-  - murder_weapon
-  - silver_candle_holder
-  - doctor_and_patient
-  - thaddeus_crane
-  - alice_whitmore
+- murder_weapon
+- silver_candle_holder
+- doctor_and_patient
+- thaddeus_crane
+- alice_whitmore
 skills:
-  - medical_2
-content: |
-  An ornate silver candle holder with intricate decorative patterns, noticeably heavy and substantial.
+- medical_2
+content: 'An ornate silver candle holder with intricate decorative patterns, noticeably
+  heavy and substantial.
+
 
   ## Blood Evidence
 
-  Upon close examination, **tiny blood splatter is visible on the surface**—red specks that could potentially be tested for **DNA to match against victims**.
+
+  Upon close examination, **tiny blood splatter is visible on the surface**—red specks
+  that could potentially be tested for **DNA to match against victims**.
+
 
   ## Splatter Pattern Analysis
 
+
   The splatter pattern reveals critical forensic details:
+
   - Droplets are **concentrated on one side** and radiate outward
+
   - Indicates the impact came from a **specific direction**
+
 
   ## Weapon Analysis
 
-  The substantial weight of the candle holder, combined with **visible impact marks**, confirms this object could have caused **serious, potentially fatal injury**.
+
+  The substantial weight of the candle holder, combined with **visible impact marks**,
+  confirms this object could have caused **serious, potentially fatal injury**.
+
+  '
+unlock_code: '0157'

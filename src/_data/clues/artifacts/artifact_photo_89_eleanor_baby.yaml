@@ -5,13 +5,17 @@ act: act_i_setting
 location: Found among Elias Monroe's possessions
 appearance: Black and white photograph of infant in formal white christening gown
 hashtags:
-  - secret_baby
-  - eleanor_sullivan
-  - rose_bread_legacy
-  - elias_unrequited_love
+- secret_baby
+- eleanor_sullivan
+- rose_bread_legacy
+- elias_unrequited_love
 skills:
-  - personal_monroe
-content: |
-  A black and white photograph of an infant in formal white christening gown, professionally photographed in expensive studio portraiture.
+- personal_monroe
+content: 'A black and white photograph of an infant in formal white christening gown,
+  professionally photographed in expensive studio portraiture.
+
 
   On the back is written "Eleanor, 1925".
+
+  '
+unlock_code: '1256'

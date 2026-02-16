@@ -5,13 +5,16 @@ subtitle: July 2, 1924 - Alice Whitmore Follow-up
 act: act_i_setting
 date: '1924-07-02'
 hashtags:
-  - thaddeus_crane
-  - alice_whitmore
-  - alice_second_sight
-  - doctor_and_patient
+- thaddeus_crane
+- alice_whitmore
+- alice_second_sight
+- doctor_and_patient
 skills:
-  - personal_crane
-  - spiritual_2
-content: |
-  Sleep improved but irritability continues. Patient describes others' circumstances with uncanny precision. She simply said: 'I listen to what people don't say.' Remarkable insight. Extended consultation beyond protocol.
+- personal_crane
+- spiritual_2
+content: 'Sleep improved but irritability continues. Patient describes others'' circumstances
+  with uncanny precision. She simply said: ''I listen to what people don''t say.''
+  Remarkable insight. Extended consultation beyond protocol.
 
+  '
+unlock_code: '1357'

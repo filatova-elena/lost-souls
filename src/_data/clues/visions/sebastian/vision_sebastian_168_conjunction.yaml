@@ -3,15 +3,20 @@ type: Vision (Sebastian)
 title: The Ghost of the Cursed Alchemist
 subtitle: The Conjunction
 act: act_ii_mystery_emerges
-narrative: A young man appears before you, his dark eyes bright with excitement. His hands move animatedly as he speaks, his whole form radiating joy and wonder.
+narrative: A young man appears before you, his dark eyes bright with excitement. His
+  hands move animatedly as he speaks, his whole form radiating joy and wonder.
 hashtags:
-  - sebastian_crane
-  - cordelia_montrose
-  - pocket_watch_mystery
-  - elixir_of_love
+- sebastian_crane
+- cordelia_montrose
+- pocket_watch_mystery
+- elixir_of_love
 skills:
-  - spiritual_1
+- spiritual_1
 is_key:
-  - elixir_of_love
-  - pocket_watch_mystery
-content: The Jupiter-Venus conjunction! September 4th, 1925. The alignment was perfect, absolutely perfect! I administered the Elixir of Eternal Love that very morning, just as planned. Cordelia drank it willingly. [You feel hope and romantic idealism—the sense of creating something beautiful.]
+- elixir_of_love
+- pocket_watch_mystery
+content: The Jupiter-Venus conjunction! September 4th, 1925. The alignment was perfect,
+  absolutely perfect! I administered the Elixir of Eternal Love that very morning,
+  just as planned. Cordelia drank it willingly. [You feel hope and romantic idealism—the
+  sense of creating something beautiful.]
+unlock_code: '1456'

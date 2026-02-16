@@ -3,10 +3,14 @@ type: Vision (Sebastian)
 title: The Ghost of the Cursed Alchemist
 subtitle: Apology to Cordelia
 act: act_iii_investigation
-narrative: A vision of a young man appears before you, his dark eyes brimming with anguish. He drops to his knees, hands outstretched, his face contorted with guilt.
+narrative: A vision of a young man appears before you, his dark eyes brimming with
+  anguish. He drops to his knees, hands outstretched, his face contorted with guilt.
 hashtags:
-  - sebastian_crane
-  - cordelia_montrose
+- sebastian_crane
+- cordelia_montrose
 skills:
-  - spiritual_2
-content: I'm sorry, Cordelia. I'm so sorry. I never meant to hurt you. I was trying to create something beautiful and instead I created a weapon. Forgive me. Please forgive me before I die. [Desperate pleading mixed with anguish.]
+- spiritual_2
+content: I'm sorry, Cordelia. I'm so sorry. I never meant to hurt you. I was trying
+  to create something beautiful and instead I created a weapon. Forgive me. Please
+  forgive me before I die. [Desperate pleading mixed with anguish.]
+unlock_code: '0126'

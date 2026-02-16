@@ -1,25 +1,43 @@
 id: N133
 type: Newspaper Article
 title: Long Beach Gazette - March 10, 1991
-subtitle: THOMAS REED ARRESTED ON MULTIPLE CHARGES - Long Beach Man Linked to Various Criminal Activities
+subtitle: THOMAS REED ARRESTED ON MULTIPLE CHARGES - Long Beach Man Linked to Various
+  Criminal Activities
 act: act_ii_mystery_emerges
 date: March 10, 1991
 location: Found in newspaper archives
 hashtags:
-  - bakery_fire
-  - thomas_reed
+- bakery_fire
+- thomas_reed
 skills: []
 is_key:
-  - bakery_fire
-content: |-
-  **THOMAS REED**, 69, was arrested yesterday evening at a property in Inland Empire on charges including grand theft, extortion, and property destruction. The Long Beach Police Department declined to detail specific charges, citing ongoing investigation.
+- bakery_fire
+content: '**THOMAS REED**, 69, was arrested yesterday evening at a property in Inland
+  Empire on charges including grand theft, extortion, and property destruction. The
+  Long Beach Police Department declined to detail specific charges, citing ongoing
+  investigation.
 
-  "Mr. Reed has had a long history of criminal activity," Detective William Castellano stated. "We've been monitoring him for some time. When the opportunity arose, we acted."
 
-  Reed's background includes suspected involvement in illegal contracting work, intimidation, and various insurance-related schemes. A **1989 warehouse fire** in the harbor district is being examined in connection with the investigation, though authorities have not confirmed Reed's involvement.
+  "Mr. Reed has had a long history of criminal activity," Detective William Castellano
+  stated. "We''ve been monitoring him for some time. When the opportunity arose, we
+  acted."
 
-  "We're looking at several incidents," Castellano said, "but at this point our focus is on current charges."
 
-  Reed was discovered **living under an assumed name**. His associates remain unknown. The property where he was arrested contained tools, cash, and documentation investigators are still reviewing.
+  Reed''s background includes suspected involvement in illegal contracting work, intimidation,
+  and various insurance-related schemes. A **1989 warehouse fire** in the harbor district
+  is being examined in connection with the investigation, though authorities have
+  not confirmed Reed''s involvement.
 
-  Reed has refused to cooperate with questioning, requesting an attorney immediately upon arrest. The investigation remains ongoing.
+
+  "We''re looking at several incidents," Castellano said, "but at this point our focus
+  is on current charges."
+
+
+  Reed was discovered **living under an assumed name**. His associates remain unknown.
+  The property where he was arrested contained tools, cash, and documentation investigators
+  are still reviewing.
+
+
+  Reed has refused to cooperate with questioning, requesting an attorney immediately
+  upon arrest. The investigation remains ongoing.'
+unlock_code: '4567'

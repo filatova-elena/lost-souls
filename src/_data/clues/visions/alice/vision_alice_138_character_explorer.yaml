@@ -3,12 +3,16 @@ type: Vision (Alice)
 title: The Lonely Ghost
 subtitle: Brother's Return
 act: act_iii_investigation
-narrative: A young woman materializes before you, her expression shifting from confusion to desperate hope. She steps forward, reaching out as if to embrace you.
+narrative: A young woman materializes before you, her expression shifting from confusion
+  to desperate hope. She steps forward, reaching out as if to embrace you.
 hashtags:
-  - alice_whitmore
-  - thomas_whitmore
-  - secret_baby
+- alice_whitmore
+- thomas_whitmore
+- secret_baby
 skills:
-  - is_character_explorer
-content: |
-  Thomas? Brother? You are back from your travels, they said you were lost at sea.
+- is_character_explorer
+content: 'Thomas? Brother? You are back from your travels, they said you were lost
+  at sea.
+
+  '
+unlock_code: '2356'

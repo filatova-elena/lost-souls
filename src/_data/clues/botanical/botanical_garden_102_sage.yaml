@@ -2,9 +2,14 @@ id: BG102
 type: Botanical (Garden Herb)
 title: Sage
 act: act_i_setting
-appearance: Bundled dried herb tied with string, strong aromatic smell, spiritual in appearance
+appearance: Bundled dried herb tied with string, strong aromatic smell, spiritual
+  in appearance
 hashtags:
-  - alice_second_sight
+- alice_second_sight
 skills: []
-content: |
-  **Sage [Salvia officinalis]**. A bundled dried herb tied with string. Strong aromatic smell. Prepared ceremonially — for spiritual cleansing. Found among Alice's things, suggesting her spiritual practices and search for peace.
+content: '**Sage [Salvia officinalis]**. A bundled dried herb tied with string. Strong
+  aromatic smell. Prepared ceremonially — for spiritual cleansing. Found among Alice''s
+  things, suggesting her spiritual practices and search for peace.
+
+  '
+unlock_code: '0267'

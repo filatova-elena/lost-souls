@@ -5,57 +5,49 @@ act: act_ii_mystery_emerges
 date: August-October 1925
 location: Sebastian's Laboratory at Montrose Estate
 hashtags:
-  - elixir_of_love
-  - sebastian_crane
+- elixir_of_love
+- sebastian_crane
 skills:
-  - medical_1
-  - botanical_1
-content: |-
-  **AUGUST 1925 - SUPPLY ORDERS**
-
-  Date       Supplier                          Item                          Qty      Unit Price    Total
-  08/02/25   Cal. Medicinal Spirits Co.       Grain Alcohol (95%)          10 gal    $4.50/gal    $45.00
-  08/05/25   Pacific Chemical Supply          Potassium Bromide            1 lb      $3.50        $3.50
-  08/08/25   Western Drug Wholesale           Calcium Lactate              8 oz      $2.25        $2.25
-  08/08/25   Western Drug Wholesale           Iron Citrate                 8 oz      $2.75        $2.75
-  08/12/25   Harbor Import & Trading Co.      Digitalis (Foxglove)         4 oz      $6.00        $6.00
-  08/12/25   Harbor Import & Trading Co.      Damiana leaf                 2 oz      $3.50        $3.50
-  08/15/25   Harbor Import & Trading Co.      Valerian Root                4 oz      $2.50        $2.50
-  08/18/25   Harbor Import & Trading Co.      Ginseng Root                 1 oz      $8.00        $8.00
-  08/20/25   Crown Essential Oils, Ltd.       Rose Otto oil                1/2 oz    $12.00       $12.00
-  08/22/25   Turner & Sons Provisions         Vanilla Extract              16 oz     $4.50        $4.50
-  08/22/25   Turner & Sons Provisions         Cherry Syrup                 32 oz     $3.00        $3.00
-  08/25/25   Riverside Apiary                 Pure Honey                   5 lbs     $6.50        $6.50
-
-                                                                     AUGUST TOTAL:         $99.50
-
-  SEPTEMBER 1925 - ADDITIONAL ORDERS
-
-  09/01/25   Harbor Import & Trading Co.      Digitalis (Foxglove)         2 oz      $3.00        $3.00
-  09/08/25   Pacific Chemical Supply          Aspirin Tablets (5 gr)       1000      $2.50        $2.50
-  09/15/25   Western Drug Wholesale           Quinine Sulfate              4 oz      $4.75        $4.75
-
-                                                                    SEPTEMBER TOTAL:      $10.25
-
-  OCTOBER 1925 - ADDITIONAL ORDERS
-
-  10/02/25   Turner & Sons Provisions         Castor Oil                   32 oz     $1.50        $1.50
-  10/10/25   Crown Essential Oils, Ltd.       Peppermint Oil               2 oz      $3.25        $3.25
-  10/20/25   Western Drug Wholesale           Epsom Salt (medicinal)       5 lbs     $0.75        $0.75
-
-                                                                     OCTOBER TOTAL:       $5.50
-  SIGNED
-  Sebastian Montgomery Crane, Proprietor
-
-  ---
-
-  **YOU OBSERVE:**
-
-  - **Grain Alcohol (95%)** — 10 gallons is a substantial quantity during Prohibition. This could supply a small speakeasy or suggest someone is running liquor under the guise of medicinal sales.
-
-  - **Digitalis (Foxglove)** appears twice: 4 ounces in August and 2 ounces in September. Digitalis was a common cardiac remedy in the 1920s, but these quantities seem high for a small operation.
-
-  - **Potassium Bromide** was a widely used sedative, but it was also falling out of medical favor by the mid-1920s due to reports of chronic toxicity. An unusual choice for a reputable practitioner.
-
-  - **Damiana leaf** and **Rose Otto oil** together suggest someone was perhaps formulating an aphrodisiac tonic — a popular but disreputable product in this era.
-
+- medical_1
+- botanical_1
+content: "**AUGUST 1925 - SUPPLY ORDERS**\n\nDate       Supplier                 \
+  \         Item                          Qty      Unit Price    Total\n08/02/25 \
+  \  Cal. Medicinal Spirits Co.       Grain Alcohol (95%)          10 gal    $4.50/gal\
+  \    $45.00\n08/05/25   Pacific Chemical Supply          Potassium Bromide     \
+  \       1 lb      $3.50        $3.50\n08/08/25   Western Drug Wholesale        \
+  \   Calcium Lactate              8 oz      $2.25        $2.25\n08/08/25   Western\
+  \ Drug Wholesale           Iron Citrate                 8 oz      $2.75        $2.75\n\
+  08/12/25   Harbor Import & Trading Co.      Digitalis (Foxglove)         4 oz  \
+  \    $6.00        $6.00\n08/12/25   Harbor Import & Trading Co.      Damiana leaf\
+  \                 2 oz      $3.50        $3.50\n08/15/25   Harbor Import & Trading\
+  \ Co.      Valerian Root                4 oz      $2.50        $2.50\n08/18/25 \
+  \  Harbor Import & Trading Co.      Ginseng Root                 1 oz      $8.00\
+  \        $8.00\n08/20/25   Crown Essential Oils, Ltd.       Rose Otto oil      \
+  \          1/2 oz    $12.00       $12.00\n08/22/25   Turner & Sons Provisions  \
+  \       Vanilla Extract              16 oz     $4.50        $4.50\n08/22/25   Turner\
+  \ & Sons Provisions         Cherry Syrup                 32 oz     $3.00       \
+  \ $3.00\n08/25/25   Riverside Apiary                 Pure Honey                \
+  \   5 lbs     $6.50        $6.50\n\n                                           \
+  \                        AUGUST TOTAL:         $99.50\n\nSEPTEMBER 1925 - ADDITIONAL\
+  \ ORDERS\n\n09/01/25   Harbor Import & Trading Co.      Digitalis (Foxglove)   \
+  \      2 oz      $3.00        $3.00\n09/08/25   Pacific Chemical Supply        \
+  \  Aspirin Tablets (5 gr)       1000      $2.50        $2.50\n09/15/25   Western\
+  \ Drug Wholesale           Quinine Sulfate              4 oz      $4.75        $4.75\n\
+  \n                                                                  SEPTEMBER TOTAL:\
+  \      $10.25\n\nOCTOBER 1925 - ADDITIONAL ORDERS\n\n10/02/25   Turner & Sons Provisions\
+  \         Castor Oil                   32 oz     $1.50        $1.50\n10/10/25  \
+  \ Crown Essential Oils, Ltd.       Peppermint Oil               2 oz      $3.25\
+  \        $3.25\n10/20/25   Western Drug Wholesale           Epsom Salt (medicinal)\
+  \       5 lbs     $0.75        $0.75\n\n                                       \
+  \                            OCTOBER TOTAL:       $5.50\nSIGNED\nSebastian Montgomery\
+  \ Crane, Proprietor\n\n---\n\n**YOU OBSERVE:**\n\n- **Grain Alcohol (95%)** — 10\
+  \ gallons is a substantial quantity during Prohibition. This could supply a small\
+  \ speakeasy or suggest someone is running liquor under the guise of medicinal sales.\n\
+  \n- **Digitalis (Foxglove)** appears twice: 4 ounces in August and 2 ounces in September.\
+  \ Digitalis was a common cardiac remedy in the 1920s, but these quantities seem\
+  \ high for a small operation.\n\n- **Potassium Bromide** was a widely used sedative,\
+  \ but it was also falling out of medical favor by the mid-1920s due to reports of\
+  \ chronic toxicity. An unusual choice for a reputable practitioner.\n\n- **Damiana\
+  \ leaf** and **Rose Otto oil** together suggest someone was perhaps formulating\
+  \ an aphrodisiac tonic — a popular but disreputable product in this era."
+unlock_code: '1346'

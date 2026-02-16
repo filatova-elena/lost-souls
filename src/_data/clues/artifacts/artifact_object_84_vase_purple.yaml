@@ -2,19 +2,27 @@ id: AO84
 title: Purple and Gold Decorative Vase
 act: act_iv_revelation
 type: Artifact (Object)
-appearance: Decorative vase made of purple clay with gold accents, standing on ornate wooden stand
+appearance: Decorative vase made of purple clay with gold accents, standing on ornate
+  wooden stand
 location: The Attic
 hashtags:
-  - romano_treasure
-  - frankie_romano
+- romano_treasure
+- frankie_romano
 skills:
-  - art_2
-  - history_2
+- art_2
+- history_2
 is_key:
-  - romano_treasure
-content: |
-  A decorative vase made of purple clay with gold accents, standing on an ornate wooden stand.
+- romano_treasure
+content: 'A decorative vase made of purple clay with gold accents, standing on an
+  ornate wooden stand.
 
-  The craftsmanship suggests **South American origin**, possibly Peruvian or Colombian work from the early 20th century. The hand-thrown purple clay and deliberate gold detailing indicate a skilled artisan.
+
+  The craftsmanship suggests **South American origin**, possibly Peruvian or Colombian
+  work from the early 20th century. The hand-thrown purple clay and deliberate gold
+  detailing indicate a skilled artisan.
+
 
   The kind of object that might **hide something inside**.
+
+  '
+unlock_code: '0457'

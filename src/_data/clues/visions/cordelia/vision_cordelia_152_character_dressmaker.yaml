@@ -3,13 +3,15 @@ type: Vision (Cordelia)
 title: The Heartbroken Ghost
 subtitle: Remembrance
 act: act_i_setting
-narrative: A vision of a young woman appears, her expression softening as she gazes at you. A wistful smile plays across her delicate features.
+narrative: A vision of a young woman appears, her expression softening as she gazes
+  at you. A wistful smile plays across her delicate features.
 hashtags:
-  - elias_unrequited_love
-  - cordelia_montrose
-  - elias_monroe
+- elias_unrequited_love
+- cordelia_montrose
+- elias_monroe
 skills:
-  - spiritual_1
-content: |
-  You remind me of Elias, he used to write me poems....
+- spiritual_1
+content: 'You remind me of Elias, he used to write me poems....
 
+  '
+unlock_code: '0135'

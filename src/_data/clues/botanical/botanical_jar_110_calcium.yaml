@@ -4,11 +4,14 @@ title: Fine White Powder
 act: act_ii_mystery_emerges
 appearance: Fine white powder in jar, very uniform texture, appears chemical or medicinal
 hashtags:
-  - sebastian_crane
-  - elixir_of_love
+- sebastian_crane
+- elixir_of_love
 skills:
-  - medical_1
-  - botanical_2
-content: |
-  **Calcium Lactate [C₆H₁₀CaO₆]**. A fine white powder. Very uniform texture. Appears chemical or medicinal. A pharmaceutical supplement used to improve calcium absorption — common in 1920s health tonics. Particularly valued for women's health.
+- medical_1
+- botanical_2
+content: '**Calcium Lactate [C₆H₁₀CaO₆]**. A fine white powder. Very uniform texture.
+  Appears chemical or medicinal. A pharmaceutical supplement used to improve calcium
+  absorption — common in 1920s health tonics. Particularly valued for women''s health.
 
+  '
+unlock_code: '0124'

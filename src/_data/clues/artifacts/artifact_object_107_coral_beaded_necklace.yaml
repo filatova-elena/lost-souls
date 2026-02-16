@@ -5,13 +5,15 @@ act: act_ii_mystery_emerges
 location: Bembridge House, Upstairs, Jewelry Display Case
 appearance: A multi-strand twisted bead rope necklace in deep coral pink
 hashtags:
-  - romano_treasure
+- romano_treasure
 skills:
-  - history_1
-  - art_1
-  - personal_romano
-content: |
-  A multi-strand twisted bead rope in deep coral pink. Genuine Mediterranean coral was among the most prized materials in Victorian and Edwardian jewelry — harvested from the sea, carved and polished into beads, and strung into elaborate necklaces for wealthy women. Coral was also a major trade commodity in Pacific shipping routes. 
-  
-  **YOU OBSERVE**
-  This necklace could have come from a reputable jeweler. Or it could have come from a Romano cargo hold.
+- history_1
+- art_1
+- personal_romano
+content: "A multi-strand twisted bead rope in deep coral pink. Genuine Mediterranean\
+  \ coral was among the most prized materials in Victorian and Edwardian jewelry —\
+  \ harvested from the sea, carved and polished into beads, and strung into elaborate\
+  \ necklaces for wealthy women. Coral was also a major trade commodity in Pacific\
+  \ shipping routes. \n\n**YOU OBSERVE**\nThis necklace could have come from a reputable\
+  \ jeweler. Or it could have come from a Romano cargo hold.\n"
+unlock_code: '0137'

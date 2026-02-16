@@ -5,19 +5,23 @@ subtitle: August 20, 1925 - For Cordelia (Unsent)
 act: act_ii_mystery_emerges
 date: '1925-08-20'
 hashtags:
-  - elias_unrequited_love
-  - elias_monroe
-  - cordelia_montrose
+- elias_unrequited_love
+- elias_monroe
+- cordelia_montrose
 skills:
-  - personal_monroe
+- personal_monroe
 is_key:
-  - elias_unrequited_love
-content: |-
-  She turns to roses in the garden light,
+- elias_unrequited_love
+content: 'She turns to roses in the garden light,
+
   Not knowing I have fallen into night.
+
   Each word she speaks, I cannot say my own—
+
   So beautiful, and yet forever alone.
 
-  I tell her of the flowers, nothing more.
-  My heart lies shattered on her garden floor.
 
+  I tell her of the flowers, nothing more.
+
+  My heart lies shattered on her garden floor.'
+unlock_code: '0136'

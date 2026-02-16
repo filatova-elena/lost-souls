@@ -3,11 +3,15 @@ type: Vision (Sebastian)
 title: The Ghost of the Cursed Alchemist
 subtitle: On Frankie Romano
 act: act_ii_mystery_emerges
-narrative: A young man materializes, his jaw clenched, his dark eyes flashing with unease. He glances over his shoulder as though expecting trouble.
+narrative: A young man materializes, his jaw clenched, his dark eyes flashing with
+  unease. He glances over his shoulder as though expecting trouble.
 hashtags:
-  - sebastian_crane
-  - frankie_romano
-  - the_alchemist
+- sebastian_crane
+- frankie_romano
+- the_alchemist
 skills:
-  - spiritual_2
-content: Frankie Romano at the docks was tough to deal with. When we argued at the docks that day, I thought he would let it go. But he was so angry, so determined to get what he wanted!
+- spiritual_2
+content: Frankie Romano at the docks was tough to deal with. When we argued at the
+  docks that day, I thought he would let it go. But he was so angry, so determined
+  to get what he wanted!
+unlock_code: '1367'

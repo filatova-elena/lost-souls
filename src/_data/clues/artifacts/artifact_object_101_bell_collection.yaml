@@ -3,9 +3,16 @@ type: Artifact (Object)
 title: Bell Collection
 act: act_i_setting
 location: Bembridge House, Middle Parlor, Display Shelf
-appearance: A small collection of decorative bells — brass, cut crystal, and a figural piece with an ornate handle
+appearance: A small collection of decorative bells — brass, cut crystal, and a figural
+  piece with an ornate handle
 hashtags:
-  - atmospheric
+- atmospheric
 skills: []
-content: |
-  A small collection of bells — brass, cut crystal, and a figural piece with an ornate handle. Bell collecting was a recognized hobby in mid-century America. Like the souvenir spoons elsewhere in the house, each bell likely represents a journey or an occasion. For a musical family, there's something fitting about decorative objects that make sound.
+content: 'A small collection of bells — brass, cut crystal, and a figural piece with
+  an ornate handle. Bell collecting was a recognized hobby in mid-century America.
+  Like the souvenir spoons elsewhere in the house, each bell likely represents a journey
+  or an occasion. For a musical family, there''s something fitting about decorative
+  objects that make sound.
+
+  '
+unlock_code: '0256'

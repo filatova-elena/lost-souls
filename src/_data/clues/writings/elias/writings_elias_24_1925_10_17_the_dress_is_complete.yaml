@@ -6,27 +6,38 @@ act: act_iv_revelation
 date: '1925-10-17'
 location: The Attic
 hashtags:
-  - elias_unrequited_love
-  - elias_monroe
-  - cordelia_montrose
+- elias_unrequited_love
+- elias_monroe
+- cordelia_montrose
 skills:
-  - personal_monroe
-content: |-
-  I finished the wedding dress today.
+- personal_monroe
+content: 'I finished the wedding dress today.
+
 
   Every stitch is a prayer.
+
   Every seam is a memory.
+
   Every button is something I will never be able to give her.
 
-  I pressed it carefully. Wrapped it in tissue. Stored it in the back room where no one goes.
+
+  I pressed it carefully. Wrapped it in tissue. Stored it in the back room where no
+  one goes.
+
 
   She will never wear it now.
 
-  Something is wrong. I can see it in the way she moves, the way she breathes. The dress hangs unworn in the darkness, like a ghost of the future that will never arrive.
+
+  Something is wrong. I can see it in the way she moves, the way she breathes. The
+  dress hangs unworn in the darkness, like a ghost of the future that will never arrive.
+
 
   I will keep it. I will preserve it.
 
-  Maybe someday someone will understand what this dress means. What it meant to make it. What it means to love someone you can never have.
 
-  Maybe keeping it will be enough.
+  Maybe someday someone will understand what this dress means. What it meant to make
+  it. What it means to love someone you can never have.
 
+
+  Maybe keeping it will be enough.'
+unlock_code: '1235'

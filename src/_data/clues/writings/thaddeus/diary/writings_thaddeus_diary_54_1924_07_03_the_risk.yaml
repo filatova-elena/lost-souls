@@ -5,8 +5,10 @@ subtitle: July 3, 1924 - The Risk
 act: act_iii_investigation
 date: '1924-07-03'
 hashtags:
-  - thaddeus_crane
-  - alice_whitmore
-  - doctor_and_patient
-content: The risk is considerable. Alice is unmarried, her reputation precarious. But the risk is also exquisite. To be known, truly known, by someone of her caliber—it justifies everything.
-
+- thaddeus_crane
+- alice_whitmore
+- doctor_and_patient
+content: The risk is considerable. Alice is unmarried, her reputation precarious.
+  But the risk is also exquisite. To be known, truly known, by someone of her caliber—it
+  justifies everything.
+unlock_code: '2467'

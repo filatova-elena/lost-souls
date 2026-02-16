@@ -5,46 +5,71 @@ act: act_iv_revelation
 date: '1991-03-22'
 location: The Attic (DL121, DL182 and DL183 go together)
 hashtags:
-  - eleanor_sullivan
-  - cordelia_montrose
-  - rose_bread_legacy
-  - bakery_fire
+- eleanor_sullivan
+- cordelia_montrose
+- rose_bread_legacy
+- bakery_fire
 skills:
-  - legal_2
+- legal_2
 is_key:
-  - rose_bread_legacy
-content: |-
-  **HARWICK & ASSOCIATES**
+- rose_bread_legacy
+content: '**HARWICK & ASSOCIATES**
+
   **Attorneys-at-Law**
+
   **Long Beach, CA 90802**
 
+
   ---
+
 
   **March 22, 1991**
 
+
   Ms. Victoria Montrose
+
   Long Beach, CA 90803
+
 
   **RE: Montrose Estate — Title Research (Your Ref: January 15, 1991)**
 
+
   Dear Ms. Montrose,
 
-  Per your request, I conducted a records search related to the Montrose estate provenance. Please find enclosed:
 
-  1. Certified birth record, Suffolk County, MA — Eleanor Montrose (b. June 28, 1925). Mother listed as Cordelia Margaret Montrose. Father not recorded.
+  Per your request, I conducted a records search related to the Montrose estate provenance.
+  Please find enclosed:
 
-  2. Adoption records search, Los Angeles County Superior Court — **no petition, decree, or related filing on record** for the above-named individual.
+
+  1. Certified birth record, Suffolk County, MA — Eleanor Montrose (b. June 28, 1925).
+  Mother listed as Cordelia Margaret Montrose. Father not recorded.
+
+
+  2. Adoption records search, Los Angeles County Superior Court — **no petition, decree,
+  or related filing on record** for the above-named individual.
+
 
   3. Adoption records search, Suffolk County, MA — **no records found.**
 
-  4. Archived correspondence from our firm's files (A. Harwick, 1926) referencing private placement of the child with a local family.
 
-  I should note that items 1–3 are certified copies and can be used for any future legal proceedings if needed. Let me know if you'd like to discuss or if there's anything else I can pull together for you.
+  4. Archived correspondence from our firm''s files (A. Harwick, 1926) referencing
+  private placement of the child with a local family.
+
+
+  I should note that items 1–3 are certified copies and can be used for any future
+  legal proceedings if needed. Let me know if you''d like to discuss or if there''s
+  anything else I can pull together for you.
+
 
   Best regards,
 
+
   *Kevin Marsh*
+
   *Paralegal, Harwick & Associates*
 
+
   ---
-  *Enclosures (4)*
+
+  *Enclosures (4)*'
+unlock_code: '2345'

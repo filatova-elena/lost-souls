@@ -52,6 +52,13 @@ layout: base
 </section>
 {% endif %}
 
+{% if clue.unlock_code %}
+<section class="seance-section" style="display: none;">
+  <div class="seance-section-label">Show these symbols to unlock for others</div>
+  <div class="static-ring" data-unlock-code="{{ clue.unlock_code }}"></div>
+</section>
+{% endif %}
+
 <script>
   // Pre-compute which characters have access to this clue (build-time optimization)
   {% set accessChars = clue.skills | charactersWithAccess(characters) %}

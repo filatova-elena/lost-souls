@@ -128,19 +128,250 @@ function joinWithOr(items) {
 }
 
 /**
+ * Symbols for the octogram lock (8 alchemical symbols)
+ */
+const LOCK_SYMBOLS = ['🝪', '🝮', '☿', '🝣', '♀', '♃', '🝭', '🝰'];
+
+/**
+ * Generate SVG ring for octogram lock
+ * @param {number} radius - Radius of the circle
+ * @param {number} nodeRadius - Visual radius of each node
+ * @param {number} numNodes - Number of nodes (8)
+ * @returns {string} SVG string
+ */
+function generateRingSVG(radius, nodeRadius, numNodes) {
+  const area = (radius + nodeRadius + 8) * 2;
+  const cx = area / 2;
+  const cy = area / 2;
+  
+  function nodeAngle(i) {
+    return (i / numNodes) * Math.PI * 2 - Math.PI / 2;
+  }
+  
+  function symPos(i) {
+    const a = nodeAngle(i);
+    return { x: cx + Math.cos(a) * radius, y: cy + Math.sin(a) * radius };
+  }
+  
+  const halfGap = Math.asin(nodeRadius / radius);
+  let svg = `<svg class="ring-svg" width="${area}" height="${area}" viewBox="0 0 ${area} ${area}" fill="none" xmlns="http://www.w3.org/2000/svg">`;
+  
+  // Draw arcs between nodes
+  for (let i = 0; i < numNodes; i++) {
+    const startAngle = nodeAngle(i) + halfGap;
+    const endAngle = nodeAngle((i + 1) % numNodes) - halfGap;
+    const x1 = cx + Math.cos(startAngle) * radius;
+    const y1 = cy + Math.sin(startAngle) * radius;
+    const x2 = cx + Math.cos(endAngle) * radius;
+    const y2 = cy + Math.sin(endAngle) * radius;
+    svg += `<path d="M ${x1} ${y1} A ${radius} ${radius} 0 0 1 ${x2} ${y2}" stroke="rgba(212,165,116,0.15)" stroke-width="1" stroke-linecap="round"/>`;
+  }
+  
+  // Faint octagram
+  const sq1 = [0, 2, 4, 6].map(i => symPos(i));
+  const sq2 = [1, 3, 5, 7].map(i => symPos(i));
+  svg += `<polygon points="${sq1.map(p => p.x + ',' + p.y).join(' ')}" stroke="rgba(212,165,116,0.05)" stroke-width="0.6" fill="none"/>`;
+  svg += `<polygon points="${sq2.map(p => p.x + ',' + p.y).join(' ')}" stroke="rgba(212,165,116,0.05)" stroke-width="0.6" fill="none"/>`;
+  svg += `</svg>`;
+  
+  return svg;
+}
+
+/**
+ * Build interactive octogram lock
+ * @param {HTMLElement} container - Container element
+ * @param {string} unlockCode - 4-digit string like "0257"
+ * @param {Function} onUnlock - Callback when unlocked
+ */
+function buildOctogramLock(container, unlockCode, onUnlock) {
+  const radius = 90;
+  const nodeRadius = 21;
+  const area = (radius + nodeRadius + 8) * 2;
+  const cx = area / 2;
+  const cy = area / 2;
+  const numNodes = 8;
+  const required = 4;
+  
+  // Parse unlock code to set of indices
+  const correctSet = new Set(Array.from(unlockCode).map(Number));
+  
+  container.innerHTML = '';
+  container.style.width = area + 'px';
+  container.style.height = area + 'px';
+  container.style.position = 'relative';
+  
+  // Add ring SVG
+  container.insertAdjacentHTML('beforeend', generateRingSVG(radius, nodeRadius, numNodes));
+  
+  // Add lock center
+  const center = document.createElement('div');
+  center.className = 'lock-center';
+  center.innerHTML = `
+    <div class="lock-glow"></div>
+    <div class="lock-shackle"></div>
+    <div class="lock-body"><div class="keyhole"></div></div>
+  `;
+  container.appendChild(center);
+  
+  // Add hint and result divs to parent (clue-no-access section)
+  const parent = container.parentElement;
+  const hintDiv = document.createElement('div');
+  hintDiv.className = 'selection-hint';
+  parent.appendChild(hintDiv);
+  
+  const resultDiv = document.createElement('div');
+  resultDiv.className = 'lock-result idle';
+  resultDiv.textContent = 'Select the 4 symbols shown by another investigator';
+  parent.appendChild(resultDiv);
+  
+  // Add symbol nodes
+  const selected = new Set();
+  let unlocked = false;
+  
+  function nodeAngle(i) {
+    return (i / numNodes) * Math.PI * 2 - Math.PI / 2;
+  }
+  
+  function symPos(i) {
+    const a = nodeAngle(i);
+    return { x: cx + Math.cos(a) * radius, y: cy + Math.sin(a) * radius };
+  }
+  
+  function updateHint() {
+    hintDiv.innerHTML = `<strong>${selected.size}</strong> of ${required} selected`;
+  }
+  
+  function checkSelection() {
+    if (unlocked) return;
+    
+    const correct = selected.size === correctSet.size && 
+                    Array.from(selected).every(i => correctSet.has(i));
+    
+    if (correct) {
+      unlocked = true;
+      resultDiv.className = 'lock-result success';
+      resultDiv.textContent = '✓ The symbols align';
+      setTimeout(() => {
+        if (onUnlock) onUnlock();
+      }, 700);
+    } else {
+      resultDiv.className = 'lock-result fail';
+      resultDiv.textContent = '✗ The circle remains silent';
+      setTimeout(() => {
+        selected.clear();
+        updateHint();
+        container.querySelectorAll('.sym-node').forEach(node => {
+          node.classList.remove('selected');
+          node.style.borderColor = '';
+          node.style.boxShadow = '';
+        });
+        resultDiv.className = 'lock-result idle';
+        resultDiv.textContent = 'Select the 4 symbols shown by another investigator';
+      }, 900);
+    }
+  }
+  
+  for (let i = 0; i < numNodes; i++) {
+    const pos = symPos(i);
+    const node = document.createElement('div');
+    node.className = 'sym-node';
+    node.textContent = LOCK_SYMBOLS[i];
+    node.style.position = 'absolute';
+    node.style.left = pos.x + 'px';
+    node.style.top = pos.y + 'px';
+    node.style.transform = 'translate(-50%, -50%)';
+    node.dataset.idx = i;
+    
+    node.addEventListener('click', () => {
+      if (unlocked) return;
+      
+      const idx = parseInt(node.dataset.idx);
+      if (selected.has(idx)) {
+        selected.delete(idx);
+        node.classList.remove('selected');
+      } else if (selected.size < required) {
+        selected.add(idx);
+        node.classList.add('selected');
+        if (selected.size === required) {
+          setTimeout(checkSelection, 350);
+        }
+      }
+      updateHint();
+    });
+    
+    container.appendChild(node);
+  }
+  
+  updateHint();
+}
+
+/**
+ * Build static ring (for unlocked clues to show which symbols to share)
+ * @param {HTMLElement} container - Container element
+ * @param {string} unlockCode - 4-digit string like "0257"
+ */
+function buildStaticRing(container, unlockCode) {
+  const radius = 90;
+  const nodeRadius = 21;
+  const area = (radius + nodeRadius + 8) * 2;
+  const cx = area / 2;
+  const cy = area / 2;
+  const numNodes = 8;
+  
+  const correctSet = new Set(Array.from(unlockCode).map(Number));
+  
+  container.innerHTML = '';
+  container.style.width = area + 'px';
+  container.style.height = area + 'px';
+  container.style.position = 'relative';
+  
+  container.insertAdjacentHTML('beforeend', generateRingSVG(radius, nodeRadius, numNodes));
+  
+  function nodeAngle(i) {
+    return (i / numNodes) * Math.PI * 2 - Math.PI / 2;
+  }
+  
+  function symPos(i) {
+    const a = nodeAngle(i);
+    return { x: cx + Math.cos(a) * radius, y: cy + Math.sin(a) * radius };
+  }
+  
+  for (let i = 0; i < numNodes; i++) {
+    const pos = symPos(i);
+    const node = document.createElement('div');
+    node.className = 'sym-node' + (correctSet.has(i) ? ' in-path' : '');
+    node.textContent = LOCK_SYMBOLS[i];
+    node.style.position = 'absolute';
+    node.style.left = pos.x + 'px';
+    node.style.top = pos.y + 'px';
+    node.style.transform = 'translate(-50%, -50%)';
+    container.appendChild(node);
+  }
+}
+
+/**
  * Generate lock HTML structure
  * @param {string} message - The lock message
  * @param {Array<string>} suggestedCharacters - Optional array of suggested character names
+ * @param {string} unlockCode - Optional unlock code for shared clues
  * @returns {string} HTML string for the lock
  */
-function generateLockHTML(message, suggestedCharacters = null) {
-  let lockHTML = `
-    <div class="lock-assembly">
-      <div class="lock-glow"></div>
-      <div class="lock-shackle"></div>
-      <div class="lock-body"><div class="keyhole"></div></div>
-    </div>
-  `;
+function generateLockHTML(message, suggestedCharacters = null, unlockCode = null) {
+  let lockHTML = '';
+  
+  // If unlock code exists, use octogram lock
+  if (unlockCode) {
+    lockHTML = `<div class="octogram-lock" data-unlock-code="${unlockCode}"></div>`;
+  } else {
+    // Standard lock
+    lockHTML = `
+      <div class="lock-assembly">
+        <div class="lock-glow"></div>
+        <div class="lock-shackle"></div>
+        <div class="lock-body"><div class="keyhole"></div></div>
+      </div>
+    `;
+  }
   
   if (message) {
     lockHTML += `<p>${message}</p>`;
@@ -211,6 +442,19 @@ function triggerUnlockAnimation(cluePage, lockSection, isKeyClue = false) {
     narrationSections.forEach(section => section.style.display = '');
     contentSections.forEach(section => section.style.display = '');
     
+    // Show static ring if unlock_code exists
+    const clueData = window.__clueData || {};
+    if (clueData.unlock_code && window.buildStaticRing) {
+      const staticRing = cluePage.querySelector('.static-ring[data-unlock-code]');
+      if (staticRing) {
+        const seanceSection = staticRing.closest('.seance-section');
+        if (seanceSection) {
+          seanceSection.style.display = '';
+          window.buildStaticRing(staticRing, clueData.unlock_code);
+        }
+      }
+    }
+    
     // Add just-unlocked class to trigger CSS reveal animation
     // Use requestAnimationFrame to ensure display change is applied first
     requestAnimationFrame(() => {
@@ -236,6 +480,62 @@ function triggerUnlockAnimation(cluePage, lockSection, isKeyClue = false) {
   }, 1500); // Total animation duration (matches CSS timing)
 }
 
+/**
+ * Initialize octogram lock if present
+ */
+function initOctogramLock() {
+  const lockContainer = document.querySelector('.octogram-lock[data-unlock-code]');
+  if (!lockContainer) return;
+  
+  const unlockCode = lockContainer.getAttribute('data-unlock-code');
+  if (!unlockCode || unlockCode.length !== 4) return;
+  
+  const cluePage = lockContainer.closest('main') || lockContainer.closest('.clue-page');
+  const lockSection = lockContainer.closest('.clue-no-access');
+  
+  buildOctogramLock(lockContainer, unlockCode, () => {
+    if (cluePage && lockSection) {
+      const clueData = window.__clueData || {};
+      const isKeyClue = clueData.is_key && (Array.isArray(clueData.is_key) ? clueData.is_key.length > 0 : !!clueData.is_key);
+      
+      // Mark clue as scanned when unlocked via octogram
+      if (window.markClueAsScanned && clueData.id) {
+        window.markClueAsScanned(clueData.id, clueData);
+        
+        // Update progress tracker if key clue
+        if (isKeyClue && window.renderProgressTracker) {
+          const progressData = window.__progressData || {};
+          const characterProfile = window.getCharacterProfile ? window.getCharacterProfile() : null;
+          const currentCharacterId = characterProfile?.characterId;
+          const characterSideQuests = progressData.sideQuests || {};
+          const sideQuestInfo = currentCharacterId ? characterSideQuests[currentCharacterId] : null;
+          const mainQuestHashtag = progressData.mainQuestHashtag || 'main_quest';
+          const sideQuestHashtag = sideQuestInfo?.hashtag;
+          
+          const keyHashtags = Array.isArray(clueData.is_key) ? clueData.is_key : (clueData.is_key ? [clueData.is_key] : []);
+          let newlyFoundQuestHashtag = null;
+          if (keyHashtags.includes(mainQuestHashtag)) {
+            newlyFoundQuestHashtag = mainQuestHashtag;
+          } else if (sideQuestHashtag && keyHashtags.includes(sideQuestHashtag)) {
+            newlyFoundQuestHashtag = sideQuestHashtag;
+          }
+          
+          if (newlyFoundQuestHashtag) {
+            window.renderProgressTracker(newlyFoundQuestHashtag);
+            window.spawnParticles();
+          } else {
+            window.renderProgressTracker();
+          }
+        } else if (window.renderProgressTracker) {
+          window.renderProgressTracker();
+        }
+      }
+      
+      triggerUnlockAnimation(cluePage, lockSection, isKeyClue);
+    }
+  });
+}
+
 // Expose to global scope
 window.pipSVG = pipSVG;
 window.renderProgressPip = renderProgressPip;
@@ -243,5 +543,14 @@ window.renderProgressTracker = renderProgressTracker;
 window.generateLockHTML = generateLockHTML;
 window.triggerUnlockAnimation = triggerUnlockAnimation;
 window.spawnParticles = spawnParticles;
+window.buildOctogramLock = buildOctogramLock;
+window.buildStaticRing = buildStaticRing;
+
+// Initialize octogram locks on DOM ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initOctogramLock);
+} else {
+  initOctogramLock();
+}
 
 })();

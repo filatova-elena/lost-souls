@@ -5,19 +5,31 @@ act: act_iv_revelation
 location: Bembridge House, Garden
 appearance: An octagonal tower with a "witch's cap" roof, housing colorful parakeets
 hashtags:
-  - romano_treasure
+- romano_treasure
 skills:
-  - personal_romano
-  - history_2
+- personal_romano
+- history_2
 is_key:
-  - romano_treasure
-content: |
-  The octagonal aviary was built by the mansion's original owner, a wealthy banker who collected exotic birds. It was considered trendy in the early 1900s to keep exotic birds, so the original owners built the aviary for their collection. It is described as an octagonal tower with a "witch's cap" roof. It now houses several parakeets.
+- romano_treasure
+content: 'The octagonal aviary was built by the mansion''s original owner, a wealthy
+  banker who collected exotic birds. It was considered trendy in the early 1900s to
+  keep exotic birds, so the original owners built the aviary for their collection.
+  It is described as an octagonal tower with a "witch''s cap" roof. It now houses
+  several parakeets.
+
 
   Among the current residents:
 
-  **Colonel DRAKE** — named for Colonel Charles Drake. The Colonel keeps his watch, overseeing the garden with a steady eye.
+
+  **Colonel DRAKE** — named for Colonel Charles Drake. The Colonel keeps his watch,
+  overseeing the garden with a steady eye.
+
 
   **YOU OBSERVE**
 
-  In your head you hear an echo of the words you've heard before: "Let my mark be your guide and **the Colonel** your trusted ally."
+
+  In your head you hear an echo of the words you''ve heard before: "Let my mark be
+  your guide and **the Colonel** your trusted ally."
+
+  '
+unlock_code: '0347'

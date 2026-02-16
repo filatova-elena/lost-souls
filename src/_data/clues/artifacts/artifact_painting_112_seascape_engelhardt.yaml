@@ -6,25 +6,40 @@ date: '1962-03-12'
 location: Bembridge House, Parlor
 appearance: A bold seascape of waves crashing against rocks
 hashtags:
-  - frankie_romano
-  - romano_treasure
+- frankie_romano
+- romano_treasure
 skills:
-  - personal_romano
+- personal_romano
 is_key:
-  - romano_treasure
-content: |-
-  **SEASCAPE**
+- romano_treasure
+content: '**SEASCAPE**
+
   Oil on canvas, signed and labeled
+
   Walter Engelhardt (1893–1956)
 
-  A bold seascape of waves crashing against rocks by **Walter Albert Engelhardt**, known for using a bright palette to create bold, decorative scenes of Southern California and its deserts. The early 20th century was a booming period for California landscape paintings. These vibrant, "Free Classic" and Impressionist-influenced works were popular among affluent Southern California families who wanted to showcase the unique beauty of their home state.
+
+  A bold seascape of waves crashing against rocks by **Walter Albert Engelhardt**,
+  known for using a bright palette to create bold, decorative scenes of Southern California
+  and its deserts. The early 20th century was a booming period for California landscape
+  paintings. These vibrant, "Free Classic" and Impressionist-influenced works were
+  popular among affluent Southern California families who wanted to showcase the unique
+  beauty of their home state.
+
 
   ---
+
   **YOU OBSERVE**
 
-  AS YOU LOOK CLOSELY AT THE CANVAS, you notice a piece of paper, weathered and folded, wedged into the frame.
+
+  AS YOU LOOK CLOSELY AT THE CANVAS, you notice a piece of paper, weathered and folded,
+  wedged into the frame.
+
 
   It reads:
 
-  *Four. **The boats know our secrets**. Where the water runs deep between the islands, where a man can anchor without being seen, where the tide rises and falls by the moon's hand—there we have placed what cannot be traced.* 
 
+  *Four. **The boats know our secrets**. Where the water runs deep between the islands,
+  where a man can anchor without being seen, where the tide rises and falls by the
+  moon''s hand—there we have placed what cannot be traced.* '
+unlock_code: '3567'

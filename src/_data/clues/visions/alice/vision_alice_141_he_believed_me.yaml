@@ -3,11 +3,15 @@ type: Vision (Alice)
 title: The Lonely Ghost
 subtitle: He Believed Me
 act: act_iii_investigation
-narrative: The ghost appears crumpled against on the floor, her pale dress pooled around her. She looks up with reddened eyes, her voice already breaking.
+narrative: The ghost appears crumpled against on the floor, her pale dress pooled
+  around her. She looks up with reddened eyes, her voice already breaking.
 hashtags:
-  - alice_whitmore
-  - thaddeus_crane
-  - doctor_and_patient
+- alice_whitmore
+- thaddeus_crane
+- doctor_and_patient
 skills:
-  - spiritual_1
-content: They called me unstable. Hysterical. Delusional. All but Thaddeus—he believed me! He SAW me, truly saw me! He believed me when no one else would... [audible sobbing] [Tears prick your eyes. Someone loved someone deeply but couldn't save them.]
+- spiritual_1
+content: They called me unstable. Hysterical. Delusional. All but Thaddeus—he believed
+  me! He SAW me, truly saw me! He believed me when no one else would... [audible sobbing]
+  [Tears prick your eyes. Someone loved someone deeply but couldn't save them.]
+unlock_code: '0124'

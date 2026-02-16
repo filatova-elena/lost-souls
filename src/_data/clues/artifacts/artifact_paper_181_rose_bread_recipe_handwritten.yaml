@@ -3,34 +3,53 @@ type: Artifact (Paper)
 title: Handwritten Rose Bread Recipe
 act: act_i_setting
 location: The Bakery
-appearance: Faded handwritten recipe on aged paper, written in careful but unpolished script
+appearance: Faded handwritten recipe on aged paper, written in careful but unpolished
+  script
 hashtags:
-  - rose_bread_legacy
-  - eleanor_sullivan
-  - cordelia_montrose
+- rose_bread_legacy
+- eleanor_sullivan
+- cordelia_montrose
 skills:
-  - personal_sullivan
-content: |-
-  **Rose Bread**
+- personal_sullivan
+content: '**Rose Bread**
+
 
   500g bread flour
+
   350ml warm water (bath temp!!)
+
   7g yeast
+
   10g salt
+
   15g honey
+
   30ml olive oil
+
   1/4 tsp rose water — NOT MORE. seriously.
+
   2 tbsp dried rose petals, ground fine
 
+
   Mix everything except rose water + petals.
+
   Knead ~10 min til windowpane.
+
   Rise 1-2 hrs.
+
   Fold in rose water & petals — gentle!!
+
   Long rise 4-6 hrs (or fridge overnight — better flavor)
+
   Shape round. Final rise 2-3 hrs.
+
   450° — 35-40 min.
+
   Honey glaze last 5 min.
 
-  [scrawled in margin:] "the petals lose color when baked — normal, don't panic"
-  [at bottom, underlined twice:] "DO NOT double the rose water. I learned this the hard way."
 
+  [scrawled in margin:] "the petals lose color when baked — normal, don''t panic"
+
+  [at bottom, underlined twice:] "DO NOT double the rose water. I learned this the
+  hard way."'
+unlock_code: '2346'

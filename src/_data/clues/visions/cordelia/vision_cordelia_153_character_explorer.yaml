@@ -3,12 +3,17 @@ type: Vision (Cordelia)
 title: The Heartbroken Ghost
 subtitle: Thomas's Return
 act: act_i_setting
-narrative: A young woman in a rose colored dress flickers into view, her large brown eyes widening with shock and desperate hope. She reaches toward you with trembling hands.
+narrative: A young woman in a rose colored dress flickers into view, her large brown
+  eyes widening with shock and desperate hope. She reaches toward you with trembling
+  hands.
 hashtags:
-  - cordelia_montrose
-  - thomas_whitmore
-  - secret_baby
+- cordelia_montrose
+- thomas_whitmore
+- secret_baby
 skills:
-  - is_character_explorer
-content: |
-  Thomas? You are back from your travels, they said you were lost at sea. There is something important you MUST know... [trails off, you sense the urgency]
+- is_character_explorer
+content: 'Thomas? You are back from your travels, they said you were lost at sea.
+  There is something important you MUST know... [trails off, you sense the urgency]
+
+  '
+unlock_code: '0234'

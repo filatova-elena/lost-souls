@@ -2,13 +2,18 @@ id: BJ111
 type: Botanical (Jar)
 title: Reddish-Brown Powder
 act: act_ii_mystery_emerges
-appearance: Reddish-brown powder in jar, distinctive color, clearly a chemical or mineral compound
+appearance: Reddish-brown powder in jar, distinctive color, clearly a chemical or
+  mineral compound
 hashtags:
-  - sebastian_crane
-  - elixir_of_love
+- sebastian_crane
+- elixir_of_love
 skills:
-  - medical_1
-  - botanical_2
-content: |
-  **Iron Citrate [C₆H₅O₇Fe]**. A reddish-brown powder. Distinctive color. Clearly a chemical or mineral compound. A specialized bioavailable form of iron — standard tonic of the 1920sera. Particularly valuable for women preparing for major life changes.
+- medical_1
+- botanical_2
+content: '**Iron Citrate [C₆H₅O₇Fe]**. A reddish-brown powder. Distinctive color.
+  Clearly a chemical or mineral compound. A specialized bioavailable form of iron
+  — standard tonic of the 1920sera. Particularly valuable for women preparing for
+  major life changes.
 
+  '
+unlock_code: '1457'

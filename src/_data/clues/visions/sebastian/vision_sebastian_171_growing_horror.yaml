@@ -3,10 +3,14 @@ type: Vision (Sebastian)
 title: The Ghost of the Cursed Alchemist
 subtitle: Growing Horror
 act: act_iii_investigation
-narrative: A vision of a young man materializes, his dark eyes wide with dawning realization. His hands tremble as he stares at them, as if they belong to someone else.
+narrative: A vision of a young man materializes, his dark eyes wide with dawning realization.
+  His hands tremble as he stares at them, as if they belong to someone else.
 hashtags:
-  - sebastian_crane
-  - cordelia_montrose
+- sebastian_crane
+- cordelia_montrose
 skills:
-  - spiritual_2
-content: Cordelia kept getting sicker. Day after day, she grew weaker. I didn't understand. My formula was supposed to strengthen her devotion, not sicken her. What had I done wrong? [Doubt and growing horror begin to grip you.]
+- spiritual_2
+content: Cordelia kept getting sicker. Day after day, she grew weaker. I didn't understand.
+  My formula was supposed to strengthen her devotion, not sicken her. What had I done
+  wrong? [Doubt and growing horror begin to grip you.]
+unlock_code: '0123'

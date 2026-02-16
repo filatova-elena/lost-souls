@@ -1,19 +1,22 @@
 id: WTPN72
 type: Writing (Thaddeus's Patient Notes)
 title: Thaddeus Crane's Patient Notes
-subtitle: "June 15, 1924 - Alice Whitmore. Chief Complaint: Insomnia and nervous fatigue"
+subtitle: 'June 15, 1924 - Alice Whitmore. Chief Complaint: Insomnia and nervous fatigue'
 act: act_i_setting
 date: '1924-06-15'
 hashtags:
-  - thaddeus_crane
-  - alice_whitmore
-  - alice_second_sight
-  - doctor_and_patient
+- thaddeus_crane
+- alice_whitmore
+- alice_second_sight
+- doctor_and_patient
 skills:
-  - personal_crane
-  - spiritual_2
+- personal_crane
+- spiritual_2
 is_key:
-  - alice_second_sight
-content: |
-  Patient attributes sleep disturbance to heightened sensitivity. Claims premonitions and psychic impressions. Her observations regarding other patients are remarkably accurate. Prescribed valerian root.
+- alice_second_sight
+content: 'Patient attributes sleep disturbance to heightened sensitivity. Claims premonitions
+  and psychic impressions. Her observations regarding other patients are remarkably
+  accurate. Prescribed valerian root.
 
+  '
+unlock_code: '0147'

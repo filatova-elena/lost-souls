@@ -3,10 +3,15 @@ type: Vision (Alice)
 title: The Lonely Ghost
 subtitle: Urged Confession
 act: act_iii_investigation
-narrative: A young woman in a pale dress appears before you, standing tall, chin raised, defiant. Her delicate features are set with fierce resolve, her hands balled into fists at her sides.
+narrative: A young woman in a pale dress appears before you, standing tall, chin raised,
+  defiant. Her delicate features are set with fierce resolve, her hands balled into
+  fists at her sides.
 hashtags:
-  - alice_whitmore
-  - thaddeus_crane
+- alice_whitmore
+- thaddeus_crane
 skills:
-  - spiritual_2
-content: I wouldn't leave. I told him I'd tell EVERYONE. The Montroses. The police. The newspapers! I urged him to confess! All along I thought Sebastian was the monster! [Your heart races. You sense the spirit is distressed and is holding something back.]
+- spiritual_2
+content: I wouldn't leave. I told him I'd tell EVERYONE. The Montroses. The police.
+  The newspapers! I urged him to confess! All along I thought Sebastian was the monster!
+  [Your heart races. You sense the spirit is distressed and is holding something back.]
+unlock_code: '0234'
