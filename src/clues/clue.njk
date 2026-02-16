@@ -53,8 +53,8 @@ layout: base
 {% endif %}
 
 {% if clue.unlock_code %}
-<section class="seance-section" style="display: none;">
-  <div class="seance-section-label">Show these symbols to unlock for others</div>
+<section class="seance-section"">
+  <div class="seance-section-label">Show these symbols to others to unlock their clues</div>
   <div class="static-ring" data-unlock-code="{{ clue.unlock_code }}"></div>
 </section>
 {% endif %}
