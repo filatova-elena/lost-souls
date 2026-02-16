@@ -3,11 +3,15 @@ type: Vision (Sebastian)
 title: The Ghost of the Cursed Alchemist
 subtitle: Brother Recognition
 act: act_ii_mystery_emerges
-narrative: A vision of a young man flickers into view, his dark eyes lighting up with recognition. A tentative smile crosses his face.
+narrative: A vision of a young man flickers into view, his dark eyes lighting up with
+  recognition. A tentative smile crosses his face.
 hashtags:
-  - sebastian_crane
-  - thaddeus_crane
+- sebastian_crane
+- thaddeus_crane
 skills:
-  - is_character_doctor
-content: |
-  You remind me of my brother, Thaddeus. He understood me better than anyone, so brilliant, so thoughtfull! I wish I could be more like him.
+- is_character_doctor
+content: 'You remind me of my brother, Thaddeus. He understood me better than anyone,
+  so brilliant, so thoughtfull! I wish I could be more like him.
+
+  '
+unlock_code: '2346'

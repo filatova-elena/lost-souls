@@ -3,20 +3,19 @@ type: Artifact (Paper)
 title: Hand-Drawn Map - Rose Garden Location
 act: act_iv_revelation
 location: The Attic, Inside the Purple and Gold Vase
-appearance: Faded hand-drawn map on aged paper showing Montrose Estate grounds with marked location
+appearance: Faded hand-drawn map on aged paper showing Montrose Estate grounds with
+  marked location
 hashtags:
-  - romano_treasure
-  - frankie_romano
+- romano_treasure
+- frankie_romano
 skills:
-  - history_1
-  - personal_romano
+- history_1
+- personal_romano
 is_key:
-  - romano_treasure
-content: |
-  A faded hand-drawn map on aged paper showing the Montrose Estate grounds with a marked location.
-
-  **YOU OBSERVE**
-
-  This is **Frankie Romano's handwriting** — recognizable from shipping documents and business correspondence. The precision of these measurements, the careful notation system — this wasn't a casual drawing. 
-
-  The rose garden location is circled and red x is drawn next to it.
+- romano_treasure
+content: "A faded hand-drawn map on aged paper showing the Montrose Estate grounds\
+  \ with a marked location.\n\n**YOU OBSERVE**\n\nThis is **Frankie Romano's handwriting**\
+  \ — recognizable from shipping documents and business correspondence. The precision\
+  \ of these measurements, the careful notation system — this wasn't a casual drawing.\
+  \ \n\nThe rose garden location is circled and red x is drawn next to it.\n"
+unlock_code: '1234'

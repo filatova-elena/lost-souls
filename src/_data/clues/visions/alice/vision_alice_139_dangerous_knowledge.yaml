@@ -3,10 +3,14 @@ type: Vision (Alice)
 title: The Lonely Ghost
 subtitle: Dangerous Knowledge
 act: act_iii_investigation
-narrative: The ghostly figure paces before you, her hair wild, her gloved hands clenching and unclenching. Her bright eyes dart around as if someone might be listening.
+narrative: The ghostly figure paces before you, her hair wild, her gloved hands clenching
+  and unclenching. Her bright eyes dart around as if someone might be listening.
 hashtags:
-  - alice_whitmore
-  - thaddeus_crane
+- alice_whitmore
+- thaddeus_crane
 skills:
-  - spiritual_2
-content: 'It was him, him all along! But how can I even say such things out loud? I can''t and I won''t! [Frustration and fear surge through you. Someone knows something dangerous but cannot speak it.]'
+- spiritual_2
+content: It was him, him all along! But how can I even say such things out loud? I
+  can't and I won't! [Frustration and fear surge through you. Someone knows something
+  dangerous but cannot speak it.]
+unlock_code: '2357'

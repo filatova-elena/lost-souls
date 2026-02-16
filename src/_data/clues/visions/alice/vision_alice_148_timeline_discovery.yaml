@@ -3,12 +3,18 @@ type: Vision (Alice)
 title: The Lonely Ghost
 subtitle: Timeline Discovery
 act: act_iii_investigation
-narrative: A vision of a young woman materializes, pacing back and forth, counting on her fingers, muttering under her breath. Her brow is furrowed in concentration, piecing something together.
+narrative: A vision of a young woman materializes, pacing back and forth, counting
+  on her fingers, muttering under her breath. Her brow is furrowed in concentration,
+  piecing something together.
 hashtags:
-  - alice_whitmore
-  - thomas_whitmore
-  - cordelia_montrose
-  - secret_baby
+- alice_whitmore
+- thomas_whitmore
+- cordelia_montrose
+- secret_baby
 skills:
-  - spiritual_2
-content: Wait. Wait wait wait. Thomas and Cordelia. That was 1924. Then she disappeared for months in early 1925... And when she came back, she was different. Distant. Then suddenly engaged… Something happened in between, something big. I need to know what it was. [A timeline emerges. Secrets hidden between moments.]
+- spiritual_2
+content: Wait. Wait wait wait. Thomas and Cordelia. That was 1924. Then she disappeared
+  for months in early 1925... And when she came back, she was different. Distant.
+  Then suddenly engaged… Something happened in between, something big. I need to know
+  what it was. [A timeline emerges. Secrets hidden between moments.]
+unlock_code: '3567'

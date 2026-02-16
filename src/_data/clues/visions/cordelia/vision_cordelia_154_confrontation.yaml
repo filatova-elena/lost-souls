@@ -3,13 +3,18 @@ type: Vision (Cordelia)
 title: The Heartbroken Ghost
 subtitle: The Confrontation
 act: act_iii_investigation
-narrative: A vision of a young woman appears, her jaw set, her brown eyes blazing with righteous fury. She stands with her arms crossed, every inch the scorned heiress.
+narrative: A vision of a young woman appears, her jaw set, her brown eyes blazing
+  with righteous fury. She stands with her arms crossed, every inch the scorned heiress.
 hashtags:
-  - cordelia_montrose
-  - thaddeus_crane
-  - doctor_and_patient
+- cordelia_montrose
+- thaddeus_crane
+- doctor_and_patient
 skills:
-  - spiritual_2
+- spiritual_2
 is_key:
-  - doctor_and_patient
-content: I confronted him. Dr. Thaddeus Crane, so respected, so trusted. I told him I would expose him. Expose his affair, ruin his career, tell everyone what a hypocrite he was. He looked at me with such... fear. [You feel anger and the indignation wash over you.]
+- doctor_and_patient
+content: I confronted him. Dr. Thaddeus Crane, so respected, so trusted. I told him
+  I would expose him. Expose his affair, ruin his career, tell everyone what a hypocrite
+  he was. He looked at me with such... fear. [You feel anger and the indignation wash
+  over you.]
+unlock_code: '0457'

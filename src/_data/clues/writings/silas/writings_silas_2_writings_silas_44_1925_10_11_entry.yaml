@@ -5,16 +5,25 @@ subtitle: October 19, 1925 - Three in Eleven Days
 act: act_iii_investigation
 date: '1925-10-19'
 hashtags:
-  - morticians_silence
-  - silas_blackwell
-  - alice_whitmore
-  - sebastian_crane
-  - cordelia_montrose
-content: |
-  Three bodies in eleven days. All young. Business is business, but this is starting to feel less like coincidence and more like somebody's hobby.
-  
-  Fifteen years I've done this. The War cured me of squeamishness and the Spanish Lady cured me of grief. I've made grandmothers look thirty years younger and put dock workers back together like jigsaw puzzles. None of it keeps me up at night.
-  
-  But three in eleven days, all under thirty-five, all from the same stretch of town? That's not God's work and it's not bad luck. That's arithmetic.
-  
+- morticians_silence
+- silas_blackwell
+- alice_whitmore
+- sebastian_crane
+- cordelia_montrose
+content: 'Three bodies in eleven days. All young. Business is business, but this is
+  starting to feel less like coincidence and more like somebody''s hobby.
+
+
+  Fifteen years I''ve done this. The War cured me of squeamishness and the Spanish
+  Lady cured me of grief. I''ve made grandmothers look thirty years younger and put
+  dock workers back together like jigsaw puzzles. None of it keeps me up at night.
+
+
+  But three in eleven days, all under thirty-five, all from the same stretch of town?
+  That''s not God''s work and it''s not bad luck. That''s arithmetic.
+
+
   Not my arithmetic, though.
+
+  '
+unlock_code: '0247'

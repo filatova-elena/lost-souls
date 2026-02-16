@@ -3,10 +3,13 @@ type: Artifact (Object)
 title: Toby Jug (Top Hat Gentleman)
 act: act_i_setting
 location: Bembridge House, Middle Parlor, Above Bookcase
-appearance: An English ceramic character jug depicting a cheerful gentleman in a top hat with a cane
+appearance: An English ceramic character jug depicting a cheerful gentleman in a top
+  hat with a cane
 skills: []
-content: |
-  An English ceramic character jug depicting a man wearing what appears to be a yellow crown or coronet. Possibly a royal or historical figure — Henry VIII was a popular subject. Royal Doulton launched their famous Character Jug series in 1934. 
-
-  **YOU OBSERVE**
-  This piece has the weight and glaze of quality English ceramic. A gift? A purchase? Or something that arrived in someone else's luggage? Romano loot? It's hard to tell.
+content: "An English ceramic character jug depicting a man wearing what appears to\
+  \ be a yellow crown or coronet. Possibly a royal or historical figure — Henry VIII\
+  \ was a popular subject. Royal Doulton launched their famous Character Jug series\
+  \ in 1934. \n\n**YOU OBSERVE**\nThis piece has the weight and glaze of quality English\
+  \ ceramic. A gift? A purchase? Or something that arrived in someone else's luggage?\
+  \ Romano loot? It's hard to tell.\n"
+unlock_code: '2367'

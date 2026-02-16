@@ -5,34 +5,47 @@ act: act_iv_revelation
 date: '1925-06-28'
 location: The Attic (DL121, DL182 and DL183 go together)
 hashtags:
-  - secret_baby
-  - eleanor_sullivan
-  - cordelia_montrose
-  - thomas_whitmore
-  - rose_bread_legacy
+- secret_baby
+- eleanor_sullivan
+- cordelia_montrose
+- thomas_whitmore
+- rose_bread_legacy
 skills:
-  - legal_2
+- legal_2
 is_key:
-  - secret_baby
-  - rose_bread_legacy
-content: |-
-  **COMMONWEALTH OF MASSACHUSETTS - DEPARTMENT OF PUBLIC HEALTH**
+- secret_baby
+- rose_bread_legacy
+content: '**COMMONWEALTH OF MASSACHUSETTS - DEPARTMENT OF PUBLIC HEALTH**
+
 
   **BIRTH CERTIFICATE**
 
+
   **Full Name:** Eleanor Montrose
+
   **Date of Birth:** June 28, 1925, 3:42 A.M.
+
   **Place of Birth:** Boston Lying-In Hospital, Boston, Suffolk County
+
   **Sex:** Female
 
+
   **Parents:**
+
   **Mother:** Cordelia Margaret Montrose (Age 22, Residence: Long Beach, California)
+
   **Father:** — NOT RECORDED —
 
+
   **Attendant:** Dr. James A. Callahan, M.D.
+
   **Certificate Number:** 1925-14236
+
   **Issued:** July 5, 1925
+
 
   City Registrar, City of Boston, Suffolk County, Massachusetts
 
-  *No record of adoption decree found for this file number.*
+
+  *No record of adoption decree found for this file number.*'
+unlock_code: '0234'

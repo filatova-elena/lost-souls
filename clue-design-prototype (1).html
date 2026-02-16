@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Lost Souls — Octogram Lock Prototype</title>
+  <style>
+    :root {
+      --primary-dark: #0a0a0a;
+      --secondary-dark: #1a1a2e;
+      --accent-gold: #d4a574;
+      --accent-purple: #4a148c;
+      --text-light: #e0e0e0;
+      --gold-bright: #e8be8a;
+      --gold-dim: #9e7a52;
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{background-color:var(--primary-dark);color:var(--text-light);font-family:Georgia,serif;line-height:1.6;padding:10px;font-size:16px;-webkit-user-select:none;user-select:none}
+    @media(min-width:768px){body{padding:20px}}
+
+    .demo-shell{max-width:1100px;margin:0 auto;display:flex;flex-direction:column;gap:40px}
+    .demo-header{text-align:center;padding:15px 0;border-bottom:1px solid rgba(212,165,116,0.15)}
+    .demo-header h2{color:var(--accent-gold);font-size:1em;text-transform:uppercase;letter-spacing:2px;margin:0}
+    .demo-header p{font-family:sans-serif;font-size:0.8em;opacity:0.5;margin-top:6px}
+    .demo-controls{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+    .demo-btn{background-color:var(--accent-purple);color:var(--accent-gold);border:2px solid var(--accent-gold);padding:8px 18px;font-size:0.85em;text-transform:uppercase;cursor:pointer;font-family:sans-serif;transition:all 0.2s}
+    .demo-btn:hover{background-color:var(--accent-gold);color:var(--primary-dark)}
+    .demo-row{display:flex;gap:20px;flex-wrap:wrap}
+    .demo-row>*{flex:1;min-width:300px}
+
+    .clue-page{background-color:var(--secondary-dark);border:2px solid var(--accent-gold);padding:20px;text-align:left;position:relative;transition:border-color 0.5s,box-shadow 0.5s}
+    @media(min-width:768px){.clue-page{padding:30px}}
+
+    .progress-tracker{padding-bottom:14px;margin-bottom:14px;border-bottom:1px solid rgba(212,165,116,0.12);display:flex;gap:0}
+    .progress-track{display:flex;flex-direction:column;gap:6px}
+    .progress-track.main{flex:1;padding-right:14px}
+    .progress-track.side{padding-left:14px;border-left:1px solid rgba(212,165,116,0.12);flex-shrink:0}
+    .progress-track-header{display:flex;align-items:center;justify-content:space-between;gap:8px}
+    .progress-label{font-family:sans-serif;font-size:0.6em;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold-dim);white-space:nowrap}
+    .progress-count{font-family:sans-serif;font-size:0.65em;color:var(--gold-dim);letter-spacing:0.5px;white-space:nowrap}
+    .progress-pips{display:flex;gap:4px;align-items:center;flex-wrap:wrap}
+    .pip{width:22px;height:22px;flex-shrink:0;transition:all 0.5s cubic-bezier(0.34,1.56,0.64,1)}
+    .pip svg{display:block;width:100%;height:100%}
+    .pip.empty .diamond-bg{fill:transparent;stroke:rgba(212,165,116,0.22);stroke-width:1.2}
+    .pip.empty .keyhole-circle{fill:rgba(212,165,116,0.10)}
+    .pip.empty .keyhole-rect{fill:rgba(212,165,116,0.10)}
+    .pip.filled .diamond-bg{fill:var(--accent-gold);stroke:var(--accent-gold);stroke-width:0.8}
+    .pip.filled .keyhole-circle{fill:var(--secondary-dark)}
+    .pip.filled .keyhole-rect{fill:var(--secondary-dark)}
+    .pip.just-found{animation:pipPop 0.7s cubic-bezier(0.34,1.56,0.64,1)}
+    @keyframes pipPop{0%{transform:scale(0);opacity:0}50%{transform:scale(1.5)}70%{transform:scale(0.9)}100%{transform:scale(1);opacity:1}}
+
+    .clue-page h1{color:var(--accent-gold);font-size:1.3em;margin-bottom:10px;text-transform:uppercase;letter-spacing:1px;border-bottom:2px solid var(--accent-gold);padding-bottom:10px;line-height:1.3}
+
+    /* Locked */
+    .clue-no-access{padding:20px;background-color:rgba(212,165,116,0.04);border-left:3px solid var(--accent-gold);margin:16px 0;text-align:center;overflow:visible;transition:all 0.5s ease}
+
+    .octogram-lock{position:relative;display:inline-block;margin:10px auto 20px}
+    .octogram-lock svg.ring-svg{position:absolute;top:0;left:0;pointer-events:none;z-index:0}
+
+    .lock-center{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;z-index:1}
+    .lock-glow{position:absolute;width:70px;height:70px;top:50%;left:50%;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,rgba(212,165,116,0.12),transparent 70%);animation:lockBreath 3.5s ease-in-out infinite;pointer-events:none}
+    @keyframes lockBreath{0%,100%{opacity:0.3;transform:translate(-50%,-50%) scale(0.9)}50%{opacity:1;transform:translate(-50%,-50%) scale(1.15)}}
+    .lock-shackle{width:28px;height:18px;border:3px solid var(--gold-dim);border-bottom:none;border-radius:14px 14px 0 0;margin-bottom:-2px;position:relative;z-index:2;transform-origin:100% 100%}
+    .lock-body{width:36px;height:26px;background:linear-gradient(160deg,var(--accent-gold),var(--gold-dim));border-radius:3px;position:relative;z-index:2;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,0.5),inset 0 1px 0 rgba(255,255,255,0.12)}
+    .lk{position:relative;width:7px;height:12px}
+    .lk::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:6px;height:6px;border-radius:50%;background:var(--secondary-dark);box-shadow:inset 0 1px 3px rgba(0,0,0,0.9)}
+    .lk::after{content:'';position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:3px;height:7px;background:var(--secondary-dark);border-radius:0 0 1.5px 1.5px;box-shadow:inset 0 1px 3px rgba(0,0,0,0.9)}
+
+    .sym-node{position:absolute;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(26,26,46,0.95);border:1.5px solid rgba(212,165,116,0.2);cursor:pointer;transition:all 0.2s ease;z-index:3;font-size:18px;line-height:1;color:var(--gold-dim)}
+    .sym-node:hover{border-color:rgba(212,165,116,0.5);background:rgba(212,165,116,0.06)}
+    .sym-node.selected{background:rgba(212,165,116,0.18);border-color:var(--accent-gold);color:var(--accent-gold);box-shadow:0 0 14px rgba(212,165,116,0.35);transform:translate(-50%,-50%) scale(1.1)}
+    .sym-node.in-path{background:rgba(212,165,116,0.18);border-color:var(--accent-gold);color:var(--accent-gold);box-shadow:0 0 10px rgba(212,165,116,0.2)}
+
+    .selection-hint{font-family:sans-serif;font-size:0.65em;letter-spacing:1px;color:var(--gold-dim);margin-top:6px;opacity:0.7}
+    .selection-hint strong{color:var(--accent-gold)}
+    .lock-result{font-family:sans-serif;font-size:0.75em;letter-spacing:1px;text-transform:uppercase;margin-top:8px;min-height:20px;transition:all 0.3s}
+    .lock-result.success{color:#5cb85c}
+    .lock-result.fail{color:#d9534f}
+    .lock-result.idle{color:var(--gold-dim);opacity:0.5}
+    .clue-no-access p{font-style:italic;color:var(--accent-gold);margin:0;font-family:Georgia,serif;line-height:1.7;font-size:0.95em;opacity:0.85}
+    .locked-seek{display:inline-block;margin-top:10px;font-family:sans-serif;font-size:0.7em;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-light);padding:5px 14px;border:1px solid rgba(212,165,116,0.3);background:rgba(212,165,116,0.06);opacity:0.6}
+
+    /* Unlock anim */
+    .clue-page.unlocking .lock-shackle{animation:shackleOpen 0.7s ease-out forwards}
+    @keyframes shackleOpen{0%{transform:translateY(0) rotate(0deg)}35%{transform:translateY(-6px) rotate(0deg)}100%{transform:translateY(-6px) rotate(40deg)}}
+    .clue-page.unlocking .lock-glow{animation:unlockBurst 0.6s 0.5s ease-out forwards}
+    @keyframes unlockBurst{0%{opacity:1;transform:translate(-50%,-50%) scale(1)}100%{opacity:0;transform:translate(-50%,-50%) scale(3.5)}}
+    .clue-page.unlocking .lock-center{animation:lockFadeOut 0.5s 0.7s ease-out forwards}
+    @keyframes lockFadeOut{0%{opacity:1;transform:translate(-50%,-50%) scale(1)}100%{opacity:0;transform:translate(-50%,-50%) scale(0.85)}}
+    .clue-page.unlocking .ring-svg{animation:ringFade 0.5s 0.7s ease-out forwards}
+    @keyframes ringFade{to{opacity:0}}
+    .clue-page.unlocking .sym-node{animation:symFade 0.4s 0.6s ease-out forwards}
+    @keyframes symFade{to{opacity:0;transform:translate(-50%,-50%) scale(0.5)}}
+    .clue-page.unlocking .clue-no-access{animation:sectionCollapse 0.4s 1.3s ease-out forwards}
+    @keyframes sectionCollapse{to{opacity:0;max-height:0;padding:0;margin:0;border-width:0;overflow:hidden}}
+
+    .clue-narration{margin:16px 0;padding:12px 18px;background-color:rgba(212,165,116,0.06);border-left:3px solid var(--accent-gold);font-style:italic;font-family:Georgia,serif;line-height:1.7;color:var(--text-light);opacity:0.9}
+    .clue-narration p{font-family:Georgia,serif;font-style:italic;margin:0}
+    .clue-content{margin:16px 0}
+    .clue-content p{margin:10px 0;font-size:0.95em;font-family:sans-serif;line-height:1.6}
+    .clue-content strong{color:var(--accent-gold)}
+    .clue-page.just-unlocked .clue-narration{animation:slideReveal 0.6s ease-out both}
+    .clue-page.just-unlocked .clue-content{animation:slideReveal 0.6s 0.12s ease-out both}
+    .clue-page.just-unlocked .seance-section-unlocked{animation:slideReveal 0.6s 0.24s ease-out both}
+    @keyframes slideReveal{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+
+    .clue-page.is-key-clue{border-color:var(--gold-bright);box-shadow:0 0 25px rgba(212,165,116,0.12),0 0 50px rgba(212,165,116,0.04)}
+    .key-flash{position:fixed;inset:0;background:radial-gradient(circle at center,rgba(212,165,116,0.25),transparent 55%);pointer-events:none;z-index:999;animation:keyFlash 1.2s ease-out forwards}
+    @keyframes keyFlash{0%{opacity:0}15%{opacity:1}100%{opacity:0}}
+    .celebration-container{position:fixed;inset:0;pointer-events:none;z-index:1000;overflow:hidden}
+
+    .seance-section{margin-top:30px;padding-top:24px;border-top:1px solid rgba(212,165,116,0.12);text-align:center}
+    .seance-section-label{font-family:sans-serif;font-size:0.6em;letter-spacing:2px;text-transform:uppercase;color:var(--gold-dim);margin-bottom:16px}
+    .static-ring{display:inline-block;position:relative}
+    .static-ring svg.ring-svg{position:absolute;top:0;left:0;pointer-events:none;z-index:0}
+    .seance-section.hidden{display:none}
+  </style>
+</head>
+<body>
+
+<div class="demo-shell">
+  <div class="demo-header">
+    <h2>Octogram Lock Prototype</h2>
+    <p>Left: unlocked player · Right: locked player selects 4 symbols around the lock</p>
+  </div>
+  <div class="demo-controls">
+    <button class="demo-btn" onclick="resetToLocked()">Reset to Locked</button>
+  </div>
+
+  <div class="demo-row">
+    <!-- UNLOCKED -->
+    <div class="clue-page">
+      <div class="progress-tracker">
+        <div class="progress-track main"><div class="progress-track-header"><span class="progress-label">Main Quest</span><span class="progress-count" id="cmU">8 / 20</span></div><div class="progress-pips" id="pmU"></div></div>
+        <div class="progress-track side"><div class="progress-track-header"><span class="progress-label">Side Quest</span><span class="progress-count" id="csU">1 / 4</span></div><div class="progress-pips" id="psU"></div></div>
+      </div>
+      <header><h1>Precious Forked Root Specimen</h1></header>
+      <section class="clue-narration"><p>Pale root with distinctive forked, human-like shape, unusual and expensive-looking</p></section>
+      <section class="clue-content"><p><strong>Ginseng Root [Panax ginseng]</strong>. Precious, difficult to source, and very expensive — only serious practitioners would seek it out.</p></section>
+      <div class="seance-section">
+        <div class="seance-section-label">Show these symbols to unlock for others</div>
+        <div class="static-ring" id="staticRing"></div>
+      </div>
+    </div>
+
+    <!-- LOCKED -->
+    <div class="clue-page" id="lockedCard">
+      <div class="progress-tracker">
+        <div class="progress-track main"><div class="progress-track-header"><span class="progress-label">Main Quest</span><span class="progress-count" id="cmL">7 / 20</span></div><div class="progress-pips" id="pmL"></div></div>
+        <div class="progress-track side"><div class="progress-track-header"><span class="progress-label">Side Quest</span><span class="progress-count" id="csL">1 / 4</span></div><div class="progress-pips" id="psL"></div></div>
+      </div>
+      <header><h1>Precious Forked Root Specimen</h1></header>
+      <section class="clue-no-access" id="lockSection">
+        <div class="octogram-lock" id="octogramLock"></div>
+        <p>The brittle herbs crumble between your fingers, taking their secrets with them.</p>
+        <span class="locked-seek">Seek out Botany Professor</span>
+        <div class="selection-hint" id="selHint"><strong>0</strong> of 4 selected</div>
+        <div class="lock-result idle" id="lockResult">Select the 4 symbols shown by another investigator</div>
+      </section>
+      <section class="clue-narration" id="revealNarr" style="display:none;"><p>Pale root with distinctive forked, human-like shape, unusual and expensive-looking</p></section>
+      <section class="clue-content" id="revealContent" style="display:none;"><p><strong>Ginseng Root [Panax ginseng]</strong>. Precious, difficult to source, and very expensive — only serious practitioners would seek it out.</p></section>
+      <div class="seance-section seance-section-unlocked" id="revealSection" style="display:none;">
+        <div class="seance-section-label">Show these symbols to unlock for others</div>
+        <div class="static-ring" id="revealRing"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="celebration-container" id="celebrationContainer"></div>
+
+<script>
+  function pipSVG(){return `<svg viewBox="0 0 24 24"><rect class="diamond-bg" x="4" y="4" width="16" height="16" rx="1.8" transform="rotate(45 12 12)"/><circle class="keyhole-circle" cx="12" cy="10.5" r="2.8"/><rect class="keyhole-rect" x="10.6" y="11.5" width="2.8" height="4.8" rx="0.8"/></svg>`}
+  function renderPips(c,el,n,t,j){c.innerHTML='';for(let i=0;i<t;i++){const d=document.createElement('div');d.className='pip '+(i<n?'filled':'empty');if(i===j)d.classList.add('just-found');d.innerHTML=pipSVG();c.appendChild(d)}el.textContent=n+' / '+t}
+  let lockedMainFound=7;
+  function renderAllPips(mj){
+    renderPips(document.getElementById('pmU'),document.getElementById('cmU'),8,20);
+    renderPips(document.getElementById('psU'),document.getElementById('csU'),1,4);
+    renderPips(document.getElementById('pmL'),document.getElementById('cmL'),lockedMainFound,20,mj);
+    renderPips(document.getElementById('psL'),document.getElementById('csL'),1,4);
+  }
+
+  // ═══════════════════════════════════
+  //  CONFIG
+  // ═══════════════════════════════════
+  const SYMBOLS = ['🝪','🝮','☿','🝣','♀','♃','🝭','🝰'];
+  const NUM = 8;
+  const REQUIRED = 4;
+  const CORRECT_SET = new Set([0,2,5,7]);
+
+  const R = 90;
+  const NODE_R = 21; // visual radius of each node (half of 40px + border)
+  const AREA = (R + NODE_R + 8) * 2;
+  const CX = AREA / 2, CY = AREA / 2;
+
+  function nodeAngle(i) {
+    return (i / NUM) * Math.PI * 2 - Math.PI / 2;
+  }
+  function symPos(i) {
+    const a = nodeAngle(i);
+    return { x: CX + Math.cos(a) * R, y: CY + Math.sin(a) * R };
+  }
+
+  // ── Build SVG ring with arcs between nodes ──
+  // Each arc goes from the exit edge of node i to the entry edge of node i+1
+  function ringSvg(strokeColor, strokeWidth) {
+    const col = strokeColor || 'rgba(212,165,116,0.15)';
+    const sw = strokeWidth || 1;
+    // Half-angle subtended by one node at the circle center
+    // NODE_R is the node's visual radius; gap = angular extent of node
+    const halfGap = Math.asin(NODE_R / R);
+
+    let s = `<svg class="ring-svg" width="${AREA}" height="${AREA}" viewBox="0 0 ${AREA} ${AREA}" fill="none" xmlns="http://www.w3.org/2000/svg">`;
+
+    for (let i = 0; i < NUM; i++) {
+      const startAngle = nodeAngle(i) + halfGap;
+      const endAngle = nodeAngle((i + 1) % NUM) - halfGap;
+
+      const x1 = CX + Math.cos(startAngle) * R;
+      const y1 = CY + Math.sin(startAngle) * R;
+      const x2 = CX + Math.cos(endAngle) * R;
+      const y2 = CY + Math.sin(endAngle) * R;
+
+      // SVG arc: large-arc=0 (short way), sweep=1 (clockwise)
+      s += `<path d="M ${x1} ${y1} A ${R} ${R} 0 0 1 ${x2} ${y2}" stroke="${col}" stroke-width="${sw}" stroke-linecap="round"/>`;
+    }
+
+    // Faint octagram: two rotated squares
+    const sq1 = [0,2,4,6].map(i => symPos(i));
+    const sq2 = [1,3,5,7].map(i => symPos(i));
+    s += `<polygon points="${sq1.map(p=>p.x+','+p.y).join(' ')}" stroke="rgba(212,165,116,0.05)" stroke-width="0.6" fill="none"/>`;
+    s += `<polygon points="${sq2.map(p=>p.x+','+p.y).join(' ')}" stroke="rgba(212,165,116,0.05)" stroke-width="0.6" fill="none"/>`;
+
+    s += `</svg>`;
+    return s;
+  }
+
+  // ── Static ring ──
+  function buildStaticRing(containerId) {
+    const wrap = document.getElementById(containerId);
+    wrap.innerHTML = '';
+    wrap.style.width = AREA + 'px';
+    wrap.style.height = AREA + 'px';
+    wrap.style.position = 'relative';
+
+    wrap.insertAdjacentHTML('beforeend', ringSvg());
+
+    for (let i = 0; i < NUM; i++) {
+      const pos = symPos(i);
+      const node = document.createElement('div');
+      node.className = 'sym-node' + (CORRECT_SET.has(i) ? ' in-path' : '');
+      node.textContent = SYMBOLS[i];
+      node.style.position = 'absolute';
+      node.style.left = pos.x + 'px';
+      node.style.top = pos.y + 'px';
+      node.style.transform = 'translate(-50%,-50%)';
+      wrap.appendChild(node);
+    }
+  }
+
+  // ── Interactive ──
+  let selected = new Set(), lockNodes = [], unlocked = false;
+
+  function buildOctogramLock() {
+    const wrap = document.getElementById('octogramLock');
+    wrap.innerHTML = '';
+    wrap.style.width = AREA + 'px';
+    wrap.style.height = AREA + 'px';
+
+    wrap.insertAdjacentHTML('beforeend', ringSvg());
+
+    const center = document.createElement('div');
+    center.className = 'lock-center';
+    center.innerHTML = `<div class="lock-glow"></div><div class="lock-shackle"></div><div class="lock-body"><div class="lk"></div></div>`;
+    wrap.appendChild(center);
+
+    lockNodes = [];
+    for (let i = 0; i < NUM; i++) {
+      const pos = symPos(i);
+      const node = document.createElement('div');
+      node.className = 'sym-node';
+      node.textContent = SYMBOLS[i];
+      node.style.position = 'absolute';
+      node.style.left = pos.x + 'px';
+      node.style.top = pos.y + 'px';
+      node.style.transform = 'translate(-50%,-50%)';
+      node.dataset.idx = i;
+      wrap.appendChild(node);
+      lockNodes.push(node);
+
+      node.addEventListener('click', () => {
+        if (unlocked) return;
+        const idx = parseInt(node.dataset.idx);
+        if (selected.has(idx)) {
+          selected.delete(idx);
+          node.classList.remove('selected');
+          node.style.transform = 'translate(-50%,-50%)';
+        } else if (selected.size < REQUIRED) {
+          selected.add(idx);
+          node.classList.add('selected');
+          if (selected.size === REQUIRED) setTimeout(checkSelection, 350);
+        }
+        updateHint();
+      });
+    }
+  }
+
+  function updateHint() {
+    document.getElementById('selHint').innerHTML = `<strong>${selected.size}</strong> of ${REQUIRED} selected`;
+  }
+
+  function checkSelection() {
+    if (unlocked) return;
+    const correct = selected.size === CORRECT_SET.size && [...selected].every(s => CORRECT_SET.has(s));
+    const r = document.getElementById('lockResult');
+    if (correct) {
+      unlocked = true;
+      lockNodes.forEach((n, i) => { if (selected.has(i)) { n.style.borderColor = '#5cb85c'; n.style.boxShadow = '0 0 14px rgba(92,184,92,0.4)'; } });
+      r.className = 'lock-result success'; r.textContent = '✓ The symbols align';
+      setTimeout(triggerFullUnlock, 700);
+    } else {
+      lockNodes.forEach((n, i) => { if (selected.has(i)) { n.style.borderColor = '#d9534f'; n.style.boxShadow = '0 0 14px rgba(217,83,79,0.3)'; } });
+      r.className = 'lock-result fail'; r.textContent = '✗ The circle remains silent';
+      setTimeout(resetSelection, 900);
+    }
+  }
+
+  function resetSelection() {
+    selected = new Set();
+    lockNodes.forEach(n => { n.classList.remove('selected'); n.style.borderColor = ''; n.style.boxShadow = ''; n.style.transform = 'translate(-50%,-50%)'; });
+    updateHint();
+    const r = document.getElementById('lockResult');
+    r.className = 'lock-result idle'; r.textContent = 'Select the 4 symbols shown by another investigator';
+  }
+
+  function triggerFullUnlock() {
+    const card = document.getElementById('lockedCard');
+    card.classList.add('unlocking');
+    setTimeout(() => {
+      document.getElementById('lockSection').style.display = 'none';
+      document.getElementById('revealNarr').style.display = '';
+      document.getElementById('revealContent').style.display = '';
+      document.getElementById('revealSection').style.display = '';
+      buildStaticRing('revealRing');
+      card.classList.remove('unlocking');
+      card.classList.add('just-unlocked', 'is-key-clue');
+      const flash = document.createElement('div'); flash.className = 'key-flash';
+      document.body.appendChild(flash); setTimeout(() => flash.remove(), 1400);
+      spawnParticles();
+      lockedMainFound = Math.min(lockedMainFound + 1, 20);
+      renderAllPips(lockedMainFound - 1);
+    }, 1700);
+  }
+
+  function spawnParticles() {
+    const c = document.getElementById('celebrationContainer');
+    const colors = ['#d4a574','#e8be8a','#f0d080','#c9a060','#ffe4c4'];
+    for (let i = 0; i < 30; i++) {
+      const el = document.createElement('div');
+      const sz = 3 + Math.random()*5, x = 15 + Math.random()*70;
+      const drift = -40 + Math.random()*80, dur = 1400 + Math.random()*1200, delay = Math.random()*500;
+      el.style.cssText = `position:absolute;left:${x}%;top:-5px;width:${sz}px;height:${sz}px;background:${colors[Math.floor(Math.random()*colors.length)]};border-radius:${Math.random()>0.4?'50%':'1px'};pointer-events:none`;
+      el.animate([{transform:'translateX(0) translateY(0) rotate(0deg)',opacity:1},{transform:`translateX(${drift}px) translateY(${250+Math.random()*200}px) rotate(${300+Math.random()*400}deg)`,opacity:0}],{duration:dur,delay,easing:'cubic-bezier(0.25,0.46,0.45,0.94)',fill:'forwards'});
+      c.appendChild(el);setTimeout(()=>el.remove(),dur+delay+100);
+    }
+  }
+
+  function resetToLocked() {
+    unlocked = false; lockedMainFound = 7;
+    const card = document.getElementById('lockedCard'); card.className = 'clue-page';
+    document.getElementById('lockSection').style.cssText = '';
+    document.getElementById('revealNarr').style.display = 'none';
+    document.getElementById('revealContent').style.display = 'none';
+    document.getElementById('revealSection').style.display = 'none';
+    buildOctogramLock(); resetSelection(); renderAllPips();
+  }
+
+  buildStaticRing('staticRing');
+  buildOctogramLock();
+  renderAllPips();
+</script>
+</body>
+</html>

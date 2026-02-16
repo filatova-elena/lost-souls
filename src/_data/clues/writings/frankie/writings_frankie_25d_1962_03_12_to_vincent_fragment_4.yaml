@@ -7,21 +7,26 @@ date: '1962-03-12'
 location: Bembridge House, Office, on the desk by the boats
 appearance: A piece of paper, weathered and folded.
 hashtags:
-  - frankie_romano
-  - romano_treasure
+- frankie_romano
+- romano_treasure
 skills:
-  - personal_romano
+- personal_romano
 is_key:
-  - romano_treasure
-content: |-
-  Five. **Let my mark be your guide** and **the Colonel** your trusted ally.
+- romano_treasure
+content: 'Five. **Let my mark be your guide** and **the Colonel** your trusted ally.
+
 
   You must be patient. You must be careful. You must be worthy.
 
-  When you understand these words, you will know what to do. You are my blood, Vincent. You are my legacy. You are the only one I would entrust with paradise.
+
+  When you understand these words, you will know what to do. You are my blood, Vincent.
+  You are my legacy. You are the only one I would entrust with paradise.
+
 
   Remember where the sun sets, Vincent. Remember this always.
 
-  Your uncle who loves you,
-  Frankie
 
+  Your uncle who loves you,
+
+  Frankie'
+unlock_code: '3457'

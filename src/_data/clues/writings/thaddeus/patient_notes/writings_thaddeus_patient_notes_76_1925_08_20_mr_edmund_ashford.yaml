@@ -1,13 +1,16 @@
 id: WTPN76
 type: Writing (Thaddeus's Patient Notes)
 title: Thaddeus Crane's Patient Notes
-subtitle: "August 20, 1925 - Mr. Edmund Ashford. Chief Complaint: Acute bronchitis"
+subtitle: 'August 20, 1925 - Mr. Edmund Ashford. Chief Complaint: Acute bronchitis'
 act: act_i_setting
 date: '1925-08-20'
 hashtags:
-  - thaddeus_crane
+- thaddeus_crane
 skills:
-  - personal_crane
-content: |
-  Patient presents with persistent cough and chest congestion. Typical respiratory infection. Prescribed rest, mustard plaster, and steam inhalation. Patient anxious despite minor condition. Reassured him extensively. 20 minutes.
+- personal_crane
+content: 'Patient presents with persistent cough and chest congestion. Typical respiratory
+  infection. Prescribed rest, mustard plaster, and steam inhalation. Patient anxious
+  despite minor condition. Reassured him extensively. 20 minutes.
 
+  '
+unlock_code: '3567'

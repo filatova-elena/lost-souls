@@ -182,6 +182,19 @@ function renderClueAccess(access, showLockFirst = false) {
     if (lockSection) {
       lockSection.style.display = 'none';
     }
+    
+    // Show static ring if unlock_code exists
+    const clueData = window.__clueData || {};
+    if (clueData.unlock_code && window.buildStaticRing) {
+      const staticRing = document.querySelector('.static-ring[data-unlock-code]');
+      if (staticRing) {
+        const seanceSection = staticRing.closest('.seance-section');
+        if (seanceSection) {
+          seanceSection.style.display = '';
+          window.buildStaticRing(staticRing, clueData.unlock_code);
+        }
+      }
+    }
   } else {
     // Hide content (either locked or about to unlock)
     narrationSections.forEach(section => section.style.display = 'none');
@@ -190,9 +203,59 @@ function renderClueAccess(access, showLockFirst = false) {
     // Show and populate lock message if needed
     if (lockSection && (access.message || showLockFirst)) {
       const message = access.message || '';
-      const lockHTML = generateLockHTML(message, access.suggestedCharacters);
+      const clueData = window.__clueData || {};
+      const unlockCode = clueData.unlock_code || null;
+      const lockHTML = generateLockHTML(message, access.suggestedCharacters, unlockCode);
       lockSection.innerHTML = lockHTML;
       lockSection.style.display = '';
+      
+      // Initialize octogram lock if present
+      if (unlockCode && window.buildOctogramLock) {
+        const lockContainer = lockSection.querySelector('.octogram-lock[data-unlock-code]');
+        if (lockContainer) {
+          const cluePage = lockSection.closest('main') || lockSection.closest('.clue-page');
+          window.buildOctogramLock(lockContainer, unlockCode, () => {
+            if (cluePage) {
+              const isKeyClue = clueData.is_key && (Array.isArray(clueData.is_key) ? clueData.is_key.length > 0 : !!clueData.is_key);
+              
+              // Mark clue as scanned when unlocked via octogram
+              if (clueData.id) {
+                markClueAsScanned(clueData.id, clueData);
+                
+                // Update progress tracker if key clue
+                if (isKeyClue && window.renderProgressTracker) {
+                  const progressData = window.__progressData || {};
+                  const characterProfile = getCharacterProfile();
+                  const currentCharacterId = characterProfile?.characterId;
+                  const characterSideQuests = progressData.sideQuests || {};
+                  const sideQuestInfo = currentCharacterId ? characterSideQuests[currentCharacterId] : null;
+                  const mainQuestHashtag = progressData.mainQuestHashtag || 'main_quest';
+                  const sideQuestHashtag = sideQuestInfo?.hashtag;
+                  
+                  const keyHashtags = Array.isArray(clueData.is_key) ? clueData.is_key : (clueData.is_key ? [clueData.is_key] : []);
+                  let newlyFoundQuestHashtag = null;
+                  if (keyHashtags.includes(mainQuestHashtag)) {
+                    newlyFoundQuestHashtag = mainQuestHashtag;
+                  } else if (sideQuestHashtag && keyHashtags.includes(sideQuestHashtag)) {
+                    newlyFoundQuestHashtag = sideQuestHashtag;
+                  }
+                  
+                  if (newlyFoundQuestHashtag) {
+                    window.renderProgressTracker(newlyFoundQuestHashtag);
+                    window.spawnParticles();
+                  } else {
+                    window.renderProgressTracker();
+                  }
+                } else if (window.renderProgressTracker) {
+                  window.renderProgressTracker();
+                }
+              }
+              
+              window.triggerUnlockAnimation(cluePage, lockSection, isKeyClue);
+            }
+          });
+        }
+      }
     } else if (lockSection) {
       lockSection.style.display = 'none';
     }

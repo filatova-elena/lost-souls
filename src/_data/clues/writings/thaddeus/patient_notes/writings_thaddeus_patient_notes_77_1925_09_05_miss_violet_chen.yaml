@@ -1,13 +1,17 @@
 id: WTP77
 type: Writing (Thaddeus's Patient Notes)
 title: Thaddeus Crane's Patient Notes
-subtitle: "September 5, 1925 - Miss Violet Chen. Chief Complaint: Recurring abdominal pain"
+subtitle: 'September 5, 1925 - Miss Violet Chen. Chief Complaint: Recurring abdominal
+  pain'
 act: act_i_setting
 date: '1925-09-05'
 hashtags:
-  - thaddeus_crane
+- thaddeus_crane
 skills:
-  - personal_crane
-content: |
-  Patient reports digestive distress. Likely poor diet or digestive weakness. Suggested bland foods and prescribed bismuth. Provided dietary guidance. Patient appeared satisfied with recommendations. Straightforward case.
+- personal_crane
+content: 'Patient reports digestive distress. Likely poor diet or digestive weakness.
+  Suggested bland foods and prescribed bismuth. Provided dietary guidance. Patient
+  appeared satisfied with recommendations. Straightforward case.
 
+  '
+unlock_code: '2347'

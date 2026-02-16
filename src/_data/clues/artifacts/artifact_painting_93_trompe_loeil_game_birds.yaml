@@ -3,9 +3,17 @@ type: Artifact (Painting)
 title: Trompe l'Oeil Game Birds
 act: act_i_setting
 location: Bembridge House, Dining Room
-appearance: A strikingly realistic still life of hanging game birds — ducks suspended by their feet against a dark background
+appearance: A strikingly realistic still life of hanging game birds — ducks suspended
+  by their feet against a dark background
 hashtags:
-  - atmospheric
+- atmospheric
 skills: []
-content: |
-  A trompe l'oeil ("fool the eye") still life of hanging game birds — a pair of ducks suspended by their feet as if hung from a nail. This genre dates to 17th-century Dutch painting and was a standard dining room subject in wealthy American homes of the late 1800s. The dark background creates the illusion that real birds are hanging on the wall — game you'd serve at the table, displayed above where you'd eat it.
+content: 'A trompe l''oeil ("fool the eye") still life of hanging game birds — a pair
+  of ducks suspended by their feet as if hung from a nail. This genre dates to 17th-century
+  Dutch painting and was a standard dining room subject in wealthy American homes
+  of the late 1800s. The dark background creates the illusion that real birds are
+  hanging on the wall — game you''d serve at the table, displayed above where you''d
+  eat it.
+
+  '
+unlock_code: '1257'

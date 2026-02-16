@@ -6,9 +6,11 @@ act: act_iv_revelation
 date: '1925-10-19'
 location: The Attic
 hashtags:
-  - thaddeus_crane
-content: |-
-  [This final entry is also torn] I closed her eyes and thought about the man I believed myself to be before all of this. That man seems like a stranger now.
+- thaddeus_crane
+content: '[This final entry is also torn] I closed her eyes and thought about the
+  man I believed myself to be before all of this. That man seems like a stranger now.
 
-  That man no longer exists. I have become something else entirely. I have become someone who knows what he is capable of. And I cannot unknow it.
 
+  That man no longer exists. I have become something else entirely. I have become
+  someone who knows what he is capable of. And I cannot unknow it.'
+unlock_code: '0167'

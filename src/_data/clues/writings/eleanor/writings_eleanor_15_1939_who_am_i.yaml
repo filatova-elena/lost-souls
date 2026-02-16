@@ -4,17 +4,23 @@ title: Eleanor's Diary
 subtitle: 1939 - Who Am I?
 act: act_iii_investigation
 hashtags:
-  - eleanor_sullivan
-  - cordelia_montrose
-  - rose_bread_legacy
+- eleanor_sullivan
+- cordelia_montrose
+- rose_bread_legacy
 skills:
-  - personal_sullivan
-content: |-
-  I cannot stop thinking about her. About *me*.
+- personal_sullivan
+content: 'I cannot stop thinking about her. About *me*.
 
-  Mother says she loved me very much but couldn't keep me. That's all I know. That's all anyone will tell me.
 
-  Sometimes I look in the mirror and wonder whose face I'm seeing. Is it hers? Do I have her eyes, her hair? Mother says I do, but I'll never know for certain because I've never seen her. But I don't have her name. I don't have her story. I don't have the answer to the one question that matters: who am I really?
+  Mother says she loved me very much but couldn''t keep me. That''s all I know. That''s
+  all anyone will tell me.
 
-  And will I ever know?
 
+  Sometimes I look in the mirror and wonder whose face I''m seeing. Is it hers? Do
+  I have her eyes, her hair? Mother says I do, but I''ll never know for certain because
+  I''ve never seen her. But I don''t have her name. I don''t have her story. I don''t
+  have the answer to the one question that matters: who am I really?
+
+
+  And will I ever know?'
+unlock_code: '0145'

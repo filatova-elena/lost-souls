@@ -3,11 +3,14 @@ type: Vision (Cordelia)
 title: The Heartbroken Ghost
 subtitle: Recognition
 act: act_i_setting
-narrative: A young woman materializes before you, her wavy hair framing a face twisted with recognition. She recoils slightly, her eyes narrowing.
+narrative: A young woman materializes before you, her wavy hair framing a face twisted
+  with recognition. She recoils slightly, her eyes narrowing.
 hashtags:
-  - cordelia_montrose
-  - thaddeus_crane
+- cordelia_montrose
+- thaddeus_crane
 skills:
-  - is_character_doctor
-content: |
-  You remind me of Thaddeus, unpleasant man.
+- is_character_doctor
+content: 'You remind me of Thaddeus, unpleasant man.
+
+  '
+unlock_code: '2357'

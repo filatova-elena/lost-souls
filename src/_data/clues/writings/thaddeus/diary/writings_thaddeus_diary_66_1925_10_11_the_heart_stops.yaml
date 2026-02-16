@@ -5,12 +5,15 @@ subtitle: October 11, 1925 - The Heart Stops
 act: act_iii_investigation
 date: '1925-10-11'
 hashtags:
-  - thaddeus_crane
-  - sebastian_crane
-content: |-
-  Sebastian is dead.
+- thaddeus_crane
+- sebastian_crane
+content: 'Sebastian is dead.
 
-  His heart simply... stopped. I was present when it happened. His breathing had become labored. His vision was nearly gone. And then his heart, damaged beyond capacity to continue, simply ceased its function.
 
-  I stood there for a long moment, watching him. He is gone, the fool that he was.
+  His heart simply... stopped. I was present when it happened. His breathing had become
+  labored. His vision was nearly gone. And then his heart, damaged beyond capacity
+  to continue, simply ceased its function.
 
+
+  I stood there for a long moment, watching him. He is gone, the fool that he was.'
+unlock_code: '1237'

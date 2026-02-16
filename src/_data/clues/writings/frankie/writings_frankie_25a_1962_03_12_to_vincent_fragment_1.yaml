@@ -7,26 +7,37 @@ date: '1962-03-12'
 location: Bembridge House, Desk in the Foyer
 appearance: A piece of paper, weathered and folded.
 hashtags:
-  - frankie_romano
-  - romano_treasure
+- frankie_romano
+- romano_treasure
 skills:
-  - personal_romano
-  - history_2
+- personal_romano
+- history_2
 is_key:
-  - romano_treasure
-content: |-
-  My dear Vincent,
+- romano_treasure
+content: 'My dear Vincent,
 
-  If you are reading this, it means the time has come when you must be ready. The hand of the law is heavy, and I have made my choices with clear eyes.
 
-  I leave you not with tears, but with knowledge. What I have built, what I have protected, now passes to you. *It is the fortress, Vincent. It is the greatest treasure of all.*
+  If you are reading this, it means the time has come when you must be ready. The
+  hand of the law is heavy, and I have made my choices with clear eyes.
+
+
+  I leave you not with tears, but with knowledge. What I have built, what I have protected,
+  now passes to you. *It is the fortress, Vincent. It is the greatest treasure of
+  all.*
+
 
   Remember these words, for they hold everything:
 
-  One. Where the sun sets behind **old Methuselah**, the wind heavy with salt air will whisper secrets long forgotten.
+
+  One. Where the sun sets behind **old Methuselah**, the wind heavy with salt air
+  will whisper secrets long forgotten.
+
 
   ---
+
   **YOU OBSERVE**
 
-  The sun, the wind... Old Methuselah... What could it be? A statue? A fountain maybe? Must be something large and old.
 
+  The sun, the wind... Old Methuselah... What could it be? A statue? A fountain maybe?
+  Must be something large and old.'
+unlock_code: '1457'

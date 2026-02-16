@@ -4,13 +4,17 @@ title: The Heartbroken Ghost
 subtitle: Thoughts of Eleanor
 act: act_iv_revelation
 location: The Attic
-narrative: A vision of a young woman appears, her arms wrapped around herself as if cradling an invisible child. Her brown eyes overflow with tears, her lips trembling.
+narrative: A vision of a young woman appears, her arms wrapped around herself as if
+  cradling an invisible child. Her brown eyes overflow with tears, her lips trembling.
 hashtags:
-  - secret_baby
-  - cordelia_montrose
-  - eleanor_sullivan
+- secret_baby
+- cordelia_montrose
+- eleanor_sullivan
 skills:
-  - spiritual_2
+- spiritual_2
 is_key:
-  - secret_baby
-content: I lay in my room growing weaker, and all I could think about was Eleanor. My daughter. The baby I had to give away. Did she know? Would she ever forgive me? [Maternal longing and guilt crash over you like waves.]
+- secret_baby
+content: I lay in my room growing weaker, and all I could think about was Eleanor.
+  My daughter. The baby I had to give away. Did she know? Would she ever forgive me?
+  [Maternal longing and guilt crash over you like waves.]
+unlock_code: '0167'

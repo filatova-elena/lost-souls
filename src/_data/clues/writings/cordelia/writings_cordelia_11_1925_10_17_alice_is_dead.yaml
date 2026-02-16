@@ -4,20 +4,26 @@ title: Cordelia Montrose's Diary
 subtitle: October 17, 1925 - Alice is Dead
 act: act_iii_investigation
 hashtags:
-  - cordelia_montrose
-  - alice_whitmore
-  - thaddeus_crane
-  - doctor_and_patient
+- cordelia_montrose
+- alice_whitmore
+- thaddeus_crane
+- doctor_and_patient
 skills:
-  - personal_montrose
-content: |-
-  I learned today that Alice is dead. They said she fell. An accident.
+- personal_montrose
+content: 'I learned today that Alice is dead. They said she fell. An accident.
 
-  Alice. My oldest friend. The one I pushed away because I couldn't bear her presence.
 
-  I should have been there for her. I should have continued to protect her. Instead, I abandoned her when she needed me most.
+  Alice. My oldest friend. The one I pushed away because I couldn''t bear her presence.
 
-  And now Thaddeus's affair with her is public knowledge. The scandal is all anyone speaks of.
 
-  I threatened to expose him. But I didn't do it. I was too weak, too ill. And now Alice is dead and I will never get the chance to ask her forgiveness.
+  I should have been there for her. I should have continued to protect her. Instead,
+  I abandoned her when she needed me most.
 
+
+  And now Thaddeus''s affair with her is public knowledge. The scandal is all anyone
+  speaks of.
+
+
+  I threatened to expose him. But I didn''t do it. I was too weak, too ill. And now
+  Alice is dead and I will never get the chance to ask her forgiveness.'
+unlock_code: '0236'

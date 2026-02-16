@@ -3,8 +3,13 @@ type: Vision (Cordelia)
 title: The Heartbroken Ghost
 subtitle: Alice's Death
 act: act_ii_mystery_emerges
-narrative: A vision of a young woman in a rose colored dress appears before you, her large brown eyes glistening with tears. Her hands are pressed to her chest as if holding back grief.
+narrative: A vision of a young woman in a rose colored dress appears before you, her
+  large brown eyes glistening with tears. Her hands are pressed to her chest as if
+  holding back grief.
 hashtags:
-  - cordelia_montrose
-  - alice_whitmore
-content: Alice. Dear, brilliant Alice—my best friend since childhood. She was dead. Fallen down the stairs, they said. But Alice didn't fall. Alice didn't stumble. Something happened to her. [Shock and grief intertwine with something darker—suspicion.]
+- cordelia_montrose
+- alice_whitmore
+content: Alice. Dear, brilliant Alice—my best friend since childhood. She was dead.
+  Fallen down the stairs, they said. But Alice didn't fall. Alice didn't stumble.
+  Something happened to her. [Shock and grief intertwine with something darker—suspicion.]
+unlock_code: '1256'

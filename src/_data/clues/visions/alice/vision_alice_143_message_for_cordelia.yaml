@@ -3,10 +3,15 @@ type: Vision (Alice)
 title: The Lonely Ghost
 subtitle: Message for Cordelia
 act: act_ii_mystery_emerges
-narrative: A young woman in a pale dress appears before you, her form bright and urgent, eyes blazing with determination. Her gloved hands grip at the air as though she could shake you into action.
+narrative: A young woman in a pale dress appears before you, her form bright and urgent,
+  eyes blazing with determination. Her gloved hands grip at the air as though she
+  could shake you into action.
 hashtags:
-  - alice_whitmore
-  - cordelia_montrose
+- alice_whitmore
+- cordelia_montrose
 skills:
-  - spiritual_1
-content: I need her to know the truth. Cordelia needs to KNOW! Please tell her! Tell her what he did! [You sense urgency to deliver a message, to absolve someone of guilt they shouldn't carry.]
+- spiritual_1
+content: I need her to know the truth. Cordelia needs to KNOW! Please tell her! Tell
+  her what he did! [You sense urgency to deliver a message, to absolve someone of
+  guilt they shouldn't carry.]
+unlock_code: '0125'

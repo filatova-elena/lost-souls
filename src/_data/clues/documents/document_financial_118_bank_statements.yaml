@@ -5,57 +5,30 @@ act: act_iii_investigation
 date: 1965-1967
 location: The Office
 hashtags:
-  - romano_dynasty
-  - frankie_romano
-  - romano_treasure
+- romano_dynasty
+- frankie_romano
+- romano_treasure
 skills:
-  - legal_2
-  - history_2
-content: |-
-  TORN PAGES FROM BANK STATEMENTS
-
-  Documents: Multiple partial pages from confidential banking records
-  Condition: Severely torn and redacted
-  Date Range: 1965-1967
-
-  FRAGMENT 1:
-  Visible text: 'large wire transfer'
-  Amount visible: '$[redacted] million'
-  Date: April 1965
-  Recipient: 'CA Estate' [coded reference]
-
-  FRAGMENT 2:
-  Visible text: 'private trust account'
-  Amount: '$[partially visible] 500,000'
-  Date: June 1965
-  Recipient: 'Inheritance Transfer'
-  Notes: 'International wire - Switzerland'
-
-  FRAGMENT 3:
-  Visible text: 'offshore account establishment'
-  Amount: '$[redacted] million'
-  Date: August 1966
-  Recipient: 'Private Trust - [location redacted]'
-  Notes: 'Transferred from primary account'
-
-  FRAGMENT 4:
-  Visible text: 'final liquidation'
-  Amount: Multiple transfers visible
-  Date range: 1966-1967
-  Recipient: International accounts
-  Notes: 'Asset consolidation'
-
-  **PATTERN:**
-  All significant wire transfer activity visible in fragments ceases after 1967
-  Multiple international transfers documented
-  Swiss banking references appear in fragments
-
-  ---
-
-  **YOU OBSERVE:**
-
-  These fragments show **systematic asset liquidation and offshore transfer** between 1965–1967. Switzerland banking references, coded recipients, progressive redaction of information. This wasn't random — it was **planned financial architecture**.
-
-  The amounts are substantial — multiple millions based on the redactions. "Inheritance Transfer" to Switzerland, "CA Estate" wire transfers, "Private Trust" accounts. 
-
-  Could be connected to the Romano's hidden fortune.
+- legal_2
+- history_2
+content: "TORN PAGES FROM BANK STATEMENTS\n\nDocuments: Multiple partial pages from\
+  \ confidential banking records\nCondition: Severely torn and redacted\nDate Range:\
+  \ 1965-1967\n\nFRAGMENT 1:\nVisible text: 'large wire transfer'\nAmount visible:\
+  \ '$[redacted] million'\nDate: April 1965\nRecipient: 'CA Estate' [coded reference]\n\
+  \nFRAGMENT 2:\nVisible text: 'private trust account'\nAmount: '$[partially visible]\
+  \ 500,000'\nDate: June 1965\nRecipient: 'Inheritance Transfer'\nNotes: 'International\
+  \ wire - Switzerland'\n\nFRAGMENT 3:\nVisible text: 'offshore account establishment'\n\
+  Amount: '$[redacted] million'\nDate: August 1966\nRecipient: 'Private Trust - [location\
+  \ redacted]'\nNotes: 'Transferred from primary account'\n\nFRAGMENT 4:\nVisible\
+  \ text: 'final liquidation'\nAmount: Multiple transfers visible\nDate range: 1966-1967\n\
+  Recipient: International accounts\nNotes: 'Asset consolidation'\n\n**PATTERN:**\n\
+  All significant wire transfer activity visible in fragments ceases after 1967\n\
+  Multiple international transfers documented\nSwiss banking references appear in\
+  \ fragments\n\n---\n\n**YOU OBSERVE:**\n\nThese fragments show **systematic asset\
+  \ liquidation and offshore transfer** between 1965–1967. Switzerland banking references,\
+  \ coded recipients, progressive redaction of information. This wasn't random — it\
+  \ was **planned financial architecture**.\n\nThe amounts are substantial — multiple\
+  \ millions based on the redactions. \"Inheritance Transfer\" to Switzerland, \"\
+  CA Estate\" wire transfers, \"Private Trust\" accounts. \n\nCould be connected to\
+  \ the Romano's hidden fortune."
+unlock_code: '0236'

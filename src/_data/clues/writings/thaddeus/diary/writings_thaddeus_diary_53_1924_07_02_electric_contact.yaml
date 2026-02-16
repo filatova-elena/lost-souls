@@ -5,13 +5,15 @@ subtitle: July 2, 1924 - Electric Contact
 act: act_iii_investigation
 date: '1924-07-02'
 hashtags:
-  - thaddeus_crane
-  - alice_whitmore
-  - doctor_and_patient
+- thaddeus_crane
+- alice_whitmore
+- doctor_and_patient
 is_key:
-  - doctor_and_patient
-content: |-
-  Tonight we spoke in the parlor after examining a patient. Her hand brushed mine. The contact was electric. She said: "You are not what people believe you are, Thaddeus. You are far too intelligent to simply... exist within their expectations."
+- doctor_and_patient
+content: 'Tonight we spoke in the parlor after examining a patient. Her hand brushed
+  mine. The contact was electric. She said: "You are not what people believe you are,
+  Thaddeus. You are far too intelligent to simply... exist within their expectations."
 
-  She understands. She alone understands.
 
+  She understands. She alone understands.'
+unlock_code: '2456'
