@@ -2,6 +2,11 @@
 node_modules/
 venv/
 
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
 # Build output
 _site/
 

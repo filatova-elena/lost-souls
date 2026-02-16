@@ -1,0 +1,78 @@
+id: DM132
+type: Document (Medical)
+title: Forensic Report - Elixir Bottle Analysis
+act: act_iii_investigation
+date: October 15, 1925
+location: Laboratory
+hashtags:
+- foxglove
+- elixir_of_love
+- venetian_bottle
+- sebastian_crane
+- main_quest
+skills:
+- medical_2
+- botanical_2
+is_key:
+- elixir_of_love
+- main_quest
+content: '**FORENSIC EXAMINATION REPORT**
+
+
+  **Evidence Item:** Ornate Venetian Glass Bottle (Heart-shaped stopper)
+
+  **Date of Examination:** October 15, 1925
+
+  **Examining Analyst:** Laboratory Analysis
+
+
+  **PHYSICAL EXAMINATION:**
+
+  One ornate Venetian glass bottle with gold leaf detailing and heart-shaped stopper. Bottle shows signs of previous use. Interior surface contains residual liquid deposits.
+
+
+  **CHEMICAL ANALYSIS:**
+
+  **Residue samples extracted from interior surface and stopper:**
+
+  - **Botanical compounds detected:** Rose otto (Rosa x damascena), valerian root (Valeriana officinalis), damiana (Turnera diffusa), ginseng (Panax ginseng)
+
+  - **Pharmaceutical compounds detected:** Potassium bromide, calcium lactate, iron citrate
+
+  - **Base solvent:** Grain alcohol (95% proof)
+
+  - **Flavoring agents:** Vanilla extract, cherry syrup, honey
+
+
+  **TOXICOLOGY FINDINGS:**
+
+  **CRITICAL:** Traces of **Digitalis purpurea (foxglove)** detected in residue samples. Concentration levels indicate intentional addition, not accidental contamination.
+
+  **Cardiac glycosides present:** Digitoxin and digoxin compounds identified. These compounds are consistent with concentrated foxglove extract.
+
+
+  **CLINICAL INTERPRETATION:**
+
+  The botanical and pharmaceutical compounds match Sebastian Crane''s documented "Elixir of Eternal Love" formula. However, **foxglove was not part of the original formula**. The presence of foxglove cardiac glycosides in the bottle residue confirms that the elixir was adulterated with this toxic compound.
+
+  Foxglove (Digitalis purpurea) contains cardiac glycosides that cause severe heart irregularities, organ failure, and death. In concentrated doses, symptoms include nausea, visual disturbances, cardiac arrhythmia, and ultimately organ failure.
+
+
+  **FINAL DETERMINATION:**
+
+  **The elixir bottle contained traces of foxglove (Digitalis purpurea).** This finding directly links the bottle to the poisoning deaths. The foxglove was added to Sebastian''s original harmless formula, transforming it into a deadly poison.
+
+
+  **Analyst:** Laboratory Analysis
+
+  **Date signed:** October 15, 1925
+
+
+  ---
+
+
+  **MARGIN NOTES:**
+
+
+  **This forensic evidence confirms that Sebastian''s elixir was deliberately contaminated with foxglove. The original formula contained no toxic components. The addition of foxglove extract would have been undetectable to Sebastian, as the bitter taste would be masked by the honey, vanilla, and cherry syrup in the formula. This finding supports the conclusion that the elixir was tampered with after Sebastian prepared it according to his documented formula.**'
+unlock_code: '2847'
