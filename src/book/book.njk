@@ -1,0 +1,55 @@
+---
+pagination:
+  data: book
+  size: 1
+  alias: page
+  addAllPagesToCollections: true
+permalink: "/book/{{ page.uniqueId }}/index.html"
+layout: base
+---
+
+<link rel="stylesheet" href="{{ site.baseUrl }}book/book.css">
+
+<main>
+  {% if page.type == 'chapter' %}
+    {# Chapter page #}
+    <header class="book-chapter-header">
+      {% if page.isPrologue %}
+        <h1>PROLOGUE</h1>
+      {% else %}
+        <h1>CHAPTER {{ page.chapterNumber }}</h1>
+      {% endif %}
+      <h2>{{ page.chapter }}</h2>
+    </header>
+  {% else %}
+    {# Book entry page #}
+    <header>
+      <h1>{{ page.title }}</h1>
+      {% if page.dateString %}<p class="book-meta">{{ page.dateString }}</p>{% elif page.date %}<p class="book-meta">{{ page.date }}</p>{% endif %}
+      {% if page.location %}<p class="book-meta italic">{{ page.location }}</p>{% endif %}
+    </header>
+
+    <section class="book-content">
+      <div>
+        {{ page.content | markdown | safe }}
+      </div>
+    </section>
+  {% endif %}
+
+  {# Navigation #}
+  <nav class="book-navigation">
+    {% if pagination.href.previous %}
+      <a href="{{ pagination.href.previous }}" class="book-nav-link book-nav-prev">← Previous</a>
+    {% else %}
+      <span class="book-nav-link book-nav-prev disabled">← Previous</span>
+    {% endif %}
+    
+    <span class="book-nav-info">{{ pagination.pageNumber }} / {{ pagination.pages.length }}</span>
+    
+    {% if pagination.href.next %}
+      <a href="{{ pagination.href.next }}" class="book-nav-link book-nav-next">Next →</a>
+    {% else %}
+      <span class="book-nav-link book-nav-next disabled">Next →</span>
+    {% endif %}
+  </nav>
+</main>

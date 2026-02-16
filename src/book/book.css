@@ -1,0 +1,172 @@
+/* Book-specific styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap');
+
+/* Cover */
+.book-cover {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 15px;
+  background: linear-gradient(135deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1));
+  gap: 20px;
+}
+
+.book-cover-title {
+  font-family: 'Cinzel Decorative', Georgia, serif;
+  font-weight: 400;
+  font-size: 2.5em;
+  line-height: 1.2;
+  letter-spacing: 4px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  margin: 0;
+}
+
+.book-cover-subtitle {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.4em;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  opacity: 0.95;
+  margin: 0;
+}
+
+.book-cover-decoration {
+  width: 150px;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--accent-gold), transparent);
+  opacity: 0.6;
+  position: relative;
+}
+
+.book-cover-decoration::before,
+.book-cover-decoration::after {
+  content: '❦';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--accent-gold);
+  font-size: 1.2em;
+  opacity: 0.5;
+}
+
+.book-cover-decoration::before { left: -30px; }
+.book-cover-decoration::after { right: -30px; }
+
+/* Chapter header */
+.book-chapter-header {
+  padding: 60px 15px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book-chapter-header h1 {
+  font-weight: 300;
+  font-size: 2em;
+  line-height: 1.3;
+  letter-spacing: 4px;
+  margin: 0 0 20px;
+  opacity: 0.9;
+}
+
+.book-chapter-header h2 {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.4em;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  opacity: 0.95;
+  max-width: 600px;
+  margin: 0;
+}
+
+/* Content */
+.book-meta {
+  opacity: 0.85;
+  margin: 5px 0;
+  font-size: 0.95em;
+}
+
+.book-content {
+  margin: 25px 0;
+  font-size: 0.95em;
+}
+
+.book-content img {
+  max-width: 300px;
+  max-height: 400px;
+  display: block;
+  margin: 20px auto;
+  border: 2px solid rgba(212,165,116,0.3);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  object-fit: contain;
+}
+
+/* Navigation */
+.book-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.book-nav-link {
+  padding: 8px 16px;
+  border: 1px solid rgba(212,165,116,0.3);
+  transition: all 0.2s;
+}
+
+.book-nav-link:hover:not(.disabled) {
+  background: rgba(212,165,116,0.1);
+  border-color: var(--accent-gold);
+  text-decoration: none;
+}
+
+.book-nav-link.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.book-nav-info {
+  opacity: 0.7;
+  font-size: 0.9em;
+  order: -1;
+}
+
+.book-cover-nav { margin-top: 60px; }
+.book-cover-nav .disabled { display: none; }
+
+.book-cover-start {
+  font-size: 1.1em;
+  padding: 12px 24px;
+  background: rgba(212,165,116,0.1);
+  border-width: 2px;
+}
+
+.book-cover-start:hover {
+  background: rgba(212,165,116,0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(212,165,116,0.3);
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .book-cover { min-height: 70vh; padding: 40px 20px; }
+  .book-cover-title { font-size: 4.5em; letter-spacing: 12px; }
+  .book-cover-subtitle { font-size: 2.2em; letter-spacing: 6px; }
+  .book-cover-decoration { width: 300px; height: 3px; }
+  .book-cover-decoration::before, .book-cover-decoration::after { font-size: 2em; }
+  .book-cover-decoration::before { left: -60px; }
+  .book-cover-decoration::after { right: -60px; }
+  .book-chapter-header { padding: 100px 40px 60px; }
+  .book-chapter-header h1 { font-size: 3em; letter-spacing: 8px; margin-bottom: 10px; }
+  .book-chapter-header h2 { font-size: 2em; letter-spacing: 2px; }
+  .book-navigation { flex-direction: row; }
+  .book-nav-info { order: 0; }
+}

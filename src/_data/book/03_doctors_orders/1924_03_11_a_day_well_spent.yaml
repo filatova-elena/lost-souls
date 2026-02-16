@@ -2,57 +2,26 @@ id: a_day_well_spent
 date: '1924-03-11'
 title: A Day Well Spent
 location: Long Beach Medical Office
-content: '<img src="../assets/doctors_office_portrait.png" width="300" height="300"
-  alt="Dr. Thaddeus Crane in his office">
+chapter: Doctor's Orders
+content: |
+  ![Dr. Thaddeus Crane in his office](../assets/doctors_office_portrait.png)
 
+  Dr. Thaddeus Crane sat in his office on Ocean Avenue, savoring the satisfaction of a day well spent. Two difficult diagnoses—a case of pernicious anemia that lesser physicians might have missed, and a particularly troublesome case of quinsy—both handled with the precision and insight that had built his reputation.
 
-  Dr. Thaddeus Crane sat in his office on Ocean Avenue, savoring the satisfaction
-  of a day well spent. Two difficult diagnoses—a case of pernicious anemia that lesser
-  physicians might have missed, and a particularly troublesome case of quinsy—both
-  handled with the precision and insight that had built his reputation.
+  He was a man who looked precisely as a physician should: mid-thirties, with a prominent jaw that suggested both competence and authority, small serious eyes that seemed always to be assessing, and a squarish head crowned with thick brown hair, perfectly groomed. His white coat was immaculate.
 
+  The afternoon light slanted through the window, illuminating the leather-bound medical journals stacked neatly on his desk, the framed diploma from Johns Hopkins on the wall. Everything in its place. Everything as it should be.
 
-  He was a man who looked precisely as a physician should: mid-thirties, with a prominent
-  jaw that suggested both competence and authority, small serious eyes that seemed
-  always to be assessing, and a squarish head crowned with thick brown hair, perfectly
-  groomed. His white coat was immaculate.
+  He opened his personal journal—a small weakness, he supposed, but then again preserving his thoughts for posterity was of utmost importance.
 
-
-  The afternoon light slanted through the window, illuminating the leather-bound medical
-  journals stacked neatly on his desk, the framed diploma from Johns Hopkins on the
-  wall. Everything in its place. Everything as it should be.
-
-
-  He opened his personal journal—a small weakness, he supposed, but then again preserving
-  his thoughts for posterity was of utmost importance.
-
-
-  Sometimes, in a moment of sentimentality, Dr. Thaddeus imagined his own death (tragically
-  premature, no doubt—perhaps saving a patient during an epidemic). The mourners gathered.
-  And then—someone would discover these journals tucked away in his desk. They would
-  open the leather cover with trembling hands. They would read his penetrating observations
-  and they would whisper: "My God, we never truly appreciated the mind we had among
-  us."
-
+  Sometimes, in a moment of sentimentality, Dr. Thaddeus imagined his own death (tragically premature, no doubt—perhaps saving a patient during an epidemic). The mourners gathered. And then—someone would discover these journals tucked away in his desk. They would open the leather cover with trembling hands. They would read his penetrating observations and they would whisper: "My God, we never truly appreciated the mind we had among us."
 
   His thoughts wandered off and his pen met the paper:
 
+  ***On Dr. Morrison and Lesser Minds***
 
-  <strong><i><u>On Dr. Morrison and Lesser Minds</u></i></strong>
+  ***The Morrison clinic is insufferable. Dr. Morrison is competent enough, I suppose, but his method lacks refinement. He approaches medicine as if it were mere carpentry—measuring, testing, building without vision. Medicine is art. It requires imagination, intuition, the kind of intellectual superiority that separates the truly great physicians from the merely adequate.***
 
+  ***On Patients and Belief***
 
-  <strong><i>The Morrison clinic is insufferable. Dr. Morrison is competent enough,
-  I suppose, but his method lacks refinement. He approaches medicine as if it were
-  mere carpentry—measuring, testing, building without vision. Medicine is art. It
-  requires imagination, intuition, the kind of intellectual superiority that separates
-  the truly great physicians from the merely adequate.</i></strong>
-
-
-  <strong><i><u>On Patients and Belief</u></i></strong>
-
-
-  <strong><i>I prescribed a new tonic for Mrs. Harrington today. She will attribute
-  any improvement to my brilliance. Of course, the improvement comes from her own
-  body''s natural healing—but she will never understand this. People need to believe
-  in their doctor. They need to feel their fate rests in superior hands. It is kinder
-  this way.</i></strong>'
+  ***I prescribed a new tonic for Mrs. Harrington today. She will attribute any improvement to my brilliance. Of course, the improvement comes from her own body's natural healing—but she will never understand this. People need to believe in their doctor. They need to feel their fate rests in superior hands. It is kinder this way.***
