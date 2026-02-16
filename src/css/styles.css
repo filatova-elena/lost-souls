@@ -226,6 +226,31 @@ li {
     }
 }
 
+/* Character display (for reset page) */
+.character-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.character-avatar {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 2px solid var(--accent-gold);
+}
+
+.character-name {
+    margin: 0 0 5px 0;
+    color: var(--accent-gold);
+}
+
+.character-personality {
+    margin: 0;
+    opacity: 0.8;
+}
+
 /* ===== Shared Clue List Styles ===== */
 
 /* Section subheaders */

@@ -3,6 +3,7 @@
 
 const CHARACTER_PROFILE_KEY = 'character_profile';
 const SCANNED_CLUES_KEY = 'scanned';
+const UNLOCKED_CLUES_KEY = 'unlocked';
 
 // Skills functions are now imported from skills.js (loaded before this script)
 // Using window.parseSkill, window.convertSkills, window.hasSkillAccess
@@ -41,6 +42,7 @@ function clearCharacterProfile() {
 function resetInvestigation() {
   localStorage.removeItem(CHARACTER_PROFILE_KEY);
   localStorage.removeItem(SCANNED_CLUES_KEY);
+  localStorage.removeItem(UNLOCKED_CLUES_KEY);
 }
 
 /**
@@ -134,7 +136,49 @@ function generateNoAccessMessage(missingSkills, clueType, noAccessMessages) {
 }
 
 /**
+ * Get unlocked clues from localStorage
+ * @returns {Array<string>} Array of unlocked clue IDs
+ */
+function getUnlockedClues() {
+  try {
+    const unlocked = JSON.parse(localStorage.getItem(UNLOCKED_CLUES_KEY));
+    return Array.isArray(unlocked) ? unlocked : [];
+  } catch {
+    return [];
+  }
+}
+
+/**
+ * Mark a clue as unlocked (via alchemical symbols) and save to localStorage
+ * @param {string} clueId - The clue ID to mark as unlocked
+ * @returns {Array<string>} Updated unlocked clues array
+ */
+function markClueAsUnlocked(clueId) {
+  if (!clueId) {
+    console.error('Clue ID is required');
+    return [];
+  }
+
+  const unlocked = getUnlockedClues();
+  
+  if (!unlocked.includes(clueId)) {
+    unlocked.push(clueId);
+    try {
+      localStorage.setItem(UNLOCKED_CLUES_KEY, JSON.stringify(unlocked));
+    } catch (error) {
+      console.error('Failed to save unlocked clues:', error);
+    }
+  }
+  
+  return unlocked;
+}
+
+/**
  * Check clue access (pure logic, no DOM manipulation)
+ * Access check order:
+ * 1. Is unlocked? (via alchemical symbols)
+ * 2. Check story gates (TODO - not implemented)
+ * 3. Check skills
  * @param {Object} clueData - Clue data object with skills, type, accessChars (pre-computed), etc.
  * @param {Object} noAccessMessages - The no_access_messages data structure
  * @returns {Object} { hasAccess: boolean, missingSkills: Array<string>, message?: string, suggestedCharacters?: Array<string> }
@@ -145,6 +189,16 @@ function checkAccess(clueData, noAccessMessages) {
     return { hasAccess: false, missingSkills: [] };
   }
   
+  // 1. Check if unlocked via alchemical symbols
+  const unlocked = getUnlockedClues();
+  if (unlocked.includes(clueData.id)) {
+    return { hasAccess: true, missingSkills: [] };
+  }
+  
+  // 2. Check story gates (TODO - not implemented)
+  // This would check if prerequisite clues/events have been completed
+  
+  // 3. Check skills
   const profile = getCharacterProfile();
   const userSkills = profile ? profile.skills : [];
   const requiredSkills = Array.isArray(clueData.skills) ? clueData.skills : [];
@@ -218,8 +272,9 @@ function renderClueAccess(access, showLockFirst = false) {
             if (cluePage) {
               const isKeyClue = clueData.is_key && (Array.isArray(clueData.is_key) ? clueData.is_key.length > 0 : !!clueData.is_key);
               
-              // Mark clue as scanned when unlocked via octogram
+              // Mark clue as unlocked and scanned when unlocked via octogram
               if (clueData.id) {
+                markClueAsUnlocked(clueData.id);
                 markClueAsScanned(clueData.id, clueData);
                 
                 // Update progress tracker if key clue
@@ -262,65 +317,6 @@ function renderClueAccess(access, showLockFirst = false) {
   }
 }
 
-/**
- * Initialize clue access control on page load
- * @param {Object} clueData - Clue data object with skills, type, accessChars (pre-computed), etc.
- * @param {Object} noAccessMessages - The no_access_messages data structure
- */
-function initClueAccess(clueData, noAccessMessages) {
-  const access = checkAccess(clueData, noAccessMessages);
-  
-  // Check if this clue was already scanned
-  const scanned = getScannedClues();
-  const wasAlreadyScanned = scanned.all && scanned.all.includes(clueData.id);
-  
-  // If user has access, show content immediately - NO lock animation ever
-  if (access.hasAccess) {
-    renderClueAccess(access, false);
-    
-    // Mark as scanned if not already scanned
-    if (!wasAlreadyScanned) {
-      markClueAsScanned(clueData.id, clueData);
-      
-      // Check if this is a key clue relevant to current character
-      const isKey = clueData.is_key || [];
-      const keyHashtags = Array.isArray(isKey) ? isKey : (isKey ? [isKey] : []);
-      
-      // Get current character's quests
-      const characterProfile = getCharacterProfile();
-      const currentCharacterId = characterProfile?.characterId;
-      const progressData = window.__progressData || {};
-      const characterSideQuests = progressData.sideQuests || {};
-      const sideQuestInfo = currentCharacterId ? characterSideQuests[currentCharacterId] : null;
-      const mainQuestHashtag = progressData.mainQuestHashtag || 'main_quest';
-      const sideQuestHashtag = sideQuestInfo?.hashtag;
-      
-      // Find which quest this clue is key for (if any) - only main quest or current character's side quest
-      let newlyFoundQuestHashtag = null;
-      if (keyHashtags.includes(mainQuestHashtag)) {
-        newlyFoundQuestHashtag = mainQuestHashtag;
-      } else if (sideQuestHashtag && keyHashtags.includes(sideQuestHashtag)) {
-        newlyFoundQuestHashtag = sideQuestHashtag;
-      }
-      
-      // If relevant key clue, update tracker with animation and spawn particles
-      if (newlyFoundQuestHashtag && window.renderProgressTracker && window.spawnParticles) {
-        window.renderProgressTracker(newlyFoundQuestHashtag);
-        window.spawnParticles();
-      } else if (window.renderProgressTracker) {
-        // Still update tracker even if not a key clue
-        window.renderProgressTracker();
-      }
-    }
-    
-    return access;
-  }
-  
-  // User doesn't have access - show lock (no animation, just locked state)
-  renderClueAccess(access, false);
-  
-  return access;
-}
 
 /**
  * Set character to grandmother (who has all skills)
@@ -433,9 +429,10 @@ window.becomeGrandmother = becomeGrandmother;
 window.checkClueAccess = checkClueAccess;
 window.checkAccess = checkAccess;
 window.renderClueAccess = renderClueAccess;
-window.initClueAccess = initClueAccess;
 window.getScannedClues = getScannedClues;
 window.saveScannedClues = saveScannedClues;
 window.markClueAsScanned = markClueAsScanned;
+window.getUnlockedClues = getUnlockedClues;
+window.markClueAsUnlocked = markClueAsUnlocked;
 
 })();

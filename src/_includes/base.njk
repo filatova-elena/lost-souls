@@ -11,6 +11,10 @@
   <script src="{{ site.baseUrl }}js/skills.js" defer></script>
   <script src="{{ site.baseUrl }}js/effects.js" defer></script>
   <script src="{{ site.baseUrl }}js/main.js" defer></script>
+  {% if page.url == '/reset/' %}
+  <script src="{{ site.baseUrl }}js/reset.js" defer></script>
+  {% else %}
   <script src="{{ site.baseUrl }}js/clue-page.js" defer></script>
+  {% endif %}
 </body>
 </html>
