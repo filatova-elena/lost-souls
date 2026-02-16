@@ -1,0 +1,45 @@
+id: DM132
+type: Document (Medical)
+title: Forensic Report - Elixir Bottle Analysis
+act: act_iii_investigation
+date: October 15, 1925
+location: With Forensic Analyst
+hashtags:
+- foxglove
+- elixir_of_love
+- venetian_bottle
+- sebastian_crane
+- main_quest
+is_key:
+- elixir_of_love
+- main_quest
+content: |
+  **FORENSIC EXAMINATION REPORT**
+
+  **Evidence Item:** Glass bottle, Venetian style
+
+  PHYSICAL EXAMINATION:
+  One glass bottle, Venetian style, with gold leaf surface detailing and heart-shaped glass stopper. Signs of previous use. Residual liquid deposits on interior surface.
+
+  CHEMICAL ANALYSIS:
+  Residue samples extracted from interior surface and stopper.
+  Compounds identified:
+  - Rosa x damascena (rose) essential oil
+  - Valeriana officinalis (valerian) extract
+  - Turnera diffusa (damiana) extract
+  - Panax ginseng extract
+  - Potassium bromide
+  - Calcium lactate
+  - Iron citrate
+  - Ethanol (approx. 47.5% v/v)
+  - Vanillin
+  - Sucrose
+  - Fructose (consistent with honey)
+  - Digitalis purpurea (foxglove) extract *
+  * Flagged for toxicology screening.
+
+  **TOXICOLOGY FINDINGS:**
+  **Digitalis purpurea (foxglove)** confirmed present in residue.
+  Cardiac glycosides identified: digitoxin, digoxin.
+  Known effects at detected concentration range: cardiac arrhythmia, nausea, visual disturbances, organ failure, death.
+unlock_code: '2847'

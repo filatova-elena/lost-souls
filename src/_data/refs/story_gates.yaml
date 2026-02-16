@@ -1,0 +1,26 @@
+# Story Gates - Define which clues unlock which acts
+# A story gate is unlocked when the player discovers any of the specified clues
+
+act_ii_mystery_emerges:
+  name: "Act II: The Mystery Emerges"
+  unlock_type: any
+  # Any of these clues will unlock Act II
+  clues:
+    - AO79  # Venetian bottle
+    - AO81  # Pocket watch
+    - BH106 # Ginseng
+    - AO85  # Wedding dress
+
+act_iii_investigation:
+  name: "Act III: The Investigation"
+  unlock_type: any
+  # Any clue from Thaddeus's diary will unlock Act III
+  clues:
+    - WTD52  # writings_thaddeus_diary_52_1924_07_02_alice
+
+act_iv_revelation:
+  name: "Act IV: The Revelation"
+  unlock_type: any
+  # The forensic report unlocks Act IV
+  clues:
+    - DM132  # Forensic Report - Elixir Bottle Analysis
