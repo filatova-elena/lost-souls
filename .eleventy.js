@@ -24,6 +24,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/quests/*.css");
   eleventyConfig.addPassthroughCopy("src/clues/*.css");
   eleventyConfig.addPassthroughCopy("src/refs/*.css");
+  eleventyConfig.addPassthroughCopy("src/book/*.css");
   
   // Copy universal skills.js to output js directory
   eleventyConfig.addPassthroughCopy({

@@ -28,9 +28,8 @@ header, footer, section h2 {
     text-align: center;
 }
 
-/* Top-level header (contains progress tracker) matches main width and padding */
 body > header {
-    max-width: 1004px; /* 1000px + 4px border (2px each side) */
+    max-width: 1004px;
     margin: 0 auto;
     padding-top: 20px;
     box-sizing: border-box;
@@ -58,7 +57,15 @@ main {
     }
 }
 
-h1 {
+/* Base heading colors */
+h1, h2 {
+    color: var(--accent-gold);
+}
+
+/* Scoped heading styles - only apply borders/transforms where appropriate */
+main > header > h1,
+section > h1,
+.page-heading {
     color: var(--accent-gold);
     font-size: 1.5em;
     margin-bottom: 12px;
@@ -70,7 +77,9 @@ h1 {
 }
 
 @media (min-width: 768px) {
-    h1 {
+    main > header > h1,
+    section > h1,
+    .page-heading {
         font-size: 2.2em;
         margin-bottom: 15px;
         letter-spacing: 2px;
@@ -79,11 +88,13 @@ h1 {
 }
 
 h2 {
-    color: var(--accent-gold);
     font-size: 1.2em;
     margin: 20px 0 12px 0;
-    text-transform: uppercase;
     line-height: 1.4;
+}
+
+section > h2 {
+    text-transform: uppercase;
 }
 
 @media (min-width: 768px) {
@@ -100,16 +111,10 @@ p {
     line-height: 1.6;
 }
 
-@media (min-width: 768px) {
-    p {
-        font-size: 1em;
-    }
-}
-
 p.italic {
     font-style: italic;
 }
-  
+
 a {
     color: var(--accent-gold);
     text-decoration: none;
@@ -119,7 +124,11 @@ a:hover {
     text-decoration: underline;
 }
 
-button, .button, a.button {
+/* Consolidated button utility class */
+.button,
+button.button,
+a.button,
+button {
     background-color: var(--accent-purple);
     color: var(--accent-gold);
     border: 2px solid var(--accent-gold);
@@ -132,8 +141,11 @@ button, .button, a.button {
     text-decoration: none;
     font-family: sans-serif;
 }
-  
-button:hover, .button:hover, a.button:hover {
+
+.button:hover,
+button.button:hover,
+a.button:hover,
+button:hover {
     background-color: var(--accent-gold);
     color: var(--primary-dark);
 }
@@ -148,16 +160,16 @@ strong {
     margin-top: 30px;
     gap: 10px;
 }
-  
+
 .page-nav button {
     flex: 1;
 }
-  
+
 .page-nav button:disabled {
     opacity: 0.5;
     cursor: not-allowed;
 }
-  
+
 .page-num {
     text-align: center;
     margin-top: 15px;
@@ -165,12 +177,10 @@ strong {
     font-size: 0.9em;
 }
 
-/* Section divider */
 section:not(:last-child) {
     border-bottom: 2px solid rgba(212, 165, 116, 0.3);
 }
 
-/* Reference links horizontal layout */
 .reference-links {
     display: flex;
     justify-content: center;
@@ -179,17 +189,14 @@ section:not(:last-child) {
     gap: 15px;
 }
 
-/* Utility class for subdued text */
 .muted {
     opacity: 0.8;
 }
 
-/* Separator dots */
 .separator {
     color: var(--accent-gold);
 }
 
-/* List styles */
 ul {
     margin: 15px 0;
     padding-left: 20px;
@@ -211,7 +218,6 @@ li {
     }
 }
 
-/* Call to action section */
 .call-to-action {
     margin: 20px 0;
     padding: 15px;
@@ -226,7 +232,6 @@ li {
     }
 }
 
-/* Character display (for reset page) */
 .character-card {
     display: flex;
     align-items: center;
@@ -251,9 +256,7 @@ li {
     opacity: 0.8;
 }
 
-/* ===== Shared Clue List Styles ===== */
-
-/* Section subheaders */
+/* ===== Shared List Styles ===== */
 .section-subheader {
     color: var(--accent-gold);
     font-size: 1em;
@@ -268,34 +271,44 @@ li {
     opacity: 0.7;
 }
 
-/* Clue and Rumor lists */
-.clue-list, .rumor-list {
+.clue-list,
+.rumor-list {
     list-style: none;
     padding-left: 0;
     margin: 0;
 }
 
-.clue-item, .rumor-item {
+/* Consolidated list item class */
+.list-item {
     margin: 0;
     padding: 6px 8px;
     border-bottom: 1px solid rgba(212, 165, 116, 0.07);
     transition: opacity 0.15s ease;
 }
 
-.clue-item:hover, .rumor-item:hover {
+.list-item:hover {
     background-color: rgba(212, 165, 116, 0.04);
 }
 
-.clue-item-main {
-    font-size: 0.9em;
-    font-family: sans-serif;
-    line-height: 1.5;
+.clue-item,
+.rumor-item {
+    /* Use shared .list-item class */
 }
 
-.rumor-item-main {
-    font-size: 0.85em;
+/* Consolidated item main text with size variants */
+.item-main {
     font-family: sans-serif;
     line-height: 1.5;
+    font-size: 0.9em;
+}
+
+.item-main--small {
+    font-size: 0.85em;
+}
+
+.clue-item-main,
+.rumor-item-main {
+    /* Use .item-main or .item-main--small */
 }
 
 .type-label {
@@ -306,7 +319,6 @@ li {
     opacity: 0.85;
 }
 
-/* Tag badges on items */
 .clue-item-tags {
     margin-top: 3px;
     display: flex;
@@ -331,7 +343,6 @@ li {
     font-weight: 600;
 }
 
-/* Truth badges */
 .truth-badge {
     font-size: 0.7em;
     margin-left: 6px;
@@ -346,7 +357,6 @@ li {
     color: #f44336;
 }
 
-/* Tag filter navigation */
 .tag-filters {
     margin: 15px 0;
     padding: 12px;
