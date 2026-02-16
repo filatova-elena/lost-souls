@@ -1,0 +1,61 @@
+---
+layout: base
+title: Reset Investigation
+permalink: /reset/
+---
+
+<main>
+  <header>
+    <h1>Investigation Status</h1>
+    <p class="italic">View your progress and reset your investigation</p>
+  </header>
+
+  <section id="character-info">
+    <h2>Current Character</h2>
+    <div id="character-display">
+      <p class="muted">No character selected</p>
+    </div>
+  </section>
+
+  <section id="stats-section">
+    <h2>Investigation Progress</h2>
+    <div id="stats-display">
+      <div>
+        <p class="muted">Total Clues Found</p>
+        <p id="total-clues"><strong>0</strong></p>
+      </div>
+      <div>
+        <p class="muted">Main Quest Clues Found</p>
+        <p id="main-quest-clues"><strong>0</strong></p>
+      </div>
+      <div>
+        <p class="muted">Side Quest Clues Found</p>
+        <p id="side-quest-clues"><strong>0</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <p>
+      <button id="reset-btn" class="button">Reset Investigation</button>
+    </p>
+    <p class="muted">This will clear all progress, scanned clues, and your selected character</p>
+  </section>
+</main>
+
+<script>
+  window.__characters = {{ characters | json | safe }};
+  {% set mainQuestHashtag = 'main_quest' %}
+  {% set mainQuestKeyClues = clues | filterKeyClues(mainQuestHashtag) %}
+  {% set sideQuests = {} %}
+  {% for characterId, sideQuestInfo in character_side_quests %}
+    {% set sideQuestKeyClues = clues | filterKeyClues(sideQuestInfo.hashtag) %}
+    {% set sideQuests = sideQuests | merge(characterId | obj({ hashtag: sideQuestInfo.hashtag, total: sideQuestKeyClues | length, objectiveShort: sideQuestInfo.objectiveShort })) %}
+  {% endfor %}
+  window.__progressData = {
+    mainQuestHashtag: {{ mainQuestHashtag | json | safe }},
+    mainQuestTotal: {{ mainQuestKeyClues | length }},
+    sideQuests: {{ sideQuests | json | safe }}
+  };
+  window.__siteBaseUrl = {{ site.baseUrl | json | safe }};
+</script>

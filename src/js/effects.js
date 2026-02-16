@@ -25,95 +25,6 @@ function renderProgressPip(container, isFilled, isJustFound = false) {
   container.appendChild(pip);
 }
 
-/**
- * Render progress tracker with pips for main and side quests
- * Reads progress data from data attributes on the tracker element
- * Filters side quest by current character from localStorage
- * @param {string} newlyFoundQuestHashtag - Optional quest hashtag for the clue that was just found (for animation)
- */
-function renderProgressTracker(newlyFoundQuestHashtag = null) {
-  const tracker = document.querySelector('[data-progress-tracker]');
-  if (!tracker) return;
-  
-  // Get progress data from window global (pre-computed at build time)
-  const progressData = window.__progressData;
-  if (!progressData) {
-    console.error('Progress data not found');
-    return;
-  }
-  
-  const mainQuestHashtag = progressData.mainQuestHashtag || 'main_quest';
-  const mainQuestTotal = progressData.mainQuestTotal || 0;
-  
-  // Use side quests object directly (pre-computed at build time)
-  const characterSideQuests = progressData.sideQuests || {};
-  
-  // Get current character from localStorage (only client-side dependency)
-  const characterProfile = window.getCharacterProfile ? window.getCharacterProfile() : null;
-  const currentCharacterId = characterProfile?.characterId || null;
-  
-  // Get scanned clues from localStorage (only client-side dependency)
-  const scanned = window.getScannedClues ? window.getScannedClues() : { all: [] };
-  
-  // Render main quest progress (always show)
-  const mainTrack = tracker.querySelector('.progress-track.main');
-  if (mainTrack) {
-    const found = scanned[mainQuestHashtag]?.length || 0;
-    // If this quest just had a clue found, animate the last pip
-    const newlyFoundIndex = (newlyFoundQuestHashtag === mainQuestHashtag) ? found - 1 : -1;
-    renderQuestProgress(mainTrack, found, mainQuestTotal, newlyFoundIndex);
-  }
-  
-  // Render side quest progress for current character
-  const sideTrack = tracker.querySelector('.progress-track.side');
-  if (sideTrack && currentCharacterId && characterSideQuests[currentCharacterId]) {
-    const sideQuestData = characterSideQuests[currentCharacterId];
-    const found = scanned[sideQuestData.hashtag]?.length || 0;
-    
-    // Update side track label with objective_short
-    const sideLabel = sideTrack.querySelector('.progress-label');
-    if (sideLabel && sideQuestData.objectiveShort) {
-      sideLabel.textContent = sideQuestData.objectiveShort;
-    }
-    
-    // Update side track attributes and show it
-    sideTrack.setAttribute('data-quest', sideQuestData.hashtag);
-    sideTrack.style.display = '';
-    // If this quest just had a clue found, animate the last pip
-    const newlyFoundIndex = (newlyFoundQuestHashtag === sideQuestData.hashtag) ? found - 1 : -1;
-    renderQuestProgress(sideTrack, found, sideQuestData.total, newlyFoundIndex);
-  } else if (sideTrack) {
-    // Hide side quest if no character selected or no side quest for character
-    sideTrack.style.display = 'none';
-  }
-}
-
-/**
- * Render progress pips for a single quest track
- * @param {HTMLElement} trackElement - The progress track element
- * @param {number} found - Number of found key clues
- * @param {number} total - Total number of key clues
- * @param {number} newlyFoundIndex - Index of the pip that was just found (for animation), or -1 if none
- */
-function renderQuestProgress(trackElement, found, total, newlyFoundIndex = -1) {
-  const pipsContainer = trackElement.querySelector('[data-pips]');
-  const countElement = trackElement.querySelector('[data-count]');
-  
-  if (!pipsContainer || !countElement) return;
-  
-  // Clear existing pips
-  pipsContainer.innerHTML = '';
-  
-  // Update count
-  countElement.textContent = `${found} / ${total}`;
-  
-  // Render pips
-  for (let i = 0; i < total; i++) {
-    const isFilled = i < found;
-    const isJustFound = i === newlyFoundIndex;
-    renderProgressPip(pipsContainer, isFilled, isJustFound);
-  }
-}
 
 /**
  * Join array with Oxford comma "or"
@@ -498,9 +409,14 @@ function initOctogramLock() {
       const clueData = window.__clueData || {};
       const isKeyClue = clueData.is_key && (Array.isArray(clueData.is_key) ? clueData.is_key.length > 0 : !!clueData.is_key);
       
-      // Mark clue as scanned when unlocked via octogram
-      if (window.markClueAsScanned && clueData.id) {
-        window.markClueAsScanned(clueData.id, clueData);
+      // Mark clue as unlocked and scanned when unlocked via octogram
+      if (clueData.id) {
+        if (window.markClueAsUnlocked) {
+          window.markClueAsUnlocked(clueData.id);
+        }
+        if (window.markClueAsScanned) {
+          window.markClueAsScanned(clueData.id, clueData);
+        }
         
         // Update progress tracker if key clue
         if (isKeyClue && window.renderProgressTracker) {
@@ -539,7 +455,6 @@ function initOctogramLock() {
 // Expose to global scope
 window.pipSVG = pipSVG;
 window.renderProgressPip = renderProgressPip;
-window.renderProgressTracker = renderProgressTracker;
 window.generateLockHTML = generateLockHTML;
 window.triggerUnlockAnimation = triggerUnlockAnimation;
 window.spawnParticles = spawnParticles;

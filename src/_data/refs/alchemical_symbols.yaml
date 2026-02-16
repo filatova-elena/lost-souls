@@ -1,0 +1,10 @@
+# Alchemical symbols used in the octogram lock
+# Maps index (0-7) to symbol character
+0: '🝪'  # Alembic
+1: '🝮'  # Hour
+2: '☿'   # Mercury
+3: '🝣'   # Purifying
+4: '♀'   # Venus
+5: '♃'   # Jupiter
+6: '🝭'   # Retort
+7: '🝰'   # Day and night

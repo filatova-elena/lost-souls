@@ -32,7 +32,6 @@
 .clue-no-access {
     padding: 20px;
     background-color: rgba(212, 165, 116, 0.1);
-    border-left: 3px solid var(--accent-gold);
     margin: 20px 0;
     text-align: center;
 }
