@@ -1,0 +1,41 @@
+---
+layout: base
+title: "Cordelia Montrose Script"
+permalink: refs/ghosts/cordelia/
+---
+<main>
+  <header>
+    <h1>👻 Cordelia Rose Montrose</h1>
+    <p class="italic">The Heartbroken Ghost</p>
+    <p><a href="{{ site.baseUrl }}refs/">← Back to References</a></p>
+  </header>
+
+  {% set ghost = ghosts.byId.cordelia or ghosts.byId.GC2 %}
+  {% if ghost %}
+
+  <section>
+    <h2>Background</h2>
+    <div>
+      {{ ghost.content | markdown | safe }}
+    </div>
+  </section>
+
+  {% if ghost.mutterings %}
+  <section>
+    <h2>Mutterings</h2>
+    {% for actKey, mutterings in ghost.mutterings %}
+      {% if mutterings and mutterings.length > 0 %}
+      <h3>{% if actKey == "act_i_setting" %}Act I: Setting{% elif actKey == "act_ii_mystery_emerges" %}Act II: Mystery Emerges{% elif actKey == "act_iii_investigation" %}Act III: Investigation{% elif actKey == "act_iv_revelation" %}Act IV: Revelation{% else %}{{ actKey | replace("_", " ") | title }}{% endif %}</h3>
+      <ul>
+        {% for muttering in mutterings %}
+        <li>"{{ muttering }}"</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  {% endif %}
+
+</main>

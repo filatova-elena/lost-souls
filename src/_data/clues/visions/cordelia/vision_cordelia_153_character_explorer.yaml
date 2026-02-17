@@ -12,8 +12,7 @@ hashtags:
 - secret_baby
 skills:
 - is_character_explorer
-content: 'Thomas? You are back from your travels, they said you were lost at sea.
+content: |
+  Thomas? You are back from your travels, they said you were lost at sea.
   There is something important you MUST know... [trails off, you sense the urgency]
-
-  '
 unlock_code: '0234'

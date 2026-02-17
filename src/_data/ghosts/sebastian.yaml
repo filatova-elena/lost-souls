@@ -1,0 +1,46 @@
+id: GS3
+ghost: sebastian
+name: Sebastian Montgomery Crane
+known_as: The Ghost of the Cursed Alchemist
+content: |
+  **Sebastian Montgomery Crane** was born into the Crane family of Long Beach, his father was a physician and his mother was an educator. From his earliest years, Sebastian was fascinated by chemistry and the transformative power of substances. He spent his childhood in his father's shed, setting small fires during chemistry experiments and mixing volatile compounds, much to his parents' equal parts pride and exasperation.
+
+  Sebastian's family dynamic was marked by a clear contrast between him and his older brother, **Thaddeus Crane**. Thaddeus was the golden child—the brilliant physician, who followed in his father's footsteps. Sebastian, on the other hand, became a pharmacist and chemist, who saw opportunity in the gray areas between legality and profit.
+
+  Despite their differences, Sebastian loved and admired his brother, Thaddeus. He often wished he could be more like him.
+
+  Sebastian's personality was a complex blend of romantic idealism and practical opportunism. He believed that love could be perfected through chemistry and the stars—a romantic notion that drove him to create his "Elixir of Eternal Love," a potion designed to strengthen emotional bonds.
+
+  Sebastian earned a reputation among certain circles as "The Alchemist"—a man who could transmute legality into fortune, who understood that chemistry was not just science but art, and who believed that with the right formula, anything was possible. Through his connection with Frankie Romano at the port, he supplied half the speakeasies in Long Beach with grain alcohol, all perfectly legal on paper as medical supplies and medicinal tonics.
+
+  Despite his involvement in the bootlegging trade, Sebastian was fundamentally a romantic at heart. He believed in the power of love, in the possibility of perfecting human connection through science, and in the idea that chemistry could unlock the mysteries of the heart. He was arrogant in his confidence, believing that his understanding of chemistry made him capable of creating something truly extraordinary—a potion that could make love eternal.
+
+  When Sebastian met Cordelia Montrose, he was smitten. He was immediately taken by her beauty and her spirit, her love of poetry and music and the genuine way she saw the world, that contrasted greatly with the superficial social interactions he was used to. He knew immediately that his "Elixir of Eternal Love" was intended for her and her alone.
+
+  She understood Sebastian's vision and she was intrigued by it. She drank the potion as a ritual, daily. But soon Cordelia started getting sick. Sebastian grew concerned and stayed closely by her side. He was confident his elixir was harmless, but he was wrong. As any arrogant alchemist would do, he tested the elixir on himself. He died within days thinking that he failed his great work and the love of his life, Cordelia. 
+  
+  ---
+  
+  Before his death, Sebastian cursed himself for failing Cordelia, unknowingly trapping his spirit to haunt the halls of the Montrose mansion, forever searching for the truth about his own creation. Over the years, his true name was forgotten and he is now known as "The Ghost of The Cursed Alchemist", always tinkering in his laboratory, trying to create the perfect elixir, muttering to himself about the mysteries of chemistry and the heart. Even Crane family distanced themselves from the tragedy by changing their name to Sinclair. They tried hard to forget Sebastian ever existed.
+
+mutterings:
+  act_i_setting:
+    - "Love can be perfected through chemistry... I know it can."
+    - "The stars align, the formula is flawless. This will be my masterpiece."
+    - "Cordelia understands my vision. She sees the poetry in science."
+    - "Damiana, Valerian, Rose Otto... each ingredient chosen with care."
+  act_ii_mystery_emerges:
+    - "Cordelia is getting sick... but my formula is flawless. It must be stress from the wedding."
+    - "Everyone keeps worrying, but they don't understand chemistry like I do. My work is perfect."
+    - "My brother says it's nerves. Women are delicate, after all. It's probably nothing serious."
+    - "I've spent years perfecting this. Years! I know what I'm doing. They just don't understand."
+  act_iii_investigation:
+    - "I drank it myself. I had to know... I had to be certain."
+    - "Something is terribly wrong. My heart... it won't stop racing."
+    - "I failed her. I failed my great work. How could I be so wrong?"
+    - "My brother tried to help... but nothing worked. Nothing could save me."
+  act_iv_revelation:
+    - "I was so arrogant. So confident. And I destroyed everything I loved."
+    - "Cordelia... forgive me. I never meant to hurt you."
+    - "The formula was perfect. But something... something went wrong."
+    - "I'm still searching. Still trying to understand what I did wrong."

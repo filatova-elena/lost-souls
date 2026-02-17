@@ -1,0 +1,122 @@
+---
+layout: base
+title: "Main Script"
+permalink: refs/script/
+---
+<main>
+  <header>
+    <h1>🎭 Main Script</h1>
+    <p class="italic">The complete script for The Lost Souls Murder Mystery</p>
+    <p><a href="{{ site.baseUrl }}refs/">← Back to References</a></p>
+  </header>
+
+  {% set script = refs.script %}
+
+  {% if script.arrival_and_greeting %}
+  <section>
+    <h2>Arrival and Greeting</h2>
+    {% if script.arrival_and_greeting.directions %}
+    <p class="italic">{{ script.arrival_and_greeting.directions | markdown | safe }}</p>
+    {% endif %}
+    {% if script.arrival_and_greeting.script %}
+      {% for item in script.arrival_and_greeting.script %}
+        {% if item.dialogue %}
+        <p><strong>{{ item.dialogue.speaker }}:</strong> {{ item.dialogue.text | markdown | safe }}</p>
+        {% if item.dialogue.action %}<p class="italic">({{ item.dialogue.action }})</p>{% endif %}
+        {% if item.dialogue.method %}<p class="italic">[{{ item.dialogue.method }}]</p>{% endif %}
+        {% elif item.directions %}
+        <p class="italic">{{ item.directions | markdown | safe }}</p>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+    {% if script.arrival_and_greeting.required_characters %}
+    <p><strong>Required Characters:</strong> {{ script.arrival_and_greeting.required_characters | join(", ") }}</p>
+    {% endif %}
+    {% if script.arrival_and_greeting.notes %}
+    <div class="call-to-action">
+      <div><strong>Notes:</strong> {{ script.arrival_and_greeting.notes | markdown | safe }}</div>
+    </div>
+    {% endif %}
+  </section>
+  {% endif %}
+
+  {% if script.act_i_setting %}
+  <section>
+    <h2>Act I: Setting</h2>
+    {% if script.act_i_setting.script %}
+      {% for item in script.act_i_setting.script %}
+        {% if item.dialogue %}
+        <p><strong>{{ item.dialogue.speaker }}:</strong> {{ item.dialogue.text }}</p>
+        {% if item.dialogue.method %}<p class="italic">[{{ item.dialogue.method }}]</p>{% endif %}
+        {% elif item.directions %}
+        <p class="italic">{{ item.directions }}</p>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  </section>
+  {% endif %}
+
+  {% if script.act_ii_mystery_emerges %}
+  <section>
+    <h2>Act II: Mystery Emerges</h2>
+    {% if script.act_ii_mystery_emerges.script %}
+      {% for item in script.act_ii_mystery_emerges.script %}
+        {% if item.dialogue %}
+        <p><strong>{{ item.dialogue.speaker }}:</strong> {{ item.dialogue.text }}</p>
+        {% elif item.directions %}
+        <p class="italic">{{ item.directions }}</p>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  </section>
+  {% endif %}
+
+  {% if script.act_iii_investigation %}
+  <section>
+    <h2>Act III: Investigation</h2>
+    {% if script.act_iii_investigation.script %}
+      {% for item in script.act_iii_investigation.script %}
+        {% if item.dialogue %}
+        <p><strong>{{ item.dialogue.speaker }}:</strong> {{ item.dialogue.text }}</p>
+        {% if item.dialogue.method %}<p class="italic">[{{ item.dialogue.method }}]</p>{% endif %}
+        {% elif item.directions %}
+        <p class="italic">{{ item.directions }}</p>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  </section>
+  {% endif %}
+
+  {% if script.act_iv_revelation %}
+  <section>
+    <h2>Act IV: Revelation</h2>
+    {% if script.act_iv_revelation.script %}
+      {% for item in script.act_iv_revelation.script %}
+        {% if item.dialogue %}
+        <p><strong>{{ item.dialogue.speaker }}:</strong> {{ item.dialogue.text }}</p>
+        {% if item.dialogue.method %}<p class="italic">[{{ item.dialogue.method }}]</p>{% endif %}
+        {% elif item.directions %}
+        <p class="italic">{{ item.directions }}</p>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  </section>
+  {% endif %}
+
+  {% if script.act_v_conclusions %}
+  <section>
+    <h2>Act V: Conclusions</h2>
+    {% if script.act_v_conclusions.script %}
+      {% for item in script.act_v_conclusions.script %}
+        {% if item.dialogue %}
+        <p><strong>{{ item.dialogue.speaker }}:</strong> {{ item.dialogue.text }}</p>
+        {% if item.dialogue.method %}<p class="italic">[{{ item.dialogue.method }}]</p>{% endif %}
+        {% elif item.directions %}
+        <p class="italic">{{ item.directions }}</p>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  </section>
+  {% endif %}
+
+</main>

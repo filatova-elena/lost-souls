@@ -1,0 +1,39 @@
+id: GA1
+ghost: alice
+name: Alice Catherine Whitmore
+known_as: The Lonely Ghost
+content: |
+  **Alice Catherine Whitmore** was born into a family that had once known prosperity but fell into decline. Her father lost the family fortune in 1918, and from that point forward, the Whitmore household struggled to maintain appearances. Despite their financial hardships, the Whitmore family was close-knit and loving. Alice had an older brother, **Thomas Edward Whitmore**, who became a merchant marine captain and traveled the world, bringing stories of exotic ports and distant horizons back to his family.
+
+  The Whitmore house had once been a comfortable home, but after the family's financial collapse, it began to slowly deteriorate—the paint peeling, the fence sagging, the grass growing wild.
+
+  Alice was best friends with Cordelia Montrose, however, the Montroses started to distance themselves from the Whitmore family after their financial troubles had become public knowledge. Despite this, Alice and Cordelia remained close and often visited each other's homes.
+
+  The Whitmore house is where Cordelia met Thomas, Alice's older brother and fell in love.
+
+  When Alice received the news of her brother's death at sea, she expected to find comfort in Cordelia's arms, but instead she found herself alone and confused, Cordelia's mother was cold and condescending when she told Alice that Cordelia was away in Rome and was not expected back for months, advising Alice to wait for her return instead of writing letters that would inevitably be misdirected.
+
+  This is when her visions started. She started to see visions of Thomas and sometimes disturbing visions of Cordelia. The doctors tried to dismiss her as "hysterical", but there were multiple signs that proved Alice's visions were real. Dr. Thaddeus Crane was the first to note that Alice presented no symptoms of "hysteria". Instead, she seemed calm and intelligent, insightful. He noted several instances of Alice predicting events before they happened, especially when pertaining to medical crisis. He found her ability fascinating. Over time, they developed a special connection, based on mutual understanding and respect, which eventually led to a love affair.
+
+  When Cordelia found out about the affair, she confronted Alice, warning her that Thaddeus's intentions might not be honorable. But Alice was defensive, hurt.
+
+  Everything happened quickly. Thaddeus came to Alice in great distress and confessed to her disturbing things, which she refuses to think about. Then the world went black until... She was awake again.
+
+  ---
+
+  Alice's spirit is restless because she lost her best friend. Alice knows the truth of what happened to her, but she refuses to acknowledge it or speak it. Unlike other ghost visions, Alice's ghost seems real, almost too real. She is often addressed by the members of the staff who confuse her with another guest. Her ghost remains attached to the Montrose Mansion, searching for her friend, Cordelia, whom she loved dearly despite the distance between them in their last few months of life. Alice's true name was forgotten and she is now known as the Lonely Ghost, always searching for her friend.
+
+mutterings:
+  act_iii_investigation:
+    - "Cordelia needs to know the truth! Please, someone tell her!"
+    - "I tried to warn them. I tried to tell them what I saw."
+    - "The timeline doesn't make sense... something happened between 1924 and 1925."
+    - "I can't speak it. I can't say what I know. But someone must."
+    - "Something is wrong. I can feel it in my bones."
+    - "Why won't anyone listen? Why won't they believe me?"
+    - "The tea... there's something about the tea. I know it!"
+  act_iv_revelation:
+    - "I know what happened. I know the truth. But I can't... I won't..."
+    - "Cordelia, I'm so sorry. I should have been there for you."
+    - "The darkness came so quickly. One moment I was here, the next..."
+    - "I'm still searching. Still waiting. Still hoping someone will hear me."
