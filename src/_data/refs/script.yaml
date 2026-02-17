@@ -1,0 +1,182 @@
+title: Main Script - Lost Souls Murder Mystery
+
+arrival_and_greeting:
+  directions: |
+    Guests arrive and are greeted by the host (could be G.G. or someone else)
+  script:
+    - dialogue:
+        speaker: Host
+        text: "Welcome, we've been expecting you!"
+    - dialogue:
+        speaker: Host
+        text: "Please select your calling card."
+        action: "points to the table where the character cards are laid out"
+    - dialogue:
+        speaker: Host
+        text: "Scan the QR code to read about the past you've forgotten"
+  required_characters:
+    - The Baker
+    - The Heiress
+    - The Fiduciary
+    - The Art Collector
+    - The Town Doctor
+    - The Explorer
+  notes: |
+    Wait for people to gather first. Only lay out as many cards as there are people, ensuring someone picks each required character. When someone chooses The Baker character, the host gives them a basket with freshly baked rose bread. We must ensure someone picks the Baker - if necessary, assign that character before welcoming them into the foyer.
+
+act_i_setting:
+  script:
+    - directions: |
+        As guests arrive into the foyer, there is a sign-in book with another QR code they should scan. This validates that their character is working as expected. Feedback example: "Signed in as the art collector of Long Beach, CA" Give them a few more minutes to settle in.
+        G.G. enters from the top of the stairs.
+    - dialogue:
+        speaker: G.G.
+        text: |
+          Welcome, friends! Thank you for gathering here today! As you may have heard, the spirits who have been haunting the rooms of this house for a century have been restless lately. The Heiress (can call out to the Heiress character) moved in and realized there is company. The Heartbroken Ghost can often be seen weeping by the upstairs bay window, The Lonely Ghost wandering the gardens in search of her friend, and The Ghost known as The Cursed Alchemist, tinkering in his laboratory.
+    - dialogue:
+        speaker: G.G.
+        text: |
+          Something terrible happened in October of 1925: three young people died in the short span of 11 days, all connected to this mansion in one way or another. They have been haunting its halls ever since. Help us solve the century-old mystery and release these spirits!
+    - dialogue:
+        speaker: G.G.
+        text: |
+          Each of you are here for a reason, because you too are connected to this mansion whether you know it yet or not. On your calling cards, note you have a primary objective, towards which you all will be working together, and a private objective, which might be different for each of you.
+    - dialogue:
+        speaker: G.G.
+        text: |
+          Walk around the house, scan the clues, and work together. For some of the clues you will require an expert or a person with a personal connection to the item. Contact them promptly. Do not touch anything unless you see this symbol when you scan a clue: 🖐️
+    - dialogue:
+        speaker: G.G.
+        text: |
+          Your first quest is to find one of four objects important to our investigation, so we can send them for forensic analysis: a Venetian glass bottle, an antique pocket watch, a wedding dress fragment that belonged to the Heartbroken Ghost (we think), and Ginseng root that The Alchemist sometimes wanders in search of. Scan the clues to make sure you have the right one before you bring it to us, and look out for 🖐️
+    - dialogue:
+        speaker: G.G.
+        text: "When you hear a bell (rings a bell), gather back in the dining room."
+    - dialogue:
+        speaker: G.G.
+        text: "Let the investigation begin!"
+    - directions: |
+        G.G. opens the sliding doors that lead to the dining room.
+        [OPTIONAL] As guests enter the dining room, they see: The Ghost of The Alchemist, calling out to someone named "Cordelia" - "Cordelia, forgive me!" On the other side, the ghost of Cordelia glides slowly, her eyes dreamy and detached, not noticing the alchemist. They disappear into the kitchens (and then upstairs)
+        G.G. waits for investigators to return by the dining room table. When all 4 items are gathered, rings the bell (can additionally use the PA system to call everyone back)
+
+act_ii_mystery_emerges:
+  script:
+    - directions: |
+        Everyone is gathered by the dining room table with 4 items sitting on top.
+    - dialogue:
+        speaker: G.G.
+        text: |
+          As you have noticed, the spirits are especially restless today! Thank you for gathering this important evidence. We have invited a forensic examiner, who can shed some light onto their significance.
+    - directions: |
+        The forensic examiner comes in, picks up the items, and leaves.
+    - dialogue:
+        speaker: G.G.
+        text: |
+          In the meantime, I think it is important to call the dead by their true names! I have here a birth certificate of a man whose last name might sound familiar to some of you: Sebastian Crane! Scan the QR code to unlock Part II of the investigation.
+    - dialogue:
+        speaker: G.G.
+        text: |
+          In the meantime: have you connected the other two spirits to their true names? Scan the clues, explore the mansion's downstairs hallways and upstairs bedrooms, and learn their stories!
+    - directions: |
+        Everyone goes about scanning clues.
+
+act_iii_investigation:
+  script:
+    - dialogue:
+        speaker: G.G.
+        method: via PA
+        text: |
+          I have an important announcement: The ghost of Alice Whitmore, aka the Lonely Ghost, has been spotted in the garden. She seems to have an important message for you.
+    - directions: |
+        Everyone goes into the garden.
+        Alice appears in a cloud of smoke (fog machine)
+        - Her pale skin glowing in the blue light
+        - Her white dress glowing (black light)
+    - dialogue:
+        speaker: Alice
+        text: |
+          Finally! Finally!! Someone can hear me! I have a message to share, for so long I've been silent! Cordelia, my friend. Have you seen Cordelia? I have so much to tell her.
+    - dialogue:
+        speaker: Alice
+        text: "I have your diary, Thaddeus."
+    - directions: |
+        [OPTIONAL] Alice looks at the doctor lovingly: "Thaddeus?!" - no, it can't be.
+        The ghost is holding in her hand a diary of Dr. Thaddeus Crane and offering for people to scan the QR code.
+    - dialogue:
+        speaker: G.G.
+        text: "To unlock Part 3, scan the diary."
+
+act_iv_revelation:
+  script:
+    - directions: |
+        Doorbell rings.
+    - dialogue:
+        speaker: G.G.
+        method: via PA
+        text: |
+          Everyone, please gather in the foyer immediately. The forensic examiner has returned with important findings.
+    - directions: |
+        Everyone gathers in the foyer.
+        The forensic examiner enters.
+    - dialogue:
+        speaker: Forensic Examiner
+        text: |
+          Thank you for gathering. I've completed my analysis of all four items you submitted. While each piece tells part of the story, the most significant finding comes from the Venetian glass bottle. The residue analysis reveals traces of Digitalis purpurea—foxglove. Here, read the forensic report for yourself.
+    - directions: |
+        Guests scan the QR code for the Forensic Report - Elixir Bottle Analysis (DM132) to unlock Act IV.
+    - dialogue:
+        speaker: G.G.
+        method: via PA
+        text: |
+          A new door has opened upstairs. Something is calling you there.
+
+act_v_conclusions:
+  script:
+    - dialogue:
+        speaker: G.G.
+        method: via PA
+        text: |
+          Everyone, please gather in the carriage house. It is time for the truths to be revealed.
+    - directions: |
+        Everyone gathers in the carriage house.
+    - dialogue:
+        speaker: G.G.
+        text: |
+          Before we reveal the complete truth, let us test your investigation. I have a series of questions for you. Who murdered Cordelia Montrose, Sebastian Crane, and Alice Whitmore? (Answer: Dr. Thaddeus Crane)
+    - dialogue:
+        speaker: G.G.
+        text: |
+          What was the murder weapon? (Answer: a silver candle holder to murder Alice, a foxglove-laced elixir to murder Sebastian and Cordelia)
+    - dialogue:
+        speaker: G.G.
+        text: |
+          What was the murderer's motive? (Answer: Cordelia threatened to expose the doctor and patient affair between Thaddeus and Alice, Sebastian died when he tested the elixir on himself, Thaddeus killed Alice to silence her after she found out what happened)
+    - dialogue:
+        speaker: G.G.
+        text: |
+          Help us paint a picture of what happened to Cordelia. How did she die? (Answer: She confronted Thaddeus about the affair and he decided to kill her rather than risk his perfect reputation being destroyed. She was poisoned with a foxglove-laced elixir and died after days of accumulated toxin damage)
+    - dialogue:
+        speaker: G.G.
+        text: |
+          What happened to Sebastian? How did he meet his end? (Answer: Sebastian got suspicious when he noticed Cordelia was getting sicker and he tested the elixir on himself. He died of acute poisoning within days)
+    - dialogue:
+        speaker: G.G.
+        text: |
+          What happened to Alice? How did she die? (Answer: Thaddeus confessed to her the truth, but when Alice urged him to make it public, he felt threatened. She was murdered with a silver candle holder and staged as an accidental fall)
+    - directions: |
+        After the questions are answered, G.G. addresses the group.
+    - dialogue:
+        speaker: G.G.
+        text: |
+          Thank you, investigators. You have uncovered the truth that has been hidden for a century. Dr. Thaddeus Crane's terrible secret has finally been revealed. The spirits of Cordelia, Sebastian, and Alice can now rest in peace, knowing that justice has been served and their stories have been told.
+    - directions: |
+        [OPTIONAL] The ghosts appear one last time, glowing softly, then fade away.
+    - dialogue:
+        speaker: G.G.
+        text: |
+          For the complete story, scan the QR code to access The Book—the full narrative of what happened in 1925, told in chapter order.
+    - dialogue:
+        speaker: G.G.
+        text: |
+          And remember, each of you has your own private objectives and side quests. Look for the character cards with QR codes—they will reveal the deeper secrets connected to your character's story.

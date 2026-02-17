@@ -1,0 +1,46 @@
+id: GC2
+ghost: cordelia
+name: Cordelia Rose Montrose
+known_as: The Heartbroken Ghost
+content: |
+  **Cordelia Rose Montrose** was born in 1899 into one of Long Beach's most prominent and wealthy families. Her father, **Clarence Montrose**, was a successful businessman, a pillar of the community, a man of significant stature. Her mother, **Margaret Montrose**, was the iron will behind the Montrose reputation—a woman who understood that in their world, appearances mattered more than truth, and the family name must be protected at any cost.
+
+  By 1924 Cordelia was a beautiful young woman, twenty-five years old, with a heart full of dreams and a soul longing for adventure. She was loved by many, but her heart belonged to one man, Thomas Edward Whitmore, Alice Whitmore's older brother, a merchant marine captain, with stories of exotic ports and distant horizons, whom she met in 1924 at her friend, Alice Whitmore's house.
+
+  It was a whirlwind romance, passionate and all-consuming. Then Thomas sailed away and later news arrived that he had perished at sea. Cordelia was devastated, she was pregnant with Thomas's child, and she was alone.
+
+  The Montrose family was horrified, an unmarried daughter pregnant by a sailor? Unacceptable. They sent Cordelia away on "extended vacation." In secret, away from her friends and family, Cordelia gave birth to a baby girl, Eleanor. Eleanor was given away to a respectable family. All was arranged neatly, discreetly and Cordelia was left with a heavy heart and a secret that would haunt her for the rest of her short life.
+
+  In 1925 Cordelia met Sebastian Crane, a dark and mysterious, charming, yet stable man, not like her first love Thomas Whitmore. Sebastian offered devotion and stability and Cordelia felt excited for the first time again. Sebastian was a chemist, and he was working on a new elixir, a love potion. He called it the "Elixir of Eternal Love". Sebastian offered it to Cordelia, and she agreed. She felt a gesture was deeply romantic, poetic even, it was poetry of a different kind.
+
+  Within a few weeks, Cordelia started to feel sick. She was getting weaker and weaker. She was losing her appetite and getting thinner. She was confused and scared. Sebastian was concerned and he remained by her side, until, suddenly, he was dead. 
+
+  Cordelia thought of Alice, a friend with whom she became distant after Thomas's death. Alice and Cordelia used to be so close, but after what happened, she couldn't look Alice in the eye, because it reminded Cordelia of what she wanted to forget. But in her sick state, Cordelia called for Alice, only to find out that Alice was dead too.
+
+  In her final moments, Cordelia called for her friend and former admirer, Elias Monroe, the dressmaker. She gave him a rose bread recipe she loved and asked him to send it to her daughter, Eleanor. Cordelia died shortly after, her final thoughts were of her daughter, Eleanor, a person whom she loved and cherished above all else.
+
+  ---
+
+  Cordelia's short life was a tragic story of love and loss. She was the one everyone admired, but in the end she felt alone, her loves all lost to her. She died not knowing the truth about her fiance, her friend and her daughter, so her spirit is restless and is searching for answers. She is often seen weeping by the piano, playing a haunting melody or crying by the window, stretching out her arms as if she is reaching for someone who is not there. Over the years, her true name was forgotten and she is now known as the Heartbroken Ghost.
+
+mutterings:
+  act_i_setting:
+    - "I think about Thomas. My first love. Lost at sea years ago."
+    - "I remember Elias, he used to write me poems..."
+    - "Alice. Dear, brilliant Alice—my dear friend! Are you coming for tea tonight?!"
+    - "The roses in the garden... they remind me of happier times."
+  act_ii_mystery_emerges:
+    - "My head aches... why does everything feel so heavy?"
+    - "Sebastian, where are you? I need you here with me."
+    - "Something isn't right. I can't think clearly anymore."
+    - "The elixir tasted sweet this morning... but why do I feel so weak?"
+  act_iii_investigation:
+    - "Alice... where did you go? I called for you but you never came."
+    - "Sebastian is gone too. Everyone I love leaves me. Why?"
+    - "I'm so tired. So very tired. My heart feels wrong."
+    - "There are so many unanswered questions... so many secrets."
+  act_iv_revelation:
+    - "Eleanor... my daughter. Did she ever know how much I loved her?"
+    - "I never got to hold her. Never got to tell her the truth."
+    - "The rose bread recipe... I hope she received it. I hope she knows."
+    - "So many things I never understood. So many things left unsaid."
