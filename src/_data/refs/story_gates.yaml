@@ -11,9 +11,9 @@ act_ii_mystery_emerges:
 act_iii_investigation:
   name: "Act III: The Investigation"
   unlock_type: any
-  # Any clue from Thaddeus's diary will unlock Act III
+  # Alice Whitmore patient note unlocks Act III
   clues:
-    - WTD52  # writings_thaddeus_diary_52_1924_07_02_alice
+    - WTPN72  # Thaddeus's Patient Notes - June 15, 1924 - Alice Whitmore
 
 act_iv_revelation:
   name: "Act IV: The Revelation"

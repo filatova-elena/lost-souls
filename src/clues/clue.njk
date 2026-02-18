@@ -59,6 +59,21 @@ layout: base
 </section>
 {% endif %}
 
+{% if clue.previous_id or clue.next_id %}
+<nav class="page-nav">
+  {% if clue.previous_id %}
+    <a href="{{ site.baseUrl }}clues/{{ clue.previous_id }}/" class="button">← Previous</a>
+  {% else %}
+    <span></span>
+  {% endif %}
+  {% if clue.next_id %}
+    <a href="{{ site.baseUrl }}clues/{{ clue.next_id }}/" class="button">Next →</a>
+  {% else %}
+    <span></span>
+  {% endif %}
+</nav>
+{% endif %}
+
 <script>
   // Pre-compute which characters have access to this clue (build-time optimization)
   {% set accessChars = clue.skills | charactersWithAccess(characters) %}
