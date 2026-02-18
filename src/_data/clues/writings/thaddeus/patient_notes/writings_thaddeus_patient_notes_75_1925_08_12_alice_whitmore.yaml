@@ -10,9 +10,6 @@ hashtags:
 - doctor_and_patient
 skills:
 - personal_crane
-content: 'Patient described a colleague''s medical crisis three days before it occurred.
-  When skeptical, she noted her abilities are often dismissed as fraud. I assured
-  her otherwise. Our consultations have become less clinical.
-
-  '
+content: |
+  Patient described a colleague's medical crisis three days before it occurred. When skeptical, she noted her abilities are often dismissed as fraud. I assured her otherwise. Our consultations have become less clinical.
 unlock_code: '0156'

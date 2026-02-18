@@ -1,0 +1,13 @@
+id: WTD55
+type: Writing (Thaddeus's Diary)
+title: Thaddeus Crane's Diary
+subtitle: March 14, 1925 - Sebastian's Engagement
+act: act_i_setting
+date: '1925-03-14'
+hashtags:
+- thaddeus_crane
+- sebastian_crane
+- cordelia_montrose
+content: |
+  My brother Sebastian called this evening with news of his engagement. Cordelia Montrose. Excellent match. The Montrose name carries weight, and her family's resources will be substantial when the time comes. Sebastian seems genuinely besotted. Weakness, truly. Love is a biological impulse dressed up in sentiment.
+unlock_code: '0236'

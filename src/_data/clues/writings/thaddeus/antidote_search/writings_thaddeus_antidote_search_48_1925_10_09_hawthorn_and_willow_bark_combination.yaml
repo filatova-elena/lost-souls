@@ -7,23 +7,19 @@ date: '1925-10-09'
 hashtags:
 - thaddeus_crane
 - sebastian_crane
-content: '[Handwriting deteriorating]
+skills:
+  - medical_2
+  - botanical_2
+content: |
+  [Handwriting deteriorating]
 
-
-  Hawthorn strengthens heart tissue. Willow bark reduces inflammation. Combined with
-  additional potassium and strychnine for cardiac stimulation.
-
+  Hawthorn strengthens heart tissue. Willow bark reduces inflammation. Combined with additional potassium and strychnine for cardiac stimulation.
 
   Dosed patient this morning. Monitoring continuously.
 
+  [Hours later, same page]: NOTHING. No improvement. The heart continues to fail. Why doesn't the body respond to treatment?
 
-  [Hours later, same page]: NOTHING. No improvement. The heart continues to fail.
-  Why doesn''t the body respond to treatment?
+  Unless the concentration of toxin is so extreme that my standard protocols cannot compete with it.
 
-
-  Unless the concentration of toxin is so extreme that my standard protocols cannot
-  compete with it.
-
-
-  Unless I am fundamentally misunderstanding something about how the poison works.'
+  Unless I am fundamentally misunderstanding something.
 unlock_code: '0247'
