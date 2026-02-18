@@ -163,6 +163,25 @@ module.exports = function(eleventyConfig) {
   // Uses shared skills module for single source of truth
   eleventyConfig.addFilter("charactersWithAccess", charactersWithAccess);
 
+  // Compute which story gates a clue unlocks
+  // Takes a clue ID and storyGates object, returns array of gate keys
+  eleventyConfig.addFilter("unlocksGates", function(clueId, storyGates) {
+    if (!clueId || !storyGates || typeof storyGates !== 'object') {
+      return [];
+    }
+    
+    const unlockedGates = [];
+    
+    // Iterate through all gates and check if this clue ID appears in their clues array
+    for (const [gateKey, gateData] of Object.entries(storyGates)) {
+      if (gateData && Array.isArray(gateData.clues) && gateData.clues.includes(clueId)) {
+        unlockedGates.push(gateKey);
+      }
+    }
+    
+    return unlockedGates;
+  });
+
   // Add collection for characters
   eleventyConfig.addCollection("characters", function(collectionApi) {
     return collectionApi.getAll().filter(item => item.data.type === "character");

@@ -3,9 +3,8 @@ type: Vision (Cordelia)
 title: The Heartbroken Ghost
 subtitle: Garden Betrayal
 act: act_iii_investigation
-narrative: A vision of a young woman materializes, her hand pressed over her mouth,
-  brown eyes wide with shock and hurt. She looks as though she has just witnessed
-  something she cannot unsee.
+narrative: |
+  A vision of a young woman materializes, her hand pressed over her mouth, brown eyes wide with shock and hurt. She looks as though she has just witnessed something she cannot unsee.
 hashtags:
 - cordelia_montrose
 - thaddeus_crane

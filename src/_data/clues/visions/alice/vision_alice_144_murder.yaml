@@ -3,9 +3,8 @@ type: Vision (Alice)
 title: The Lonely Ghost
 subtitle: The Murder
 act: act_iii_investigation
-narrative: A flicker of pale light at the top of the staircase. A young woman appears,
-  disoriented, one hand pressed to the back of her head, her bright eyes wide with
-  confusion.
+narrative: |
+  A flicker of pale light at the top of the staircase. A young woman appears, disoriented, one hand pressed to the back of her head, her bright eyes wide with confusion.
 hashtags:
 - alice_whitmore
 skills:

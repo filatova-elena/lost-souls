@@ -5,7 +5,9 @@ act: act_i_setting
 date: '1895-10-15'
 hashtags:
 - sebastian_crane
-content: '**STATE OF CALIFORNIA - DEPARTMENT OF VITAL RECORDS**
+skills: []
+content: |
+  **STATE OF CALIFORNIA - DEPARTMENT OF VITAL RECORDS**
 
 
   **BIRTH CERTIFICATE**
@@ -34,5 +36,5 @@ content: '**STATE OF CALIFORNIA - DEPARTMENT OF VITAL RECORDS**
   **Issued:** November 3, 1895
 
 
-  State Registrar: A. J. Mitchell'
+  State Registrar: A. J. Mitchell
 unlock_code: '1247'

@@ -3,9 +3,8 @@ type: Vision (Alice)
 title: The Lonely Ghost
 subtitle: Love for Thaddeus
 act: act_iii_investigation
-narrative: A vision of a young woman appears quietly, standing by the window, her
-  hair catching moonlight. Her expression is soft and distant — lost in a memory of
-  someone she loved.
+narrative: |
+  A vision of a young woman appears quietly, standing by the window, her hair catching moonlight. Her expression is soft and distant — lost in a memory of someone she loved.
 hashtags:
 - alice_whitmore
 - thaddeus_crane

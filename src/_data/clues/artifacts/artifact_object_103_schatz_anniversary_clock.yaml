@@ -3,16 +3,11 @@ type: Artifact (Object)
 title: Schatz Anniversary Clock
 act: act_i_setting
 location: Bembridge House, Middle Parlor, Above Fireplace
-appearance: A German torsion-pendulum clock under a glass dome, with a slowly rotating
-  brass pendulum
+appearance: |
+  A German torsion-pendulum clock under a glass dome, with a slowly rotating brass pendulum
 hashtags:
 - atmospheric
 skills: []
-content: 'A German Schatz 400-day anniversary clock under a glass dome. These torsion-pendulum
-  clocks were popular wedding and anniversary gifts — wound once a year, they run
-  for 400 days on a single winding. "Made in Germany" stamped on the mechanism. A
-  precision instrument meant to mark the passage of time in a household that clearly
-  valued beautiful mechanical things.
-
-  '
+content: |
+  A German Schatz 400-day anniversary clock under a glass dome. These torsion-pendulum clocks were popular wedding and anniversary gifts — wound once a year, they run for 400 days on a single winding. "Made in Germany" stamped on the mechanism. A precision instrument meant to mark the passage of time in a household that clearly valued beautiful mechanical things.
 unlock_code: '0167'

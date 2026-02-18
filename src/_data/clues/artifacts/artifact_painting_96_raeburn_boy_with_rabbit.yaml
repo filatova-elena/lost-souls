@@ -3,14 +3,11 @@ type: Artifact (Painting)
 title: Raeburn Print — "Boy with a Rabbit"
 act: act_i_setting
 location: Bembridge House, Upstairs Bedroom
-appearance: A chromolithographic print of a gentle scene — a boy holding a pet rabbit
+appearance: |
+  A chromolithographic print of a gentle scene — a boy holding a pet rabbit
 hashtags:
 - atmospheric
 skills: []
-content: 'Chromolithographic print after Sir Henry Raeburn (1756–1823), the celebrated
-  Scottish portrait painter. One of the most widely reproduced images in the history
-  of decorative art — this gentle scene of a boy and his pet rabbit hung in millions
-  of parlors on both sides of the Atlantic. A sentimental favorite.
-
-  '
+content: |
+  Chromolithographic print after Sir Henry Raeburn (1756–1823), the celebrated Scottish portrait painter. One of the most widely reproduced images in the history of decorative art — this gentle scene of a boy and his pet rabbit hung in millions of parlors on both sides of the Atlantic. A sentimental favorite.
 unlock_code: '1567'

@@ -3,16 +3,11 @@ type: Artifact (Object)
 title: Remington Standard No. 10 Typewriter
 act: act_i_setting
 location: Bembridge House, Office
-appearance: A black Remington typewriter with round glass keys, still loaded with
-  a ribbon
+appearance: |
+  A black Remington typewriter with round glass keys, still loaded with a ribbon
 hashtags:
 - atmospheric
 skills: []
-content: 'A Remington Standard No. 10, introduced in **1908** and produced through
-  the 1930s. The workhorse of American business. Mr. Montrose ran his affairs from
-  this desk — correspondence, contracts, accounts. The machine still has a ribbon
-  in place, as if someone might sit down tomorrow and resume typing where they left
-  off decades ago.
-
-  '
+content: |
+  A Remington Standard No. 10, introduced in **1908** and produced through the 1930s. The workhorse of American business. Mr. Montrose ran his affairs from this desk — correspondence, contracts, accounts. The machine still has a ribbon in place, as if someone might sit down tomorrow and resume typing where they left off decades ago.
 unlock_code: '0145'

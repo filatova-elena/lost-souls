@@ -2,18 +2,13 @@ id: BH104
 type: Botanical (Dried Herb)
 title: Tropical Yellow Flower Specimen
 act: act_ii_mystery_emerges
-appearance: Dried leaves and flower fragments in a bottle, yellowish with minty and
-  slightly bitter smell
+appearance: |
+  Dried leaves and flower fragments in a bottle, yellowish with minty and slightly bitter smell
 hashtags:
 - sebastian_crane
 - elixir_of_love
 skills:
 - botanical_1
-content: '**Damiana [Turnera diffusa]**. Dried leaves and flower fragments in a bottle.
-  Yellowish, with a minty and slightly bitter smell. The tropical origin and dried
-  leaf structure indicate sophisticated sourcing — requires warm climate cultivation.
-  Whoever obtained this knew exactly what they were looking for. Non-toxic in small
-  doses.
-
-  '
+content: |
+  **Damiana [Turnera diffusa]**. Dried leaves and flower fragments in a bottle. Yellowish, with a minty and slightly bitter smell. The tropical origin and dried leaf structure indicate sophisticated sourcing — requires warm climate cultivation. Whoever obtained this knew exactly what they were looking for. Non-toxic in small doses.
 unlock_code: '0135'

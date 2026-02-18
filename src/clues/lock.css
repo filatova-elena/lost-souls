@@ -421,3 +421,33 @@ main.is-key-clue {
         opacity: 0;
     }
 }
+
+/* ═══════════════════════════════════
+   CLUE PAGE STATE MACHINE
+   ═══════════════════════════════════ */
+
+/* Default (locked): hide everything until JS resolves */
+.clue-page .clue-narration,
+.clue-page .clue-content,
+.clue-page .seance-section,
+.clue-page .clue-gate,
+.clue-page .clue-lock {
+    display: none;
+}
+
+/* Gated: show story gate message only */
+.clue-page[data-state="gated"] .clue-gate {
+    display: block;
+}
+
+/* Skill-locked: show skill lock only */
+.clue-page[data-state="skill-locked"] .clue-lock {
+    display: block;
+}
+
+/* Unlocked: show content */
+.clue-page[data-state="unlocked"] .clue-narration,
+.clue-page[data-state="unlocked"] .clue-content,
+.clue-page[data-state="unlocked"] .seance-section {
+    display: block;
+}

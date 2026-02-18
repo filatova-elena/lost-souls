@@ -3,18 +3,17 @@ type: Artifact (Object)
 title: Ostrich Egg
 act: act_ii_mystery_emerges
 location: Bembridge House, Middle Parlor, Shelf
-appearance: A decorated ostrich egg on an ornate carved wooden stand, painted with
-  birds and flowers
+appearance: |
+  A decorated ostrich egg on an ornate carved wooden stand, painted with birds and flowers
 hashtags:
 - romano_treasure
 skills:
 - history_1
 - art_1
 - personal_romano
-content: "A decorated ostrich egg on an ornate carved wooden stand, painted with birds\
-  \ and flowers. Ostrich eggs were prized curiosities in Victorian and Edwardian homes.\
-  \ This one likely came from Cawston's Ostrich Farm in Pasadena — once one of Southern\
-  \ California's most popular tourist attractions. \n\n**YOU OBSERVE**\nAn egg is\
-  \ nature's most perfect container. Eggs are meant to hold things. And some things\
-  \ are hidden inside the most unlikely vessels.\n"
+content: |
+  A decorated ostrich egg on an ornate carved wooden stand, painted with birds and flowers. Ostrich eggs were prized curiosities in Victorian and Edwardian homes. This one likely came from Cawston's Ostrich Farm in Pasadena — once one of Southern California's most popular tourist attractions.
+
+  **YOU OBSERVE**
+  An egg is nature's most perfect container. Eggs are meant to hold things. And some things are hidden inside the most unlikely vessels.
 unlock_code: '3567'

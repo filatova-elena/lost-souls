@@ -3,8 +3,8 @@ type: Vision (Alice)
 title: The Lonely Ghost
 subtitle: Dangerous Knowledge
 act: act_iii_investigation
-narrative: The ghostly figure paces before you, her hair wild, her gloved hands clenching
-  and unclenching. Her bright eyes dart around as if someone might be listening.
+narrative: |
+  The ghostly figure paces before you, her hair wild, her gloved hands clenching and unclenching. Her bright eyes dart around as if someone might be listening.
 hashtags:
 - alice_whitmore
 - thaddeus_crane

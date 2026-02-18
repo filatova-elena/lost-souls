@@ -3,8 +3,8 @@ type: Artifact (Photo)
 title: Photograph - Eleanor at Age 10
 act: act_iii_investigation
 location: Found among Elias Monroe's possessions
-appearance: Black and white photograph of young girl standing in front of house with
-  mature expression
+appearance: |
+  Black and white photograph of young girl standing in front of house with mature expression
 hashtags:
 - secret_baby
 - eleanor_sullivan
@@ -13,8 +13,6 @@ hashtags:
 - elias_unrequited_love
 skills:
 - personal_monroe
-content: 'A black and white photograph of a young girl 9 or 10 years old standing
-  in front of a house. On the back is written "Eleanor, 1935".
-
-  '
+content: |
+  A black and white photograph of a young girl 9 or 10 years old standing in front of a house. On the back is written "Eleanor, 1935".
 unlock_code: '0567'

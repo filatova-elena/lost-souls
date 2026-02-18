@@ -2,17 +2,14 @@ id: BJ112
 type: Botanical (Jar)
 title: White Crystalline Powder
 act: act_ii_mystery_emerges
-appearance: White powder with visible crystals in jar, looks pharmaceutical or chemical
+appearance: |
+  White powder with visible crystals in jar, looks pharmaceutical or chemical
 hashtags:
 - sebastian_crane
 - elixir_of_love
 skills:
 - medical_1
 - botanical_2
-content: '**Potassium Bromide [KBr]**. A white powder with visible crystals. Looks
-  pharmaceutical or chemical in nature. A documented 1920s pharmaceutical — a mild
-  sedative, safe in prescribed doses. The well-formed crystals and purity indicate
-  careful preparation.
-
-  '
+content: |
+  **Potassium Bromide [KBr]**. A white powder with visible crystals. Looks pharmaceutical or chemical in nature. A documented 1920s pharmaceutical — a mild sedative, safe in prescribed doses. The well-formed crystals and purity indicate careful preparation.
 unlock_code: '0236'

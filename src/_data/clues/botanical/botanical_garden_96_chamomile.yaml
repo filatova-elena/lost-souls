@@ -2,9 +2,9 @@ id: BG96
 type: Botanical (Garden Herb)
 title: Chamomile
 act: act_i_setting
-appearance: Cheerful white and yellow flowers, dried bundles hanging nearby
-content: '**Chamomile [Matricaria chamomilla]**. Common and harmless. A gentle herb.
-  Known for soothing properties.
-
-  '
+skills: []
+appearance: |
+  Cheerful white and yellow flowers, dried bundles hanging nearby
+content: |
+  **Chamomile [Matricaria chamomilla]**. Common and harmless. A gentle herb. Known for soothing properties.
 unlock_code: '1237'
