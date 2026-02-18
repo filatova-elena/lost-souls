@@ -63,7 +63,7 @@ layout: base
           <div class="clue-item-main">
             {{ clue.type | typeIcon }}
             {% if clue.id %}<span class="clue-id">{{ clue.id }}</span> | {% endif %}
-            <a href="{{ site.baseUrl }}clues/{{ clue.filename }}/" target="_blank">{{ clue.title }}</a>
+            <a href="{{ site.baseUrl }}clues/{{ clue.id }}/" target="_blank">{{ clue.title }}</a>
             <span class="muted type-label"> — {{ clue.type }}</span>
             {% if isKey %}<span class="key-badge">🔑 KEY</span>{% endif %}
           </div>

@@ -13,30 +13,18 @@ skills:
 - personal_crane
 is_key:
 - pocket_watch_mystery
-content: 'My Dear Brother,
+content: |
+  My Dear Brother,
 
+  I present to you this timepiece on the occasion of your engagement to Miss Montrose. It marks not merely the hours and minutes of our earthly existence, but something far more significant.
 
-  I present to you this timepiece on the occasion of your engagement to Miss Montrose.
-  It marks not merely the hours and minutes of our earthly existence, but something
-  far more significant.
+  Inside, I have had engraved the date of tomorrow's astronomical event—the conjunction of Jupiter and Venus, a celestial alignment that occurs but once in a generation. The ancients believed such moments carried profound significance, marking the intersection of love and fortune.
 
-
-  Inside, I have had engraved the date of tomorrow''s astronomical event—the conjunction
-  of Jupiter and Venus, a celestial alignment that occurs but once in a generation.
-  The ancients believed such moments carried profound significance, marking the intersection
-  of love and fortune.
-
-
-  I thought it fitting that you should carry with you a record of this sacred timing.
-  Let it remind you that some moments in life are written in the stars themselves.
-
+  I thought it fitting that you should carry with you a record of this sacred timing. Let it remind you that some moments in life are written in the stars themselves.
 
   May your union be as harmonious as the heavens above.
-
 
   Your devoted brother,
 
   Thaddeus
-
-  '
 unlock_code: '0236'

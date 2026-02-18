@@ -4,7 +4,7 @@ pagination:
   size: 1
   alias: clue
   addAllPagesToCollections: true
-permalink: "/clues/{{ clue.filename }}/index.html"
+permalink: "/clues/{{ clue.id }}/index.html"
 layout: base
 ---
 <link rel="stylesheet" href="{{ site.baseUrl }}clues/clues.css">
@@ -52,7 +52,7 @@ layout: base
 </section>
 {% endif %}
 
-{% if clue.unlock_code %}
+{% if clue.unlock_code and clue.skills and clue.skills.length > 0 %}
 <section class="seance-section" style="display: none;">
   <div class="seance-section-label">Show these symbols to others to unlock their clues</div>
   <div class="static-ring" data-unlock-code="{{ clue.unlock_code }}"></div>
