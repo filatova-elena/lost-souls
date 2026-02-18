@@ -3,8 +3,8 @@ type: Artifact (Photo)
 title: '''On the Pike'' Panoramic Photograph'
 act: act_i_setting
 location: Bembridge House, Stair Landing
-appearance: A wide panoramic photograph of a bustling seaside amusement zone with
-  labeled landmarks
+appearance: |
+  A wide panoramic photograph of a bustling seaside amusement zone with labeled landmarks
 hashtags:
 - atmospheric
 skills: []

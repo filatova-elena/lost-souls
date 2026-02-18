@@ -2,10 +2,9 @@ id: BG103
 type: Botanical (Garden Herb)
 title: Thyme
 act: act_i_setting
-appearance: Delicate green herb with tiny purple flowers, pleasant aroma
+appearance: |
+  Delicate green herb with tiny purple flowers, pleasant aroma
 skills: []
-content: '**Thyme [Thymus vulgaris]**. A delicate green herb with tiny purple flowers.
-  Common Mediterranean culinary staple. Aromatic and versatile.
-
-  '
+content: |
+  **Thyme [Thymus vulgaris]**. A delicate green herb with tiny purple flowers. Common Mediterranean culinary staple. Aromatic and versatile.
 unlock_code: '0167'

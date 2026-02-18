@@ -3,15 +3,16 @@ type: Artifact (Paper)
 title: Handwritten Rose Bread Recipe
 act: act_i_setting
 location: The Bakery
-appearance: Faded handwritten recipe on aged paper, written in careful but unpolished
-  script
+appearance: |
+  Faded handwritten recipe on aged paper, written in careful but unpolished script
 hashtags:
 - rose_bread_legacy
 - eleanor_sullivan
 - cordelia_montrose
 skills:
 - personal_sullivan
-content: '**Rose Bread**
+content: |
+  **Rose Bread**
 
 
   500g bread flour
@@ -48,8 +49,7 @@ content: '**Rose Bread**
   Honey glaze last 5 min.
 
 
-  [scrawled in margin:] "the petals lose color when baked — normal, don''t panic"
+  [scrawled in margin:] "the petals lose color when baked — normal, don't panic"
 
-  [at bottom, underlined twice:] "DO NOT double the rose water. I learned this the
-  hard way."'
+  [at bottom, underlined twice:] "DO NOT double the rose water. I learned this the hard way."
 unlock_code: '2346'

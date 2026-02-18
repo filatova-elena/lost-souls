@@ -2,47 +2,23 @@ id: BG180
 type: Botanical (Garden Herb)
 title: Dark Berried Plant
 act: act_iii_investigation
-appearance: Bushy plant with dull green leaves, bell-shaped purple-brown flowers,
-  and glossy black berries
+appearance: |
+  Bushy plant with dull green leaves, bell-shaped purple-brown flowers, and glossy black berries
 skills:
 - botanical_2
-content: '*Atropa belladonna.* A bushy, unassuming plant — dull green leaves, drooping
-  bell-shaped flowers of purple-brown, and clusters of **glossy black berries** that
-  look, to the untrained eye, rather inviting. Children have been known to eat them.
-  It does not end well.
+content: |
+  *Atropa belladonna.* A bushy, unassuming plant — dull green leaves, drooping bell-shaped flowers of purple-brown, and clusters of **glossy black berries** that look, to the untrained eye, rather inviting. Children have been known to eat them. It does not end well.
 
+  The name itself is a curiosity. *Bella donna* — "beautiful woman." Renaissance ladies used drops of belladonna extract to **dilate their pupils**, making their eyes appear larger, darker, more alluring. Vanity has always had a complicated relationship with poison.
 
-  The name itself is a curiosity. *Bella donna* — "beautiful woman." Renaissance ladies
-  used drops of belladonna extract to **dilate their pupils**, making their eyes appear
-  larger, darker, more alluring. Vanity has always had a complicated relationship
-  with poison.
+  The active compounds — **atropine, scopolamine, hyoscyamine** — are anticholinergics. They block the parasympathetic nervous system entirely. In the 1920s, atropine was a standard pharmaceutical: used to dilate pupils for eye examinations, to dry secretions before surgery, to treat bradycardia. Every apothecary would stock it.
 
-
-  The active compounds — **atropine, scopolamine, hyoscyamine** — are anticholinergics.
-  They block the parasympathetic nervous system entirely. In the 1920s, atropine was
-  a standard pharmaceutical: used to dilate pupils for eye examinations, to dry secretions
-  before surgery, to treat bradycardia. Every apothecary would stock it.
-
-
-  The old medical students'' mnemonic for anticholinergic poisoning is rather vivid:
-
+  The old medical students' mnemonic for anticholinergic poisoning is rather vivid:
 
   - **Hot** as a hare — flushed, feverish skin
-
   - **Dry** as a bone — no tears, no saliva, no sweat
-
   - **Red** as a beet — the face flushes crimson
-
-  - **Blind** as a bat — pupils dilated beyond function
-
-  - **Mad** as a hatter — hallucinations, delirium, agitation
-
-
   In higher doses: **convulsions, respiratory failure, death**.
 
-
-  Grows rather well in this climate, I must say. One finds it in the most unexpected
-  gardens.
-
-  '
+  Grows rather well in this climate, I must say. One finds it in the most unexpected gardens.
 unlock_code: '0345'

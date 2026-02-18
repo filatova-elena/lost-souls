@@ -3,26 +3,16 @@ type: Artifact (Object)
 title: Souvenir Spoon Collection
 act: act_i_setting
 location: Bembridge House, Dining Room, Wall Display
-appearance: Thirty to thirty-five decorative spoons displayed on an oak wall rack
-  — European enamel crests and American sterling silver
+appearance: |
+  Thirty to thirty-five decorative spoons displayed on an oak wall rack — European enamel crests and American sterling silver
 hashtags:
 - atmospheric
 skills: []
-content: 'Thirty-four spoons stand in formation on an oak rack—a domestic atlas of
-  a lifetime''s travel. The top rows flash with the scarlet **Giglio fleur-de-lis
-  of Florence** , the **Delft blue windmills of Holland** , and the stark **white
-  cross of Switzerland**. Beneath these trophies, a row of figural Apostle spoons
-  stands guard, their handles depicting saints clutching forged emblems of faith such
-  as **St. Peter''s key** or **St. John''s "cup of sorrow"**. The collection is anchored
-  by the silver-plated profiles of **American Presidents**, their legacies literally
-  etched into the bowls through historical scenes like **Mount Vernon** or the text
-  of the **Gettysburg Address**.
+content: |
+  Thirty-four spoons stand in formation on an oak rack—a domestic atlas of a lifetime's travel. The top rows flash with the scarlet **Giglio fleur-de-lis of Florence** , the **Delft blue windmills of Holland** , and the stark **white cross of Switzerland**. Beneath these trophies, a row of figural Apostle spoons stands guard, their handles depicting saints clutching forged emblems of faith such as **St. Peter's key** or **St. John's "cup of sorrow"**. The collection is anchored by the silver-plated profiles of **American Presidents**, their legacies literally etched into the bowls through historical scenes like **Mount Vernon** or the text of the **Gettysburg Address**.
 
 
   **YOU OBSERVE**
 
-  Each spoon represents a journey; each journey represents a story, and even in this
-  crowded parlor, not every story is told in full.
-
-  '
+  Each spoon represents a journey; each journey represents a story, and even in this crowded parlor, not every story is told in full.
 unlock_code: '0345'

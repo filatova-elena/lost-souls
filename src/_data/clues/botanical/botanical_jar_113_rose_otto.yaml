@@ -2,17 +2,13 @@ id: BJ113
 type: Botanical (Jar)
 title: Precious Floral Essential Oil
 act: act_i_setting
-appearance: Small bottle of precious oil, deep complex floral aroma, intense and luxurious
-  smell
+appearance: |
+  Small bottle of precious oil, deep complex floral aroma, intense and luxurious smell
 hashtags:
 - sebastian_crane
 - elixir_of_love
 skills:
 - botanical_1
-content: '**Rose Otto [Rosa × damascena]**. A small bottle of precious oil. Deep,
-  complex floral aroma — intense and luxurious. Pure, not cut or adulterated. The
-  quality is exceptional — genuine Ottoman or Bulgarian distillation. Extremely expensive.
-  Someone paid dearly for this and meant something special by it.
-
-  '
+content: |
+  **Rose Otto [Rosa × damascena]**. A small bottle of precious oil. Deep, complex floral aroma — intense and luxurious. Pure, not cut or adulterated. The quality is exceptional — genuine Ottoman or Bulgarian distillation. Extremely expensive. Someone paid dearly for this and meant something special by it.
 unlock_code: '1346'

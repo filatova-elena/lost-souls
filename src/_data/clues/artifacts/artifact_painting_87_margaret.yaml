@@ -2,17 +2,14 @@ id: AP87
 type: Artifact (Painting)
 title: Portrait of Margaret Montrose
 act: act_i_setting
-appearance: Formal oil painting of elegant woman with serene but strong expression
+appearance: |
+  Formal oil painting of elegant woman with serene but strong expression
 hashtags:
 - margaret_montrose
 skills: []
-content: 'A formal oil painting of an elegant woman in her prime, dressed in jewels
-  and fine silks. Her expression is serene but carries an unmistakable strength.
+content: |
+  A formal oil painting of an elegant woman in her prime, dressed in jewels and fine silks. Her expression is serene but carries an unmistakable strength.
 
 
-  **Margaret Montrose in her youth**—the matriarch who built the family legacy. The
-  refinement and dignity speak to her status and influence. She was the true keeper
-  of **Montrose traditions and secrets**.
-
-  '
+  **Margaret Montrose in her youth**—the matriarch who built the family legacy. The refinement and dignity speak to her status and influence. She was the true keeper of **Montrose traditions and secrets**.
 unlock_code: '1245'

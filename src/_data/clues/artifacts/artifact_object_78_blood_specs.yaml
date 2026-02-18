@@ -3,8 +3,8 @@ type: Artifact (Object)
 title: Silver Candle Holder
 act: act_iv_revelation
 location: The Attic
-appearance: Ornate silver candle holder with intricate decorative patterns, noticeably
-  heavy
+appearance: |
+  Ornate silver candle holder with intricate decorative patterns, noticeably heavy
 hashtags:
 - murder_weapon
 - silver_candle_holder

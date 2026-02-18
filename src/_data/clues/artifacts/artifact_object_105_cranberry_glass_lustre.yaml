@@ -3,19 +3,18 @@ type: Artifact (Object)
 title: Cranberry Glass Lustre
 act: act_i_setting
 location: Bembridge House, Dining Room
-appearance: A deep red glass candle lustre with hanging crystal prism drops, surrounded
-  by ruby glass vases and tumblers
+appearance: |
+  A deep red glass candle lustre with hanging crystal prism drops, surrounded by ruby glass vases and tumblers
 hashtags:
 - romano_treasure
 skills:
 - history_1
 - art_1
 - personal_romano
-content: "A Victorian cranberry glass candle lustre with hanging crystal prism drops,\
-  \ surrounded by a collection of ruby glass vases, tumblers, and a small pitcher.\
-  \ Cranberry glass gets its deep red color from gold chloride — actual gold dissolved\
-  \ into molten glass. This technique was perfected in Bohemia and at England's Stourbridge\
-  \ glassworks in the mid-1800s. \n\n**YOU OBSERVE**\n\nThe collection displayed here\
-  \ represents considerable value. This might be good evidence the rumors of Romano\
-  \ treasure aren't just rumors after all.\n"
+content: |
+  A Victorian cranberry glass candle lustre with hanging crystal prism drops, surrounded by a collection of ruby glass vases, tumblers, and a small pitcher. Cranberry glass gets its deep red color from gold chloride — actual gold dissolved into molten glass. This technique was perfected in Bohemia and at England's Stourbridge glassworks in the mid-1800s.
+
+  **YOU OBSERVE**
+
+  The collection displayed here represents considerable value. This might be good evidence the rumors of Romano treasure aren't just rumors after all.
 unlock_code: '0124'

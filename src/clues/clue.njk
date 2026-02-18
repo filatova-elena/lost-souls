@@ -15,29 +15,44 @@ layout: base
   {% include "clues/progress-tracker.njk" %}
 </header>
 
-<main>
+<main class="clue-page" data-state="locked" data-clue-id="{{ clue.id }}">
   <header>
     <h1>{{ clue.title }}</h1>
     {% if clue.subtitle %}<p class="clue-subtitle">{{ clue.subtitle }}</p>{% endif %}
   </header>
 
-  {# Lock message section - will be populated by JavaScript #}
-  <section class="clue-no-access" style="display: none;"></section>
+  {# Story gate section - shown when clue belongs to a locked act #}
+  {% set storyGated = refs.story_gates[clue.act] and refs.story_gates[clue.act].clues and refs.story_gates[clue.act].clues.length %}
+  {% if storyGated %}
+  <section class="clue-gate">
+    <div class="lock-assembly gated">
+      <div class="lock-glow"></div>
+      <div class="lock-shackle"></div>
+      <div class="lock-body"><div class="keyhole"></div></div>
+    </div>
+    <p>{{ refs.story_gates[clue.act].gate_message or "This evidence hasn't surfaced yet. Keep investigating..." }}</p>
+  </section>
+  {% endif %}
+
+  {# Skill lock section - shown when player lacks required skills #}
+  {% if clue.skills and clue.skills.length %}
+  <section class="clue-lock"></section>
+  {% endif %}
 
 {% if clue.type and 'Vision' in clue.type and clue.narrative %}
-<section class="clue-narration" style="display: none;">
+<section class="clue-narration">
   <div>
     {{ clue.narrative | markdown | safe }}
   </div>
 </section>
 {% elif clue.appearance %}
-<section class="clue-narration" style="display: none;">
+<section class="clue-narration">
   <div>
     {{ clue.appearance | markdown | safe }}
   </div>
 </section>
 {% elif clue.narration %}
-<section class="clue-narration" style="display: none;">
+<section class="clue-narration">
   <div>
     {{ clue.narration | markdown | safe }}
   </div>
@@ -45,7 +60,7 @@ layout: base
 {% endif %}
 
 {% if clue.content %}
-<section class="clue-content" style="display: none;">
+<section class="clue-content">
   <div>
     {{ clue.content | markdown | safe }}
   </div>
@@ -53,7 +68,7 @@ layout: base
 {% endif %}
 
 {% if clue.unlock_code and clue.skills and clue.skills.length > 0 %}
-<section class="seance-section" style="display: none;">
+<section class="seance-section">
   <div class="seance-section-label">Show these symbols to others to unlock their clues</div>
   <div class="static-ring" data-unlock-code="{{ clue.unlock_code }}"></div>
 </section>
@@ -77,10 +92,15 @@ layout: base
 <script>
   // Pre-compute which characters have access to this clue (build-time optimization)
   {% set accessChars = clue.skills | charactersWithAccess(characters) %}
+  {% set unlocks_gates = clue.id | unlocksGates(refs.story_gates) %}
   
   // Pass data to JavaScript - all build-time computed
   window.__clueData = {{ clue | json | safe }};
   window.__clueData.accessChars = {{ accessChars | json | safe }};
+  window.__clueData.unlocks_gates = {{ unlocks_gates | json | safe }};
   window.__noAccessMessages = {{ refs.no_access_messages | json | safe }};
+  {% if storyGated %}
+  window.__clueData.gate = "{{ clue.act }}";
+  {% endif %}
 </script>
 </main>

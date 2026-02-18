@@ -1,24 +1,18 @@
 id: AP109
-type: Artifact (Painting)
 title: Paul de Longpré Print — "Daisies and Poppies"
 act: act_i_setting
+type: Artifact (Painting)
+appearance: |
+  A chromolithographic art print of daisies and poppies arranged in a vase
 location: Bembridge House, Parlor Wall
-appearance: A chromolithographic art print of daisies and poppies arranged in a vase
 hashtags:
-- romano_treasure
+  - romano_treasure
 skills:
-- history_1
-- art_1
-- personal_romano
-content: 'A chromolithographic art print from Kaufmann & Strauss Co., New York, printed
-  in Germany. The artist is Paul de Longpré (1855–1911), known as "The King of Flowers"
-  — a French-born painter who moved to Hollywood in 1899 and built a grand Moorish
-  mansion on Hollywood Boulevard surrounded by four thousand rose bushes. His gardens
-  became Los Angeles''s first tourist attraction. At the height of his fame when this
-  house was built, his estate lay just twenty-five miles north. Note what this painting
-  depicts: flowers arranged in a vase. The subject of flowers and vases appears again
-  and again on these walls. Someone in this house loved that subject. Or someone wanted
-  to leave a message in plain sight.
-
-  '
-unlock_code: '0157'
+  - history_1
+  - art_1
+  - personal_romano
+content: |
+  A chromolithographic art print from Kaufmann & Strauss Co., New York, printed in Germany. The artist is Paul de Longpré (1855–1911), known as "The King of Flowers" — a French-born painter who moved to Hollywood in 1899 and built a grand Moorish mansion on Hollywood Boulevard surrounded by four thousand rose bushes. His gardens became Los Angeles's first tourist attraction. At the height of his fame when this house was built, his estate lay just twenty-five miles north. 
+  
+  **YOU OBSERVE**
+  Flowers arranged in a vase. The subject of flowers and vases appears again and again on these walls. Someone in this house loved that subject. Or someone wanted to leave a message in plain sight.

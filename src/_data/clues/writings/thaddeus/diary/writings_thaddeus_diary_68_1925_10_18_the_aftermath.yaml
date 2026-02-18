@@ -2,12 +2,13 @@ id: WTD68
 type: Writing (Thaddeus's Diary)
 title: Thaddeus Crane's Diary Fragment
 subtitle: October 18, 1925 - The Aftermath
-act: act_iii_revelation
+act: act_iv_revelation
 date: '1925-10-18'
 location: Upstairs bedroom
 hashtags:
 - thaddeus_crane
 - cordelia_montrose
+skills: []
 content: |
   She was innocent, you understand. Merely... unfortunate. A casualty of circumstances beyond her control. When her breathing stopped, I felt something crack inside me.
 unlock_code: '0347'

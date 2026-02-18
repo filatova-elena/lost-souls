@@ -15,19 +15,41 @@ skills:
 - botanical_1
 is_key:
 - the_alchemist
-content: "\"HARBOR IMPORT & TRADING CO.\nLong Beach Harbor, California\n\nSHIPMENT\
-  \ MANIFEST - 1924\n\n08/14/24  Origin: Naples, Italy\nVessel: SS Campania\n- Dried\
-  \ foxglove (D. purpurea), 5 lbs\n- Dried rose petals, 20 lbs\n- Sulfurite powder,\
-  \ 10 lbs\n- Consignee: S. Crane, 718 Myrtle Ave\n\n09/22/24  Origin: London, England\n\
-  \  Vessel: RMS Adriatic\n  - Tincture of belladonna, 2 lbs\n  - Zinc oxide powder,\
-  \ 5 lbs\n  - Camphor blocks, 10 lbs\n  - Ginseng root, 3 lbs\n  - Consignee: S.\
-  \ Crane, 718 Myrtle Ave\n\n10/08/24  Origin: Marseille, France\n  Vessel: SS Rochambeau\n\
-  \  - Foxglove seeds (D. purpurea), 2 lbs\n  - Lavender oil, 1 gal\n  - Gentian root,\
-  \ 5 lbs\n  - Consignee: S. Crane, 718 Myrtle Ave\n\n---\n\n**YOU OBSERVE:**\n\n\
-  - **Belladonna** is a plant requiring very careful handling. Even small amounts\
-  \ can be dangerous if misused.\n\n- **Ginseng root** at 3 lbs is a significant investment.\
-  \ Imported ginseng was expensive and highly sought after — this quantity suggests\
-  \ either a wealthy clientele or someone stockpiling a valuable commodity.\n\n- **Foxglove**\
-  \ appears in two of the three shipments — first as dried plant material, then as\
-  \ seeds. Used as a cardiac remedy in the 1920s.  Toxic in high doses."
+content: |
+  HARBOR IMPORT & TRADING CO.
+  Long Beach Harbor, California
+
+  SHIPMENT MANIFEST - 1924
+
+  08/14/24  Origin: Naples, Italy
+  Vessel: SS Campania
+  - Dried foxglove (D. purpurea), 5 lbs
+  - Dried rose petals, 20 lbs
+  - Sulfurite powder, 10 lbs
+  - Consignee: S. Crane, 718 Myrtle Ave
+
+  09/22/24  Origin: London, England
+    Vessel: RMS Adriatic
+    - Tincture of belladonna, 2 lbs
+    - Zinc oxide powder, 5 lbs
+    - Camphor blocks, 10 lbs
+    - Ginseng root, 3 lbs
+    - Consignee: S. Crane, 718 Myrtle Ave
+
+  10/08/24  Origin: Marseille, France
+    Vessel: SS Rochambeau
+    - Foxglove seeds (D. purpurea), 2 lbs
+    - Lavender oil, 1 gal
+    - Gentian root, 5 lbs
+    - Consignee: S. Crane, 718 Myrtle Ave
+
+  ---
+
+  **YOU OBSERVE:**
+
+  - **Belladonna** is a plant requiring very careful handling. Even small amounts can be dangerous if misused.
+
+  - **Ginseng root** at 3 lbs is a significant investment. Imported ginseng was expensive and highly sought after — this quantity suggests either a wealthy clientele or someone stockpiling a valuable commodity.
+
+  - **Foxglove** appears in two of the three shipments — first as dried plant material, then as seeds. Used as a cardiac remedy in the 1920s.  Toxic in high doses.
 unlock_code: '2567'

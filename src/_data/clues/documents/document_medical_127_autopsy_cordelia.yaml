@@ -15,7 +15,8 @@ skills:
 - botanical_2
 is_key:
 - main_quest
-content: '**AUTOPSY EXAMINATION REPORT**
+content: |
+  **AUTOPSY EXAMINATION REPORT**
 
 
   **Decedent:** Cordelia Margaret Montrose, Age 24
@@ -27,8 +28,7 @@ content: '**AUTOPSY EXAMINATION REPORT**
 
   **EXTERNAL EXAMINATION:**
 
-  Body shows extreme physical deterioration. Deceased significantly underweight. Skin
-  pallor and discoloration suggest prolonged illness.
+  Body shows extreme physical deterioration. Deceased significantly underweight. Skin pallor and discoloration suggest prolonged illness.
 
 
   **ORGAN EXAMINATION:**
@@ -44,22 +44,17 @@ content: '**AUTOPSY EXAMINATION REPORT**
 
   **TOXICOLOGY:**
 
-  Organic compound detected throughout organ tissue samples. Botanical origin. Unable
-  to identify specific compound at this time. Evidence of cumulative toxin accumulation
-  over extended period.
+  Organic compound detected throughout organ tissue samples. Botanical origin. Unable to identify specific compound at this time. Evidence of cumulative toxin accumulation over extended period.
 
 
   **CLINICAL FINDINGS:**
 
-  Pattern of toxin accumulation consistent with repeated administration over 6-8 weeks.
-  Organ damage progressive and cumulative. No evidence of acute single exposure.
+  Pattern of toxin accumulation consistent with repeated administration over 6-8 weeks. Organ damage progressive and cumulative. No evidence of acute single exposure.
 
 
   **FINAL DETERMINATION:**
 
-  **Death resulted from cumulative organ failure caused by prolonged toxin exposure.
-  Pattern indicates repeated administration of botanical poison over extended period.
-  Cause of death: chronic poisoning.**
+  **Death resulted from cumulative organ failure caused by prolonged toxin exposure. Pattern indicates repeated administration of botanical poison over extended period. Cause of death: chronic poisoning.**
 
 
   **Pathologist:** Silas Blackwell
@@ -73,7 +68,5 @@ content: '**AUTOPSY EXAMINATION REPORT**
   **MARGIN NOTES:**
 
 
-  **My finding suggest systematic poisoning over 6-8 weeks, not cardiac failure stated
-  in the death certificate. Chemical burns in gastric tissue confirm repeated ingestion.
-  Recommend investigation.**'
+  **My finding suggest systematic poisoning over 6-8 weeks, not cardiac failure stated in the death certificate. Chemical burns in gastric tissue confirm repeated ingestion. Recommend investigation.**
 unlock_code: '3457'

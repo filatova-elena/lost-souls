@@ -3,17 +3,11 @@ type: Artifact (Object)
 title: Medicine Cabinet
 act: act_i_setting
 location: Bembridge House, Upstairs Bathroom
-appearance: A wall-mounted medicine cabinet filled with vintage bottles, tins, and
-  tubes
+appearance: |
+  A wall-mounted medicine cabinet filled with vintage bottles, tins, and tubes
 hashtags:
 - atmospheric
 skills: []
-content: 'A time capsule of mid-century American health and hygiene. Dramamine for
-  seasickness on ocean voyages. Entero-Vioform — a traveler''s anti-diarrheal for
-  foreign water. Tincture of Merthiolate, a mercury-based antiseptic. Vick''s VapoRub.
-  Dorothy Gray face cream "with Hormones." Some bottles still have their original
-  contents. These are the medicines of a family that traveled the world and kept their
-  bathroom stocked.
-
-  '
+content: |
+  A time capsule of mid-century American health and hygiene. Dramamine for seasickness on ocean voyages. Entero-Vioform — a traveler's anti-diarrheal for foreign water. Tincture of Merthiolate, a mercury-based antiseptic. Vick's VapoRub. Dorothy Gray face cream "with Hormones." Some bottles still have their original contents. These are the medicines of a family that traveled the world and kept their bathroom stocked.
 unlock_code: '1457'

@@ -15,7 +15,8 @@ skills:
 is_key:
 - secret_baby
 - rose_bread_legacy
-content: '**COMMONWEALTH OF MASSACHUSETTS - DEPARTMENT OF PUBLIC HEALTH**
+content: |
+  **COMMONWEALTH OF MASSACHUSETTS - DEPARTMENT OF PUBLIC HEALTH**
 
 
   **BIRTH CERTIFICATE**
@@ -47,5 +48,5 @@ content: '**COMMONWEALTH OF MASSACHUSETTS - DEPARTMENT OF PUBLIC HEALTH**
   City Registrar, City of Boston, Suffolk County, Massachusetts
 
 
-  *No record of adoption decree found for this file number.*'
+  *No record of adoption decree found for this file number.*
 unlock_code: '0234'

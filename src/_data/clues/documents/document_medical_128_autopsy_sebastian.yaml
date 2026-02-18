@@ -15,7 +15,8 @@ skills:
 - botanical_2
 is_key:
 - main_quest
-content: '**AUTOPSY EXAMINATION REPORT**
+content: |
+  **AUTOPSY EXAMINATION REPORT**
 
 
   **Decedent:** Sebastian Crane, Age 30
@@ -27,8 +28,7 @@ content: '**AUTOPSY EXAMINATION REPORT**
 
   **EXTERNAL EXAMINATION:**
 
-  Body shows signs of acute illness. Discoloration and bloating consistent with rapid
-  organ deterioration.
+  Body shows signs of acute illness. Discoloration and bloating consistent with rapid organ deterioration.
 
 
   **ORGAN EXAMINATION:**
@@ -44,21 +44,17 @@ content: '**AUTOPSY EXAMINATION REPORT**
 
   **TOXICOLOGY:**
 
-  **Organic compound detected in tissue samples. Botanical origin, concentrated form.
-  Unable to identify specific compound at this time.**
+  **Organic compound detected in tissue samples. Botanical origin, concentrated form. Unable to identify specific compound at this time.**
 
 
   **CLINICAL FINDINGS:**
 
-  **Organs show evidence of acute poisoning with concentrated toxin. Concentration
-  far exceeds accidental exposure levels. Pattern consistent with acute administered
-  dose.**
+  **Organs show evidence of acute poisoning with concentrated toxin. Concentration far exceeds accidental exposure levels. Pattern consistent with acute administered dose.**
 
 
   **FINAL DETERMINATION:**
 
-  **Death resulted from acute poisoning by concentrated botanical toxin. Cause of
-  death: poisoning.**
+  **Death resulted from acute poisoning by concentrated botanical toxin. Cause of death: poisoning.**
 
 
   **Pathologist:** Silas Blackwell
@@ -72,7 +68,5 @@ content: '**AUTOPSY EXAMINATION REPORT**
   **MARGIN NOTES:**
 
 
-  **Findings suggest acute poisoning. Death certificate suggest accidental ingestion,
-  however, decedent was trained apothecary—unlikely to accidentally ingest concentrated
-  botanical toxin. Recommend investigation into source and method of administration.**'
+  **Findings suggest acute poisoning. Death certificate suggest accidental ingestion, however, decedent was trained apothecary—unlikely to accidentally ingest concentrated botanical toxin. Recommend investigation into source and method of administration.**
 unlock_code: '1247'

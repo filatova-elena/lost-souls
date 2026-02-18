@@ -2,7 +2,8 @@ id: BH106
 type: Botanical (Dried Herb)
 title: Precious Forked Root Specimen
 act: act_i_setting
-appearance: Pale root with distinctive forked, human-like shape, unusual and expensive-looking
+appearance: |
+  Pale root with distinctive forked, human-like shape, unusual and expensive-looking
 hashtags:
 - sebastian_crane
 - elixir_of_love
@@ -10,12 +11,6 @@ skills:
 - botanical_2
 is_key:
 - elixir_of_love
-content: '**Ginseng Root [Panax ginseng]**. A pale root with a distinctive forked,
-  human-like shape. Precious, difficult to source, and very expensive — only serious
-  practitioners would seek it out. Prized in Eastern traditions for its mystical binding
-  properties. Whoever sourced this had significant botanical knowledge and went to
-  considerable expense. Symbolic rather than pharmacologically significant, showing
-  a romantic, mystical approach.
-
-  '
+content: |
+  **Ginseng Root [Panax ginseng]**. A pale root with a distinctive forked, human-like shape. Precious, difficult to source, and very expensive — only serious practitioners would seek it out. Prized in Eastern traditions for its mystical binding properties. Whoever sourced this had significant botanical knowledge and went to considerable expense. Symbolic rather than pharmacologically significant, showing a romantic, mystical approach.
 unlock_code: '1236'

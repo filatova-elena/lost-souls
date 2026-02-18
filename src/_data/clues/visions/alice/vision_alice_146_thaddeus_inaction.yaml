@@ -3,9 +3,8 @@ type: Vision (Alice)
 title: The Lonely Ghost
 subtitle: Thaddeus Did Nothing
 act: act_iii_investigation
-narrative: A young woman in a pale dress appears seated, posture rigid, hands clasped
-  tightly in her lap. Her expression shifts between heartbreak and barely contained
-  anger.
+narrative: |
+  A young woman in a pale dress appears seated, posture rigid, hands clasped tightly in her lap. Her expression shifts between heartbreak and barely contained anger.
 hashtags:
 - alice_whitmore
 - thaddeus_crane

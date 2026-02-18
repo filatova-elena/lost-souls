@@ -3,19 +3,17 @@ type: Artifact (Object)
 title: French Jacquard Tapestry Panel
 act: act_i_setting
 location: Bembridge House, Downstairs Hallway
-appearance: A machine-woven tapestry in a walnut frame depicting an 18th-century French
-  Rococo salon scene
+appearance: |
+  A machine-woven tapestry in a walnut frame depicting an 18th-century French Rococo salon scene
 hashtags:
 - romano_treasure
 skills:
 - history_1
 - art_1
 - personal_romano
-content: "A machine-woven Jacquard tapestry depicting an 18th-century French Rococo\
-  \ salon scene — courtiers in powdered wigs, a gentleman bowing to a seated lady,\
-  \ elaborate draperies, a birdcage. The walnut frame with its distinctive rounded-corner\
-  \ inset suggests this was originally built into a piece of fine furniture. Tapestry\
-  \ panels like these were produced by French and Belgian mills in Aubusson and Flanders.\
-  \ \n\n**YOU OBSERVE**\nThis is a beautiful piece — arguably too beautiful for its\
-  \ current setting. Someone who knew what it was worth placed it here.\n"
+content: |
+  A machine-woven Jacquard tapestry depicting an 18th-century French Rococo salon scene — courtiers in powdered wigs, a gentleman bowing to a seated lady, elaborate draperies, a birdcage. The walnut frame with its distinctive rounded-corner inset suggests this was originally built into a piece of fine furniture. Tapestry panels like these were produced by French and Belgian mills in Aubusson and Flanders.
+
+  **YOU OBSERVE**
+  This is a beautiful piece — arguably too beautiful for its current setting. Someone who knew what it was worth placed it here.
 unlock_code: '0257'

@@ -2,42 +2,30 @@ id: BG97
 type: Botanical (Garden Herb)
 title: Purple Spotted Flowering Plant
 act: act_iii_investigation
-appearance: Tall flowering plant with tubular flowers in pink, purple, white, or yellow,
-  distinctive spotted throats
+appearance: |
+  Tall flowering plant with tubular flowers in pink, purple, white, or yellow, distinctive spotted throats
 hashtags:
 - murder_weapon
 - thaddeus_crane
 - sebastian_crane
 skills:
 - botanical_2
-is_key: true
-content: '*Digitalis purpurea.* A tall, handsome specimen — tubular flowers in shades
-  of purple, pink, and white, each throat speckled with dark spots. Common enough
-  in estate gardens. One might walk past it every day and never think twice.
+is_key:
+- main_quest
+content: |
+  *Digitalis purpurea.* A tall, handsome specimen — tubular flowers in shades of purple, pink, and white, each throat speckled with dark spots. Common enough in estate gardens. One might walk past it every day and never think twice.
 
+  Quite a fascinating plant, actually. Contains **cardiac glycosides** — digoxin, digitoxin — compounds that act directly on the heart muscle. Since Withering's treatise of 1785, physicians have used digitalis preparations for dropsy and irregular heartbeat. By the 1920s, powdered foxglove leaf was a staple of the doctor's cabinet. Perfectly routine medicine.
 
-  Quite a fascinating plant, actually. Contains **cardiac glycosides** — digoxin,
-  digitoxin — compounds that act directly on the heart muscle. Since Withering''s
-  treatise of 1785, physicians have used digitalis preparations for dropsy and irregular
-  heartbeat. By the 1920s, powdered foxglove leaf was a staple of the doctor''s cabinet.
-  Perfectly routine medicine.
-
-
-  Of course, one should note — the margin between a **therapeutic dose** and a **toxic
-  dose** is rather narrow. Textbooks warn of the following if dosage is miscalculated:
-
+  Of course, one should note — the margin between a **therapeutic dose** and a **toxic dose** is rather narrow. Textbooks warn of the following if dosage is miscalculated:
 
   - **Nausea and loss of appetite**
 
-  - Peculiar visual disturbances — a **yellow-green tint** to one''s vision, halos
-  around lights
+  - Peculiar visual disturbances — a **yellow-green tint** to one's vision, halos around lights
 
   - **Cardiac irregularity** — the heart slowing, losing its rhythm
 
   - In severe cases: **confusion, weakness, heart failure**
 
-
   Bitter to the taste in raw form. Interesting that it grows so freely here.
-
-  '
 unlock_code: '0167'

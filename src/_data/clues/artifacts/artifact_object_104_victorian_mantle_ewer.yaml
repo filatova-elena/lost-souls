@@ -3,19 +3,17 @@ type: Artifact (Object)
 title: Victorian Mantle Ewer
 act: act_i_setting
 location: Bembridge House, Middle Parlor, Shelf
-appearance: A hand-painted opaline glass ewer with pink roses, mounted in an ornate
-  cast brass Rococo frame
+appearance: |
+  A hand-painted opaline glass ewer with pink roses, mounted in an ornate cast brass Rococo frame
 hashtags:
 - romano_treasure
 skills:
 - history_1
 - art_1
 - personal_romano
-content: "A hand-painted opaline glass ewer mounted in an ornate cast brass Rococo\
-  \ frame. Pink roses and peonies bloom across the translucent surface. Purely decorative\
-  \ — this vessel was never meant to hold liquid. \n\n**YOU OBSERVE**\nThis one seems\
-  \ almost too fine for a Long Beach parlor. The brass mount alone suggests European\
-  \ craftsmanship. **1920s–1930s** smuggling operations out of the Port of Long Beach\
-  \ were known to move more than just liquor. Decorative glass, ceramics, and fine\
-  \ art made excellent cover — who questions a crate of Italian glassware?\n"
+content: |
+  A hand-painted opaline glass ewer mounted in an ornate cast brass Rococo frame. Pink roses and peonies bloom across the translucent surface. Purely decorative — this vessel was never meant to hold liquid.
+
+  **YOU OBSERVE**
+  This one seems almost too fine for a Long Beach parlor. The brass mount alone suggests European craftsmanship. **1920s–1930s** smuggling operations out of the Port of Long Beach were known to move more than just liquor. Decorative glass, ceramics, and fine art made excellent cover — who questions a crate of Italian glassware?
 unlock_code: '0257'

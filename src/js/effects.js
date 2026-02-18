@@ -27,18 +27,6 @@ function renderProgressPip(container, isFilled, isJustFound = false) {
 
 
 /**
- * Join array with Oxford comma "or"
- */
-function joinWithOr(items) {
-  if (items.length === 0) return '';
-  if (items.length === 1) return items[0];
-  if (items.length === 2) return `${items[0]} or ${items[1]}`;
-  const last = items[items.length - 1];
-  const rest = items.slice(0, -1);
-  return `${rest.join(', ')}, or ${last}`;
-}
-
-/**
  * Symbols for the octogram lock (8 alchemical symbols)
  */
 const LOCK_SYMBOLS = ['🝪', '🝮', '☿', '🝣', '♀', '♃', '🝭', '🝰'];
@@ -261,44 +249,6 @@ function buildStaticRing(container, unlockCode) {
 }
 
 /**
- * Generate lock HTML structure
- * @param {string} message - The lock message
- * @param {Array<string>} suggestedCharacters - Optional array of suggested character names
- * @param {string} unlockCode - Optional unlock code for shared clues
- * @returns {string} HTML string for the lock
- */
-function generateLockHTML(message, suggestedCharacters = null, unlockCode = null) {
-  let lockHTML = '';
-  
-  // If unlock code exists, use octogram lock
-  if (unlockCode) {
-    lockHTML = `<div class="octogram-lock" data-unlock-code="${unlockCode}"></div>`;
-  } else {
-    // Standard lock
-    lockHTML = `
-      <div class="lock-assembly">
-        <div class="lock-glow"></div>
-        <div class="lock-shackle"></div>
-        <div class="lock-body"><div class="keyhole"></div></div>
-      </div>
-    `;
-  }
-  
-  if (message) {
-    lockHTML += `<p>${message}</p>`;
-  }
-  
-  if (suggestedCharacters && suggestedCharacters.length > 0) {
-    // Wrap each character name in <strong> tags
-    const boldCharacters = suggestedCharacters.map(name => `<strong>${name}</strong>`);
-    const characterList = joinWithOr(boldCharacters);
-    lockHTML += `<span class="locked-seek">Seek out ${characterList}</span>`;
-  }
-  
-  return lockHTML;
-}
-
-/**
  * Spawn celebration particles when a key clue is found
  * Creates golden particles that fall from the top of the screen
  */
@@ -391,81 +341,12 @@ function triggerUnlockAnimation(cluePage, lockSection, isKeyClue = false) {
   }, 1500); // Total animation duration (matches CSS timing)
 }
 
-/**
- * Initialize octogram lock if present
- */
-function initOctogramLock() {
-  const lockContainer = document.querySelector('.octogram-lock[data-unlock-code]');
-  if (!lockContainer) return;
-  
-  const unlockCode = lockContainer.getAttribute('data-unlock-code');
-  if (!unlockCode || unlockCode.length !== 4) return;
-  
-  const cluePage = lockContainer.closest('main') || lockContainer.closest('.clue-page');
-  const lockSection = lockContainer.closest('.clue-no-access');
-  
-  buildOctogramLock(lockContainer, unlockCode, () => {
-    if (cluePage && lockSection) {
-      const clueData = window.__clueData || {};
-      const isKeyClue = clueData.is_key && (Array.isArray(clueData.is_key) ? clueData.is_key.length > 0 : !!clueData.is_key);
-      
-      // Mark clue as unlocked and scanned when unlocked via octogram
-      if (clueData.id) {
-        if (window.markClueAsUnlocked) {
-          window.markClueAsUnlocked(clueData.id);
-        }
-        if (window.markClueAsScanned) {
-          window.markClueAsScanned(clueData.id, clueData);
-        }
-        
-        // Update progress tracker if key clue
-        if (isKeyClue && window.renderProgressTracker) {
-          const progressData = window.__progressData || {};
-          const characterProfile = window.getCharacterProfile ? window.getCharacterProfile() : null;
-          const currentCharacterId = characterProfile?.characterId;
-          const characterSideQuests = progressData.sideQuests || {};
-          const sideQuestInfo = currentCharacterId ? characterSideQuests[currentCharacterId] : null;
-          const mainQuestHashtag = progressData.mainQuestHashtag || 'main_quest';
-          const sideQuestHashtag = sideQuestInfo?.hashtag;
-          
-          const keyHashtags = Array.isArray(clueData.is_key) ? clueData.is_key : (clueData.is_key ? [clueData.is_key] : []);
-          let newlyFoundQuestHashtag = null;
-          if (keyHashtags.includes(mainQuestHashtag)) {
-            newlyFoundQuestHashtag = mainQuestHashtag;
-          } else if (sideQuestHashtag && keyHashtags.includes(sideQuestHashtag)) {
-            newlyFoundQuestHashtag = sideQuestHashtag;
-          }
-          
-          if (newlyFoundQuestHashtag) {
-            window.renderProgressTracker(newlyFoundQuestHashtag);
-            window.spawnParticles();
-          } else {
-            window.renderProgressTracker();
-          }
-        } else if (window.renderProgressTracker) {
-          window.renderProgressTracker();
-        }
-      }
-      
-      triggerUnlockAnimation(cluePage, lockSection, isKeyClue);
-    }
-  });
-}
-
 // Expose to global scope
 window.pipSVG = pipSVG;
 window.renderProgressPip = renderProgressPip;
-window.generateLockHTML = generateLockHTML;
 window.triggerUnlockAnimation = triggerUnlockAnimation;
 window.spawnParticles = spawnParticles;
 window.buildOctogramLock = buildOctogramLock;
 window.buildStaticRing = buildStaticRing;
-
-// Initialize octogram locks on DOM ready
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', initOctogramLock);
-} else {
-  initOctogramLock();
-}
 
 })();

@@ -13,7 +13,8 @@ skills:
 - personal_montrose
 is_key:
 - bakery_fire
-content: '**MONTROSE FAMILY ESTATE**
+content: |
+  **MONTROSE FAMILY ESTATE**
 
   PAYMENT LEDGER - 1990
 
@@ -34,8 +35,7 @@ content: '**MONTROSE FAMILY ESTATE**
 
   **Ledger Notation:**
 
-  "Professional consultation regarding property maintenance and security assessment.
-  Confidential arrangement. No itemized services required."
+  "Professional consultation regarding property maintenance and security assessment. Confidential arrangement. No itemized services required."
 
 
   **Authorized By:** [Montrose Estate Trustee]
@@ -83,5 +83,5 @@ content: '**MONTROSE FAMILY ESTATE**
 
   - **October 28, 1990:** $8,500 (check)
 
-  **Total:** $10,500.00'
+  **Total:** $10,500.00
 unlock_code: '0367'
