@@ -4,12 +4,9 @@
 act_ii_mystery_emerges:
   name: "Act II: The Mystery Emerges"
   unlock_type: any
-  # Any of these clues will unlock Act II
+  # Sebastian's birth certificate unlocks Act II
   clues:
-    - AO79  # Venetian bottle
-    - AO81  # Pocket watch
-    - BH106 # Ginseng
-    - AO85  # Wedding dress
+    - DL122  # Birth Certificate - Sebastian Montgomery Crane
 
 act_iii_investigation:
   name: "Act III: The Investigation"
