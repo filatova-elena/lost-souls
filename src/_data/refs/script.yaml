@@ -97,15 +97,15 @@ act_iii_investigation:
         speaker: Alice
         text: |
           Finally! Finally!! Someone can hear me! I have a message to share, for so long I've been silent! Cordelia, my friend. Have you seen Cordelia? I have so much to tell her.
-    - dialogue:
-        speaker: Alice
-        text: "I have your diary, Thaddeus."
     - directions: |
         [OPTIONAL] Alice looks at the doctor lovingly: "Thaddeus?!" - no, it can't be.
-        The ghost is holding in her hand a diary of Dr. Thaddeus Crane and offering for people to scan the QR code.
+        The ghost is holding in her hand patient notes of Dr. Thaddeus Crane and offering for people to scan the QR code.
+    - dialogue:
+        speaker: Alice
+        text: "[distracted] I have your patient notes, Thaddeus."
     - dialogue:
         speaker: G.G.
-        text: "To unlock Part 3, scan the diary."
+        text: "To unlock Part 3, scan the patient notes."
 
 act_iv_revelation:
   script:
