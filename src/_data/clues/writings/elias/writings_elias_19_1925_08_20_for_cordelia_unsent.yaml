@@ -12,7 +12,8 @@ skills:
 - personal_monroe
 is_key:
 - elias_unrequited_love
-content: 'She turns to roses in the garden light,
+content: |
+  She turns to roses in the garden light,
 
   Not knowing I have fallen into night.
 
@@ -23,5 +24,5 @@ content: 'She turns to roses in the garden light,
 
   I tell her of the flowers, nothing more.
 
-  My heart lies shattered on her garden floor.'
+  My heart lies shattered on her garden floor.
 unlock_code: '0136'

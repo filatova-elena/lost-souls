@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1920s Marriage Certificate</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700;900&family=IM+Fell+English+SC&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Dancing+Script:wght@400;600;700&display=swap');
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#4a3f35;display:flex;justify-content:center;align-items:center;min-height:100vh;padding:40px}
+  .doc-wrap{width:720px}
+  .doc{
+    background:#fdf6e3;
+    background-image:
+      radial-gradient(ellipse at 30% 20%,rgba(180,140,80,0.07) 0%,transparent 50%),
+      radial-gradient(ellipse at 70% 80%,rgba(160,120,60,0.06) 0%,transparent 45%),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+    padding:0;position:relative;
+    box-shadow:0 2px 8px rgba(0,0,0,0.3),0 8px 32px rgba(0,0,0,0.2),inset 0 0 80px rgba(160,130,70,0.08);
+    border:1px solid #d4b87a;
+  }
+  .doc::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse at 10% 90%,rgba(140,100,50,0.08) 0%,transparent 40%),radial-gradient(ellipse at 85% 15%,rgba(120,85,35,0.06) 0%,transparent 30%);pointer-events:none;z-index:1}
+  .border-1{border:3px double #8a7040;margin:8px;padding:0}
+  .border-2{border:1px solid #a08850;margin:5px;padding:0}
+  .border-3{border:2px solid #8a7040;margin:4px;padding:35px 40px;position:relative}
+  /* Floral corner ornaments */
+  .floral{position:absolute;font-size:28px;color:#8a7040;opacity:0.5;z-index:2;line-height:1}
+  .fl-tl{top:4px;left:8px}.fl-tr{top:4px;right:8px}.fl-bl{bottom:4px;left:8px}.fl-br{bottom:4px;right:8px}
+  .header{text-align:center;margin-bottom:15px}
+  .pre-title{font-family:'IM Fell English SC',serif;font-size:10px;letter-spacing:5px;color:#6b5a3e;text-transform:uppercase}
+  .main-title{font-family:'Playfair Display SC',serif;font-size:34px;font-weight:900;color:#2c2218;letter-spacing:4px;margin:4px 0;line-height:1}
+  .sub-title{font-family:'Playfair Display SC',serif;font-size:16px;color:#4a3d2a;letter-spacing:10px}
+  .locale{font-family:'Cormorant Garamond',serif;font-size:10px;letter-spacing:4px;color:#7a6a52;margin-top:6px;text-transform:uppercase}
+  .divider{display:flex;align-items:center;justify-content:center;gap:10px;margin:10px 0;color:#a08850}
+  .div-line{flex:1;max-width:100px;height:1px;background:linear-gradient(to right,transparent,#a08850,transparent)}
+  .oath-text{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:11px;color:#6b5a3e;text-align:center;line-height:1.7;margin:12px 30px;filter:blur(0.3px)}
+  .sect-title{font-family:'IM Fell English SC',serif;font-size:8px;letter-spacing:4px;color:#7a6a52;text-align:center;margin-bottom:8px;text-transform:uppercase}
+  .sect-title::before,.sect-title::after{content:'—';margin:0 8px;color:#b0a070}
+  .row{display:flex;gap:15px;margin-bottom:7px}
+  .fld{flex:1;position:relative}
+  .fld.w{flex:2}.fld.n{max-width:110px}
+  .lbl{font-family:'Cormorant Garamond',serif;font-size:8px;color:#7a6a52;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:2px}
+  .ln{border-bottom:1px solid #c0b080;height:20px;position:relative;overflow:hidden}
+  .ln .s{font-family:'Dancing Script',cursive;font-size:13px;color:rgba(30,20,10,0.5);position:absolute;bottom:1px;left:2px;white-space:nowrap;filter:blur(0.7px);user-select:none;letter-spacing:-0.3px;transform:skewX(-2deg)}
+  .il .s{color:rgba(30,20,10,0.38);filter:blur(0.9px)}
+  .ih .s{color:rgba(30,20,10,0.62);filter:blur(0.5px)}
+  .is .s{color:rgba(30,20,10,0.48);filter:blur(1.1px)}
+  .witness-area{display:flex;gap:40px;margin-top:18px;padding-top:12px;border-top:1px solid #a08850}
+  .wit-block{flex:1}
+  .sig-ln{border-bottom:1px solid #a08850;height:28px;position:relative;overflow:hidden;margin-bottom:3px}
+  .sig-ln .ss{font-family:'Dancing Script',cursive;font-size:15px;font-weight:600;color:rgba(30,20,10,0.48);position:absolute;bottom:2px;left:15%;white-space:nowrap;filter:blur(0.6px);user-select:none;transform:skewX(-3deg) rotate(-1deg)}
+  .sig-lbl{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:8px;color:#7a6a52;text-align:center;letter-spacing:1px}
+  .seal{width:80px;height:80px;border-radius:50%;border:2px solid #a08850;position:relative;display:flex;align-items:center;justify-content:center;opacity:0.3;margin:0 auto}
+  .seal::before{content:'';position:absolute;width:68px;height:68px;border-radius:50%;border:1px solid #a08850}
+  .seal::after{content:'';position:absolute;width:56px;height:56px;border-radius:50%;border:1px dashed #a08850}
+  .seal-txt{font-family:'IM Fell English SC',serif;font-size:5.5px;letter-spacing:1.5px;text-transform:uppercase;color:#6b5a3e;text-align:center;line-height:1.4}
+  .footer{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:7px;color:#9a8a6a;text-align:center;margin-top:10px;letter-spacing:1px}
+</style>
+</head>
+<body>
+<div class="doc-wrap"><div class="doc"><div class="border-1"><div class="border-2"><div class="border-3">
+  <div class="floral fl-tl">❦</div><div class="floral fl-tr">❦</div><div class="floral fl-bl">❦</div><div class="floral fl-br">❦</div>
+  <div class="header">
+    <div class="pre-title">State of California</div>
+    <div class="divider"><span class="div-line"></span><span>✿</span><span class="div-line"></span></div>
+    <div class="main-title">Certificate</div>
+    <div class="sub-title">of Marriage</div>
+    <div class="divider"><span class="div-line"></span><span>❧</span><span class="div-line"></span></div>
+    <div class="locale">County of Los Angeles · City of Long Beach</div>
+  </div>
+  <div class="oath-text">Ŧhis is ŧo ceɾŧiƒy ŧhaŧ on ŧhe ɗaŧe heɾein ɾecoɾɗeɗ, ŧhe ƥeɾsons nameɗ below weɾe<br>ůniŧeɗ in ŧhe holy bonɗs oƒ maŧɾimony in accoɾɗance wiŧh ŧhe laws oƒ ŧhe Ŝŧaŧe oƒ Ƈaliƒoɾnia.</div>
+  <div class="sect-title">The Groom</div>
+  <div class="row"><div class="fld w"><div class="lbl">Full Name</div><div class="ln ih"><span class="s">Ŵilliam Ħ. Ƈɾansworth</span></div></div><div class="fld n"><div class="lbl">Age</div><div class="ln"><span class="s">28 yɾs</span></div></div></div>
+  <div class="row"><div class="fld"><div class="lbl">Residence</div><div class="ln is"><span class="s">412 Ƈeɗaɾ Ąve, Łong Ɓeach</span></div></div><div class="fld"><div class="lbl">Birthplace</div><div class="ln il"><span class="s">Ƥoɾŧlanɗ, Oɾegon</span></div></div></div>
+  <div class="row"><div class="fld"><div class="lbl">Occupation</div><div class="ln"><span class="s">Ŝhiƥ Ƈaɾƥenŧeɾ</span></div></div><div class="fld"><div class="lbl">Father's Name</div><div class="ln il"><span class="s">Ŧhomas Ƈɾansworth</span></div></div></div>
+  <div style="height:10px"></div>
+  <div class="sect-title">The Bride</div>
+  <div class="row"><div class="fld w"><div class="lbl">Full Name</div><div class="ln ih"><span class="s">Ɗoɾoŧhy Mæe Ŵilkins</span></div></div><div class="fld n"><div class="lbl">Age</div><div class="ln"><span class="s">23 yɾs</span></div></div></div>
+  <div class="row"><div class="fld"><div class="lbl">Residence</div><div class="ln"><span class="s">88 Ƥine Ŝŧ, Łong Ɓeach</span></div></div><div class="fld"><div class="lbl">Birthplace</div><div class="ln is"><span class="s">Ŝacɾamenŧo, Ƈaliƒ.</span></div></div></div>
+  <div class="row"><div class="fld"><div class="lbl">Father's Name</div><div class="ln il"><span class="s">Ŗoɓeɾŧ Ŵilkins</span></div></div><div class="fld"><div class="lbl">Mother's Maiden Name</div><div class="ln"><span class="s">Mæɾy Ąnn Ƥeŧeɾson</span></div></div></div>
+  <div style="height:10px"></div>
+  <div class="sect-title">Particulars of Ceremony</div>
+  <div class="row"><div class="fld"><div class="lbl">Date of Marriage</div><div class="ln ih"><span class="s">Jůne 14ŧh, 1924</span></div></div><div class="fld"><div class="lbl">Place of Marriage</div><div class="ln is"><span class="s">Ƒiɾsŧ Ƥɾesɓyŧeɾian Ƈhůɾch</span></div></div></div>
+  <div class="row"><div class="fld w"><div class="lbl">Officiant</div><div class="ln"><span class="s">Ŗev. Ƈhaɾles Ŵ. Ɓɾooks</span></div></div><div class="fld n"><div class="lbl">License No.</div><div class="ln il"><span class="s">4ᶾ271</span></div></div></div>
+  <div class="witness-area">
+    <div class="wit-block"><div class="sig-ln"><span class="ss">Ƒɾanklin Ɗ. Ŵaɾɗ</span></div><div class="sig-lbl">Witness</div></div>
+    <div style="flex:0"><div class="seal"><div class="seal-txt">County<br>Clerk<br>·<br>Los Angeles</div></div></div>
+    <div class="wit-block"><div class="sig-ln"><span class="ss">Ɓeŧŧy Łoůise Ħall</span></div><div class="sig-lbl">Witness</div></div>
+  </div>
+  <div style="height:10px"></div>
+  <div class="row">
+    <div class="wit-block"><div class="sig-ln"><span class="ss">Ŗev. Ƈ. Ŵ. Ɓɾooks</span></div><div class="sig-lbl">Officiating Minister</div></div>
+    <div class="wit-block"><div class="sig-ln"><span class="ss">Ħaɾolɗ Ŗ. Ŝmiŧh</span></div><div class="sig-lbl">County Clerk</div></div>
+  </div>
+  <div class="footer">Issued under authority of the County of Los Angeles · Not valid without official seal</div>
+</div></div></div></div></div>
+</body></html>

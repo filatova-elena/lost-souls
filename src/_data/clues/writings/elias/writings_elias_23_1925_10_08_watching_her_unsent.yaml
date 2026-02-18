@@ -12,7 +12,8 @@ skills:
 - personal_monroe
 is_key:
 - elias_unrequited_love
-content: 'She wears the dress like sorrow wears a crown.
+content: |
+  She wears the dress like sorrow wears a crown.
 
   I pin the hem and do not let her down.
 
@@ -23,5 +24,5 @@ content: 'She wears the dress like sorrow wears a crown.
 
   I stitch my love into each seam so true,
 
-  And hope that somehow she might know it''s you.'
+  And hope that somehow she might know it's you.
 unlock_code: '1245'

@@ -13,34 +13,22 @@ skills:
 is_key:
 - morticians_silence
 - main_quest
-content: 'MORTUARY PAYMENT LEDGER
-
+content: |
+  MORTUARY PAYMENT LEDGER
 
   Date: October 1925
-
   Amount: $500
-
   Purpose: Discretionary Services
-
   Paid by: [Unsigned - Cash Payment]
-
   Authorized by: [No signature on file]
 
-  Notes: ''Special arrangement regarding recent examinations. No further documentation
-  required.''
-
+  Notes: 'Special arrangement regarding recent examinations. No further documentation required.'
 
   **RECORD STATUS:**
 
   Payment received and recorded
-
   No identifying information regarding payer
-
   No itemized description of services
-
   Payment marked as complete
-
   File closed - no follow-up correspondence
-
-  '
 unlock_code: '0237'
