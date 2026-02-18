@@ -155,11 +155,21 @@ def render_qr_modules(matrix, box_size, border, corner_radius_ratio, fg_color, b
 
 
 def create_stylized_qr(url, output_path, size=600, keyhole_size_ratio=0.22,
-                       rotate=True, corner_radius=0.35,
+                       rotate=45, corner_radius=0.35,
                        fg_color=(0, 0, 0, 255), bg_color=(255, 255, 255, 255)):
     """
     Create a scannable QR code with smart rounded corners,
-    optional 45° rotation, keyhole overlay, and transparent background support.
+    optional rotation (angle in degrees), keyhole overlay, and transparent background support.
+    
+    Args:
+        url: URL to encode in QR code
+        output_path: Path to save the QR code image
+        size: Final image size in pixels (default: 600)
+        keyhole_size_ratio: Size of keyhole overlay relative to image (default: 0.22)
+        rotate: Rotation angle in degrees (default: 45). Set to 0 for no rotation.
+        corner_radius: Corner radius ratio 0-0.5 (default: 0.35)
+        fg_color: Foreground color as RGBA tuple (default: black)
+        bg_color: Background color as RGBA tuple (default: white)
     """
     box_size = 12
     border = 4
@@ -169,12 +179,22 @@ def create_stylized_qr(url, output_path, size=600, keyhole_size_ratio=0.22,
     matrix = generate_qr_matrix(url)
     qr_img = render_qr_modules(matrix, box_size, border, corner_radius, fg_color, bg_color)
     
-    if rotate:
-        inner_size = int(size / math.sqrt(2) * 0.85)
+    if rotate != 0:
+        # Calculate inner size to fit rotated QR in final size
+        # For 45° rotation, we need sqrt(2) factor, but adjust for other angles
+        angle_rad = math.radians(abs(rotate))
+        scale_factor = 0.85  # Slight padding
+        if abs(rotate) == 45:
+            inner_size = int(size / math.sqrt(2) * scale_factor)
+        else:
+            # For other angles, use the diagonal of the bounding box
+            max_dim = max(abs(math.cos(angle_rad)), abs(math.sin(angle_rad)))
+            inner_size = int(size / (2 * max_dim) * scale_factor)
+        
         qr_img = qr_img.resize((inner_size, inner_size), Image.Resampling.LANCZOS)
         
         # Rotate with transparent fill so corners don't show artifacts
-        qr_img = qr_img.rotate(-45, expand=True, fillcolor=(0, 0, 0, 0))
+        qr_img = qr_img.rotate(-rotate, expand=True, fillcolor=(0, 0, 0, 0))
         
         # Composite onto final canvas
         final = Image.new('RGBA', (size, size), bg_color)
@@ -218,7 +238,7 @@ def create_stylized_qr(url, output_path, size=600, keyhole_size_ratio=0.22,
     
     print(f"✓ Created scannable QR: {output_path}")
     print(f"  URL: {url}")
-    print(f"  Rotated: {rotate}")
+    print(f"  Rotation: {rotate}°")
     print(f"  Corner radius: {corner_radius * 100:.0f}%")
     print(f"  Keyhole size: {keyhole_size_ratio * 100:.0f}%")
     print(f"  FG: {fg_label}")
@@ -236,7 +256,8 @@ def main():
                         help="Keyhole size ratio (default: 0.22)")
     parser.add_argument("--radius", type=float, default=0.35,
                         help="Corner radius ratio 0-0.5 (default: 0.35)")
-    parser.add_argument("--no-rotate", action="store_true", help="Don't rotate 45°")
+    parser.add_argument("--rotate", type=float, default=45,
+                        help="Rotation angle in degrees (default: 45, use 0 for no rotation)")
     parser.add_argument("--fg", "--foreground", default="black",
                         help="Foreground color: hex (#ff0000 or #ff0000ff) or name (red, navy, etc.)")
     parser.add_argument("--bg", "--background", default="white",
@@ -252,7 +273,7 @@ def main():
         output_path=args.output,
         size=args.size,
         keyhole_size_ratio=args.keyhole,
-        rotate=not args.no_rotate,
+        rotate=args.rotate,
         corner_radius=args.radius,
         fg_color=fg_color,
         bg_color=bg_color,

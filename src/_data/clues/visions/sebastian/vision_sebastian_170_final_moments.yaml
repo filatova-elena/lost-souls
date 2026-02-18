@@ -3,9 +3,8 @@ type: Vision (Sebastian)
 title: The Ghost of the Cursed Alchemist
 subtitle: Final Moments
 act: act_ii_mystery_emerges
-narrative: A young man appears, barely visible, his form flickering like a candle
-  about to go out. His dark eyes are glassy, his breathing ragged, one hand clutching
-  at his chest.
+narrative: |
+  A young man appears, barely visible, his form flickering like a candle about to go out. His dark eyes are glassy, his breathing ragged, one hand clutching at his chest.
 hashtags:
 - sebastian_crane
 - cordelia_montrose

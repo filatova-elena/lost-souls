@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1920s Pharmacy Orders</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=IM+Fell+English:ital@0;1&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Playfair+Display+SC:wght@400;700;900&family=Dancing+Script:wght@400;600;700&display=swap');
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#3a3428;display:flex;justify-content:center;align-items:center;min-height:100vh;padding:40px}
+  .doc-wrap{width:680px}
+  .doc{
+    background:#f8f0dc;
+    background-image:
+      radial-gradient(ellipse at 25% 30%,rgba(160,130,60,0.07) 0%,transparent 50%),
+      radial-gradient(ellipse at 80% 75%,rgba(140,110,50,0.06) 0%,transparent 45%),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    padding:0;position:relative;
+    box-shadow:0 2px 6px rgba(0,0,0,0.28),0 6px 24px rgba(0,0,0,0.18),inset 0 0 50px rgba(150,120,50,0.07);
+    border:1px solid #d0b870;
+  }
+  .doc::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse at 85% 10%,rgba(140,105,40,0.06) 0%,transparent 35%);pointer-events:none;z-index:1}
+  .inner{margin:10px;border:2px solid #8a7538;padding:0}
+  .inner2{margin:3px;border:1px solid #a89050;padding:28px 32px;position:relative}
+  .rx-symbol{position:absolute;top:12px;left:18px;font-family:'Old Standard TT',serif;font-size:28px;font-weight:700;color:#8a7538;opacity:0.2}
+  .order-no{position:absolute;top:12px;right:18px;font-family:'Old Standard TT',serif;font-size:8px;color:#8a7538;letter-spacing:2px}
+  .header{text-align:center;margin-bottom:14px;padding-bottom:12px;border-bottom:2px solid #8a7538}
+  .header::after{content:'';display:block;margin:0 auto;margin-top:4px;width:50%;height:1px;background:#a89050}
+  .shop{font-family:'Playfair Display SC',serif;font-size:22px;font-weight:900;color:#2c2210;letter-spacing:4px}
+  .shop-sub{font-family:'Old Standard TT',serif;font-style:italic;font-size:9px;color:#6a5a30;letter-spacing:3px;margin:2px 0}
+  .shop-addr{font-family:'IM Fell English',serif;font-size:8px;color:#8a7a50;letter-spacing:2px;margin-top:3px}
+  .shop-detail{font-family:'Old Standard TT',serif;font-size:7px;color:#8a7a50;letter-spacing:1.5px;margin-top:2px}
+  .divider{display:flex;align-items:center;justify-content:center;gap:8px;margin:5px 0;color:#a89050;font-size:11px}
+  .d-ln{flex:1;max-width:50px;height:1px;background:linear-gradient(to right,transparent,#a89050,transparent)}
+  .title{font-family:'Old Standard TT',serif;font-size:14px;font-weight:700;color:#3c3018;letter-spacing:4px;text-transform:uppercase;text-align:center;margin:10px 0 8px}
+  .meta-row{display:flex;gap:15px;margin-bottom:8px}
+  .meta-fld{flex:1}
+  .m-lbl{font-family:'Cormorant Garamond',serif;font-size:7.5px;color:#7a6a40;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:2px}
+  .m-ln{border-bottom:1px solid #c8b870;height:18px;position:relative;overflow:hidden}
+  .m-ln .s{font-family:'Dancing Script',cursive;font-size:12px;color:rgba(30,25,10,0.5);position:absolute;bottom:1px;left:2px;white-space:nowrap;filter:blur(0.65px);user-select:none;transform:skewX(-2deg)}
+  /* Order table */
+  .order-table{width:100%;border-collapse:collapse;margin:10px 0}
+  .order-table th{font-family:'Old Standard TT',serif;font-size:7.5px;color:#5a4a28;text-transform:uppercase;letter-spacing:2px;text-align:left;border-bottom:2px solid #8a7538;border-top:1px solid #8a7538;padding:5px 6px}
+  .order-table td{font-family:'Dancing Script',cursive;font-size:11.5px;color:rgba(30,25,10,0.48);filter:blur(0.55px);padding:5px 6px;border-bottom:1px dotted #c8b870}
+  .order-table .qty{text-align:center;font-size:12px}
+  .order-table .price{text-align:right}
+  .total-row{display:flex;justify-content:flex-end;gap:20px;margin:6px 0;padding-top:4px;border-top:1px solid #8a7538}
+  .total-lbl{font-family:'Old Standard TT',serif;font-size:9px;font-weight:700;color:#4a3d20;letter-spacing:2px;text-transform:uppercase}
+  .total-val{font-family:'Dancing Script',cursive;font-size:14px;color:rgba(30,25,10,0.55);filter:blur(0.5px)}
+  .notes{font-family:'IM Fell English',serif;font-style:italic;font-size:8px;color:#8a7a50;margin:10px 0;padding:6px 10px;border-left:2px solid #a89050}
+  .bottom{display:flex;gap:30px;margin-top:15px;padding-top:10px;border-top:1px solid #a89050;align-items:flex-end}
+  .sig-block{flex:1}
+  .sig-ln{border-bottom:1px solid #a89050;height:26px;position:relative;overflow:hidden;margin-bottom:2px}
+  .sig-ln .ss{font-family:'Dancing Script',cursive;font-size:14px;font-weight:600;color:rgba(30,25,10,0.44);position:absolute;bottom:2px;left:10%;white-space:nowrap;filter:blur(0.55px);user-select:none;transform:skewX(-3deg) rotate(-1deg)}
+  .sig-lbl{font-family:'IM Fell English',serif;font-style:italic;font-size:7px;color:#7a6a40;text-align:center;letter-spacing:1px}
+</style>
+</head>
+<body>
+<div class="doc-wrap"><div class="doc"><div class="inner"><div class="inner2">
+  <div class="rx-symbol">℞</div>
+  <div class="order-no">ORDER NO. <span style="font-family:'Dancing Script';font-size:10px;filter:blur(0.5px);color:rgba(30,25,10,0.48)">Ƥ-0892</span></div>
+  <div class="header">
+    <div class="shop">Crane Apothecary</div>
+    <div class="shop-sub">& Pharmaceutical Supplies · Established 1918</div>
+    <div class="shop-addr">328 Pine Avenue · Long Beach, California</div>
+    <div class="shop-detail">Telephone: Long Beach 1456 · Prescriptions Compounded With Care</div>
+  </div>
+  <div class="title">Prescription Order Record</div>
+  <div class="meta-row">
+    <div class="meta-fld"><div class="m-lbl">Date</div><div class="m-ln"><span class="s">Novemɓeɾ 18ŧħ, 1923</span></div></div>
+    <div class="meta-fld"><div class="m-lbl">Patient</div><div class="m-ln"><span class="s">Mɾs. Ɗoɾoŧhy Ƈɾansworth</span></div></div>
+    <div class="meta-fld"><div class="m-lbl">Prescribing Physician</div><div class="m-ln"><span class="s">Ɗɾ. Ŗ. Ŵ. Ƈampɓell</span></div></div>
+  </div>
+  <table class="order-table">
+    <tr><th>Item</th><th>Description</th><th>Qty</th><th style="text-align:right">Price</th></tr>
+    <tr><td>1</td><td>Ŧincŧůɾe oƒ Ioɗine, 2 oz.</td><td class="qty">1</td><td class="price">$0.ᶾ5</td></tr>
+    <tr><td>2</td><td>Ąsƥiɾin Ŧaɓleŧs, 5 gɾ. (ɓoŧŧle oƒ 50)</td><td class="qty">2</td><td class="price">$0.80</td></tr>
+    <tr><td>3</td><td>Ƈomƥoůnɗ Ƈaŧhaɾŧic Ƥills</td><td class="qty">1</td><td class="price">$0.25</td></tr>
+    <tr><td>4</td><td>Ŝƥiɾiŧs oƒ Ąmmonia Ąɾomaŧic, 4 oz.</td><td class="qty">1</td><td class="price">$0.45</td></tr>
+    <tr><td>5</td><td>Ƈoɗ Łiveɾ Oil, 8 oz.</td><td class="qty">1</td><td class="price">$0.60</td></tr>
+    <tr><td>6</td><td>Ɓoɾic Ąciɗ Ƥowɗeɾ, 4 oz.</td><td class="qty">1</td><td class="price">$0.15</td></tr>
+  </table>
+  <div class="total-row"><span class="total-lbl">Total Due:</span><span class="total-val">$2.60</span></div>
+  <div class="notes">℞ Note: Ƈoɗ liveɾ oil ŧo ɓe ŧaken ŧwice ɗaily wiŧh meals. Ąsƥiɾin as neeɗeɗ ƒoɾ ɾelieƒ oƒ heaɗache, noŧ ŧo exceeɗ 6 ŧaɓleŧs ƥeɾ ɗay.</div>
+  <div class="bottom">
+    <div class="sig-block"><div class="sig-ln"><span class="ss">Ŗ. Ł. Ƈɾane</span></div><div class="sig-lbl">Dispensing Pharmacist</div></div>
+    <div class="sig-block"><div class="sig-ln"><span class="ss">Ɗɾ. Ŗ. Ŵ. Ƈampɓell</span></div><div class="sig-lbl">Prescribing Physician</div></div>
+  </div>
+</div></div></div></div>
+</body></html>

@@ -3,8 +3,8 @@ type: Vision (Sebastian)
 title: The Ghost of the Cursed Alchemist
 subtitle: The Self Test
 act: act_iii_investigation
-narrative: A young man materializes holding an invisible bottle, his dark eyes steady
-  with determination. He raises it to his lips with the calm certainty of a scientist.
+narrative: |
+  A young man materializes holding an invisible bottle, his dark eyes steady with determination. He raises it to his lips with the calm certainty of a scientist.
 hashtags:
 - sebastian_crane
 skills:

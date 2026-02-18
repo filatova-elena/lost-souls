@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1920s Shipping Records</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Playfair+Display+SC:wght@400;700;900&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=IM+Fell+English:ital@0;1&family=Dancing+Script:wght@400;600;700&display=swap');
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#2a2e28;display:flex;justify-content:center;align-items:center;min-height:100vh;padding:40px}
+  .doc-wrap{width:720px}
+  .doc{
+    background:#e5dfd0;
+    background-image:
+      radial-gradient(ellipse at 50% 50%,rgba(90,80,60,0.05) 0%,transparent 55%),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.0' numOctaves='5' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.055'/%3E%3C/svg%3E");
+    padding:0;position:relative;
+    box-shadow:0 2px 8px rgba(0,0,0,0.35),0 8px 28px rgba(0,0,0,0.22),inset 0 0 40px rgba(80,70,50,0.06);
+    border:1px solid #a89878;
+  }
+  .doc::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse at 10% 15%,rgba(100,85,55,0.07) 0%,transparent 35%),radial-gradient(ellipse at 95% 90%,rgba(90,75,45,0.06) 0%,transparent 30%);pointer-events:none;z-index:1}
+  .inner{margin:8px;border:2px solid #5a5040;padding:25px 30px;position:relative}
+  .inner::before{content:'';position:absolute;top:3px;left:3px;right:3px;bottom:3px;border:1px solid #7a7058;pointer-events:none}
+  .bill-no{position:absolute;top:10px;right:15px;font-family:'Courier Prime',monospace;font-size:8px;color:#5a5040;letter-spacing:2px;z-index:2}
+  .header{text-align:center;margin-bottom:14px;padding-bottom:10px;border-bottom:3px double #5a5040}
+  .co{font-family:'Playfair Display SC',serif;font-size:20px;font-weight:900;color:#1e1a12;letter-spacing:4px}
+  .co-sub{font-family:'Old Standard TT',serif;font-size:8px;letter-spacing:4px;color:#5a5040;text-transform:uppercase;margin:2px 0}
+  .co-addr{font-family:'Old Standard TT',serif;font-style:italic;font-size:7.5px;color:#7a7058;letter-spacing:2px;margin-top:3px}
+  .title{font-family:'Old Standard TT',serif;font-size:16px;font-weight:700;color:#2a2418;letter-spacing:5px;text-transform:uppercase;text-align:center;margin:10px 0 8px}
+  .meta{display:grid;grid-template-columns:1fr 1fr;gap:4px 20px;margin:8px 0 12px}
+  .m-row{display:flex;gap:8px;align-items:baseline}
+  .m-lbl{font-family:'Courier Prime',monospace;font-size:8px;color:#5a5040;text-transform:uppercase;letter-spacing:1px;min-width:110px}
+  .m-val{font-family:'Dancing Script',cursive;font-size:12px;color:rgba(25,20,10,0.5);filter:blur(0.6px);flex:1;border-bottom:1px dotted #b0a888}
+  .cargo-table{width:100%;border-collapse:collapse;margin:8px 0}
+  .cargo-table th{font-family:'Courier Prime',monospace;font-size:7px;color:#3a3428;text-transform:uppercase;letter-spacing:2px;text-align:left;border-bottom:2px solid #5a5040;border-top:2px solid #5a5040;padding:5px 5px;background:rgba(90,80,64,0.06)}
+  .cargo-table td{font-family:'Dancing Script',cursive;font-size:11px;color:rgba(25,20,10,0.48);filter:blur(0.55px);padding:5px 5px;border-bottom:1px solid #c0b898}
+  .cargo-table .num{text-align:center}.cargo-table .wt{text-align:right}.cargo-table .val{text-align:right}
+  .cargo-table tfoot td{font-family:'Old Standard TT',serif;font-size:9px;font-weight:700;color:#3a3428;filter:none;border-top:2px solid #5a5040;border-bottom:none;letter-spacing:1px}
+  .conditions{font-family:'IM Fell English',serif;font-size:7.5px;color:rgba(25,20,10,0.45);filter:blur(0.4px);line-height:1.7;margin:10px 0;padding:8px 12px;border:1px dotted #a09878}
+  .cond-title{font-family:'Old Standard TT',serif;font-size:7.5px;font-weight:700;color:#4a4030;letter-spacing:2px;text-transform:uppercase;margin-bottom:3px;filter:none}
+  .bottom{display:flex;gap:30px;margin-top:12px;padding-top:10px;border-top:2px solid #5a5040;align-items:flex-end}
+  .sig-block{flex:1}
+  .sig-ln{border-bottom:1px solid #7a7058;height:26px;position:relative;overflow:hidden;margin-bottom:2px}
+  .sig-ln .ss{font-family:'Dancing Script',cursive;font-size:14px;font-weight:600;color:rgba(25,20,10,0.42);position:absolute;bottom:2px;left:10%;white-space:nowrap;filter:blur(0.55px);user-select:none;transform:skewX(-3deg) rotate(-1deg)}
+  .sig-lbl{font-family:'Courier Prime',monospace;font-size:6.5px;color:#5a5040;text-align:center;letter-spacing:2px;text-transform:uppercase}
+  .stamp{position:absolute;bottom:50px;right:30px;font-family:'Old Standard TT',serif;font-size:10px;font-weight:700;color:#1a5a1a;letter-spacing:4px;text-transform:uppercase;border:3px double #1a5a1a;padding:4px 12px;transform:rotate(-8deg);opacity:0.25;z-index:2}
+</style>
+</head>
+<body>
+<div class="doc-wrap"><div class="doc"><div class="inner">
+  <div class="bill-no">B/L NO. <span style="font-family:'Dancing Script';font-size:10px;filter:blur(0.5px);color:rgba(25,20,10,0.48)">ŝ-4392</span></div>
+  <div class="stamp">Received</div>
+  <div class="header">
+    <div class="co">Harbor Import & Trading Co.</div>
+    <div class="co-sub">Long Beach Harbor, California</div>
+    <div class="co-addr"></div>
+  </div>
+  <div class="title">Shipment Manifest — 1924</div>
+  <div class="meta">
+    <div class="m-row"><span class="m-lbl">Shipper:</span><span class="m-val">Long Beach Lumber Co.</span></div>
+    <div class="m-row"><span class="m-lbl">Consignee:</span><span class="m-val">San Francisco Builders Supply</span></div>
+    <div class="m-row"><span class="m-lbl">Vessel:</span><span class="m-val">S.S. California Star</span></div>
+    <div class="m-row"><span class="m-lbl">Voyage No.:</span><span class="m-val">V-147</span></div>
+    <div class="m-row"><span class="m-lbl">Port of Loading:</span><span class="m-val">Long Beach, Calif.</span></div>
+    <div class="m-row"><span class="m-lbl">Port of Discharge:</span><span class="m-val">San Francisco, Calif.</span></div>
+    <div class="m-row"><span class="m-lbl">Date of Shipment:</span><span class="m-val">October 15th, 1923</span></div>
+    <div class="m-row"><span class="m-lbl">Est. Arrival:</span><span class="m-val">October 18th, 1923</span></div>
+  </div>
+  <table class="cargo-table">
+    <thead><tr><th>Marks</th><th>No. Pkgs</th><th>Description of Goods</th><th style="text-align:right">Weight (lbs)</th><th style="text-align:right">Value</th></tr></thead>
+    <tbody>
+      <tr><td>LBL-01</td><td class="num">24</td><td>Douglas Fir Lumber, 2x4, 12ft</td><td class="wt">4,800</td><td class="val">$144.00</td></tr>
+      <tr><td>LBL-02</td><td class="num">12</td><td>Redwood Shingles, Bundles</td><td class="wt">1,440</td><td class="val">$72.00</td></tr>
+      <tr><td>LBL-03</td><td class="num">6</td><td>Hardwood Flooring, Oak, Crates</td><td class="wt">2,100</td><td class="val">$189.00</td></tr>
+      <tr><td>LBL-04</td><td class="num">8</td><td>Plywood Sheets, 4x8, Bundled</td><td class="wt">960</td><td class="val">$48.00</td></tr>
+      <tr><td>LBL-05</td><td class="num">4</td><td>Cedar Posts, 6x6, 10ft</td><td class="wt">800</td><td class="val">$36.00</td></tr>
+    </tbody>
+    <tfoot><tr><td></td><td class="num">54</td><td>TOTAL</td><td class="wt">10,100</td><td class="val">$489.00</td></tr></tfoot>
+  </table>
+  <div class="conditions">
+    <div class="cond-title">Terms &amp; Conditions</div>
+    Shipped in apparent good order and condition. Carrier not responsible for loss or damage due to acts of God, perils of the sea, or insufficient packing. Freight payable at destination. Three original bills of lading issued; one being accomplished, the others to stand void.
+  </div>
+  <div class="bottom">
+    <div class="sig-block"><div class="sig-ln"><span class="ss">T. R. Henderson</span></div><div class="sig-lbl">Agent, Pacific Steamship Co.</div></div>
+    <div class="sig-block"><div class="sig-ln"><span class="ss">W. B. Carter</span></div><div class="sig-lbl">Shipper</div></div>
+    <div class="sig-block"><div class="sig-ln"><span class="ss">Capt. H. Morgan</span></div><div class="sig-lbl">Master of Vessel</div></div>
+  </div>
+</div></div></div>
+</body></html>
