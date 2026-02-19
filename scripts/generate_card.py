@@ -29,7 +29,7 @@ from playwright.sync_api import sync_playwright
 
 # Import QR code generator
 sys.path.insert(0, str(Path(__file__).parent / "qr_codes"))
-from qr_stylized import create_stylized_qr
+from qr_generator import generate_qr
 
 
 # ── Skill display mappings ──────────────────────────────────────────────────
@@ -134,15 +134,18 @@ def generate_qr_code_data_uri(character_id: str, base_url: str, yaml_dir: str) -
     
     try:
         # Generate QR code (96px size for card, rotated 45°, white background)
-        create_stylized_qr(
+        generate_qr(
             url=character_url,
             output_path=tmp_path,
             size=96,
-            keyhole_size_ratio=0.22,
-            rotate=45,
+            label=None,
             corner_radius=0.35,
+            overlay="keyhole",
+            overlay_ratio=0.32,
             fg_color=(74, 20, 140, 255),  # #4a148c
             bg_color=(255, 255, 255, 255),  # white
+            margin=0.01,
+            rotate=True,  # 45° rotation for diamond placement
         )
         
         # Convert to data URI
