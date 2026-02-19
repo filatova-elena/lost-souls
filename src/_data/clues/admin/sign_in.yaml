@@ -1,0 +1,9 @@
+id: SIGN_IN
+type: Document (Administrative)
+title: Sign In
+act: act_prologue
+hashtags: []
+skills: []
+content: |
+  You are signed in.
+unlock_code: '0000'

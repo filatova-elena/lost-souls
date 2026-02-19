@@ -1,0 +1,16 @@
+id: TEST001
+type: Document (Administrative)
+title: Test Clue
+act: act_prologue
+hashtags: []
+skills: []
+content: |
+  This is a technical check to ensure your device and browser are properly configured for the investigation.
+  
+  The system will verify:
+  - JavaScript is enabled
+  - Local storage is available
+  - Modern browser features are supported
+  
+  Check the results below.
+unlock_code: '0000'

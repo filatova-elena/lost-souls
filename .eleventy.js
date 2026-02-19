@@ -152,6 +152,7 @@ module.exports = function(eleventyConfig) {
     const t = type.toLowerCase();
     if (t.includes("vision")) return "👁️";
     if (t.includes("artifact") || t.includes("object")) return "🏺";
+    if (t.includes("administrative")) return "📋";
     if (t.includes("document") || t.includes("medical") || t.includes("legal") || t.includes("financial")) return "📄";
     if (t.includes("botanical")) return "🌿";
     if (t.includes("newspaper")) return "📰";

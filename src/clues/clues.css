@@ -25,10 +25,6 @@
     font-style: italic;
 }
 
-.clue-content {
-    margin: 25px 0;
-}
-
 .clue-no-access {
     padding: 20px;
     background-color: rgba(212, 165, 116, 0.1);
@@ -48,18 +44,20 @@
     margin: 0;
 }
 
-.locked-seek {
-    display: inline-block;
-    margin-top: 30px;
+.character-callout {
+    display: block;
+    margin: 30px auto 0;
     font-size: 1.2em;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     color: var(--text-light);
     padding: 5px 14px;
     border: 1px solid rgba(212, 165, 116, 0.3);
+    text-align: center;
+    width: fit-content;
 }
 
-.locked-seek strong {
+.character-callout strong {
     font-weight: bold;
 }
 

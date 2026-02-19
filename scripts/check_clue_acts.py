@@ -6,6 +6,7 @@ from pathlib import Path
 
 # Valid act names
 VALID_ACTS = {
+    'act_prologue',
     'act_i_setting',
     'act_ii_mystery_emerges',
     'act_iii_investigation',

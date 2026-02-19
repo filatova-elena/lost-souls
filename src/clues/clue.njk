@@ -67,6 +67,22 @@ layout: base
 </section>
 {% endif %}
 
+  {# Sign in character display - shown for sign in clues #}
+  {% if clue.id == 'SIGN_IN' %}
+  <section class="character-callout" id="sign-in-character-display">
+    Your character: <strong id="sign-in-character-name">Loading...</strong>
+  </section>
+  {% endif %}
+
+  {# Technical check display - shown for test clue #}
+  {% if clue.id == 'TEST001' %}
+  <section id="technical-check-results" class="technical-check">
+    <h2>Technical Check Results</h2>
+    <div id="check-status" class="check-status">Running checks...</div>
+    <ul id="check-results" class="check-results"></ul>
+  </section>
+  {% endif %}
+
 {% if clue.unlock_code and clue.skills and clue.skills.length > 0 %}
 <section class="seance-section">
   <div class="seance-section-label">Show these symbols to others to unlock their clues</div>
@@ -101,6 +117,9 @@ layout: base
   window.__noAccessMessages = {{ refs.no_access_messages | json | safe }};
   {% if storyGated %}
   window.__clueData.gate = "{{ clue.act }}";
+  {% endif %}
+  {% if clue.id == 'SIGN_IN' %}
+  window.__characters = {{ characters | json | safe }};
   {% endif %}
 </script>
 </main>

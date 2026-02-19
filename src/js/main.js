@@ -32,6 +32,10 @@ function getCharacterProfile() {
   return getFromLocalStorage('character_profile');
 }
 
+function getScannedClues() {
+  return getFromLocalStorage('scanned', { all: [] });
+}
+
 function clearCharacterProfile() {
   localStorage.removeItem('character_profile');
 }
@@ -53,6 +57,7 @@ window.saveToLocalStorage = saveToLocalStorage;
 window.getFromLocalStorage = getFromLocalStorage;
 window.storeCharacterProfile = storeCharacterProfile;
 window.getCharacterProfile = getCharacterProfile;
+window.getScannedClues = getScannedClues;
 window.clearCharacterProfile = clearCharacterProfile;
 window.resetInvestigation = resetInvestigation;
 window.becomeGrandmother = becomeGrandmother;
