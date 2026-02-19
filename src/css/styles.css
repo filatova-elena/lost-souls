@@ -68,7 +68,8 @@ section > h1,
 .page-heading {
     color: var(--accent-gold);
     font-size: 1.5em;
-    margin-bottom: 12px;
+    margin-top: 0;
+    margin-bottom: 8px;
     text-transform: uppercase;
     letter-spacing: 1px;
     border-bottom: 2px solid var(--accent-gold);
@@ -81,7 +82,7 @@ section > h1,
     section > h1,
     .page-heading {
         font-size: 2.2em;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
         letter-spacing: 2px;
         padding-bottom: 15px;
     }
@@ -89,7 +90,7 @@ section > h1,
 
 h2 {
     font-size: 1.2em;
-    margin: 20px 0 12px 0;
+    margin: 10px 0 8px 0;
     line-height: 1.4;
 }
 
@@ -100,7 +101,7 @@ section > h2 {
 @media (min-width: 768px) {
     h2 {
         font-size: 1.5em;
-        margin: 25px 0 15px 0;
+        margin: 12px 0 10px 0;
     }
 }
 
@@ -175,6 +176,10 @@ strong {
     margin-top: 15px;
     color: var(--accent-gold);
     font-size: 0.9em;
+}
+
+section {
+    padding: 15px;
 }
 
 section:not(:last-child) {

@@ -87,7 +87,7 @@ function generateLockHTML(message, suggestedCharacters = null, unlockCode = null
     // Wrap each character name in <strong> tags
     const boldCharacters = suggestedCharacters.map(name => `<strong>${name}</strong>`);
     const characterList = joinWithOr(boldCharacters);
-    lockHTML += `<span class="locked-seek">Seek out ${characterList}</span>`;
+    lockHTML += `<span class="character-callout">Seek out ${characterList}</span>`;
   }
   
   return lockHTML;
@@ -109,12 +109,8 @@ function markClueAsUnlocked(clueId) {
   }
 }
 
-function getScannedClues() {
-  return window.getFromLocalStorage('scanned', { all: [] });
-}
-
 function markClueAsScanned(clueId, clueData = {}) {
-  const scanned = getScannedClues();
+  const scanned = window.getScannedClues();
 
   if (!scanned.all.includes(clueId)) {
     scanned.all.push(clueId);
@@ -147,7 +143,7 @@ function resolveClueState(clueData, noAccessMessages) {
   }
 
   if (clueData.gate) {
-    const scanned = getScannedClues();
+    const scanned = window.getScannedClues();
     if (!(scanned.gates || []).includes(clueData.gate)) {
       return { name: 'gated' };
     }
@@ -242,7 +238,7 @@ function initCluePage() {
 
   // Unlocked: mark as scanned, handle key clue effects, init static ring
   if (state.name === 'unlocked') {
-    const scanned = getScannedClues();
+    const scanned = window.getScannedClues();
     if (!scanned.all?.includes(clueData.id)) {
       markClueAsScanned(clueData.id, clueData);
       const quest = getNewlyFoundQuest(clueData);
@@ -258,13 +254,31 @@ function initCluePage() {
     }
   }
 
+  // Populate character name for sign-in clues
+  if (clueData.id === 'SIGN_IN') {
+    const characterDisplay = document.getElementById('sign-in-character-name');
+    if (characterDisplay && window.getCharacterProfile) {
+      const profile = window.getCharacterProfile();
+      if (profile && profile.characterId && window.__characters) {
+        const character = window.__characters.find(c => c.id === profile.characterId);
+        if (character) {
+          characterDisplay.textContent = character.title;
+        } else {
+          characterDisplay.textContent = profile.characterId;
+        }
+      } else {
+        characterDisplay.textContent = 'None';
+      }
+    }
+  }
+
   renderProgressTracker();
 }
 
 function logDebugInfo(clueData) {
   const progressData = window.__progressData || {};
   const characterProfile = window.getCharacterProfile();
-  const scanned = getScannedClues();
+  const scanned = window.getScannedClues();
   const currentCharacterId = characterProfile?.characterId;
   const characterSideQuests = progressData.sideQuests || {};
   const sideQuestInfo = currentCharacterId ? characterSideQuests[currentCharacterId] : null;
@@ -298,7 +312,7 @@ function renderProgressTracker(newlyFoundQuestHashtag = null) {
 
   const characterProfile = window.getCharacterProfile();
   const currentCharacterId = characterProfile?.characterId || null;
-  const scanned = getScannedClues();
+  const scanned = window.getScannedClues();
 
   // Main quest progress
   const mainTrack = tracker.querySelector('.progress-track.main');
