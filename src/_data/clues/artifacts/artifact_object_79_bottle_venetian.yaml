@@ -18,7 +18,7 @@ is_key:
 - the_alchemist
 - main_quest
 content: |
-  # ✋
+  <div style="text-align: center;font-size: 40px;">✋</div>
   A decorative bottle made of venetian glass with gold leaf detailing and an ornate stopper.
 
   **Authentic Venetian glass** from **early 20th century craftsmanship**.
