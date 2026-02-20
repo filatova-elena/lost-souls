@@ -13,11 +13,12 @@ skills: []
 is_key:
 - morticians_silence
 - main_quest
-content: "Alice Whitmore. Twenty-four. Delicate bone structure, the kind of face you\
-  \ see on cameos. Lovely girl. Terrible skull fracture.\n\nSomeone had brushed her\
-  \ hair forward before bringing her in. Tucked the curls just so, right over the\
-  \ wound. Tender work. \n\nDr. Crane's certificate was already waiting on my desk.\
-  \ \"Accidental fall.\" Fine by me. I don't write the paperwork.\n\nShe was easy\
-  \ work, honestly. Young skin takes to preparation beautifully — holds color, doesn't\
-  \ fight you.\n"
+content: |
+  Alice Whitmore. Twenty-four. Delicate bone structure, the kind of face you see on cameos. Lovely girl. Terrible skull fracture.
+
+  Someone had brushed her hair forward before bringing her in. Tucked the curls just so, right over the wound. Tender work.
+
+  Dr. Crane's certificate was already waiting on my desk. "Accidental fall." Fine by me. I don't write the paperwork.
+
+  She was easy work, honestly. Young skin takes to preparation beautifully — holds color, doesn't fight you.
 unlock_code: '0234'

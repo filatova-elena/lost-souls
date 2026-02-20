@@ -1,0 +1,20 @@
+id: herbalist
+title: The Herbalist
+image: assets/images/herbalist.png
+personality_short: Folk healer fascinated by ancient plant remedies.
+personality: Folk healer fascinated by ancient plant remedies. You found something growing in the mansion gardens that shouldn't exist.
+skills:
+  - botanical_2
+  - spiritual_1
+  - is_character_herbalist
+background: |-
+  You're a herbalist—part folk healer, part forager, part plant whisperer. You make tinctures, salves, and remedies from things most people walk past without noticing. You believe plants hold memory, that gardens tell stories, that the earth remembers what humans try to forget. A few months ago, you were foraging near the old **Montrose mansion** when something caught your eye. In the overgrown grounds, you found the remnants of a **medicinal garden**. Not decorative—**functional**. Wormwood, rue, lavender. Then you found something that stopped you cold: **Damiana** (Turnera diffusa). A subtropical plant native to Baja Mexico. It has no business growing in a Long Beach garden. Someone planted it deliberately, in a sheltered south-facing bed where it could survive. When you heard about the investigation at the mansion, you knew this was your chance to get inside and find answers.
+objectives:
+  main: main_quest
+  private: minor_elixir_of_love
+strategy: Your Expert Botanical skill lets you identify plants and understand their properties. Your spiritual sensitivity gives you an intuitive connection to the garden and the supernatural world.
+relationships:
+  professor: You're two sides of the same coin—they study plants in textbooks, you study them in the dirt.
+  doctor: They have medical expertise that can help you understand the effects of some of the botanical ingredients on the human body.
+  psychic: Your spiritual sensitivity resonates with theirs. You sense things through plants the way they sense things through spirits. Together you might understand the deeper forces at work in this place.
+starting_items: []

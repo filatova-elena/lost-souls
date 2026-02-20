@@ -34,7 +34,7 @@ PAGE_HEIGHT_IN = 11.0
 MARGIN_IN = 0.25
 GAP_IN = 0.05
 DPI = 300
-BASE_URL = "https://filatova-elena.github.io/lost-souls/clues"
+BASE_URL = "clues"  # Use relative path by default
 
 
 def make_print_sheet(
@@ -198,7 +198,11 @@ def _load_yaml(yaml_path, base_url=BASE_URL):
     codes = []
     for item in data:
         clue_id = item.get("id", "")
-        url = f"{base_url}/{clue_id}/"
+        # Construct URL: if base_url is empty, use relative path; otherwise use base_url
+        if not base_url:
+            url = f"clues/{clue_id}/"
+        else:
+            url = f"{base_url}/{clue_id}/"
         codes.append((url, str(clue_id)))
 
     return codes

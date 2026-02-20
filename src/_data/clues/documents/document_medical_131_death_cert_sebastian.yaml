@@ -12,14 +12,32 @@ skills:
 - legal_1
 is_key:
 - main_quest
-content: "**STATE OF CALIFORNIA**\n**COUNTY OF LOS ANGELES**\n**CERTIFICATE OF DEATH**\n\
-  \n**LOCAL FILE NO.:** 1925-0851\n\n**FULL NAME OF DECEASED:** Sebastian Montgomery\
-  \ Crane  \n**AGE:** 30 years, 6 months, 8 days  \n**BIRTHPLACE:** Long Beach, California\
-  \  \n**MARITAL STATUS:** Single\n\n**DATE OF DEATH:** October 11, 1925  \n**HOUR\
-  \ OF DEATH:** 03:00\n\n**CAUSE OF DEATH:** Suspected Accidental Poisoning  \n**INJURY:**\
-  \ Acute cardiac failure secondary to systemic toxicity  \n**CONTRIBUTING FACTORS:**\
-  \ Unknown chemical compound, suspected accidental ingestion\n\n**BODY DISPOSITION:**\
-  \ Burial - Lakeside Cemetery\n\n---\n\n**Registered by:** Dr. Thaddeus Crane, M.D.\
-  \  \n**Date of Registration:** October 13, 1925\n\n[OFFICIAL SEAL]  \nCounty Registrar,\
-  \ Los Angeles County"
+content: |
+  **STATE OF CALIFORNIA**
+  **COUNTY OF LOS ANGELES**
+  **CERTIFICATE OF DEATH**
+
+  **LOCAL FILE NO.:** 1925-0851
+
+  **FULL NAME OF DECEASED:** Sebastian Montgomery Crane  
+  **AGE:** 30 years, 6 months, 8 days  
+  **BIRTHPLACE:** Long Beach, California  
+  **MARITAL STATUS:** Single
+
+  **DATE OF DEATH:** October 11, 1925  
+  **HOUR OF DEATH:** 03:00
+
+  **CAUSE OF DEATH:** Suspected Accidental Poisoning  
+  **INJURY:** Acute cardiac failure secondary to systemic toxicity  
+  **CONTRIBUTING FACTORS:** Unknown chemical compound, suspected accidental ingestion
+
+  **BODY DISPOSITION:** Burial - Lakeside Cemetery
+
+  ---
+
+  **Registered by:** Dr. Thaddeus Crane, M.D.  
+  **Date of Registration:** October 13, 1925
+
+  [OFFICIAL SEAL]  
+  County Registrar, Los Angeles County
 unlock_code: '0146'

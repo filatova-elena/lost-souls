@@ -107,6 +107,10 @@ layout: base
   const characterData = {{ character | json | safe }};
   
   function handleBeginInvestigation(e) {
+    // Reset all progress when selecting a new character
+    if (window.resetInvestigation) {
+      window.resetInvestigation();
+    }
     if (characterData.skills) {
       storeCharacterProfile(characterData.id, characterData.skills);
     }
