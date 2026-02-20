@@ -1,6 +1,7 @@
 id: fiduciary
 title: The Fiduciary
 image: assets/images/fiduciary.png
+personality_short: Pedantic record-keeper obsessed with documentation.
 personality: Pedantic record-keeper obsessed with documentation. You hold all the secrets in your files.
 skills:
   - legal_2

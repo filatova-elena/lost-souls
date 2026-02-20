@@ -18,7 +18,7 @@ layout: base
 {% if quest.objective %}
 <section class="quest-objective">
   <h2>🎯 Objective</h2>
-  <p><strong>{{ quest.objective }}</strong></p>
+  <div>{{ quest.objective | markdown | safe }}</div>
 </section>
 {% endif %}
 

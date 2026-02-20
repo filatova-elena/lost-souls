@@ -1,6 +1,7 @@
 id: doctor
 title: The Town Doctor
 image: assets/images/doctor.png
+personality_short: Brilliant physician haunted by your family's secrets.
 personality: Brilliant physician haunted by your family's secrets. Searching for answers about your own bloodline.
 skills:
   - medical_2

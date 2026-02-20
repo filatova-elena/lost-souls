@@ -265,7 +265,7 @@ def generate_qr(url, output_path="stylized_qr.png", size=600, label=None,
     """
     # ── Render QR modules ────────────────────────────────────────────────
     box_size = 12
-    border = 2
+    border = 0
     qr = qrcode.QRCode(error_correction=qrcode.constants.ERROR_CORRECT_H, box_size=1, border=0)
     qr.add_data(url)
     qr.make(fit=True)

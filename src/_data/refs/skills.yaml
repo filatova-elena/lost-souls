@@ -5,7 +5,7 @@ botanical:
   category: KEY
   description: Chemistry, botany, toxicology, herbology
   level:
-    "1": Basic botanical knowledge
+    "1": Botanical knowledge
     "2": Botanical expert
 
 spiritual:
@@ -15,7 +15,7 @@ spiritual:
   category: KEY
   description: Psychic abilities, intuitive sensing, emotional connections
   level:
-    "1": Basic spiritual knowledge
+    "1": Spiritual sensitivity
     "2": Spiritual expert
 
 rumors:
@@ -25,8 +25,8 @@ rumors:
   category: KEY
   description: Access to locked rumor treasure chests
   level:
-    "1": Basic rumors knowledge
-    "2": Rumors expert
+    "1": Average gossiper
+    "2": Rumor hunter
 
 medical:
   name: medical
@@ -35,7 +35,7 @@ medical:
   category: SECONDARY
   description: Medical, forensic, clinical
   level:
-    "1": Basic medical knowledge
+    "1": Medical knowledge
     "2": Medical expert
 
 legal:
@@ -45,7 +45,7 @@ legal:
   category: SECONDARY
   description: Financial, legal, estate law, trust documents
   level:
-    "1": Basic legal knowledge
+    "1": Legal knowledge
     "2": Legal expert
 
 history:
@@ -55,7 +55,7 @@ history:
   category: SECONDARY
   description: Historical research, timeline reconstruction, historical context, map reading, cartography, investigation, journalism
   level:
-    "1": Basic history knowledge
+    "1": History knowledge
     "2": History expert
 
 art:
@@ -64,6 +64,9 @@ art:
   icon: "🎨"
   category: SECONDARY
   description: Art authentication, provenance, appraisal, artifact evaluation, craftsmanship, period identification
+  level:
+    "1": Art knowledge
+    "2": Art expert
 
 personal_montrose:
   name: personal_montrose
@@ -71,6 +74,8 @@ personal_montrose:
   icon: "👥"
   category: PERSONAL
   description: Montrose family, Cordelia Montrose, Montrose estate, and family history
+  level:
+    "1": Montrose connection
 
 personal_crane:
   name: personal_crane
@@ -85,6 +90,8 @@ personal_romano:
   icon: "👥"
   category: PERSONAL
   description: Romano family, Frankie Romano, smuggling operations, and business connections
+  level:
+    "1": Romano connection
 
 personal_whitmore:
   name: personal_whitmore
@@ -92,6 +99,8 @@ personal_whitmore:
   icon: "👥"
   category: PERSONAL
   description: Alice Whitmore, her training, abilities, and connections
+  level:
+    "1": Whitmore connection
 
 personal_sullivan:
   name: personal_sullivan
@@ -99,6 +108,8 @@ personal_sullivan:
   icon: "👥"
   category: PERSONAL
   description: Eleanor Sullivan (adoptive name), family connections, recipes, and heritage
+  level:
+    "1": Eleanor connection
 
 personal_monroe:
   name: personal_monroe
@@ -106,6 +117,8 @@ personal_monroe:
   icon: "👥"
   category: PERSONAL
   description: Elias Monroe, his connection to Cordelia and his personal notes
+  level:
+    "1": Monroe connection
 
 personal_hartley:
   name: personal_hartley
@@ -113,6 +126,8 @@ personal_hartley:
   icon: "👥"
   category: PERSONAL
   description: Professor Edmund Hartley, his botanical consultations, and family history
+  level:
+    "1": Hartley connection
 
 is_character_*:
   name: is_character_*

@@ -1,6 +1,7 @@
 id: clockmaker
 title: The Clockmaker
 image: assets/images/clockmaker.png
+personality_short: Time obsessive who sees patterns everywhere.
 personality: Time obsessive who sees patterns everywhere. A mysterious pocket watch led you here.
 skills:
   - history_2

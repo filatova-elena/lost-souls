@@ -34,20 +34,17 @@ layout: base
 {% endif %}
 
 {% if character.skills %}
+  {% set formattedSkills = character.skills | formatCharacterSkills(refs.skills) %}
+  {% if formattedSkills.length > 0 %}
 <section>
   <h2>Skills</h2>
   <ul>
-    {% if character.skills.expert and character.skills.expert.length > 0 %}
-    <li><strong>Expert:</strong> {{ character.skills.expert | join(", ") }}</li>
-    {% endif %}
-    {% if character.skills.basic and character.skills.basic.length > 0 %}
-    <li><strong>Basic:</strong> {{ character.skills.basic | join(", ") }}</li>
-    {% endif %}
-    {% if character.skills.personal and character.skills.personal.length > 0 %}
-    <li><strong>Personal:</strong> {{ character.skills.personal | join(", ") }}</li>
-    {% endif %}
+    {% for skill in formattedSkills %}
+    <li>{{ skill }}</li>
+    {% endfor %}
   </ul>
 </section>
+  {% endif %}
 {% endif %}
 
 {% if character.objectives %}
@@ -55,10 +52,16 @@ layout: base
   <h2>Objectives</h2>
   <ul>
     {% if character.objectives.main %}
-    <li><strong>Main:</strong> {{ character.objectives.main }}</li>
+      {% set mainQuest = quests | findQuestById(character.objectives.main) %}
+      <li>
+        <strong>Main:</strong> {% if mainQuest and mainQuest.objective %}{{ mainQuest.objective }}{% else %}{{ character.objectives.main }}{% endif %}
+      </li>
     {% endif %}
     {% if character.objectives.private %}
-    <li><strong>Private:</strong> {{ character.objectives.private }}</li>
+      {% set privateQuest = quests | findQuestById(character.objectives.private) %}
+      <li>
+        <strong>Private:</strong> {% if privateQuest and privateQuest.objective %}{{ privateQuest.objective }}{% else %}{{ character.objectives.private }}{% endif %}
+      </li>
     {% endif %}
   </ul>
 </section>

@@ -1,6 +1,7 @@
 id: professor
 title: The Botany Professor
 image: assets/images/professor.png
+personality_short: Distracted genius obsessed with deadly plants.
 personality: Distracted genius obsessed with deadly plants. Your ancestor's secrets are tangled in the 1925 deaths.
 skills:
   - botanical_2

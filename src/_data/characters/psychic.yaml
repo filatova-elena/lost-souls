@@ -1,6 +1,7 @@
 id: psychic
 title: The Psychic Medium
 image: assets/images/psychic.png
+personality_short: Spiritualist descended from a legendary psychic.
 personality: Spiritualist descended from a legendary psychic. A restless spirit has waited 100 years for you.
 skills:
   - spiritual_2

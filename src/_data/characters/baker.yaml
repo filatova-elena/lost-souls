@@ -1,6 +1,7 @@
 id: baker
 title: The Baker
 image: assets/images/baker.png
+personality_short: Genuinely cheerful, warm, perpetually covered in flour.
 personality: Genuinely cheerful, warm, perpetually covered in flour. An orphan with a mysterious past.
 skills:
   - spiritual_1
