@@ -1,6 +1,7 @@
 id: influencer
 title: The Influencer
 image: assets/images/influencer.png
+personality_short: Content creator documenting everything.
 personality: Content creator documenting everything. This mystery is perfect for your series—if you can debunk the supernatural.
 skills:
   - rumors_2

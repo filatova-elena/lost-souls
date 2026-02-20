@@ -1,6 +1,7 @@
 id: explorer
 title: The Explorer
 image: assets/images/explorer.png
+personality_short: Rugged adventurer hunting treasure.
 personality: Rugged adventurer hunting treasure. Something about this place feels strangely familiar.
 skills:
   - history_2
