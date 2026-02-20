@@ -12,6 +12,6 @@ skills:
 is_key:
 - elixir_of_love
 content: |
-  # ✋
+  <div style="text-align: center;font-size: 40px;">✋</div>
   **Ginseng Root [Panax ginseng]**. A pale root with a distinctive forked, human-like shape. Precious, difficult to source, and very expensive — only serious practitioners would seek it out. Prized in Eastern traditions for its mystical binding properties. Whoever sourced this had significant botanical knowledge and went to considerable expense. Symbolic rather than pharmacologically significant, showing a romantic, mystical approach.
 unlock_code: '1236'
