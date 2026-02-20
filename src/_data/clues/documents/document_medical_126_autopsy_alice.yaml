@@ -13,22 +13,43 @@ hashtags:
 skills: []
 is_key:
 - main_quest
-content: "**AUTOPSY EXAMINATION REPORT**\n\n**Decedent:** Alice Whitmore  \n**Age:**\
-  \ 24 years  \n**Date of Examination:** October 11, 1925  \n**Examining Pathologist:**\
-  \ Silas Blackwell\n\n**EXTERNAL EXAMINATION:**\n\nBody in moderate state of preservation.\
-  \ Significant lacerations and contusions observed on head. No defensive wounds on\
-  \ hands or arms.\n\n**HEAD TRAUMA:**\n\n- Posterior skull fracture with concentrated\
-  \ impact point\n- Bone fragmentation pattern\n- Blunt force trauma consistent with\
-  \ single heavy object impact\n- No evidence of multiple impacts\n- No defensive\
-  \ bruising on arms or hands\n\n**INTERNAL EXAMINATION:**\n\n- **Cardiovascular:**\
-  \ Normal for age\n- **Pulmonary:** Normal\n- **Gastric contents:** Indicates death\
-  \ 2-4 hours post-prandial\n- **Organ systems:** No abnormal findings\n\n**FINAL\
-  \ DETERMINATION:**\n\nDeath resulted from **blunt force trauma to the posterior\
-  \ skull**. Injury pattern is consistent with impact from heavy object delivered\
-  \ to unaware victim. Injury pattern inconsistent with accidental fall.\n\n**Pathologist:**\
-  \ Silas Blackwell  \n**Date signed:** October 11, 1925\n\n---\n\n**MARGIN NOTES:**\n\
-  \n**Concentrated impact point on posterior skull suggests deliberate strike from\
-  \ behind. No defensive wounds indicate victim was unaware. Injury pattern inconsistent\
-  \ with fall down stairs—recommend investigation into discrepancy between official\
-  \ cause of death and autopsy findings.**"
+content: |
+  **AUTOPSY EXAMINATION REPORT**
+
+  **Decedent:** Alice Whitmore  
+  **Age:** 24 years  
+  **Date of Examination:** October 11, 1925  
+  **Examining Pathologist:** Silas Blackwell
+
+  **EXTERNAL EXAMINATION:**
+
+  Body in moderate state of preservation. Significant lacerations and contusions observed on head. No defensive wounds on hands or arms.
+
+  **HEAD TRAUMA:**
+
+  - Posterior skull fracture with concentrated impact point
+  - Bone fragmentation pattern
+  - Blunt force trauma consistent with single heavy object impact
+  - No evidence of multiple impacts
+  - No defensive bruising on arms or hands
+
+  **INTERNAL EXAMINATION:**
+
+  - **Cardiovascular:** Normal for age
+  - **Pulmonary:** Normal
+  - **Gastric contents:** Indicates death 2-4 hours post-prandial
+  - **Organ systems:** No abnormal findings
+
+  **FINAL DETERMINATION:**
+
+  Death resulted from **blunt force trauma to the posterior skull**. Injury pattern is consistent with impact from heavy object delivered to unaware victim. Injury pattern inconsistent with accidental fall.
+
+  **Pathologist:** Silas Blackwell  
+  **Date signed:** October 11, 1925
+
+  ---
+
+  **MARGIN NOTES:**
+
+  **Concentrated impact point on posterior skull suggests deliberate strike from behind. No defensive wounds indicate victim was unaware. Injury pattern inconsistent with fall down stairs—recommend investigation into discrepancy between official cause of death and autopsy findings.**
 unlock_code: '3457'
