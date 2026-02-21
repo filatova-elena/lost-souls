@@ -24,4 +24,6 @@ relationships:
     might reveal those business connections.
   professor: The Romano operation imported exotic goods. They can identify what your family was smuggling and help you understand
     the full scope of the operation.
+  fixer: They've done legal work for your family for years—cleaning up after the IRS seizures. You trust them, or at least you think you can control them. But they might have found something in those old case files that you don't know about.
+  portraitartist: You're both art experts but from different worlds—you see provenance and value, they see emotion and intention. Together you can decode the full story behind any artifact. But you might clash over whether art is about money or feeling.
 starting_items: []

@@ -7,7 +7,7 @@ personality: Mysterious elder rumored to be a witch. You've lived in Long Beach 
 skills:
   - botanical_2
   - spiritual_2
-  - rumors_2
+  - rumors_1
   - medical_2
   - legal_2
   - history_2
@@ -16,7 +16,7 @@ skills:
   - personal_crane
   - personal_romano
   - personal_whitmore
-  - personal_sullivan
+  - personal_eleanor
   - personal_monroe
   - personal_hartley
 background: |-

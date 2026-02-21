@@ -1,0 +1,22 @@
+id: antiquarian
+title: The Antiquarian
+image: assets/images/antiquarian.png
+personality_short: Nostalgic collector who preserves what the world forgets.
+personality: Nostalgic collector who preserves what the world forgets. Loves old things and the stories they tell and wishes the world didn't have to constantly change.
+skills:
+  - history_1
+  - art_1
+  - personal_eleanor
+  - is_character_antiquarian
+background: |-
+  You run a small antiquarian shop, surrounded by other people's memories—old newspapers, estate sale finds, forgotten photographs, documents nobody wanted anymore. Every item is a piece of someone's story, and you can't bear to let those stories disappear. You've been here for decades, long enough to remember when this neighborhood felt like a village—when shopkeepers knew each other by name and Saturday mornings smelled like fresh bread from the bakery down the street. That bakery belonged to **David and Catherine Sullivan**, a family business famous for their **rose bread**—a recipe passed down through generations, originally created by **Eleanor Sullivan**. Catherine would bring you a loaf on Saturdays. David would stop by to chat about local history, curious about where the Sullivans came from. Then in **1990, a fire** took everything. The bakery, the family—gone. The official story was electrical failure, but you've spent a lifetime handling old things, and you know when something doesn't add up. Over the years, bits of the Sullivan story have kept finding their way to you—a clipping here, a photograph there. The past doesn't disappear, it just changes hands. When you heard about the investigation at the **Montrose mansion**, some of those pieces started to feel relevant. You don't have the full picture, but you had to come.
+objectives:
+  main: main_quest
+  private: minor_bakery_fire
+strategy: Your Basic History skill helps with research and understanding local context. Your Basic Art skill lets you evaluate and date old objects. Your personal connection to the Sullivan family gives you pieces of their story. Share what you've collected—others can help you see the bigger picture.
+relationships:
+  baker: They're connected to Eleanor's story somehow—you can sense it. What you have in your collection might be the missing pieces of their identity, though you don't yet know how they fit into the Sullivan family story.
+  influencer: They researched the Sullivan bakery fire for their series. Compare notes—between your firsthand memories and their investigation, you might finally understand what really happened that night.
+  fiduciary: They manage old estates and family records. Your Sullivan documents might connect to their files. Together you could trace the Sullivan family line back further than either of you expected.
+  heiress: The Montrose name keeps appearing in your Sullivan papers. She lives in the Montrose mansion. There's a connection here—help each other find it.
+starting_items: []

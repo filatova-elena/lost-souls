@@ -8,7 +8,7 @@ skills:
   - personal_crane
   - is_character_doctor
 background: |-
-  Your family name is **Sinclair**, but it wasn't always. You eventually discovered that your family changed their name in the 1960s for political reasons—your ancestors were the **Crane family** of Long Beach. You knew you descended from **Dr. Thaddeus Crane**, a respectable town doctor from the 1920s. That's ALL you knew—the family buried everything else. Recently, you received a **mysterious box** from the **Fiduciary** containing old estate papers. Inside, you discover something shocking: **Dr. Thaddeus Crane** had a brother you've never heard about!
+  Your family name is **Sinclair**, but it wasn't always. You eventually discovered that your family changed their name in the 1960s for political reasons—your ancestors were the **Crane family** of Long Beach. You knew you descended from **Dr. Thaddeus Crane**, a respectable town doctor from the 1920s. That's ALL you knew—the family buried everything else. Recently, you made a shocking discovery: **Dr. Thaddeus Crane** had a brother you've never heard about! When you heard about the investigation at the **Montrose mansion**, you knew you had to come. You have a feeling it's all connected.
 objectives:
   main: main_quest
   private: minor_doctor_and_patient
@@ -16,12 +16,11 @@ strategy: Your Expert Medical skill lets you interpret pharmaceutical formulas a
   of the Crane family gives you access to family secrets. Share what you discover—others' expertise can help verify and contextualize
   your findings.
 relationships:
-  fiduciary: They sent you the box revealing Sebastian's existence. Their estate records might hold more clues about the Crane
-    family. Compare notes to piece together your family history.
   mortician: They have death records from 1925. Combine your medical expertise with their records to understand what really
     happened.
   professor: They can identify plants and poisons. Consult them about botanical ingredients in Sebastian's purchase ledgers
     to understand what he was working with.
+  tarotreader: Their ancestor dismissed women like Alice as hysterical. You have strong feelings about that. But they might also have records about Alice's "treatment" that could reveal what she actually experienced.
   others: Your medical expertise makes you valuable to the investigation. Share what you're discovering about your family—it
     might be the key to solving this mystery.
 starting_items:

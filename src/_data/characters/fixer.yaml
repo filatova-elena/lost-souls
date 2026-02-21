@@ -1,0 +1,21 @@
+id: fixer
+title: The Fixer
+image: assets/images/fixer.png
+personality_short: Smooth operator who makes problems disappear.
+personality: Smooth operator who makes problems disappear. You found something in old case files that brought you here.
+skills:
+  - legal_2
+  - personal_romano
+  - is_character_fixer
+background: |-
+  You're a fixer. Not officially, of course—on paper you're a lawyer specializing in "legacy estate resolution." But everyone in certain circles knows what that really means. When old money has old problems—sealed records, inconvenient documents, family skeletons rattling too loud—they call you. You make things clean. You make things quiet. You've handled work for the **Romano family** for years. Nothing dramatic—tidying up loose ends from the IRS seizures, managing claims against old assets, keeping certain documents from surfacing. Routine work. Until last month, when you were going through a box of sealed case files from the **1960s Romano investigations**. Buried in the paperwork, you found something that made your heart race. Financial discrepancies. The IRS recovered less than the Romano family supposedly had. Where did the rest go? You know what hidden wealth looks like. When you heard about the investigation at the **Montrose mansion**—where the Romanos did business in the 1920s—you came to see what was buried. Because if there's one thing you've learned in this business, it's that old secrets have value. And this one could be worth millions.
+objectives:
+  main: main_quest
+  private: major_romano_treasure
+strategy: Your Expert Legal skill lets you analyze contracts, trace payments, and spot cover-ups in financial records. Your Romano family knowledge gives you insight into their operations and connections. You know how things get hidden—now use that knowledge to find what others buried.
+relationships:
+  artcollector: They're Romano family. You've done work for them. They trust you—or at least, they think they can control you. Share what you've found in the case files, but be careful about what you reveal.
+  fiduciary: They manage the same estates you've been cleaning up after. Between your sealed files and their open records, you might be able to reconstruct the full financial picture from 1925.
+  mortician: They have death records from 1925. If the Romano treasure is connected to those deaths, their records might reveal the link. Cross-reference your financial findings with their medical evidence.
+  explorer: They're hunting for Romano treasure. You've seen the actual financial records—you know what the IRS seized and what they missed. That information has leverage.
+starting_items: []
