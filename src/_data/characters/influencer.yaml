@@ -4,7 +4,7 @@ image: assets/images/influencer.png
 personality_short: Content creator documenting everything.
 personality: Content creator documenting everything. This mystery is perfect for your series—if you can debunk the supernatural.
 skills:
-  - rumors_2
+  - rumors_1
   - history_2
   - is_character_influencer
 background: |-
@@ -21,6 +21,7 @@ relationships:
     mysteries series—share your research to help them understand what happened to their family.
   psychic: You covered the Laveau family psychics in an episode. Your skeptical approach can help verify their claims, while
     their spiritual insights provide unique perspectives. Together you can separate fact from speculation.
+  antiquarian: They knew the Sullivans before the fire and have been collecting documents about the bakery for years. Compare notes—between your investigation and their firsthand memories, you might finally understand what really happened that night.
   others: Your documentation skills and research archives make you valuable to the investigation. Share your findings—your
     research combined with others' knowledge could build a complete picture of what happened.
 starting_items: []

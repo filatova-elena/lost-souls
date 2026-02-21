@@ -25,8 +25,7 @@ rumors:
   category: KEY
   description: Access to locked rumor treasure chests
   level:
-    "1": Average gossiper
-    "2": Rumor hunter
+    "1": Rumor hunter
 
 medical:
   name: medical
@@ -102,12 +101,12 @@ personal_whitmore:
   level:
     "1": Whitmore connection
 
-personal_sullivan:
-  name: personal_sullivan
-  title: Sullivan Family
+personal_eleanor:
+  name: personal_eleanor
+  title: Eleanor's Legacy
   icon: "👥"
   category: PERSONAL
-  description: Eleanor Sullivan (adoptive name), family connections, recipes, and heritage
+  description: Eleanor's story, family connections, recipes, and heritage baking traditions
   level:
     "1": Eleanor connection
 

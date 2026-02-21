@@ -180,9 +180,6 @@ skill_phrases:
       - "someone with an ear for gossip"
       - "access to the local rumor mill"
       - "someone who knows where secrets are kept"
-    level_2:
-      - "a well-connected insider"
-      - "someone deeply embedded in the rumor network"
 
   medical:
     level_1:
@@ -244,11 +241,9 @@ skill_phrases:
     - "a personal connection to the Whitmores"
     - "someone who knows Alice's secrets"
 
-  personal_sullivan:
-    - "someone who understands the language of baking"
-    - "a deep knowledge of traditional recipes"
-    - "someone who knows the secrets of family bread-making"
-    - "an understanding of heritage baking traditions"
+  personal_eleanor:
+    - "someone connected to Eleanor's story"
+    - "an understanding of Eleanor's legacy"
 
   personal_monroe:
     - "someone who knew Elias Monroe personally"

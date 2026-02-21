@@ -19,12 +19,14 @@ act_i_setting:
     - "The 'normal' state before the mystery"
     - "Romantic, emotional, or historical context"
     - "World-building details"
+    - "Rumor treasure chests (requires rumor skill key)"
   examples:
     - "Romantic philosophy and visions"
     - "Beautiful artifacts and vessels"
     - "Character introductions and relationships"
     - "Historical context and family dynamics"
     - "Emotional moments and tender scenes"
+    - "Collection of Rumors (RUMORS_I)"
 
 act_ii_mystery_emerges:
   name: "Act II: The Mystery Emerges"
@@ -35,11 +37,13 @@ act_ii_mystery_emerges:
     - "Early suspicions or questions"
     - "Beginning of the investigation"
     - "Characters noticing problems"
+    - "Rumor treasure chests (requires rumor skill key)"
   examples:
     - "Characters becoming ill or showing symptoms"
     - "Realizations that something is wrong"
     - "Initial confusion and questions"
     - "First suspicious observations"
+    - "Collection of Rumors (RUMORS_II)"
 
 act_iii_investigation:
   name: "Act III: The Investigation"
@@ -51,6 +55,7 @@ act_iii_investigation:
     - "Suspicious behavior or inconsistencies"
     - "Autopsy reports, medical findings"
     - "Timeline reconstruction"
+    - "Rumor treasure chests (requires rumor skill key)"
   examples:
     - "Complete formula documentation"
     - "Expert consultations proving safety/harmlessness"
@@ -58,6 +63,7 @@ act_iii_investigation:
     - "Suspicious behavior and cover-up attempts"
     - "Medical reports and autopsy findings"
     - "Financial records and documents"
+    - "Collection of Rumors (RUMORS_III)"
 
 act_iv_revelation:
   name: "Act IV: The Revelation"
@@ -67,11 +73,13 @@ act_iv_revelation:
     - "Confession or definitive proof"
     - "The 'who,' 'what,' or 'how' revealed"
     - "The truth that answers the objective"
+    - "Rumor treasure chests (requires rumor skill key)"
   examples:
     - "The poison/murder weapon revealed"
     - "Confessions and admissions"
     - "Expert confirmations of the truth"
     - "The tragic truth and final realizations"
+    - "Collection of Rumors (RUMORS_IV)"
 
 act_v_conclusions:
   name: "Act V: Conclusions"

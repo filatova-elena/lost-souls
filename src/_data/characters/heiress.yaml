@@ -4,7 +4,7 @@ image: assets/images/heiress.png
 personality_short: Wealthy, dramatic socialite who lives in the haunted mansion.
 personality: Wealthy, dramatic socialite who lives in the haunted mansion. Terrified but too proud to admit you made a mistake.
 skills:
-  - rumors_2
+  - rumors_1
   - personal_montrose
   - is_character_heiress
 background: |-
@@ -22,4 +22,6 @@ relationships:
     history. Share what you've discovered in the mansion—it might match their records.
   baker: Something about them feels important or familiar. They might have a connection to the Montrose family. Explore this
     together—there could be shared history you both need to understand.
+  antiquarian: The Montrose name keeps appearing in their Sullivan documents. They live in the Montrose mansion. There's a connection here—help each other find it.
+  portraitartist: You hired them to restore the paintings. They might know things about the portrait—who commissioned it, why it was hidden. And they have access to every room in the mansion through their work.
 starting_items: []

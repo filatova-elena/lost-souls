@@ -1,5 +1,8 @@
-/* Clue-specific styles */
+/* ═══════════════════════════════════
+   CLUE-SPECIFIC STYLES
+   ═══════════════════════════════════ */
 
+/* Clue subtitle - appears below the main clue title */
 .clue-subtitle {
     font-style: italic;
     font-size: 1.1em;
@@ -8,6 +11,9 @@
     margin-top: 0;
 }
 
+/* Clue narration - the atmospheric/descriptive text at the top of a clue
+   Used for: vision narratives, appearance descriptions, or general narration
+   Styled with italic serif font and gold accent border */
 .clue-narration {
     margin: 20px 0;
     padding: 15px 20px;
@@ -25,17 +31,14 @@
     font-style: italic;
 }
 
+/* Clue no-access - legacy/fallback container for lock messages
+   Note: This class may be used by the octogram lock system or as a fallback
+   The main lock container is .clue-lock */
 .clue-no-access {
     padding: 20px;
     background-color: rgba(212, 165, 116, 0.1);
     margin: 20px 0;
     text-align: center;
-}
-
-.clue-lock {
-    font-size: 4em;
-    margin-bottom: 15px;
-    line-height: 1;
 }
 
 .clue-no-access p {
@@ -44,6 +47,19 @@
     margin: 0;
 }
 
+/* Clue lock - container for skill-based lock content
+   This is an empty container in the template that gets populated by JavaScript
+   when the user lacks required skills. Contains: lock icon, message, and "Seek out" characters
+   Visibility controlled by data-state="skill-locked" on .clue-page (see lock.css) */
+.clue-lock {
+    margin-bottom: 15px;
+    line-height: 1;
+    text-align: center;
+}
+
+/* Character callout - displays "Seek out [Character Name]" message
+   Shown inside .clue-lock when user needs to find characters with required skills
+   Also used for sign-in character display */
 .character-callout {
     display: block;
     margin: 30px auto 0;

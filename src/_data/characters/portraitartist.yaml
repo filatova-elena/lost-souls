@@ -1,0 +1,20 @@
+id: portraitartist
+title: The Portrait Artist
+image: assets/images/portraitartist.png
+personality_short: Captivated by a face from 100 years ago.
+personality: Captivated by a face from 100 years ago. You came to restore paintings and left unable to stop thinking about Cordelia Montrose.
+skills:
+  - art_2
+  - personal_montrose
+  - is_character_portraitartist
+background: |-
+  The Heiress commissioned you to restore and catalog the artwork in the **Montrose mansion**. Routine job. Old money, old paintings, old dust. You expected faded landscapes and stiff family portraits. Then you uncovered **her**. A portrait hidden behind a larger painting in the study—a young woman, mid-1920s, painted with extraordinary skill and unmistakable tenderness. The artist loved their subject. You could see it in every brushstroke. She was **hauntingly beautiful**. Dark eyes, a pearl necklace, an expression caught between joy and melancholy. You couldn't look away. You identified her as **Cordelia Rose Montrose**, born 1899, died 1925. She was only **26**. You started researching. And what you found consumed you. Cordelia was magnetic—the kind of woman who inspired devotion. Men wrote her poetry, wrote her music. You've cataloged every piece of art in the mansion now, but you keep coming back to Cordelia's portrait. You've studied her face so long you feel like you know her. The admirers, the tragedy, the mystery of her death at 26—it's all tangled together. When the investigation began, you didn't leave. You couldn't. Not until you understand who she really was and what happened to her.
+objectives:
+  main: main_quest
+  private: major_secret_baby
+strategy: Your Expert Art skill lets you authenticate artwork, determine provenance, and read artistic intention. Your knowledge of the Montrose family gives you deep insight into Cordelia's life and the people who surrounded her.
+relationships:
+  artcollector: You're both art experts but from different worlds—you see emotion and intention, they see provenance and value. Together you can decode the full story behind any artifact.
+  dressmaker: They're obsessed with Cordelia too. You understand their fixation better than anyone. Compare notes on Cordelia's admirers and what they reveal about her.
+  heiress: She hired you. She lives among these paintings. She might know things about the portrait that you don't.
+starting_items: []
