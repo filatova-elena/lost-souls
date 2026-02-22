@@ -1,0 +1,18 @@
+id: WJF03
+next_id: WJF04
+type: Writing (Frankie's Leather Journal)
+title: Frankie's Leather Journal
+subtitle: October 30, 1925 - The Game Shifts
+act: act_iii_investigation
+date: '1925-10-30'
+hashtags:
+- frankie_romano
+- romano_treasure
+- cordelia_montrose
+- sebastian_crane
+- alice_whitmore
+skills:
+- personal_romano
+content: |
+  Three stiffs on the fancy side of town. Two young girls I didn't know, but it's a real shame about the Crane kid. I didn't ask questions and they didn't tell stories. That's how you stay in business. 
+unlock_code: '1925'

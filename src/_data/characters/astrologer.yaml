@@ -1,20 +1,44 @@
 id: astrologer
 title: The Astrologer
-image: assets/images/astrologer.png
+image: assets/images/characters/astrologer.png
 personality_short: Stargazer who believes Sebastian Crane was a misunderstood genius.
-personality: Stargazer who believes Sebastian Crane was a misunderstood genius. You're here to vindicate him.
+personality: Stargazer who believes Sebastian Crane was a misunderstood genius. You're
+  here to vindicate him.
 skills:
-  - spiritual_2
-  - history_1
-  - is_character_astrologer
-background: |-
-  You've always believed that the stars shape human destiny. Not in the horoscope-in-the-newspaper sense—in the real, ancient, mathematical sense. Planetary alignments influence events. Timing matters. The cosmos is a clock, and those who know how to read it can harness extraordinary power. Your obsession with the occult led you down countless rabbit holes, but one hit close to home: the notebooks of **Sebastian Crane**, a pharmacist and chemist from 1920s Long Beach. He combined ancient alchemical wisdom with modern pharmaceutical science. He was trying to bridge two worlds that everyone else insisted were separate. In your opinion, the man was **brilliant**. Ahead of his time. But something doesn't add up. Sebastian's notebooks hint at connections and resources that no ordinary pharmacist would have had access to. Rare botanical ingredients, exotic compounds, wealthy patrons—where did it all come from? When you heard about the investigation at the **Montrose mansion**—a place Sebastian had some connection to back in the 1920s—you jumped at the chance. You want to understand who Sebastian Crane really was, and what he was hiding behind that pharmacy counter.
+- spiritual_2
+- history_1
+- is_character_astrologer
+background: 'You''ve always believed that the stars shape human destiny. Not in the
+  horoscope-in-the-newspaper sense—in the real, ancient, mathematical sense. Planetary
+  alignments influence events. Timing matters. The cosmos is a clock, and those who
+  know how to read it can harness extraordinary power. Your obsession with the occult
+  led you down countless rabbit holes, but one hit close to home: the notebooks of
+  **Sebastian Crane**, a pharmacist and chemist from 1920s Long Beach. He combined
+  ancient alchemical wisdom with modern pharmaceutical science. He was trying to bridge
+  two worlds that everyone else insisted were separate. In your opinion, the man was
+  **brilliant**. Ahead of his time. But something doesn''t add up. Sebastian''s notebooks
+  hint at connections and resources that no ordinary pharmacist would have had access
+  to. Rare botanical ingredients, exotic compounds, wealthy patrons—where did it all
+  come from? When you heard about the investigation at the **Montrose mansion**—a
+  place Sebastian had some connection to back in the 1920s—you jumped at the chance.
+  You want to understand who Sebastian Crane really was, and what he was hiding behind
+  that pharmacy counter.'
 objectives:
   main: main_quest
   private: minor_the_alchemist
-strategy: Your 🔮 Expert Spiritual skill gives you access to **vision clues**—spiritual messages and ghostly communications that others can't access. Your 📜 Basic History skill gives you some additional access to historical clues. But you won't be able to read everything. Find players whose skills complement yours, and trade what you know for what you're missing.
+strategy: Your 🔮 Expert Spiritual skill gives you access to **vision clues**—spiritual
+  messages and ghostly communications that others can't access. Your 📜 Basic History
+  skill gives you some additional access to historical clues. But you won't be able
+  to read everything. Find players whose skills complement yours, and trade what you
+  know for what you're missing.
 relationships:
-  clockmaker: They understand the significance of astronomical timing—the conjunction symbols, the sacred geometry. You see the cosmos in Sebastian's notebooks. They see it in a pocket watch from the same era. That's not a coincidence.
-  doctor: They're a physician with ties to the 1920s families connected to this mansion. You've been researching a pharmacist from the same era. Medicine and alchemy aren't as far apart as most people think.
-  herbalist: You approach Sebastian's work from the celestial side—planetary alignments, alchemical symbolism. They approach it from the earth—roots, leaves, compounds. Together you might understand what he was actually doing.
+  clockmaker: They understand the significance of astronomical timing—the conjunction
+    symbols, the sacred geometry. You see the cosmos in Sebastian's notebooks. They
+    see it in a pocket watch from the same era. That's not a coincidence.
+  doctor: They're a physician with ties to the 1920s families connected to this mansion.
+    You've been researching a pharmacist from the same era. Medicine and alchemy aren't
+    as far apart as most people think.
+  herbalist: You approach Sebastian's work from the celestial side—planetary alignments,
+    alchemical symbolism. They approach it from the earth—roots, leaves, compounds.
+    Together you might understand what he was actually doing.
 starting_items: []

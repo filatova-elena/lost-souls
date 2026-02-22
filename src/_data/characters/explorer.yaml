@@ -1,20 +1,40 @@
 id: explorer
 title: The Explorer
-image: assets/images/explorer.png
+image: assets/images/characters/explorer.png
 personality_short: Rugged adventurer hunting treasure.
-personality: Rugged adventurer hunting treasure. Something about this place feels strangely familiar.
+personality: Rugged adventurer hunting treasure. Something about this place feels
+  strangely familiar.
 skills:
-  - history_2
-  - art_1
-  - is_character_explorer
-background: |-
-  You're a treasure hunter and explorer—some call you an archaeologist, others call you a scavenger. You prefer "historical recovery specialist." You chase legends, track down lost artifacts, and search for hidden wealth. You've been researching the Romano family for months. **Frankie "the Coast" Romano** controlled **bootlegging operations** at Long Beach harbor during Prohibition. The family made millions. Then the IRS seized everything in the 1960s-1980s. But the numbers don't add up. The IRS recovered less than the Romano family supposedly had. Where did the rest go? The legendary "**Romano Treasure**"—cash, contraband, valuable goods hidden before the government came knocking. Your research led you to the old **Montrose mansion**. Frankie did business here in the 1920s. You heard there was a connection to the Montroses. The property has been abandoned for decades. If the treasure exists, it could be hidden here.
+- history_2
+- art_1
+- is_character_explorer
+background: You're a treasure hunter and explorer—some call you an archaeologist,
+  others call you a scavenger. You prefer "historical recovery specialist." You chase
+  legends, track down lost artifacts, and search for hidden wealth. You've been researching
+  the Romano family for months. **Frankie "the Coast" Romano** controlled **bootlegging
+  operations** at Long Beach harbor during Prohibition. The family made millions.
+  Then the IRS seized everything in the 1960s-1980s. But the numbers don't add up.
+  The IRS recovered less than the Romano family supposedly had. Where did the rest
+  go? The legendary "**Romano Treasure**"—cash, contraband, valuable goods hidden
+  before the government came knocking. Your research led you to the old **Montrose
+  mansion**. Frankie did business here in the 1920s. You heard there was a connection
+  to the Montroses. The property has been abandoned for decades. If the treasure exists,
+  it could be hidden here.
 objectives:
   main: main_quest
   private: major_romano_treasure
-strategy: Your 📜 Expert History skill lets you read clues others can't—historical records, maps, and timelines. Your 🎨 Basic Art skill gives you some access to artifact and object clues. But you won't be able to read everything. Find players whose skills complement yours, and trade what you know for what you're missing.
+strategy: Your 📜 Expert History skill lets you read clues others can't—historical
+  records, maps, and timelines. Your 🎨 Basic Art skill gives you some access to artifact
+  and object clues. But you won't be able to read everything. Find players whose skills
+  complement yours, and trade what you know for what you're missing.
 relationships:
-  artcollector: They're connected to the Romano family. You're hunting for the Romano treasure. They know the family history from the inside—you've been piecing it together from the outside. You need each other.
-  professor: You're friends—they chase species, you chase legends. You've been all over the mansion grounds and you're finding things that need a scientist's eye to make sense of.
-  fixer: They've handled legal work connected to the Romano family and they've seen the actual financial records from the IRS investigations. You've been hunting for what the IRS missed. Comparing notes could point you both in the right direction.
+  artcollector: They're connected to the Romano family. You're hunting for the Romano
+    treasure. They know the family history from the inside—you've been piecing it
+    together from the outside. You need each other.
+  professor: You're friends—they chase species, you chase legends. You've been all
+    over the mansion grounds and you're finding things that need a scientist's eye
+    to make sense of.
+  fixer: They've handled legal work connected to the Romano family and they've seen
+    the actual financial records from the IRS investigations. You've been hunting
+    for what the IRS missed. Comparing notes could point you both in the right direction.
 starting_items: []

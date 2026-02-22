@@ -23,7 +23,7 @@ from playwright.sync_api import sync_playwright
 sys.path.insert(0, str(Path(__file__).parent.parent / "qr_codes"))
 from qr_generator import generate_qr
 
-BASE_URL = ""  # Use relative paths by default
+BASE_URL = "https://lostsouls.door66.events"  # Base URL for QR codes
 
 SKILL_ICON = (
     '<div class="skill-icon">'
@@ -227,7 +227,7 @@ TEMPLATE = '''<!DOCTYPE html>
     @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700;900&family=Playfair+Display:ital,wght@1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { background: #444; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 30px; }
-    .card { width: 3in; height: 4in; position: relative; overflow: hidden; }
+    .card { width: 3.5in; height: 4.5in; position: relative; overflow: hidden; }
     .card-bg { position: absolute; inset: 0; z-index: 0; }
     .card-content { position: absolute; inset: 0; z-index: 1; display: flex; flex-direction: column; align-items: center; }
 
@@ -259,25 +259,25 @@ TEMPLATE = '''<!DOCTYPE html>
 
     .personality { font-family: 'Playfair Display', serif; font-style: italic; font-size: 13px; line-height: 1.4; color: #6a4a8a; text-align: center; padding: 0 8px; }
 
-    @media print { body { background: none; padding: 0; margin: 0; } @page { size: 3in 4in; margin: 0; } }
+    @media print { body { background: none; padding: 0; margin: 0; } @page { size: 3.5in 4.5in; margin: 0; } }
   </style>
 </head>
 <body>
 <div class="card">
-  <svg class="card-bg" viewBox="0 0 288 384" xmlns="http://www.w3.org/2000/svg">
-    <rect width="288" height="384" fill="#f2ecda"/>
-    <rect x="5" y="5" width="278" height="374" rx="2" fill="none" stroke="#4a148c" stroke-width="1.8"/>
-    <rect x="9" y="9" width="270" height="366" rx="1" fill="none" stroke="#4a148c" stroke-width="0.5"/>
+  <svg class="card-bg" viewBox="0 0 336 432" xmlns="http://www.w3.org/2000/svg">
+    <rect width="336" height="432" fill="#f2ecda"/>
+    <rect x="5" y="5" width="326" height="422" rx="2" fill="none" stroke="#4a148c" stroke-width="1.8"/>
+    <rect x="9" y="9" width="318" height="414" rx="1" fill="none" stroke="#4a148c" stroke-width="0.5"/>
     <g opacity="0.6"><line x1="144" y1="5" x2="144" y2="12" stroke="#4a148c" stroke-width="0.5"/><line x1="132" y1="5" x2="136" y2="12" stroke="#4a148c" stroke-width="0.4"/><line x1="156" y1="5" x2="152" y2="12" stroke="#4a148c" stroke-width="0.4"/><line x1="122" y1="5" x2="129" y2="11" stroke="#4a148c" stroke-width="0.3"/><line x1="166" y1="5" x2="159" y2="11" stroke="#4a148c" stroke-width="0.3"/></g>
-    <g opacity="0.6"><line x1="144" y1="379" x2="144" y2="372" stroke="#4a148c" stroke-width="0.5"/><line x1="132" y1="379" x2="136" y2="372" stroke="#4a148c" stroke-width="0.4"/><line x1="156" y1="379" x2="152" y2="372" stroke="#4a148c" stroke-width="0.4"/><line x1="122" y1="379" x2="129" y2="373" stroke="#4a148c" stroke-width="0.3"/><line x1="166" y1="379" x2="159" y2="373" stroke="#4a148c" stroke-width="0.3"/></g>
+    <g opacity="0.6"><line x1="168" y1="427" x2="168" y2="420" stroke="#4a148c" stroke-width="0.5"/><line x1="156" y1="427" x2="160" y2="420" stroke="#4a148c" stroke-width="0.4"/><line x1="180" y1="427" x2="176" y2="420" stroke="#4a148c" stroke-width="0.4"/><line x1="146" y1="427" x2="153" y2="421" stroke="#4a148c" stroke-width="0.3"/><line x1="190" y1="427" x2="183" y2="421" stroke="#4a148c" stroke-width="0.3"/></g>
     <path d="M5 28 L5 5 L28 5" stroke="#4a148c" stroke-width="2.5" fill="none"/><path d="M9 22 L9 9 L22 9" stroke="#4a148c" stroke-width="0.6" fill="none"/><rect x="5" y="5" width="6" height="6" fill="#4a148c" opacity="0.12"/>
-    <path d="M283 28 L283 5 L260 5" stroke="#4a148c" stroke-width="2.5" fill="none"/><path d="M279 22 L279 9 L266 9" stroke="#4a148c" stroke-width="0.6" fill="none"/><rect x="277" y="5" width="6" height="6" fill="#4a148c" opacity="0.12"/>
-    <path d="M5 356 L5 379 L28 379" stroke="#4a148c" stroke-width="2.5" fill="none"/><path d="M9 362 L9 375 L22 375" stroke="#4a148c" stroke-width="0.6" fill="none"/><rect x="5" y="373" width="6" height="6" fill="#4a148c" opacity="0.12"/>
-    <path d="M283 356 L283 379 L260 379" stroke="#4a148c" stroke-width="2.5" fill="none"/><path d="M279 362 L279 375 L266 375" stroke="#4a148c" stroke-width="0.6" fill="none"/><rect x="277" y="373" width="6" height="6" fill="#4a148c" opacity="0.12"/>
-    <circle cx="144" cy="130" r="47" fill="none" stroke="#4a148c" stroke-width="1.2"/><circle cx="144" cy="130" r="51" fill="none" stroke="#4a148c" stroke-width="0.4" stroke-dasharray="2 3"/>
-    <g opacity="0.07" stroke="#4a148c" stroke-width="0.5"><line x1="144" y1="74" x2="144" y2="58"/><line x1="174" y1="84" x2="186" y2="72"/><line x1="196" y1="110" x2="212" y2="104"/><line x1="196" y1="150" x2="212" y2="156"/><line x1="174" y1="176" x2="186" y2="188"/><line x1="114" y1="84" x2="102" y2="72"/><line x1="92" y1="110" x2="76" y2="104"/><line x1="92" y1="150" x2="76" y2="156"/><line x1="114" y1="176" x2="102" y2="188"/></g>
-    <line x1="16" y1="108" x2="16" y2="152" stroke="#4a148c" stroke-width="0.5" opacity="0.15"/><line x1="19" y1="114" x2="19" y2="146" stroke="#4a148c" stroke-width="0.3" opacity="0.1"/>
-    <line x1="272" y1="108" x2="272" y2="152" stroke="#4a148c" stroke-width="0.5" opacity="0.15"/><line x1="269" y1="114" x2="269" y2="146" stroke="#4a148c" stroke-width="0.3" opacity="0.1"/>
+    <path d="M331 28 L331 5 L308 5" stroke="#4a148c" stroke-width="2.5" fill="none"/><path d="M327 22 L327 9 L314 9" stroke="#4a148c" stroke-width="0.6" fill="none"/><rect x="325" y="5" width="6" height="6" fill="#4a148c" opacity="0.12"/>
+    <path d="M5 404 L5 427 L28 427" stroke="#4a148c" stroke-width="2.5" fill="none"/><path d="M9 410 L9 423 L22 423" stroke="#4a148c" stroke-width="0.6" fill="none"/><rect x="5" y="421" width="6" height="6" fill="#4a148c" opacity="0.12"/>
+    <path d="M331 404 L331 427 L308 427" stroke="#4a148c" stroke-width="2.5" fill="none"/><path d="M327 410 L327 423 L314 423" stroke="#4a148c" stroke-width="0.6" fill="none"/><rect x="325" y="421" width="6" height="6" fill="#4a148c" opacity="0.12"/>
+    <circle cx="168" cy="146" r="47" fill="none" stroke="#4a148c" stroke-width="1.2"/><circle cx="168" cy="146" r="51" fill="none" stroke="#4a148c" stroke-width="0.4" stroke-dasharray="2 3"/>
+    <g opacity="0.07" stroke="#4a148c" stroke-width="0.5"><line x1="168" y1="90" x2="168" y2="74"/><line x1="198" y1="100" x2="210" y2="88"/><line x1="220" y1="126" x2="236" y2="120"/><line x1="220" y1="166" x2="236" y2="172"/><line x1="198" y1="192" x2="210" y2="204"/><line x1="138" y1="100" x2="126" y2="88"/><line x1="116" y1="126" x2="100" y2="120"/><line x1="116" y1="166" x2="100" y2="172"/><line x1="138" y1="192" x2="126" y2="204"/></g>
+    <line x1="16" y1="124" x2="16" y2="168" stroke="#4a148c" stroke-width="0.5" opacity="0.15"/><line x1="19" y1="130" x2="19" y2="162" stroke="#4a148c" stroke-width="0.3" opacity="0.1"/>
+    <line x1="320" y1="124" x2="320" y2="168" stroke="#4a148c" stroke-width="0.5" opacity="0.15"/><line x1="317" y1="130" x2="317" y2="162" stroke="#4a148c" stroke-width="0.3" opacity="0.1"/>
   </svg>
   <div class="card-content">
     <div class="title-area">

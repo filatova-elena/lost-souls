@@ -1,0 +1,26 @@
+id: AO116
+type: Artifact (Object)
+title: 1920s Wedding Dress Fragment
+act: act_i_setting
+appearance: |
+  A delicate fragment of ivory silk and Chantilly lace from a 1920s wedding dress
+hashtags:
+- wedding_dress
+- cordelia_montrose
+- elias_monroe
+- elias_unrequited_love
+- main_quest
+skills:
+- personal_montrose
+- personal_monroe
+- history_1
+is_key:
+- main_quest
+content: |
+  <div style="text-align: center;font-size: 40px;">✋</div>
+  A delicate fragment of **ivory silk and Chantilly lace** from a 1920s wedding dress. The fabric is still remarkably preserved despite its age, with intricate hand-sewn details visible along the edges.
+
+  This fragment belonged to **Cordelia Montrose**, the **Heartbroken Ghost**. The workmanship matches **Elias Monroe's** meticulous handiwork—the same dressmaker who created her wedding dress in 1925.
+
+  The fragment shows signs of careful preservation.
+unlock_code: '0458'

@@ -1,8 +1,10 @@
 id: WTD52
+previous_id: WTD51
+next_id: WTD53
 type: Writing (Thaddeus's Diary)
 title: Thaddeus Crane's Diary
 subtitle: July 2, 1924 - Alice
-act: act_ii_mystery_emerges
+act: act_iii_investigation
 date: '1924-07-02'
 hashtags:
 - thaddeus_crane

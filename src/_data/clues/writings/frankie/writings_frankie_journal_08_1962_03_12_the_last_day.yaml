@@ -1,0 +1,22 @@
+id: WJF08
+previous_id: WJF07
+type: Writing (Frankie's Leather Journal)
+title: Frankie's Leather Journal
+subtitle: March 12, 1962 - The Last Day
+act: act_iii_investigation
+date: '1962-03-12'
+hashtags:
+- frankie_romano
+- romano_treasure
+- romano_dynasty
+skills:
+- personal_romano
+is_key:
+- romano_treasure
+content: |
+  By sunset, they'll be at the door. But everything's positioned. The family's taken care of.
+
+  To whoever reads this - the money ain't in banks.
+
+  Where the sun sets in the west - that's where our fortune waits.
+unlock_code: '1962'

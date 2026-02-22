@@ -1,0 +1,19 @@
+id: WJF04
+previous_id: WJF03
+next_id: WJF06
+type: Writing (Frankie's Leather Journal)
+title: Frankie's Leather Journal
+subtitle: May 10, 1928 - The Garden
+act: act_iii_investigation
+date: '1928-05-10'
+hashtags:
+- frankie_romano
+- romano_treasure
+- romano_dynasty
+skills:
+- personal_romano
+is_key:
+- romano_treasure
+content: |
+  Who's gonna disturb flowers at a dead girl's grave? The parents moved away, too much trouble. Doubt anyone would think to look at that abandonded place. Got some paintings too - the real masterpieces, worth half a mil easy.
+unlock_code: '1928'

@@ -1,0 +1,41 @@
+{
+  "items": [
+    {
+      "prompt": "A 1920s journalist character portrait in Mansion of Madness art style. A determined African American woman in her 30s wearing a 1920s reporter's outfit - a tailored blouse, vest, and newsboy cap. She holds a notepad and pencil, with a press badge visible. Dark moody lighting, gothic atmosphere, period-accurate 1920s fashion. Art style matching Mansion of Madness board game - detailed, atmospheric, slightly stylized horror aesthetic.",
+      "filename": "journalist.png"
+    },
+    {
+      "prompt": "A 1920s psychotherapist character portrait in Mansion of Madness art style. A warm, thoughtful woman of Middle Eastern descent in her 40s wearing elegant 1920s professional attire - a dark dress with a cardigan, glasses, holding a notebook. She has a compassionate, observant expression. Dark moody lighting, gothic atmosphere, period-accurate 1920s fashion. Art style matching Mansion of Madness board game - detailed, atmospheric, slightly stylized horror aesthetic.",
+      "filename": "psychotherapist.png"
+    },
+    {
+      "prompt": "A 1920s portrait artist character portrait in Mansion of Madness art style. A passionate artist in their 30s, East Asian man, wearing paint-stained 1920s artist's smock over a shirt and trousers. He holds a paintbrush and palette, with an intense, captivated expression. Dark moody lighting, gothic atmosphere, period-accurate 1920s fashion. Art style matching Mansion of Madness board game - detailed, atmospheric, slightly stylized horror aesthetic.",
+      "filename": "portraitartist.png"
+    },
+    {
+      "prompt": "A 1920s astrologer character portrait in Mansion of Madness art style. A mystical stargazer, a woman of South Asian descent in her 30s, wearing flowing 1920s bohemian attire with celestial patterns, holding an astrolabe or star chart. She has an intense, otherworldly expression. Dark moody lighting, gothic atmosphere, period-accurate 1920s fashion. Art style matching Mansion of Madness board game - detailed, atmospheric, slightly stylized horror aesthetic.",
+      "filename": "astrologer.png"
+    },
+    {
+      "prompt": "A 1920s fixer character portrait in Mansion of Madness art style. A smooth, calculating lawyer in their 40s, a Latino man wearing a sharp 1920s three-piece suit, holding legal documents. He has a confident, knowing expression. Dark moody lighting, gothic atmosphere, period-accurate 1920s fashion. Art style matching Mansion of Madness board game - detailed, atmospheric, slightly stylized horror aesthetic.",
+      "filename": "fixer.png"
+    },
+    {
+      "prompt": "A 1920s detective character portrait in Mansion of Madness art style. A dogged investigator, a woman in her 30s of mixed heritage, wearing a 1920s detective's trench coat and fedora, holding a magnifying glass. She has a determined, focused expression. Dark moody lighting, gothic atmosphere, period-accurate 1920s fashion. Art style matching Mansion of Madness board game - detailed, atmospheric, slightly stylized horror aesthetic.",
+      "filename": "detective.png"
+    },
+    {
+      "prompt": "A 1920s herbalist character portrait in Mansion of Madness art style. A folk healer, an Indigenous woman in her 30s, wearing simple 1920s earth-toned clothing with a shawl, holding dried herbs and a small bundle of plants. She has a wise, knowing expression. Dark moody lighting, gothic atmosphere, period-accurate 1920s fashion. Art style matching Mansion of Madness board game - detailed, atmospheric, slightly stylized horror aesthetic.",
+      "filename": "herbalist.png"
+    },
+    {
+      "prompt": "A 1920s antiquarian character portrait in Mansion of Madness art style. A nostalgic collector, an elderly person of color in their 60s, wearing worn 1920s clothing - a cardigan over a shirt, holding an old photograph or antique object. They have a wistful, thoughtful expression surrounded by old items. Dark moody lighting, gothic atmosphere, period-accurate 1920s fashion. Art style matching Mansion of Madness board game - detailed, atmospheric, slightly stylized horror aesthetic.",
+      "filename": "antiquarian.png"
+    },
+    {
+      "prompt": "A 1920s townsperson character portrait in Mansion of Madness art style. A curious neighbor, a middle-aged person of diverse background in their 50s, wearing simple 1920s everyday clothing - a plain dress or work clothes. They have a watchful, curious expression. Dark moody lighting, gothic atmosphere, period-accurate 1920s fashion. Art style matching Mansion of Madness board game - detailed, atmospheric, slightly stylized horror aesthetic.",
+      "filename": "townsperson.png"
+    }
+  ],
+  "output_dir": "src/assets/images"
+}

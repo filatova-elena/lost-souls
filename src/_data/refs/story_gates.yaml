@@ -13,9 +13,9 @@ act_iii_investigation:
   name: "Act III: The Investigation"
   unlock_type: any
   gate_message: "You can't understand this clue yet. More must be uncovered first..."
-  # Alice Whitmore patient note unlocks Act III
+  # Thaddeus's diary entry unlocks Act III
   clues:
-    - WTPN72  # Thaddeus's Patient Notes - June 15, 1924 - Alice Whitmore
+    - WTD49  # Thaddeus's Diary - March 11, 1924 - On Dr. Morrison and Lesser Minds
 
 act_iv_revelation:
   name: "Act IV: The Revelation"

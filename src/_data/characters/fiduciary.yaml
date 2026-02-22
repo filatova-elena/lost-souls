@@ -1,20 +1,41 @@
 id: fiduciary
 title: The Fiduciary
-image: assets/images/fiduciary.png
+image: assets/images/characters/fiduciary.png
 personality_short: Pedantic record-keeper obsessed with documentation.
-personality: Pedantic record-keeper obsessed with documentation. You hold all the secrets in your files.
+personality: Pedantic record-keeper obsessed with documentation. You hold all the
+  secrets in your files.
 skills:
-  - legal_2
-  - medical_1
-  - is_character_fiduciary
-background: |-
-  You work for a generational wealth management firm that has managed the estates of the **Montrose, Crane, and Whitmore families** for decades. These properties have been a professional frustration—the haunted mansion has been an eyesore and wasted asset for generations. While researching the Montrose estate, you traced the lineage to find the Heiress and contacted her about the unclaimed property. You hoped she'd take possession and finally do something with it. During your research, you discovered records about the **Crane family name change**—they became the **Sinclairs** in the 1960s, apparently for political reasons. You found a box of old papers connecting Dr. Thaddeus Crane to a brother named **Sebastian Crane**. You've never heard of **Sebastian Crane**, and you've been managing the estates for years! Now you've noticed some disturbing inconsistencies in **death records from 1925**, and you're determined to finally understand what happened. You've heard rumors about the ghosts haunting the mansion, and you can't shake off a strange feeling.
+- legal_2
+- medical_1
+- is_character_fiduciary
+background: You work for a generational wealth management firm that has managed the
+  estates of the **Montrose, Crane, and Whitmore families** for decades. These properties
+  have been a professional frustration—the haunted mansion has been an eyesore and
+  wasted asset for generations. While researching the Montrose estate, you traced
+  the lineage to find the Heiress and contacted her about the unclaimed property.
+  You hoped she'd take possession and finally do something with it. During your research,
+  you discovered records about the **Crane family name change**—they became the **Sinclairs**
+  in the 1960s, apparently for political reasons. You found a box of old papers connecting
+  Dr. Thaddeus Crane to a brother named **Sebastian Crane**. You've never heard of
+  **Sebastian Crane**, and you've been managing the estates for years! Now you've
+  noticed some disturbing inconsistencies in **death records from 1925**, and you're
+  determined to finally understand what happened. You've heard rumors about the ghosts
+  haunting the mansion, and you can't shake off a strange feeling.
 objectives:
   main: main_quest
   private: major_rose_bread_legacy
-strategy: Your ⚖️ Expert Legal skill lets you read clues others can't—estate documents, financial records, trust papers. Your ⚕️ Basic Medical skill gives you some access to forensic and clinical clues. But you won't be able to read everything. Find players whose skills complement yours, and trade what you know for what you're missing.
+strategy: Your ⚖️ Expert Legal skill lets you read clues others can't—estate documents,
+  financial records, trust papers. Your ⚕️ Basic Medical skill gives you some access
+  to forensic and clinical clues. But you won't be able to read everything. Find players
+  whose skills complement yours, and trade what you know for what you're missing.
 relationships:
-  baker: They showed up to this investigation with homemade bread and a story about an old diary. Something about them feels oddly relevant to the estate records you've been combing through, though you can't quite put your finger on why.
-  doctor: You sent them a box of old family papers recently. Their reaction told you there's more to the Crane family story than what's in your files. You want to know what they found.
-  journalist: They've been covering the Montrose family for years and they've noticed the same gaps in the records that you have. You have the estate documents. They have the public record. Together you might see the full picture.
+  baker: They showed up to this investigation with homemade bread and a story about
+    an old diary. Something about them feels oddly relevant to the estate records
+    you've been combing through, though you can't quite put your finger on why.
+  doctor: You sent them a box of old family papers recently. Their reaction told you
+    there's more to the Crane family story than what's in your files. You want to
+    know what they found.
+  journalist: They've been covering the Montrose family for years and they've noticed
+    the same gaps in the records that you have. You have the estate documents. They
+    have the public record. Together you might see the full picture.
 starting_items: []

@@ -1,6 +1,6 @@
 id: WC5
 type: Writing (Cordelia's Diary)
-title: Cordelia Montrose's Diary
+title: Cordelia Montrose's Diary Fragment
 subtitle: September 10, 1925 - Alice
 act: act_iii_investigation
 hashtags:
@@ -17,15 +17,11 @@ is_key:
 content: |
   I saw her today. Alice. My dearest friend, or she used to be. We've barely spoken in months. It's been easier that way.
 
-
   But today she looked so fragile. So lost. And I heard the rumors about Dr. Thaddeus and... and her.
-
 
   I couldn't stay silent. Not with Alice at risk. So I went to him. To Thaddeus. I told him to end it immediately, or I would expose his affair to the entire medical board, to all of Long Beach society. I told him I would destroy his reputation if he didn't leave her alone.
 
-
   He just smiled at me. And said: 'How very protective of you, Cordelia. How very noble.'
-
 
   I've never liked him.
 unlock_code: '0567'

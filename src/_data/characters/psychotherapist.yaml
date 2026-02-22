@@ -1,23 +1,45 @@
 id: psychotherapist
 title: The Psychotherapist
-image: assets/images/psychotherapist.png
+image: assets/images/characters/psychotherapist.png
 personality_short: Warm listener who psychoanalyzes everyone around them.
-personality: Warm listener who psychoanalyzes everyone around them. You see generational trauma everywhere—and you're usually right.
+personality: Warm listener who psychoanalyzes everyone around them. You see generational
+  trauma everywhere—and you're usually right.
 skills:
-  - personal_montrose
-  - personal_crane
-  - personal_whitmore
-  - personal_monroe
-  - personal_hartley
-  - is_character_psychotherapist
-background: |-
-  You're a psychotherapist specializing in **generational trauma**—the way pain, secrets, and unresolved grief pass down through families like invisible inheritance. You've published papers on how unspoken tragedies shape descendants who never even knew what happened. When you heard about the **Montrose mansion** investigation—three deaths in eleven days, a century of haunting, and multiple families still entangled in the aftermath—you knew this was the case study of a lifetime. You've been researching the families connected to the 1925 tragedy: the **Montroses**, the **Cranes**, the **Whitmores**, the **Monroes**, the **Hartleys**. The patterns are textbook. Name changes to escape shame. Obsessive preservation of artifacts. These people don't just carry history—they're **living** it. You came here to observe, to understand, to document. But the more you learn about these families, the more you realize: understanding the psychology might be the key to understanding the murders.
+- personal_montrose
+- personal_crane
+- personal_whitmore
+- personal_monroe
+- personal_hartley
+- is_character_psychotherapist
+background: 'You''re a psychotherapist specializing in **generational trauma**—the
+  way pain, secrets, and unresolved grief pass down through families like invisible
+  inheritance. You''ve published papers on how unspoken tragedies shape descendants
+  who never even knew what happened. When you heard about the **Montrose mansion**
+  investigation—three deaths in eleven days, a century of haunting, and multiple families
+  still entangled in the aftermath—you knew this was the case study of a lifetime.
+  You''ve been researching the families connected to the 1925 tragedy: the **Montroses**,
+  the **Cranes**, the **Whitmores**, the **Monroes**, the **Hartleys**. The patterns
+  are textbook. Name changes to escape shame. Obsessive preservation of artifacts.
+  These people don''t just carry history—they''re **living** it. You came here to
+  observe, to understand, to document. But the more you learn about these families,
+  the more you realize: understanding the psychology might be the key to understanding
+  the murders.'
 objectives:
   main: main_quest
   private: major_secret_baby
-strategy: Your 👥 connections to five different families (Montrose, Crane, Whitmore, Monroe, Hartley) give you access to clues about those families that others can't read. But you won't be able to read everything. Find players whose skills complement yours, and trade what you know for what you're missing.
+strategy: Your 👥 connections to five different families (Montrose, Crane, Whitmore,
+  Monroe, Hartley) give you access to clues about those families that others can't
+  read. But you won't be able to read everything. Find players whose skills complement
+  yours, and trade what you know for what you're missing.
 relationships:
-  baker: An orphan who bakes the same bread recipe every day like a ritual. They don't know where they come from, but they showed up at this mansion like it was pulling them in. You've seen this before—people drawn to places connected to trauma they don't consciously remember.
-  dressmaker: They've kept a dead woman's wedding dress preserved for a hundred years, passed down through their family like a holy relic. That's not sentimentality. That's unresolved grief with a heartbeat.
-  portraitartist: They were hired to restore paintings and ended up unable to leave. They talk about Cordelia Montrose the way people talk about someone they've lost—not someone who died a century ago.
+  baker: An orphan who bakes the same bread recipe every day like a ritual. They don't
+    know where they come from, but they showed up at this mansion like it was pulling
+    them in. You've seen this before—people drawn to places connected to trauma they
+    don't consciously remember.
+  dressmaker: They've kept a dead woman's wedding dress preserved for a hundred years,
+    passed down through their family like a holy relic. That's not sentimentality.
+    That's unresolved grief with a heartbeat.
+  portraitartist: They were hired to restore paintings and ended up unable to leave.
+    They talk about Cordelia Montrose the way people talk about someone they've lost—not
+    someone who died a century ago.
 starting_items: []

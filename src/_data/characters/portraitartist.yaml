@@ -1,20 +1,44 @@
 id: portraitartist
 title: The Portrait Artist
-image: assets/images/portraitartist.png
+image: assets/images/characters/portraitartist.png
 personality_short: Captivated by a face from 100 years ago.
-personality: Captivated by a face from 100 years ago. You came to restore paintings and left unable to stop thinking about Cordelia Montrose.
+personality: Captivated by a face from 100 years ago. You came to restore paintings
+  and left unable to stop thinking about Cordelia Montrose.
 skills:
-  - art_2
-  - personal_montrose
-  - is_character_portraitartist
-background: |-
-  The Heiress commissioned you to restore and catalog the artwork in the **Montrose mansion**. Routine job. Old money, old paintings, old dust. You expected faded landscapes and stiff family portraits. Then you uncovered **her**. A portrait hidden behind a larger painting in the study—a young woman, mid-1920s, painted with extraordinary skill and unmistakable tenderness. The artist loved their subject. You could see it in every brushstroke. She was **hauntingly beautiful**. Dark eyes, a pearl necklace, an expression caught between joy and melancholy. You couldn't look away. You identified her as **Cordelia Rose Montrose**, born 1899, died 1925. She was only **26**. You started researching. And what you found consumed you. Cordelia was magnetic—the kind of woman who inspired devotion. Men wrote her poetry, wrote her music. You've cataloged every piece of art in the mansion now, but you keep coming back to Cordelia's portrait. You've studied her face so long you feel like you know her. The admirers, the tragedy, the mystery of her death at 26—it's all tangled together. When the investigation began, you didn't leave. You couldn't. Not until you understand who she really was and what happened to her.
+- art_2
+- personal_montrose
+- is_character_portraitartist
+background: The Heiress commissioned you to restore and catalog the artwork in the
+  **Montrose mansion**. Routine job. Old money, old paintings, old dust. You expected
+  faded landscapes and stiff family portraits. Then you uncovered **her**. A portrait
+  hidden behind a larger painting in the study—a young woman, mid-1920s, painted with
+  extraordinary skill and unmistakable tenderness. The artist loved their subject.
+  You could see it in every brushstroke. She was **hauntingly beautiful**. Dark eyes,
+  a pearl necklace, an expression caught between joy and melancholy. You couldn't
+  look away. You identified her as **Cordelia Rose Montrose**, born 1899, died 1925.
+  She was only **26**. You started researching. And what you found consumed you. Cordelia
+  was magnetic—the kind of woman who inspired devotion. Men wrote her poetry, wrote
+  her music. You've cataloged every piece of art in the mansion now, but you keep
+  coming back to Cordelia's portrait. You've studied her face so long you feel like
+  you know her. The admirers, the tragedy, the mystery of her death at 26—it's all
+  tangled together. When the investigation began, you didn't leave. You couldn't.
+  Not until you understand who she really was and what happened to her.
 objectives:
   main: main_quest
   private: major_secret_baby
-strategy: Your 🎨 Expert Art skill lets you read clues others can't—art authentication, provenance, artistic intention. Your 👥 Montrose connection gives you access to clues about Cordelia Montrose that others can't read. But you won't be able to read everything. Find players whose skills complement yours, and trade what you know for what you're missing.
+strategy: Your 🎨 Expert Art skill lets you read clues others can't—art authentication,
+  provenance, artistic intention. Your 👥 Montrose connection gives you access to clues
+  about Cordelia Montrose that others can't read. But you won't be able to read everything.
+  Find players whose skills complement yours, and trade what you know for what you're
+  missing.
 relationships:
-  dressmaker: You're both drawn to Cordelia, but from different angles—you through a hidden portrait, they through something their family has preserved for generations. Comparing what you've each found could reveal more than either of you has alone.
-  influencer: They're documenting everything for their series on Long Beach mysteries. They have a knack for digging up local history—and they might have turned up something about Cordelia that you haven't found through the paintings alone.
-  psychotherapist: They study how the dead haunt the living—not with ghosts, but through grief passed down through generations. You can't stop thinking about Cordelia Montrose. They might have thoughts about why.
+  dressmaker: You're both drawn to Cordelia, but from different angles—you through
+    a hidden portrait, they through something their family has preserved for generations.
+    Comparing what you've each found could reveal more than either of you has alone.
+  influencer: They're documenting everything for their series on Long Beach mysteries.
+    They have a knack for digging up local history—and they might have turned up something
+    about Cordelia that you haven't found through the paintings alone.
+  psychotherapist: They study how the dead haunt the living—not with ghosts, but through
+    grief passed down through generations. You can't stop thinking about Cordelia
+    Montrose. They might have thoughts about why.
 starting_items: []

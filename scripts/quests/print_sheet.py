@@ -4,7 +4,7 @@ Quest Answer Card Print Sheet Generator
 Creates high-resolution PNG print sheets of quest answer cards, optimized for 8.5x11" printing.
 
 Generates quest answer cards on the fly from character YAML files using generate_answer_card.py,
-then tiles them in a 2×2 grid (4 per page) at 300 DPI. Each card is 3×4 inches.
+then tiles them in a 2×2 grid (4 per page) at 300 DPI. Each card is 3.5×4.5 inches.
 
 Usage:
     python print_sheet.py
@@ -29,8 +29,8 @@ from generate_answer_card import build_html, render_card, find_image, BASE_URL, 
 # Defaults for 8.5×11" letter
 PAGE_WIDTH_IN = 8.5
 PAGE_HEIGHT_IN = 11.0
-CARD_WIDTH_IN = 3.0
-CARD_HEIGHT_IN = 4.0
+CARD_WIDTH_IN = 3.5
+CARD_HEIGHT_IN = 4.5
 DPI = 300
 COLS = 2
 ROWS = 2
@@ -66,7 +66,7 @@ def generate_answer_card_image(character_data, quest_data, yaml_dir, scale=3, ba
 def make_print_sheet(
     character_yamls,
     quest_type="main",
-    output_path="to_print/quest_answer_cards_sheet.png",
+    output_path="to_print/quests/quest_answer_cards_sheet.png",
     dpi=DPI,
     page_size=(PAGE_WIDTH_IN, PAGE_HEIGHT_IN),
     card_size=(CARD_WIDTH_IN, CARD_HEIGHT_IN),
@@ -228,8 +228,8 @@ def main():
     )
     parser.add_argument(
         "--output", "-o",
-        default="to_print/quest_answer_cards_sheet.png",
-        help="Output PNG path (default: to_print/quest_answer_cards_sheet.png)",
+        default="to_print/quests/quest_answer_cards_sheet.png",
+        help="Output PNG path (default: to_print/quests/quest_answer_cards_sheet.png)",
     )
     parser.add_argument(
         "--base-url",

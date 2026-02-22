@@ -4,7 +4,7 @@ Character Card Print Sheet Generator
 Creates high-resolution PNG print sheets of character cards, optimized for 8.5x11" printing.
 
 Generates character cards on the fly from YAML files using generate_card.py,
-then tiles them in a 2×2 grid (4 per page) at 300 DPI. Each card is 3×4 inches.
+then tiles them in a 2×2 grid (4 per page) at 300 DPI. Each card is 3.5×4.5 inches.
 
 Usage:
     python print_sheet.py
@@ -28,8 +28,8 @@ from generate_card import build_html, render_card, find_image, BASE_URL, load_sk
 # Defaults for 8.5×11" letter
 PAGE_WIDTH_IN = 8.5
 PAGE_HEIGHT_IN = 11.0
-CARD_WIDTH_IN = 3.0
-CARD_HEIGHT_IN = 4.0
+CARD_WIDTH_IN = 3.5
+CARD_HEIGHT_IN = 4.5
 DPI = 300
 COLS = 2
 ROWS = 2
@@ -51,23 +51,27 @@ def generate_card_image(yaml_path, scale=3, base_url=BASE_URL, skills_data=None)
     yaml_path = Path(yaml_path)
     data = yaml.safe_load(yaml_path.read_text(encoding="utf-8"))
     
-    # Build HTML
-    html_content = build_html(data, str(yaml_path.parent), scale, base_url, skills_data)
-    
-    # Render to temporary PNG
-    tmp = tempfile.NamedTemporaryFile(suffix=".png", delete=False)
-    tmp.close()
     try:
-        render_card(html_content, tmp.name, scale)
-        img = Image.open(tmp.name).convert("RGBA")
-        return img
-    finally:
-        Path(tmp.name).unlink()
+        # Build HTML
+        html_content = build_html(data, str(yaml_path.parent), scale, base_url, skills_data)
+        
+        # Render to temporary PNG
+        tmp = tempfile.NamedTemporaryFile(suffix=".png", delete=False)
+        tmp.close()
+        try:
+            render_card(html_content, tmp.name, scale)
+            img = Image.open(tmp.name).convert("RGBA")
+            return img
+        finally:
+            Path(tmp.name).unlink()
+    except FileNotFoundError as e:
+        # Skip characters with missing images
+        raise ValueError(f"Missing image for {data.get('title', yaml_path.stem)}: {e}") from e
 
 
 def make_print_sheet(
     character_yamls,
-    output_path="to_print/character_cards_sheet.png",
+    output_path="to_print/characters/character_cards_sheet.png",
     dpi=DPI,
     page_size=(PAGE_WIDTH_IN, PAGE_HEIGHT_IN),
     card_size=(CARD_WIDTH_IN, CARD_HEIGHT_IN),
@@ -135,37 +139,51 @@ def make_print_sheet(
 
     output_paths = []
     idx = 0
+    skipped_count = 0
 
     for page_num in range(num_pages):
         page = Image.new("RGB", (page_w, page_h), (255, 255, 255))
 
         for slot in range(per_page):
+            # Keep trying characters until we find one that works or run out
+            while idx < len(character_yamls):
+                yaml_path = character_yamls[idx]
+                r, c = divmod(slot, cols)
+                x = offset_x + c * (card_w + gap)
+                y = offset_y + r * (card_h + gap)
+
+                # Load character data for display
+                data = yaml.safe_load(yaml_path.read_text(encoding="utf-8"))
+                char_name = data.get("title", yaml_path.stem)
+                
+                try:
+                    # Generate card image
+                    card_img = generate_card_image(yaml_path, scale, base_url, skills_data)
+                    
+                    print(f"  [{idx + 1}/{len(character_yamls)}] {char_name}")
+                    
+                    # Resize to exact card size if needed
+                    if card_img.size != (card_w, card_h):
+                        card_img = card_img.resize((card_w, card_h), Image.Resampling.LANCZOS)
+                    
+                    # Convert to RGB for pasting onto white background
+                    card_rgb = Image.new("RGB", card_img.size, (255, 255, 255))
+                    card_rgb.paste(card_img, mask=card_img.split()[3] if card_img.mode == "RGBA" else None)
+                    
+                    page.paste(card_rgb, (x, y))
+                    idx += 1
+                    break  # Successfully placed card, move to next slot
+                except (ValueError, FileNotFoundError) as e:
+                    # Skip characters with missing images or other errors
+                    print(f"  ⚠️  [{idx + 1}/{len(character_yamls)}] {char_name} - SKIPPED: {e}")
+                    skipped_count += 1
+                    idx += 1
+                    # Continue to next character
+                    continue
+            
+            # If we've run out of characters, break out of slot loop
             if idx >= len(character_yamls):
                 break
-
-            yaml_path = character_yamls[idx]
-            r, c = divmod(slot, cols)
-            x = offset_x + c * (card_w + gap)
-            y = offset_y + r * (card_h + gap)
-
-            # Load character data for display
-            data = yaml.safe_load(yaml_path.read_text(encoding="utf-8"))
-            char_name = data.get("title", yaml_path.stem)
-            print(f"  [{idx + 1}/{len(character_yamls)}] {char_name}")
-
-            # Generate card image
-            card_img = generate_card_image(yaml_path, scale, base_url, skills_data)
-            
-            # Resize to exact card size if needed
-            if card_img.size != (card_w, card_h):
-                card_img = card_img.resize((card_w, card_h), Image.Resampling.LANCZOS)
-            
-            # Convert to RGB for pasting onto white background
-            card_rgb = Image.new("RGB", card_img.size, (255, 255, 255))
-            card_rgb.paste(card_img, mask=card_img.split()[3] if card_img.mode == "RGBA" else None)
-            
-            page.paste(card_rgb, (x, y))
-            idx += 1
 
         # Determine output filename
         if num_pages == 1:
@@ -182,7 +200,7 @@ def make_print_sheet(
         output_paths.append(str(out))
         print(f"  ✓ {out}")
 
-    print(f"\nDone: {len(output_paths)} page(s), {len(character_yamls)} cards")
+    print(f"\nDone: {len(output_paths)} page(s), {len(character_yamls) - skipped_count} cards generated, {skipped_count} skipped")
     return output_paths
 
 
@@ -195,7 +213,7 @@ def main():
         epilog=(
             "Examples:\n"
             "  python print_sheet.py\n"
-            "  python print_sheet.py --output sheet.png\n"
+            "  python print_sheet.py --output to_print/characters/sheet.png\n"
             "  python print_sheet.py --dpi 300 --page-width 8.5 --page-height 11.0\n"
         ),
     )
@@ -207,8 +225,8 @@ def main():
     )
     parser.add_argument(
         "--output", "-o",
-        default="to_print/character_cards_sheet.png",
-        help="Output PNG path (default: to_print/character_cards_sheet.png)",
+        default="to_print/characters/character_cards_sheet.png",
+        help="Output PNG path (default: to_print/characters/character_cards_sheet.png)",
     )
     parser.add_argument(
         "--base-url",

@@ -1,20 +1,43 @@
 id: influencer
 title: The Influencer
-image: assets/images/influencer.png
+image: assets/images/characters/influencer.png
 personality_short: Content creator documenting everything.
-personality: Content creator documenting everything. This mystery is perfect for your series—if you can debunk the supernatural.
+personality: Content creator documenting everything. This mystery is perfect for your
+  series—if you can debunk the supernatural.
 skills:
-  - rumors_1
-  - history_2
-  - is_character_influencer
-background: |-
-  You run two popular series: "**Long Beach Urban Legends & Mysteries**" covering local history, unsolved cases, and supernatural claims (which you approach skeptically), and a food channel featuring the best local spots in Long Beach—from **Rosie's Tamales** on 4th Street to **Sweet Rose Bakery** to the Vietnamese coffee shops on Anaheim. You've done mystery episodes on: The **Haunted Montrose Mansion**—ghostly sightings, rumors of tragedy; The Mysterious **Sullivan Bakery Fire**—suspicious 1990s fire that destroyed a generations-old bakery; The **Romano Treasure** Legend—mob family wealth that supposedly escaped the IRS; Cursed Objects & Fatal Timing—featured your friend the Clockmaker and their mysterious pocket watch. Your latest research: **Three mysterious deaths in October 1925**. All at the same mansion. All within 11 days. And nobody talks about it. When you heard about this investigation at the Montrose mansion, you knew you had to be here. You brought the Clockmaker (who's obsessed with the timing). You're friends with the Baker (featured Sweet Rose Bakery on your food channel). This is going to be your best episode yet.
+- rumors_1
+- history_2
+- is_character_influencer
+background: 'You run two popular series: "**Long Beach Urban Legends & Mysteries**"
+  covering local history, unsolved cases, and supernatural claims (which you approach
+  skeptically), and a food channel featuring the best local spots in Long Beach—from
+  **Rosie''s Tamales** on 4th Street to **Sweet Rose Bakery** to the Vietnamese coffee
+  shops on Anaheim. You''ve done mystery episodes on: The **Haunted Montrose Mansion**—ghostly
+  sightings, rumors of tragedy; The Mysterious **Sullivan Bakery Fire**—suspicious
+  1990s fire that destroyed a generations-old bakery; The **Romano Treasure** Legend—mob
+  family wealth that supposedly escaped the IRS; Cursed Objects & Fatal Timing—featured
+  your friend the Clockmaker and their mysterious pocket watch. Your latest research:
+  **Three mysterious deaths in October 1925**. All at the same mansion. All within
+  11 days. And nobody talks about it. When you heard about this investigation at the
+  Montrose mansion, you knew you had to be here. You brought the Clockmaker (who''s
+  obsessed with the timing). You''re friends with the Baker (featured Sweet Rose Bakery
+  on your food channel). This is going to be your best episode yet.'
 objectives:
   main: main_quest
   private: minor_bakery_fire
-strategy: Your 🗝️ Rumor skill gives you access to **rumor chests** hidden around the mansion—unlock them with the key attached to your character card. These contain gossip, tips, and leads that others can't access. Your 📜 Expert History skill lets you read historical clues others can't. But you won't be able to read everything. Find players whose skills complement yours, and trade what you know for what you're missing.
+strategy: Your 🗝️ Rumor skill gives you access to **rumor chests** hidden around the
+  mansion—unlock them with the key attached to your character card. These contain
+  gossip, tips, and leads that others can't access. Your 📜 Expert History skill lets
+  you read historical clues others can't. But you won't be able to read everything.
+  Find players whose skills complement yours, and trade what you know for what you're
+  missing.
 relationships:
-  clockmaker: Your friend—you featured them and their mysterious pocket watch in your series. They think the universe runs on cosmic timing. You think that's a stretch. But they keep finding things that are hard to explain away.
-  baker: You featured their bakery and their rose bread recipe on your food channel. Interesting story, you remember.
-  antiquarian: They run an antique shop in the neighborhood and they've sold you old photographs and clippings over the years. They've been here longer than almost anyone and they remember things about this neighborhood that nobody else does.
+  clockmaker: Your friend—you featured them and their mysterious pocket watch in your
+    series. They think the universe runs on cosmic timing. You think that's a stretch.
+    But they keep finding things that are hard to explain away.
+  baker: You featured their bakery and their rose bread recipe on your food channel.
+    Interesting story, you remember.
+  antiquarian: They run an antique shop in the neighborhood and they've sold you old
+    photographs and clippings over the years. They've been here longer than almost
+    anyone and they remember things about this neighborhood that nobody else does.
 starting_items: []

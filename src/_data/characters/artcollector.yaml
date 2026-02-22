@@ -1,20 +1,43 @@
 id: artcollector
 title: The Art Collector
-image: assets/images/artcollector.png
+image: assets/images/characters/artcollector.png
 personality_short: Pretentious aesthete obsessed with artistic merit and provenance.
-personality: Pretentious aesthete obsessed with artistic merit and provenance. One foot in legitimacy, one in the shadows.
+personality: Pretentious aesthete obsessed with artistic merit and provenance. One
+  foot in legitimacy, one in the shadows.
 skills:
-  - art_2
-  - personal_romano
-  - is_character_artcollector
-background: |-
-  Your family name carries weight in Long Beach—but not the kind you'd prefer. Your great-great-grandfather was **Frankie "the Coast" Romano**, the notorious rum runner who controlled **bootlegging operations** at the Port of Long Beach during Prohibition. The Romano family had it all in the 1920s-1950s: money, power, connections, Hollywood parties, political influence. But then came the IRS investigations in the 1960s-1980s. The government seized everything. Except, there are rumors about hidden wealth that escaped the IRS. The legendary "**Romano Treasure**." Is it real? Or just a desperate family myth? You learned the art world through necessity—selling salvaged family pieces to survive. But you discovered you actually had talent for it. You've built a legitimate art dealing business and made real money again. Though you still dabble in questionable provenance and black market connections when profitable. Old habits die hard. When you heard about the investigation at the old **Montrose mansion**—where your ancestor Frankie did business in the 1920s—you couldn't resist. Maybe the treasure is real. Maybe it's here.
+- art_2
+- personal_romano
+- is_character_artcollector
+background: 'Your family name carries weight in Long Beach—but not the kind you''d
+  prefer. Your great-great-grandfather was **Frankie "the Coast" Romano**, the notorious
+  rum runner who controlled **bootlegging operations** at the Port of Long Beach during
+  Prohibition. The Romano family had it all in the 1920s-1950s: money, power, connections,
+  Hollywood parties, political influence. But then came the IRS investigations in
+  the 1960s-1980s. The government seized everything. Except, there are rumors about
+  hidden wealth that escaped the IRS. The legendary "**Romano Treasure**." Is it real?
+  Or just a desperate family myth? You learned the art world through necessity—selling
+  salvaged family pieces to survive. But you discovered you actually had talent for
+  it. You''ve built a legitimate art dealing business and made real money again. Though
+  you still dabble in questionable provenance and black market connections when profitable.
+  Old habits die hard. When you heard about the investigation at the old **Montrose
+  mansion**—where your ancestor Frankie did business in the 1920s—you couldn''t resist.
+  Maybe the treasure is real. Maybe it''s here.'
 objectives:
   main: main_quest
   private: major_romano_treasure
-strategy: Your 🎨 Expert Art skill lets you read clues others can't—art authentication, provenance, artifact evaluation. Your 👥 Romano connection gives you access to clues about the Romano family that others can't read. But you won't be able to read everything. Find players whose skills complement yours, and trade what you know for what you're missing.
+strategy: Your 🎨 Expert Art skill lets you read clues others can't—art authentication,
+  provenance, artifact evaluation. Your 👥 Romano connection gives you access to clues
+  about the Romano family that others can't read. But you won't be able to read everything.
+  Find players whose skills complement yours, and trade what you know for what you're
+  missing.
 relationships:
-  explorer: They've been hunting for the Romano treasure from the outside—maps, legends, historical records. You know the family from the inside. Neither of you has the full picture alone.
-  mortician: Their family has been in this town as long as yours. The Romanos and the mortuary go back generations—your family kept them busy in the old days. They might have records that shed light on what happened to your family's assets.
-  fixer: They've done legal work for your family for years. Recently they found something in old case files that got them excited enough to show up here. You want to know what it is.
+  explorer: They've been hunting for the Romano treasure from the outside—maps, legends,
+    historical records. You know the family from the inside. Neither of you has the
+    full picture alone.
+  mortician: Their family has been in this town as long as yours. The Romanos and
+    the mortuary go back generations—your family kept them busy in the old days. They
+    might have records that shed light on what happened to your family's assets.
+  fixer: They've done legal work for your family for years. Recently they found something
+    in old case files that got them excited enough to show up here. You want to know
+    what it is.
 starting_items: []

@@ -1,20 +1,39 @@
 id: mortician
 title: The Mortician
-image: assets/images/mortician.png
+image: assets/images/characters/mortician.png
 personality_short: Unnervingly calm about death. You know what bodies reveal.
-personality: Unnervingly calm about death. You know what bodies reveal. You've discovered a century-old cover-up.
+personality: Unnervingly calm about death. You know what bodies reveal. You've discovered
+  a century-old cover-up.
 skills:
-  - medical_2
-  - legal_1
-  - is_character_mortician
-background: |-
-  Your family has run the mortuary in Long Beach for over 100 years. Your ancestor, **Silas Blackwell**, handled the bodies of everyone who died in this town during the 1920s. Including three very important deaths in **October 1925**: **Alice Whitmore, Sebastian Crane, and Cordelia Montrose**. All within eleven days. So it's not hard for you to match the ghosts haunting the mansion with their real names. But the real question is: should you share that information? While people debate and blab, you can perform your own REAL investigation. And you have your first clue. Recently you found a record that someone paid **Silas Blackwell** **$500** in 1925—a fortune at the time—with instructions to ask no questions and alter no records. But Silas kept his own private observations. He wrote down what he really saw. He documented the inconsistencies. And he hid those notes in the family archives. Now you have them. And you know something was **covered up**.
+- medical_2
+- legal_1
+- is_character_mortician
+background: 'Your family has run the mortuary in Long Beach for over 100 years. Your
+  ancestor, **Silas Blackwell**, handled the bodies of everyone who died in this town
+  during the 1920s. Including three very important deaths in **October 1925**: **Alice
+  Whitmore, Sebastian Crane, and Cordelia Montrose**. All within eleven days. So it''s
+  not hard for you to match the ghosts haunting the mansion with their real names.
+  But the real question is: should you share that information? While people debate
+  and blab, you can perform your own REAL investigation. And you have your first clue.
+  Recently you found a record that someone paid **Silas Blackwell** **$500** in 1925—a
+  fortune at the time—with instructions to ask no questions and alter no records.
+  But Silas kept his own private observations. He wrote down what he really saw. He
+  documented the inconsistencies. And he hid those notes in the family archives. Now
+  you have them. And you know something was **covered up**.'
 objectives:
   main: main_quest
   private: minor_morticians_silence
-strategy: Your ⚕️ Expert Medical skill lets you read clues others can't—death records, injury patterns, forensic evidence. Your ⚖️ Basic Legal skill gives you some additional access to legal documents. But you won't be able to read everything. Find players whose skills complement yours, and trade what you know for what you're missing.
+strategy: Your ⚕️ Expert Medical skill lets you read clues others can't—death records,
+  injury patterns, forensic evidence. Your ⚖️ Basic Legal skill gives you some additional
+  access to legal documents. But you won't be able to read everything. Find players
+  whose skills complement yours, and trade what you know for what you're missing.
 relationships:
-  heiress: They live in the mansion and they're a Montrose. Someone in that family paid your ancestor $500 to keep quiet in 1925. They probably don't know anything about it—but the family records in that house might.
-  psychic: They claim they can communicate with the spirits haunting this mansion. You think that's nonsense—but the spirits are the same people whose death records you've been studying. If they really can talk to the dead, you have questions.
-  detective: You've heard they're investigating the Montrose family. You have a century-old cover-up in your back pocket. They might be the right person to bring it to.
+  heiress: They live in the mansion and they're a Montrose. Someone in that family
+    paid your ancestor $500 to keep quiet in 1925. They probably don't know anything
+    about it—but the family records in that house might.
+  psychic: They claim they can communicate with the spirits haunting this mansion.
+    You think that's nonsense—but the spirits are the same people whose death records
+    you've been studying. If they really can talk to the dead, you have questions.
+  detective: You've heard they're investigating the Montrose family. You have a century-old
+    cover-up in your back pocket. They might be the right person to bring it to.
 starting_items: []

@@ -1,8 +1,9 @@
 id: WTD49
+next_id: WTD50
 type: Writing (Thaddeus's Diary)
 title: Thaddeus Crane's Diary
 subtitle: March 11, 1924 - On Dr. Morrison and Lesser Minds
-act: act_i_setting
+act: act_iii_investigation
 date: '1924-03-11'
 hashtags:
 - thaddeus_crane

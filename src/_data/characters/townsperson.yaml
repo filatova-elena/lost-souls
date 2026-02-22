@@ -1,21 +1,45 @@
 id: townsperson
 title: The Townsperson
-image: assets/images/townsperson.png
+image: assets/images/characters/townsperson.png
 personality_short: Curious neighbor who's been watching the mansion for years.
-personality: Curious neighbor who's been watching the mansion for years. You're just nosy, you guess.
+personality: Curious neighbor who's been watching the mansion for years. You're just
+  nosy, you guess.
 is_special_character: true
 skills:
-  - is_character_townsperson
-background: |-
-  You live a few blocks from the **Montrose mansion**. You've lived in this neighborhood your whole life. You've watched that old house sit empty for decades—weeds growing, windows dark, the kind of place kids dare each other to go near. You've heard the stories. Everyone has. Ghosts. Tragedies. The three deaths in **1925**. But you've also noticed things. The way the house seems to watch you back sometimes. The strange lights that appear in windows when nobody should be there. The way certain people avoid walking past it at night. You're not a detective. You're not a historian. You're just... curious. When you heard there was going to be some kind of investigation, an open house, people gathering to look into the mansion's secrets, you couldn't resist. You showed up and said "I'm just a curious neighbor" because that's the truth. You've been watching this place for years. You've noticed things. And now, finally, you might get some answers. Or at least, you'll be there when someone else finds them.
+- is_character_townsperson
+background: You live a few blocks from the **Montrose mansion**. You've lived in this
+  neighborhood your whole life. You've watched that old house sit empty for decades—weeds
+  growing, windows dark, the kind of place kids dare each other to go near. You've
+  heard the stories. Everyone has. Ghosts. Tragedies. The three deaths in **1925**.
+  But you've also noticed things. The way the house seems to watch you back sometimes.
+  The strange lights that appear in windows when nobody should be there. The way certain
+  people avoid walking past it at night. You're not a detective. You're not a historian.
+  You're just... curious. When you heard there was going to be some kind of investigation,
+  an open house, people gathering to look into the mansion's secrets, you couldn't
+  resist. You showed up and said "I'm just a curious neighbor" because that's the
+  truth. You've been watching this place for years. You've noticed things. And now,
+  finally, you might get some answers. Or at least, you'll be there when someone else
+  finds them.
 objectives:
   main: main_quest
-strategy: You have no special skills or connections, but you've been paying attention. Reach out to others when you need special expertise and you might be able to piece together this puzzle.
+strategy: You have no special skills or connections, but you've been paying attention.
+  Reach out to others when you need special expertise and you might be able to piece
+  together this puzzle.
 relationships:
-  heiress: A montrose descendant who lives in the mansion. A well known socialite. Reach out to the Heiress for any fresh gossip they might have or access to Montrose family records.
-  journalist: They're covering this story. They might have useful information about the investigation progress.
-  influencer: They're documenting everything. Also, they love to talk. You might be able to get more information from them than you realize.
-  antiquarian: You've been neighbors for years—their shop is just a few blocks away. They've been collecting local history and documents for decades. Ask them about what they've found related to the mansion or the families connected to it.
-  mortician: Their family has run the mortuary in town for over 100 years. They know things about local deaths and history that most people don't. Ask them about the 1925 deaths or any other suspicious deaths connected to the Montrose family.
-  baker: A local baker who seems drawn to this place. You've probably seen them around town. Ask them what brought them here—their story might connect to things you've noticed.
+  heiress: A montrose descendant who lives in the mansion. A well known socialite.
+    Reach out to the Heiress for any fresh gossip they might have or access to Montrose
+    family records.
+  journalist: They're covering this story. They might have useful information about
+    the investigation progress.
+  influencer: They're documenting everything. Also, they love to talk. You might be
+    able to get more information from them than you realize.
+  antiquarian: You've been neighbors for years—their shop is just a few blocks away.
+    They've been collecting local history and documents for decades. Ask them about
+    what they've found related to the mansion or the families connected to it.
+  mortician: Their family has run the mortuary in town for over 100 years. They know
+    things about local deaths and history that most people don't. Ask them about the
+    1925 deaths or any other suspicious deaths connected to the Montrose family.
+  baker: A local baker who seems drawn to this place. You've probably seen them around
+    town. Ask them what brought them here—their story might connect to things you've
+    noticed.
 starting_items: []
