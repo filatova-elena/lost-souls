@@ -12,17 +12,11 @@ background: |-
 objectives:
   main: main_quest
   private: minor_doctor_and_patient
-strategy: Your Expert Medical skill lets you interpret pharmaceutical formulas and analyze death certificates. Your knowledge
-  of the Crane family gives you access to family secrets. Share what you discover—others' expertise can help verify and contextualize
-  your findings.
+strategy: Your ⚕️ Expert Medical skill lets you read clues others can't—pharmaceutical formulas, death certificates, medical records. Your 👥 Crane connection gives you access to clues about the Crane family that others can't read. But you won't be able to read everything. Find players whose skills complement yours, and trade what you know for what you're missing.
 relationships:
-  mortician: They have death records from 1925. Combine your medical expertise with their records to understand what really
-    happened.
-  professor: They can identify plants and poisons. Consult them about botanical ingredients in Sebastian's purchase ledgers
-    to understand what he was working with.
-  tarotreader: Their ancestor dismissed women like Alice as hysterical. You have strong feelings about that. But they might also have records about Alice's "treatment" that could reveal what she actually experienced.
-  others: Your medical expertise makes you valuable to the investigation. Share what you're discovering about your family—it
-    might be the key to solving this mystery.
+  fiduciary: They sent you a box of old papers that turned your family history upside down. They know more about your family's estate records than you do—and you have questions.
+  mortician: Their family has handled deaths in this town for over a century. You're a doctor investigating deaths from 1925. They deal with the same bodies from the other side of the table.
+  astrologer: They've been researching someone connected to your family—someone you've only recently learned existed. They seem to admire this person. You're not sure how you feel about that yet.
 starting_items:
 - name: Sebastian Crane's Birth Certificate
   link: ../clue/documents/sebastian_birth_certificate.html

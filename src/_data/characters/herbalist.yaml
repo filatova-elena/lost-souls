@@ -12,9 +12,9 @@ background: |-
 objectives:
   main: main_quest
   private: minor_elixir_of_love
-strategy: Your Expert Botanical skill lets you identify plants and understand their properties. Your spiritual sensitivity gives you an intuitive connection to the garden and the supernatural world.
+strategy: Your 🌿 Expert Botanical skill lets you read clues others can't—botanical specimens, plant identification, garden notes. Your 🔮 Basic Spiritual skill gives you some access to vision clues. But you won't be able to read everything. Find players whose skills complement yours, and trade what you know for what you're missing.
 relationships:
-  professor: You're two sides of the same coin—they study plants in textbooks, you study them in the dirt.
-  doctor: They have medical expertise that can help you understand the effects of some of the botanical ingredients on the human body.
-  psychic: Your spiritual sensitivity resonates with theirs. You sense things through plants the way they sense things through spirits. Together you might understand the deeper forces at work in this place.
+  professor: You study plants in the dirt, they study them in textbooks. You're both trying to understand the same garden—but they have the academic context and you have the hands-on instinct.
+  psychic: They sense things through spirits the way you sense things through plants—memory stored in living things. You found something growing on these grounds that shouldn't be here. They might understand why it's still alive.
+  astrologer: They see Sebastian's work through celestial alchemy—star charts and sacred timing. You see it through the soil—what he planted, what he cultivated. Different languages for the same mystery.
 starting_items: []

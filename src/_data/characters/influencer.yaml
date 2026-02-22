@@ -8,20 +8,13 @@ skills:
   - history_2
   - is_character_influencer
 background: |-
-  You run a popular series called "**Long Beach Urban Legends & Mysteries**" covering local history, unsolved cases, and supernatural claims (which you approach skeptically). You've done episodes on: The **Haunted Montrose Mansion**—ghostly sightings, rumors of tragedy; The Mysterious **Sullivan Bakery Fire**—suspicious 1990s fire that destroyed a generations-old bakery; The **Romano Treasure** Legend—mob family wealth that supposedly escaped the IRS; Cursed Objects & Fatal Timing—featured your friend the Clockmaker and their mysterious pocket watch; The Vanishing Bride—a wealthy woman who disappeared in 1925 then died mysteriously; Long Beach Harbor Ghosts—bootleggers and smugglers at the Port; The Psychic Sisters—the famous Laveau family and 1920s spiritualism. Your latest research: **Three mysterious deaths in October 1925**. All at the same mansion. All within 11 days. And nobody talks about it. When you heard about this investigation at the Montrose mansion, you knew you had to be here. You brought the Clockmaker (who's obsessed with the timing). You're friends with the Baker (featured their bakery on your food channel). This is going to be your best episode yet.
+  You run two popular series: "**Long Beach Urban Legends & Mysteries**" covering local history, unsolved cases, and supernatural claims (which you approach skeptically), and a food channel featuring the best local spots in Long Beach—from **Rosie's Tamales** on 4th Street to **Sweet Rose Bakery** to the Vietnamese coffee shops on Anaheim. You've done mystery episodes on: The **Haunted Montrose Mansion**—ghostly sightings, rumors of tragedy; The Mysterious **Sullivan Bakery Fire**—suspicious 1990s fire that destroyed a generations-old bakery; The **Romano Treasure** Legend—mob family wealth that supposedly escaped the IRS; Cursed Objects & Fatal Timing—featured your friend the Clockmaker and their mysterious pocket watch. Your latest research: **Three mysterious deaths in October 1925**. All at the same mansion. All within 11 days. And nobody talks about it. When you heard about this investigation at the Montrose mansion, you knew you had to be here. You brought the Clockmaker (who's obsessed with the timing). You're friends with the Baker (featured Sweet Rose Bakery on your food channel). This is going to be your best episode yet.
 objectives:
   main: main_quest
   private: minor_bakery_fire
-strategy: Your Expert Rumors skill gives you keys to unlock rumor treasure chests. Your Expert History skill helps with research
-  and source verification. You have access to rumors others don't—share them and let others help separate truth from speculation.
+strategy: Your 🗝️ Rumor skill gives you access to **rumor chests** hidden around the mansion—unlock them with the key attached to your character card. These contain gossip, tips, and leads that others can't access. Your 📜 Expert History skill lets you read historical clues others can't. But you won't be able to read everything. Find players whose skills complement yours, and trade what you know for what you're missing.
 relationships:
-  clockmaker: You featured them in your series and brought them here. They're obsessed with timing patterns. Your research
-    skills complement their mystical insights, and you may have documented crucial evidence without realizing it.
-  baker: You featured their bakery on your food channel and you're friends. You researched the Sullivan bakery fire for your
-    mysteries series—share your research to help them understand what happened to their family.
-  psychic: You covered the Laveau family psychics in an episode. Your skeptical approach can help verify their claims, while
-    their spiritual insights provide unique perspectives. Together you can separate fact from speculation.
-  antiquarian: They knew the Sullivans before the fire and have been collecting documents about the bakery for years. Compare notes—between your investigation and their firsthand memories, you might finally understand what really happened that night.
-  others: Your documentation skills and research archives make you valuable to the investigation. Share your findings—your
-    research combined with others' knowledge could build a complete picture of what happened.
+  clockmaker: Your friend—you featured them and their mysterious pocket watch in your series. They think the universe runs on cosmic timing. You think that's a stretch. But they keep finding things that are hard to explain away.
+  baker: You featured their bakery and their rose bread recipe on your food channel. Interesting story, you remember.
+  antiquarian: They run an antique shop in the neighborhood and they've sold you old photographs and clippings over the years. They've been here longer than almost anyone and they remember things about this neighborhood that nobody else does.
 starting_items: []

@@ -1,0 +1,20 @@
+id: detective
+title: The Detective
+image: assets/images/detective.png
+personality_short: Dogged investigator building a case against a powerful family.
+personality: Dogged investigator building a case against a powerful family. You follow evidence, not stories.
+skills:
+  - legal_2
+  - history_1
+  - is_character_detective
+background: |-
+  You've been investigating the **Montrose family** for months. On the surface, they're old Long Beach money—respectable, philanthropic, well-connected. But you've been pulling threads, and the fabric is rotting underneath. It started with a tip. An anonymous source pointed you toward irregularities in the **Montrose Family Trust**—payments that don't add up, assets that moved in suspicious ways, and a chain of inheritance that gets fuzzy the further back you go. Who actually owns the estate? The legal trail should be straightforward for a family this prominent, but it isn't. Then you started finding more. The Montroses have a pattern. When something threatens their reputation, it **disappears**. People. Records. Problems. You can't prove it yet. But you have fragments. When you heard about the investigation at the **Montrose mansion**—and that people from multiple connected families would be gathering in one place—you saw your opportunity. Old houses hold old evidence. And people with secrets tend to reveal them when they're surrounded by other people with secrets. You're here to build a case.
+objectives:
+  main: main_quest
+  private: major_rose_bread_legacy
+strategy: Your ⚖️ Expert Legal skill lets you read clues others can't—trust documents, financial records, estate papers. Your 📜 Basic History skill gives you some additional access to historical clues. But you won't be able to read everything. Find players whose skills complement yours, and trade what you know for what you're missing.
+relationships:
+  mortician: Their family has handled the dead in this town for a century. You're building a case that involves deaths from 1925. If anyone has private records about what really happened to those bodies, it's them.
+  fiduciary: They manage the Montrose family estates and they've been going through old financial records for years. You've been investigating irregularities in those same estates. They have documents you need to see.
+  journalist: You're both circling the Montrose family—they want a story, you want a case. Different goals, but the evidence trail is the same. Comparing notes could crack this thing open for both of you.
+starting_items: []

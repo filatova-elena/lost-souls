@@ -14,11 +14,10 @@ background: |-
   You're a psychotherapist specializing in **generational trauma**—the way pain, secrets, and unresolved grief pass down through families like invisible inheritance. You've published papers on how unspoken tragedies shape descendants who never even knew what happened. When you heard about the **Montrose mansion** investigation—three deaths in eleven days, a century of haunting, and multiple families still entangled in the aftermath—you knew this was the case study of a lifetime. You've been researching the families connected to the 1925 tragedy: the **Montroses**, the **Cranes**, the **Whitmores**, the **Monroes**, the **Hartleys**. The patterns are textbook. Name changes to escape shame. Obsessive preservation of artifacts. These people don't just carry history—they're **living** it. You came here to observe, to understand, to document. But the more you learn about these families, the more you realize: understanding the psychology might be the key to understanding the murders.
 objectives:
   main: main_quest
-  private: minor_generational_trauma
-strategy: Your personal connections to five different families give you broad insight into their histories and psychological patterns. Your investigation could benefit from their knowledge and insights.
+  private: major_secret_baby
+strategy: Your 👥 connections to five different families (Montrose, Crane, Whitmore, Monroe, Hartley) give you access to clues about those families that others can't read. But you won't be able to read everything. Find players whose skills complement yours, and trade what you know for what you're missing.
 relationships:
-  doctor: They changed their family name to escape a scandal. Classic avoidance pattern. They're carrying guilt that isn't even theirs. Learning what they know about Crane family dynamics could help in understanding the bigger picture of the murders.
-  baker: An orphan searching for identity, drawn to a place they can't explain. The generational pull is undeniable. Their journey is central to this story.
-  dressmaker: Their obsessive fixation on Cordelia Montrose is a textbook case of inherited grief. Elias Monroe's unrequited love has echoed through generations. Their family knowledge combined with your insight could reveal important truths.
-  explorer: They feel drawn to this place without understanding why. There's something deeper than treasure hunting going on.
+  baker: An orphan who bakes the same bread recipe every day like a ritual. They don't know where they come from, but they showed up at this mansion like it was pulling them in. You've seen this before—people drawn to places connected to trauma they don't consciously remember.
+  dressmaker: They've kept a dead woman's wedding dress preserved for a hundred years, passed down through their family like a holy relic. That's not sentimentality. That's unresolved grief with a heartbeat.
+  portraitartist: They were hired to restore paintings and ended up unable to leave. They talk about Cordelia Montrose the way people talk about someone they've lost—not someone who died a century ago.
 starting_items: []

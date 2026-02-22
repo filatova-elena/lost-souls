@@ -12,18 +12,9 @@ background: |-
 objectives:
   main: main_quest
   private: major_romano_treasure
-strategy: Your Expert History skill helps with map reading, timeline reconstruction, and historical context. Your Basic Art skill
-  helps with artifact evaluation and recognizing valuable objects. What you find needs context—others can help interpret the significance of
-  your discoveries.
+strategy: Your 📜 Expert History skill lets you read clues others can't—historical records, maps, and timelines. Your 🎨 Basic Art skill gives you some access to artifact and object clues. But you won't be able to read everything. Find players whose skills complement yours, and trade what you know for what you're missing.
 relationships:
-  artcollector: They're also looking for the Romano treasure (it's their family fortune). Combine your resources—their family
-    connections and your exploration skills could help locate what you're both seeking.
-  professor: You're friends who complement each other. They're practical and action-oriented, you're theoretical and methodical.
-    Your different approaches help solve complex problems when you combine forces.
-  fiduciary: They have estate records and property documents. They can help identify where valuable items were hidden or stored.
-  baker: Something about them feels familiar. There might be a connection you both need to explore. Share your observations—together
-    you might understand the link.
-  fixer: They've seen the actual Romano financial records from the IRS investigations. They know what was seized and what was missed. That information has leverage—they might know where the treasure really is, or at least where it isn't.
-  tarotreader: Their last name is Whitmore too. You noticed that immediately. Are they family? Do they know about Alice? There's a conversation waiting to happen.
-  portraitartist: They're romantic where you're practical. But they might help you investigate the physical spaces of the mansion—hidden rooms, concealed items, things tucked behind walls where someone once hid a portrait.
+  artcollector: They're connected to the Romano family. You're hunting for the Romano treasure. They know the family history from the inside—you've been piecing it together from the outside. You need each other.
+  professor: You're friends—they chase species, you chase legends. You've been all over the mansion grounds and you're finding things that need a scientist's eye to make sense of.
+  fixer: They've handled legal work connected to the Romano family and they've seen the actual financial records from the IRS investigations. You've been hunting for what the IRS missed. Comparing notes could point you both in the right direction.
 starting_items: []

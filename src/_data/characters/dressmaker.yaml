@@ -13,17 +13,9 @@ background: |-
 objectives:
   main: main_quest
   private: minor_elias_unrequited_love
-strategy: Your knowledge of the Montrose family gives you complete understanding of Cordelia and her family history. Your
-  Basic Spiritual ability helps you sense emotional connections. Your insights are valuable—others can help verify and expand
-  on what you know.
+strategy: Your 👥 Montrose and Monroe connections give you access to clues about Cordelia Montrose and Elias Monroe that others can't read. Your 🔮 Basic Spiritual skill gives you some access to vision clues. But you won't be able to read everything. Find players whose skills complement yours, and trade what you know for what you're missing.
 relationships:
-  heiress: She lives in the Montrose mansion and might have other items that belonged to Cordelia. Examine these items together
-    to understand the mansion's history.
-  doctor: You know Sebastian Crane was a pharmacist, and his brother—the Town Doctor—was a physician. They might have family
-    information about the Crane family and the engagement. Share your knowledge—you both have pieces of this puzzle.
-  fiduciary: They have records about the Montrose family and the engagement. Their documents could explain why Cordelia chose
-    Sebastian over Elias and what really happened to Cordelia.
-  baker: Their ancestor knew Cordelia's best friend, Alice Whitmore. Their family stories or records might shed light on Cordelia's
-    disappearance and what changed her.
-  portraitartist: They're obsessed with Cordelia too—through the portrait, through the hidden painting. You understand their fixation better than anyone. Compare notes on Cordelia's admirers and what they reveal about her.
+  psychic: If anyone in this mansion can reach Cordelia's spirit, it's them. You've spent your whole life preserving her memory through objects. They might be able to reach her directly.
+  heiress: They live in the Montrose mansion—the place where your ancestor knew Cordelia. The house is full of a century's worth of belongings, and some of them might connect to the story you've been carrying your whole life.
+  portraitartist: You're both drawn to Cordelia, but from different angles—you through what your family passed down, they through something they found in the mansion. Comparing what you each know might reveal more than either of you has alone.
 starting_items: []

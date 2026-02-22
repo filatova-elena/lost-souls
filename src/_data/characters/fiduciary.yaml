@@ -8,21 +8,13 @@ skills:
   - medical_1
   - is_character_fiduciary
 background: |-
-  You work for a generational wealth management firm that has managed the estates of the **Montrose, Crane, and Whitmore families** for decades. These properties have been a professional frustration—the haunted mansion has been an eyesore and wasted asset for generations. While researching the Montrose estate, you traced the lineage to find the Heiress and contacted her about the unclaimed property. You hoped she'd take possession and finally do something with it. During your research, you discovered records about the **Crane family name change**—they became the **Sinclairs** in the 1960s, apparently for political reasons. You found a box of old papers connecting Dr. Thaddeus Crane to a brother named **Sebastian Crane**. You've never heard of **Sebastian Crane**, and you've been managing the estates for years! You sent this box to Dr. Sinclair, curious about their reaction. Now you've noticed some disturbing inconsistencies in **death records from 1925**, and you're determined to finally understand what happened. You've heard rumors about the ghosts haunting the mansion, and you can't shake off a strange feeling.
+  You work for a generational wealth management firm that has managed the estates of the **Montrose, Crane, and Whitmore families** for decades. These properties have been a professional frustration—the haunted mansion has been an eyesore and wasted asset for generations. While researching the Montrose estate, you traced the lineage to find the Heiress and contacted her about the unclaimed property. You hoped she'd take possession and finally do something with it. During your research, you discovered records about the **Crane family name change**—they became the **Sinclairs** in the 1960s, apparently for political reasons. You found a box of old papers connecting Dr. Thaddeus Crane to a brother named **Sebastian Crane**. You've never heard of **Sebastian Crane**, and you've been managing the estates for years! Now you've noticed some disturbing inconsistencies in **death records from 1925**, and you're determined to finally understand what happened. You've heard rumors about the ghosts haunting the mansion, and you can't shake off a strange feeling.
 objectives:
   main: main_quest
   private: major_rose_bread_legacy
-strategy: Your Expert Legal skill lets you analyze estate documents and financial records. Your Basic Medical skill provides
-  limited forensic understanding. Share your documents—others' expertise can reveal what you might miss.
+strategy: Your ⚖️ Expert Legal skill lets you read clues others can't—estate documents, financial records, trust papers. Your ⚕️ Basic Medical skill gives you some access to forensic and clinical clues. But you won't be able to read everything. Find players whose skills complement yours, and trade what you know for what you're missing.
 relationships:
-  heiress: You found her and gave her the Montrose mansion. She has access to the property and might have discovered important
-    items. Compare what she's found with your estate records to understand the full inheritance picture.
-  doctor: You sent them the mysterious box about Sebastian Crane. They might have additional family information. Share your
-    estate records—together you can piece together the Crane family history.
-  mortician: Payment records show someone paid their ancestor in October 1925. They have death records that could reveal important
-    details. Connect your financial records with their medical evidence to see the full story.
-  artcollector: Their family records might connect to the Crane family business dealings. The Romanos and Cranes may have
-    worked together. Compare notes to understand the full business network.
-  fixer: They've been cleaning up the same estates you manage, but from the other side—sealing records, managing claims. Between your open records and their sealed files, you might be able to reconstruct the complete financial picture from 1925.
-  antiquarian: They've collected Sullivan family documents over the years. Your estate records might connect to their collection. Together you could trace the Sullivan family line back further than either of you expected.
+  baker: They showed up to this investigation with homemade bread and a story about an old diary. Something about them feels oddly relevant to the estate records you've been combing through, though you can't quite put your finger on why.
+  doctor: You sent them a box of old family papers recently. Their reaction told you there's more to the Crane family story than what's in your files. You want to know what they found.
+  journalist: They've been covering the Montrose family for years and they've noticed the same gaps in the records that you have. You have the estate documents. They have the public record. Together you might see the full picture.
 starting_items: []
