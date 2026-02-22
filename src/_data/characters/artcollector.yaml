@@ -12,18 +12,9 @@ background: |-
 objectives:
   main: main_quest
   private: major_romano_treasure
-strategy: Your knowledge of the Romano family gives you complete understanding of their smuggling operations. Your Expert Art
-  skill helps with art authentication and provenance. Your family knowledge is key—others' exploration and estate records
-  can help locate what you're seeking.
+strategy: Your 🎨 Expert Art skill lets you read clues others can't—art authentication, provenance, artifact evaluation. Your 👥 Romano connection gives you access to clues about the Romano family that others can't read. But you won't be able to read everything. Find players whose skills complement yours, and trade what you know for what you're missing.
 relationships:
-  explorer: They're also searching for the Romano treasure. Share information—your family knowledge combined with their exploration
-    skills could help locate what you're both seeking.
-  fiduciary: They manage old estates and have information about business dealings between the Romanos and other families.
-    Their records could help identify where assets might have been hidden.
-  doctor: You heard rumors that your ancestor did business with a doctor or pharmacist back in the 1920s. Their family records
-    might reveal those business connections.
-  professor: The Romano operation imported exotic goods. They can identify what your family was smuggling and help you understand
-    the full scope of the operation.
-  fixer: They've done legal work for your family for years—cleaning up after the IRS seizures. You trust them, or at least you think you can control them. But they might have found something in those old case files that you don't know about.
-  portraitartist: You're both art experts but from different worlds—you see provenance and value, they see emotion and intention. Together you can decode the full story behind any artifact. But you might clash over whether art is about money or feeling.
+  explorer: They've been hunting for the Romano treasure from the outside—maps, legends, historical records. You know the family from the inside. Neither of you has the full picture alone.
+  mortician: Their family has been in this town as long as yours. The Romanos and the mortuary go back generations—your family kept them busy in the old days. They might have records that shed light on what happened to your family's assets.
+  fixer: They've done legal work for your family for years. Recently they found something in old case files that got them excited enough to show up here. You want to know what it is.
 starting_items: []

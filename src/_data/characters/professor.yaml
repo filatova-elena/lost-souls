@@ -13,16 +13,9 @@ background: |-
 objectives:
   main: main_quest
   private: minor_elixir_of_love
-strategy: Your Expert Botanical skill lets you identify poisonous plants and understand extraction methods. Your Basic Medical
-  skill provides limited toxicology knowledge. Your botanical expertise is crucial—others can help you understand how these
-  poisons were actually used.
+strategy: Your 🌿 Expert Botanical skill lets you read clues others can't—botanical specimens, plant identification, toxicology notes. Your 👥 Hartley connection gives you access to clues about Professor Hartley's consultations that others can't read. But you won't be able to read everything. Find players whose skills complement yours, and trade what you know for what you're missing.
 relationships:
-  explorer: You're friends who complement each other. They're practical and action-oriented, you're theoretical and methodical.
-    Your different approaches help solve complex problems when you combine forces.
-  doctor: They have medical expertise and can interpret pharmaceutical formulas. Together you can understand what the poison
-    would actually do to a body.
-  mortician: They have records of symptoms and causes of death. Your botanical knowledge combined with their death investigation
-    skills could reveal the truth.
-  artcollector: The Romano family imported exotic botanicals. Their shipping records might show where the poison plants came
-    from. Compare notes to trace the source.
+  explorer: You're friends—they chase legends, you chase species. They've been all over the mansion grounds and might have found things they couldn't identify.
+  clockmaker: They're obsessed with the timing of the 1925 events. You're obsessed with the plants. Different pieces of the same puzzle—what they know about when things happened might help you understand why certain ingredients were being sourced.
+  herbalist: You study plants in textbooks, they study them in the dirt. Between their fieldwork and your research, you might piece together what he was really making.
 starting_items: []

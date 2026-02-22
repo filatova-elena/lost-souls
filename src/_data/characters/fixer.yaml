@@ -12,10 +12,9 @@ background: |-
 objectives:
   main: main_quest
   private: major_romano_treasure
-strategy: Your Expert Legal skill lets you analyze contracts, trace payments, and spot cover-ups in financial records. Your Romano family knowledge gives you insight into their operations and connections. You know how things get hidden—now use that knowledge to find what others buried.
+strategy: Your ⚖️ Expert Legal skill lets you read clues others can't—contracts, financial records, estate papers. Your 👥 Romano connection gives you access to clues about the family that others can't read. But you won't be able to read everything. Find players whose skills complement yours, and trade what you know for what you're missing.
 relationships:
-  artcollector: They're Romano family. You've done work for them. They trust you—or at least, they think they can control you. Share what you've found in the case files, but be careful about what you reveal.
-  fiduciary: They manage the same estates you've been cleaning up after. Between your sealed files and their open records, you might be able to reconstruct the full financial picture from 1925.
-  mortician: They have death records from 1925. If the Romano treasure is connected to those deaths, their records might reveal the link. Cross-reference your financial findings with their medical evidence.
-  explorer: They're hunting for Romano treasure. You've seen the actual financial records—you know what the IRS seized and what they missed. That information has leverage.
+  artcollector: They're Romano family. You've done work for them for years. Now you've both shown up at the same mansion chasing the same missing fortune—time to compare what you each know.
+  explorer: They've been hunting the Romano treasure through historical research and legwork. You've been staring at the actual financial records. What the IRS seized and what was supposed to be there don't match—and they might know where to look for what's missing.
+  detective: They investigate powerful families. You clean up after them. Different sides of the same business. They might have stumbled onto things in their Montrose investigation that connect to what you're looking for.
 starting_items: []

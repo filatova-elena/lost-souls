@@ -12,16 +12,9 @@ background: |-
 objectives:
   main: main_quest
   private: major_secret_baby
-strategy: Your Expert Rumors skill gives you keys to unlock rumor treasure chests. Your knowledge of the Montrose family provides
-  complete understanding of their history. You have unique access to both rumors and the mansion—others can help interpret
-  what you discover.
+strategy: Your 🗝️ Rumor skill gives you access to **rumor chests** hidden around the mansion—unlock them with the key attached to your character card. Your 👥 Montrose connection gives you access to clues about the family that others can't read. But you won't be able to read everything. Find players whose skills complement yours, and trade what you know for what you're missing.
 relationships:
-  psychic: You hired them to help with the ghosts. They understand spiritual matters and can communicate with the spirits.
-    Together you can help the ghosts find peace and solve the mystery.
-  fiduciary: They found you and gave you this mansion. Their estate records and legal documents could help explain the property's
-    history. Share what you've discovered in the mansion—it might match their records.
-  baker: Something about them feels important or familiar. They might have a connection to the Montrose family. Explore this
-    together—there could be shared history you both need to understand.
-  antiquarian: The Montrose name keeps appearing in their Sullivan documents. They live in the Montrose mansion. There's a connection here—help each other find it.
-  portraitartist: You hired them to restore the paintings. They might know things about the portrait—who commissioned it, why it was hidden. And they have access to every room in the mansion through their work.
+  psychic: You hired them to deal with the ghosts. Whatever the spirits haunting your mansion have been trying to say, you've been hearing it for months. Maybe they can finally translate.
+  mortician: They're unnervingly calm about everything, which you find both irritating and oddly reassuring. They seem to know a lot about old death records—and you're starting to think the deaths in your mansion's past are the key to everything.
+  portraitartist: You hired them to restore the paintings. They've been working in the mansion for weeks now and they've become slightly obsessed with one portrait in particular. You want to know what they've found—it's your house, after all.
 starting_items: []

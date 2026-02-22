@@ -4,6 +4,7 @@ image: assets/images/townperson.png
 is_player: false
 personality_short: Mysterious elder rumored to be a witch.
 personality: Mysterious elder rumored to be a witch. You've lived in Long Beach for generations and know more than you let on.
+is_special_character: true
 skills:
   - botanical_2
   - spiritual_2
@@ -23,7 +24,5 @@ background: |-
   Your name is **Gertrude Green**, you often go by G.G. You're the one everyone whispers about. Rumors say you're a witch. You've lived in Long Beach longer than anyone can remember, and you know things. Things about the families. Things about the past. Things about what really happened in 1925. You've watched generations come and go, and you've kept your secrets close. But now, with the investigation at the Montrose mansion, it's time to share what you know.
 objectives:
   main: main_quest
-  private: main_quest
-strategy: You have all the skills and knowledge needed to solve this mystery. Your expertise spans every domain, and your personal connections reach into every family. Use your knowledge wisely—you know more than anyone, but revealing too much too soon could change everything.
 relationships: {}
 starting_items: []

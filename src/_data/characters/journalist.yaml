@@ -1,0 +1,20 @@
+id: journalist
+title: The Journalist
+image: assets/images/journalist.png
+personality_short: Local reporter who smells a story bigger than anyone realizes.
+personality: Local reporter who smells a story bigger than anyone realizes. You've been covering the Montroses for years.
+skills:
+  - history_2
+  - rumors_1
+  - is_character_journalist
+background: |-
+  You're a reporter for the local news. City council meetings, school board budgets, ribbon cuttings. Not glamorous. But you've been covering this city long enough to know where the real stories hide—underneath the official ones. You've written about the **Montrose family** more than anyone. Society page fluff, mostly. But over the years, you've noticed things. Questions that get deflected. Records that go missing. And one thing that's always nagged at you: for a family this prominent, the Montrose family tree has gaps. Names that appear and disappear, for instance. When the **Heiress** moved into the old Montrose mansion and started making noise about ghosts and investigations, your editor sent you to cover it. "Fun Halloween piece," they said. "Haunted mansion, local color." But this isn't a Halloween piece. There are people here from families you recognize from your Montrose research. There's a detective who's been circling the same family you have. There are documents, records, artifacts from **1925** surfacing in the same place, at the same time. This is the story you've been waiting for. The real one. The one underneath all those society page puff pieces. You just need to find it before someone tells you to stop looking.
+objectives:
+  main: main_quest
+  private: rose_bread_legacy
+strategy: Your 🗝️ Rumor skill gives you access to **rumor chests** hidden around the mansion—unlock them with the key attached to your character card. These contain gossip, tips, and leads that others can't access. Your 📜 Expert History skill lets you read historical clues others can't. But you won't be able to read everything. Find players whose skills complement yours, and trade what you know for what you're missing.
+relationships:
+  heiress: They're a Montrose living in the mansion. You've been covering their family for years and you've noticed things that don't add up—gaps in the family history that nobody wants to explain. They might not even know what they're sitting on.
+  fiduciary: They manage the Montrose family estates and they've been going through old records for decades. If anyone has the paperwork behind the family tree gaps you've noticed, it's them.
+  detective: You're both circling the Montrose family—you want a story, they want a case. Different goals, but the evidence trail is the same. Comparing notes could crack this thing open for both of you.
+starting_items: []

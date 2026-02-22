@@ -13,10 +13,9 @@ background: |-
 objectives:
   main: main_quest
   private: minor_bakery_fire
-strategy: Your Basic History skill helps with research and understanding local context. Your Basic Art skill lets you evaluate and date old objects. Your personal connection to the Sullivan family gives you pieces of their story. Share what you've collected—others can help you see the bigger picture.
+strategy: Your 📜 Basic History skill helps with research and local context. Your 🎨 Basic Art skill lets you evaluate and date old objects. Your 👥 Eleanor connection gives you access to clues about the Sullivan family that others can't read. But you won't be able to read everything. Find players whose skills complement yours, and trade what you know for what you're missing.
 relationships:
-  baker: They're connected to Eleanor's story somehow—you can sense it. What you have in your collection might be the missing pieces of their identity, though you don't yet know how they fit into the Sullivan family story.
-  influencer: They researched the Sullivan bakery fire for their series. Compare notes—between your firsthand memories and their investigation, you might finally understand what really happened that night.
-  fiduciary: They manage old estates and family records. Your Sullivan documents might connect to their files. Together you could trace the Sullivan family line back further than either of you expected.
-  heiress: The Montrose name keeps appearing in your Sullivan papers. She lives in the Montrose mansion. There's a connection here—help each other find it.
+  influencer: They've come into your shop over the years looking for material for their Long Beach mysteries series. They've been researching the Sullivan bakery fire—a story you know firsthand, not from clippings.
+  baker: You've seen them around the neighborhood. There's something about them that tugs at you—something familiar you can't quite place. They bake bread that smells like Saturday mornings from thirty years ago.
+  journalist: They cover local history for the paper and you've been a source for them before. You trust them to care about getting the story right. And the story of what happened to the Sullivan bakery deserves to be gotten right.
 starting_items: []
