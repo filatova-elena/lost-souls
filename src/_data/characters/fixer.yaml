@@ -1,20 +1,44 @@
 id: fixer
 title: The Fixer
-image: assets/images/fixer.png
+image: assets/images/characters/fixer.png
 personality_short: Smooth operator who makes problems disappear.
-personality: Smooth operator who makes problems disappear. You found something in old case files that brought you here.
+personality: Smooth operator who makes problems disappear. You found something in
+  old case files that brought you here.
 skills:
-  - legal_2
-  - personal_romano
-  - is_character_fixer
-background: |-
-  You're a fixer. Not officially, of course—on paper you're a lawyer specializing in "legacy estate resolution." But everyone in certain circles knows what that really means. When old money has old problems—sealed records, inconvenient documents, family skeletons rattling too loud—they call you. You make things clean. You make things quiet. You've handled work for the **Romano family** for years. Nothing dramatic—tidying up loose ends from the IRS seizures, managing claims against old assets, keeping certain documents from surfacing. Routine work. Until last month, when you were going through a box of sealed case files from the **1960s Romano investigations**. Buried in the paperwork, you found something that made your heart race. Financial discrepancies. The IRS recovered less than the Romano family supposedly had. Where did the rest go? You know what hidden wealth looks like. When you heard about the investigation at the **Montrose mansion**—where the Romanos did business in the 1920s—you came to see what was buried. Because if there's one thing you've learned in this business, it's that old secrets have value. And this one could be worth millions.
+- legal_2
+- personal_romano
+- is_character_fixer
+background: You're a fixer. Not officially, of course—on paper you're a lawyer specializing
+  in "legacy estate resolution." But everyone in certain circles knows what that really
+  means. When old money has old problems—sealed records, inconvenient documents, family
+  skeletons rattling too loud—they call you. You make things clean. You make things
+  quiet. You've handled work for the **Romano family** for years. Nothing dramatic—tidying
+  up loose ends from the IRS seizures, managing claims against old assets, keeping
+  certain documents from surfacing. Routine work. Until last month, when you were
+  going through a box of sealed case files from the **1960s Romano investigations**.
+  Buried in the paperwork, you found something that made your heart race. Financial
+  discrepancies. The IRS recovered less than the Romano family supposedly had. Where
+  did the rest go? You know what hidden wealth looks like. When you heard about the
+  investigation at the **Montrose mansion**—where the Romanos did business in the
+  1920s—you came to see what was buried. Because if there's one thing you've learned
+  in this business, it's that old secrets have value. And this one could be worth
+  millions.
 objectives:
   main: main_quest
   private: major_romano_treasure
-strategy: Your ⚖️ Expert Legal skill lets you read clues others can't—contracts, financial records, estate papers. Your 👥 Romano connection gives you access to clues about the family that others can't read. But you won't be able to read everything. Find players whose skills complement yours, and trade what you know for what you're missing.
+strategy: Your ⚖️ Expert Legal skill lets you read clues others can't—contracts, financial
+  records, estate papers. Your 👥 Romano connection gives you access to clues about
+  the family that others can't read. But you won't be able to read everything. Find
+  players whose skills complement yours, and trade what you know for what you're missing.
 relationships:
-  artcollector: They're Romano family. You've done work for them for years. Now you've both shown up at the same mansion chasing the same missing fortune—time to compare what you each know.
-  explorer: They've been hunting the Romano treasure through historical research and legwork. You've been staring at the actual financial records. What the IRS seized and what was supposed to be there don't match—and they might know where to look for what's missing.
-  detective: They investigate powerful families. You clean up after them. Different sides of the same business. They might have stumbled onto things in their Montrose investigation that connect to what you're looking for.
+  artcollector: They're Romano family. You've done work for them for years. Now you've
+    both shown up at the same mansion chasing the same missing fortune—time to compare
+    what you each know.
+  explorer: They've been hunting the Romano treasure through historical research and
+    legwork. You've been staring at the actual financial records. What the IRS seized
+    and what was supposed to be there don't match—and they might know where to look
+    for what's missing.
+  detective: They investigate powerful families. You clean up after them. Different
+    sides of the same business. They might have stumbled onto things in their Montrose
+    investigation that connect to what you're looking for.
 starting_items: []

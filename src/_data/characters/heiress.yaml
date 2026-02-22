@@ -1,20 +1,44 @@
 id: heiress
 title: The Heiress
-image: assets/images/heiress.png
+image: assets/images/characters/heiress.png
 personality_short: Wealthy, dramatic socialite who lives in the haunted mansion.
-personality: Wealthy, dramatic socialite who lives in the haunted mansion. Terrified but too proud to admit you made a mistake.
+personality: Wealthy, dramatic socialite who lives in the haunted mansion. Terrified
+  but too proud to admit you made a mistake.
 skills:
-  - rumors_1
-  - personal_montrose
-  - is_character_heiress
-background: |-
-  You're a distant relative of the **Montrose family**—the mansion came to you through a complicated inheritance chain. Your family isn't particularly close; you barely knew about this Long Beach property until the Fiduciary tracked you down and informed you that you'd inherited it. At first, you were thrilled. A mansion! Your own place! Independence from your annoying family! You moved in immediately, thinking it would be a glamorous fresh start. Then you realized: it's **haunted**. Very **haunted**. Doors open by themselves. You hear footsteps. Cold spots in certain rooms. Sometimes you see figures in **1920s clothing**. One room in particular—you refuse to go in there anymore. Something terrible happened in that room. You're scared, but also too proud to admit you made a mistake and move back. So you hired **Margo Laveau**, the psychic medium, to "deal with it." Now all these people have shown up to investigate. Part of you is relieved (safety in numbers), part of you is annoyed (this is YOUR house), and part of you is terrified of what they might discover. What happened in your mansion **100 years ago**? And why won't the **ghosts** leave you alone?
+- rumors_1
+- personal_montrose
+- is_character_heiress
+background: 'You''re a distant relative of the **Montrose family**—the mansion came
+  to you through a complicated inheritance chain. Your family isn''t particularly
+  close; you barely knew about this Long Beach property until the Fiduciary tracked
+  you down and informed you that you''d inherited it. At first, you were thrilled.
+  A mansion! Your own place! Independence from your annoying family! You moved in
+  immediately, thinking it would be a glamorous fresh start. Then you realized: it''s
+  **haunted**. Very **haunted**. Doors open by themselves. You hear footsteps. Cold
+  spots in certain rooms. Sometimes you see figures in **1920s clothing**. One room
+  in particular—you refuse to go in there anymore. Something terrible happened in
+  that room. You''re scared, but also too proud to admit you made a mistake and move
+  back. So you hired **Margo Laveau**, the psychic medium, to "deal with it." Now
+  all these people have shown up to investigate. Part of you is relieved (safety in
+  numbers), part of you is annoyed (this is YOUR house), and part of you is terrified
+  of what they might discover. What happened in your mansion **100 years ago**? And
+  why won''t the **ghosts** leave you alone?'
 objectives:
   main: main_quest
   private: major_secret_baby
-strategy: Your 🗝️ Rumor skill gives you access to **rumor chests** hidden around the mansion—unlock them with the key attached to your character card. Your 👥 Montrose connection gives you access to clues about the family that others can't read. But you won't be able to read everything. Find players whose skills complement yours, and trade what you know for what you're missing.
+strategy: Your 🗝️ Rumor skill gives you access to **rumor chests** hidden around the
+  mansion—unlock them with the key attached to your character card. Your 👥 Montrose
+  connection gives you access to clues about the family that others can't read. But
+  you won't be able to read everything. Find players whose skills complement yours,
+  and trade what you know for what you're missing.
 relationships:
-  psychic: You hired them to deal with the ghosts. Whatever the spirits haunting your mansion have been trying to say, you've been hearing it for months. Maybe they can finally translate.
-  mortician: They're unnervingly calm about everything, which you find both irritating and oddly reassuring. They seem to know a lot about old death records—and you're starting to think the deaths in your mansion's past are the key to everything.
-  portraitartist: You hired them to restore the paintings. They've been working in the mansion for weeks now and they've become slightly obsessed with one portrait in particular. You want to know what they've found—it's your house, after all.
+  psychic: You hired them to deal with the ghosts. Whatever the spirits haunting your
+    mansion have been trying to say, you've been hearing it for months. Maybe they
+    can finally translate.
+  mortician: They're unnervingly calm about everything, which you find both irritating
+    and oddly reassuring. They seem to know a lot about old death records—and you're
+    starting to think the deaths in your mansion's past are the key to everything.
+  portraitartist: You hired them to restore the paintings. They've been working in
+    the mansion for weeks now and they've become slightly obsessed with one portrait
+    in particular. You want to know what they've found—it's your house, after all.
 starting_items: []

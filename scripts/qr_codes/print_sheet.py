@@ -33,8 +33,9 @@ PAGE_WIDTH_IN = 8.5
 PAGE_HEIGHT_IN = 11.0
 MARGIN_IN = 0.25
 GAP_IN = 0.05
+QR_SIZE_RATIO = 0.85  # QR code size as ratio of cell size (85% = 15% margin around each QR)
 DPI = 300
-BASE_URL = "clues"  # Use relative path by default
+BASE_URL = "https://lostsouls.door66.events/clues"  # Full base URL for QR codes
 
 
 def make_print_sheet(
@@ -48,6 +49,7 @@ def make_print_sheet(
     rows=None,
     fg_color=(74, 20, 140, 255),
     bg_color=(255, 255, 255, 255),
+    qr_size_ratio=QR_SIZE_RATIO,
 ):
     """
     Generate a high-res PNG print sheet of QR codes.
@@ -121,10 +123,16 @@ def make_print_sheet(
             url, label = codes[idx]
             print(f"  [{idx + 1}/{len(codes)}] {label}")
 
+            # Generate QR code smaller than cell to create margins
+            qr_size = int(cell * qr_size_ratio)
             qr_img = _generate_qr_image(
-                url, label, cell, fg_color, bg_color
+                url, label, qr_size, fg_color, bg_color
             )
-            page.paste(qr_img, (x, y), qr_img)
+            
+            # Center the QR code within the cell
+            qr_x = x + (cell - qr_size) // 2
+            qr_y = y + (cell - qr_size) // 2
+            page.paste(qr_img, (qr_x, qr_y), qr_img)
             idx += 1
 
         # Determine output filename
@@ -198,11 +206,17 @@ def _load_yaml(yaml_path, base_url=BASE_URL):
     codes = []
     for item in data:
         clue_id = item.get("id", "")
-        # Construct URL: if base_url is empty, use relative path; otherwise use base_url
-        if not base_url:
+        # Construct URL: if base_url is empty or just "clues", use relative path; otherwise use full URL
+        if not base_url or base_url == "clues":
             url = f"clues/{clue_id}/"
         else:
-            url = f"{base_url}/{clue_id}/"
+            # Ensure base_url ends with /clues, then append clue_id
+            if base_url.endswith("/clues"):
+                url = f"{base_url}/{clue_id}/"
+            elif base_url.endswith("/clues/"):
+                url = f"{base_url}{clue_id}/"
+            else:
+                url = f"{base_url}/clues/{clue_id}/"
         codes.append((url, str(clue_id)))
 
     return codes
@@ -228,7 +242,7 @@ def main():
     source.add_argument("--codes", nargs="+", metavar="URL|LABEL",
                         help="Explicit url|label pairs")
 
-    parser.add_argument("--output", "-o", default="to_print/print_sheet.png", help="Output PNG path")
+    parser.add_argument("--output", "-o", default="to_print/qr_codes/print_sheet.png", help="Output PNG path")
     parser.add_argument("--base-url", default=BASE_URL,
                         help=f"Base URL for YAML clues (default: {BASE_URL})")
     parser.add_argument("--dpi", type=int, default=DPI, help=f"Resolution (default: {DPI})")
@@ -238,6 +252,8 @@ def main():
     parser.add_argument("--bg", default="white", help="Background color (default: white)")
     parser.add_argument("--page-width", type=float, default=PAGE_WIDTH_IN, help="Page width in inches")
     parser.add_argument("--page-height", type=float, default=PAGE_HEIGHT_IN, help="Page height in inches")
+    parser.add_argument("--qr-size-ratio", type=float, default=QR_SIZE_RATIO,
+                        help=f"QR code size as ratio of cell size (default: {QR_SIZE_RATIO}, e.g., 0.85 = 85%% of cell)")
 
     args = parser.parse_args()
 
@@ -266,6 +282,7 @@ def main():
         rows=args.rows,
         fg_color=parse_color(args.fg),
         bg_color=parse_color(args.bg, allow_transparent=True),
+        qr_size_ratio=args.qr_size_ratio,
     )
 
 

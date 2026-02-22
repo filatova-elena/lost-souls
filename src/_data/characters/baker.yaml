@@ -1,21 +1,42 @@
 id: baker
 title: The Baker
-image: assets/images/baker.png
+image: assets/images/characters/baker.png
 personality_short: Genuinely cheerful, warm, perpetually covered in flour.
-personality: Genuinely cheerful, warm, perpetually covered in flour. An orphan with a mysterious past.
+personality: Genuinely cheerful, warm, perpetually covered in flour. An orphan with
+  a mysterious past.
 skills:
-  - spiritual_1
-  - history_1
-  - personal_eleanor
-  - is_character_baker
-background: |-
-  You're an **orphan**. You never knew your parents or where you truly came from. All you have is an **old diary**—worn, fragile, precious—that somehow ended up with you. The diary was written by someone named **Eleanor**. She writes about being adopted, about not knowing her real parents. She writes about searching for identity, for belonging. You don't know if **Eleanor** was your grandmother, great-grandmother, or some other relative. But her words speak to you across the generations. The diary contains a bread recipe—"my grandmother bread recipe," **Eleanor** calls it. You've been baking this bread your whole life and today you run "Sweet Rose Bakery", which has been featured on several popular food channels. Recently, you've started having **strange feelings**. Dreams. The face of a beautiful woman with a pearl necklace calling to you. A sense that you're connected to something bigger than yourself. When you heard about the investigation at the old **Montrose mansion**, something drew you here. You don't know why, but you feel like you need to be here.
+- spiritual_1
+- history_1
+- personal_eleanor
+- is_character_baker
+background: You're an **orphan**. You never knew your parents or where you truly came
+  from. All you have is an **old diary**—worn, fragile, precious—that somehow ended
+  up with you. The diary was written by someone named **Eleanor**. She writes about
+  being adopted, about not knowing her real parents. She writes about searching for
+  identity, for belonging. You don't know if **Eleanor** was your grandmother, great-grandmother,
+  or some other relative. But her words speak to you across the generations. The diary
+  contains a bread recipe—"my grandmother bread recipe," **Eleanor** calls it. You've
+  been baking this bread your whole life and today you run "Sweet Rose Bakery", which
+  has been featured on several popular food channels. Recently, you've started having
+  **strange feelings**. Dreams. The face of a beautiful woman with a pearl necklace
+  calling to you. A sense that you're connected to something bigger than yourself.
+  When you heard about the investigation at the old **Montrose mansion**, something
+  drew you here. You don't know why, but you feel like you need to be here.
 objectives:
   main: main_quest
   private: major_rose_bread_legacy
-strategy: Your 👥 Eleanor connection gives you access to personal clues that others can't read. Your 🔮 Basic Spiritual skill lets you access some vision clues, though your visions may be fragmented. But you won't be able to read everything. Find players whose skills complement yours, and trade what you know for what you're missing.
+strategy: Your 👥 Eleanor connection gives you access to personal clues that others
+  can't read. Your 🔮 Basic Spiritual skill lets you access some vision clues, though
+  your visions may be fragmented. But you won't be able to read everything. Find players
+  whose skills complement yours, and trade what you know for what you're missing.
 relationships:
-  influencer: You're friends—they featured your bakery on their food channel. They've been researching Long Beach mysteries for years and they're curious about your rose bread recipe. You've never told anyone the full story of where it came from.
-  fiduciary: They manage old family estates in Long Beach and they've been going through records for decades. If anyone has paperwork that could help you trace where you came from, it might be them.
-  psychotherapist: They study how family trauma passes down through generations—even to people who never knew their family. You're an orphan who bakes a dead woman's bread recipe every day. They find that very interesting, and honestly, so do you.
+  influencer: You're friends—they featured your bakery on their food channel. They've
+    been researching Long Beach mysteries for years and they're curious about your
+    rose bread recipe. You've never told anyone the full story of where it came from.
+  fiduciary: They manage old family estates in Long Beach and they've been going through
+    records for decades. If anyone has paperwork that could help you trace where you
+    came from, it might be them.
+  psychotherapist: They study how family trauma passes down through generations—even
+    to people who never knew their family. You're an orphan who bakes a dead woman's
+    bread recipe every day. They find that very interesting, and honestly, so do you.
 starting_items: []

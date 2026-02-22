@@ -1,0 +1,17 @@
+id: WJF07
+previous_id: WJF06
+next_id: WJF08
+type: Writing (Frankie's Leather Journal)
+title: Frankie's Leather Journal
+subtitle: February 18, 1955 - Thirty Years
+act: act_iii_investigation
+date: '1955-02-18'
+hashtags:
+- frankie_romano
+- romano_treasure
+- romano_dynasty
+skills:
+- personal_romano
+content: |
+  The feds are circling. They want to make examples. When it happens - and it will - the family survives. That's what matters.
+unlock_code: '1955'

@@ -1,0 +1,7 @@
+Gemini_Generated_Image_rgsl5wrgsl5wrgsl.png -> detective.png
+Gemini_Generated_Image_irk6bqirk6bqirk6.png -> fixer.png
+Gemini_Generated_Image_n2vl7kn2vl7kn2vl.png -> astrologer.png
+Gemini_Generated_Image_qbn3v0qbn3v0qbn3.png -> antiquarian.png
+Gemini_Generated_Image_4p8j0w4p8j0w4p8j.png -> herbalist.png
+Gemini_Generated_Image_cttm64cttm64cttm.png -> townsperson.png
+Gemini_Generated_Image_g5h51xg5h51xg5h5.png -> portraitartist.png

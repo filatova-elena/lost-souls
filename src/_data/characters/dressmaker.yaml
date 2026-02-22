@@ -1,21 +1,43 @@
 id: dressmaker
 title: The Dressmaker
-image: assets/images/dressmaker.png
+image: assets/images/characters/dressmaker.png
 personality_short: Obsessed with the bride who never wore her dress.
-personality: Obsessed with the bride who never wore her dress. Preserving a tragic love story from 1925.
+personality: Obsessed with the bride who never wore her dress. Preserving a tragic
+  love story from 1925.
 skills:
-  - spiritual_1
-  - personal_montrose
-  - personal_monroe
-  - is_character_dressmaker
-background: |-
-  You're descended from **Elias Monroe**, the dressmaker who created **Cordelia Montrose**'s **wedding dress** in 1925. The dress that was **never worn**. The bride who never made it to the altar. Your family has preserved everything from Elias's workshop—his tools, his sketches, his correspondence. But most importantly: the dress itself. **White silk**, delicate lace, perfect in every detail. A masterpiece that was **never worn**. Elias was in love with Cordelia. Everyone in your family knows this story. He sent her flowers, wrote her poems, and begged her not to marry **Sebastian Crane**. Yes, not everyone knows who Cordelia was engaged to. Few people even remember that name: **Sebastian Crane**. It's as if he was erased from history. But you grew up with this story. You grew up with the dress. You can't stop thinking about Cordelia—the romantic, tragic bride. You preserve her dress like a shrine. You research her life, her death, what could have been. Some people say your fixation is unhealthy. Maybe they're right. But you need to know the truth. What happened to Cordelia? Why did she die?
+- spiritual_1
+- personal_montrose
+- personal_monroe
+- is_character_dressmaker
+background: 'You''re descended from **Elias Monroe**, the dressmaker who created **Cordelia
+  Montrose**''s **wedding dress** in 1925. The dress that was **never worn**. The
+  bride who never made it to the altar. Your family has preserved everything from
+  Elias''s workshop—his tools, his sketches, his correspondence. But most importantly:
+  the dress itself. **White silk**, delicate lace, perfect in every detail. A masterpiece
+  that was **never worn**. Elias was in love with Cordelia. Everyone in your family
+  knows this story. He sent her flowers, wrote her poems, and begged her not to marry
+  **Sebastian Crane**. Yes, not everyone knows who Cordelia was engaged to. Few people
+  even remember that name: **Sebastian Crane**. It''s as if he was erased from history.
+  But you grew up with this story. You grew up with the dress. You can''t stop thinking
+  about Cordelia—the romantic, tragic bride. You preserve her dress like a shrine.
+  You research her life, her death, what could have been. Some people say your fixation
+  is unhealthy. Maybe they''re right. But you need to know the truth. What happened
+  to Cordelia? Why did she die?'
 objectives:
   main: main_quest
   private: minor_elias_unrequited_love
-strategy: Your 👥 Montrose and Monroe connections give you access to clues about Cordelia Montrose and Elias Monroe that others can't read. Your 🔮 Basic Spiritual skill gives you some access to vision clues. But you won't be able to read everything. Find players whose skills complement yours, and trade what you know for what you're missing.
+strategy: Your 👥 Montrose and Monroe connections give you access to clues about Cordelia
+  Montrose and Elias Monroe that others can't read. Your 🔮 Basic Spiritual skill gives
+  you some access to vision clues. But you won't be able to read everything. Find
+  players whose skills complement yours, and trade what you know for what you're missing.
 relationships:
-  psychic: If anyone in this mansion can reach Cordelia's spirit, it's them. You've spent your whole life preserving her memory through objects. They might be able to reach her directly.
-  heiress: They live in the Montrose mansion—the place where your ancestor knew Cordelia. The house is full of a century's worth of belongings, and some of them might connect to the story you've been carrying your whole life.
-  portraitartist: You're both drawn to Cordelia, but from different angles—you through what your family passed down, they through something they found in the mansion. Comparing what you each know might reveal more than either of you has alone.
+  psychic: If anyone in this mansion can reach Cordelia's spirit, it's them. You've
+    spent your whole life preserving her memory through objects. They might be able
+    to reach her directly.
+  heiress: They live in the Montrose mansion—the place where your ancestor knew Cordelia.
+    The house is full of a century's worth of belongings, and some of them might connect
+    to the story you've been carrying your whole life.
+  portraitartist: You're both drawn to Cordelia, but from different angles—you through
+    what your family passed down, they through something they found in the mansion.
+    Comparing what you each know might reveal more than either of you has alone.
 starting_items: []

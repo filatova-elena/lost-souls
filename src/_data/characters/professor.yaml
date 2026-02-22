@@ -1,21 +1,40 @@
 id: professor
 title: The Botany Professor
-image: assets/images/professor.png
+image: assets/images/characters/professor.png
 personality_short: Distracted genius obsessed with deadly plants.
-personality: Distracted genius obsessed with deadly plants. Your ancestor's secrets are tangled in the 1925 deaths.
+personality: Distracted genius obsessed with deadly plants. Your ancestor's secrets
+  are tangled in the 1925 deaths.
 skills:
-  - botanical_2
-  - medical_1
-  - personal_hartley
-  - is_character_professor
-background: |-
-  You're a botany professor, descended from **Professor Edmund Hartley** who ran a botanical garden and consultation service in 1920s Long Beach. You followed in his footsteps—plant toxicology, medicinal botany, historical uses of plants. Going through old family papers, you found Edmund's consultation records from 1925. A "pharmaceutical professional" (anonymous) came to him asking about: **Digitalis purpurea (Foxglove)**—extraction methods, dosing; Damiana, Valerian, Mandrake—sourcing and preparation; How to mask bitter flavors in medicinal preparations. The notes also contain consultation records with **Harbor Import & Trading Co**. The specifics raise your suspicions about what exactly this company was and what your ancestor was involved in. You've been obsessed with this mystery ever since. When you heard about the investigation at the **Montrose mansion**, you had to come. You have a feeling it's all connected.
+- botanical_2
+- medical_1
+- personal_hartley
+- is_character_professor
+background: 'You''re a botany professor, descended from **Professor Edmund Hartley**
+  who ran a botanical garden and consultation service in 1920s Long Beach. You followed
+  in his footsteps—plant toxicology, medicinal botany, historical uses of plants.
+  Going through old family papers, you found Edmund''s consultation records from 1925.
+  A "pharmaceutical professional" (anonymous) came to him asking about: **Digitalis
+  purpurea (Foxglove)**—extraction methods, dosing; Damiana, Valerian, Mandrake—sourcing
+  and preparation; How to mask bitter flavors in medicinal preparations. The notes
+  also contain consultation records with **Harbor Import & Trading Co**. The specifics
+  raise your suspicions about what exactly this company was and what your ancestor
+  was involved in. You''ve been obsessed with this mystery ever since. When you heard
+  about the investigation at the **Montrose mansion**, you had to come. You have a
+  feeling it''s all connected.'
 objectives:
   main: main_quest
   private: minor_elixir_of_love
-strategy: Your 🌿 Expert Botanical skill lets you read clues others can't—botanical specimens, plant identification, toxicology notes. Your 👥 Hartley connection gives you access to clues about Professor Hartley's consultations that others can't read. But you won't be able to read everything. Find players whose skills complement yours, and trade what you know for what you're missing.
+strategy: Your 🌿 Expert Botanical skill lets you read clues others can't—botanical
+  specimens, plant identification, toxicology notes. Your 👥 Hartley connection gives
+  you access to clues about Professor Hartley's consultations that others can't read.
+  But you won't be able to read everything. Find players whose skills complement yours,
+  and trade what you know for what you're missing.
 relationships:
-  explorer: You're friends—they chase legends, you chase species. They've been all over the mansion grounds and might have found things they couldn't identify.
-  clockmaker: They're obsessed with the timing of the 1925 events. You're obsessed with the plants. Different pieces of the same puzzle—what they know about when things happened might help you understand why certain ingredients were being sourced.
-  herbalist: You study plants in textbooks, they study them in the dirt. Between their fieldwork and your research, you might piece together what he was really making.
+  explorer: You're friends—they chase legends, you chase species. They've been all
+    over the mansion grounds and might have found things they couldn't identify.
+  clockmaker: They're obsessed with the timing of the 1925 events. You're obsessed
+    with the plants. Different pieces of the same puzzle—what they know about when
+    things happened might help you understand why certain ingredients were being sourced.
+  herbalist: You study plants in textbooks, they study them in the dirt. Between their
+    fieldwork and your research, you might piece together what he was really making.
 starting_items: []

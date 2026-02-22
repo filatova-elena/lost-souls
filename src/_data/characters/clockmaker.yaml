@@ -1,20 +1,44 @@
 id: clockmaker
 title: The Clockmaker
-image: assets/images/clockmaker.png
+image: assets/images/characters/clockmaker.png
 personality_short: Time obsessive who sees patterns everywhere.
-personality: Time obsessive who sees patterns everywhere. A mysterious pocket watch led you here.
+personality: Time obsessive who sees patterns everywhere. A mysterious pocket watch
+  led you here.
 skills:
-  - history_2
-  - spiritual_1
-  - is_character_clockmaker
-background: |-
-  You're a clockmaker and horologist—obsessed with time, timing, and the mechanisms that measure it. But you're not just about clocks. You study astronomical timing, consciousness, synchronicities. You believe the universe has patterns, that timing matters, that mystical experiences are real phenomena we're only beginning to measure. For years, you've been obsessing over an antique **pocket watch** from 1925. You inherited it, been trying to fix/restore it, studying every detail. Inside, you discovered an engraving: **September 4th** and astronomical symbols you recognized immediately—the **Jupiter-Venus conjunction**. You calculated it. **September 4, 1925**, at 6:14 AM. A rare conjunction that happens once in decades. Someone thought this date was important enough to engrave it permanently. The Influencer featured you and your **pocket watch** in their "Long Beach Urban Legends" series. You explained the conjunction, the timing, the mystery. They were skeptical (as always—they think your helmet project is pseudoscience too). But the episode led you both here, to this mansion, to **October 1925 deaths** that happened exactly five weeks after that sacred conjunction. This can't be a coincidence. The universe doesn't work that way.
+- history_2
+- spiritual_1
+- is_character_clockmaker
+background: 'You''re a clockmaker and horologist—obsessed with time, timing, and the
+  mechanisms that measure it. But you''re not just about clocks. You study astronomical
+  timing, consciousness, synchronicities. You believe the universe has patterns, that
+  timing matters, that mystical experiences are real phenomena we''re only beginning
+  to measure. For years, you''ve been obsessing over an antique **pocket watch** from
+  1925. You inherited it, been trying to fix/restore it, studying every detail. Inside,
+  you discovered an engraving: **September 4th** and astronomical symbols you recognized
+  immediately—the **Jupiter-Venus conjunction**. You calculated it. **September 4,
+  1925**, at 6:14 AM. A rare conjunction that happens once in decades. Someone thought
+  this date was important enough to engrave it permanently. The Influencer featured
+  you and your **pocket watch** in their "Long Beach Urban Legends" series. You explained
+  the conjunction, the timing, the mystery. They were skeptical (as always—they think
+  your helmet project is pseudoscience too). But the episode led you both here, to
+  this mansion, to **October 1925 deaths** that happened exactly five weeks after
+  that sacred conjunction. This can''t be a coincidence. The universe doesn''t work
+  that way.'
 objectives:
   main: main_quest
   private: minor_pocket_watch_mystery
-strategy: Your 📜 Expert History skill lets you read clues others can't—historical documents, timelines, artifact authentication. Your 🔮 Basic Spiritual skill gives you some access to vision clues. But you won't be able to read everything. Find players whose skills complement yours, and trade what you know for what you're missing.
+strategy: Your 📜 Expert History skill lets you read clues others can't—historical
+  documents, timelines, artifact authentication. Your 🔮 Basic Spiritual skill gives
+  you some access to vision clues. But you won't be able to read everything. Find
+  players whose skills complement yours, and trade what you know for what you're missing.
 relationships:
-  influencer: Your friend and collaborator—they featured you and the pocket watch in their Long Beach mysteries series. They thought the conjunction theory was a stretch, but they're here now, aren't they?
-  professor: You're obsessed with timing. They're obsessed with plants. Different fixations, but you're both trying to decode what was happening in 1925—and their research might explain why that date mattered.
-  astrologer: They understand exactly what the Jupiter-Venus conjunction symbols on your pocket watch mean. If anyone can help you decode why that date was engraved, it's them.
+  influencer: Your friend and collaborator—they featured you and the pocket watch
+    in their Long Beach mysteries series. They thought the conjunction theory was
+    a stretch, but they're here now, aren't they?
+  professor: You're obsessed with timing. They're obsessed with plants. Different
+    fixations, but you're both trying to decode what was happening in 1925—and their
+    research might explain why that date mattered.
+  astrologer: They understand exactly what the Jupiter-Venus conjunction symbols on
+    your pocket watch mean. If anyone can help you decode why that date was engraved,
+    it's them.
 starting_items: []

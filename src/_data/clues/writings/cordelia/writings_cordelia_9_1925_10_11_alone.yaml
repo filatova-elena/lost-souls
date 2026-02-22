@@ -1,8 +1,9 @@
 id: WC9
 type: Writing (Cordelia's Diary)
-title: Cordelia Montrose's Diary
+title: Cordelia Montrose's Diary Fragment
 subtitle: October 11, 1925 - Alone
 act: act_iii_investigation
+location: The Bembridge House, Upstairs, Bedroom, Less Obvious Spot
 hashtags:
 - cordelia_montrose
 - sebastian_crane
@@ -11,15 +12,11 @@ skills:
 content: |
   Sebastian is dead.
 
-
   They said his heart simply stopped. That his body couldn't sustain the strain.
-
 
   I cannot process this. I cannot form words around it. The man who loved me so completely, who created something beautiful for me, is gone. And I am still here. Still sick. Still confused.
 
-
   I don't understand what happened. I don't understand any of it.
-
 
   All I know is that I am alone again. And something inside me is breaking.
 unlock_code: '0234'

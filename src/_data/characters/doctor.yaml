@@ -1,22 +1,39 @@
 id: doctor
 title: The Town Doctor
-image: assets/images/doctor.png
+image: assets/images/characters/doctor.png
 personality_short: Brilliant physician haunted by your family's secrets.
-personality: Brilliant physician haunted by your family's secrets. Searching for answers about your own bloodline.
+personality: Brilliant physician haunted by your family's secrets. Searching for answers
+  about your own bloodline.
 skills:
-  - medical_2
-  - personal_crane
-  - is_character_doctor
-background: |-
-  Your family name is **Sinclair**, but it wasn't always. You eventually discovered that your family changed their name in the 1960s for political reasons—your ancestors were the **Crane family** of Long Beach. You knew you descended from **Dr. Thaddeus Crane**, a respectable town doctor from the 1920s. That's ALL you knew—the family buried everything else. Recently, you made a shocking discovery: **Dr. Thaddeus Crane** had a brother you've never heard about! When you heard about the investigation at the **Montrose mansion**, you knew you had to come. You have a feeling it's all connected.
+- medical_2
+- personal_crane
+- is_character_doctor
+background: 'Your family name is **Sinclair**, but it wasn''t always. You eventually
+  discovered that your family changed their name in the 1960s for political reasons—your
+  ancestors were the **Crane family** of Long Beach. You knew you descended from **Dr.
+  Thaddeus Crane**, a respectable town doctor from the 1920s. That''s ALL you knew—the
+  family buried everything else. Recently, you made a shocking discovery: **Dr. Thaddeus
+  Crane** had a brother you''ve never heard about! When you heard about the investigation
+  at the **Montrose mansion**, you knew you had to come. You have a feeling it''s
+  all connected.'
 objectives:
   main: main_quest
   private: minor_doctor_and_patient
-strategy: Your ⚕️ Expert Medical skill lets you read clues others can't—pharmaceutical formulas, death certificates, medical records. Your 👥 Crane connection gives you access to clues about the Crane family that others can't read. But you won't be able to read everything. Find players whose skills complement yours, and trade what you know for what you're missing.
+strategy: Your ⚕️ Expert Medical skill lets you read clues others can't—pharmaceutical
+  formulas, death certificates, medical records. Your 👥 Crane connection gives you
+  access to clues about the Crane family that others can't read. But you won't be
+  able to read everything. Find players whose skills complement yours, and trade what
+  you know for what you're missing.
 relationships:
-  fiduciary: They sent you a box of old papers that turned your family history upside down. They know more about your family's estate records than you do—and you have questions.
-  mortician: Their family has handled deaths in this town for over a century. You're a doctor investigating deaths from 1925. They deal with the same bodies from the other side of the table.
-  astrologer: They've been researching someone connected to your family—someone you've only recently learned existed. They seem to admire this person. You're not sure how you feel about that yet.
+  fiduciary: They sent you a box of old papers that turned your family history upside
+    down. They know more about your family's estate records than you do—and you have
+    questions.
+  mortician: Their family has handled deaths in this town for over a century. You're
+    a doctor investigating deaths from 1925. They deal with the same bodies from the
+    other side of the table.
+  astrologer: They've been researching someone connected to your family—someone you've
+    only recently learned existed. They seem to admire this person. You're not sure
+    how you feel about that yet.
 starting_items:
 - name: Sebastian Crane's Birth Certificate
   link: ../clue/documents/sebastian_birth_certificate.html

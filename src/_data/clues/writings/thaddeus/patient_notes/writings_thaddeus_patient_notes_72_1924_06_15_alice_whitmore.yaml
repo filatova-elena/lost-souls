@@ -3,7 +3,7 @@ next_id: WTPN73
 type: Writing (Thaddeus's Patient Notes)
 title: Thaddeus Crane's Patient Notes
 subtitle: 'June 15, 1924 - Alice Whitmore. Chief Complaint: Insomnia and nervous fatigue'
-act: act_i_setting
+act: act_ii_mystery_emerges
 date: '1924-06-15'
 hashtags:
 - thaddeus_crane
@@ -12,7 +12,6 @@ hashtags:
 - doctor_and_patient
 skills:
 - personal_crane
-- spiritual_2
 is_key:
 - alice_second_sight
 content: |

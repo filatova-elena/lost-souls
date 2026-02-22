@@ -13,7 +13,14 @@ from pathlib import Path
 
 try:
     from dotenv import load_dotenv
-    load_dotenv()
+    # Try to load .env from scripts directory
+    script_dir = Path(__file__).parent.parent
+    env_path = script_dir / '.env'
+    if env_path.exists():
+        load_dotenv(env_path)
+    else:
+        # Fallback to default behavior
+        load_dotenv()
 except ImportError:
     pass
 

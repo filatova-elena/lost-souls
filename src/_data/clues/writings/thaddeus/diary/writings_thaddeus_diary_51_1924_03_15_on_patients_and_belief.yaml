@@ -1,0 +1,15 @@
+id: WTD51
+previous_id: WTD50
+next_id: WTD52
+type: Writing (Thaddeus's Diary)
+title: Thaddeus Crane's Diary
+subtitle: March 15, 1924 - On Patients and Belief
+act: act_iii_investigation
+date: '1924-03-15'
+hashtags:
+- thaddeus_crane
+- doctor_and_patient
+skills: []
+content: |
+  I prescribed a new tonic for Mrs. Harrington today. She will attribute any improvement to my skill. Of course, the improvement comes from her own body's natural healing. People need to believe in their doctor. They need to feel their fate rests in capable hands.
+unlock_code: '0156'

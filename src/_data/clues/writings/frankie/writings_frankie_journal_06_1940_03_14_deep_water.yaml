@@ -1,0 +1,16 @@
+id: WJF06
+previous_id: WJF04
+next_id: WJF07
+type: Writing (Frankie's Leather Journal)
+title: Frankie's Leather Journal
+subtitle: March 14, 1940 - Deep Water
+act: act_iii_investigation
+date: '1940-03-14'
+hashtags:
+- frankie_romano
+- romano_treasure
+skills:
+- personal_romano
+content: |
+  The boats got places they know. Out on the water, marked by nothing but memory and timing. Cash. Stones. Documents. Stuff that can't be traced back to nobody. Feds are getting hungry, sniffing around more each year. Better to have the real fortune where they can't get their hands on it. Better to have it spread out - one place they find doesn't bust the whole operation.
+unlock_code: '1940'
