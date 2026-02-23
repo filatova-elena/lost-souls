@@ -165,7 +165,15 @@ const filters = {
   charactersWithAccess: charactersWithAccess,
 
   // Convert character skills array to readable strings using skills.yaml
-  formatCharacterSkills: formatCharacterSkills
+  formatCharacterSkills: formatCharacterSkills,
+
+  // Truncate text to specified length
+  truncate: function(value, length) {
+    if (!value) return "";
+    const str = String(value);
+    if (str.length <= length) return str;
+    return str.substring(0, length - 3) + "...";
+  }
 };
 
 module.exports = filters;

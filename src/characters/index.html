@@ -12,7 +12,7 @@ title: "Characters"
     {% for character in characters %}
     <div style="border: 2px solid var(--accent-gold); padding: 15px; text-align: center;">
       {% if character.image %}
-      <img src="{{ site.baseUrl }}{{ character.image }}" alt="{{ character.title }}" style="max-width: 200px; width: 100%; height: auto; margin-bottom: 10px;">
+      <img src="{{ site.baseUrl }}{{ character.image }}" alt="{{ character.title }} character portrait" width="200" height="200" style="max-width: 200px; width: 100%; height: auto; margin-bottom: 10px;" loading="lazy">
       {% endif %}
       <h3 style="margin: 10px 0; font-size: 1.1em;">{{ character.title }}</h3>
       <p style="font-size: 0.9em; opacity: 0.8; margin-bottom: 15px;">{{ character.personality }}</p>

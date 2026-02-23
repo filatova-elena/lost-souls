@@ -6,6 +6,8 @@ pagination:
   addAllPagesToCollections: true
 permalink: "/clues/{{ clue.id }}/index.html"
 layout: base
+title: "{{ clue.title }} - Clue"
+description: "{% if clue.subtitle %}{{ clue.subtitle }}{% else %}{{ clue.title }}{% endif %} - {% set descText = clue.narrative or clue.appearance or clue.narration or clue.content or '' %}{% if descText %}{{ descText | replace('**', '') | replace('*', '') | replace('#', '') | replace('![', '') | replace(']', '') | replace('(', '') | replace(')', '') | truncate(130) }}{% else %}A clue in The Lost Souls of Kennebec Avenue investigation{% endif %}"
 ---
 <link rel="stylesheet" href="{{ site.baseUrl }}clues/clues.css">
 <link rel="stylesheet" href="{{ site.baseUrl }}clues/lock.css">
@@ -90,14 +92,14 @@ layout: base
 {% endif %}
 
 {% if clue.previous_id or clue.next_id %}
-<nav class="page-nav">
+<nav class="page-nav" aria-label="Clue navigation">
   {% if clue.previous_id %}
-    <a href="{{ site.baseUrl }}clues/{{ clue.previous_id }}/" class="button">← Previous</a>
+    <a href="{{ site.baseUrl }}clues/{{ clue.previous_id }}/" class="button" aria-label="Previous clue">← Previous</a>
   {% else %}
     <span></span>
   {% endif %}
   {% if clue.next_id %}
-    <a href="{{ site.baseUrl }}clues/{{ clue.next_id }}/" class="button">Next →</a>
+    <a href="{{ site.baseUrl }}clues/{{ clue.next_id }}/" class="button" aria-label="Next clue">Next →</a>
   {% else %}
     <span></span>
   {% endif %}
