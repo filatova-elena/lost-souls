@@ -6,13 +6,15 @@ pagination:
   addAllPagesToCollections: true
 permalink: "/characters/{{ character.id }}/index.html"
 layout: base
+title: "{{ character.title }} - Character Details"
+description: "{{ character.title }}: {{ character.personality_short or character.personality or 'A character in The Lost Souls of Kennebec Avenue investigation' }}"
 ---
 <main>
   <header>
     <h1>{{ character.title }}</h1>
   {% if character.image %}
   <div style="text-align: center; margin: 20px 0;">
-    <img src="{{ site.baseUrl }}{{ character.image }}" alt="{{ character.title }}" style="max-width: 300px; width: 100%; height: auto; border: 2px solid var(--accent-gold);">
+    <img src="{{ site.baseUrl }}{{ character.image }}" alt="{{ character.title }} character portrait" width="300" height="300" style="max-width: 300px; width: 100%; height: auto; border: 2px solid var(--accent-gold);" loading="lazy">
   </div>
   {% endif %}
 </header>
@@ -99,7 +101,7 @@ layout: base
 {% endif %}
 
 <section style="text-align: center; margin-top: 40px;">
-  <a href="{{ site.baseUrl }}" class="button" id="begin-investigation-btn">Begin Investigation as {{ character.title }}</a>
+  <a href="{{ site.baseUrl }}" class="button" id="begin-investigation-btn" aria-label="Begin investigation as {{ character.title }}">Begin Investigation as {{ character.title }}</a>
 </section>
 
 <script>

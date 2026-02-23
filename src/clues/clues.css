@@ -89,3 +89,19 @@
         padding: 20px 25px;
     }
 }
+
+/* Image optimization for images in markdown content */
+.clue-content img,
+.clue-narration img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+}
+
+/* Ensure images have proper aspect ratio and don't cause layout shifts */
+.clue-content img[alt],
+.clue-narration img[alt] {
+    /* Images with alt text are preserved from markdown */
+    /* Additional optimization: consider adding width/height via build process */
+}

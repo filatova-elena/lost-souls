@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if title %}{{ title }}{% elif refs.instructions.title %}{{ refs.instructions.title }} - {{ refs.instructions.subtitle }}{% else %}The Lost Souls of Kennebec Avenue Investigation{% endif %}</title>
+  {% if description %}<meta name="description" content="{{ description }}">{% endif %}
   <link rel="stylesheet" href="{{ site.baseUrl }}css/styles.css">
 </head>
 <body>
