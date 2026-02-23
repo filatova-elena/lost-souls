@@ -92,12 +92,6 @@
     color: var(--primary-dark);
 }
 
-.clue-content {
-    padding: 15px;
-    border-top: 1px solid rgba(212, 165, 116, 0.2);
-    background-color: rgba(26, 26, 46, 0.5);
-}
-
 .clue-text {
     line-height: 1.7;
     margin-bottom: 15px;
@@ -139,10 +133,6 @@
 }
 
 @media (min-width: 768px) {
-    .clue-content {
-        padding: 20px;
-    }
-    
     .clue-summary {
         padding: 15px 20px;
     }

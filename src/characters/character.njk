@@ -114,6 +114,8 @@ layout: base
     if (characterData.skills) {
       storeCharacterProfile(characterData.id, characterData.skills);
     }
+    // Initialize Act I as unlocked
+    window.saveToLocalStorage('unlocked_acts', ['act_i_setting']);
   }
   
   function init() {

@@ -34,6 +34,26 @@ permalink: refs/clues/
   {# ---- Tag filter placeholder (populated by JS) ---- #}
   <div class="tag-filters" data-act="{{ actKey }}"></div>
 
+  {# ---- Story gate clue ---- #}
+  {% if actData.story_gate_clue %}
+    {% set gateClueId = actData.story_gate_clue %}
+    {% set gateClue = clues | findByClueId(gateClueId) %}
+    {% if gateClue %}
+      <div class="story-gate-clue">
+        <h3 class="section-subheader">🔓 Story Gate Clue</h3>
+        <p>This clue unlocks {{ actData.name }}:</p>
+        <div class="clue-item">
+          <div class="clue-item-main">
+            {{ gateClue.type | typeIcon }}
+            <span class="clue-id">{{ gateClue.id }}</span> | 
+            <a href="{{ site.baseUrl }}clues/{{ gateClue.id }}/" target="_blank">{{ gateClue.title }}</a>
+            <span class="muted type-label"> — {{ gateClue.type }}</span>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  {% endif %}
+
   {# ---- Clues list ---- #}
   {% set actClues = clues | filterByAct(actKey) %}
   {% if actClues.length %}

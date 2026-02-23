@@ -2,6 +2,7 @@ id: DL122
 type: Document (Legal)
 title: Birth Certificate - Sebastian Montgomery Crane
 act: act_i_setting
+story_gate_for: act_ii_mystery_emerges
 date: '1895-10-15'
 hashtags:
 - sebastian_crane

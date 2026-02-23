@@ -3,7 +3,8 @@ next_id: WTD50
 type: Writing (Thaddeus's Diary)
 title: Thaddeus Crane's Diary
 subtitle: March 11, 1924 - On Dr. Morrison and Lesser Minds
-act: act_iii_investigation
+act: act_ii_mystery_emerges
+story_gate_for: act_iii_investigation
 location: Bembridge House, 2nd Floor, Master Bedroom
 date: '1924-03-11'
 hashtags:

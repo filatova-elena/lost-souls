@@ -47,6 +47,13 @@
     margin: 0;
 }
 
+/* Clue gate - container for story gate message
+   Shown when clue belongs to a locked act */
+.clue-gate {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
 /* Clue lock - container for skill-based lock content
    This is an empty container in the template that gets populated by JavaScript
    when the user lacks required skills. Contains: lock icon, message, and "Seek out" characters

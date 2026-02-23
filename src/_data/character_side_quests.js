@@ -1,5 +1,5 @@
 const path = require('path');
-const loadYamlDir = require('../utils/loadYamlDir');
+const loadYamlDir = require('../_build/loadYamlDir');
 const fs = require('fs');
 const yaml = require('js-yaml');
 

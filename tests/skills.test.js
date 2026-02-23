@@ -1,4 +1,4 @@
-const { hasSkillAccess, convertSkills, charactersWithAccess } = require('../src/lib/skills');
+const { hasSkillAccess, convertSkills, charactersWithAccess } = require('../src/_build/skills');
 
 function characterCanAccess(character, clueSkills) {
   const skills = convertSkills(character.skills);
