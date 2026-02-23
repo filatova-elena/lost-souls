@@ -24,6 +24,7 @@ from generate_vision_card import (
     build_html,
     render_card,
     find_image,
+    get_act_roman_numeral,
     BASE_URL,
 )
 
@@ -53,7 +54,7 @@ def find_all_vision_yamls(visions_dir):
 
 def main():
     parser = argparse.ArgumentParser(description="Generate all vision cards")
-    parser.add_argument("--output-dir", "-o", default="to_print/visions")
+    parser.add_argument("--output-dir", "-o", default="to_print/vision_cards")
     parser.add_argument("--scale", "-s", type=int, default=3)
     parser.add_argument("--base-url", default=BASE_URL)
     parser.add_argument("--html-only", action="store_true")
@@ -86,7 +87,15 @@ def main():
             clue_id = vision_data.get("id", vision_file.stem)
             title = vision_data.get("title", clue_id)
             
-            print(f"[{i}/{len(vision_files)}] {clue_id}: {title}")
+            # Format title with act number for display
+            act_id = vision_data.get("act")
+            act_numeral = get_act_roman_numeral(act_id)
+            if act_numeral:
+                display_title = f"{act_numeral}. {title}"
+            else:
+                display_title = title
+            
+            print(f"[{i}/{len(vision_files)}] {clue_id}: {display_title}")
 
             # Extract ghost name
             vision_type = vision_data.get("type", "")
@@ -105,7 +114,7 @@ def main():
                 continue
 
             # Build HTML
-            html_content = build_html(vision_data, ghost_data, project_root, args.scale, args.base_url)
+            html_content = build_html(vision_data, ghost_data, str(vision_file.parent), args.scale, args.base_url)
 
             # Output
             suffix = ".html" if args.html_only else ".png"

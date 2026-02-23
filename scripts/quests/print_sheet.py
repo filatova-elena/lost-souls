@@ -117,7 +117,7 @@ def make_print_sheet(
 
     per_page = cols * rows
     
-    # Filter characters that have the requested quest type
+    # Include ALL characters that have the requested quest type (don't filter any out)
     valid_characters = []
     project_root = character_yamls[0] if character_yamls else Path.cwd()
     for _ in range(10):
@@ -126,11 +126,20 @@ def make_print_sheet(
         project_root = project_root.parent
     
     for yaml_path in character_yamls:
-        data = yaml.safe_load(yaml_path.read_text(encoding="utf-8"))
-        objectives = data.get("objectives", {})
-        quest_id = objectives.get(quest_type)
-        if quest_id:
-            valid_characters.append((yaml_path, data, quest_id))
+        try:
+            data = yaml.safe_load(yaml_path.read_text(encoding="utf-8"))
+            objectives = data.get("objectives", {})
+            if not objectives:
+                print(f"  ⚠ Skipping {yaml_path.stem}: no objectives field")
+                continue
+            quest_id = objectives.get(quest_type)
+            if quest_id:
+                valid_characters.append((yaml_path, data, quest_id))
+            else:
+                print(f"  ⚠ Skipping {yaml_path.stem}: no {quest_type} quest")
+        except Exception as e:
+            print(f"  ✗ Error processing {yaml_path.stem}: {e}")
+            continue
     
     num_pages = math.ceil(len(valid_characters) / per_page)
 
@@ -166,9 +175,15 @@ def make_print_sheet(
             print(f"  [{idx + 1}/{len(valid_characters)}] {char_name} - {quest_title}")
 
             # Generate card image
-            card_img = generate_answer_card_image(
-                character_data, quest_data, str(yaml_path.parent), scale, base_url, skills_data
-            )
+            try:
+                card_img = generate_answer_card_image(
+                    character_data, quest_data, str(yaml_path.parent), scale, base_url, skills_data
+                )
+            except Exception as e:
+                print(f"    ✗ Error generating card: {e}")
+                print(f"    ⚠ Skipping this character")
+                idx += 1
+                continue
             
             # Resize to exact card size if needed
             if card_img.size != (card_w, card_h):
