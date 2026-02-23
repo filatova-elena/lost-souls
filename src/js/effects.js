@@ -646,19 +646,19 @@ function renderTypewriterAnimation(name, typewriterText, statusText) {
         overlay.removeEventListener('click', dismiss);
         closeOverlay();
       }
-    }, 5000);
+    }, 1500);
   }
   
   // Close overlay
   function closeOverlay() {
-    overlay.style.transition = 'opacity 0.6s ease';
+    overlay.style.transition = 'opacity 0.5s ease'; // Change 0.6s to adjust fade speed
     overlay.style.opacity = '0';
     
     setTimeout(() => {
       if (overlay && overlay.parentElement) {
         overlay.remove();
       }
-    }, 600);
+    }, 200);
   }
 }
 
