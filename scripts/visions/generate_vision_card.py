@@ -252,7 +252,7 @@ def main():
     # Output
     suffix = ".html" if args.html_only else ".png"
     clue_id = vision_data["id"]
-    out = args.output or f"to_print/vision_cards/{clue_id}_card{suffix}"
+    out = args.output or f"to_print/visions/{clue_id}_card{suffix}"
     Path(out).parent.mkdir(parents=True, exist_ok=True)
 
     if args.html_only:
