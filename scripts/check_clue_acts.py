@@ -4,7 +4,8 @@
 import yaml
 from pathlib import Path
 
-# Valid act names
+# Valid act names - must match acts defined in src/_data/refs/clue_organization.yaml
+# and src/js/clue-page.js Act enum
 VALID_ACTS = {
     'act_prologue',
     'act_i_setting',

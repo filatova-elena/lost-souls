@@ -2,6 +2,7 @@ id: DM133
 type: Document (Medical)
 title: Forensic Report - Elixir Bottle Analysis
 act: act_iii_investigation
+story_gate_for: act_iv_revelation
 date: October 15, 1925
 location: With Forensic Analyst
 hashtags:

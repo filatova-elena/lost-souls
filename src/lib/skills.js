@@ -80,6 +80,75 @@ function charactersWithAccess(clueSkills, characters) {
     });
 }
 
+/**
+ * Convert character skills array to readable strings using skills.yaml data
+ * @param {Array|Object} skills - Skills in nested format { expert: [], basic: [], personal: [] } or flat array
+ * @param {Object} skillsData - Skills data from skills.yaml
+ * @returns {Array<string>} Array of formatted skill strings with icons
+ */
+function formatCharacterSkills(skills, skillsData) {
+  if (!skills || !skillsData) return [];
+  
+  // Handle both flat array and nested object formats
+  let skillIds = [];
+  if (Array.isArray(skills)) {
+    skillIds = skills;
+  } else if (skills && typeof skills === 'object') {
+    // Nested format: combine all levels
+    skillIds = [
+      ...(skills.expert || []),
+      ...(skills.basic || []),
+      ...(skills.personal || [])
+    ];
+  }
+  
+  const formatted = [];
+  
+  skillIds.forEach(skillId => {
+    // Skip meta skills
+    if (skillId && skillId.startsWith("is_character_")) return;
+    
+    // Extract level from skill ID (e.g., "art_2" -> level "2", "personal_romano" -> level "1")
+    let level = "1"; // Default to level 1
+    let baseSkillId = skillId;
+    
+    // Check if skill has level suffix
+    const levelMatch = skillId.match(/_(1|2)$/);
+    if (levelMatch) {
+      level = levelMatch[1];
+      baseSkillId = skillId.replace(/_[12]$/, "");
+    } else if (skillId.startsWith("personal_")) {
+      // Personal skills without suffix are always level 1
+      level = "1";
+      baseSkillId = skillId;
+    }
+    
+    // Look up the skill in skills.yaml
+    let skillInfo = skillsData[baseSkillId];
+    
+    // For personal skills, try without level suffix if not found
+    if (!skillInfo && skillId.startsWith("personal_") && skillId.match(/_[12]$/)) {
+      baseSkillId = skillId.replace(/_[12]$/, "");
+      skillInfo = skillsData[baseSkillId];
+    }
+    
+    if (skillInfo && skillInfo.level && skillInfo.level[level]) {
+      const levelText = skillInfo.level[level];
+      const icon = skillInfo.icon ? ` ${skillInfo.icon}` : "";
+      formatted.push(`${levelText}${icon}`);
+    } else if (skillInfo && skillInfo.title) {
+      // Fallback to title if level not found
+      const icon = skillInfo.icon ? ` ${skillInfo.icon}` : "";
+      formatted.push(`${skillInfo.title}${icon}`);
+    } else {
+      // Fallback: format the ID
+      formatted.push(skillId.replace(/_/g, " ").replace(/\b\w/g, l => l.toUpperCase()));
+    }
+  });
+  
+  return formatted;
+}
+
 // Support both Node.js (Eleventy) and browser environments
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = {
@@ -87,6 +156,7 @@ if (typeof module !== 'undefined' && module.exports) {
     convertSkills,
     hasSkillAccess,
     charactersWithAccess,
+    formatCharacterSkills,
     SKILL_SUFFIX
   };
 } else if (typeof window !== 'undefined') {
@@ -94,4 +164,5 @@ if (typeof module !== 'undefined' && module.exports) {
   window.convertSkills = convertSkills;
   window.hasSkillAccess = hasSkillAccess;
   window.charactersWithAccess = charactersWithAccess;
+  // formatCharacterSkills is only used in Eleventy, not in browser
 }

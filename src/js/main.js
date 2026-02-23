@@ -44,6 +44,7 @@ function resetInvestigation() {
   localStorage.removeItem('character_profile');
   localStorage.removeItem('scanned');
   localStorage.removeItem('unlocked');
+  localStorage.removeItem('unlocked_acts');
 }
 
 function becomeGrandmother(charactersData) {

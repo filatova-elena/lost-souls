@@ -3,7 +3,6 @@
 
 act_ii_mystery_emerges:
   name: "Act II: The Mystery Emerges"
-  unlock_type: any
   gate_message: "The mystery hasn't revealed itself yet. Keep exploring the estate..."
   # Sebastian's birth certificate unlocks Act II
   clues:
@@ -11,7 +10,6 @@ act_ii_mystery_emerges:
 
 act_iii_investigation:
   name: "Act III: The Investigation"
-  unlock_type: any
   gate_message: "You can't understand this clue yet. More must be uncovered first..."
   # Thaddeus's diary entry unlocks Act III
   clues:
@@ -19,7 +17,6 @@ act_iii_investigation:
 
 act_iv_revelation:
   name: "Act IV: The Revelation"
-  unlock_type: any
   gate_message: "The final revelation awaits. The investigation must go deeper..."
   # The forensic report unlocks Act IV
   clues:

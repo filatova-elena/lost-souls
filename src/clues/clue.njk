@@ -22,15 +22,14 @@ layout: base
   </header>
 
   {# Story gate section - shown when clue belongs to a locked act #}
-  {% set storyGated = refs.story_gates[clue.act] and refs.story_gates[clue.act].clues and refs.story_gates[clue.act].clues.length %}
-  {% if storyGated %}
+  {% if clue.act and refs.story_gates[clue.act] %}
   <section class="clue-gate">
     <div class="lock-assembly gated">
       <div class="lock-glow"></div>
       <div class="lock-shackle"></div>
       <div class="lock-body"><div class="keyhole"></div></div>
     </div>
-    <p>{{ refs.story_gates[clue.act].gate_message or "This evidence hasn't surfaced yet. Keep investigating..." }}</p>
+    <p>{{ refs.story_gates[clue.act].gate_message }}</p>
   </section>
   {% endif %}
 
@@ -108,15 +107,13 @@ layout: base
 <script>
   // Pre-compute which characters have access to this clue (build-time optimization)
   {% set accessChars = clue.skills | charactersWithAccess(characters) %}
-  {% set unlocks_gates = clue.id | unlocksGates(refs.story_gates) %}
   
   // Pass data to JavaScript - all build-time computed
   window.__clueData = {{ clue | json | safe }};
   window.__clueData.accessChars = {{ accessChars | json | safe }};
-  window.__clueData.unlocks_gates = {{ unlocks_gates | json | safe }};
   window.__noAccessMessages = {{ refs.no_access_messages | json | safe }};
-  {% if storyGated %}
-  window.__clueData.gate = "{{ clue.act }}";
+  {% if clue.act and refs.story_gates[clue.act] %}
+  window.__clueData.gate_message = {{ refs.story_gates[clue.act].gate_message | json | safe }};
   {% endif %}
   {% if clue.id == 'SIGN_IN' %}
   window.__characters = {{ characters | json | safe }};
