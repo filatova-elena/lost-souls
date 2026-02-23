@@ -24,9 +24,11 @@ const AccessState = {
   SKILL_LOCKED: 'skill-locked'
 };
 
-// LocalStorage keys
-const STORAGE_KEYS = {
-  UNLOCKED_ACTS: 'unlocked_acts'
+// Use global STORAGE_KEYS from main.js
+const STORAGE_KEYS = window.STORAGE_KEYS || {
+  UNLOCKED_ACTS: 'unlocked_acts',
+  UNLOCKED: 'unlocked',
+  SCANNED: 'scanned'
 };
 
 // ============================================================================
@@ -111,7 +113,7 @@ function buildLockSectionContent(message, suggestedCharacters = null, unlockCode
  * @returns {Array<string>} Array of manually unlocked clue IDs
  */
 function getManuallyUnlockedClues() {
-  return window.getFromLocalStorage('unlocked', []);
+  return window.getFromLocalStorage(STORAGE_KEYS.UNLOCKED, []);
 }
 
 /**
@@ -122,7 +124,7 @@ function saveManualUnlock(clueId) {
   const unlocked = getManuallyUnlockedClues();
   if (!unlocked.includes(clueId)) {
     unlocked.push(clueId);
-    window.saveToLocalStorage('unlocked', unlocked);
+    window.saveToLocalStorage(STORAGE_KEYS.UNLOCKED, unlocked);
   }
 }
 
@@ -136,7 +138,7 @@ function recordClueScan(clueId) {
   if (!scanned.all.includes(clueId)) {
     scanned.all.push(clueId);
   }
-  window.saveToLocalStorage('scanned', scanned);
+  window.saveToLocalStorage(STORAGE_KEYS.SCANNED, scanned);
   return scanned;
 }
 
@@ -152,8 +154,34 @@ function trackQuestKeyProgress(clueId, keyHashtags) {
     if (!scanned[hashtag]) scanned[hashtag] = [];
     if (!scanned[hashtag].includes(clueId)) scanned[hashtag].push(clueId);
   });
-  window.saveToLocalStorage('scanned', scanned);
+  window.saveToLocalStorage(STORAGE_KEYS.SCANNED, scanned);
 }
+
+/**
+ * Mapping of act keys to their display names and subtitles for unlock animation
+ */
+const ACT_DISPLAY_INFO = {
+  'act_ii_mystery_emerges': {
+    title: 'Part II Unlocked',
+    subtitle: 'The investigation deepens'
+  },
+  'act_iii_investigation': {
+    title: 'Part III Unlocked',
+    subtitle: 'The mystery unfolds'
+  },
+  'act_iv_revelation': {
+    title: 'Part IV Unlocked',
+    subtitle: 'The truth emerges'
+  },
+  'act_v_conclusions': {
+    title: 'Part V Unlocked',
+    subtitle: 'The final chapter'
+  },
+  'act_v_aftermath': {
+    title: 'Part V Unlocked',
+    subtitle: 'The final chapter'
+  }
+};
 
 /**
  * Unlocks a story gate (act) when a gate clue is discovered
@@ -162,9 +190,24 @@ function trackQuestKeyProgress(clueId, keyHashtags) {
 function unlockStoryGate(actKey) {
   if (!actKey) return;
   const unlocked = window.getFromLocalStorage(STORAGE_KEYS.UNLOCKED_ACTS, []);
-  if (!unlocked.includes(actKey)) {
+  const wasAlreadyUnlocked = unlocked.includes(actKey);
+  
+  if (!wasAlreadyUnlocked) {
     unlocked.push(actKey);
     window.saveToLocalStorage(STORAGE_KEYS.UNLOCKED_ACTS, unlocked);
+    
+    // Trigger unlock animation if available
+    if (window.renderActUnlockAnimation) {
+      const displayInfo = ACT_DISPLAY_INFO[actKey];
+      if (displayInfo) {
+        window.renderActUnlockAnimation(displayInfo.title, displayInfo.subtitle);
+      } else {
+        // Fallback for acts without specific display info
+        const actNumber = actKey.match(/act_([ivx]+)/i);
+        const partNum = actNumber ? actNumber[1].toUpperCase() : 'II';
+        window.renderActUnlockAnimation(`Part ${partNum} Unlocked`, 'A new chapter begins');
+      }
+    }
   }
 }
 
