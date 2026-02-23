@@ -73,7 +73,7 @@ def generate_card_image(vision_file, project_root, scale=3, base_url=BASE_URL):
     ghost_data = load_ghost_data(ghost_name, project_root)
     
     # Build HTML
-    html_content = build_html(vision_data, ghost_data, project_root, scale, base_url)
+    html_content = build_html(vision_data, ghost_data, str(vision_file.parent), scale, base_url)
     
     # Render to temporary PNG
     tmp = tempfile.NamedTemporaryFile(suffix=".png", delete=False)
@@ -89,7 +89,7 @@ def generate_card_image(vision_file, project_root, scale=3, base_url=BASE_URL):
 def make_print_sheet(
     vision_files,
     project_root,
-    output_path="to_print/visions/vision_cards_sheet.png",
+    output_path="to_print/vision_cards/vision_cards_sheet.png",
     dpi=DPI,
     page_size=(PAGE_WIDTH_IN, PAGE_HEIGHT_IN),
     card_size=(CARD_WIDTH_IN, CARD_HEIGHT_IN),
@@ -201,7 +201,7 @@ def make_print_sheet(
 
 def main():
     parser = argparse.ArgumentParser(description="Generate vision card print sheet")
-    parser.add_argument("--output", "-o", default="to_print/visions/vision_cards_sheet.png")
+    parser.add_argument("--output", "-o", default="to_print/vision_cards/vision_cards_sheet.png")
     parser.add_argument("--dpi", type=int, default=DPI)
     parser.add_argument("--page-width", type=float, default=PAGE_WIDTH_IN)
     parser.add_argument("--page-height", type=float, default=PAGE_HEIGHT_IN)

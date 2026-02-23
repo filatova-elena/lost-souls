@@ -29,7 +29,7 @@ from playwright.sync_api import sync_playwright
 sys.path.insert(0, str(Path(__file__).parent.parent / "qr_codes"))
 from qr_generator import generate_qr
 
-BASE_URL = ""  # Use relative paths by default
+BASE_URL = "https://lostsouls.door66.events"  # Base URL for QR codes
 
 
 def to_data_uri(path):
@@ -39,15 +39,15 @@ def to_data_uri(path):
     return f"data:{mime};base64,{base64.b64encode(p.read_bytes()).decode()}"
 
 
-def find_image(image_rel, project_root):
-    """Find image file relative to project root."""
-    path = project_root / image_rel
+def find_image(image_rel, yaml_dir):
+    path = Path(yaml_dir) / image_rel
     if path.exists():
         return path
-    # Try looking in src directory
-    src_path = project_root / "src" / image_rel
-    if src_path.exists():
-        return src_path
+    p = Path(yaml_dir).resolve()
+    for _ in range(6):
+        if (p / image_rel).exists():
+            return p / image_rel
+        p = p.parent
     raise FileNotFoundError(f"Image not found: {image_rel}")
 
 
@@ -57,6 +57,25 @@ def extract_ghost_name(vision_type):
     if match:
         return match.group(1).lower().strip()
     return None
+
+
+def get_act_roman_numeral(act_id):
+    """Extract Roman numeral from act ID like 'act_ii_mystery_emerges' -> 'II'."""
+    if not act_id:
+        return None
+    
+    # Map act IDs to Roman numerals
+    act_map = {
+        'act_prologue': None,  # Prologue doesn't get a number
+        'act_i_setting': 'I',
+        'act_ii_mystery_emerges': 'II',
+        'act_iii_investigation': 'III',
+        'act_iv_revelation': 'IV',
+        'act_v_conclusions': 'V',
+        'act_v_aftermath': 'V',
+    }
+    
+    return act_map.get(act_id)
 
 
 def load_ghost_data(ghost_name, project_root):
@@ -91,10 +110,17 @@ def make_qr_uri(clue_id, base_url, scale):
     return uri
 
 
-def build_html(vision_data, ghost_data, project_root, scale=3, base_url=BASE_URL):
+def build_html(vision_data, ghost_data, yaml_dir, scale=3, base_url=BASE_URL):
     """Build HTML for vision card."""
     clue_id = vision_data["id"]
     title = vision_data.get("title", "")
+    
+    # Add act number before title if available
+    act_id = vision_data.get("act")
+    act_numeral = get_act_roman_numeral(act_id)
+    if act_numeral:
+        title = f"{act_numeral}. {title}"
+    
     narrative = vision_data.get("narrative", "").strip()
 
     # Get ghost image — use to_data_uri directly like the character card does.
@@ -103,8 +129,7 @@ def build_html(vision_data, ghost_data, project_root, scale=3, base_url=BASE_URL
     if not ghost_image_rel:
         raise ValueError(f"Ghost {ghost_data.get('ghost')} has no image field")
 
-    ghost_image_path = find_image(ghost_image_rel, project_root)
-    ghost_image_uri = to_data_uri(str(ghost_image_path))
+    portrait_uri = to_data_uri(str(find_image(ghost_image_rel, yaml_dir)))
 
     # Generate QR code
     qr_uri = make_qr_uri(clue_id, base_url, scale)
@@ -115,12 +140,12 @@ def build_html(vision_data, ghost_data, project_root, scale=3, base_url=BASE_URL
         narrative_text = narrative_text.replace("**", "", 2)
     narrative_text = narrative_text.strip()
 
-    ghost_image = f'<img src="{ghost_image_uri}" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" />'
+    portrait = f'<img src="{portrait_uri}" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" />'
     qr = f'<img src="{qr_uri}" style="width:100%;height:100%;object-fit:contain;" />'
 
     return (TEMPLATE
         .replace("{{TITLE}}", html.escape(title))
-        .replace("{{GHOST_IMAGE}}", ghost_image)
+        .replace("{{GHOST_IMAGE}}", portrait)
         .replace("{{QR}}", qr)
         .replace("{{NARRATIVE}}", html.escape(narrative_text)))
 
@@ -228,7 +253,7 @@ def main():
     yaml_path = Path(args.yaml_file).resolve()
     vision_data = yaml.safe_load(yaml_path.read_text(encoding="utf-8"))
 
-    # Find project root
+    # Find project root (go up from scripts/visions/)
     project_root = yaml_path
     for _ in range(10):
         if (project_root / "src" / "_data" / "ghosts").exists():
@@ -246,19 +271,28 @@ def main():
     # Load ghost data
     ghost_data = load_ghost_data(ghost_name, project_root)
 
-    # Build HTML
-    h = build_html(vision_data, ghost_data, project_root, args.scale, args.base_url)
+    clue_id = vision_data["id"]
+    
+    # Format title with act number for display
+    title = vision_data.get("title", clue_id)
+    act_id = vision_data.get("act")
+    act_numeral = get_act_roman_numeral(act_id)
+    if act_numeral:
+        display_title = f"{act_numeral}. {title}"
+    else:
+        display_title = title
+    
+    h = build_html(vision_data, ghost_data, str(yaml_path.parent), args.scale, args.base_url)
 
     # Output
     suffix = ".html" if args.html_only else ".png"
-    clue_id = vision_data["id"]
-    out = args.output or f"to_print/visions/{clue_id}_card{suffix}"
+    out = args.output or f"to_print/vision_cards/{clue_id}_card{suffix}"
     Path(out).parent.mkdir(parents=True, exist_ok=True)
 
     if args.html_only:
         Path(out).write_text(h, encoding="utf-8")
     else:
-        print(f"Rendering {vision_data.get('title', clue_id)}...")
+        print(f"Rendering {display_title}...")
         render_card(h, out, args.scale)
     print(f"→ {out}")
 

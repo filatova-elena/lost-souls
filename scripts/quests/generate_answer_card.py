@@ -115,8 +115,18 @@ def build_html(character_data, quest_data, yaml_dir, scale=3, base_url=BASE_URL,
             skill_titles.append(skill_text)
 
     portrait_uri = to_data_uri(str(find_image(image_rel, yaml_dir)))
-    quest_id = quest_data["id"]
-    qr_uri = make_qr_uri(quest_id, base_url, scale)
+    
+    # QR code should always point to the private objective, not the main quest
+    objectives = character_data.get("objectives", {})
+    private_quest_id = objectives.get("private")
+    if not private_quest_id:
+        # Fallback to main quest if no private quest exists
+        private_quest_id = objectives.get("main")
+    if not private_quest_id:
+        # Last resort: use the quest_data id
+        private_quest_id = quest_data["id"]
+    
+    qr_uri = make_qr_uri(private_quest_id, base_url, scale)
 
     portrait = f'<img src="{portrait_uri}" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" />'
     qr = f'<img src="{qr_uri}" style="width:100%;height:100%;object-fit:contain;" />'
