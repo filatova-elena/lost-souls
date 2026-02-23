@@ -1,6 +1,14 @@
 (function() {
 'use strict';
 
+// LocalStorage keys - centralized constants
+const STORAGE_KEYS = {
+  CHARACTER_PROFILE: 'character_profile',
+  SCANNED: 'scanned',
+  UNLOCKED: 'unlocked',
+  UNLOCKED_ACTS: 'unlocked_acts'
+};
+
 function saveToLocalStorage(key, value) {
   try {
     localStorage.setItem(key, JSON.stringify(value));
@@ -24,27 +32,27 @@ function getFromLocalStorage(key, defaultValue = null) {
 function storeCharacterProfile(characterId, skills) {
   if (!characterId) return null;
   const profile = { characterId, skills: window.convertSkills(skills) };
-  saveToLocalStorage('character_profile', profile);
+  saveToLocalStorage(STORAGE_KEYS.CHARACTER_PROFILE, profile);
   return profile;
 }
 
 function getCharacterProfile() {
-  return getFromLocalStorage('character_profile');
+  return getFromLocalStorage(STORAGE_KEYS.CHARACTER_PROFILE);
 }
 
 function getScannedClues() {
-  return getFromLocalStorage('scanned', { all: [] });
+  return getFromLocalStorage(STORAGE_KEYS.SCANNED, { all: [] });
 }
 
 function clearCharacterProfile() {
-  localStorage.removeItem('character_profile');
+  localStorage.removeItem(STORAGE_KEYS.CHARACTER_PROFILE);
 }
 
 function resetInvestigation() {
-  localStorage.removeItem('character_profile');
-  localStorage.removeItem('scanned');
-  localStorage.removeItem('unlocked');
-  localStorage.removeItem('unlocked_acts');
+  localStorage.removeItem(STORAGE_KEYS.CHARACTER_PROFILE);
+  localStorage.removeItem(STORAGE_KEYS.SCANNED);
+  localStorage.removeItem(STORAGE_KEYS.UNLOCKED);
+  localStorage.removeItem(STORAGE_KEYS.UNLOCKED_ACTS);
 }
 
 function becomeGrandmother(charactersData) {
@@ -62,5 +70,6 @@ window.getScannedClues = getScannedClues;
 window.clearCharacterProfile = clearCharacterProfile;
 window.resetInvestigation = resetInvestigation;
 window.becomeGrandmother = becomeGrandmother;
+window.STORAGE_KEYS = STORAGE_KEYS;
 
 })();

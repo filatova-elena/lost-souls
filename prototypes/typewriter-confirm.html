@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Character Confirmation — Typewriter</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Special+Elite&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #0a0a0f;
+    min-height: 100vh;
+    font-family: 'Cinzel', serif;
+    color: #e8d5c4;
+    overflow-x: hidden;
+  }
+
+  /* ── OVERLAY ── */
+  .overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .overlay.active {
+    pointer-events: auto;
+    opacity: 1;
+  }
+
+  .type-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(5, 5, 10, 0);
+    transition: background 0.5s ease;
+  }
+
+  .overlay.active .type-backdrop {
+    background: rgba(5, 5, 10, 0.85);
+  }
+
+  .type-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  /* Typewriter line — JS fills this, cursor via border-right */
+  .type-line-1 {
+    font-family: 'Special Elite', monospace;
+    font-size: clamp(0.8rem, 2vw, 1.1rem);
+    letter-spacing: 0.2em;
+    color: rgba(212, 165, 116, 0.6);
+    white-space: nowrap;
+    min-height: 1.4em;
+  }
+
+  .type-line-1.typing {
+    border-right: 2px solid rgba(212, 165, 116, 0.5);
+    animation: cursorBlink 0.6s step-end infinite;
+  }
+
+  .type-line-1.done {
+    border-right: none;
+  }
+
+  .type-name {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(1.6rem, 4.5vw, 3rem);
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    color: #d4a574;
+    text-shadow: 0 0 50px rgba(212, 165, 116, 0.25);
+    opacity: 0;
+    transform: translateY(6px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .type-name.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .type-carriage {
+    height: 1px;
+    background: rgba(212, 165, 116, 0.4);
+    margin: 14px 0;
+    width: 0;
+    transition: width 0.15s linear;
+  }
+
+  .type-carriage.visible {
+    width: min(280px, 45vw);
+  }
+
+  .type-ready {
+    font-family: 'Special Elite', monospace;
+    font-size: clamp(0.65rem, 1.4vw, 0.85rem);
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: rgba(212, 165, 116, 0.35);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  .type-ready.visible {
+    opacity: 1;
+  }
+
+  .dismiss-hint {
+    position: absolute;
+    bottom: 12vh;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.6rem;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: rgba(212, 165, 116, 0.2);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  .dismiss-hint.visible {
+    opacity: 1;
+  }
+
+  @keyframes cursorBlink {
+    50% { border-right-color: transparent; }
+  }
+
+  /* ── DEMO TRIGGER ── */
+  .demo-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 20px;
+  }
+
+  .demo-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: rgba(212, 165, 116, 0.35);
+  }
+
+  .char-btn {
+    font-family: 'Cinzel', serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.2em;
+    color: #d4a574;
+    background: transparent;
+    border: 1px solid rgba(212, 165, 116, 0.35);
+    padding: 16px 40px;
+    cursor: pointer;
+    transition: all 0.35s ease;
+  }
+
+  .char-btn:hover {
+    border-color: #d4a574;
+    background: rgba(212, 165, 116, 0.06);
+    transform: translateY(-1px);
+  }
+</style>
+</head>
+<body>
+
+<div class="overlay" id="overlay">
+  <div class="type-backdrop"></div>
+  <div class="type-content">
+    <div class="type-line-1" id="typeLine"></div>
+    <div class="type-name" id="typeName">Margaret Ashworth</div>
+    <div class="type-carriage" id="typeCarriage"></div>
+    <div class="type-ready" id="typeReady">Ready to scan clues</div>
+    <div class="dismiss-hint" id="dismissHint">tap anywhere to continue</div>
+  </div>
+</div>
+
+<div class="demo-area">
+  <div class="demo-label">Select your character</div>
+  <button class="char-btn" onclick="triggerConfirm()">Become Margaret Ashworth</button>
+</div>
+
+<script>
+  const overlay = document.getElementById('overlay');
+  const typeLine = document.getElementById('typeLine');
+  const typeName = document.getElementById('typeName');
+  const typeCarriage = document.getElementById('typeCarriage');
+  const typeReady = document.getElementById('typeReady');
+  const dismissHint = document.getElementById('dismissHint');
+
+  let animating = false;
+  let dismissTimeout = null;
+
+  const MESSAGE = 'You are now investigating as';
+
+  function triggerConfirm() {
+    if (animating) return;
+    animating = true;
+    reset();
+
+    overlay.classList.add('active');
+
+    // Start typing after backdrop fades in
+    setTimeout(() => {
+      typeLine.classList.add('typing');
+      typeText(MESSAGE, typeLine, 45, () => {
+        // Typing done — remove cursor
+        typeLine.classList.remove('typing');
+        typeLine.classList.add('done');
+
+        // Reveal name
+        setTimeout(() => {
+          typeName.classList.add('visible');
+
+          // Carriage line
+          setTimeout(() => {
+            typeCarriage.classList.add('visible');
+
+            // Ready text
+            setTimeout(() => {
+              typeReady.classList.add('visible');
+
+              // Dismiss hint
+              setTimeout(() => {
+                dismissHint.classList.add('visible');
+                enableDismiss();
+              }, 400);
+            }, 200);
+          }, 500);
+        }, 300);
+      });
+    }, 500);
+  }
+
+  function typeText(text, el, speed, callback) {
+    let i = 0;
+    el.textContent = '';
+    const interval = setInterval(() => {
+      el.textContent += text[i];
+      i++;
+      if (i >= text.length) {
+        clearInterval(interval);
+        if (callback) callback();
+      }
+    }, speed);
+  }
+
+  function enableDismiss() {
+    const dismiss = () => {
+      overlay.removeEventListener('click', dismiss);
+      clearTimeout(dismissTimeout);
+      closeOverlay();
+    };
+
+    overlay.addEventListener('click', dismiss);
+
+    // Auto-dismiss
+    dismissTimeout = setTimeout(() => {
+      if (overlay.classList.contains('active')) {
+        overlay.removeEventListener('click', dismiss);
+        closeOverlay();
+      }
+    }, 5000);
+  }
+
+  function closeOverlay() {
+    overlay.style.transition = 'opacity 0.6s ease';
+    overlay.style.opacity = '0';
+
+    setTimeout(() => {
+      overlay.classList.remove('active');
+      overlay.style.transition = '';
+      overlay.style.opacity = '';
+      animating = false;
+    }, 600);
+  }
+
+  function reset() {
+    typeLine.textContent = '';
+    typeLine.classList.remove('typing', 'done');
+    typeName.classList.remove('visible');
+    typeCarriage.classList.remove('visible');
+    typeReady.classList.remove('visible');
+    dismissHint.classList.remove('visible');
+  }
+</script>
+</body>
+</html>

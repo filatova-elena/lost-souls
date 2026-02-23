@@ -107,6 +107,9 @@ layout: base
   const characterData = {{ character | json | safe }};
   
   function handleBeginInvestigation(e) {
+    // Prevent navigation - stay on character page
+    e.preventDefault();
+    
     // Reset all progress when selecting a new character
     if (window.resetInvestigation) {
       window.resetInvestigation();
@@ -115,7 +118,18 @@ layout: base
       storeCharacterProfile(characterData.id, characterData.skills);
     }
     // Initialize Act I as unlocked
-    window.saveToLocalStorage('unlocked_acts', ['act_i_setting']);
+    const storageKeys = window.STORAGE_KEYS || { UNLOCKED_ACTS: 'unlocked_acts' };
+    window.saveToLocalStorage(storageKeys.UNLOCKED_ACTS, ['act_i_setting']);
+    
+    // Render typewriter animation
+    if (window.renderTypewriterAnimation) {
+      const characterName = characterData.title || 'Investigator';
+      window.renderTypewriterAnimation(
+        characterName,
+        'You are now investigating as',
+        'Ready to scan clues'
+      );
+    }
   }
   
   function init() {

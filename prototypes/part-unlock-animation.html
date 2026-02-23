@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Part Unlock Animation</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #0a0a0f;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cinzel', serif;
+    overflow: hidden;
+  }
+
+  /* The unlock banner — fixed at top, drops and fades */
+  .unlock-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 12vh;
+    pointer-events: none;
+    z-index: 100;
+    opacity: 0;
+  }
+
+  .unlock-banner.active {
+    animation: bannerLife 4s ease-out forwards;
+  }
+
+  /* Main text */
+  .unlock-text {
+    font-size: clamp(2.2rem, 6vw, 4.5rem);
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #d4a574;
+    text-shadow:
+      0 0 30px rgba(212, 165, 116, 0.5),
+      0 0 60px rgba(212, 165, 116, 0.2);
+    white-space: nowrap;
+  }
+
+  /* Thin decorative line under text */
+  .unlock-line {
+    width: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #d4a574, transparent);
+    margin-top: 14px;
+    opacity: 0;
+  }
+
+  .unlock-banner.active .unlock-line {
+    animation: lineExpand 0.6s ease-out 0.3s forwards;
+  }
+
+  /* Subtitle */
+  .unlock-sub {
+    font-size: clamp(0.7rem, 1.8vw, 1rem);
+    letter-spacing: 0.5em;
+    color: rgba(212, 165, 116, 0.5);
+    margin-top: 12px;
+    opacity: 0;
+    text-transform: uppercase;
+  }
+
+  .unlock-banner.active .unlock-sub {
+    animation: fadeIn 0.5s ease-out 0.5s forwards;
+  }
+
+  /* Banner: appear at top, slowly drift down, fade out */
+  @keyframes bannerLife {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    8% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    55% {
+      opacity: 1;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(80px);
+    }
+  }
+
+  @keyframes lineExpand {
+    to { width: min(320px, 50vw); opacity: 1; }
+  }
+
+  @keyframes fadeIn {
+    to { opacity: 1; }
+  }
+
+  /* Sparse gold particles that drift down with the text */
+  .particle {
+    position: fixed;
+    width: 2px;
+    height: 2px;
+    background: #d4a574;
+    border-radius: 50;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 99;
+  }
+
+  /* Demo trigger button */
+  .trigger-btn {
+    font-family: 'Cinzel', serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #d4a574;
+    background: transparent;
+    border: 1px solid rgba(212, 165, 116, 0.3);
+    padding: 14px 36px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 200;
+  }
+
+  .trigger-btn:hover {
+    border-color: #d4a574;
+    background: rgba(212, 165, 116, 0.05);
+  }
+
+  .trigger-btn:disabled {
+    opacity: 0.3;
+    cursor: default;
+  }
+</style>
+</head>
+<body>
+
+<div class="unlock-banner" id="banner">
+  <div class="unlock-text">Part II Unlocked</div>
+  <div class="unlock-line"></div>
+  <div class="unlock-sub">The investigation deepens</div>
+</div>
+
+<button class="trigger-btn" id="triggerBtn" onclick="playUnlock()">Trigger Unlock</button>
+
+<script>
+  let playing = false;
+
+  function playUnlock() {
+    if (playing) return;
+    playing = true;
+
+    const banner = document.getElementById('banner');
+    const btn = document.getElementById('triggerBtn');
+    btn.disabled = true;
+
+    // Reset
+    banner.classList.remove('active');
+    document.querySelectorAll('.particle').forEach(p => p.remove());
+    void banner.offsetWidth; // force reflow
+
+    // Go
+    banner.classList.add('active');
+    spawnParticles();
+
+    // Re-enable after animation
+    setTimeout(() => {
+      playing = false;
+      btn.disabled = false;
+    }, 4200);
+  }
+
+  function spawnParticles() {
+    const count = 12;
+    for (let i = 0; i < count; i++) {
+      const p = document.createElement('div');
+      p.className = 'particle';
+      const x = 30 + Math.random() * 40; // cluster around center
+      const startY = 10 + Math.random() * 8;
+      p.style.left = x + '%';
+      p.style.top = startY + 'vh';
+
+      document.body.appendChild(p);
+
+      const delay = 200 + Math.random() * 800;
+      const drift = -15 + Math.random() * 30;
+
+      p.animate([
+        { opacity: 0, transform: `translate(0, 0) scale(1)` },
+        { opacity: 0.6, transform: `translate(${drift * 0.3}px, 20px) scale(1)`, offset: 0.15 },
+        { opacity: 0.4, transform: `translate(${drift * 0.7}px, 60px) scale(0.8)`, offset: 0.6 },
+        { opacity: 0, transform: `translate(${drift}px, 120px) scale(0.3)` }
+      ], {
+        duration: 3000,
+        delay: delay,
+        easing: 'ease-out',
+        fill: 'forwards'
+      });
+
+      setTimeout(() => p.remove(), 4000);
+    }
+  }
+
+  // Auto-play on load for preview
+  setTimeout(playUnlock, 600);
+</script>
+</body>
+</html>
