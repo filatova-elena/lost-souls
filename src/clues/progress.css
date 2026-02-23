@@ -15,21 +15,19 @@
   gap: 6px;
 }
 
-.progress-track.main {
+.progress-track.main,
+.progress-track.side {
   flex: 1;
-  padding-right: 16px;
+  padding: 5px;
 }
 
 .progress-track.side {
-  padding-left: 16px;
   border-left: 1px solid rgba(212, 165, 116, 0.12);
-  flex-shrink: 0;
 }
 
 .progress-track-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 8px;
 }
 
