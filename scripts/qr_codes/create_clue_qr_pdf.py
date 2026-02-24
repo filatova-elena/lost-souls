@@ -60,7 +60,7 @@ def calculate_grid_layout():
 
 def load_clue_ids(clues_dir):
     """
-    Load clue IDs from YAML files.
+    Load clue IDs from YAML files, filtering to only first clues in chains.
     
     Args:
         clues_dir: Path to clues directory
@@ -81,6 +81,9 @@ def load_clue_ids(clues_dir):
             with open(yaml_file, 'r', encoding='utf-8') as f:
                 clue = yaml.safe_load(f)
                 if clue:
+                    # Only include clues that are the first in a chain (no previous_id)
+                    if 'previous_id' in clue:
+                        continue
                     filename = yaml_file.stem
                     clue_id = clue.get('id', '')
                     if clue_id:

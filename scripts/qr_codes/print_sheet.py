@@ -179,7 +179,7 @@ def _generate_qr_image(url, label, size, fg_color, bg_color):
 
 def _load_yaml(yaml_path, base_url=BASE_URL):
     """
-    Load codes from a YAML file.
+    Load codes from a YAML file, filtering to only first clues in chains.
 
     Supports two formats:
 
@@ -205,6 +205,10 @@ def _load_yaml(yaml_path, base_url=BASE_URL):
 
     codes = []
     for item in data:
+        # Only include clues that are the first in a chain (no previous_id)
+        if "previous_id" in item:
+            continue
+            
         clue_id = item.get("id", "")
         # Construct URL: if base_url is empty or just "clues", use relative path; otherwise use full URL
         if not base_url or base_url == "clues":

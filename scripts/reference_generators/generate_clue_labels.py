@@ -63,7 +63,7 @@ CONTENT_HEIGHT = LABEL_HEIGHT - 2 * PADDING
 
 
 def load_all_clues(clues_dir):
-    """Load all clue YAML files recursively."""
+    """Load all clue YAML files recursively, filtering to only first clues in chains."""
     clues = []
     clues_path = project_root / clues_dir
 
@@ -76,7 +76,9 @@ def load_all_clues(clues_dir):
             with open(yaml_file, 'r', encoding='utf-8') as f:
                 clue_data = yaml.safe_load(f)
                 if clue_data and 'id' in clue_data:
-                    clues.append(clue_data)
+                    # Only include clues that are the first in a chain (no previous_id)
+                    if 'previous_id' not in clue_data:
+                        clues.append(clue_data)
         except Exception as e:
             print(f"Warning: Error loading {yaml_file}: {e}", file=sys.stderr)
 
