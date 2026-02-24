@@ -5,4 +5,5 @@ act: act_ii_mystery_emerges
 skills:
   - rumors_1
 content: |
+  <div style="text-align: center;font-size: 40px;">✋</div>
   This treasure chest contains rumors and gossip collected from around Long Beach. To unlock it, you need a key—someone with access to the rumor network.
