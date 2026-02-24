@@ -26,7 +26,9 @@ act_i_setting:
     - "Character introductions and relationships"
     - "Historical context and family dynamics"
     - "Emotional moments and tender scenes"
-    - "Collection of Rumors (RUMORS_I)"
+    - "Collection of Rumors (RUMORS_I_A)"
+    - "Collection of Rumors (RUMORS_I_B)"
+    - "Collection of Rumors (RUMORS_I_C)"
 
 act_ii_mystery_emerges:
   name: "Act II: The Mystery Emerges"
@@ -44,7 +46,12 @@ act_ii_mystery_emerges:
     - "Realizations that something is wrong"
     - "Initial confusion and questions"
     - "First suspicious observations"
-    - "Collection of Rumors (RUMORS_II)"
+    - "Collection of Rumors (RUMORS_II_A)"
+    - "Collection of Rumors (RUMORS_II_B)"
+    - "Collection of Rumors (RUMORS_II_C)"
+    - "Collection of Rumors (RUMORS_II_D)"
+    - "Collection of Rumors (RUMORS_II_E)"
+    - "Collection of Rumors (RUMORS_II_F)"
 
 act_iii_investigation:
   name: "Act III: The Investigation"
@@ -65,7 +72,8 @@ act_iii_investigation:
     - "Suspicious behavior and cover-up attempts"
     - "Medical reports and autopsy findings"
     - "Financial records and documents"
-    - "Collection of Rumors (RUMORS_III)"
+    - "Collection of Rumors (RUMORS_III_A)"
+    - "Collection of Rumors (RUMORS_III_B)"
 
 act_iv_revelation:
   name: "Act IV: The Revelation"
@@ -82,7 +90,8 @@ act_iv_revelation:
     - "Confessions and admissions"
     - "Expert confirmations of the truth"
     - "The tragic truth and final realizations"
-    - "Collection of Rumors (RUMORS_IV)"
+    - "Collection of Rumors (RUMORS_IV_A)"
+    - "Collection of Rumors (RUMORS_IV_B)"
 
 act_v_aftermath:
   name: "Act V: The Aftermath"

@@ -1,7 +1,7 @@
-id: RUMORS_III_A
+id: RUMORS_IV_B
 type: Rumor
 title: Collection of Rumors
-act: act_iii_investigation
+act: act_iv_revelation
 skills:
   - rumors_1
 content: |
