@@ -25,6 +25,7 @@ background: You've been investigating the **Montrose family** for months. On the
 objectives:
   main: main_quest
   private: major_rose_bread_legacy
+  initial_quest: AO79
 strategy: Your ⚖️ Expert Legal skill lets you read clues others can't—trust documents,
   financial records, estate papers. Your 📜 Basic History skill gives you some additional
   access to historical clues. But you won't be able to read everything. Find players

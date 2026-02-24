@@ -26,6 +26,7 @@ background: 'You''re a distant relative of the **Montrose family**—the mansion
 objectives:
   main: main_quest
   private: major_secret_baby
+  initial_quest: AO116
 strategy: Your 🗝️ Rumor skill gives you access to **rumor chests** hidden around the
   mansion—unlock them with the key attached to your character card. Your 👥 Montrose
   connection gives you access to clues about the family that others can't read. But

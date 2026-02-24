@@ -25,6 +25,7 @@ background: 'You run two popular series: "**Long Beach Urban Legends & Mysteries
 objectives:
   main: main_quest
   private: minor_bakery_fire
+  initial_quest: AO81
 strategy: Your 🗝️ Rumor skill gives you access to **rumor chests** hidden around the
   mansion—unlock them with the key attached to your character card. These contain
   gossip, tips, and leads that others can't access. Your 📜 Expert History skill lets

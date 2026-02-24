@@ -26,6 +26,7 @@ background: 'You''re descended from **Elias Monroe**, the dressmaker who created
 objectives:
   main: main_quest
   private: minor_elias_unrequited_love
+  initial_quest: AO116
 strategy: Your 👥 Montrose and Monroe connections give you access to clues about Cordelia
   Montrose and Elias Monroe that others can't read. Your 🔮 Basic Spiritual skill gives
   you some access to vision clues. But you won't be able to read everything. Find

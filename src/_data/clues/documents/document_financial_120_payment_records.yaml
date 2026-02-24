@@ -7,12 +7,10 @@ location: Mortuary
 hashtags:
 - morticians_silence
 - silas_blackwell
-- main_quest
 skills:
 - legal_1
 is_key:
 - morticians_silence
-- main_quest
 content: |
   MORTUARY PAYMENT LEDGER
 

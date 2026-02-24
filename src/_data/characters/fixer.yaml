@@ -26,6 +26,7 @@ background: You're a fixer. Not officially, of course—on paper you're a lawyer
 objectives:
   main: main_quest
   private: major_romano_treasure
+  initial_quest: BH106
 strategy: Your ⚖️ Expert Legal skill lets you read clues others can't—contracts, financial
   records, estate papers. Your 👥 Romano connection gives you access to clues about
   the family that others can't read. But you won't be able to read everything. Find

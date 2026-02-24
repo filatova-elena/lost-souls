@@ -9,10 +9,8 @@ hashtags:
 - sebastian_crane
 - cordelia_montrose
 - edmund_hartley
-- main_quest
 skills: []
-is_key:
-- main_quest
+is_key: []
 content: |
   [Written in shaky hand]
 

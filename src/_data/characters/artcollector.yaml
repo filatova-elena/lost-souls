@@ -25,6 +25,7 @@ background: 'Your family name carries weight in Long Beach—but not the kind yo
 objectives:
   main: main_quest
   private: major_romano_treasure
+  initial_quest: AO79
 strategy: Your 🎨 Expert Art skill lets you read clues others can't—art authentication,
   provenance, artifact evaluation. Your 👥 Romano connection gives you access to clues
   about the Romano family that others can't read. But you won't be able to read everything.

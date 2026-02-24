@@ -6,12 +6,10 @@ date: October 11, 1925
 hashtags:
 - morticians_silence
 - alice_whitmore
-- main_quest
 skills:
 - medical_1
 - legal_1
-is_key:
-- main_quest
+is_key: []
 content: |
   **STATE OF CALIFORNIA**
   **COUNTY OF LOS ANGELES**
