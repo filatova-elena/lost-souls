@@ -27,6 +27,7 @@ background: 'You''re a reporter for the local news. City council meetings, schoo
 objectives:
   main: main_quest
   private: major_rose_bread_legacy
+  initial_quest: AO79
 strategy: Your 🗝️ Rumor skill gives you access to **rumor chests** hidden around the
   mansion—unlock them with the key attached to your character card. These contain
   gossip, tips, and leads that others can't access. Your 📜 Expert History skill lets

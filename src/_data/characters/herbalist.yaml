@@ -22,6 +22,7 @@ background: 'You''re a herbalist—part folk healer, part forager, part plant wh
 objectives:
   main: main_quest
   private: minor_elixir_of_love
+  initial_quest: BH106
 strategy: Your 🌿 Expert Botanical skill lets you read clues others can't—botanical
   specimens, plant identification, garden notes. Your 🔮 Basic Spiritual skill gives
   you some access to vision clues. But you won't be able to read everything. Find

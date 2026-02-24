@@ -24,6 +24,7 @@ background: 'You''re a botany professor, descended from **Professor Edmund Hartl
 objectives:
   main: main_quest
   private: minor_elixir_of_love
+  initial_quest: BH106
 strategy: Your 🌿 Expert Botanical skill lets you read clues others can't—botanical
   specimens, plant identification, toxicology notes. Your 👥 Hartley connection gives
   you access to clues about Professor Hartley's consultations that others can't read.

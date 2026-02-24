@@ -8,12 +8,10 @@ date: '1925-10-07'
 hashtags:
   - thaddeus_crane
   - sebastian_crane
-  - main_quest
 skills:
   - medical_2
   - botanical_2
-is_key:
-- main_quest
+is_key: []
 content: |
   Sebastian has ingested foxglove derivative. Dosage unknown but acute symptoms present. The compound can be managed with proper intervention. Cardiac glycosides respond to electrolyte management and cardiac support.
 

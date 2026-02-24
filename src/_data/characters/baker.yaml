@@ -25,6 +25,7 @@ background: You're an **orphan**. You never knew your parents or where you truly
 objectives:
   main: main_quest
   private: major_rose_bread_legacy
+  initial_quest: AO81
 strategy: Your 👥 Eleanor connection gives you access to personal clues that others
   can't read. Your 🔮 Basic Spiritual skill lets you access some vision clues, though
   your visions may be fragmented. But you won't be able to read everything. Find players

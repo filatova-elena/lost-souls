@@ -26,6 +26,7 @@ background: The Heiress commissioned you to restore and catalog the artwork in t
 objectives:
   main: main_quest
   private: major_secret_baby
+  initial_quest: AO116
 strategy: Your 🎨 Expert Art skill lets you read clues others can't—art authentication,
   provenance, artistic intention. Your 👥 Montrose connection gives you access to clues
   about Cordelia Montrose that others can't read. But you won't be able to read everything.

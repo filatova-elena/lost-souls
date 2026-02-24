@@ -9,12 +9,10 @@ hashtags:
 - foxglove
 - sebastian_crane
 - silas_blackwell
-- main_quest
 skills:
 - medical_2
 - botanical_2
-is_key:
-- main_quest
+is_key: []
 content: |
   **AUTOPSY EXAMINATION REPORT**
 

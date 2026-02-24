@@ -53,6 +53,12 @@ description: "{{ character.title }}: {{ character.personality_short or character
 <section>
   <h2>Objectives</h2>
   <ul>
+    {% if character.objectives.initial_quest %}
+      {% set initialClue = clues | findByClueId(character.objectives.initial_quest) %}
+      <li>
+        <strong>Initial quest:</strong> Find the {% if initialClue and initialClue.title %}{{ initialClue.title }}{% else %}{{ character.objectives.initial_quest }}{% endif %}
+      </li>
+    {% endif %}
     {% if character.objectives.main %}
       {% set mainQuest = quests | findQuestById(character.objectives.main) %}
       <li>

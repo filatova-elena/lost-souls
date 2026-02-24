@@ -23,6 +23,7 @@ background: You're a treasure hunter and explorer—some call you an archaeologi
 objectives:
   main: main_quest
   private: major_romano_treasure
+  initial_quest: AO79
 strategy: Your 📜 Expert History skill lets you read clues others can't—historical
   records, maps, and timelines. Your 🎨 Basic Art skill gives you some access to artifact
   and object clues. But you won't be able to read everything. Find players whose skills

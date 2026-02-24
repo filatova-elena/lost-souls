@@ -19,6 +19,7 @@ background: 'Your family name is **Sinclair**, but it wasn''t always. You eventu
 objectives:
   main: main_quest
   private: minor_doctor_and_patient
+  initial_quest: BH106
 strategy: Your ⚕️ Expert Medical skill lets you read clues others can't—pharmaceutical
   formulas, death certificates, medical records. Your 👥 Crane connection gives you
   access to clues about the Crane family that others can't read. But you won't be

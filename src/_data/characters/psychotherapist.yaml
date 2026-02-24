@@ -27,6 +27,7 @@ background: 'You''re a psychotherapist specializing in **generational trauma**â€
 objectives:
   main: main_quest
   private: major_secret_baby
+  initial_quest: AO116
 strategy: Your ðŸ‘¥ connections to five different families (Montrose, Crane, Whitmore,
   Monroe, Hartley) give you access to clues about those families that others can't
   read. But you won't be able to read everything. Find players whose skills complement

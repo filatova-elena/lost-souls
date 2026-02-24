@@ -27,6 +27,7 @@ background: 'You''re a clockmaker and horologist—obsessed with time, timing, a
 objectives:
   main: main_quest
   private: minor_pocket_watch_mystery
+  initial_quest: AO81
 strategy: Your 📜 Expert History skill lets you read clues others can't—historical
   documents, timelines, artifact authentication. Your 🔮 Basic Spiritual skill gives
   you some access to vision clues. But you won't be able to read everything. Find

@@ -26,6 +26,7 @@ background: 'You''ve always believed that the stars shape human destiny. Not in 
 objectives:
   main: main_quest
   private: minor_the_alchemist
+  initial_quest: AO81
 strategy: Your 🔮 Expert Spiritual skill gives you access to **vision clues**—spiritual
   messages and ghostly communications that others can't access. Your 📜 Basic History
   skill gives you some additional access to historical clues. But you won't be able

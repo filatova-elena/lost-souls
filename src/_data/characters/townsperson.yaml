@@ -22,6 +22,7 @@ background: You live a few blocks from the **Montrose mansion**. You've lived in
   finds them.
 objectives:
   main: main_quest
+  initial_quest: AO81
 strategy: You have no special skills or connections, but you've been paying attention.
   Reach out to others when you need special expertise and you might be able to piece
   together this puzzle.

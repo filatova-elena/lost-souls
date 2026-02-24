@@ -23,6 +23,7 @@ background: 'Your family has run the mortuary in Long Beach for over 100 years. 
 objectives:
   main: main_quest
   private: minor_morticians_silence
+  initial_quest: BH106
 strategy: Your ⚕️ Expert Medical skill lets you read clues others can't—death records,
   injury patterns, forensic evidence. Your ⚖️ Basic Legal skill gives you some additional
   access to legal documents. But you won't be able to read everything. Find players
