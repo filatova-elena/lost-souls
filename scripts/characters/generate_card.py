@@ -23,7 +23,7 @@ from playwright.sync_api import sync_playwright
 sys.path.insert(0, str(Path(__file__).parent.parent / "qr_codes"))
 from qr_generator import generate_qr
 
-BASE_URL = "https://lostsouls.door66.events"  # Base URL for QR codes
+BASE_URL = ""  # Use relative paths by default
 
 SKILL_ICON = (
     '<div class="skill-icon">'
