@@ -6,7 +6,7 @@ pagination:
   addAllPagesToCollections: true
 permalink: "/clues/{{ clue.id }}/index.html"
 layout: base
-title: "{{ clue.title }} - Clue"
+title: "Clue"
 description: "{% if clue.subtitle %}{{ clue.subtitle }}{% else %}{{ clue.title }}{% endif %} - {% set descText = clue.narrative or clue.appearance or clue.narration or clue.content or '' %}{% if descText %}{{ descText | replace('**', '') | replace('*', '') | replace('#', '') | replace('![', '') | replace(']', '') | replace('(', '') | replace(')', '') | truncate(130) }}{% else %}A clue in The Lost Souls of Kennebec Avenue investigation{% endif %}"
 ---
 <link rel="stylesheet" href="{{ site.baseUrl }}clues/clues.css">
