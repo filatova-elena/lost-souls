@@ -1,10 +1,10 @@
 id: VC153
 type: Vision (Cordelia)
 title: The Heartbroken Ghost
-subtitle: Thomas's Return
+subtitle: ...
 act: act_i_setting
 narrative: |
-  A young woman in a rose colored dress flickers into view, her large brown eyes widening with shock and desperate hope. She reaches toward you with trembling hands.
+  A young woman in a 1920s dress flickers into view, her large brown eyes widening with shock and desperate hope. She reaches toward you with trembling hands.
 hashtags:
 - cordelia_montrose
 - thomas_whitmore
