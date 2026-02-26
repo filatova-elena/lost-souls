@@ -75,19 +75,19 @@ wrappers:
     - "Something was preserved in here with great care. You'd need {requirements} to know what—and why."
 
   "Writing (Sebastian's Notebook)":
-    - "Sebastian's handwriting is cramped and hurried. The meaning slips past you. You'd need {requirements}."
-    - "The notebook is full of Sebastian's private thoughts—but they're opaque to you. You'd need {requirements}."
+    - "The handwriting is cramped and hurried. The meaning slips past you. You'd need {requirements}."
+    - "The notebook is full of thoughts—but they're opaque to you. You'd need {requirements}."
 
   "Writing (Cordelia's Diary)":
-    - "Cordelia's elegant script fills the pages, but her meaning is veiled. You'd need {requirements}."
+    - "Someone's elegant script fills the pages, but the meaning is veiled. You'd need {requirements}."
     - "The diary entries are intimate and guarded. You'd need {requirements} to read between the lines."
 
   "Writing (Thaddeus's Diary)":
-    - "Thaddeus kept his diary in meticulous detail—details that mean nothing to you. You'd need {requirements}."
+    - "The meticulous details of this diary mean nothing to you. You'd need {requirements}."
     - "The diary is obsessive, methodical. You'd need {requirements} to follow where it leads."
 
   "Writing (Thaddeus's Notes)":
-    - "Thaddeus's notes are dense with abbreviations and references. You'd need {requirements} to decode them."
+    - "These notes are dense with abbreviations and references. You'd need {requirements} to decode them."
     - "Scattered notes in a precise hand. The system behind them eludes you. You'd need {requirements}."
 
   "Writing (Thaddeus's Patient Notes)":
@@ -99,19 +99,19 @@ wrappers:
     - "These notes chart a frantic search for a cure. The chemistry is beyond you. You'd need {requirements}."
 
   "Writing (Silas's Journal)":
-    - "Silas's journal entries are cryptic and unsettling. You'd need {requirements} to make sense of them."
+    - "The journal entries are cryptic and unsettling. You'd need {requirements} to make sense of them."
     - "The journal is filled with Silas's ramblings—some lucid, some not. You'd need {requirements}."
 
   "Writing (Hartley's Notes)":
-    - "The professor's research notes are dense with botanical Latin and cross-references. You'd need {requirements}."
+    - "The research notes are dense with botanical Latin and cross-references. You'd need {requirements}."
     - "Hartley's academic shorthand is impenetrable without the right background. You'd need {requirements}."
 
   "Writing (Elias's Letters)":
-    - "Elias chose his words carefully—too carefully. The real message is hidden. You'd need {requirements}."
+    - "The words are chosen carefully. The real message is hidden. You'd need {requirements}."
     - "The letters are tender on the surface, but something deeper is coded into them. You'd need {requirements}."
 
   "Writing (Eleanor's Diary)":
-    - "Eleanor's diary is warm but guarded—family recipes mixed with veiled references. You'd need {requirements}."
+    - "The diary is warm but guarded—family recipes mixed with veiled references. You'd need {requirements}."
     - "The diary reads like a cookbook at first, but there's more beneath the surface. You'd need {requirements}."
 
   "Vision (Sebastian)":
@@ -121,7 +121,7 @@ wrappers:
 
   "Vision (Cordelia)":
     - "A faint scent of perfume, a whisper of silk... then nothing. You'd need {requirements}."
-    - "Cordelia's presence lingers here like a half-remembered dream. You'd need {requirements} to see it clearly."
+    - "The ghostly presence lingers here like a half-remembered dream. You'd need {requirements} to see it clearly."
     - "For a moment, you feel a profound sadness that isn't yours. Then it's gone. You'd need {requirements}."
 
   "Vision (Alice)":
