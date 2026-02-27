@@ -11,9 +11,7 @@ hashtags:
 - sebastian_crane
 - thaddeus_crane
 - main_quest
-skills:
-- history_1
-- spiritual_1
+skills: []
 is_key:
 - pocket_watch_mystery
 - main_quest
