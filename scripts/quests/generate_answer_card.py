@@ -199,6 +199,9 @@ TEMPLATE = '''<!DOCTYPE html>
 
     .objective { font-family: 'Playfair Display', serif; font-style: italic; font-size: 13px; line-height: 1.4; color: #6a4a8a; text-align: center; padding: 0 8px; }
 
+    .quest-badge { position: absolute; bottom: 12px; right: 12px; width: 32px; height: 32px; border-radius: 50%; background: #4a148c; display: flex; align-items: center; justify-content: center; z-index: 10; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); }
+    .quest-badge-text { font-family: 'Playfair Display SC', serif; font-weight: 900; font-size: 18px; color: #fff; line-height: 1; }
+
     @media print { body { background: none; padding: 0; margin: 0; } @page { size: 3.5in 4.5in; margin: 0; } }
   </style>
 </head>
@@ -233,6 +236,9 @@ TEMPLATE = '''<!DOCTYPE html>
       <div class="text-rule"><div class="line"></div><div class="dia"></div><div class="line"></div></div>
       <div class="skills-text">{{SKILLS_TEXT}}</div>
       <div class="objective">{{OBJECTIVE}}</div>
+    </div>
+    <div class="quest-badge">
+      <div class="quest-badge-text">Q</div>
     </div>
   </div>
 </div>
