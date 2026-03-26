@@ -3,6 +3,8 @@ type: Vision (Cordelia)
 title: The Heartbroken Ghost
 subtitle: ...
 act: act_ii_mystery_emerges
+location:
+  room: library
 narrative: |
   A young woman in a light blue dress appears by the window, her wavy hair catching the light. She stares outward at nothing, her expression hollow with loss.
 hashtags:

@@ -3,7 +3,8 @@ type: Writing (Thaddeus's Antidote Search)
 title: Thaddeus Crane's Medical Notes
 subtitle: October 9, 1925 - Hawthorn and Willow Bark Combination
 act: act_iii_investigation
-location: Bembridge House, 2nd Floor, Master Bedroom
+location:
+  room: pantry
 date: '1925-10-09'
 hashtags:
 - thaddeus_crane

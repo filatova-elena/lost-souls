@@ -1,8 +1,10 @@
 id: AO105
 type: Artifact (Object)
 title: Cranberry Glass Lustre
+image: assets/images/bembridge/cranberry_lustre.png
 act: act_i_setting
-location: Bembridge House, Dining Room
+location:
+  room: dining
 appearance: |
   A deep red glass candle lustre with hanging crystal prism drops, surrounded by ruby glass vases and tumblers
 hashtags:

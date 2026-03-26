@@ -2,8 +2,8 @@ id: AP86
 type: Artifact (Painting)
 title: Portrait of Cordelia Montrose
 act: act_i_setting
-location: The Bembridge House, Downstairs, Middle Parlor, on the right side of the
-  door
+location:
+  room: piano
 appearance: |
   Tender portrait of a young woman in her late teens, painted with remarkable affection
 hashtags:

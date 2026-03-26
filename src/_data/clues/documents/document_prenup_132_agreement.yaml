@@ -3,7 +3,8 @@ title: Pre-nuptial Agreement - Sebastian Crane & Cordelia Montrose
 act: act_i_setting
 type: Document (Financial)
 date: '1925-08-15'
-location: Montrose Mansion - 1st floor
+location:
+  room: library
 hashtags:
 - sebastian_crane
 - cordelia_montrose

@@ -2,6 +2,9 @@ id: BH104
 type: Botanical (Dried Herb)
 title: Tropical Yellow Flower Specimen
 act: act_ii_mystery_emerges
+location:
+  room: carriage_house
+prop: dried yellow flower fragments in a glass bottle
 appearance: |
   Dried leaves and flower fragments in a bottle, yellowish with minty and slightly bitter smell
 hashtags:

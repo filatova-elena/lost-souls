@@ -4,7 +4,8 @@ title: Thaddeus Crane's Diary Fragment
 subtitle: October 11, 1925 - Torn Pages
 act: act_iv_revelation
 date: '1925-10-11'
-location: The Attic
+location:
+  room: neils_bdrm
 hashtags:
 - thaddeus_crane
 - sebastian_crane

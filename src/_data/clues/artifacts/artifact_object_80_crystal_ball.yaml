@@ -2,7 +2,9 @@ id: AO80
 type: Artifact (Object)
 title: Crystal Ball - Antique Scrying Sphere
 act: act_iv_revelation
-location: The Attic
+location:
+  room: neils_bdrm
+prop: crystal ball on an ornate brass stand
 appearance: |
   A clear quartz crystal sphere mounted on an ornate brass stand, with subtle internal cloud patterns.
 hashtags:

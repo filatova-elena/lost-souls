@@ -2,6 +2,8 @@ id: BG99
 type: Botanical (Garden Herb)
 title: Stinging Nettle
 act: act_i_setting
+location:
+  room: garden
 appearance: |
   Overgrown patch with distinctive stinging hairs on leaves and stems
 skills:

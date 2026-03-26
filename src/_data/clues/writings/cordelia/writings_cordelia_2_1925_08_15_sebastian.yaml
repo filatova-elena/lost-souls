@@ -4,7 +4,9 @@ type: Writing (Cordelia's Diary)
 title: Cordelia Montrose's Diary
 subtitle: August 15, 1925 - Sebastian
 act: act_ii_mystery_emerges
-location: Bembridge House, 1st Floor, Library
+location:
+  room: library
+prop: small ornate diary
 hashtags:
 - cordelia_montrose
 - sebastian_crane

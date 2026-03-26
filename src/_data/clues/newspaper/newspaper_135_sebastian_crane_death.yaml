@@ -4,7 +4,8 @@ title: Long Beach Gazette - October 12, 1925
 subtitle: MYSTERIOUS DEATH OF LOCAL APOTHECARY - Mob Connection Suspected
 act: act_ii_mystery_emerges
 date: October 12, 1925
-location: Found in local newspaper archives
+location:
+  room: breakfast
 hashtags:
 - the_alchemist
 - harbor_hustle

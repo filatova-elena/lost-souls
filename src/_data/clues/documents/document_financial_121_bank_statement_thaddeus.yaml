@@ -4,7 +4,8 @@ title: Bank Statement - Dr. Thaddeus Crane
 subtitle: October 1925
 act: act_iii_investigation
 date: October 1925
-location: Thaddeus Crane's Personal Records
+location:
+  room: office
 hashtags:
 - morticians_silence
 - thaddeus_crane

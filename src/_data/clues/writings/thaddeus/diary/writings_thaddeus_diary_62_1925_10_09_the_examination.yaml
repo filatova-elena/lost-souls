@@ -3,7 +3,8 @@ type: Writing (Thaddeus's Diary)
 title: Thaddeus Crane's Diary
 subtitle: October 9, 1925 - The Examination
 act: act_iii_investigation
-location: Bembridge House, 2nd Floor, Enclosed Sun Porch
+location:
+  room: upstairs_bdrm
 date: '1925-10-09'
 hashtags:
 - thaddeus_crane

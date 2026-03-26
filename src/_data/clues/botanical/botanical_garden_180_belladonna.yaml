@@ -2,6 +2,8 @@ id: BG180
 type: Botanical (Garden Herb)
 title: Dark Berried Plant
 act: act_iii_investigation
+location:
+  room: garden
 appearance: |
   Bushy plant with dull green leaves, bell-shaped purple-brown flowers, and glossy black berries
 skills:

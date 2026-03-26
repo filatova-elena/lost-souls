@@ -3,6 +3,8 @@ type: Vision (Sebastian)
 title: The Ghost of the Cursed Alchemist
 subtitle: ...
 act: act_ii_mystery_emerges
+location:
+  room: dining
 narrative: |
   A vision of a young man appears, his expression easing into relief. His dark eyes soften as he speaks of someone he trusts completely.
 hashtags:

@@ -3,6 +3,8 @@ type: Vision (Cordelia)
 title: The Heartbroken Ghost
 subtitle: ...
 act: act_ii_mystery_emerges
+location:
+  room: with_heartbroken_ghost
 narrative: |
   A vision of a young woman materializes, unsteady on her feet. Her wavy hair hangs loose, her skin ashen, one hand pressed to her temple as if fighting a terrible headache.
 hashtags:

@@ -1,8 +1,10 @@
 id: AO103
 type: Artifact (Object)
 title: Schatz Anniversary Clock
+image: assets/images/bembridge/shatz_clock_fireplace.png
 act: act_i_setting
-location: Bembridge House, Middle Parlor, Above Fireplace
+location:
+  room: fireplace room
 appearance: |
   A German torsion-pendulum clock under a glass dome, with a slowly rotating brass pendulum
 hashtags:

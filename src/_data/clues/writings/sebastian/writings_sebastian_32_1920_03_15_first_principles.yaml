@@ -3,7 +3,8 @@ type: Writing (Sebastian's Notebook)
 title: Sebastian Crane's Notebook
 subtitle: March 15, 1920 - First Principles
 act: act_i_setting
-location: Bembridge House, 1st Floor, Library
+location:
+  room: fireplace room
 date: '1920-03-15'
 hashtags:
 - sebastian_crane

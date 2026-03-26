@@ -3,6 +3,8 @@ type: Vision (Sebastian)
 title: The Ghost of the Cursed Alchemist
 subtitle: ...
 act: act_iii_investigation
+location:
+  room: carriage_house
 narrative: |
   A young man materializes, his dark eyes wide with gratitude and sorrow. He presses one hand to his chest, the other reaching out as if grasping for someone just beyond his reach.
 hashtags:

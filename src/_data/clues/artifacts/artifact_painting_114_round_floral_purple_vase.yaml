@@ -1,8 +1,10 @@
 id: AP114
 type: Artifact (Painting)
 title: Round Floral Still Life (Flowers in a Purple Vase)
+image: assets/images/bembridge/round_floral_still_life.png
 act: act_iii_investigation
-location: Bembridge House, Downstairs Parlor, Next to Fireplace
+location:
+  room: fireplace room
 appearance: |
   A circular oil painting of a colorful bouquet bursting from a purple vase, with a pink draped cloth
 hashtags:

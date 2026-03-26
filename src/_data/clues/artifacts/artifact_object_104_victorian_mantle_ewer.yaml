@@ -1,8 +1,10 @@
 id: AO104
 type: Artifact (Object)
 title: Victorian Mantle Ewer
+image: assets/images/bembridge/mantle_ewer.png
 act: act_i_setting
-location: Bembridge House, Middle Parlor, Shelf
+location:
+  room: fireplace room
 appearance: |
   A hand-painted opaline glass ewer with pink roses, mounted in an ornate cast brass Rococo frame
 hashtags:

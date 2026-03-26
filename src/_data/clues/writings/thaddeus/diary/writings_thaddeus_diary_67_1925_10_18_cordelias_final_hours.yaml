@@ -4,7 +4,8 @@ title: Thaddeus Crane's Diary
 subtitle: October 18, 1925 - Cordelia's Final Hours
 act: act_iv_revelation
 date: '1925-10-18'
-location: The Attic
+location:
+  room: neils_bdrm
 hashtags:
 - thaddeus_crane
 - cordelia_montrose

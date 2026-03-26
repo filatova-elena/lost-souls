@@ -1,8 +1,10 @@
 id: AO92
 type: Artifact (Object)
 title: English Transferware Plates
+image: assets/images/bembridge/plate_collection.png
 act: act_i_setting
-location: Bembridge House, Dining Room, Plate Rail
+location:
+  room: dining
 appearance: |
   A collection of blue-and-white plates displayed along the dining room plate rail
 hashtags:

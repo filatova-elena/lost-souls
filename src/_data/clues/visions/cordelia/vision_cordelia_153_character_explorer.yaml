@@ -3,6 +3,8 @@ type: Vision (Cordelia)
 title: The Heartbroken Ghost
 subtitle: ...
 act: act_i_setting
+location:
+  room: breakfast
 narrative: |
   A young woman in a 1920s dress flickers into view, her large brown eyes widening with shock and desperate hope. She reaches toward you with trembling hands.
 hashtags:

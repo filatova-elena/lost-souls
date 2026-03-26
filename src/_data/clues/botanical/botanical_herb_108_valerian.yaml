@@ -2,6 +2,9 @@ id: BH108
 type: Botanical (Dried Herb)
 title: Dried Earthen Root Powder
 act: act_i_setting
+location:
+  room: pantry
+prop: earthy root powder in a glass jar
 appearance: |
   Fine powder made from dried roots, earthy and musty aroma, consistent texture
 hashtags:

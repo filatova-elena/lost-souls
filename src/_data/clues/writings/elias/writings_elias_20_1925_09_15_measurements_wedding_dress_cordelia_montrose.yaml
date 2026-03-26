@@ -3,7 +3,8 @@ type: Writing (Elias's Letters)
 title: Elias Monroe's Notes
 subtitle: September 15, 1925 - Measurements - Wedding Dress (Cordelia Montrose)
 act: act_i_setting
-location: Bembridge House, 1st Floor, Breakfast Room
+location:
+  room: dining
 date: '1925-09-15'
 hashtags:
 - elias_unrequited_love

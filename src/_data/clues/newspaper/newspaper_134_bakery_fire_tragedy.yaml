@@ -5,6 +5,8 @@ subtitle: DEVASTATING BLAZE DESTROYS SULLIVAN BAKERY - Beloved Long Beach Instit
   Lost to Suspicious Fire
 act: act_iii_investigation
 date: November 5, 1990
+location:
+  room: master_bdrm
 location: Found in local newspaper archives
 hashtags:
 - bakery_fire

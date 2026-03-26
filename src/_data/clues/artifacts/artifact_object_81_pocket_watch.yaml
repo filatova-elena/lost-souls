@@ -2,7 +2,8 @@ id: AO81
 type: Artifact (Object)
 title: Antique Pocket Watch
 act: act_i_setting
-location: With Clockmaker character
+location:
+  room: foyer
 appearance: |
   Gold-plated pocket watch with glass face and inner inscriptions
 hashtags:

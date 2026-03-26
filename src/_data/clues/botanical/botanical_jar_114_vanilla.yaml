@@ -2,6 +2,9 @@ id: BJ114
 type: Botanical (Jar)
 title: Vanilla Syrup
 act: act_ii_mystery_emerges
+location:
+  room: pantry
+prop: amber vanilla syrup in a glass jar
 appearance: |
   Amber-colored liquid or syrup in jar, sweet aromatic smell
 hashtags:

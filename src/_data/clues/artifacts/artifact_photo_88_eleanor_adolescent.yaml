@@ -2,7 +2,8 @@ id: APH88
 type: Artifact (Photo)
 title: Photograph - Eleanor at Age 10
 act: act_iii_investigation
-location: Found among Elias Monroe's possessions
+location:
+  room: sewing
 appearance: |
   Black and white photograph of young girl standing in front of house with mature expression
 hashtags:

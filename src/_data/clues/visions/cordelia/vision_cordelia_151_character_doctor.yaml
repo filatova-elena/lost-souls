@@ -3,6 +3,8 @@ type: Vision (Cordelia)
 title: The Heartbroken Ghost
 subtitle: ...
 act: act_i_setting
+location:
+  room: piano
 narrative: |
   A young woman materializes before you, her wavy hair framing a face twisted with recognition. She recoils slightly, her eyes narrowing.
 hashtags:

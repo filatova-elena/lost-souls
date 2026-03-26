@@ -1,28 +1,19 @@
 #!/usr/bin/env python3
 """
-Generate print sheets of labels for clues in PDF format.
-
-Creates a single PDF with all clue labels formatted for Avery 5163 sticky paper:
-- Label size: 4" wide x 2" tall
-- Layout: 2 columns x 5 rows = 10 labels per page
-- Page: 8.5" x 11"
-- Top margin: 0.5"
-- Bottom margin: 0.5"
-- Left margin: 0.17"
-- Right margin: 0.17"
-- Horizontal gutter (between columns): 0.16"
-- Vertical gutter (between rows): 0" (no gap)
+Generate print sheets of 2x2 inch sticky labels for clues in PDF format.
 
 Each label displays:
 - ID (prominent and bold)
 - Title
-- Type
-- Appearance
-- Act | Location
+- Appearance (short description)
+- Act
+- Image (if present, fitted into remaining space)
+
+Labels have a thin border for cutting guides and 0.15" padding.
 
 Usage:
-    python scripts/generate_clue_labels.py
-    python scripts/generate_clue_labels.py --output to_print/clue_labels.pdf
+    python scripts/reference_generators/generate_clue_labels.py
+    python scripts/reference_generators/generate_clue_labels.py --output to_print/clue_labels.pdf
 """
 
 import argparse
@@ -35,27 +26,31 @@ from reportlab.lib import colors
 from reportlab.pdfgen import canvas
 from reportlab.platypus import Paragraph
 from reportlab.lib.enums import TA_LEFT
+from reportlab.lib.utils import ImageReader
 
 # Add project root to path
-project_root = Path(__file__).parent.parent
+project_root = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(project_root))
 
-# ── Avery 5163 specifications ──────────────────────────────────────
-# Labels are 4" x 2", arranged 2 columns x 5 rows = 10 per page
+# ── Label & page specifications ───────────────────────────────────
 PAGE_WIDTH = 8.5 * inch
 PAGE_HEIGHT = 11.0 * inch
 
-TOP_MARGIN = 0.5 * inch
-LEFT_MARGIN = 0.17 * inch
-
-LABEL_WIDTH = 4.0 * inch
+LABEL_WIDTH = 2.0 * inch
 LABEL_HEIGHT = 2.0 * inch
-H_GUTTER = 0.17 * inch       # gap between the two columns
-PADDING = 0.25 * inch        # content inset from label edge
+PADDING = 0.15 * inch
 
-COLS = 2
+# Grid layout — fit as many as we can on a letter page
+# With 2" labels: 4 columns x 5 rows = 20 per page
+COLS = 4
 ROWS = 5
-LABELS_PER_PAGE = COLS * ROWS  # 10
+LABELS_PER_PAGE = COLS * ROWS
+
+# Center the grid on the page
+GRID_WIDTH = COLS * LABEL_WIDTH
+GRID_HEIGHT = ROWS * LABEL_HEIGHT
+LEFT_MARGIN = (PAGE_WIDTH - GRID_WIDTH) / 2
+TOP_MARGIN = (PAGE_HEIGHT - GRID_HEIGHT) / 2
 
 # Content area inside each label
 CONTENT_WIDTH = LABEL_WIDTH - 2 * PADDING
@@ -88,18 +83,18 @@ def load_all_clues(clues_dir):
 def format_act_name(act):
     """Format act name for display."""
     if not act:
-        return "N/A"
+        return ""
     act_map = {
         'act_prologue': 'Prologue',
-        'act_i_setting': 'Act I: Setting',
-        'act_ii_mystery_emerges': 'Act II: Mystery Emerges',
-        'act_iii_investigation': 'Act III: Investigation',
-        'act_iv_revelation': 'Act IV: Revelation'
+        'act_i_setting': 'Act I',
+        'act_ii_mystery_emerges': 'Act II',
+        'act_iii_investigation': 'Act III',
+        'act_iv_revelation': 'Act IV'
     }
     return act_map.get(act, act.replace('_', ' ').title())
 
 
-def truncate_text(text, max_length=100):
+def truncate_text(text, max_length=80):
     """Truncate text to max_length characters, adding ellipsis."""
     if not text:
         return ""
@@ -109,92 +104,151 @@ def truncate_text(text, max_length=100):
     return text[:max_length - 3] + "..."
 
 
-def get_content_origin(idx):
+def get_label_origin(idx):
     """
-    Get the top-left corner of the CONTENT area for label at index idx.
-
-    Positions are absolute — computed directly from margins, not relative
-    to other labels.
-
-    Returns (x, y_top) where:
-      x     = left edge of content area
-      y_top = top edge of content area (in ReportLab coords, from page bottom)
-
-    From top of page:
-      y_from_top = TOP_MARGIN + row * LABEL_HEIGHT + PADDING
-      x          = LEFT_MARGIN + col * (LABEL_WIDTH + H_GUTTER) + PADDING
+    Get the top-left corner of the label at index idx.
+    Returns (x, y_top) in ReportLab coords (origin at bottom-left).
     """
     col = idx % COLS
     row = idx // COLS
 
-    x = LEFT_MARGIN + col * (LABEL_WIDTH + H_GUTTER) + PADDING
-
-    # Distance from top of page to top of content
-    y_from_top = TOP_MARGIN + row * LABEL_HEIGHT + PADDING
-    # Convert to ReportLab coords (origin at bottom-left)
+    x = LEFT_MARGIN + col * LABEL_WIDTH
+    y_from_top = TOP_MARGIN + row * LABEL_HEIGHT
     y_top = PAGE_HEIGHT - y_from_top
 
     return x, y_top
 
 
-def create_label_content(clue):
-    """Create formatted HTML content for a single label."""
+def resolve_image_path(image_field):
+    """Resolve an image path from the YAML field to an absolute path."""
+    if not image_field:
+        return None
+    # Image paths in YAML are relative to src/, e.g. "assets/images/bembridge/foo.png"
+    img_path = project_root / "src" / image_field
+    if img_path.exists():
+        return img_path
+    return None
+
+
+def draw_label(c, idx, clue, label_style, act_style):
+    """Draw a single label at position idx on the current page."""
+    label_x, label_y_top = get_label_origin(idx)
+
+    # Draw cut border
+    c.setStrokeColor(colors.Color(0.7, 0.7, 0.7))
+    c.setLineWidth(0.5)
+    c.rect(label_x, label_y_top - LABEL_HEIGHT, LABEL_WIDTH, LABEL_HEIGHT)
+
+    # Content area
+    cx = label_x + PADDING
+    cy_top = label_y_top - PADDING
+
     clue_id = clue.get('id', 'N/A')
     title = clue.get('title', 'Untitled')
-    clue_type = clue.get('type', '')
     appearance = clue.get('appearance', '')
     act = clue.get('act', '')
-    location = clue.get('location', '')
+    image_field = clue.get('image', None)
 
-    # Format appearance - truncate if too long
+    # Format appearance
     appearance_text = ""
     if appearance:
-        appearance_clean = str(appearance).strip()
-        appearance_clean = appearance_clean.replace('**', '').replace('*', '')
+        appearance_clean = str(appearance).strip().replace('**', '').replace('*', '')
         lines = appearance_clean.split('\n')
         appearance_text = lines[0] if lines else ""
-        appearance_text = truncate_text(appearance_text, max_length=120)
+        appearance_text = truncate_text(appearance_text, max_length=80)
 
-    # Format act and location
     act_display = format_act_name(act)
-    location_display = location if location else "N/A"
-    act_location = f"{act_display} | {location_display}"
 
-    # Build label content as HTML for Paragraph
-    content = f'<b><font size="14">{clue_id}</font></b><br/>'
-    content += f'<b>{title}</b><br/>'
-    if clue_type:
-        content += f'{clue_type}<br/>'
+    # Resolve image
+    img_path = resolve_image_path(image_field)
+
+    # ── Layout: text on the left, image on the right (if present) ──
+    if img_path:
+        # Reserve right side for image
+        img_area_width = CONTENT_WIDTH * 0.4
+        text_width = CONTENT_WIDTH - img_area_width - 0.05 * inch  # small gap
+    else:
+        text_width = CONTENT_WIDTH
+        img_area_width = 0
+
+    # Build text content
+    html = f'<b><font size="11">{clue_id}</font></b><br/>'
+    html += f'<b><font size="7">{title}</font></b><br/>'
     if appearance_text:
-        content += f'<i>{appearance_text}</i><br/>'
-    content += f'<font size="7">{act_location}</font>'
+        html += f'<i><font size="5.5">{appearance_text}</font></i><br/>'
 
-    return content
+    para = Paragraph(html, label_style)
+    w, h = para.wrap(text_width, CONTENT_HEIGHT - 12)  # reserve space for act at bottom
+    para.drawOn(c, cx, cy_top - h)
+
+    # Draw act at bottom left
+    if act_display:
+        act_para = Paragraph(f'<font size="6" color="#666666">{act_display}</font>', act_style)
+        aw, ah = act_para.wrap(text_width, 12)
+        act_para.drawOn(c, cx, label_y_top - LABEL_HEIGHT + PADDING)
+
+    # Draw image on the right
+    if img_path:
+        try:
+            img = ImageReader(str(img_path))
+            iw, ih = img.getSize()
+            aspect = iw / ih
+
+            # Available space for image
+            max_img_w = img_area_width
+            max_img_h = CONTENT_HEIGHT
+
+            # Fit image maintaining aspect ratio
+            if aspect > (max_img_w / max_img_h):
+                draw_w = max_img_w
+                draw_h = draw_w / aspect
+            else:
+                draw_h = max_img_h
+                draw_w = draw_h * aspect
+
+            # Position: right-aligned, vertically centered
+            img_x = cx + text_width + 0.05 * inch + (max_img_w - draw_w) / 2
+            img_y = cy_top - CONTENT_HEIGHT / 2 - draw_h / 2
+
+            c.drawImage(str(img_path), img_x, img_y, draw_w, draw_h,
+                        preserveAspectRatio=True, mask='auto')
+        except Exception as e:
+            print(f"Warning: Could not load image for {clue_id}: {e}", file=sys.stderr)
 
 
 def create_label_pdf(clues, output_path):
     """Create PDF with labels for all clues."""
-    print(f"Page size: {PAGE_WIDTH/inch:.1f}\" x {PAGE_HEIGHT/inch:.1f}\"")
-    print(f"Label size: {LABEL_WIDTH/inch:.2f}\" x {LABEL_HEIGHT/inch:.2f}\"")
-    print(f"Grid: {COLS} cols x {ROWS} rows = {LABELS_PER_PAGE} per page")
-    print(f"Content area: {CONTENT_WIDTH/inch:.2f}\" x {CONTENT_HEIGHT/inch:.2f}\"")
-    print(f"Left margin: {LEFT_MARGIN/inch:.3f}\"  H gutter: {H_GUTTER/inch:.3f}\"")
-    print(f"Total clues: {len(clues)}")
     num_pages = (len(clues) + LABELS_PER_PAGE - 1) // LABELS_PER_PAGE
+
+    print(f"Page size: {PAGE_WIDTH/inch:.1f}\" x {PAGE_HEIGHT/inch:.1f}\"")
+    print(f"Label size: {LABEL_WIDTH/inch:.1f}\" x {LABEL_HEIGHT/inch:.1f}\"")
+    print(f"Grid: {COLS} cols x {ROWS} rows = {LABELS_PER_PAGE} per page")
+    print(f"Content padding: {PADDING/inch:.2f}\"")
+    print(f"Margins: left={LEFT_MARGIN/inch:.2f}\" top={TOP_MARGIN/inch:.2f}\"")
+    print(f"Total clues: {len(clues)}")
     print(f"Total pages: {num_pages}\n")
 
-    # Text style
     label_style = ParagraphStyle(
         'Label',
         parent=getSampleStyleSheet()['Normal'],
-        fontSize=9,
-        leading=11,
+        fontSize=7,
+        leading=9,
         leftIndent=0,
         rightIndent=0,
         alignment=TA_LEFT,
         spaceBefore=0,
         spaceAfter=1,
         textColor=colors.black,
+        fontName='Helvetica',
+    )
+
+    act_style = ParagraphStyle(
+        'Act',
+        parent=getSampleStyleSheet()['Normal'],
+        fontSize=6,
+        leading=7,
+        alignment=TA_LEFT,
+        textColor=colors.Color(0.4, 0.4, 0.4),
         fontName='Helvetica',
     )
 
@@ -205,36 +259,22 @@ def create_label_pdf(clues, output_path):
         page_clues = clues[start:start + LABELS_PER_PAGE]
 
         for idx, clue in enumerate(page_clues):
-            x, y_top = get_content_origin(idx)
-
-            # Optional: draw label border for alignment verification
-            # label_col = idx % COLS
-            # label_row = idx // COLS
-            # label_x = LEFT_MARGIN + label_col * (LABEL_WIDTH + H_GUTTER)
-            # label_y_top = PAGE_HEIGHT - (TOP_MARGIN + label_row * LABEL_HEIGHT)
-            # c.setStrokeColor(colors.Color(0.85, 0.85, 0.85))
-            # c.setLineWidth(0.25)
-            # c.rect(label_x, label_y_top - LABEL_HEIGHT, LABEL_WIDTH, LABEL_HEIGHT)
-
-            # Build and draw paragraph
-            html = create_label_content(clue)
-            para = Paragraph(html, label_style)
-            w, h = para.wrap(CONTENT_WIDTH, CONTENT_HEIGHT)
-
-            # drawOn expects the bottom-left of the paragraph block
-            # y_top is top of content, so draw at y_top - paragraph_height
-            para.drawOn(c, x, y_top - h)
+            draw_label(c, idx, clue, label_style, act_style)
 
         if page_num < num_pages - 1:
             c.showPage()
 
     c.save()
-    print(f"✅ Label PDF generated: {output_path}")
+    print(f"Label PDF generated: {output_path}")
+
+    # Count how many had images
+    with_images = sum(1 for cl in clues if cl.get('image'))
+    print(f"Labels with images: {with_images}/{len(clues)}")
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description='Generate print sheets of labels for clues',
+        description='Generate 2x2 inch print labels for clues',
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     parser.add_argument(
@@ -256,7 +296,7 @@ def main():
     output_path = project_root / args.output
 
     if not clues_dir.exists():
-        print(f"❌ Error: Clues directory not found: {clues_dir}", file=sys.stderr)
+        print(f"Error: Clues directory not found: {clues_dir}", file=sys.stderr)
         return 1
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -265,7 +305,7 @@ def main():
     clues = load_all_clues(args.clues_dir)
 
     if not clues:
-        print("❌ Error: No clues found", file=sys.stderr)
+        print("Error: No clues found", file=sys.stderr)
         return 1
 
     print(f"Found {len(clues)} clues\n")

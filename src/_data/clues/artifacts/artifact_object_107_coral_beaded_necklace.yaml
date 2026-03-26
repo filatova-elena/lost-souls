@@ -1,8 +1,10 @@
 id: AO107
 type: Artifact (Object)
 title: Coral Beaded Rope Necklace
+image: assets/images/bembridge/coral_necklace.png
 act: act_ii_mystery_emerges
-location: Bembridge House, Upstairs, Jewelry Display Case
+location:
+  room: upstairs_bdrm
 appearance: |
   A multi-strand twisted bead rope necklace in deep coral pink
 hashtags:

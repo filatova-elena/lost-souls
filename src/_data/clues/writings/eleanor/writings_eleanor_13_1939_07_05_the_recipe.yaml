@@ -3,7 +3,8 @@ type: Writing (Eleanor's Diary)
 title: Eleanor's Diary
 subtitle: July 1, 1939 - ***
 act: act_iii_investigation
-location: Bembridge House, 2nd Floor, Additional Bedroom
+location:
+  room: sewing
 hashtags:
 - rose_bread_legacy
 - bakery_fire

@@ -3,6 +3,8 @@ type: Vision (Alice)
 title: The Lonely Ghost
 subtitle: ...
 act: act_iii_investigation
+location:
+  room: with_lonely_ghost
 narrative: |
   The ghostly figure paces before you, her hair wild, her gloved hands clenching and unclenching. Her bright eyes dart around as if someone might be listening.
 hashtags:

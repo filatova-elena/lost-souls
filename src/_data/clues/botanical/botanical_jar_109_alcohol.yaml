@@ -2,6 +2,9 @@ id: BJ109
 type: Botanical (Jar)
 title: Clear High-Proof Spirit
 act: act_ii_mystery_emerges
+location:
+  room: pantry
+prop: clear liquid in a large glass bottle
 appearance: |
   Clear, colorless liquid in a glass jar with very strong smell
 hashtags:

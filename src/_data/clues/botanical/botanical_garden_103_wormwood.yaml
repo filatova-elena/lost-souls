@@ -2,6 +2,9 @@ id: BG103
 type: Botanical (Garden Herb)
 title: Wormwood
 act: act_i_setting
+location:
+  room: garden
+  description: attached to an herb
 appearance: |
   Silvery-green leaves with a bitter, aromatic scent, distinctive appearance
 skills: []

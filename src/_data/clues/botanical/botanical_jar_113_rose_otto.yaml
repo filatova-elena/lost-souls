@@ -2,6 +2,9 @@ id: BJ113
 type: Botanical (Jar)
 title: Precious Floral Essential Oil
 act: act_i_setting
+location:
+  room: pantry
+prop: small bottle of fragrant oil
 appearance: |
   Small bottle of precious oil, deep complex floral aroma, intense and luxurious smell
 hashtags:

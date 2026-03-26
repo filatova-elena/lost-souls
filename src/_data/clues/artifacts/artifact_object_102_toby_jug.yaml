@@ -1,8 +1,10 @@
 id: AO102
 type: Artifact (Object)
 title: Toby Jug (Top Hat Gentleman)
+image: assets/images/bembridge/toby_jug.png
 act: act_i_setting
-location: Bembridge House, Middle Parlor, Above Bookcase
+location:
+  room: library
 appearance: |
   An English ceramic character jug depicting a cheerful gentleman in a top hat with a cane
 skills: []

@@ -3,7 +3,8 @@ type: Document (Legal)
 title: Crane Family Name Change Documentation
 act: act_ii_mystery_emerges
 date: 1960s
-location: The Attic
+location:
+  room: staircase_desk
 hashtags:
 - thaddeus_crane
 skills:

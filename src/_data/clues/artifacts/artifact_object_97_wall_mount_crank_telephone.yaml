@@ -1,8 +1,10 @@
 id: AO97
 type: Artifact (Object)
 title: Wall-Mount Crank Telephone
+image: assets/images/bembridge/crank_telephone.png
 act: act_i_setting
-location: Bembridge House, Butler's Pantry
+location:
+  room: pantry
 appearance: |
   An oak-cased magneto wall telephone with a hand crank, mouthpiece, and earpiece receiver
 hashtags:

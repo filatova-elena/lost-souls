@@ -3,6 +3,8 @@ type: Vision (Alice)
 title: The Lonely Ghost
 subtitle: ...
 act: act_iii_investigation
+location:
+  room: with_lonely_ghost
 narrative: |
   A young woman in a pale dress appears seated, posture rigid, hands clasped tightly in her lap. Her expression shifts between heartbreak and barely contained anger.
 hashtags:

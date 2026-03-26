@@ -1,8 +1,10 @@
 id: AO99
 type: Artifact (Object)
 title: Black Forest Cuckoo Clock
+image: assets/images/bembridge/cookoo_clock.png
 act: act_i_setting
-location: Bembridge House, Downstairs Hallway
+location:
+  room: foyer
 appearance: |
   A carved German cuckoo clock with maple leaf detailing
 hashtags:

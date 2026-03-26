@@ -3,6 +3,8 @@ type: Vision (Cordelia)
 title: The Heartbroken Ghost
 subtitle: ...
 act: act_ii_mystery_emerges
+location:
+  room: with_heartbroken_ghost
 narrative: |
   A young woman in a rose colored dress appears, barely visible, her form fading in and out. She sways on her feet, one hand braced against the wall, her brown eyes heavy and distant.
 hashtags:

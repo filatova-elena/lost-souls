@@ -2,6 +2,8 @@ id: RUMORS_I_C
 type: Rumor
 title: Collection of Rumors
 act: act_i_setting
+location:
+  room: dining
 skills:
   - rumors_1
 content: |

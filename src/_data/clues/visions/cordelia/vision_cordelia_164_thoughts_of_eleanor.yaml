@@ -3,7 +3,8 @@ type: Vision (Cordelia)
 title: The Heartbroken Ghost
 subtitle: ...
 act: act_iv_revelation
-location: The Attic
+location:
+  room: neils_bdrm
 narrative: |
   A vision of a young woman appears, her arms wrapped around herself as if cradling an invisible child. Her brown eyes overflow with tears, her lips trembling.
 hashtags:

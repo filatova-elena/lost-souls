@@ -3,7 +3,8 @@ type: Writing (Cordelia's Diary)
 title: Cordelia Montrose's Diary Fragment
 subtitle: October 11, 1925 - Alone
 act: act_iii_investigation
-location: The Bembridge House, Upstairs, Bedroom, Less Obvious Spot
+location:
+  room: upstairs_bdrm
 hashtags:
 - cordelia_montrose
 - sebastian_crane

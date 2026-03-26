@@ -98,7 +98,7 @@ def _render_keyhole(size, fg, bg, label=None):
     img = Image.new("RGBA", (size, size), (0, 0, 0, 0))
     draw = ImageDraw.Draw(img)
     cx = cy = size / 2
-    keyhole_bg = (255, 255, 255, 255)
+    keyhole_bg = bg if (bg and len(bg) >= 4 and bg[3] > 0) else (255, 255, 255, 255)
 
     bg_r = size * 0.45
     outline_w = max(6, int(size * 0.05))

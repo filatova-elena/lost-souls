@@ -2,6 +2,8 @@ id: RUMORS_I_A
 type: Rumor
 title: Collection of Rumors
 act: act_i_setting
+location:
+  room: piano
 skills:
   - rumors_1
 content: |

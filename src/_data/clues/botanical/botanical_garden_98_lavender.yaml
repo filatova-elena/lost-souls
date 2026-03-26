@@ -2,6 +2,8 @@ id: BG98
 type: Botanical (Garden Herb)
 title: Lavender
 act: act_i_setting
+location:
+  room: garden
 appearance: |
   Well-maintained plant with purple flowers and soothing aroma
 skills: []

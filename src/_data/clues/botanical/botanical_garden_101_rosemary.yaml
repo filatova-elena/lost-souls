@@ -2,6 +2,8 @@ id: BG101
 type: Botanical (Garden Herb)
 title: Rosemary
 act: act_i_setting
+location:
+  room: garden
 appearance: |
   Fragrant grey-green plant with needle-like leaves and tiny purple flowers
 skills:
