@@ -3,6 +3,8 @@ type: Vision (Alice)
 title: The Lonely Ghost
 subtitle: ...
 act: act_iii_investigation
+location:
+  room: dining
 narrative: |
   A young woman materializes before you, her expression shifting from confusion to desperate hope. She steps forward, reaching out as if to embrace you.
 hashtags:

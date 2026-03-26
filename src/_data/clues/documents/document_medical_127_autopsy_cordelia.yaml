@@ -3,7 +3,8 @@ type: Document (Medical)
 title: Autopsy Report - Cordelia Montrose
 act: act_iii_investigation
 date: October 19, 1925
-location: Mortuary
+location:
+  room: upstairs_bath
 hashtags:
 - morticians_silence
 - foxglove

@@ -2,7 +2,9 @@ id: AO82
 type: Artifact (Object)
 title: The Rose Garden Bed - Montrose Estate
 act: act_iv_revelation
-location: Bembridge House, Garden, Rose Garden Bed by the Aviary
+location:
+  room: garden
+  description: rose planter directly on the left hand side when facing from aviary towards the street
 appearance: |
   Carefully maintained garden bed filled with deep red and white roses
 hashtags:

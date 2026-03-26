@@ -3,7 +3,8 @@ type: Document (Business)
 title: Harbor Import & Trading Co. - Shipping Records
 act: act_ii_mystery_emerges
 date: 1920-1925
-location: Harbor Archive
+location:
+  room: library
 hashtags:
 - harbor_hustle
 - elixir_of_love

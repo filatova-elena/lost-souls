@@ -1,8 +1,10 @@
 id: AP93
 type: Artifact (Painting)
 title: Trompe l'Oeil Game Birds
+image: assets/images/bembridge/trompe_game_birds.png
 act: act_i_setting
-location: Bembridge House, Dining Room
+location:
+  room: dining
 appearance: |
   A strikingly realistic still life of hanging game birds — ducks suspended by their feet against a dark background
 hashtags:

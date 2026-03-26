@@ -1,6 +1,7 @@
 id: AO106
 type: Artifact (Object)
 title: French Jacquard Tapestry Panel
+image: assets/images/bembridge/jacquard_tapestry_panel.png
 act: act_i_setting
 location: Bembridge House, Downstairs Hallway
 appearance: |

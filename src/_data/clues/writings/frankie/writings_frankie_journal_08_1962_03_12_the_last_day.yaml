@@ -4,7 +4,9 @@ type: Writing (Frankie's Leather Journal)
 title: Frankie's Leather Journal
 subtitle: March 12, 1962 - The Last Day
 act: act_iii_investigation
-location: Bembridge House, 1st Floor, Sitting Room
+location:
+  room: staircase
+prop: worn leather journal
 date: '1962-03-12'
 hashtags:
 - frankie_romano

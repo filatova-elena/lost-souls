@@ -4,7 +4,8 @@ title: Forensic Report - Elixir Bottle Analysis
 act: act_iii_investigation
 story_gate_for: act_iv_revelation
 date: October 15, 1925
-location: With Forensic Analyst
+location:
+  room: with_grandmother
 hashtags:
 - foxglove
 - elixir_of_love

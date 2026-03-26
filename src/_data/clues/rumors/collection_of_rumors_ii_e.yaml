@@ -2,6 +2,8 @@ id: RUMORS_II_E
 type: Rumor
 title: Collection of Rumors
 act: act_ii_mystery_emerges
+location:
+  room: garden
 skills:
   - rumors_1
 content: |

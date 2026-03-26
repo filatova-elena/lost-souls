@@ -3,7 +3,8 @@ type: Document (Business)
 title: Purchase Records - Crane Apothecary & Pharmaceutical Supplies
 act: act_ii_mystery_emerges
 date: August-October 1925
-location: Sebastian's Laboratory at Montrose Estate
+location:
+  room: pantry
 hashtags:
 - elixir_of_love
 - sebastian_crane

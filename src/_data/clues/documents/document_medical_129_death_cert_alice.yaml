@@ -2,6 +2,8 @@ id: DM129
 type: Document (Medical)
 title: Certificate of Death - Alice Margaret Whitmore
 act: act_ii_mystery_emerges
+location:
+  room: piano
 date: October 11, 1925
 hashtags:
 - morticians_silence

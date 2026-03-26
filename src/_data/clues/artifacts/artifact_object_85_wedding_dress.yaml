@@ -2,7 +2,9 @@ id: AO85
 type: Artifact (Object)
 title: Unfinished Wedding Dress
 act: act_i_setting
-location: With Dressmaker character (found among Elias Monroe's possessions / workshop)
+location:
+  room: sewing
+prop: 1920s style unfinished wedding dress
 appearance: |
   Exquisite but unfinished wedding dress on dress form with intricate beading and lace details
 hashtags:

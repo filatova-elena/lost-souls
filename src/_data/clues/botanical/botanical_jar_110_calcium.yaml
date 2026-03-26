@@ -2,6 +2,9 @@ id: BJ110
 type: Botanical (Jar)
 title: Fine White Powder
 act: act_ii_mystery_emerges
+location:
+  room: carriage_house
+prop: fine white powder in a glass jar
 appearance: |
   Fine white powder in jar, very uniform texture, appears chemical or medicinal
 hashtags:

@@ -2,6 +2,9 @@ id: TEST001
 type: Document (Administrative)
 title: Test Clue
 act: act_prologue
+location:
+  room: N/A
+  description: sent in an email before the event
 hashtags: []
 skills: []
 content: |

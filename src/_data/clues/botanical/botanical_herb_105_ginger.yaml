@@ -2,6 +2,9 @@ id: BH105
 type: Botanical (Dried Herb)
 title: Ginger Root
 act: act_i_setting
+location:
+  room: pantry
+prop: dried root pieces in a glass jar
 appearance: |
   Dried root pieces in labeled glass jar, tan colored with visible root texture
 skills:

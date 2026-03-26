@@ -2,6 +2,8 @@ id: VA136
 type: Vision (Alice)
 title: The Lonely Ghost
 act: act_ii_mystery_emerges
+location:
+  room: pantry
 narrative: |
   A young woman in a pale dress flickers into view, her hair framing a face that belongs in a painting.
 hashtags:

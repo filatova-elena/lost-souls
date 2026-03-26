@@ -2,7 +2,8 @@ id: APH91
 type: Artifact (Photo)
 title: Faded Photograph - The Romano Family at Harbor
 act: act_i_setting
-location: Art Collector's office, framed on desk
+location:
+  room: office
 appearance: |
   Black and white photograph showing group of well-dressed people standing near waterfront location
 hashtags:

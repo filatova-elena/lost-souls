@@ -4,7 +4,8 @@ title: Thaddeus Crane's Diary Fragment
 subtitle: October 18, 1925 - The Aftermath
 act: act_iv_revelation
 date: '1925-10-18'
-location: Upstairs bedroom
+location:
+  room: neils_bdrm
 hashtags:
 - thaddeus_crane
 - cordelia_montrose

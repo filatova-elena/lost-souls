@@ -3,7 +3,8 @@ type: Writing (Eleanor's Diary)
 title: Eleanor's Diary
 subtitle: 1939 - Who Am I?
 act: act_iii_investigation
-location: Bembridge House, 2nd Floor, Master Bedroom
+location:
+  room: master_bdrm
 hashtags:
 - eleanor_sullivan
 - cordelia_montrose

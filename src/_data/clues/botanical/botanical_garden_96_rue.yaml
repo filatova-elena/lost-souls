@@ -2,6 +2,8 @@ id: BG96
 type: Botanical (Garden Herb)
 title: Rue
 act: act_i_setting
+location:
+  room: garden
 skills: []
 appearance: |
   Bitter green leaves with small yellow flowers, strong distinctive scent

@@ -2,6 +2,8 @@ id: BG100
 type: Botanical (Garden Herb)
 title: Colorful Peppers
 act: act_i_setting
+location:
+  room: garden
 appearance: |
   Pepper plants with vibrant red, yellow, and green peppers, clearly thriving
 skills: []

@@ -3,6 +3,8 @@ type: Vision (Alice)
 title: The Lonely Ghost
 subtitle: ...
 act: act_ii_mystery_emerges
+location:
+  room: with_lonely_ghost
 narrative: |
   A pale figure shimmers into existence, her delicate features flooding with relief. Tears stream down translucent cheeks as she reaches toward you with trembling hands.
 hashtags:

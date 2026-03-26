@@ -3,7 +3,8 @@ type: Document (Financial)
 title: Payment Records
 act: act_i_setting
 date: October 1925
-location: Mortuary
+location:
+  room: library
 hashtags:
 - morticians_silence
 - silas_blackwell

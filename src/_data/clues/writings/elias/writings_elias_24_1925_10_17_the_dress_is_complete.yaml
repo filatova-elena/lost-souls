@@ -4,7 +4,8 @@ title: Elias Monroe's Notes
 subtitle: October 17, 1925 - The Dress Is Complete
 act: act_iv_revelation
 date: '1925-10-17'
-location: The Attic
+location:
+  room: neils_bdrm
 hashtags:
 - elias_unrequited_love
 - elias_monroe

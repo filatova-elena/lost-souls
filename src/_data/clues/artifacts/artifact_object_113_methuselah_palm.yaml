@@ -3,7 +3,9 @@ type: Artifact (Object)
 title: Mexican Fan Palm, nicknamed "Methuselah"
 act: act_ii_mystery_emerges
 date: '1962-03-12'
-location: Bembridge House, Garden, palm tree by the Carriage House
+location:
+  room: garden
+  description: attached to the tallest palm tree
 appearance: |
   A large, tall palm tree that appears to be very old.
 hashtags:

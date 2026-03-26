@@ -3,7 +3,8 @@ type: Writing (Cordelia's Diary)
 title: Cordelia Montrose's Diary
 subtitle: October 18, 1925 - Eleanor...
 act: act_iv_revelation
-location: The Attic
+location:
+  room: neils_bdrm
 hashtags:
 - secret_baby
 - cordelia_montrose

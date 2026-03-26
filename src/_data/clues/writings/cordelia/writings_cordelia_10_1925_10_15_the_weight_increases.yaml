@@ -3,7 +3,8 @@ type: Writing (Cordelia's Diary)
 title: Cordelia Montrose's Diary Fragment
 subtitle: October 15, 1925 - The Weight Increases
 act: act_iii_investigation
-location: The Bembridge House, Upstairs, Bedroom
+location:
+  room: upstairs_bdrm
 hashtags:
 - cordelia_montrose
 - thaddeus_crane

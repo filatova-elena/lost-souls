@@ -1,8 +1,10 @@
 id: APH98
 type: Artifact (Photo)
 title: '''On the Pike'' Panoramic Photograph'
+image: assets/images/bembridge/on_the_pike_photograph.png
 act: act_i_setting
-location: Bembridge House, Stair Landing
+location:
+  room: upstairs_bdrm
 appearance: |
   A wide panoramic photograph of a bustling seaside amusement zone with labeled landmarks
 hashtags:

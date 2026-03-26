@@ -3,6 +3,8 @@ type: Vision (Cordelia)
 title: The Heartbroken Ghost
 subtitle: ...
 act: act_i_setting
+location:
+  room: downstairs_bath
 narrative: |
   A vision of a young woman appears, her expression softening as she gazes at you. A wistful smile plays across her delicate features.
 hashtags:

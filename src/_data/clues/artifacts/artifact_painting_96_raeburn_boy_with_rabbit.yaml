@@ -1,8 +1,10 @@
 id: AP96
 type: Artifact (Painting)
 title: Raeburn Print — "Boy with a Rabbit"
+image: assets/images/bembridge/boy_with_rabbit.png
 act: act_i_setting
-location: Bembridge House, Upstairs Bedroom
+location:
+  room: upstairs_bdrm
 appearance: |
   A chromolithographic print of a gentle scene — a boy holding a pet rabbit
 hashtags:

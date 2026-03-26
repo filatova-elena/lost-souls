@@ -2,6 +2,8 @@ id: RUMORS_II_F
 type: Rumor
 title: Collection of Rumors
 act: act_ii_mystery_emerges
+location:
+  room: foyer
 skills:
   - rumors_1
 content: |

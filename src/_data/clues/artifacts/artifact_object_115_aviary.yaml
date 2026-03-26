@@ -2,7 +2,8 @@ id: AO115
 type: Artifact (Object)
 title: The Aviary
 act: act_iv_revelation
-location: Bembridge House, Garden
+location:
+  room: garden
 appearance: |
   An octagonal tower with a "witch's cap" roof, housing colorful parakeets
 hashtags:

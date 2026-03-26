@@ -3,6 +3,8 @@ type: Vision (Cordelia)
 title: The Heartbroken Ghost
 subtitle: ...
 act: act_iii_investigation
+location:
+  room: with_heartbroken_ghost
 narrative: |
   A young woman appears, her rose colored dress disheveled, her brown eyes red and swollen. She clutches her arms around herself, rocking slightly.
 hashtags:

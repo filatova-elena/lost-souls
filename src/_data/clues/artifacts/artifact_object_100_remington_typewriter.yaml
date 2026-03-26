@@ -1,8 +1,10 @@
 id: AO100
 type: Artifact (Object)
 title: Remington Standard No. 10 Typewriter
+image: assets/images/bembridge/remington_typewriter.png
 act: act_i_setting
-location: Bembridge House, Office
+location:
+  room: office
 appearance: |
   A black Remington typewriter with round glass keys, still loaded with a ribbon
 hashtags:

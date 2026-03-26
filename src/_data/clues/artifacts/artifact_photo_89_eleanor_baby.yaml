@@ -2,7 +2,8 @@ id: APH89
 type: Artifact (Photo)
 title: Photograph of an infant
 act: act_i_setting
-location: Found among Elias Monroe's possessions
+location:
+  room: sewing
 appearance: |
   Black and white photograph of infant in formal white christening gown
 hashtags:

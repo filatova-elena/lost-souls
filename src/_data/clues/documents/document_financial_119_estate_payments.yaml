@@ -3,7 +3,8 @@ type: Document (Financial)
 title: Montrose Estate Payment Ledger - 1990
 act: act_iii_investigation
 date: October-November 1990
-location: Montrose Estate Records
+location:
+  room: office
 hashtags:
 - margaret_montrose
 - bakery_fire

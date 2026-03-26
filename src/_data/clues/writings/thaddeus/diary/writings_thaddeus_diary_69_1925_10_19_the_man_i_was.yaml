@@ -4,7 +4,8 @@ title: Thaddeus Crane's Diary Fragment
 subtitle: October 19, 1925 - The Man I Was
 act: act_iv_revelation
 date: '1925-10-19'
-location: The Attic
+location:
+  room: neils_bdrm
 hashtags:
 - thaddeus_crane
 skills: []

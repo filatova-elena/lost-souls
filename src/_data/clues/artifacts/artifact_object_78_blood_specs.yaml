@@ -2,7 +2,9 @@ id: AO78
 type: Artifact (Object)
 title: Silver Candle Holder
 act: act_iv_revelation
-location: The Attic
+location:
+  room: neils_bdrm
+prop: heavy silver candle holder
 appearance: |
   Ornate silver candle holder with intricate decorative patterns, noticeably heavy
 hashtags:

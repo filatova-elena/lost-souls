@@ -2,6 +2,9 @@ id: SIGN_IN
 type: Document (Administrative)
 title: Sign In
 act: act_prologue
+location:
+  room: foyer
+  description: placed on top of sign in book
 hashtags: []
 skills: []
 content: |

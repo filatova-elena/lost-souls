@@ -3,7 +3,8 @@ type: Writing (Cordelia's Diary)
 title: Cordelia Montrose's Diary Fragment
 subtitle: October 9, 1925 - Sebastian is Sick
 act: act_iii_investigation
-location: Bembridge House, 2nd Floor, Additional Bedroom
+location:
+  room: upstairs_bdrm
 hashtags:
 - cordelia_montrose
 - sebastian_crane

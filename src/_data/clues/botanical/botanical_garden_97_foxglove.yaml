@@ -2,6 +2,9 @@ id: BG97
 type: Botanical (Garden Herb)
 title: Purple Spotted Flowering Plant
 act: act_iii_investigation
+location:
+  room: garden
+  description: attached to a plant with tubular flowers ideally, otherwise another plant
 appearance: |
   Tall flowering plant with tubular flowers in pink, purple, white, or yellow, distinctive spotted throats
 hashtags:

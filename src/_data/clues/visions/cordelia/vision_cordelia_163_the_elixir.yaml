@@ -3,6 +3,8 @@ type: Vision (Cordelia)
 title: The Heartbroken Ghost
 subtitle: ...
 act: act_ii_mystery_emerges
+location:
+  room: with_heartbroken_ghost
 narrative: |
   The air shimmers and a vision of a young woman materializes, a gentle smile on her face. She cradles something invisible in her hands, her brown eyes warm with love and trust.
 hashtags:

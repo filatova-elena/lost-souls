@@ -2,7 +2,9 @@ id: BG185
 type: Botanical (Garden Tree)
 title: Mexican Fan Palm — "Methuselah"
 act: act_i_setting
-location: Bembridge House, Garden, palm tree by the Carriage House
+location:
+  room: garden
+  description: attached to the tallest palm tree
 appearance: |
   A large, tall palm tree that appears to be very old
 hashtags:

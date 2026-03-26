@@ -2,7 +2,8 @@ id: APH90
 type: Artifact (Photo)
 title: Photograph - Eleanor as Young Child
 act: act_iii_investigation
-location: Found among Elias Monroe's possessions
+location:
+  room: sewing
 appearance: |
   Black and white photograph of young child playing in garden, wearing simple white dress with bow
 hashtags:

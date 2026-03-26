@@ -1,8 +1,10 @@
 id: AP95
 type: Artifact (Painting)
 title: Composer Portrait Panel
+image: assets/images/bembridge/composer_panel.png
 act: act_i_setting
-location: Bembridge House, Middle Parlor
+location:
+  room: library
 appearance: |
   Four oval photographic portraits in a single frame — Romantic-era composers
 hashtags:

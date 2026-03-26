@@ -3,7 +3,8 @@ type: Document (Business)
 title: Shipping Manifests - Harbor Import & Trading Co.
 act: act_ii_mystery_emerges
 date: 1930-1968
-location: The Bembridge House, Office, On the desk
+location:
+  room: staircase_desk
 hashtags:
 - harbor_hustle
 - frankie_romano

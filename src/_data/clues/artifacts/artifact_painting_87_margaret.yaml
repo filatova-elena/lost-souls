@@ -2,7 +2,8 @@ id: AP87
 type: Artifact (Painting)
 title: Portrait of Margaret Montrose
 act: act_i_setting
-location: Bembridge House, 1st Floor, Formal Living Room
+location:
+  room: piano
 appearance: |
   Formal oil painting of elegant woman with serene but strong expression
 hashtags:

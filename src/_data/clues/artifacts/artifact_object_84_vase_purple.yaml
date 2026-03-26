@@ -2,9 +2,11 @@ id: AO84
 title: Purple and Gold Decorative Vase
 act: act_iv_revelation
 type: Artifact (Object)
+prop: purple and gold clay vase
 appearance: |
   Decorative vase made of purple clay with gold accents, standing on ornate wooden stand
-location: The Attic
+location:
+  room: neils_bdrm
 hashtags:
 - romano_treasure
 - frankie_romano

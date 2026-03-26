@@ -1,8 +1,10 @@
 id: AO108
 type: Artifact (Object)
 title: Medicine Cabinet
+image: assets/images/bembridge/medicine_cabinet.png
 act: act_i_setting
-location: Bembridge House, Upstairs Bathroom
+location:
+  room: upstairs_bdrm
 appearance: |
   A wall-mounted medicine cabinet filled with vintage bottles, tins, and tubes
 hashtags:

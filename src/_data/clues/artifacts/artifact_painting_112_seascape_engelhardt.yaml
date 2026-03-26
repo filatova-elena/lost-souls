@@ -1,9 +1,11 @@
 id: AP112
 type: Artifact (Painting)
 title: Seascape — Walter Engelhardt
+image: assets/images/bembridge/engelhardt_seascape.png
 act: act_iii_investigation
 date: '1962-03-12'
-location: Bembridge House, Parlor
+location:
+  room: piano
 appearance: |
   A bold seascape of waves crashing against rocks
 hashtags:

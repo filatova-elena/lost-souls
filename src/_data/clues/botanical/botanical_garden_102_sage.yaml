@@ -2,6 +2,8 @@ id: BG102
 type: Botanical (Garden Herb)
 title: Sage
 act: act_i_setting
+location:
+  room: garden
 appearance: |
   Bundled dried herb tied with string, strong aromatic smell, spiritual in appearance
 hashtags:

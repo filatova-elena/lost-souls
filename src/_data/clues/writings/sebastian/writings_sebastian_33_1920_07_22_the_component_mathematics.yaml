@@ -3,7 +3,8 @@ type: Writing (Sebastian's Notebook)
 title: Sebastian Crane's Notebook
 subtitle: July 22, 1923 - The Component Mathematics
 act: act_iii_investigation
-location: Bembridge House, 1st Floor, Sitting Room
+location:
+  room: carriage_house
 date: '1923-07-22'
 hashtags:
 - sebastian_crane

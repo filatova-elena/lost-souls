@@ -3,7 +3,8 @@ type: Writing (Eleanor's Diary)
 title: Eleanor's Diary
 subtitle: 1948 - Today...
 act: act_iii_investigation
-location: Bembridge House, 2nd Floor, Enclosed Sun Porch
+location:
+  room: sewing
 hashtags:
 - eleanor_sullivan
 - cordelia_montrose

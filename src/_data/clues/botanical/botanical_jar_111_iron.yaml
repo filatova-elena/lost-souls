@@ -2,6 +2,9 @@ id: BJ111
 type: Botanical (Jar)
 title: Reddish-Brown Powder
 act: act_ii_mystery_emerges
+location:
+  room: carriage_house
+prop: reddish-brown powder in a glass jar
 appearance: |
   Reddish-brown powder in jar, distinctive color, clearly a chemical or mineral compound
 hashtags:
