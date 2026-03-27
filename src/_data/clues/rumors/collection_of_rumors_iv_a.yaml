@@ -2,6 +2,8 @@ id: RUMORS_IV_A
 type: Rumor
 title: Collection of Rumors
 act: act_iv_revelation
+location:
+  room: neils_bdrm
 skills:
   - rumors_1
 content: |

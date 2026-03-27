@@ -2,6 +2,8 @@ id: RUMORS_III_A
 type: Rumor
 title: Collection of Rumors
 act: act_iii_investigation
+location:
+  room: master_bdrm
 skills:
   - rumors_1
 content: |
