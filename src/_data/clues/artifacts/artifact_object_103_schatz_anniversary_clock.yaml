@@ -4,7 +4,7 @@ title: Schatz Anniversary Clock
 image: assets/images/bembridge/shatz_clock_fireplace.png
 act: act_i_setting
 location:
-  room: fireplace room
+  room: fireplace
 appearance: |
   A German torsion-pendulum clock under a glass dome, with a slowly rotating brass pendulum
 hashtags:
