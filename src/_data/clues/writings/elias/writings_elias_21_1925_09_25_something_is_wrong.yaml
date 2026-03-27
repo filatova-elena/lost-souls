@@ -3,7 +3,8 @@ type: Writing (Elias's Letters)
 title: Elias Monroe's Notes
 subtitle: September 25, 1925 - Something Is Wrong
 act: act_ii_mystery_emerges
-location: Bembridge House, 1st Floor, Library
+location:
+  room: library
 date: '1925-09-25'
 hashtags:
 - elias_unrequited_love

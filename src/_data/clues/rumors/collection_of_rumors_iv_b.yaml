@@ -2,6 +2,8 @@ id: RUMORS_IV_B
 type: Rumor
 title: Collection of Rumors
 act: act_iv_revelation
+location:
+  room: kitchen
 skills:
   - rumors_1
 content: |

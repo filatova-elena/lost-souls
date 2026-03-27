@@ -3,7 +3,8 @@ type: Artifact (Object)
 title: Bell Collection
 image: assets/images/bembridge/bell_collection.png
 act: act_i_setting
-location: Bembridge House, Middle Parlor, Display Shelf
+location:
+  room: library
 appearance: |
   A small collection of decorative bells — brass, cut crystal, and a figural piece with an ornate handle
 hashtags:

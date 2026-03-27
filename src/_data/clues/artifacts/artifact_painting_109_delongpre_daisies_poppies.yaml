@@ -5,7 +5,9 @@ act: act_i_setting
 type: Artifact (Painting)
 appearance: |
   A chromolithographic art print of daisies and poppies arranged in a vase
-location: Bembridge House, Parlor Wall
+location:
+  room: upstairs_bdrm
+  description: might actually be in master_bdrm
 hashtags:
   - romano_treasure
 skills:

@@ -4,7 +4,8 @@ title: Frankie's Dead Drops
 subtitle: March 12, 1962 - My Dear Vincent
 act: act_ii_mystery_emerges
 date: '1962-03-12'
-location: Bembridge House, Desk in the Foyer
+location:
+  room: foyer
 appearance: |
   A piece of paper, weathered and folded.
 hashtags:

@@ -6,7 +6,8 @@ title: Long Beach Urban Legends & Mysteries - Episode 2
 subtitle: February 20, 2023 - The Sullivan Bakery Fire
 act: act_i_setting
 date: '2023-02-20'
-location: Podcast Archive
+location:
+  room: piano
 hashtags:
 - long_beach_mysteries
 - eleanor_sullivan

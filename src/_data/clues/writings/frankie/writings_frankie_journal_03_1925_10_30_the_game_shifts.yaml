@@ -5,7 +5,8 @@ title: Frankie's Leather Journal
 subtitle: October 30, 1925 - The Game Shifts
 act: act_iii_investigation
 location:
-  room: library
+  room: staircase
+prop: worn leather journal
 date: '1925-10-30'
 hashtags:
 - frankie_romano

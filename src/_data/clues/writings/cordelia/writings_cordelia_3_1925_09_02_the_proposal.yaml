@@ -5,7 +5,8 @@ type: Writing (Cordelia's Diary)
 title: Cordelia Montrose's Diary
 subtitle: September 2, 1925 - The Proposal
 act: act_ii_mystery_emerges
-location: Bembridge House, 1st Floor, Sitting Room
+location:
+  room: library
 hashtags:
 - cordelia_montrose
 - sebastian_crane
