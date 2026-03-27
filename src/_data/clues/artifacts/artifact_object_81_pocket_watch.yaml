@@ -4,6 +4,7 @@ title: Antique Pocket Watch
 act: act_i_setting
 location:
   room: foyer
+prop: golden pocket watch
 appearance: |
   Gold-plated pocket watch with glass face and inner inscriptions
 hashtags:

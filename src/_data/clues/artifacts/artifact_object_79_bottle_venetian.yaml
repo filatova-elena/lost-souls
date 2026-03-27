@@ -3,7 +3,7 @@ type: Artifact (Object)
 title: Ornate Venetian Glass Bottle
 act: act_i_setting
 location:
-  room: fireplace room
+  room: fireplace
 prop: venetian glass bottle
 appearance: |
   Decorative bottle of venetian glass with gold leaf detailing and ornate stopper.

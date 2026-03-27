@@ -4,7 +4,7 @@ title: Black Forest Cuckoo Clock
 image: assets/images/bembridge/cookoo_clock.png
 act: act_i_setting
 location:
-  room: foyer
+  room: downstairs_hallway
 appearance: |
   A carved German cuckoo clock with maple leaf detailing
 hashtags:
