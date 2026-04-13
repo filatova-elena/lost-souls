@@ -58,7 +58,22 @@ function openScanner() {
 }
 
 function onScanSuccess(decodedText) {
-  stopAndCleanup().then(() => {
+  if (closing || !scanner) return;
+
+  const currentScanner = scanner;
+  scanner = null;
+
+  const hint = document.getElementById('qr-scanner-hint');
+  if (hint) hint.textContent = 'Clue found! Opening...';
+
+  currentScanner.stop().then(() => {
+    currentScanner.clear();
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        window.location.href = decodedText;
+      }, 100);
+    });
+  }).catch(() => {
     window.location.href = decodedText;
   });
 }
