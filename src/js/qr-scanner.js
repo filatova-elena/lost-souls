@@ -5,6 +5,23 @@ let scanner = null;
 let overlay = null;
 let closing = false;
 
+function log(msg) {
+  console.log('[QR Scanner] ' + msg + ' | scanner=' + !!scanner + ' overlay=' + !!overlay + ' closing=' + closing);
+}
+
+// Handle back-forward cache: reset all state when page is restored
+window.addEventListener('pageshow', function(e) {
+  if (e.persisted) {
+    log('Page restored from bfcache, resetting state');
+    scanner = null;
+    overlay = null;
+    closing = false;
+    // Remove any leftover overlay DOM
+    const old = document.getElementById('qr-scanner-overlay');
+    if (old) old.remove();
+  }
+});
+
 function createOverlay() {
   overlay = document.createElement('div');
   overlay.id = 'qr-scanner-overlay';
@@ -26,7 +43,11 @@ function createOverlay() {
 }
 
 function openScanner() {
-  if (overlay || closing) return;
+  log('openScanner called');
+  if (overlay || closing) {
+    log('BLOCKED: overlay or closing is set');
+    return;
+  }
   if (typeof Html5Qrcode === 'undefined') {
     alert('Scanner library still loading... please try again in a second.');
     return;
@@ -39,12 +60,15 @@ function openScanner() {
   if (viewfinder) viewfinder.style.display = 'none';
 
   scanner = new Html5Qrcode('qr-scanner-reader');
+  log('scanner created, calling start()');
+
   scanner.start(
     { facingMode: 'environment' },
     { fps: 10, aspectRatio: 1.0 },
     onScanSuccess,
     () => {}
   ).then(() => {
+    log('scanner started successfully');
     if (viewfinder) viewfinder.style.display = '';
     if (hint) hint.textContent = 'Point your camera at a purple QR code';
     try {
@@ -52,44 +76,66 @@ function openScanner() {
       const zoom = caps.zoomFeature();
       if (zoom.isSupported()) {
         zoom.apply(Math.min(2, zoom.max()));
+        log('zoom applied');
       }
-    } catch (e) {}
+    } catch (e) {
+      log('zoom not available: ' + e.message);
+    }
   }).catch(err => {
-    console.error('QR scanner error:', err);
+    log('scanner start FAILED: ' + err);
     if (hint) hint.textContent = 'Unable to access camera. Please check permissions.';
   });
 }
 
 function onScanSuccess(decodedText) {
-  if (closing || !scanner) return;
+  log('onScanSuccess: ' + decodedText);
+  if (closing || !scanner) {
+    log('BLOCKED: closing or no scanner');
+    return;
+  }
 
   const hint = document.getElementById('qr-scanner-hint');
   if (hint) hint.textContent = 'Clue found! Opening...';
 
   closeScanner(function() {
+    log('navigating to: ' + decodedText);
     window.location.href = decodedText;
   });
 }
 
 function stopAndCleanup() {
+  log('stopAndCleanup');
   if (scanner) {
     const s = scanner;
     scanner = null;
-    return s.stop().then(() => s.clear()).catch(() => {});
+    return s.stop().then(() => {
+      log('scanner stopped');
+      s.clear();
+      log('scanner cleared');
+    }).catch(err => {
+      log('stop/clear error: ' + err);
+    });
   }
+  log('no scanner to stop');
   return Promise.resolve();
 }
 
 function closeScanner(callback) {
-  if (closing) return;
+  log('closeScanner called');
+  if (closing) {
+    log('BLOCKED: already closing');
+    return;
+  }
   closing = true;
 
   stopAndCleanup().finally(() => {
+    log('cleanup done, removing overlay');
     if (overlay) {
       overlay.remove();
       overlay = null;
     }
     closing = false;
+    log('close complete');
     if (typeof callback === 'function') callback();
   });
 }
