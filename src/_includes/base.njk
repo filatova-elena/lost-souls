@@ -6,6 +6,7 @@
   <title>{% if title %}{{ title }}{% elif refs.instructions.title %}{{ refs.instructions.title }} - {{ refs.instructions.subtitle }}{% else %}The Lost Souls of Kennebec Avenue Investigation{% endif %}</title>
   {% if description %}<meta name="description" content="{{ description }}">{% endif %}
   <link rel="stylesheet" href="{{ site.baseUrl }}css/styles.css">
+  <link rel="stylesheet" href="{{ site.baseUrl }}css/qr-scanner.css">
 </head>
 <body>
   {{ content | safe }}
@@ -14,6 +15,8 @@
   <script src="{{ site.baseUrl }}js/effects.js" defer></script>
   <script src="{{ site.baseUrl }}js/main.js" defer></script>
   <script src="{{ site.baseUrl }}js/technical-check.js" defer></script>
+  <script src="{{ site.baseUrl }}js/vendor/html5-qrcode.min.js" defer></script>
+  <script src="{{ site.baseUrl }}js/qr-scanner.js" defer></script>
   {% if page.url == '/reset/' %}
   <script src="{{ site.baseUrl }}js/reset.js" defer></script>
   {% else %}
