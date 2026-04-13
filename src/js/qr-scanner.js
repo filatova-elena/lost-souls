@@ -17,21 +17,32 @@ function createOverlay() {
   document.body.appendChild(overlay);
 
   document.getElementById('qr-scanner-close').addEventListener('click', closeScanner);
+  // Also close on tap anywhere on the overlay background
+  overlay.addEventListener('click', function(e) {
+    if (e.target === overlay) closeScanner();
+  });
 }
 
 function openScanner() {
   if (overlay) return;
   createOverlay();
 
+  const hint = document.getElementById('qr-scanner-hint');
+  const viewfinder = document.getElementById('qr-scanner-viewfinder');
+  if (hint) hint.textContent = 'Waiting for camera access...';
+  if (viewfinder) viewfinder.style.display = 'none';
+
   scanner = new Html5Qrcode('qr-scanner-reader');
   scanner.start(
     { facingMode: 'environment' },
     { fps: 10, qrbox: { width: 250, height: 250 } },
     onScanSuccess,
-    () => {} // ignore scan failures (no QR in frame yet)
-  ).catch(err => {
+    () => {}
+  ).then(() => {
+    if (viewfinder) viewfinder.style.display = '';
+    if (hint) hint.textContent = 'Point your camera at a purple QR code';
+  }).catch(err => {
     console.error('QR scanner error:', err);
-    const hint = document.getElementById('qr-scanner-hint');
     if (hint) hint.textContent = 'Unable to access camera. Please check permissions.';
   });
 }
