@@ -58,11 +58,9 @@ function openScanner() {
 }
 
 function onScanSuccess(decodedText) {
-  if (decodedText.startsWith('http')) {
-    stopAndCleanup().then(() => {
-      window.location.href = decodedText;
-    });
-  }
+  stopAndCleanup().then(() => {
+    window.location.href = decodedText;
+  });
 }
 
 function stopAndCleanup() {
