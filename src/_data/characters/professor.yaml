@@ -22,7 +22,8 @@ background: 'You''re a botany professor, descended from **Professor Edmund Hartl
   about the investigation at the **Montrose mansion**, you had to come. You have a
   feeling it''s all connected.'
 objectives:
-  main: main_quest
+  track: magic_elixir
+  aspect: alchemical
   private: minor_elixir_of_love
   initial_quest: BH106
 strategy: Your 🌿 Expert Botanical skill lets you read clues others can't—botanical

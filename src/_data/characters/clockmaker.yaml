@@ -25,9 +25,10 @@ background: 'You''re a clockmaker and horologist—obsessed with time, timing, a
   that sacred conjunction. This can''t be a coincidence. The universe doesn''t work
   that way.'
 objectives:
-  main: main_quest
+  track: psychics_burden
+  aspect: paranormal
   private: minor_pocket_watch_mystery
-  initial_quest: AO81
+  initial_quest: AO80
 strategy: Your 📜 Expert History skill lets you read clues others can't—historical
   documents, timelines, artifact authentication. Your 🔮 Basic Spiritual skill gives
   you some access to vision clues. But you won't be able to read everything. Find

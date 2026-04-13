@@ -24,9 +24,10 @@ background: You're a fixer. Not officially, of course—on paper you're a lawyer
   in this business, it's that old secrets have value. And this one could be worth
   millions.
 objectives:
-  main: main_quest
+  track: secret_baby
+  aspect: gossip
   private: major_romano_treasure
-  initial_quest: BH106
+  initial_quest: AO85
 strategy: Your ⚖️ Expert Legal skill lets you read clues others can't—contracts, financial
   records, estate papers. Your 👥 Romano connection gives you access to clues about
   the family that others can't read. But you won't be able to read everything. Find

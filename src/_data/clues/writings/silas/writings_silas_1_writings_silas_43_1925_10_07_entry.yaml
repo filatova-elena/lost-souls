@@ -7,14 +7,12 @@ location:
   room: upstairs_bath
 date: '1925-10-07'
 hashtags:
-- morticians_silence
+- magic_elixir
 - silas_blackwell
 - alice_whitmore
-- main_quest
 skills: []
 is_key:
-- morticians_silence
-- main_quest
+- magic_elixir
 content: |
   Alice Whitmore. Twenty-four. Delicate bone structure, the kind of face you see on cameos. Lovely girl. Terrible skull fracture.
 

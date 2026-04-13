@@ -6,16 +6,14 @@ date: October 19, 1925
 location:
   room: upstairs_bath
 hashtags:
-- morticians_silence
+- magic_elixir
 - foxglove
 - cordelia_montrose
 - silas_blackwell
-- main_quest
 skills:
 - medical_2
 - botanical_2
-is_key:
-- main_quest
+is_key: []
 content: |
   **AUTOPSY EXAMINATION REPORT**
 

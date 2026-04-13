@@ -24,9 +24,10 @@ background: 'You''ve always believed that the stars shape human destiny. Not in 
   You want to understand who Sebastian Crane really was, and what he was hiding behind
   that pharmacy counter.'
 objectives:
-  main: main_quest
+  track: psychics_burden
+  aspect: paranormal
   private: minor_the_alchemist
-  initial_quest: AO81
+  initial_quest: AO80
 strategy: Your 🔮 Expert Spiritual skill gives you access to **vision clues**—spiritual
   messages and ghostly communications that others can't access. Your 📜 Basic History
   skill gives you some additional access to historical clues. But you won't be able

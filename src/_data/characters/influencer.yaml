@@ -23,9 +23,10 @@ background: 'You run two popular series: "**Long Beach Urban Legends & Mysteries
   obsessed with the timing). You''re friends with the Baker (featured Sweet Rose Bakery
   on your food channel). This is going to be your best episode yet.'
 objectives:
-  main: main_quest
+  track: secret_baby
+  aspect: gossip
   private: minor_bakery_fire
-  initial_quest: AO81
+  initial_quest: AO85
 strategy: Your 🗝️ Rumor skill gives you access to **rumor chests** hidden around the
   mansion—unlock them with the key attached to your character card. These contain
   gossip, tips, and leads that others can't access. Your 📜 Expert History skill lets

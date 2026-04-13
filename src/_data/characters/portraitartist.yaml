@@ -24,9 +24,10 @@ background: The Heiress commissioned you to restore and catalog the artwork in t
   tangled together. When the investigation began, you didn't leave. You couldn't.
   Not until you understand who she really was and what happened to her.
 objectives:
-  main: main_quest
+  track: dirty_dealings
+  aspect: adventure
   private: major_secret_baby
-  initial_quest: AO116
+  initial_quest: AO79
 strategy: Your 🎨 Expert Art skill lets you read clues others can't—art authentication,
   provenance, artistic intention. Your 👥 Montrose connection gives you access to clues
   about Cordelia Montrose that others can't read. But you won't be able to read everything.

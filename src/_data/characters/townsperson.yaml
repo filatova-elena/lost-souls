@@ -21,7 +21,8 @@ background: You live a few blocks from the **Montrose mansion**. You've lived in
   finally, you might get some answers. Or at least, you'll be there when someone else
   finds them.
 objectives:
-  main: main_quest
+  track: meta
+  aspect: choose
   initial_quest: AO81
 strategy: You have no special skills or connections, but you've been paying attention.
   Reach out to others when you need special expertise and you might be able to piece

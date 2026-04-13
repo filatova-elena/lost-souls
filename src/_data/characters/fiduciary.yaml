@@ -22,9 +22,10 @@ background: You work for a generational wealth management firm that has managed 
   determined to finally understand what happened. You've heard rumors about the ghosts
   haunting the mansion, and you can't shake off a strange feeling.
 objectives:
-  main: main_quest
+  track: secret_baby
+  aspect: gossip
   private: major_rose_bread_legacy
-  initial_quest: AO79
+  initial_quest: AO85
 strategy: Your ⚖️ Expert Legal skill lets you read clues others can't—estate documents,
   financial records, trust papers. Your ⚕️ Basic Medical skill gives you some access
   to forensic and clinical clues. But you won't be able to read everything. Find players

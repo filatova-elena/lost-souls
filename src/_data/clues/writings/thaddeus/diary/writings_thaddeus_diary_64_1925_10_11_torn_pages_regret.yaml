@@ -11,10 +11,8 @@ hashtags:
 - sebastian_crane
 - cordelia_montrose
 - alice_whitmore
-- main_quest
 skills: []
-is_key:
-- main_quest
+is_key: []
 content: |
   [These pages are torn, water-stained, and marked with violent strikethrough. The handwriting deteriorates throughout, becoming increasingly frantic.]
 

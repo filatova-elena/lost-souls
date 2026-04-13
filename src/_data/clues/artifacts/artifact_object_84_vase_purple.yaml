@@ -8,13 +8,13 @@ appearance: |
 location:
   room: neils_bdrm
 hashtags:
-- romano_treasure
+- dirty_dealings
 - frankie_romano
 skills:
 - art_2
 - history_2
 is_key:
-- romano_treasure
+- dirty_dealings
 content: |
   <div style="text-align: center;font-size: 40px;">✋</div>
   A decorative vase made of purple clay with gold accents, standing on an ornate wooden stand.

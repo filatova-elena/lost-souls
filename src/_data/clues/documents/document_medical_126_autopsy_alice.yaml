@@ -6,14 +6,12 @@ date: October 11, 1925
 location:
   room: upstairs_bath
 hashtags:
-- morticians_silence
+- magic_elixir
 - foxglove
 - alice_whitmore
 - silas_blackwell
-- main_quest
 skills: []
-is_key:
-- main_quest
+is_key: []
 content: |
   **AUTOPSY EXAMINATION REPORT**
 

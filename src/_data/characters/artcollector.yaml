@@ -23,7 +23,8 @@ background: 'Your family name carries weight in Long Beach—but not the kind yo
   mansion**—where your ancestor Frankie did business in the 1920s—you couldn''t resist.
   Maybe the treasure is real. Maybe it''s here.'
 objectives:
-  main: main_quest
+  track: dirty_dealings
+  aspect: adventure
   private: major_romano_treasure
   initial_quest: AO79
 strategy: Your 🎨 Expert Art skill lets you read clues others can't—art authentication,

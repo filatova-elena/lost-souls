@@ -25,12 +25,8 @@ permalink: /reset/
         <p id="total-clues"><strong>0</strong></p>
       </div>
       <div>
-        <p class="muted">Main Quest Clues Found</p>
-        <p id="main-quest-clues"><strong>0</strong></p>
-      </div>
-      <div>
-        <p class="muted">Side Quest Clues Found</p>
-        <p id="side-quest-clues"><strong>0</strong></p>
+        <p class="muted">Track Progress</p>
+        <p id="track-clues"><strong>0</strong></p>
       </div>
     </div>
   </section>
@@ -45,17 +41,12 @@ permalink: /reset/
 
 <script>
   window.__characters = {{ characters | json | safe }};
-  {% set mainQuestHashtag = 'main_quest' %}
-  {% set mainQuestKeyClues = clues | filterKeyClues(mainQuestHashtag) %}
-  {% set sideQuests = {} %}
-  {% for characterId, sideQuestInfo in character_side_quests %}
-    {% set sideQuestKeyClues = clues | filterKeyClues(sideQuestInfo.hashtag) %}
-    {% set sideQuests = sideQuests | merge(characterId | obj({ hashtag: sideQuestInfo.hashtag, total: sideQuestKeyClues | length, objectiveShort: sideQuestInfo.objectiveShort })) %}
+  {% set trackData = {} %}
+  {% for characterId, trackInfo in character_tracks %}
+    {% set trackData = trackData | merge(characterId | obj({ trackId: trackInfo.trackId, aspect: trackInfo.aspect, clueChain: trackInfo.clueChain, objective: trackInfo.objective })) %}
   {% endfor %}
   window.__progressData = {
-    mainQuestHashtag: {{ mainQuestHashtag | json | safe }},
-    mainQuestTotal: {{ mainQuestKeyClues | length }},
-    sideQuests: {{ sideQuests | json | safe }}
+    characterTracks: {{ trackData | json | safe }}
   };
   window.__siteBaseUrl = {{ site.baseUrl | json | safe }};
 </script>

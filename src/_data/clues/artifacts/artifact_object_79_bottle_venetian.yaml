@@ -9,24 +9,18 @@ appearance: |
   Decorative bottle of venetian glass with gold leaf detailing and ornate stopper.
 hashtags:
 - venetian_bottle
-- elixir_of_love
+- magic_elixir
 - sebastian_crane
-- the_alchemist
-- main_quest
-skills:
-- art_2
-- history_2
+- dirty_dealings
+skills: []
 is_key:
-- elixir_of_love
-- the_alchemist
-- main_quest
+- magic_elixir
+- dirty_dealings
 content: |
   <div style="text-align: center;font-size: 40px;">✋</div>
-  A decorative bottle made of venetian glass with gold leaf detailing and an ornate stopper.
+  A decorative bottle made of venetian glass with gold leaf detailing and an ornate heart-shaped stopper. It feels expensive — the kind of thing that crossed an ocean to get here.
 
-  **Authentic Venetian glass** from **early 20th century craftsmanship**.
+  There is a faint residue inside. Something sweet, floral.
 
-  This bottle **passed through Harbor Import & Trading Co.** and is documented in historical records. It was imported during **Prohibition (1920-1925)**—check manifests from that period for its exact arrival date.
-
-  During Prohibition, ornate glass bottles like this were perfect for **concealing valuable contraband** while maintaining plausible deniability as decorative pieces. The decorative purpose made it perfect cover for moving contraband.
+  Stamped on the bottom: **Harbor Import & Trading Co. — Long Beach, CA**
 unlock_code: '0346'

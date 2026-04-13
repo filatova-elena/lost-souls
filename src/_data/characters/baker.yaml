@@ -23,9 +23,10 @@ background: You're an **orphan**. You never knew your parents or where you truly
   When you heard about the investigation at the old **Montrose mansion**, something
   drew you here. You don't know why, but you feel like you need to be here.
 objectives:
-  main: main_quest
+  track: secret_baby
+  aspect: gossip
   private: major_rose_bread_legacy
-  initial_quest: AO81
+  initial_quest: AO85
 strategy: Your 👥 Eleanor connection gives you access to personal clues that others
   can't read. Your 🔮 Basic Spiritual skill lets you access some vision clues, though
   your visions may be fragmented. But you won't be able to read everything. Find players
