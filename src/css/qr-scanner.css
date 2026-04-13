@@ -94,7 +94,7 @@
 }
 
 #qr-scanner-hint {
-  margin-top: 20px;
+  margin-top: calc(min(56vw, 226px) * 0.25);
   font-size: 0.85rem;
   letter-spacing: 0.1em;
   color: rgba(212, 165, 116, 0.5);

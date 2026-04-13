@@ -32,15 +32,12 @@ function openScanner() {
   if (hint) hint.textContent = 'Waiting for camera access...';
   if (viewfinder) viewfinder.style.display = 'none';
 
-  const size = Math.min(window.innerWidth * 0.8, 320);
   scanner = new Html5Qrcode('qr-scanner-reader');
   scanner.start(
     { facingMode: 'environment' },
     {
       fps: 10,
-      qrbox: { width: Math.floor(size * 0.7), height: Math.floor(size * 0.7) },
-      aspectRatio: 1.0,
-      disableFlip: false
+      aspectRatio: 1.0
     },
     onScanSuccess,
     () => {}
@@ -62,13 +59,16 @@ function onScanSuccess(decodedText) {
 }
 
 function closeScanner() {
-  if (scanner) {
-    scanner.stop().catch(() => {});
-    scanner = null;
-  }
+  const s = scanner;
+  scanner = null;
   if (overlay) {
     overlay.remove();
     overlay = null;
+  }
+  if (s) {
+    s.stop().then(() => {
+      s.clear();
+    }).catch(() => {});
   }
 }
 
