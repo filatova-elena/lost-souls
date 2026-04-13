@@ -161,7 +161,7 @@ function renderProgressTracker(justProgressed = false) {
   const found = chain.filter(id => scanned.all?.includes(id)).length;
 
   const label = trackEl.querySelector('.progress-label');
-  if (label) label.textContent = track.aspect.charAt(0).toUpperCase() + track.aspect.slice(1);
+  if (label) label.textContent = 'Quest progress';
 
   trackEl.setAttribute('data-quest', track.trackId);
   trackEl.style.display = '';
