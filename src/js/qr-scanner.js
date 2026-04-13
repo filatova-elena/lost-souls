@@ -35,10 +35,16 @@ function openScanner() {
   if (hint) hint.textContent = 'Waiting for camera access...';
   if (wrapper) wrapper.style.display = 'none';
 
+  const size = Math.min(window.innerWidth * 0.8, 320);
   scanner = new Html5Qrcode('qr-scanner-reader');
   scanner.start(
     { facingMode: 'environment' },
-    { fps: 15 },
+    {
+      fps: 10,
+      qrbox: { width: Math.floor(size * 0.7), height: Math.floor(size * 0.7) },
+      aspectRatio: 1.0,
+      disableFlip: false
+    },
     onScanSuccess,
     () => {}
   ).then(() => {
