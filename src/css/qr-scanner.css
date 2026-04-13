@@ -62,7 +62,7 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-/* Camera container - normal square, no clipping */
+/* Camera container - normal square, no visual effects */
 #qr-scanner-viewfinder {
   width: min(80vw, 320px);
   height: min(80vw, 320px);
@@ -70,33 +70,16 @@
   overflow: hidden;
 }
 
-/* Diamond mask overlay: covers camera with black, diamond hole in center */
-#qr-scanner-viewfinder::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-  pointer-events: none;
-  background:
-    linear-gradient(45deg, #000 calc(50% - 0.5px), transparent calc(50% - 0.5px)) top left,
-    linear-gradient(-45deg, #000 calc(50% - 0.5px), transparent calc(50% - 0.5px)) top right,
-    linear-gradient(-45deg, transparent calc(50% - 0.5px), #000 calc(50% - 0.5px)) bottom left,
-    linear-gradient(45deg, transparent calc(50% - 0.5px), #000 calc(50% - 0.5px)) bottom right;
-  background-size: 50% 50%;
-  background-repeat: no-repeat;
-}
-
-/* Diamond border on top */
+/* Diamond border overlaying the camera */
 #qr-scanner-diamond-border {
   position: absolute;
-  width: min(57vw, 227px);
-  height: min(57vw, 227px);
-  border: 2px solid rgba(123, 45, 142, 0.5);
+  width: min(56vw, 226px);
+  height: min(56vw, 226px);
+  border: 2px solid rgba(123, 45, 142, 0.6);
   transform: rotate(45deg);
   top: 50%;
   left: 50%;
-  margin-top: calc(min(57vw, 227px) * -0.5);
-  margin-left: calc(min(57vw, 227px) * -0.5);
+  translate: -50% -50%;
   box-sizing: border-box;
   pointer-events: none;
   z-index: 3;
