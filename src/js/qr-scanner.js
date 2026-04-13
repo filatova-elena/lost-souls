@@ -59,29 +59,32 @@ function openScanner() {
 
 function onScanSuccess(decodedText) {
   if (decodedText.startsWith('http')) {
-    closeScanner();
-    window.location.href = decodedText;
+    stopAndCleanup().then(() => {
+      window.location.href = decodedText;
+    });
   }
+}
+
+function stopAndCleanup() {
+  if (scanner) {
+    const s = scanner;
+    scanner = null;
+    return s.stop().then(() => s.clear()).catch(() => {});
+  }
+  return Promise.resolve();
 }
 
 function closeScanner() {
   if (closing) return;
   closing = true;
 
-  if (overlay) {
-    overlay.remove();
-    overlay = null;
-  }
-
-  if (scanner) {
-    const s = scanner;
-    scanner = null;
-    s.stop().then(() => s.clear()).catch(() => {}).finally(() => {
-      closing = false;
-    });
-  } else {
+  stopAndCleanup().finally(() => {
+    if (overlay) {
+      overlay.remove();
+      overlay = null;
+    }
     closing = false;
-  }
+  });
 }
 
 function createScanButton() {
