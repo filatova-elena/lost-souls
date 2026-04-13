@@ -129,7 +129,12 @@ function createScanButton() {
   });
   btn.innerHTML = '<svg viewBox="0 0 9 9" width="30" height="30" xmlns="http://www.w3.org/2000/svg" style="transform:rotate(45deg)">'+rects+'</svg>';
   btn.addEventListener('click', openScanner);
-  document.body.appendChild(btn);
+  var slot = document.getElementById('qr-scan-slot');
+  if (slot) {
+    slot.appendChild(btn);
+  } else {
+    document.body.appendChild(btn);
+  }
 }
 
 document.addEventListener('DOMContentLoaded', createScanButton);

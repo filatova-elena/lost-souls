@@ -1,11 +1,13 @@
-/* Floating scan button */
+/* Scan button in progress tracker */
+#qr-scan-slot {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
 #qr-scan-btn {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  z-index: 900;
-  width: 56px;
-  height: 56px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   border: none;
   background: #ffffff;
@@ -13,8 +15,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 12px rgba(212, 165, 116, 0.4), 0 0 24px rgba(212, 165, 116, 0.15);
-  transition: transform 0.15s ease;
+  box-shadow: 0 0 8px rgba(212, 165, 116, 0.3);
   -webkit-tap-highlight-color: transparent;
   padding: 0;
 }
@@ -24,8 +25,8 @@
 }
 
 #qr-scan-btn svg {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
 }
 
 /* Scanner overlay */
