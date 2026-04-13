@@ -28,13 +28,6 @@ function joinWithOr(items) {
   return `${items.slice(0, -1).join(', ')}, or ${items[items.length - 1]}`;
 }
 
-function buildSkillLockedMessage(missingSkills, clueType, noAccessMessages) {
-  if (window.buildSkillLockedMessage) {
-    return window.buildSkillLockedMessage(missingSkills, clueType, noAccessMessages);
-  }
-  return "You don't have the required skills to access this clue.";
-}
-
 function buildLockSectionContent(message, suggestedCharacters) {
   let html = `
     <div class="lock-assembly">
@@ -62,23 +55,6 @@ function recordClueScan(clueId) {
   }
   window.saveToLocalStorage(STORAGE_KEYS.SCANNED, scanned);
   return scanned;
-}
-
-// ============================================================================
-// Track progress
-// ============================================================================
-
-function getCharacterTrack() {
-  const progressData = window.__progressData || {};
-  const profile = window.getCharacterProfile();
-  const charId = profile?.characterId;
-  if (!charId) return null;
-  return progressData.characterTracks?.[charId] || null;
-}
-
-function isTrackClue(clueId) {
-  const track = getCharacterTrack();
-  return track?.clueChain?.includes(clueId) || false;
 }
 
 // ============================================================================
@@ -140,57 +116,6 @@ function determineAccessState(clueData, noAccessMessages) {
 }
 
 // ============================================================================
-// Progress tracker
-// ============================================================================
-
-function renderProgressTracker(justProgressed = false) {
-  const tracker = document.querySelector('[data-progress-tracker]');
-  if (!tracker) return;
-
-  const progressData = window.__progressData || {};
-  const profile = window.getCharacterProfile();
-  const charId = profile?.characterId;
-  const label = tracker.querySelector('[data-character-label]');
-
-  if (label) {
-    if (charId && progressData.characterNames?.[charId]) {
-      label.textContent = progressData.characterNames[charId];
-    } else {
-      label.textContent = 'Select a character';
-    }
-  }
-
-  const track = getCharacterTrack();
-  const trackEl = tracker.querySelector('.progress-track');
-  if (!trackEl) return;
-
-  if (!track) {
-    trackEl.style.display = 'none';
-    return;
-  }
-
-  const scanned = window.getScannedClues();
-  const chain = track.clueChain;
-  const found = chain.filter(id => scanned.all?.includes(id)).length;
-
-  trackEl.setAttribute('data-quest', track.trackId);
-  trackEl.style.display = '';
-
-  const pipsContainer = trackEl.querySelector('[data-pips]');
-  const countEl = trackEl.querySelector('[data-count]');
-  if (!pipsContainer || !countEl) return;
-
-  pipsContainer.innerHTML = '';
-  countEl.textContent = `${found} / ${chain.length}`;
-
-  for (let i = 0; i < chain.length; i++) {
-    const isFilled = scanned.all?.includes(chain[i]);
-    const isJustFound = justProgressed && i === found - 1;
-    window.renderProgressPip(pipsContainer, isFilled, isJustFound);
-  }
-}
-
-// ============================================================================
 // Page init
 // ============================================================================
 
@@ -221,9 +146,8 @@ function initCluePage() {
     const scanned = window.getScannedClues();
     if (!scanned.all?.includes(clueData.id)) {
       processClueDiscovery(clueData);
-      const isOnTrack = isTrackClue(clueData.id);
-      if (isOnTrack && window.spawnParticles) {
-        renderProgressTracker(true);
+      if (window.isTrackClue(clueData.id) && window.spawnParticles) {
+        window.renderProgressTracker(true);
         window.spawnParticles();
       }
     }
@@ -242,10 +166,7 @@ function initCluePage() {
       }
     }
   }
-
-  renderProgressTracker();
 }
 
-window.renderProgressTracker = renderProgressTracker;
 document.addEventListener('DOMContentLoaded', initCluePage);
 })();
