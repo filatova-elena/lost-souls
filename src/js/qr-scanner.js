@@ -38,7 +38,7 @@ function openScanner() {
   scanner = new Html5Qrcode('qr-scanner-reader');
   scanner.start(
     { facingMode: 'environment' },
-    { fps: 10, qrbox: { width: 250, height: 250 } },
+    { fps: 15 },
     onScanSuccess,
     () => {}
   ).then(() => {
