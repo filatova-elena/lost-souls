@@ -7,6 +7,9 @@ let closing = false;
 
 function log(msg) {
   console.log('[QR Scanner] ' + msg + ' | scanner=' + !!scanner + ' overlay=' + !!overlay + ' closing=' + closing);
+  // Show on screen for mobile debugging
+  const hint = document.getElementById('qr-scanner-hint');
+  if (hint) hint.textContent = msg;
 }
 
 // Handle back-forward cache: reset all state when page is restored
