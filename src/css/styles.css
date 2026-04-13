@@ -95,8 +95,40 @@ h2 {
     line-height: 1.4;
 }
 
-section > h2 {
+section > h2,
+details > summary > h2 {
     text-transform: uppercase;
+}
+
+details {
+    border-bottom: 1px solid rgba(212, 165, 116, 0.15);
+}
+
+details > summary {
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+details > summary::after {
+    content: '▸';
+    color: var(--accent-gold);
+    font-size: 0.9em;
+    transition: transform 0.2s ease;
+}
+
+details[open] > summary::after {
+    transform: rotate(90deg);
+}
+
+details > summary > h2 {
+    margin: 10px 0;
 }
 
 @media (min-width: 768px) {

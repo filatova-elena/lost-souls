@@ -27,31 +27,31 @@ description: "{{ character.title }}: {{ character.personality_short or character
 {% endif %}
 
 {% if character.background %}
-<section>
-  <h2>Background</h2>
+<details>
+  <summary><h2>Background</h2></summary>
   <div>
     {{ character.background | markdown | safe }}
   </div>
-</section>
+</details>
 {% endif %}
 
 {% if character.skills %}
   {% set formattedSkills = character.skills | formatCharacterSkills(refs.skills) %}
   {% if formattedSkills.length > 0 %}
-<section>
-  <h2>Skills</h2>
+<details>
+  <summary><h2>Skills</h2></summary>
   <ul>
     {% for skill in formattedSkills %}
     <li>{{ skill }}</li>
     {% endfor %}
   </ul>
-</section>
+</details>
   {% endif %}
 {% endif %}
 
 {% if character.objectives %}
-<section>
-  <h2>Objectives</h2>
+<details>
+  <summary><h2>Objectives</h2></summary>
   <ul>
     {% if character.objectives.initial_quest %}
       {% set initialClue = clues | findByClueId(character.objectives.initial_quest) %}
@@ -59,10 +59,10 @@ description: "{{ character.title }}: {{ character.personality_short or character
         <strong>Initial quest:</strong> Find the {% if initialClue and initialClue.title %}{{ initialClue.title }}{% else %}{{ character.objectives.initial_quest }}{% endif %}
       </li>
     {% endif %}
-    {% if character.objectives.main %}
-      {% set mainQuest = quests | findQuestById(character.objectives.main) %}
+    {% if character.objectives.track %}
+      {% set trackQuest = quests | findQuestById(character.objectives.track) %}
       <li>
-        <strong>Main:</strong> {% if mainQuest and mainQuest.objective %}{{ mainQuest.objective }}{% else %}{{ character.objectives.main }}{% endif %}
+        <strong>Quest:</strong> {% if trackQuest and trackQuest.objective %}{{ trackQuest.objective }}{% else %}{{ character.objectives.track }}{% endif %}
       </li>
     {% endif %}
     {% if character.objectives.private %}
@@ -72,38 +72,38 @@ description: "{{ character.title }}: {{ character.personality_short or character
       </li>
     {% endif %}
   </ul>
-</section>
+</details>
 {% endif %}
 
 {% if character.strategy %}
-<section>
-  <h2>Strategy</h2>
+<details>
+  <summary><h2>Strategy</h2></summary>
   <div>
     {{ character.strategy | markdown | safe }}
   </div>
-</section>
+</details>
 {% endif %}
 
 {% if character.relationships %}
-<section>
-  <h2>Relationships</h2>
+<details>
+  <summary><h2>Relationships</h2></summary>
   <ul>
     {% for relationship in character.relationships | items %}
     <li><strong>{{ relationship[0] | replace("_", " ") | title }}:</strong> {{ relationship[1] }}</li>
     {% endfor %}
   </ul>
-</section>
+</details>
 {% endif %}
 
 {% if character.starting_items and character.starting_items.length > 0 %}
-<section>
-  <h2>Starting Items</h2>
+<details>
+  <summary><h2>Starting Items</h2></summary>
   <ul>
     {% for item in character.starting_items %}
     <li>{% if item.link %}<a href="{{ item.link }}">{{ item.name }}</a>{% else %}{{ item.name }}{% endif %}</li>
     {% endfor %}
   </ul>
-</section>
+</details>
 {% endif %}
 
 <section style="text-align: center; margin-top: 40px;">
@@ -113,23 +113,19 @@ description: "{{ character.title }}: {{ character.personality_short or character
 <script>
 (function() {
   const characterData = {{ character | json | safe }};
-  
+
   function handleBeginInvestigation(e) {
-    // Prevent navigation - stay on character page
     e.preventDefault();
-    
-    // Reset all progress when selecting a new character
+
     if (window.resetInvestigation) {
       window.resetInvestigation();
     }
     if (characterData.skills) {
       storeCharacterProfile(characterData.id, characterData.skills);
     }
-    // Initialize Act I as unlocked
     const storageKeys = window.STORAGE_KEYS || { UNLOCKED_ACTS: 'unlocked_acts' };
     window.saveToLocalStorage(storageKeys.UNLOCKED_ACTS, ['act_i_setting']);
-    
-    // Render typewriter animation
+
     if (window.renderTypewriterAnimation) {
       const characterName = characterData.title || 'Investigator';
       window.renderTypewriterAnimation(
@@ -139,14 +135,14 @@ description: "{{ character.title }}: {{ character.personality_short or character
       );
     }
   }
-  
+
   function init() {
     const button = document.getElementById('begin-investigation-btn');
     if (button) {
       button.addEventListener('click', handleBeginInvestigation);
     }
   }
-  
+
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
   } else {
