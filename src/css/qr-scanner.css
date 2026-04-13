@@ -62,37 +62,61 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+/* Camera container - normal square, no clipping */
 #qr-scanner-viewfinder {
   width: min(80vw, 320px);
   height: min(80vw, 320px);
   position: relative;
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-  background: rgba(123, 45, 142, 0.3);
+  overflow: hidden;
 }
 
+/* Diamond mask overlay: covers camera with black, diamond hole in center */
+#qr-scanner-viewfinder::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background:
+    linear-gradient(45deg, #000 calc(50% - 0.5px), transparent calc(50% - 0.5px)) top left,
+    linear-gradient(-45deg, #000 calc(50% - 0.5px), transparent calc(50% - 0.5px)) top right,
+    linear-gradient(-45deg, transparent calc(50% - 0.5px), #000 calc(50% - 0.5px)) bottom left,
+    linear-gradient(45deg, transparent calc(50% - 0.5px), #000 calc(50% - 0.5px)) bottom right;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+/* Diamond border on top */
 #qr-scanner-diamond-border {
   position: absolute;
-  width: min(80vw, 320px);
-  height: min(80vw, 320px);
+  width: min(57vw, 227px);
+  height: min(57vw, 227px);
   border: 2px solid rgba(123, 45, 142, 0.5);
   transform: rotate(45deg);
   top: 50%;
   left: 50%;
-  margin-top: calc(min(80vw, 320px) * -0.5);
-  margin-left: calc(min(80vw, 320px) * -0.5);
+  margin-top: calc(min(57vw, 227px) * -0.5);
+  margin-left: calc(min(57vw, 227px) * -0.5);
   box-sizing: border-box;
   pointer-events: none;
-  z-index: 1;
+  z-index: 3;
 }
 
 #qr-scanner-reader {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
 /* Override html5-qrcode internal styles */
 #qr-scanner-reader video {
+  width: 100% !important;
+  height: 100% !important;
   object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 #qr-scanner-reader img[alt="Info icon"] {
