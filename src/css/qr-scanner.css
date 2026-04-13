@@ -73,9 +73,12 @@
 }
 
 #qr-scanner-reader {
-  width: 100%;
-  height: 100%;
-  position: relative;
+  width: 142%;
+  height: 142%;
+  position: absolute;
+  top: -21%;
+  left: -21%;
+  transform: rotate(-45deg);
 }
 
 /* Override html5-qrcode internal styles */

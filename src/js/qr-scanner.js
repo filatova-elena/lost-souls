@@ -3,6 +3,7 @@
 
 let scanner = null;
 let overlay = null;
+let closing = false;
 
 function createOverlay() {
   overlay = document.createElement('div');
@@ -17,14 +18,13 @@ function createOverlay() {
   document.body.appendChild(overlay);
 
   document.getElementById('qr-scanner-close').addEventListener('click', closeScanner);
-  // Also close on tap anywhere on the overlay background
   overlay.addEventListener('click', function(e) {
     if (e.target === overlay) closeScanner();
   });
 }
 
 function openScanner() {
-  if (overlay) return;
+  if (overlay || closing) return;
   createOverlay();
 
   const hint = document.getElementById('qr-scanner-hint');
@@ -35,15 +35,22 @@ function openScanner() {
   scanner = new Html5Qrcode('qr-scanner-reader');
   scanner.start(
     { facingMode: 'environment' },
-    {
-      fps: 10,
-      aspectRatio: 1.0
-    },
+    { fps: 10, aspectRatio: 1.0 },
     onScanSuccess,
     () => {}
   ).then(() => {
     if (viewfinder) viewfinder.style.display = '';
     if (hint) hint.textContent = 'Point your camera at a purple QR code';
+    // Apply zoom if supported
+    try {
+      const caps = scanner.getRunningTrackCameraCapabilities();
+      const zoom = caps.zoomFeature();
+      if (zoom.isSupported()) {
+        // Use 2x zoom or max, whichever is lower
+        const target = Math.min(2, zoom.max());
+        zoom.apply(target);
+      }
+    } catch (e) {}
   }).catch(err => {
     console.error('QR scanner error:', err);
     if (hint) hint.textContent = 'Unable to access camera. Please check permissions.';
@@ -51,7 +58,6 @@ function openScanner() {
 }
 
 function onScanSuccess(decodedText) {
-  // Only navigate if it looks like a URL for our site
   if (decodedText.startsWith('http')) {
     closeScanner();
     window.location.href = decodedText;
@@ -59,16 +65,22 @@ function onScanSuccess(decodedText) {
 }
 
 function closeScanner() {
-  const s = scanner;
-  scanner = null;
+  if (closing) return;
+  closing = true;
+
   if (overlay) {
     overlay.remove();
     overlay = null;
   }
-  if (s) {
-    s.stop().then(() => {
-      s.clear();
-    }).catch(() => {});
+
+  if (scanner) {
+    const s = scanner;
+    scanner = null;
+    s.stop().then(() => s.clear()).catch(() => {}).finally(() => {
+      closing = false;
+    });
+  } else {
+    closing = false;
   }
 }
 
@@ -76,8 +88,6 @@ function createScanButton() {
   const btn = document.createElement('button');
   btn.id = 'qr-scan-btn';
   btn.setAttribute('aria-label', 'Scan QR code');
-  // QR icon: exact pixel grid from reference, then rotated
-  // Each character = 1 cell. # = filled, . = empty
   const grid = [
     '###.#.###',
     '#.#...#.#',
