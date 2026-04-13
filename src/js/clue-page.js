@@ -160,9 +160,6 @@ function renderProgressTracker(justProgressed = false) {
   const chain = track.clueChain;
   const found = chain.filter(id => scanned.all?.includes(id)).length;
 
-  const label = trackEl.querySelector('.progress-label');
-  if (label) label.textContent = 'Quest progress';
-
   trackEl.setAttribute('data-quest', track.trackId);
   trackEl.style.display = '';
 

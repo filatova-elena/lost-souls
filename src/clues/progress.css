@@ -1,67 +1,38 @@
 /* ═══════════════════════════════════
-   PROGRESS TRACKER — side by side
+   PROGRESS TRACKER — fixed bottom bar
 ═══════════════════════════════════ */
 .progress-tracker {
-  padding-bottom: 16px;
-  margin-bottom: 16px;
-  border-bottom: 1px solid rgba(212, 165, 116, 0.12);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 800;
+  height: 44px;
+  background: var(--secondary-dark, #0a0a0f);
+  border-top: 1px solid rgba(212, 165, 116, 0.15);
   display: flex;
   align-items: center;
+  padding: 0 16px;
   gap: 12px;
 }
 
 .progress-track {
   display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.progress-track.main,
-.progress-track.side {
-  flex: 1;
-  padding: 5px;
-}
-
-.progress-track.side {
-  border-left: 1px solid rgba(212, 165, 116, 0.12);
-}
-
-.progress-track-header {
-  display: flex;
   align-items: center;
-  gap: 8px;
-}
-
-.progress-label {
-  font-family: sans-serif;
-  font-size: 0.7em;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: var(--accent-gold);
-  white-space: nowrap;
-  font-weight: 600;
-}
-
-.progress-count {
-  font-family: sans-serif;
-  font-size: 0.75em;
-  color: var(--accent-gold);
-  letter-spacing: 0.5px;
-  white-space: nowrap;
-  font-weight: 600;
+  gap: 6px;
+  flex: 1;
 }
 
 .progress-pips {
   display: flex;
   gap: 4px;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 /* ── Diamond Pip ── */
 .pip {
-  width: 22px;
-  height: 22px;
+  width: 18px;
+  height: 18px;
   flex-shrink: 0;
   position: relative;
   transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);

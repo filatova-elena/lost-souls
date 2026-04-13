@@ -13,9 +13,7 @@ description: "{% if clue.subtitle %}{{ clue.subtitle }}{% else %}{{ clue.title }
 <link rel="stylesheet" href="{{ site.baseUrl }}clues/lock.css">
 <link rel="stylesheet" href="{{ site.baseUrl }}clues/progress.css">
 
-<header>
-  {% include "clues/progress-tracker.njk" %}
-</header>
+{% include "clues/progress-tracker.njk" %}
 
 <main class="clue-page" data-state="locked" data-clue-id="{{ clue.id }}">
   <header>
