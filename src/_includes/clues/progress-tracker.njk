@@ -4,13 +4,20 @@
   {% set trackData = trackData | merge(characterId | obj({ trackId: trackInfo.trackId, aspect: trackInfo.aspect, clueChain: trackInfo.clueChain, objective: trackInfo.objective })) %}
 {% endfor %}
 
+{% set charNames = {} %}
+{% for character in characters %}
+  {% set charNames = charNames | merge(character.id | obj(character.title)) %}
+{% endfor %}
+
 <script>
   window.__progressData = {
-    characterTracks: {{ trackData | json | safe }}
+    characterTracks: {{ trackData | json | safe }},
+    characterNames: {{ charNames | json | safe }}
   };
 </script>
 
 <div class="progress-tracker" data-progress-tracker>
+  <span class="progress-label" data-character-label>Select a character</span>
   <div class="progress-track" data-quest="" style="display: none;">
     <div class="progress-pips" data-pips></div>
   </div>

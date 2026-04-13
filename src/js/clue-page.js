@@ -147,6 +147,19 @@ function renderProgressTracker(justProgressed = false) {
   const tracker = document.querySelector('[data-progress-tracker]');
   if (!tracker) return;
 
+  const progressData = window.__progressData || {};
+  const profile = window.getCharacterProfile();
+  const charId = profile?.characterId;
+  const label = tracker.querySelector('[data-character-label]');
+
+  if (label) {
+    if (charId && progressData.characterNames?.[charId]) {
+      label.textContent = progressData.characterNames[charId];
+    } else {
+      label.textContent = 'Select a character';
+    }
+  }
+
   const track = getCharacterTrack();
   const trackEl = tracker.querySelector('.progress-track');
   if (!trackEl) return;

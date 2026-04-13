@@ -15,6 +15,14 @@
   gap: 12px;
 }
 
+.progress-label {
+  font-size: 0.65em;
+  letter-spacing: 1px;
+  color: var(--accent-gold);
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
 .progress-track {
   display: flex;
   align-items: center;
