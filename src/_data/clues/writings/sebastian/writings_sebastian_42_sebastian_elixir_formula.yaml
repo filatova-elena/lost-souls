@@ -8,15 +8,13 @@ location:
   room: carriage_house
 hashtags:
 - sebastian_crane
-- elixir_of_love
-- the_alchemist
-- main_quest
+- magic_elixir
+- dirty_dealings
 skills:
 - botanical_2
 is_key:
-- elixir_of_love
-- the_alchemist
-- main_quest
+- magic_elixir
+- dirty_dealings
 content: |
   SEBASTIAN CRANE'S ELIXIR OF ETERNAL LOVE
   Complete Formula Documentation

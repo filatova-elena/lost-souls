@@ -8,15 +8,13 @@ prop: golden pocket watch
 appearance: |
   Gold-plated pocket watch with glass face and inner inscriptions
 hashtags:
-- pocket_watch_mystery
-- elixir_of_love
+- magic_elixir
+- magic_elixir
 - sebastian_crane
 - thaddeus_crane
-- main_quest
 skills: []
 is_key:
-- pocket_watch_mystery
-- main_quest
+- magic_elixir
 content: |
   <div style="text-align: center;font-size: 40px;">✋</div>
   A gold-plated pocket watch with a glass face and inner inscriptions.

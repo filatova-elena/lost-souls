@@ -21,7 +21,8 @@ background: You're a treasure hunter and explorer—some call you an archaeologi
   to the Montroses. The property has been abandoned for decades. If the treasure exists,
   it could be hidden here.
 objectives:
-  main: main_quest
+  track: dirty_dealings
+  aspect: adventure
   private: major_romano_treasure
   initial_quest: AO79
 strategy: Your 📜 Expert History skill lets you read clues others can't—historical

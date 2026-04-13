@@ -1,0 +1,17 @@
+id: psychics_burden
+aspect: paranormal
+title: Alice Whitmore
+objective: "A presence lingers here, desperate to be heard. Listen to the dead, and guide The Lonely Spirit to rest."
+answer: Alice Whitmore was a genuine psychic who fell in love with her doctor, Thaddeus Crane — a forbidden affair. When Cordelia Montrose discovered the relationship and threatened to expose Thaddeus, he poisoned Sebastian's elixir to silence her. Alice discovered the truth and demanded Thaddeus confess. He murdered her with a silver candle holder on the mansion staircase and staged it as an accidental fall.
+type: track
+clue_chain:
+  - AO80
+  - VC150
+  - WTD51
+  - DM126
+  - VC154
+  - AO78
+linked_quests:
+  - minor_doctor_and_patient
+  - minor_alice_second_sight
+  - psychic_who_couldnt_save_her

@@ -54,13 +54,14 @@ function displayStats() {
 
   setText('total-clues', scanned.all?.length || 0);
 
-  const mainTag = progress.mainQuestHashtag || 'main_quest';
-  setText('main-quest-clues', scanned[mainTag]?.length || 0);
-
-  const sideQuests = progress.sideQuests || {};
-  const sideInfo = profile?.characterId ? sideQuests[profile.characterId] : null;
-  const sideTag = sideInfo?.hashtag;
-  setText('side-quest-clues', sideTag && scanned[sideTag] ? scanned[sideTag].length : 0);
+  const charId = profile?.characterId;
+  const track = charId ? progress.characterTracks?.[charId] : null;
+  if (track) {
+    const found = track.clueChain.filter(id => scanned.all?.includes(id)).length;
+    setText('track-clues', `${found} / ${track.clueChain.length}`);
+  } else {
+    setText('track-clues', '—');
+  }
 }
 
 function setText(id, value) {

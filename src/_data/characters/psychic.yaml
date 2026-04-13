@@ -27,9 +27,10 @@ background: 'Your name is **Margo Laveau**, and you carry one of the most famous
   this is Alice. After a century, the time is finally right. You''re here to finish
   what Célestine started.'
 objectives:
-  main: main_quest
+  track: psychics_burden
+  aspect: paranormal
   private: minor_alice_second_sight
-  initial_quest: AO81
+  initial_quest: AO80
 strategy: Your 🔮 Expert Spiritual skill gives you access to **vision clues**—spiritual
   messages and ghostly communications that others can't access. Your 👥 Whitmore connection
   gives you access to clues about Alice Whitmore that others can't read. But you won't

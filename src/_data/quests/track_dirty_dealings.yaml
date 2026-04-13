@@ -1,0 +1,16 @@
+id: dirty_dealings
+aspect: adventure
+title: Sebastian's Dirty Dealings
+objective: "Someone hid something valuable on these grounds. Find what's been hidden."
+answer: The Romano treasure is real, hidden across the estate by Frankie Romano, who used Sebastian Crane's apothecary as a front for smuggling during Prohibition. Frankie left a coded trail through his letters — One, Two, Three — leading from the Methuselah Palm to the paintings to the purple vase to the aviary.
+type: track
+clue_chain:
+  - AO79
+  - WF25a
+  - AO113
+  - AP114
+  - AO115
+linked_quests:
+  - major_romano_treasure
+  - minor_the_alchemist
+  - romano_family_rise_and_fall

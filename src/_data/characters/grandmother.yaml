@@ -28,6 +28,7 @@ background: Your name is **Gertrude Green**, you often go by G.G. You're the one
   come and go, and you've kept your secrets close. But now, with the investigation
   at the Montrose mansion, it's time to share what you know.
 objectives:
-  main: main_quest
+  track: meta
+  aspect: choose
 relationships: {}
 starting_items: []

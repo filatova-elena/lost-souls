@@ -20,7 +20,8 @@ background: 'You''re a herbalist—part folk healer, part forager, part plant wh
   south-facing bed where it could survive. When you heard about the investigation
   at the mansion, you knew this was your chance to get inside and find answers.'
 objectives:
-  main: main_quest
+  track: magic_elixir
+  aspect: alchemical
   private: minor_elixir_of_love
   initial_quest: BH106
 strategy: Your 🌿 Expert Botanical skill lets you read clues others can't—botanical

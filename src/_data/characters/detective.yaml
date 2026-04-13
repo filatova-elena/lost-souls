@@ -23,9 +23,10 @@ background: You've been investigating the **Montrose family** for months. On the
   secrets tend to reveal them when they're surrounded by other people with secrets.
   You're here to build a case.
 objectives:
-  main: main_quest
+  track: magic_elixir
+  aspect: alchemical
   private: major_rose_bread_legacy
-  initial_quest: AO79
+  initial_quest: BH106
 strategy: Your ⚖️ Expert Legal skill lets you read clues others can't—trust documents,
   financial records, estate papers. Your 📜 Basic History skill gives you some additional
   access to historical clues. But you won't be able to read everything. Find players

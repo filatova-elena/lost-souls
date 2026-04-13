@@ -17,7 +17,8 @@ background: 'Your family name is **Sinclair**, but it wasn''t always. You eventu
   at the **Montrose mansion**, you knew you had to come. You have a feeling it''s
   all connected.'
 objectives:
-  main: main_quest
+  track: magic_elixir
+  aspect: alchemical
   private: minor_doctor_and_patient
   initial_quest: BH106
 strategy: Your ⚕️ Expert Medical skill lets you read clues others can't—pharmaceutical

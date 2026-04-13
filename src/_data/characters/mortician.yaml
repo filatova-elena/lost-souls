@@ -21,7 +21,8 @@ background: 'Your family has run the mortuary in Long Beach for over 100 years. 
   documented the inconsistencies. And he hid those notes in the family archives. Now
   you have them. And you know something was **covered up**.'
 objectives:
-  main: main_quest
+  track: magic_elixir
+  aspect: alchemical
   private: minor_morticians_silence
   initial_quest: BH106
 strategy: Your ⚕️ Expert Medical skill lets you read clues others can't—death records,

@@ -9,13 +9,15 @@ appearance: |
   Pale root with distinctive forked, human-like shape, unusual and expensive-looking
 hashtags:
 - sebastian_crane
-- elixir_of_love
-skills:
-- botanical_2
+- magic_elixir
+skills: []
 is_key:
-- elixir_of_love
-- main_quest
+- magic_elixir
 content: |
   <div style="text-align: center;font-size: 40px;">✋</div>
-  **Ginseng Root (Panax ginseng)**. A pale root with a distinctive forked, human-like shape. Precious, difficult to source, and very expensive — only serious practitioners would seek it out. Prized in Eastern traditions for its mystical binding properties.
+  A pale root with a distinctive forked, human-like shape, stored carefully in a glass jar. It looks old and precious — someone kept this with intention.
+
+  You recognize it as **Ginseng Root (Panax ginseng)** — rare and difficult to source, usually imported from Asia. Known in traditional medicine for vitality and longevity.
+
+  On the jar, a hand-written label with alchemical symbols and the words: *"The root that binds."*
 unlock_code: '1236'

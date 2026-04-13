@@ -11,11 +11,9 @@ date: '1924-07-02'
 hashtags:
 - thaddeus_crane
 - alice_whitmore
-- doctor_and_patient
-- main_quest
+- psychics_burden
 skills: []
-is_key:
-- main_quest
+is_key: []
 content: |
   Alice is exceptional. Maddening, infuriating, brilliant Alice. She possesses an understanding of human nature that borders on supernatural. When she looks at me, I believe she truly sees me—not the veneer of respectability, but the architect beneath. The Architect of my own destiny.
 unlock_code: '1237'

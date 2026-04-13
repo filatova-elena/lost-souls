@@ -1,0 +1,19 @@
+id: APH186
+type: Artifact (Photo)
+title: Photograph of a young man
+act: act_ii_mystery_emerges
+location:
+  room: library
+appearance: |
+  Sepia-toned photograph of a handsome young man in a peacoat, standing on a harbor dock
+hashtags:
+- secret_baby
+- thomas_whitmore
+- cordelia_montrose
+skills:
+- personal_montrose
+content: |
+  A sepia-toned photograph of a strikingly handsome young man in a merchant officer's peacoat, standing on a harbor dock with a large ship behind him. He is smiling warmly at the camera.
+
+  On the back is written "For my dear Cordelia. Wait for me. Blue skies ahead — Thomas, 1923"
+unlock_code: '1357'

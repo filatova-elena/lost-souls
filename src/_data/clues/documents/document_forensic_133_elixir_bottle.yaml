@@ -8,14 +8,12 @@ location:
   room: with_grandmother
 hashtags:
 - foxglove
-- elixir_of_love
+- magic_elixir
 - venetian_bottle
 - sebastian_crane
-- main_quest
 skills: []
 is_key:
-- elixir_of_love
-- main_quest
+- magic_elixir
 content: |
   **FORENSIC EXAMINATION REPORT**
 
