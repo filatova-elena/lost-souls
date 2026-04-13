@@ -10,7 +10,6 @@ title: "Clue"
 description: "{% if clue.subtitle %}{{ clue.subtitle }}{% else %}{{ clue.title }}{% endif %} - {% set descText = clue.narrative or clue.appearance or clue.narration or clue.content or '' %}{% if descText %}{{ descText | replace('**', '') | replace('*', '') | replace('#', '') | replace('![', '') | replace(']', '') | replace('(', '') | replace(')', '') | truncate(130) }}{% else %}A clue in The Lost Souls of Kennebec Avenue investigation{% endif %}"
 ---
 <link rel="stylesheet" href="{{ site.baseUrl }}clues/clues.css">
-<link rel="stylesheet" href="{{ site.baseUrl }}clues/lock.css">
 <link rel="stylesheet" href="{{ site.baseUrl }}clues/progress.css">
 
 <header>
@@ -84,12 +83,6 @@ description: "{% if clue.subtitle %}{{ clue.subtitle }}{% else %}{{ clue.title }
   </section>
   {% endif %}
 
-{% if clue.unlock_code and clue.skills and clue.skills.length > 0 %}
-<section class="seance-section">
-  <div class="seance-section-label">Show these symbols to others to unlock their clues</div>
-  <div class="static-ring" data-unlock-code="{{ clue.unlock_code }}"></div>
-</section>
-{% endif %}
 
 {% if clue.previous_id or clue.next_id %}
 <nav class="page-nav" aria-label="Clue navigation">

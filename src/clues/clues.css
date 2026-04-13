@@ -31,9 +31,7 @@
     font-style: italic;
 }
 
-/* Clue no-access - legacy/fallback container for lock messages
-   Note: This class may be used by the octogram lock system or as a fallback
-   The main lock container is .clue-lock */
+/* Clue no-access - fallback container for lock messages */
 .clue-no-access {
     padding: 20px;
     background-color: rgba(212, 165, 116, 0.1);
@@ -57,7 +55,7 @@
 /* Clue lock - container for skill-based lock content
    This is an empty container in the template that gets populated by JavaScript
    when the user lacks required skills. Contains: lock icon, message, and "Seek out" characters
-   Visibility controlled by data-state="skill-locked" on .clue-page (see lock.css) */
+   Visibility controlled by data-state="skill-locked" on .clue-page */
 .clue-lock {
     margin-bottom: 15px;
     line-height: 1;

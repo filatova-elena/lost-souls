@@ -14,7 +14,6 @@ const AccessState = {
 
 const STORAGE_KEYS = window.STORAGE_KEYS || {
   UNLOCKED_ACTS: 'unlocked_acts',
-  UNLOCKED: 'unlocked',
   SCANNED: 'scanned'
 };
 
@@ -36,19 +35,14 @@ function buildSkillLockedMessage(missingSkills, clueType, noAccessMessages) {
   return "You don't have the required skills to access this clue.";
 }
 
-function buildLockSectionContent(message, suggestedCharacters, unlockCode) {
-  let html = '';
-  if (unlockCode) {
-    html = `<div class="octogram-lock" data-unlock-code="${unlockCode}"></div>`;
-  } else {
-    html = `
-      <div class="lock-assembly">
-        <div class="lock-glow"></div>
-        <div class="lock-shackle"></div>
-        <div class="lock-body"><div class="keyhole"></div></div>
-      </div>
-    `;
-  }
+function buildLockSectionContent(message, suggestedCharacters) {
+  let html = `
+    <div class="lock-assembly">
+      <div class="lock-glow"></div>
+      <div class="lock-shackle"></div>
+      <div class="lock-body"><div class="keyhole"></div></div>
+    </div>
+  `;
   if (message) html += `<p>${message}</p>`;
   if (suggestedCharacters?.length) {
     const bold = suggestedCharacters.map(n => `<strong>${n}</strong>`);
@@ -60,18 +54,6 @@ function buildLockSectionContent(message, suggestedCharacters, unlockCode) {
 // ============================================================================
 // Storage
 // ============================================================================
-
-function getManuallyUnlockedClues() {
-  return window.getFromLocalStorage(STORAGE_KEYS.UNLOCKED, []);
-}
-
-function saveManualUnlock(clueId) {
-  const unlocked = getManuallyUnlockedClues();
-  if (!unlocked.includes(clueId)) {
-    unlocked.push(clueId);
-    window.saveToLocalStorage(STORAGE_KEYS.UNLOCKED, unlocked);
-  }
-}
 
 function recordClueScan(clueId) {
   const scanned = window.getScannedClues();
@@ -146,7 +128,7 @@ function processClueDiscovery(clueData) {
 function determineAccessState(clueData, noAccessMessages) {
   if (window.resolveClueState) {
     return window.resolveClueState(clueData, {
-      unlockedClues: getManuallyUnlockedClues(),
+      unlockedClues: [],
       unlockedActs: window.getFromLocalStorage(STORAGE_KEYS.UNLOCKED_ACTS, []),
       userSkills: window.getCharacterProfile()?.skills || [],
       noAccessMessages,
@@ -155,33 +137,6 @@ function determineAccessState(clueData, noAccessMessages) {
     });
   }
   return { name: AccessState.UNLOCKED };
-}
-
-// ============================================================================
-// Octogram
-// ============================================================================
-
-function onOctogramUnlock(clueData) {
-  const cluePage = document.querySelector('.clue-page');
-  const lockSection = cluePage?.querySelector('.clue-lock');
-  if (!cluePage || !lockSection) return;
-
-  saveManualUnlock(clueData.id);
-  processClueDiscovery(clueData);
-  cluePage.dataset.state = AccessState.UNLOCKED;
-
-  const isOnTrack = isTrackClue(clueData.id);
-  renderProgressTracker(isOnTrack);
-  if (isOnTrack && window.spawnParticles) window.spawnParticles();
-
-  const isKeyClue = clueData.is_key?.length > 0;
-  window.triggerUnlockAnimation(cluePage, lockSection, isKeyClue);
-}
-
-function setupOctogramLock(lockSection, clueData) {
-  const lockContainer = lockSection.querySelector('.octogram-lock[data-unlock-code]');
-  if (!lockContainer || !window.buildOctogramLock) return;
-  window.buildOctogramLock(lockContainer, clueData.unlock_code, () => onOctogramUnlock(clueData));
 }
 
 // ============================================================================
@@ -246,9 +201,8 @@ function initCluePage() {
     const lockSection = page.querySelector('.clue-lock');
     if (lockSection) {
       lockSection.innerHTML = buildLockSectionContent(
-        state.message, state.suggestedCharacters, clueData.unlock_code
+        state.message, state.suggestedCharacters
       );
-      if (clueData.unlock_code) setupOctogramLock(lockSection, clueData);
     }
   }
 
@@ -262,11 +216,6 @@ function initCluePage() {
         renderProgressTracker(true);
         window.spawnParticles();
       }
-    }
-    // Init static ring
-    if (clueData.unlock_code && window.buildStaticRing) {
-      const ring = page.querySelector('.static-ring[data-unlock-code]');
-      if (ring) window.buildStaticRing(ring, clueData.unlock_code);
     }
   }
 
