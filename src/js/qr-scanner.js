@@ -9,8 +9,11 @@ function createOverlay() {
   overlay.id = 'qr-scanner-overlay';
   overlay.innerHTML = `
     <button id="qr-scanner-close" aria-label="Close scanner">&times;</button>
-    <div id="qr-scanner-viewfinder">
-      <div id="qr-scanner-reader"></div>
+    <div style="position:relative">
+      <div id="qr-scanner-viewfinder">
+        <div id="qr-scanner-reader"></div>
+      </div>
+      <div id="qr-scanner-diamond-border"></div>
     </div>
     <p id="qr-scanner-hint">Point your camera at a purple QR code</p>
   `;
@@ -28,9 +31,9 @@ function openScanner() {
   createOverlay();
 
   const hint = document.getElementById('qr-scanner-hint');
-  const viewfinder = document.getElementById('qr-scanner-viewfinder');
+  const wrapper = document.getElementById('qr-scanner-viewfinder')?.parentElement;
   if (hint) hint.textContent = 'Waiting for camera access...';
-  if (viewfinder) viewfinder.style.display = 'none';
+  if (wrapper) wrapper.style.display = 'none';
 
   scanner = new Html5Qrcode('qr-scanner-reader');
   scanner.start(
@@ -39,7 +42,7 @@ function openScanner() {
     onScanSuccess,
     () => {}
   ).then(() => {
-    if (viewfinder) viewfinder.style.display = '';
+    if (wrapper) wrapper.style.display = '';
     if (hint) hint.textContent = 'Point your camera at a purple QR code';
   }).catch(err => {
     console.error('QR scanner error:', err);
