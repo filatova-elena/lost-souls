@@ -13,8 +13,8 @@ description: "{{ character.title }}: {{ character.personality_short or character
   <header>
     <h1>{{ character.title }}</h1>
   {% if character.image %}
-  <div style="text-align: center; margin: 20px 0;">
-    <img src="{{ site.baseUrl }}{{ character.image }}" alt="{{ character.title }} character portrait" width="300" height="300" style="max-width: 300px; width: 100%; height: auto; border: 2px solid var(--accent-gold);" loading="lazy">
+  <div class="character-portrait">
+    <img src="{{ site.baseUrl }}{{ character.image }}" alt="{{ character.title }} character portrait" loading="lazy">
   </div>
   {% endif %}
 </header>
@@ -26,12 +26,19 @@ description: "{{ character.title }}: {{ character.personality_short or character
 </section>
 {% endif %}
 
-{% if character.background %}
+{% if character.objectives %}
 <details>
-  <summary><h2>Background</h2></summary>
-  <div>
-    {{ character.background | markdown | safe }}
-  </div>
+  <summary><h2>Objectives</h2></summary>
+  <ul>
+    {% if character.objectives.track %}
+      {% set trackQuest = quests | findQuestById(character.objectives.track) %}
+      <li>{% if trackQuest and trackQuest.objective %}{{ trackQuest.objective }}{% else %}{{ character.objectives.track }}{% endif %}</li>
+    {% endif %}
+    {% if character.objectives.initial_quest %}
+      {% set initialClue = clues | findByClueId(character.objectives.initial_quest) %}
+      <li>To start, find the <strong>{% if initialClue and initialClue.title %}{{ initialClue.title }}{% else %}{{ character.objectives.initial_quest }}{% endif %}</strong></li>
+    {% endif %}
+  </ul>
 </details>
 {% endif %}
 
@@ -49,37 +56,11 @@ description: "{{ character.title }}: {{ character.personality_short or character
   {% endif %}
 {% endif %}
 
-{% if character.objectives %}
+{% if character.background %}
 <details>
-  <summary><h2>Objectives</h2></summary>
-  <ul>
-    {% if character.objectives.initial_quest %}
-      {% set initialClue = clues | findByClueId(character.objectives.initial_quest) %}
-      <li>
-        <strong>Initial quest:</strong> Find the {% if initialClue and initialClue.title %}{{ initialClue.title }}{% else %}{{ character.objectives.initial_quest }}{% endif %}
-      </li>
-    {% endif %}
-    {% if character.objectives.track %}
-      {% set trackQuest = quests | findQuestById(character.objectives.track) %}
-      <li>
-        <strong>Quest:</strong> {% if trackQuest and trackQuest.objective %}{{ trackQuest.objective }}{% else %}{{ character.objectives.track }}{% endif %}
-      </li>
-    {% endif %}
-    {% if character.objectives.private %}
-      {% set privateQuest = quests | findQuestById(character.objectives.private) %}
-      <li>
-        <strong>Private:</strong> {% if privateQuest and privateQuest.objective %}{{ privateQuest.objective }}{% else %}{{ character.objectives.private }}{% endif %}
-      </li>
-    {% endif %}
-  </ul>
-</details>
-{% endif %}
-
-{% if character.strategy %}
-<details>
-  <summary><h2>Strategy</h2></summary>
+  <summary><h2>Background</h2></summary>
   <div>
-    {{ character.strategy | markdown | safe }}
+    {{ character.background | markdown | safe }}
   </div>
 </details>
 {% endif %}
@@ -106,7 +87,7 @@ description: "{{ character.title }}: {{ character.personality_short or character
 </details>
 {% endif %}
 
-<section style="text-align: center; margin-top: 40px;">
+<section class="begin-investigation">
   <a href="{{ site.baseUrl }}" class="button" id="begin-investigation-btn" aria-label="Begin investigation as {{ character.title }}">Begin Investigation as {{ character.title }}</a>
 </section>
 

@@ -1,7 +1,7 @@
 id: magic_elixir
 aspect: alchemical
 title: Sebastian's Elixir
-objective: "Discover the truth behind the formula The Cursed Alchemist is agonizing over to help him find peace."
+objective: "Discover the truth behind The Alchemist's formula to help him find peace."
 answer: Sebastian's Elixir of Eternal Love was a harmless romantic potion. His brother Dr. Thaddeus Crane secretly added concentrated foxglove extract, turning it into a slow-acting poison. Sebastian died after testing his own creation, never knowing his brother had corrupted it. Cordelia died from six weeks of accumulated foxglove poisoning.
 type: track
 clue_chain:
