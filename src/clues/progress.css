@@ -7,9 +7,8 @@
   left: 0;
   right: 0;
   z-index: 800;
-  height: 44px;
   background: var(--secondary-dark, #0a0a0f);
-  border-top: 1px solid rgba(212, 165, 116, 0.15);
+  border-top: 2px solid var(--accent-gold);
   display: flex;
   align-items: center;
   padding: 0 16px;

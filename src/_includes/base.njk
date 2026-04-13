@@ -7,9 +7,11 @@
   {% if description %}<meta name="description" content="{{ description }}">{% endif %}
   <link rel="stylesheet" href="{{ site.baseUrl }}css/styles.css">
   <link rel="stylesheet" href="{{ site.baseUrl }}css/qr-scanner.css">
+  <link rel="stylesheet" href="{{ site.baseUrl }}clues/progress.css">
 </head>
 <body>
   {{ content | safe }}
+  {% include "clues/progress-tracker.njk" %}
   <script src="{{ site.baseUrl }}js/skills.js" defer></script>
   <script src="{{ site.baseUrl }}js/clue-access.js" defer></script>
   <script src="{{ site.baseUrl }}js/effects.js" defer></script>

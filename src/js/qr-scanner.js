@@ -132,8 +132,6 @@ function createScanButton() {
   var slot = document.getElementById('qr-scan-slot');
   if (slot) {
     slot.appendChild(btn);
-  } else {
-    document.body.appendChild(btn);
   }
 }
 
