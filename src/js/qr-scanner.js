@@ -17,7 +17,9 @@ function createOverlay() {
   `;
   document.body.appendChild(overlay);
 
-  document.getElementById('qr-scanner-close').addEventListener('click', closeScanner);
+  document.getElementById('qr-scanner-close').addEventListener('click', function() {
+    closeScanner();
+  });
   overlay.addEventListener('click', function(e) {
     if (e.target === overlay) closeScanner();
   });
@@ -25,6 +27,10 @@ function createOverlay() {
 
 function openScanner() {
   if (overlay || closing) return;
+  if (typeof Html5Qrcode === 'undefined') {
+    alert('Scanner library still loading... please try again in a second.');
+    return;
+  }
   createOverlay();
 
   const hint = document.getElementById('qr-scanner-hint');
@@ -41,14 +47,11 @@ function openScanner() {
   ).then(() => {
     if (viewfinder) viewfinder.style.display = '';
     if (hint) hint.textContent = 'Point your camera at a purple QR code';
-    // Apply zoom if supported
     try {
       const caps = scanner.getRunningTrackCameraCapabilities();
       const zoom = caps.zoomFeature();
       if (zoom.isSupported()) {
-        // Use 2x zoom or max, whichever is lower
-        const target = Math.min(2, zoom.max());
-        zoom.apply(target);
+        zoom.apply(Math.min(2, zoom.max()));
       }
     } catch (e) {}
   }).catch(err => {
@@ -60,20 +63,10 @@ function openScanner() {
 function onScanSuccess(decodedText) {
   if (closing || !scanner) return;
 
-  const currentScanner = scanner;
-  scanner = null;
-
   const hint = document.getElementById('qr-scanner-hint');
   if (hint) hint.textContent = 'Clue found! Opening...';
 
-  currentScanner.stop().then(() => {
-    currentScanner.clear();
-    requestAnimationFrame(() => {
-      setTimeout(() => {
-        window.location.href = decodedText;
-      }, 100);
-    });
-  }).catch(() => {
+  closeScanner(function() {
     window.location.href = decodedText;
   });
 }
@@ -87,7 +80,7 @@ function stopAndCleanup() {
   return Promise.resolve();
 }
 
-function closeScanner() {
+function closeScanner(callback) {
   if (closing) return;
   closing = true;
 
@@ -97,6 +90,7 @@ function closeScanner() {
       overlay = null;
     }
     closing = false;
+    if (typeof callback === 'function') callback();
   });
 }
 
