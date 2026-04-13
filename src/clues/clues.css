@@ -2,6 +2,11 @@
    CLUE-SPECIFIC STYLES
    ═══════════════════════════════════ */
 
+/* Space for fixed bottom bar */
+.clue-page {
+  padding-bottom: 56px;
+}
+
 /* Clue subtitle - appears below the main clue title */
 .clue-subtitle {
     font-style: italic;
