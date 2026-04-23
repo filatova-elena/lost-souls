@@ -1,9 +1,10 @@
 id: BH106
 type: Botanical (Dried Herb)
-title: Precious Forked Root Specimen
+title: Forked Root Specimen
 act: act_i_setting
 location:
   room: dining
+story_gate_for: act_ii_mystery_emerges
 prop: ginseng in a glass jar
 appearance: |
   Pale root with distinctive forked, human-like shape, unusual and expensive-looking

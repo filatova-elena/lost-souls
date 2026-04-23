@@ -60,9 +60,9 @@ describe('clue access state', () => {
     });
 
     test('player can view clues after scanning a clue that unlocks the act', () => {
-      // First, simulate scanning the gate clue (DL122) which unlocks Act II
+      // First, simulate scanning any one of the 4 Act II gate clues (AO79 here)
       const gateClue = {
-        id: 'DL122',
+        id: 'AO79',
         act: 'act_i_setting',
         story_gate_for: 'act_ii_mystery_emerges',
         skills: []

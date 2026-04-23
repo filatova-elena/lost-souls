@@ -1,5 +1,6 @@
 id: R44
 act: act_iii_investigation
+collection: RUMORS_III_A
 type: Rumor
 possession: BAKER
 truth: true

@@ -1,5 +1,6 @@
 id: R69
 act: act_iii_investigation
+collection: unassigned
 type: Rumor
 possession: HEIRESS
 truth: true

@@ -1,5 +1,6 @@
 id: R7
 act: act_ii_mystery_emerges
+collection: RUMORS_II_A
 type: Rumor
 possession: HEIRESS
 truth: true

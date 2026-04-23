@@ -1,5 +1,6 @@
 id: R15
 act: act_i_setting
+collection: RUMORS_I_B
 type: Rumor
 possession: OTHER
 truth: true

@@ -4,7 +4,7 @@ title: Medicine Cabinet
 image: assets/images/bembridge/medicine_cabinet.png
 act: act_i_setting
 location:
-  room: upstairs_bdrm
+  room: upstairs_bath
 appearance: |
   A wall-mounted medicine cabinet filled with vintage bottles, tins, and tubes
 hashtags:

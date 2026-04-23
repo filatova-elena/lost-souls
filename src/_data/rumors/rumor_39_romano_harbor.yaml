@@ -1,5 +1,6 @@
 id: R39
 act: act_i_setting
+collection: RUMORS_I_C
 type: Rumor
 possession: PROFESSOR
 truth: true

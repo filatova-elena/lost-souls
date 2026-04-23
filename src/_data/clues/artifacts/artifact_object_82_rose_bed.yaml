@@ -4,7 +4,7 @@ title: The Rose Garden Bed - Montrose Estate
 act: act_iv_revelation
 location:
   room: garden
-  description: rose planter directly on the left hand side when facing from aviary towards the street
+  description: rose planter directly on the right hand side when facing from aviary towards the street
 appearance: |
   Carefully maintained garden bed filled with deep red and white roses
 hashtags:
@@ -15,8 +15,6 @@ skills:
 - history_1
 - botanical_1
 - personal_romano
-is_key:
-- dirty_dealings
 content: |
   A carefully maintained garden bed filled with deep red and white roses.
 

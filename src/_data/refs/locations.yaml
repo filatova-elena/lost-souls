@@ -1,0 +1,99 @@
+# Location reference — maps room keys (as used in clue `location.room`) to
+# short IDs and display colors. Counts reflect clues per room at time of generation.
+
+breakfast:
+  id: B
+  name: Breakfast
+  color: "#617FD8"
+carriage_house:
+  id: CH
+  name: Carriage House
+  color: "#BAD861"
+dining:
+  id: D
+  name: Dining
+  color: "#9D61D8"
+downstairs_bath:
+  id: DBA
+  name: Downstairs Bath
+  color: "#D8617F"
+downstairs_hallway:
+  id: DH
+  name: Downstairs Hallway
+  color: "#61BAD8"
+fireplace:
+  id: F
+  name: Fireplace
+  color: "#61D89D"
+foyer:
+  id: FO
+  name: Foyer
+  color: "#7F61D8"
+garden:
+  id: G
+  name: Garden
+  color: "#61D8BA"
+kitchen:
+  id: K
+  name: Kitchen
+  color: "#619DD8"
+library:
+  id: L
+  name: Library
+  color: "#6161D8"
+master_bdrm:
+  id: MB
+  name: Master Bedroom
+  color: "#D87F61"
+neils_bdrm:
+  id: NB
+  name: Neil's Bedroom
+  color: "#61D8D8"
+office:
+  id: O
+  name: Office
+  color: "#D861BA"
+pantry:
+  id: P
+  name: Pantry
+  color: "#9DD861"
+piano:
+  id: PN
+  name: Piano
+  color: "#61D87F"
+sewing:
+  id: S
+  name: Sewing
+  color: "#D89D61"
+staircase:
+  id: ST
+  name: Staircase
+  color: "#D8619D"
+staircase_desk:
+  id: SD
+  name: Staircase Desk
+  color: "#D8D861"
+upstairs_bath:
+  id: UBA
+  name: Upstairs Bath
+  color: "#BA61D8"
+upstairs_bdrm:
+  id: UB
+  name: Upstairs Bedroom
+  color: "#7FD861"
+with_alchemist_ghost:
+  id: WA
+  name: With Alchemist Ghost
+  color: "#61D861"
+with_grandmother:
+  id: WG
+  name: With Grandmother
+  color: "#D86161"
+with_heartbroken_ghost:
+  id: WH
+  name: With Heartbroken Ghost
+  color: "#D8BA61"
+with_lonely_ghost:
+  id: WL
+  name: With Lonely Ghost
+  color: "#D861D8"

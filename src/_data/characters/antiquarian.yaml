@@ -2,22 +2,27 @@ id: antiquarian
 title: The Antiquarian
 image: assets/images/characters/webp/antiquarian.webp
 personality_short: Nostalgic collector who preserves what the world forgets.
-personality: Nostalgic collector who preserves what the world forgets. Loves old things and the stories they tell and wishes the world didn't have to constantly change.
+personality: |-
+  Nostalgic collector who preserves what the world forgets. Loves old things and the stories they tell and wishes the world didn't have to constantly change.
 skills:
-  - history_1
-  - art_1
-  - personal_eleanor
-  - is_character_antiquarian
+- history_1
+- art_1
+- personal_romano
+- is_character_antiquarian
 background: |-
-  You run a small antiquarian shop, surrounded by other people's memories—old newspapers, estate sale finds, forgotten photographs, documents nobody wanted anymore. Every item is a piece of someone's story, and you can't bear to let those stories disappear. You've been here for decades, long enough to remember when this neighborhood felt like a village—when shopkeepers knew each other by name and Saturday mornings smelled like fresh bread from the bakery down the street. That bakery belonged to **David and Catherine Sullivan**, a family business famous for their **rose bread**—a recipe passed down through generations, originally created by **Eleanor Sullivan**. Catherine would bring you a loaf on Saturdays. David would stop by to chat about local history, curious about where the Sullivans came from. Then in **1990, a fire** took everything. The bakery, the family—gone. The official story was electrical failure, but you've spent a lifetime handling old things, and you know when something doesn't add up. Over the years, bits of the Sullivan story have kept finding their way to you—a clipping here, a photograph there. The past doesn't disappear, it just changes hands. When you heard about the investigation at the **Montrose mansion**, some of those pieces started to feel relevant. You don't have the full picture, but you had to come.
+  You run a small antiquarian shop, surrounded by other people's memories—every item a piece of someone's story you can't bear to lose. Over the decades, your counter has quietly collected pieces of one story in particular: the **Romano harbor years**. A Venetian bottle with no paperwork. A dockmaster's ledger bought cheap at an estate sale. Photographs of longshoremen whose faces you've come to recognize. Sellers are always vague about origins, but one name keeps surfacing—**Romano**. You've never chased it. You just kept the pieces. Somewhere in the shop is a map of Long Beach's bootlegging years that no historian ever drew, assembled from things nobody else wanted. When you heard about the investigation at the **Montrose mansion**—where the Romanos did business in the 1920s—some of those fragments started to feel relevant. You had to come. You want to know what really happened down at that harbor.
 objectives:
   track: dirty_dealings
   aspect: adventure
-  private: minor_bakery_fire
+  private: romano_family_rise_and_fall
   initial_quest: AO79
-strategy: Your 📜 Basic History skill helps with research and local context. Your 🎨 Basic Art skill lets you evaluate and date old objects. Your 👥 Eleanor connection gives you access to clues about the Sullivan family that others can't read. But you won't be able to read everything. Find players whose skills complement yours, and trade what you know for what you're missing.
+strategy: |-
+  Your 📜 Basic History skill helps with research and local context. Your 🎨 Basic Art skill lets you evaluate and date old objects. Your 👥 Romano connection gives you access to clues about the Romano family that others can't read. But you won't be able to read everything. Find players whose skills complement yours, and trade what you know for what you're missing.
 relationships:
-  influencer: They've come into your shop over the years looking for material for their Long Beach mysteries series. They've been researching the Sullivan bakery fire—a story you know firsthand, not from clippings.
-  baker: You've seen them around the neighborhood. There's something about them that tugs at you—something familiar you can't quite place.
-  journalist: They cover local history for the paper and you've been a source for them before. You trust them to care about getting the story right. And the story of what happened to the Sullivan bakery deserves to be gotten right.
+  artcollector: |-
+    They carry the Romano name. You carry pieces of what that name touched—ledgers, bottles, photographs. Comparing what's in the mansion with what's in your shop could fill in a century of gaps.
+  explorer: |-
+    They're hunting Romano treasure with maps and legwork. You've been quietly piecing together the same story from estate-sale scraps. What you've catalogued might be the provenance they're missing.
+  influencer: |-
+    They've come into your shop over the years looking for material for their Long Beach mysteries series. They've covered the Romano treasure legend from the outside; you've been holding pieces of it in a back-room drawer.
 starting_items: []

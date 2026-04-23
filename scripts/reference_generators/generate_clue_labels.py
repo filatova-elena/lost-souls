@@ -80,6 +80,55 @@ def load_all_clues(clues_dir):
     return clues
 
 
+def load_locations():
+    """Load the locations reference: room_key -> {id, name, color}."""
+    path = project_root / 'src/_data/refs/locations.yaml'
+    if not path.exists():
+        return {}
+    with open(path, 'r', encoding='utf-8') as f:
+        return yaml.safe_load(f) or {}
+
+
+def hex_to_rgb01(hex_color):
+    """Convert '#RRGGBB' to (r, g, b) floats in 0..1."""
+    h = hex_color.lstrip('#')
+    return tuple(int(h[i:i+2], 16) / 255.0 for i in (0, 2, 4))
+
+
+def draw_key_icon(c, x, y, size, fill_color):
+    """
+    Draw a stylized key. (x, y) = bottom-left of bounding box. `size` = total width in points.
+    Rendered horizontally with the bow (ring) on the left and teeth on the right.
+    """
+    h = size * 0.55            # height of icon
+    bow_r = h * 0.5            # bow outer radius
+    bow_cx = x + bow_r
+    bow_cy = y + h / 2
+    shaft_h = h * 0.28
+    shaft_y = bow_cy - shaft_h / 2
+    shaft_start = bow_cx + bow_r * 0.85
+    shaft_end = x + size
+    shaft_w = shaft_end - shaft_start
+
+    c.saveState()
+    c.setFillColor(fill_color)
+    c.setStrokeColor(fill_color)
+    # Bow
+    c.circle(bow_cx, bow_cy, bow_r, stroke=0, fill=1)
+    # Inner hole (punched with white; reader sees page white through it)
+    c.setFillColor(colors.white)
+    c.circle(bow_cx, bow_cy, bow_r * 0.42, stroke=0, fill=1)
+    c.setFillColor(fill_color)
+    # Shaft
+    c.rect(shaft_start, shaft_y, shaft_w, shaft_h, fill=1, stroke=0)
+    # Two teeth at the tip (pointing down)
+    tooth_w = h * 0.16
+    tooth_h = h * 0.28
+    c.rect(shaft_end - tooth_w, shaft_y - tooth_h, tooth_w, tooth_h, fill=1, stroke=0)
+    c.rect(shaft_end - tooth_w * 3, shaft_y - tooth_h * 0.7, tooth_w, tooth_h * 0.7, fill=1, stroke=0)
+    c.restoreState()
+
+
 def format_act_name(act):
     """Format act name for display."""
     if not act:
@@ -130,7 +179,7 @@ def resolve_image_path(image_field):
     return None
 
 
-def draw_label(c, idx, clue, label_style, act_style):
+def draw_label(c, idx, clue, label_style, act_style, locations):
     """Draw a single label at position idx on the current page."""
     label_x, label_y_top = get_label_origin(idx)
 
@@ -149,6 +198,17 @@ def draw_label(c, idx, clue, label_style, act_style):
     act = clue.get('act', '')
     image_field = clue.get('image', None)
 
+    # Location lookup
+    loc_field = clue.get('location')
+    room_key = loc_field.get('room') if isinstance(loc_field, dict) else loc_field if isinstance(loc_field, str) else None
+    loc_info = locations.get(room_key) if room_key else None
+    loc_note = loc_field.get('description') if isinstance(loc_field, dict) else None
+
+    skills = clue.get('skills') or []
+    is_key = clue.get('is_key') or []
+    if isinstance(skills, str): skills = [skills]
+    if isinstance(is_key, str): is_key = [is_key]
+
     # Format appearance
     appearance_text = ""
     if appearance:
@@ -159,46 +219,134 @@ def draw_label(c, idx, clue, label_style, act_style):
 
     act_display = format_act_name(act)
 
-    # Resolve image
-    img_path = resolve_image_path(image_field)
+    # ── Location badge (colored circle with code) — top-right corner ──
+    badge_radius = 0.14 * inch
+    badge_cx = label_x + LABEL_WIDTH - PADDING - badge_radius
+    badge_cy = label_y_top - PADDING - badge_radius
+    if loc_info:
+        r, g, b = hex_to_rgb01(loc_info.get('color', '#888888'))
+        c.setFillColor(colors.Color(r, g, b))
+        c.setStrokeColor(colors.Color(r * 0.6, g * 0.6, b * 0.6))
+        c.setLineWidth(0.4)
+        c.circle(badge_cx, badge_cy, badge_radius, stroke=1, fill=1)
+        code = str(loc_info.get('id', '?'))
+        # Pick text color based on background luminance
+        lum = 0.299 * r + 0.587 * g + 0.114 * b
+        c.setFillColor(colors.white if lum < 0.6 else colors.black)
+        fs = 7 if len(code) <= 2 else 6
+        c.setFont('Helvetica-Bold', fs)
+        text_w = c.stringWidth(code, 'Helvetica-Bold', fs)
+        c.drawString(badge_cx - text_w / 2, badge_cy - fs / 3, code)
+
+    # Reserve horizontal space so the ID doesn't overlap the badge
+    id_right_reserve = (2 * badge_radius) + 0.06 * inch if loc_info else 0
 
     # ── Layout: text on the left, image on the right (if present) ──
+    if image_field:
+        img_path = resolve_image_path(image_field)
+    else:
+        img_path = None
+
     if img_path:
-        # Reserve right side for image
-        img_area_width = CONTENT_WIDTH * 0.4
-        text_width = CONTENT_WIDTH - img_area_width - 0.05 * inch  # small gap
+        img_area_width = CONTENT_WIDTH * 0.35
+        text_width = CONTENT_WIDTH - img_area_width - 0.05 * inch
     else:
         text_width = CONTENT_WIDTH
         img_area_width = 0
 
-    # Build text content
-    html = f'<b><font size="11">{clue_id}</font></b><br/>'
-    html += f'<b><font size="7">{title}</font></b><br/>'
+    # ── Build main text block: ID, title, appearance ──
+    head_width = max(text_width - id_right_reserve, text_width * 0.5) if not img_path else text_width
+    head_html = f'<b><font size="11">{clue_id}</font></b>'
+    head_para = Paragraph(head_html, label_style)
+    hw, hh = head_para.wrap(head_width, 18)
+    head_para.drawOn(c, cx, cy_top - hh)
+
+    # Ensure next row clears both the ID block and the location badge
+    badge_bottom_gap = (2 * badge_radius + 3) if loc_info else 0
+    top_block_h = max(hh, badge_bottom_gap)
+    cursor_y = cy_top - top_block_h - 2  # running y-cursor (top edge of next block)
+
+    # ── KEY row (prominent, right below ID) ──
+    if is_key:
+        tracks = ", ".join(str(k).replace('_', ' ').title() for k in is_key)
+        key_color = colors.Color(0.70, 0.48, 0.10)  # amber/gold
+        key_row_h = 10
+        icon_size = 10
+        icon_y = cursor_y - key_row_h + 1
+        draw_key_icon(c, cx, icon_y, icon_size, key_color)
+        # Track name, bold, slightly larger
+        track_style = ParagraphStyle(
+            'KeyTrack', parent=label_style,
+            fontName='Helvetica-Bold', fontSize=7, leading=9,
+            textColor=key_color,
+        )
+        track_para = Paragraph(f'<b>{tracks}</b>', track_style)
+        tw, th = track_para.wrap(text_width - icon_size - 3, 12)
+        track_para.drawOn(c, cx + icon_size + 3, cursor_y - th)
+        cursor_y -= max(key_row_h, th) + 2
+
+    # ── Location note (★ bold red) ──
+    if loc_note:
+        note_style = ParagraphStyle(
+            'LocNote', parent=label_style,
+            fontName='Helvetica-Bold', fontSize=6.5, leading=8,
+            textColor=colors.Color(0.78, 0.10, 0.10),
+        )
+        note_html = f'<b>&#9733; {loc_note}</b>'
+        note_para = Paragraph(note_html, note_style)
+        nw, nh = note_para.wrap(text_width, 20)
+        note_para.drawOn(c, cx, cursor_y - nh)
+        cursor_y -= nh + 2
+
+    # Title + appearance
+    body_html = f'<b><font size="7">{title}</font></b>'
     if appearance_text:
-        html += f'<i><font size="5.5">{appearance_text}</font></i><br/>'
+        body_html += f'<br/><i><font size="5.5">{appearance_text}</font></i>'
 
-    para = Paragraph(html, label_style)
-    w, h = para.wrap(text_width, CONTENT_HEIGHT - 12)  # reserve space for act at bottom
-    para.drawOn(c, cx, cy_top - h)
+    body_para = Paragraph(body_html, label_style)
+    body_max_h = cursor_y - (label_y_top - LABEL_HEIGHT + PADDING) - 18  # reserve bottom for skills + act row
+    bw, bh = body_para.wrap(text_width, max(body_max_h, 10))
+    body_para.drawOn(c, cx, cursor_y - bh)
 
-    # Draw act at bottom left
+    # ── Skills — small grey row above the bottom (act + location) ──
+    bottom_line_y = label_y_top - LABEL_HEIGHT + PADDING
+    meta_y = bottom_line_y + 10
+
+    if skills:
+        pretty = ", ".join(str(s).replace('_', ' ') for s in skills)
+        skills_html = f'<font size="5" color="#444444">{pretty}</font>'
+        skills_para = Paragraph(skills_html, label_style)
+        mw, mh = skills_para.wrap(text_width, 12)
+        skills_para.drawOn(c, cx, meta_y - mh + 4)
+
+    # ── Bottom line: act (left) + location full name (right) ──
     if act_display:
         act_para = Paragraph(f'<font size="6" color="#666666">{act_display}</font>', act_style)
-        aw, ah = act_para.wrap(text_width, 12)
-        act_para.drawOn(c, cx, label_y_top - LABEL_HEIGHT + PADDING)
+        aw, ah = act_para.wrap(text_width * 0.6, 12)
+        act_para.drawOn(c, cx, bottom_line_y)
 
-    # Draw image on the right
+    if loc_info:
+        loc_name = loc_info.get('name', room_key)
+        loc_html = f'<font size="6" color="#666666">{loc_name}</font>'
+        loc_para = Paragraph(loc_html, act_style)
+        # right-align within text column
+        lw, lh = loc_para.wrap(text_width, 12)
+        # draw right-aligned by recomputing with right alignment style
+        right_style = ParagraphStyle('LocRight', parent=act_style, alignment=2)
+        loc_para = Paragraph(loc_html, right_style)
+        loc_para.wrap(text_width, 12)
+        loc_para.drawOn(c, cx, bottom_line_y)
+
+    # ── Draw image on the right ──
     if img_path:
         try:
             img = ImageReader(str(img_path))
             iw, ih = img.getSize()
             aspect = iw / ih
 
-            # Available space for image
             max_img_w = img_area_width
-            max_img_h = CONTENT_HEIGHT
+            max_img_h = CONTENT_HEIGHT - 0.3 * inch  # leave top for badge, bottom for meta/act
 
-            # Fit image maintaining aspect ratio
             if aspect > (max_img_w / max_img_h):
                 draw_w = max_img_w
                 draw_h = draw_w / aspect
@@ -206,9 +354,8 @@ def draw_label(c, idx, clue, label_style, act_style):
                 draw_h = max_img_h
                 draw_w = draw_h * aspect
 
-            # Position: right-aligned, vertically centered
             img_x = cx + text_width + 0.05 * inch + (max_img_w - draw_w) / 2
-            img_y = cy_top - CONTENT_HEIGHT / 2 - draw_h / 2
+            img_y = (cy_top - 0.15 * inch) - CONTENT_HEIGHT / 2 - draw_h / 2
 
             c.drawImage(str(img_path), img_x, img_y, draw_w, draw_h,
                         preserveAspectRatio=True, mask='auto')
@@ -216,8 +363,9 @@ def draw_label(c, idx, clue, label_style, act_style):
             print(f"Warning: Could not load image for {clue_id}: {e}", file=sys.stderr)
 
 
-def create_label_pdf(clues, output_path):
+def create_label_pdf(clues, output_path, locations=None):
     """Create PDF with labels for all clues."""
+    locations = locations or {}
     num_pages = (len(clues) + LABELS_PER_PAGE - 1) // LABELS_PER_PAGE
 
     print(f"Page size: {PAGE_WIDTH/inch:.1f}\" x {PAGE_HEIGHT/inch:.1f}\"")
@@ -259,7 +407,7 @@ def create_label_pdf(clues, output_path):
         page_clues = clues[start:start + LABELS_PER_PAGE]
 
         for idx, clue in enumerate(page_clues):
-            draw_label(c, idx, clue, label_style, act_style)
+            draw_label(c, idx, clue, label_style, act_style, locations)
 
         if page_num < num_pages - 1:
             c.showPage()
@@ -309,7 +457,8 @@ def main():
         return 1
 
     print(f"Found {len(clues)} clues\n")
-    create_label_pdf(clues, output_path)
+    locations = load_locations()
+    create_label_pdf(clues, output_path, locations=locations)
 
     return 0
 

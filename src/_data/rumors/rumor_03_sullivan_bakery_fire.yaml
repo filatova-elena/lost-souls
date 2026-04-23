@@ -1,5 +1,6 @@
 id: R3
 act: act_iii_investigation
+collection: RUMORS_III_B
 type: Rumor
 possession: HEIRESS
 truth: true

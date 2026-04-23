@@ -3,7 +3,8 @@ type: Artifact (Object)
 title: Unfinished Wedding Dress
 act: act_i_setting
 location:
-  room: sewing
+  room: downstairs_bath
+story_gate_for: act_ii_mystery_emerges
 prop: 1920s style unfinished wedding dress
 appearance: |
   Exquisite but unfinished wedding dress on dress form with intricate beading and lace details

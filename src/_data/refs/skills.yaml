@@ -10,13 +10,13 @@ botanical:
 
 spiritual:
   name: spiritual
-  title: Spiritual
+  title: Paranormal
   icon: "🔮"
   category: KEY
   description: Psychic abilities, intuitive sensing, emotional connections
   level:
-    "1": Spiritual sensitivity
-    "2": Spiritual expert
+    "1": Paranormal sensitivity
+    "2": Paranormal expert
 
 rumors:
   name: rumors

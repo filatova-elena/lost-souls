@@ -13,7 +13,8 @@ hashtags:
 skills:
 - medical_2
 - botanical_2
-is_key: []
+is_key:
+- magic_elixir
 content: |
   **AUTOPSY EXAMINATION REPORT**
 

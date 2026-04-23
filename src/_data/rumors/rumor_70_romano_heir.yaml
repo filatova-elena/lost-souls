@@ -1,5 +1,6 @@
 id: R70
 act: act_i_setting
+collection: unassigned
 type: Rumor
 possession: EXPLORER
 truth: true

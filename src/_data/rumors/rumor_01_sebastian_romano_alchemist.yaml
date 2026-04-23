@@ -1,5 +1,6 @@
 id: R1
 act: act_i_setting
+collection: RUMORS_I_A
 type: Rumor
 possession: HEIRESS
 truth: true

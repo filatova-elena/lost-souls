@@ -1,5 +1,6 @@
 id: R20
 act: act_iii_investigation
+collection: RUMORS_III_B
 type: Rumor
 possession: OTHER
 truth: true

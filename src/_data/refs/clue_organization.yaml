@@ -33,7 +33,12 @@ act_i_setting:
 act_ii_mystery_emerges:
   name: "Act II: The Mystery Emerges"
   purpose: "Introduce the problem, raise questions, begin investigation"
-  story_gate_clue: DL122  # Birth Certificate - Sebastian Montgomery Crane
+  # Any of the 4 aspect-track initial clues unlocks Act II
+  story_gate_clues:
+    - AO79   # Ornate Glass Bottle (adventure)
+    - AO80   # Crystal Ball - Antique Scrying Sphere (paranormal)
+    - AO85   # Unfinished Wedding Dress (gossip)
+    - BH106  # Forked Root Specimen (alchemical)
   contains:
     - "First signs something is wrong"
     - "Initial symptoms or anomalies"

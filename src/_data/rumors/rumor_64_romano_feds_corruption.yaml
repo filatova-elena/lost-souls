@@ -1,5 +1,6 @@
 id: R64
 act: act_iii_investigation
+collection: RUMORS_III_B
 type: Rumor
 possession: INFLUENCER
 truth: false

@@ -9,6 +9,7 @@ clue_chain:
   - WF25a
   - AO113
   - AP114
+  - AO84
   - AO115
 linked_quests:
   - major_romano_treasure

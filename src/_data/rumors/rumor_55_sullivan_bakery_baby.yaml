@@ -1,5 +1,6 @@
 id: R55
 act: act_iv_revelation
+collection: RUMORS_IV_A
 type: Rumor
 possession: OTHER
 truth: true

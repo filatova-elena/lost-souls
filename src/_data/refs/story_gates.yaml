@@ -4,9 +4,12 @@
 act_ii_mystery_emerges:
   name: "Act II: The Mystery Emerges"
   gate_message: "The mystery hasn't revealed itself yet. Keep exploring the estate..."
-  # Sebastian's birth certificate unlocks Act II
+  # Any of the 4 aspect-track initial clues unlocks Act II
   clues:
-    - DL122  # Birth Certificate - Sebastian Montgomery Crane
+    - AO79   # Ornate Glass Bottle (adventure)
+    - AO80   # Crystal Ball - Antique Scrying Sphere (paranormal)
+    - AO85   # Unfinished Wedding Dress (gossip)
+    - BH106  # Forked Root Specimen (alchemical)
 
 act_iii_investigation:
   name: "Act III: The Investigation"

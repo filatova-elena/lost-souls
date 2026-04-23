@@ -1,9 +1,10 @@
 id: AO79
 type: Artifact (Object)
-title: Ornate Venetian Glass Bottle
+title: Ornate Glass Bottle
 act: act_i_setting
 location:
   room: fireplace
+story_gate_for: act_ii_mystery_emerges
 prop: venetian glass bottle
 appearance: |
   Decorative bottle of venetian glass with gold leaf detailing and ornate stopper.
@@ -14,7 +15,6 @@ hashtags:
 - dirty_dealings
 skills: []
 is_key:
-- magic_elixir
 - dirty_dealings
 content: |
   <div style="text-align: center;font-size: 40px;">✋</div>

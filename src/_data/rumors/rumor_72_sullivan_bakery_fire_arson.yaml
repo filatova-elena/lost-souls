@@ -1,5 +1,6 @@
 id: R72
 act: act_iv_revelation
+collection: RUMORS_IV_B
 type: Rumor
 possession: PSYCHIC
 truth: true
