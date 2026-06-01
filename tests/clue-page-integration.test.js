@@ -60,7 +60,9 @@ describe('clue page interactions', () => {
     expect(document.querySelector('.clue-page').dataset.state).toBe('skill-locked');
   });
 
-  test('player cannot see clue content when act is gated', () => {
+  // Story-gate locking is currently DISABLED in clue-access.js (trying the
+  // game without act gates). Re-enable that block to restore this test.
+  test.skip('player cannot see clue content when act is gated', () => {
     document.body.innerHTML = `
       <div class="clue-page">
         <section class="clue-lock"></section>

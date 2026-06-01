@@ -56,13 +56,9 @@ BODY_TOP_GAP = 0.08 * inch
 ITEM_GAP = 4  # points between items
 BODY_BOTTOM_PAD = 0.1 * inch
 
-# ── Classification (mirrors generate_location_bin_labels.py) ──────
+# ── Classification ────────────────────────────────────────────────
+# Jars are typed; props are anything with a `prop:` field.
 JAR_TYPES = {"Botanical (Dried Herb)", "Botanical (Jar)"}
-PROP_CANDIDATE_TYPES = {
-    "Artifact (Object)",
-    "Artifact (Painting)",
-    "Document (Administrative)",
-}
 
 
 def hex_to_rgb01(hex_color):
@@ -103,7 +99,7 @@ def load_jars_and_props():
         t = data.get("type", "")
         if t in JAR_TYPES:
             by_room[room]["jars"].append(data)
-        elif t in PROP_CANDIDATE_TYPES and data.get("prop"):
+        elif data.get("prop"):
             by_room[room]["props"].append(data)
 
     for room in by_room:
@@ -126,13 +122,13 @@ def short_appearance(text, max_chars=80):
 def item_html(item):
     clue_id = item.get("id", "?")
     title = str(item.get("title", "")).strip()
-    appearance = short_appearance(item.get("appearance", ""), max_chars=90)
+    detail = short_appearance(item.get("prop") or item.get("appearance", ""), max_chars=90)
     html = (
         f'<b><font size="8">{clue_id}</font></b>'
         f' <font size="7" color="#333333">- {title}'
     )
-    if appearance:
-        html += f' <i>({appearance})</i>'
+    if detail:
+        html += f' <i>({detail})</i>'
     html += '</font>'
     return html
 

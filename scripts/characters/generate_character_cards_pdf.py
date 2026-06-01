@@ -17,6 +17,7 @@ Usage:
 import argparse
 import base64
 import html as html_mod
+import math
 import re
 import subprocess
 import sys
@@ -255,9 +256,55 @@ def compose_pages(chars, skills_ref, tracks, clues, short_edge_flip=False):
         back_cards = [back_cards_raw[k] for k in back_order]
 
         pages_html.append(f'<div class="print-page">{"".join(front_cards)}</div>')
-        pages_html.append(f'<div class="print-page">{"".join(back_cards)}</div>')
+        pages_html.append(f'<div class="print-page back">{"".join(back_cards)}</div>')
 
     return "\n".join(pages_html)
+
+
+_UNITS_IN_INCHES = {
+    "in": 1.0, "mm": 1 / 25.4, "cm": 1 / 2.54, "pt": 1 / 72.0, "px": 1 / 96.0,
+}
+
+
+def parse_inches(s):
+    """Parse a CSS length ('0.25in', '-6mm', '0') to inches (float)."""
+    s = (s or "0").strip().lower()
+    if s in ("0", ""):
+        return 0.0
+    m = re.fullmatch(r'([+-]?\d*\.?\d+)\s*(in|mm|cm|pt|px)?', s)
+    if not m:
+        raise ValueError(f"Can't parse CSS length: {s!r}")
+    return float(m.group(1)) * _UNITS_IN_INCHES[m.group(2) or "in"]
+
+
+def resolve_pdf_offsets(left_in, right_in, short_edge):
+    """Map paper-space offsets (from front view of paper) to PDF back-page space.
+
+    Long-edge flip (default): paper's left ↔ PDF-back's right (horizontal swap).
+    Short-edge flip: paper's top ↔ PDF-back's bottom (vertical direction flips).
+    """
+    if short_edge:
+        return -left_in, -right_in
+    return right_in, left_in
+
+
+def back_transform_css(pdf_left_in, pdf_right_in):
+    """CSS rule for .print-page.back: translate by the average, rotate around center.
+
+    With origin at 50% 50% and page width 8.5in, a rotation of θ moves the left
+    edge up by 4.25·sinθ and the right edge down by the same amount. So to land
+    at target offsets (L, R) on the two edges, we translate by (L+R)/2 and
+    rotate by atan((R - L) / 8.5).
+    """
+    t = (pdf_left_in + pdf_right_in) / 2.0
+    theta_deg = math.degrees(math.atan((pdf_right_in - pdf_left_in) / 8.5))
+    if abs(t) < 1e-6 and abs(theta_deg) < 1e-6:
+        return ""
+    return (
+        ".print-page.back { "
+        f"transform: translateY({t:.4f}in) rotate({theta_deg:.4f}deg); "
+        "transform-origin: 50% 50%; }"
+    )
 
 
 CSS = """
@@ -434,14 +481,17 @@ body { margin: 0; padding: 0; }
 """
 
 
-def build_html(chars, skills_ref, tracks, clues, short_edge_flip=False):
+def build_html(chars, skills_ref, tracks, clues, short_edge_flip=False,
+               back_left_in=0.0, back_right_in=0.0):
     pages = compose_pages(chars, skills_ref, tracks, clues, short_edge_flip=short_edge_flip)
+    back_css = back_transform_css(back_left_in, back_right_in)
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>Character Cards</title>
-<style>{CSS}</style>
+<style>{CSS}
+{back_css}</style>
 </head>
 <body>
 {pages}
@@ -476,6 +526,16 @@ def main():
                         help="Single character ID (e.g. 'townsperson'). Produces a sheet of 4 copies.")
     parser.add_argument("--short-edge", action="store_true",
                         help="Arrange backs for 'flip on short edge' duplex (default is long edge).")
+    parser.add_argument("--back-offset", default="0in",
+                        help="Uniform vertical shift for back pages, as seen on the printed paper "
+                             "from the front. Positive = push back DOWN on paper. Overridden per-edge "
+                             "by --back-offset-left / --back-offset-right. Accepts any CSS length "
+                             "(e.g. '0.25in', '-6mm'). Default: 0in.")
+    parser.add_argument("--back-offset-left", default=None,
+                        help="Vertical shift at the LEFT edge of the paper (front view). "
+                             "Differs from --back-offset-right → rotational correction.")
+    parser.add_argument("--back-offset-right", default=None,
+                        help="Vertical shift at the RIGHT edge of the paper (front view).")
     parser.add_argument("--keep-html", action="store_true",
                         help="Also keep the generated HTML alongside the PDF.")
     args = parser.parse_args()
@@ -502,7 +562,14 @@ def main():
               f" para / {sum(1 for c in chars if (c.get('objectives',{}) or {}).get('aspect')=='gossip')}"
               f" goss / {sum(1 for c in chars if (c.get('objectives',{}) or {}).get('aspect')=='adventure')} adv)")
 
-    html = build_html(chars, skills_ref, tracks, clues, short_edge_flip=args.short_edge)
+    default_off = args.back_offset
+    left_in = parse_inches(args.back_offset_left if args.back_offset_left is not None else default_off)
+    right_in = parse_inches(args.back_offset_right if args.back_offset_right is not None else default_off)
+    pdf_left, pdf_right = resolve_pdf_offsets(left_in, right_in, args.short_edge)
+
+    html = build_html(chars, skills_ref, tracks, clues,
+                      short_edge_flip=args.short_edge,
+                      back_left_in=pdf_left, back_right_in=pdf_right)
 
     out_pdf = ROOT / args.output
     out_pdf.parent.mkdir(parents=True, exist_ok=True)

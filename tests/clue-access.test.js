@@ -44,7 +44,9 @@ describe('clue access state', () => {
   }
 
   describe('story gate progression', () => {
-    test('player cannot view clues from a locked act', () => {
+    // Story-gate locking is currently DISABLED in clue-access.js (trying the
+    // game without act gates). Re-enable that block to restore this test.
+    test.skip('player cannot view clues from a locked act', () => {
       const clueData = {
         id: 'CLUE123',
         act: 'act_ii_mystery_emerges',
@@ -182,7 +184,9 @@ describe('clue access state', () => {
       expect(state.name).toBe('unlocked');
     });
 
-    test('player sees gate message even if they have the required skills', () => {
+    // Story-gate locking is currently DISABLED in clue-access.js. Re-enable
+    // that block to restore this test.
+    test.skip('player sees gate message even if they have the required skills', () => {
       const clueData = {
         id: 'CLUE123',
         act: 'act_ii_mystery_emerges',

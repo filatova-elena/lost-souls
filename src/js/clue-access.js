@@ -83,13 +83,16 @@ function resolveClueState(clueData, options) {
     throw new Error('hasSkillAccess function is required');
   }
 
-  // Check if this clue's act is unlocked
-  // Prologue and Act I are always unlocked
-  if (clueData.act && clueData.act !== 'act_prologue' && clueData.act !== 'act_i_setting') {
-    if (!unlockedActs.includes(clueData.act)) {
-      return { name: 'gated' };
-    }
-  }
+  // Story-gate locking DISABLED — trying the game without act gates.
+  // Clues are no longer locked behind story gates; they resolve straight to
+  // the skill check below. Re-enable by uncommenting this block.
+  // // Check if this clue's act is unlocked
+  // // Prologue and Act I are always unlocked
+  // if (clueData.act && clueData.act !== 'act_prologue' && clueData.act !== 'act_i_setting') {
+  //   if (!unlockedActs.includes(clueData.act)) {
+  //     return { name: 'gated' };
+  //   }
+  // }
 
   // Check skill requirements
   const clueSkills = clueData.skills || [];
