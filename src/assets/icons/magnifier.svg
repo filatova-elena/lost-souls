@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Examine">
+  <defs>
+    <linearGradient id="mgWood" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7d5433"/>
+      <stop offset="0.4" stop-color="#4a2d19"/>
+      <stop offset="1" stop-color="#1f1108"/>
+    </linearGradient>
+    <linearGradient id="mgGold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8a5f33"/>
+      <stop offset="0.18" stop-color="#d4a574"/>
+      <stop offset="0.38" stop-color="#f7e3bb"/>
+      <stop offset="0.6" stop-color="#e8be8a"/>
+      <stop offset="0.82" stop-color="#9e7a52"/>
+      <stop offset="1" stop-color="#5c3d20"/>
+    </linearGradient>
+    <radialGradient id="mgGlass" cx="0.34" cy="0.28" r="0.9">
+      <stop offset="0" stop-color="#eef6ff" stop-opacity="0.34"/>
+      <stop offset="0.5" stop-color="#a8c6dd" stop-opacity="0.17"/>
+      <stop offset="1" stop-color="#243050" stop-opacity="0.34"/>
+    </radialGradient>
+    <clipPath id="mgLens">
+      <circle cx="25" cy="25" r="13.4"/>
+    </clipPath>
+  </defs>
+
+  <g transform="rotate(45 25 25)">
+    <rect x="38.4" y="21.4" width="21.6" height="7.2" rx="3.6" fill="url(#mgGold)"/>
+    <rect x="38.4" y="21.4" width="21.6" height="7.2" rx="3.6" fill="none" stroke="#3d2712" stroke-opacity="0.7" stroke-width="0.7"/>
+    <rect x="43" y="19.9" width="4.6" height="10.2" rx="1.7" fill="url(#mgWood)"/>
+    <rect x="50.8" y="20.9" width="2" height="8.2" rx="1" fill="#8a5f33" fill-opacity="0.55"/>
+    <rect x="53.6" y="20.9" width="2" height="8.2" rx="1" fill="#8a5f33" fill-opacity="0.55"/>
+    <circle cx="61" cy="25" r="5" fill="url(#mgGold)"/>
+    <circle cx="61" cy="25" r="5" fill="none" stroke="#3d2712" stroke-opacity="0.7" stroke-width="0.7"/>
+    <circle cx="59.8" cy="23.4" r="1.5" fill="#fbeecd" fill-opacity="0.55"/>
+  </g>
+
+  <circle cx="25" cy="25" r="13.4" fill="#202a45" fill-opacity="0.62"/>
+  <circle cx="25" cy="25" r="13.4" fill="url(#mgGlass)"/>
+  <g clip-path="url(#mgLens)">
+    <path d="M2 34 L26 4 L34 4 L10 40 Z" fill="#ffffff" fill-opacity="0.07"/>
+    <path d="M14 40 L36 12 L40 12 L18 42 Z" fill="#ffffff" fill-opacity="0.045"/>
+  </g>
+  <path d="M13.7 20.9 A12 12 0 0 1 20.9 13.7" fill="none" stroke="#ffffff" stroke-opacity="0.6" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M23.6 12.5 A12.5 12.5 0 0 1 27 12.7" fill="none" stroke="#ffffff" stroke-opacity="0.45" stroke-width="1.8" stroke-linecap="round"/>
+
+  <circle cx="25" cy="25" r="15.9" fill="none" stroke="url(#mgWood)" stroke-width="5.4"/>
+  <circle cx="25" cy="25" r="18.6" fill="none" stroke="#d4a574" stroke-opacity="0.5" stroke-width="0.9"/>
+  <circle cx="25" cy="25" r="13.2" fill="none" stroke="#d4a574" stroke-opacity="0.45" stroke-width="0.9"/>
+  <path d="M13.2 15.6 A15.9 15.9 0 0 1 25 9.1" fill="none" stroke="#c79a6a" stroke-opacity="0.45" stroke-width="1.6" stroke-linecap="round"/>
+</svg>
