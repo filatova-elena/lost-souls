@@ -105,35 +105,12 @@ function closeScanner(callback) {
   });
 }
 
-function createScanButton() {
-  var btn = document.createElement('button');
-  btn.id = 'qr-scan-btn';
-  btn.setAttribute('aria-label', 'Scan QR code');
-  var grid = [
-    '###.#.###',
-    '#.#...#.#',
-    '###.#.###',
-    '....#....',
-    '#.#.#.#..',
-    '....#..#.',
-    '###...#..',
-    '#.#.#..#.',
-    '###..#.##',
-  ];
-  var c = '#7B2D8E';
-  var rects = '';
-  grid.forEach(function(row, y) {
-    for (var x = 0; x < row.length; x++) {
-      if (row[x] === '#') rects += '<rect x="'+x+'" y="'+y+'" width="1" height="1" fill="'+c+'"/>';
-    }
-  });
-  btn.innerHTML = '<svg viewBox="0 0 9 9" width="30" height="30" xmlns="http://www.w3.org/2000/svg" style="transform:rotate(45deg)">'+rects+'</svg>';
-  btn.addEventListener('click', openScanner);
-  var slot = document.getElementById('qr-scan-slot');
-  if (slot) {
-    slot.appendChild(btn);
+function initScanButton() {
+  var btn = document.getElementById('qr-scan-btn');
+  if (btn) {
+    btn.addEventListener('click', openScanner);
   }
 }
 
-document.addEventListener('DOMContentLoaded', createScanButton);
+document.addEventListener('DOMContentLoaded', initScanButton);
 })();

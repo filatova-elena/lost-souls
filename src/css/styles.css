@@ -6,6 +6,7 @@
     --text-light: #e0e0e0;
     --gold-bright: #e8be8a;
     --gold-dim: #9e7a52;
+    --progress-bar-height: 62px;
 }
 
 body {
