@@ -108,7 +108,11 @@ function closeScanner(callback) {
 function initScanButton() {
   var btn = document.getElementById('qr-scan-btn');
   if (btn) {
-    btn.addEventListener('click', openScanner);
+    btn.addEventListener('click', function() {
+      // A real tap — use it to satisfy the mobile autoplay policy
+      if (window.unlockSound) window.unlockSound();
+      openScanner();
+    });
   }
 }
 

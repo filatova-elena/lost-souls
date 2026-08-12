@@ -144,12 +144,20 @@ function initCluePage() {
   // Unlocked: mark as scanned, handle effects
   if (state.name === AccessState.UNLOCKED) {
     const scanned = window.getScannedClues();
-    if (!scanned.all?.includes(clueData.id)) {
+    const isNewDiscovery = !scanned.all?.includes(clueData.id);
+    const isKeyDiscovery = isNewDiscovery && window.isTrackClue(clueData.id);
+
+    if (isNewDiscovery) {
       processClueDiscovery(clueData);
-      if (window.isTrackClue(clueData.id) && window.spawnParticles) {
+      if (isKeyDiscovery && window.spawnParticles) {
         window.renderProgressTracker(true);
         window.spawnParticles();
       }
+    }
+
+    // Heavier cue for a clue on the player's own track, alongside the pip pop
+    if (window.playSound) {
+      window.playSound(isKeyDiscovery ? 'key_clue_found' : 'clue_found');
     }
   }
 
