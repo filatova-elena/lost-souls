@@ -11,16 +11,22 @@
   border-top: 2px solid var(--accent-gold);
   display: flex;
   align-items: center;
-  padding: 0 16px;
-  gap: 12px;
+  min-height: var(--progress-bar-height, 62px);
+  box-sizing: border-box;
+  padding: 0 18px;
+  gap: 14px;
 }
 
+/* Shrinks to an ellipsis on narrow phones so the clue track never gets clipped */
 .progress-label {
-  font-size: 0.65em;
+  font-size: 0.78em;
   letter-spacing: 1px;
   color: var(--accent-gold);
   white-space: nowrap;
   text-transform: uppercase;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .progress-track {
@@ -32,14 +38,15 @@
 
 .progress-pips {
   display: flex;
-  gap: 4px;
+  gap: 7px;
   align-items: center;
+  flex-shrink: 0;
 }
 
 /* ── Diamond Pip ── */
 .pip {
-  width: 18px;
-  height: 18px;
+  width: 28px;
+  height: 28px;
   flex-shrink: 0;
   position: relative;
   transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -52,22 +59,26 @@
 }
 
 .pip.empty .diamond-bg {
-  fill: transparent;
-  stroke: rgba(212, 165, 116, 0.4);
+  fill: rgba(212, 165, 116, 0.07);
+  stroke: rgba(212, 165, 116, 0.6);
   stroke-width: 1.4;
 }
 
 .pip.empty .keyhole-circle {
-  fill: rgba(212, 165, 116, 0.18);
+  fill: rgba(212, 165, 116, 0.35);
 }
 
 .pip.empty .keyhole-rect {
-  fill: rgba(212, 165, 116, 0.18);
+  fill: rgba(212, 165, 116, 0.35);
+}
+
+.pip.filled {
+  filter: drop-shadow(0 0 5px rgba(232, 190, 138, 0.55));
 }
 
 .pip.filled .diamond-bg {
   fill: var(--accent-gold);
-  stroke: var(--accent-gold);
+  stroke: var(--gold-bright);
   stroke-width: 0.8;
 }
 
