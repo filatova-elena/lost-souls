@@ -524,6 +524,9 @@ def main():
                         help="Output PDF path (default: to_print/character_cards.pdf, or to_print/<id>_cards.pdf with --character)")
     parser.add_argument("--character", default=None,
                         help="Single character ID (e.g. 'townsperson'). Produces a sheet of 4 copies.")
+    parser.add_argument("--characters", default=None,
+                        help="Comma-separated character IDs (e.g. 'baker,dressmaker'). Produces a "
+                             "reprint sheet with one card each, in the order given.")
     parser.add_argument("--short-edge", action="store_true",
                         help="Arrange backs for 'flip on short edge' duplex (default is long edge).")
     parser.add_argument("--back-offset", default="0in",
@@ -552,6 +555,18 @@ def main():
         if args.output is None:
             args.output = f"to_print/{args.character}_cards.pdf"
         print(f"Single-character sheet: {one.get('title','?')} ×4")
+    elif args.characters:
+        ids = [c.strip() for c in args.characters.split(",") if c.strip()]
+        chars = []
+        for cid in ids:
+            path = ROOT / "src/_data/characters" / f"{cid}.yaml"
+            if not path.exists():
+                print(f"No such character: {path}", file=sys.stderr)
+                return 1
+            chars.append(load_yaml(path))
+        if args.output is None:
+            args.output = "to_print/characters/reprint_sheet.pdf"
+        print(f"Reprint sheet: {', '.join(c.get('title','?') for c in chars)}")
     else:
         chars = load_player_characters()
         if args.output is None:
