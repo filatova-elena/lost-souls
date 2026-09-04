@@ -82,27 +82,27 @@ function onScanSuccess(decodedText) {
   });
 }
 
-function stopAndCleanup() {
-  if (scanner) {
-    var s = scanner;
-    scanner = null;
-    return s.stop().then(function() { s.clear(); }).catch(function() {});
-  }
-  return Promise.resolve();
-}
-
-function closeScanner(callback) {
+async function closeScanner(callback) {
   if (closing) return;
   closing = true;
 
-  stopAndCleanup().finally(function() {
-    if (overlay) {
-      overlay.remove();
-      overlay = null;
-    }
-    closing = false;
-    if (typeof callback === 'function') callback();
-  });
+  var s = scanner;
+  scanner = null;
+  if (s) {
+    // The library's stop() throws synchronously (not rejects) when the camera
+    // never started — e.g. the user denied the permission prompt.
+    try {
+      await s.stop();
+      s.clear();
+    } catch (e) {}
+  }
+
+  if (overlay) {
+    overlay.remove();
+    overlay = null;
+  }
+  closing = false;
+  if (typeof callback === 'function') callback();
 }
 
 function initScanButton() {
