@@ -90,9 +90,9 @@ act_iii_investigation:
           I have an important announcement: The ghost of Alice Whitmore, aka the Lonely Ghost, has been spotted in the garden. She seems to have an important message for you.
     - directions: |
         Everyone goes into the garden.
-        Alice appears in a cloud of smoke (fog machine)
-        - Her pale skin glowing in the blue light
-        - Her white dress glowing (black light)
+        Alice walks in from the kitchen, through the garden, to the Aviary
+        - Blue light on her pale skin and her pale ice-blue dress
+        - No fog machine, no black light
     - dialogue:
         speaker: Alice
         text: |

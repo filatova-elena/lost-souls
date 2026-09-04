@@ -56,7 +56,6 @@
 ## **Additional Items**
 
 - [ ] Batteries (60) \- AAA Batteries for flashlights (backup supply)  
-- [ ] Fog machine \- Fog machine for Alice's vision  
 - [ ] Audio equipment \- Sound system for ambient sounds or music (if needed)  
 - [ ] Tack (50) \- Tacks for mounting/attaching items  
 - [ ] Tape (1) \- Tape for mounting/attaching items
