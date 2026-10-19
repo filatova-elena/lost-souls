@@ -63,7 +63,7 @@ const browserCheck = new Check({
     if (canRunGame) {
       this.pass();
     } else {
-      this.fail('Your browser can\'t run the game. Update it, or open this page in Safari (iPhone) or Chrome (Android).');
+      this.fail('This browser can\'t run the game. Try Safari (iPhone) or Chrome (Android).');
     }
   }
 });
