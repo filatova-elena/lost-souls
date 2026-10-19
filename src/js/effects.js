@@ -436,7 +436,13 @@ function renderTypewriterAnimation(name, typewriterText, statusText, onClosed) {
     setTimeout(() => {
       if (overlay && overlay.parentElement) {
         overlay.remove();
-        if (onClosed) onClosed();
+        if (onClosed) {
+          try {
+            onClosed();
+          } catch (error) {
+            console.error('Something that runs after the animation failed:', error);
+          }
+        }
       }
     }, 200);
   }

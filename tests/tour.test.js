@@ -113,11 +113,48 @@ test('leaves out a step whose target is not on the page', () => {
   expect(next().textContent).toBe('Got it');
 });
 
-test('does nothing when none of its targets are on the page', () => {
+test('does nothing, quietly, when none of its targets are on the page', () => {
+  const logged = jest.spyOn(console, 'error').mockImplementation(() => {});
   load('<p>nothing here</p>');
   window.startTour();
   expect(tour()).toBeNull();
   expect(stored.tour_seen).toBeUndefined();
+  expect(logged).not.toHaveBeenCalled();
+});
+
+describe('when something goes wrong, the game is not affected', () => {
+  beforeEach(() => jest.spyOn(console, 'error').mockImplementation(() => {}));
+
+  test('a step that cannot be drawn at the start ends the tour and leaves nothing on the screen', () => {
+    load();
+    jest.spyOn(Element.prototype, 'getBoundingClientRect').mockImplementation(() => { throw new Error('no layout'); });
+    expect(() => window.startTour()).not.toThrow();
+    expect(tour()).toBeNull();
+    expect(stored.tour_seen).toBeUndefined();
+  });
+
+  test('a step that cannot be drawn on Next ends the tour and removes it', () => {
+    load();
+    window.startTour();
+    jest.spyOn(Element.prototype, 'getBoundingClientRect').mockImplementation(() => { throw new Error('no layout'); });
+    next().click();
+    expect(tour()).toBeNull();
+  });
+
+  test('a step that cannot be drawn after a resize ends the tour and removes it', () => {
+    load();
+    window.startTour();
+    jest.spyOn(Element.prototype, 'getBoundingClientRect').mockImplementation(() => { throw new Error('no layout'); });
+    window.dispatchEvent(new Event('resize'));
+    expect(tour()).toBeNull();
+  });
+
+  test('a failure before the tour even exists does not reach the caller', () => {
+    load();
+    window.getFromLocalStorage = () => { throw new Error('storage broke'); };
+    expect(() => window.startTour()).not.toThrow();
+    expect(tour()).toBeNull();
+  });
 });
 
 test('the real status bar still has everything the tour points at', () => {
@@ -146,5 +183,17 @@ describe('the Begin investigation animation', () => {
     expect(document.getElementById('typewriterOverlay')).toBeNull();
     expect(onClosed).toHaveBeenCalledTimes(1);
     expect(overlayWhenCalled).toBeNull();
+  });
+
+  test('a callback that fails does not stop the animation from closing', () => {
+    jest.spyOn(console, 'error').mockImplementation(() => {});
+    document.body.innerHTML = '';
+    jest.resetModules();
+    require('../src/js/effects');
+    window.renderTypewriterAnimation('Ada', 'You are now investigating as', 'Ready', () => { throw new Error('tour broke'); });
+
+    expect(() => jest.advanceTimersByTime(15000)).not.toThrow();
+    expect(document.getElementById('typewriterOverlay')).toBeNull();
+    expect(console.error).toHaveBeenCalled();
   });
 });

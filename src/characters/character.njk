@@ -106,7 +106,6 @@ title: "Character"
     if (characterData.skills) {
       storeCharacterProfile(characterData.id, characterData.skills);
     }
-    window.renderProgressTracker();
     const storageKeys = window.STORAGE_KEYS || { UNLOCKED_ACTS: 'unlocked_acts' };
     window.saveToLocalStorage(storageKeys.UNLOCKED_ACTS, ['act_i_setting']);
 

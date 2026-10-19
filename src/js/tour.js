@@ -3,6 +3,9 @@
  * Points at the scan button, the status bar and the history button, one after
  * another. It starts when the "Begin investigation" animation closes, and only
  * once per device. Skip, Esc and the last button all end it the same way.
+ *
+ * The tour is a nicety, so nothing in it may get in the game's way: whatever
+ * goes wrong, it ends quietly and takes its overlay with it.
  */
 (function() {
 'use strict';
@@ -42,9 +45,6 @@ function startTour() {
   `;
   document.body.appendChild(tour);
 
-  const count = tour.querySelector('.tour-count');
-  const text = tour.querySelector('.tour-text');
-  const next = tour.querySelector('.tour-next');
   let index = 0;
 
   // The targets are fixed to the screen, so the card always sits just above its target
@@ -69,37 +69,64 @@ function startTour() {
 
     const isLast = index === steps.length - 1;
     tour.dataset.last = String(isLast);
-    count.textContent = `${index + 1} / ${steps.length}`;
-    text.textContent = step.text;
-    next.textContent = isLast ? 'Got it' : 'Next';
+    tour.querySelector('.tour-count').textContent = `${index + 1} / ${steps.length}`;
+    tour.querySelector('.tour-text').textContent = step.text;
+    tour.querySelector('.tour-next').textContent = isLast ? 'Got it' : 'Next';
   }
 
-  function finish() {
-    window.removeEventListener('resize', show);
+  // Removes the tour and everything it listens to
+  function end() {
+    window.removeEventListener('resize', showOrEnd);
     document.removeEventListener('keydown', onKeydown);
     tour.remove();
+  }
+
+  // The tour was seen: it will not come back
+  function finish() {
+    end();
     window.saveToLocalStorage(SEEN_KEY, true);
+  }
+
+  // A step that cannot be drawn ends the tour; it does not stay stuck on the screen
+  function showOrEnd() {
+    try {
+      show();
+    } catch (error) {
+      console.error('The tour stopped:', error);
+      end();
+    }
   }
 
   function onKeydown(event) {
     if (event.key === 'Escape') finish();
   }
 
-  next.addEventListener('click', () => {
-    if (index === steps.length - 1) {
-      finish();
-    } else {
-      index += 1;
-      show();
-    }
-  });
-  tour.querySelector('.tour-skip').addEventListener('click', finish);
-  window.addEventListener('resize', show);
-  document.addEventListener('keydown', onKeydown);
-
-  show();
+  try {
+    tour.querySelector('.tour-next').addEventListener('click', () => {
+      if (index === steps.length - 1) {
+        finish();
+      } else {
+        index += 1;
+        showOrEnd();
+      }
+    });
+    tour.querySelector('.tour-skip').addEventListener('click', finish);
+    window.addEventListener('resize', showOrEnd);
+    document.addEventListener('keydown', onKeydown);
+    show();
+  } catch (error) {
+    console.error('The tour could not start:', error);
+    end();
+  }
 }
 
-window.startTour = startTour;
+// Called from the game, so a failure here must never reach it
+window.startTour = function() {
+  try {
+    startTour();
+  } catch (error) {
+    console.error('The tour could not start:', error);
+  }
+};
 
 })();
