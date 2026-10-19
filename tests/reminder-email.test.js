@@ -58,10 +58,10 @@ function load() {
 
 const status = () => document.querySelector('.reminder-status').textContent;
 const flush = () => new Promise(resolve => setTimeout(resolve, 0));
+// Waits until the copy has finished one way or the other: the page then says so in its status line
 const click = async which => {
   document.querySelector(`[data-copy="${which}"]`).click();
-  await flush();
-  await flush();
+  for (let i = 0; i < 500 && status() === ''; i++) await flush();
 };
 
 beforeEach(() => {
