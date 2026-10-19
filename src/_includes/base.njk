@@ -7,8 +7,10 @@
   <title>{% if title %}{{ title }}{% elif refs.instructions.title %}{{ refs.instructions.title }} - {{ refs.instructions.subtitle }}{% else %}The Lost Souls of Kennebec Avenue Investigation{% endif %}</title>
   {% if description %}<meta name="description" content="{{ description }}">{% endif %}
   <link rel="stylesheet" href="{{ site.baseUrl }}css/styles.css">
+  {% block gameStyles %}
   <link rel="stylesheet" href="{{ site.baseUrl }}css/qr-scanner.css">
   <link rel="stylesheet" href="{{ site.baseUrl }}clues/progress.css">
+  {% endblock %}
 </head>
 <body>
   {{ content | safe }}
