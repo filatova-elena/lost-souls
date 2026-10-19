@@ -16,12 +16,14 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/clues/*.css");
   eleventyConfig.addPassthroughCopy("src/check/*.css");
   eleventyConfig.addPassthroughCopy("src/history/*.css");
+  eleventyConfig.addPassthroughCopy("src/reminder-email/*.css");
   eleventyConfig.addPassthroughCopy("src/refs/*.css");
   eleventyConfig.addPassthroughCopy("src/book/*.css");
   
   // Copy shared modules to output js directory
   eleventyConfig.addPassthroughCopy({
-    "src/lib/skills.js": "js/skills.js"
+    "src/lib/skills.js": "js/skills.js",
+    "marketing/reminder_email/reminder_email.html": "reminder-email/email.html"
   });
 
   // Register all filters from filters module
