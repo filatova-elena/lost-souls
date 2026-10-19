@@ -12,17 +12,16 @@
 </head>
 <body>
   {{ content | safe }}
-  {% include "clues/progress-tracker.njk" %}
+  {% if clueTools != false %}{% include "clues/progress-tracker.njk" %}{% endif %}
   <script src="{{ site.baseUrl }}js/skills.js" defer></script>
   <script src="{{ site.baseUrl }}js/clue-access.js" defer></script>
   <script src="{{ site.baseUrl }}js/effects.js" defer></script>
   <script src="{{ site.baseUrl }}js/main.js" defer></script>
-  <script src="{{ site.baseUrl }}js/technical-check.js" defer></script>
   <script src="{{ site.baseUrl }}js/vendor/html5-qrcode.min.js" defer></script>
   <script src="{{ site.baseUrl }}js/qr-scanner.js" defer></script>
   {% if page.url == '/reset/' %}
   <script src="{{ site.baseUrl }}js/reset.js" defer></script>
-  {% else %}
+  {% elif clueTools != false %}
   <script src="{{ site.baseUrl }}js/clue-page.js" defer></script>
   {% endif %}
 </body>

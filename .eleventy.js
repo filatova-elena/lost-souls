@@ -14,6 +14,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/fonts");
   eleventyConfig.addPassthroughCopy("src/quests/*.css");
   eleventyConfig.addPassthroughCopy("src/clues/*.css");
+  eleventyConfig.addPassthroughCopy("src/check/*.css");
   eleventyConfig.addPassthroughCopy("src/refs/*.css");
   eleventyConfig.addPassthroughCopy("src/book/*.css");
   

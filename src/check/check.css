@@ -1,0 +1,136 @@
+.check-candles {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 20px 0;
+}
+
+.check-candle {
+    position: relative;
+    width: 10px;
+    height: 34px;
+    background: #cfc3a8;
+    border-radius: 2px;
+    opacity: 0.25;
+}
+
+.check-candle[data-state="pass"] {
+    opacity: 1;
+}
+
+.check-candle[data-state="pass"]::before {
+    content: '';
+    position: absolute;
+    top: -13px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 9px;
+    height: 15px;
+    background: radial-gradient(circle at 50% 70%, #f0d49a, var(--accent-gold) 65%, transparent);
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+.check-logo {
+    width: 140px;
+}
+
+.check-eyebrow {
+    font-size: 0.7em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold-dim);
+}
+
+.check-results {
+    list-style: none;
+    padding-left: 0;
+}
+
+.check-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    background-color: rgba(212, 165, 116, 0.05);
+    border: 1px solid rgba(212, 165, 116, 0.2);
+    border-radius: 4px;
+}
+
+.check-row[data-state="pass"] {
+    border-color: var(--gold-dim);
+}
+
+.check-row[data-state="fail"] {
+    border-color: #f44336;
+}
+
+.check-row-icon {
+    width: 1.5em;
+    text-align: center;
+}
+
+.check-row-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.check-row-label {
+    font-family: Georgia, serif;
+}
+
+.check-row-sub,
+.check-row-error {
+    font-size: 0.75em;
+}
+
+.check-row-sub {
+    color: var(--gold-dim);
+}
+
+.check-row-error {
+    display: none;
+    color: #f44336;
+}
+
+.check-row-status::before {
+    content: '…';
+}
+
+.check-row[data-state="pass"] .check-row-status::before {
+    content: '✓';
+}
+
+.check-row[data-state="fail"] .check-row-status::before {
+    content: '✗';
+}
+
+.check-hint {
+    text-align: center;
+}
+
+.phone-check > .button {
+    display: block;
+    margin: 10px auto;
+}
+
+.check-reveal {
+    text-align: center;
+}
+
+/* Visibility follows data-state attributes that the script sets. */
+.check-row[data-state="fail"] .check-row-sub,
+.check-reveal,
+.troubleshooting-section,
+.troubleshooting-group:not([data-state="fail"]),
+.check-fallback,
+.phone-check > .button[data-state="pass"] {
+    display: none;
+}
+
+.check-row[data-state="fail"] .check-row-error,
+.phone-check[data-state="pass"] .check-reveal,
+.phone-check[data-state="fail"] .troubleshooting-section,
+.phone-check[data-state="unsupported"] .check-fallback {
+    display: block;
+}
