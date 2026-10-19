@@ -1,8 +1,22 @@
+/* The framed card fills the screen. dvh keeps phone browser toolbars from causing a scroll. */
+.phone-check {
+    min-height: calc(100vh - 20px);
+    min-height: calc(100dvh - 20px);
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .phone-check {
+        min-height: calc(100vh - 40px);
+        min-height: calc(100dvh - 40px);
+    }
+}
+
 .check-candles {
     display: flex;
     justify-content: center;
     gap: 24px;
-    margin: 20px 0;
+    margin-top: 14px;
 }
 
 .check-candle {
@@ -36,7 +50,7 @@
 }
 
 .check-row {
-    display: flex;
+    display: none;
     align-items: center;
     gap: 12px;
     padding: 12px;
@@ -76,7 +90,7 @@
 }
 
 .check-row-label {
-    font-family: Georgia, serif;
+    font-family: var(--font-text);
 }
 
 .check-row-sub,
@@ -105,11 +119,7 @@
     content: '✗';
 }
 
-.check-hint {
-    text-align: center;
-}
-
-.phone-check > .button {
+.phone-check > .check-begin {
     display: block;
     margin: 10px auto;
 }
@@ -118,19 +128,48 @@
     text-align: center;
 }
 
-/* Visibility follows data-state attributes that the script sets. */
-.check-row[data-state="fail"] .check-row-sub,
+@keyframes check-appear {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+}
+
+/* What shows depends on the data-state attributes that the script sets. */
 .check-reveal,
 .troubleshooting-section,
 .troubleshooting-group:not([data-state="fail"]),
 .check-fallback,
-.phone-check > .button[data-state="pass"] {
+.check-row[data-state="fail"] .check-row-sub {
     display: none;
 }
 
-.check-row[data-state="fail"] .check-row-error,
-.phone-check[data-state="pass"] .check-reveal,
-.phone-check[data-state="fail"] .troubleshooting-section,
+.check-row[data-state="running"],
+.check-row[data-state="pass"],
+.check-row[data-state="fail"] {
+    display: flex;
+    animation: check-appear 0.4s ease;
+}
+
+.check-row[data-state="fail"] .check-row-error {
+    display: block;
+}
+
+.phone-check[data-state] .check-begin,
+.phone-check[data-state="pass"] .check-results,
+.phone-check[data-state="pass"] .check-tagline {
+    display: none;
+}
+
+.phone-check[data-state="pass"] .check-reveal {
+    display: block;
+    animation: check-appear 0.4s ease;
+}
+
+.phone-check[data-state="fail"] .troubleshooting-section {
+    display: block;
+}
+
 .phone-check[data-state="unsupported"] .check-fallback {
     display: block;
 }
