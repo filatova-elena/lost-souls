@@ -77,23 +77,24 @@ function onScanSuccess(decodedText) {
   });
 }
 
-function stopAndCleanup() {
-  if (scanner) {
-    const s = scanner;
-    scanner = null;
-    return s.stop().then(() => s.clear()).catch(() => {});
-  }
-  return Promise.resolve();
-}
-
-function closeScanner(callback) {
+async function closeScanner(callback) {
   if (closing) return;
   closing = true;
-  stopAndCleanup().finally(() => {
-    if (overlay) overlay = null;
-    closing = false;
-    if (typeof callback === 'function') callback();
-  });
+
+  const s = scanner;
+  scanner = null;
+  if (s) {
+    // The library's stop() throws synchronously (not rejects) when the camera
+    // never started — e.g. the user denied the permission prompt.
+    try {
+      await s.stop();
+      s.clear();
+    } catch (e) {}
+  }
+
+  if (overlay) overlay = null;
+  closing = false;
+  if (typeof callback === 'function') callback();
 }
 
 // ============================================================================
@@ -230,6 +231,21 @@ async function runTests() {
   savedCallback('https://third.com');
   await new Promise(r => setTimeout(r, 10));
   assert(navigatedTo === 'https://first.com', 'only first scan navigates');
+
+  // The real library throws a bare string here, not a rejected promise.
+  console.log('\nTest 15: Cleanup after stop() throws synchronously');
+  resetState();
+  openScanner();
+  await Promise.resolve();
+  scanner.stop = () => { throw 'Cannot stop, scanner is not running or paused.'; };
+  closeScanner();
+  await new Promise(r => setTimeout(r, 10));
+  assert(scanner === null, 'scanner null after throwing stop');
+  assert(overlay === null, 'overlay removed after throwing stop');
+  assert(closing === false, 'closing false after throwing stop');
+
+  console.log('\nTest 16: Reopen after sync throw');
+  assert(openScanner() === true, 'reopens after throwing stop');
 
   // Summary
   console.log('\n=== Results ===');
