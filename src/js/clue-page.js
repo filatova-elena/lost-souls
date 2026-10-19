@@ -48,11 +48,14 @@ function buildLockSectionContent(message, suggestedCharacters) {
 // Storage
 // ============================================================================
 
-function recordClueScan(clueId) {
+// Saves the scan order (all) and what the history page needs to show the clue (details)
+function recordClueScan(clue) {
   const scanned = window.getScannedClues();
-  if (!scanned.all.includes(clueId)) {
-    scanned.all.push(clueId);
+  if (!scanned.all.includes(clue.id)) {
+    scanned.all.push(clue.id);
   }
+  scanned.details = scanned.details || {};
+  scanned.details[clue.id] = { title: clue.title, type: clue.type };
   window.saveToLocalStorage(STORAGE_KEYS.SCANNED, scanned);
   return scanned;
 }
@@ -93,7 +96,7 @@ function unlockStoryGate(actKey) {
 // ============================================================================
 
 function processClueDiscovery(clueData) {
-  recordClueScan(clueData.id);
+  recordClueScan(clueData);
   unlockStoryGate(clueData.story_gate_for);
 }
 

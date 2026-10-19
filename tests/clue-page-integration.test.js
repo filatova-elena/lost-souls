@@ -60,6 +60,21 @@ describe('clue page interactions', () => {
     expect(document.querySelector('.clue-page').dataset.state).toBe('skill-locked');
   });
 
+  test('opening a clue saves its title and type for the history page', () => {
+    document.body.innerHTML = '<div class="clue-page"><section class="clue-content"></section></div>';
+
+    loadCluePage({ id: 'CLUE1', act: 'act_i_setting', skills: [], title: 'The Typewriter', type: 'Artifact (Object)' });
+    expect(storage.scanned.all).toEqual(['CLUE1']);
+    expect(storage.scanned.details.CLUE1).toEqual({ title: 'The Typewriter', type: 'Artifact (Object)' });
+  });
+
+  test('a clue the player cannot open yet is not saved to the history', () => {
+    document.body.innerHTML = '<div class="clue-page"><section class="clue-lock"></section></div>';
+
+    loadCluePage({ id: 'CLUE1', act: 'act_i_setting', skills: ['art_2'], type: 'Document', title: 'Locked' });
+    expect(storage.scanned).toBeUndefined();
+  });
+
   // Story-gate locking is currently DISABLED in clue-access.js (trying the
   // game without act gates). Re-enable that block to restore this test.
   test.skip('player cannot see clue content when act is gated', () => {

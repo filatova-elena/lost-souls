@@ -110,3 +110,34 @@
     opacity: 1;
   }
 }
+
+/* Opens the list of clues already found */
+.progress-history {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 36px;
+  height: 36px;
+  margin-left: auto;
+  color: var(--accent-gold);
+  border: 1px solid rgba(212, 165, 116, 0.5);
+  border-radius: 50%;
+  transition: box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.progress-history:hover {
+  color: var(--gold-bright);
+  box-shadow: 0 0 18px rgba(212, 165, 116, 0.4);
+  text-decoration: none;
+}
+
+.progress-history svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
