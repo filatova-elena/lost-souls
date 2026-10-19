@@ -1,0 +1,23 @@
+---
+layout: standalone
+title: Reminder email
+permalink: /reminder-email/
+---
+<link rel="stylesheet" href="{{ site.baseUrl }}reminder-email/reminder-email.css">
+
+<main class="reminder-email" data-email-url="{{ site.baseUrl }}reminder-email/email.html">
+  <header>
+    <h1>Reminder email</h1>
+    <p class="italic">Click a button, then paste into Eventbrite's message box.</p>
+  </header>
+
+  <div class="reminder-actions">
+    <button type="button" class="button" data-copy="email">Copy email</button>
+    <button type="button" class="button-ghost" data-copy="code">Copy HTML code</button>
+  </div>
+  <p class="reminder-status" role="status"></p>
+
+  <iframe class="reminder-preview" src="{{ site.baseUrl }}reminder-email/email.html" title="The reminder email"></iframe>
+</main>
+
+<script src="{{ site.baseUrl }}js/reminder-email.js" defer></script>
