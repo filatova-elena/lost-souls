@@ -1,0 +1,22 @@
+.home-cover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 30px 15px;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
+}
+
+.home-cover .eyebrow,
+.home-cover h1,
+.home-cover p {
+    margin: 0;
+}
+
+.home-title {
+    font-size: 2.2em;
+    line-height: 1.2;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}

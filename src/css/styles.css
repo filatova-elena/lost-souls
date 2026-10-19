@@ -492,3 +492,44 @@ li {
     background-color: rgba(244, 67, 54, 0.15);
     color: #f44336;
 }
+
+/* Brand masthead shared by the home, check and book pages */
+.brand-logo {
+    width: 140px;
+}
+
+.eyebrow {
+    font-size: 0.7em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold-dim);
+}
+
+.ornament-rule {
+    width: 150px;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--accent-gold), transparent);
+    opacity: 0.6;
+    position: relative;
+}
+
+.ornament-rule::before,
+.ornament-rule::after {
+    content: '❦';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--accent-gold);
+    font-size: 1.2em;
+    opacity: 0.5;
+}
+
+.ornament-rule::before { left: -30px; }
+.ornament-rule::after { right: -30px; }
+
+@media (min-width: 768px) {
+    .ornament-rule { width: 300px; height: 3px; }
+    .ornament-rule::before, .ornament-rule::after { font-size: 2em; }
+    .ornament-rule::before { left: -60px; }
+    .ornament-rule::after { right: -60px; }
+}

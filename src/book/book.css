@@ -35,28 +35,6 @@
   margin: 0;
 }
 
-.book-cover-decoration {
-  width: 150px;
-  height: 2px;
-  background: linear-gradient(to right, transparent, var(--accent-gold), transparent);
-  opacity: 0.6;
-  position: relative;
-}
-
-.book-cover-decoration::before,
-.book-cover-decoration::after {
-  content: '❦';
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  color: var(--accent-gold);
-  font-size: 1.2em;
-  opacity: 0.5;
-}
-
-.book-cover-decoration::before { left: -30px; }
-.book-cover-decoration::after { right: -30px; }
-
 /* Chapter header */
 .book-chapter-header {
   padding: 60px 15px 30px;
@@ -160,10 +138,6 @@
   .book-cover { min-height: 70vh; padding: 40px 20px; }
   .book-cover-title { font-size: 4.5em; letter-spacing: 12px; }
   .book-cover-subtitle { font-size: 2.2em; letter-spacing: 6px; }
-  .book-cover-decoration { width: 300px; height: 3px; }
-  .book-cover-decoration::before, .book-cover-decoration::after { font-size: 2em; }
-  .book-cover-decoration::before { left: -60px; }
-  .book-cover-decoration::after { right: -60px; }
   .book-chapter-header { padding: 100px 40px 60px; }
   .book-chapter-header h1 { font-size: 3em; letter-spacing: 8px; margin-bottom: 10px; }
   .book-chapter-header h2 { font-size: 2em; letter-spacing: 2px; }
