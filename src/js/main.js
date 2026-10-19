@@ -33,9 +33,6 @@ function storeCharacterProfile(characterId, skills) {
   if (!characterId) return null;
   const profile = { characterId, skills: window.convertSkills(skills) };
   saveToLocalStorage(STORAGE_KEYS.CHARACTER_PROFILE, profile);
-  // Whatever shows the character (the status bar) redraws itself. A listener that
-  // fails is reported by the browser and cannot stop anything after this line.
-  document.dispatchEvent(new CustomEvent('characterchange'));
   return profile;
 }
 
@@ -141,10 +138,6 @@ window.isTrackClue = isTrackClue;
 window.getCharacterTrack = getCharacterTrack;
 
 document.addEventListener('DOMContentLoaded', function() {
-  renderProgressTracker();
-});
-
-document.addEventListener('characterchange', function() {
   renderProgressTracker();
 });
 
