@@ -122,25 +122,6 @@
 .phone-check > .check-begin {
     display: block;
     margin: 20px auto;
-    padding: 14px 40px;
-    font-family: var(--font-text);
-    font-size: 1em;
-    font-weight: 700;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    color: var(--accent-gold);
-    background: linear-gradient(135deg, rgba(212, 165, 116, 0.2), rgba(212, 165, 116, 0.06));
-    border: 1px solid var(--accent-gold);
-    border-radius: 2px;
-    box-shadow: 0 0 18px rgba(212, 165, 116, 0.15);
-    cursor: pointer;
-    transition: background 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
-}
-
-.phone-check > .check-begin:hover {
-    color: var(--gold-bright);
-    background: linear-gradient(135deg, rgba(212, 165, 116, 0.32), rgba(212, 165, 116, 0.12));
-    box-shadow: 0 0 26px rgba(212, 165, 116, 0.28);
 }
 
 .check-reveal {

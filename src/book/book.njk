@@ -39,17 +39,17 @@ layout: base
   {# Navigation #}
   <nav class="book-navigation">
     {% if pagination.href.previous %}
-      <a href="{{ pagination.href.previous }}" class="book-nav-link book-nav-prev">← Previous</a>
+      <a href="{{ pagination.href.previous }}" class="button-ghost book-nav-prev">← Previous</a>
     {% else %}
-      <span class="book-nav-link book-nav-prev disabled">← Previous</span>
+      <span class="button-ghost book-nav-prev disabled">← Previous</span>
     {% endif %}
     
     <span class="book-nav-info">{{ pagination.pageNumber }} / {{ pagination.pages.length }}</span>
     
     {% if pagination.href.next %}
-      <a href="{{ pagination.href.next }}" class="book-nav-link book-nav-next">Next →</a>
+      <a href="{{ pagination.href.next }}" class="button-ghost book-nav-next">Next →</a>
     {% else %}
-      <span class="book-nav-link book-nav-next disabled">Next →</span>
+      <span class="button-ghost book-nav-next disabled">Next →</span>
     {% endif %}
   </nav>
 </main>
