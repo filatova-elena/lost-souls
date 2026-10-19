@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Cinzel Decorative';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../fonts/cinzel-decorative-700-latin.woff2') format('woff2');
+}
+
 :root {
     --primary-dark: #0a0a0a;
     --secondary-dark: #1a1a2e;
@@ -88,6 +96,12 @@ section > h1,
         letter-spacing: 2px;
         padding-bottom: 15px;
     }
+}
+
+.site-title {
+    font-family: 'Cinzel Decorative', Georgia, serif;
+    font-weight: 700;
+    text-transform: none;
 }
 
 h2 {
