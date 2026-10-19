@@ -12,7 +12,8 @@
 </head>
 <body>
   {{ content | safe }}
-  {% if clueTools != false %}{% include "clues/progress-tracker.njk" %}{% endif %}
+  {% block tracker %}{% include "clues/progress-tracker.njk" %}{% endblock %}
+  {% block scripts %}
   <script src="{{ site.baseUrl }}js/skills.js" defer></script>
   <script src="{{ site.baseUrl }}js/clue-access.js" defer></script>
   <script src="{{ site.baseUrl }}js/effects.js" defer></script>
@@ -21,8 +22,9 @@
   <script src="{{ site.baseUrl }}js/qr-scanner.js" defer></script>
   {% if page.url == '/reset/' %}
   <script src="{{ site.baseUrl }}js/reset.js" defer></script>
-  {% elif clueTools != false %}
+  {% else %}
   <script src="{{ site.baseUrl }}js/clue-page.js" defer></script>
   {% endif %}
+  {% endblock %}
 </body>
 </html>
