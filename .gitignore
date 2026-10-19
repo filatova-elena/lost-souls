@@ -27,5 +27,5 @@ npm-debug.log*
 .env
 .env.local
 
-# Marketing source files (large binaries, kept out of git)
-marketing/
+# Raw marketing sources (large binaries such as Photoshop files, kept out of git)
+marketing/raw/
