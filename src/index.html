@@ -1,19 +1,13 @@
 ---
 layout: standalone
+title: Lost Souls Murder Mystery
 ---
-<link rel="stylesheet" href="{{ site.baseUrl }}css/home.css">
+{% from "cover.njk" import cover with context %}
 
 <main>
-  <div class="home-cover">
-    <img class="brand-logo" src="{{ site.baseUrl }}assets/images/door66-logo.svg" alt="Door 66">
-    <p class="eyebrow">presents</p>
-    <h1 class="site-title home-title">Lost Souls</h1>
-    <p class="italic">{{ refs.instructions.subtitle }}</p>
-    <div class="ornament-rule"></div>
-  </div>
+  {{ cover() }}
 
   <section class="introduction">
-    <h2>{{ refs.instructions.introduction.heading }}</h2>
     <p class="muted">{{ refs.instructions.introduction.location }}</p>
 
     <div>

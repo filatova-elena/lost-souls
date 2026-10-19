@@ -1,0 +1,9 @@
+{# The Lost Souls cover: Door 66 logo, title, eyebrow. A call block adds content under the eyebrow. #}
+{% macro cover() %}
+<div class="cover">
+  <img class="brand-logo" src="{{ site.baseUrl }}assets/images/door66-logo.svg" alt="Door 66">
+  <h1 class="site-title cover-title">Lost Souls</h1>
+  <p class="eyebrow">Murder Mystery</p>
+  {% if caller %}{{ caller() }}{% endif %}
+</div>
+{% endmacro %}
