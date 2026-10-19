@@ -1,0 +1,12 @@
+.history-empty {
+    display: none;
+}
+
+.history[data-state="empty"] .history-empty {
+    display: block;
+}
+
+.history .item-main {
+    font-family: var(--font-text);
+    font-size: 1em;
+}

@@ -12,6 +12,8 @@ function setupClueTestEnv(overrides = {}) {
   window.parseSkill = skills.parseSkill;
   window.convertSkills = skills.convertSkills;
   window.spawnParticles = jest.fn();
+  window.isTrackClue = jest.fn(() => false);
+  window.renderProgressTracker = jest.fn();
   window.triggerUnlockAnimation = jest.fn();
   window.buildOctogramLock = jest.fn();
   window.renderProgressPip = jest.fn();
