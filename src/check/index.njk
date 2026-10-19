@@ -3,98 +3,92 @@ layout: standalone
 title: Lost Souls Phone Check
 permalink: /check/
 ---
+{% from "cover.njk" import cover with context %}
 <link rel="stylesheet" href="{{ site.baseUrl }}check/check.css">
 
-<main>
-  <header>
+<main id="phone-check" class="phone-check">
+  {% call cover() %}
     <div class="check-candles" aria-hidden="true">
-      <span class="check-candle" data-check="camera"></span><span class="check-candle" data-check="storage"></span><span class="check-candle" data-check="browser"></span>
+      <span class="check-candle" data-check="browser"></span><span class="check-candle" data-check="storage"></span><span class="check-candle" data-check="camera"></span>
     </div>
-    <img class="check-logo" src="{{ site.baseUrl }}assets/images/door66-logo.svg" alt="Door 66">
-    <p class="check-eyebrow">presents</p>
-    <h1 class="site-title">Lost Souls</h1>
-    <p class="italic">Three things the spirits must know before you cross the threshold</p>
-  </header>
+    <p class="italic check-tagline">Three things the spirits must know before you cross the threshold</p>
+  {% endcall %}
 
-  <section id="phone-check" class="phone-check">
-    <p class="check-fallback">This browser can't run the game. Try opening this page in Safari (iPhone) or Chrome (Android). Still stuck? Write to <a href="mailto:inquiries@door66.events">inquiries@door66.events</a> and we'll help.</p>
-    <noscript><p>This check needs JavaScript. Turn it on in your browser settings, then reload.</p></noscript>
-    <ul class="check-results">
-      <li class="check-row" data-check="camera">
-        <svg class="check-row-icon"><use href="{{ site.baseUrl }}assets/icons/check-icons.svg#eye"/></svg>
-        <span class="check-row-text">
-          <span class="check-row-label">Can your eyes pierce the veil?</span>
-          <span class="check-row-sub">Camera</span>
-          <span class="check-row-error" data-error></span>
-        </span>
-        <span class="check-row-status"></span>
-      </li>
-      <li class="check-row" data-check="storage">
-        <svg class="check-row-icon"><use href="{{ site.baseUrl }}assets/icons/check-icons.svg#home-heart"/></svg>
-        <span class="check-row-text">
-          <span class="check-row-label">Will the house remember you?</span>
-          <span class="check-row-sub">Saved progress</span>
-          <span class="check-row-error" data-error></span>
-        </span>
-        <span class="check-row-status"></span>
-      </li>
-      <li class="check-row" data-check="browser">
-        <svg class="check-row-icon"><use href="{{ site.baseUrl }}assets/icons/check-icons.svg#user-question"/></svg>
-        <span class="check-row-text">
-          <span class="check-row-label">Are you truly present?</span>
-          <span class="check-row-sub">Browser ready</span>
-          <span class="check-row-error" data-error></span>
-        </span>
-        <span class="check-row-status"></span>
-      </li>
-    </ul>
-    <p class="check-hint">When your phone asks to use the camera, choose <strong>Allow</strong>.</p>
-    <button type="button" id="camera-check-btn" class="button" data-check="camera">Begin the ritual</button>
+  <p class="check-fallback">This browser can't run the game. Try opening this page in Safari (iPhone) or Chrome (Android). Still stuck? Write to <a href="mailto:inquiries@door66.events">inquiries@door66.events</a> and we'll help.</p>
+  <noscript><p>This check needs JavaScript. Turn it on in your browser settings, then reload.</p></noscript>
 
-    <div class="check-reveal call-to-action">
-      <p class="italic">The veil will part for you</p>
-      <p class="check-eyebrow">You are expected</p>
-      <h2 class="site-title">Bembridge House</h2>
-      <p>Your character waits at the door.<br>Come when the night is yours.</p>
-      <p>Your phone may ask about the camera again at the event. If it does, choose <strong>Allow</strong>.</p>
+  <button type="button" id="begin-btn" class="button check-begin">Begin the ritual</button>
+
+  <ul class="check-results">
+    <li class="check-row" data-check="browser">
+      <svg class="check-row-icon"><use href="{{ site.baseUrl }}assets/icons/check-icons.svg#user-question"/></svg>
+      <span class="check-row-text">
+        <span class="check-row-label">Are you truly present?</span>
+        <span class="check-row-sub">Browser ready</span>
+        <span class="check-row-error" data-error></span>
+      </span>
+      <span class="check-row-status"></span>
+    </li>
+    <li class="check-row" data-check="storage">
+      <svg class="check-row-icon"><use href="{{ site.baseUrl }}assets/icons/check-icons.svg#home-heart"/></svg>
+      <span class="check-row-text">
+        <span class="check-row-label">Will the house remember you?</span>
+        <span class="check-row-sub">Saved progress</span>
+        <span class="check-row-error" data-error></span>
+      </span>
+      <span class="check-row-status"></span>
+    </li>
+    <li class="check-row" data-check="camera">
+      <svg class="check-row-icon"><use href="{{ site.baseUrl }}assets/icons/check-icons.svg#eye"/></svg>
+      <span class="check-row-text">
+        <span class="check-row-label">Can your eyes pierce the veil?</span>
+        <span class="check-row-sub">Choose Allow when asked</span>
+        <span class="check-row-error" data-error></span>
+      </span>
+      <span class="check-row-status"></span>
+    </li>
+  </ul>
+
+  <div class="check-reveal">
+    <p class="italic">The veil will part for you</p>
+    <h2 class="site-title">We are expecting you</h2>
+  </div>
+
+  <div class="troubleshooting-section">
+    <h3>Troubleshooting Steps</h3>
+    <div class="troubleshooting-group" data-check="camera">
+      <h4>Camera Issue</h4>
+      <ol>
+        <li>On iPhone: Settings &gt; Safari &gt; Camera &gt; Allow, then reload this page.</li>
+        <li>On Android: tap the lock icon in the address bar &gt; Permissions &gt; Camera &gt; Allow, then reload.</li>
+        <li>Open this page directly in Safari (iPhone) or Chrome (Android), not inside an email or social app.</li>
+        <li>Close any other app that might be using the camera.</li>
+      </ol>
     </div>
-
-    <div class="troubleshooting-section">
-      <h3>Troubleshooting Steps</h3>
-      <div class="troubleshooting-group" data-check="camera">
-        <h4>Camera Issue</h4>
-        <ol>
-          <li>On iPhone: Settings &gt; Safari &gt; Camera &gt; Allow, then reload this page.</li>
-          <li>On Android: tap the lock icon in the address bar &gt; Permissions &gt; Camera &gt; Allow, then reload.</li>
-          <li>Open this page directly in Safari (iPhone) or Chrome (Android), not inside an email or social app.</li>
-          <li>Close any other app that might be using the camera.</li>
-        </ol>
-      </div>
-      <div class="troubleshooting-group" data-check="storage">
-        <h4>Local Storage Issue</h4>
-        <ol>
-          <li>If you're using Private/Incognito mode, try switching to a regular browsing session.</li>
-          <li>Check your browser settings to ensure cookies and site data are allowed.</li>
-          <li>Try clearing your browser cache and reloading the page.</li>
-          <li>If using Safari, check Settings &gt; Safari &gt; Block All Cookies and ensure it's disabled.</li>
-        </ol>
-      </div>
-      <div class="troubleshooting-group" data-check="browser">
-        <h4>Browser Compatibility Issue</h4>
-        <ol>
-          <li>Update your browser to the latest version.</li>
-          <li>If you're using an older device, try a different browser (Chrome, Firefox, Safari, or Edge).</li>
-          <li>Check if your browser has any extensions that might be blocking features.</li>
-          <li>Try disabling browser extensions temporarily to see if that resolves the issue.</li>
-        </ol>
-      </div>
-      <div class="contact-section">
-        <h4>Still Having Issues?</h4>
-        <p>If these steps don't resolve the problem, please contact us for assistance. Include details about which checks failed and what device/browser you're using.</p>
-        <p><strong>Contact:</strong> <a href="mailto:inquiries@door66.events">inquiries@door66.events</a></p>
-      </div>
+    <div class="troubleshooting-group" data-check="storage">
+      <h4>Local Storage Issue</h4>
+      <ol>
+        <li>If you're using Private/Incognito mode, try switching to a regular browsing session.</li>
+        <li>Check your browser settings to ensure cookies and site data are allowed.</li>
+        <li>Try clearing your browser cache and reloading the page.</li>
+        <li>If using Safari, check Settings &gt; Safari &gt; Block All Cookies and ensure it's disabled.</li>
+      </ol>
     </div>
-  </section>
+    <div class="troubleshooting-group" data-check="browser">
+      <h4>Browser Compatibility Issue</h4>
+      <ol>
+        <li>Update your browser to the latest version.</li>
+        <li>If you're using an older device, try a different browser (Chrome, Firefox, Safari, or Edge).</li>
+        <li>Check if your browser has any extensions that might be blocking features.</li>
+        <li>Try disabling browser extensions temporarily to see if that resolves the issue.</li>
+      </ol>
+    </div>
+    <div class="contact-section">
+      <h4>Still Having Issues?</h4>
+      <p>If these steps don't resolve the problem, please contact us for assistance. Include details about which checks failed and what device/browser you're using.</p>
+      <p><strong>Contact:</strong> <a href="mailto:inquiries@door66.events">inquiries@door66.events</a></p>
+    </div>
+  </div>
 </main>
 
 <script>

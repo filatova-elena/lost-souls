@@ -1,33 +1,22 @@
 ---
-layout: base
+layout: standalone
+title: Lost Souls Murder Mystery
 ---
-<!-- Debug: {{ refs | json }} -->
+{% from "cover.njk" import cover with context %}
+
 <main>
-  <header>
-    <h1 class="site-title">{{ refs.instructions.title }}</h1>
-    <p class="italic">{{ refs.instructions.subtitle }}</p>
-  </header>
+  {{ cover() }}
 
   <section class="introduction">
-  <h2>{{ refs.instructions.introduction.heading }}</h2>
-  <p class="muted">{{ refs.instructions.introduction.location }}</p>
-  
-  <div>
-    {{ refs.instructions.introduction.content | markdown | safe }}
-  </div>
-  
-  <div class="call-to-action">
-    <p><strong>{{ refs.instructions.call_to_action.main }}</strong></p>
-    <p class="muted">{{ refs.instructions.call_to_action.subtext }}</p>
-  </div>
-</section>
+    <p class="muted">{{ refs.instructions.introduction.location }}</p>
 
-<section class="how-to-play">
-  <h2>🎭 How to Play</h2>
-  <ul>
-    {% for rule in refs.instructions.rules %}
-    <li>{{ rule | markdown | safe }}</li>
-    {% endfor %}
-  </ul>
-</section>
+    <div>
+      {{ refs.instructions.introduction.content | markdown | safe }}
+    </div>
+
+    <div class="call-to-action">
+      <p><strong>{{ refs.instructions.call_to_action.main }}</strong></p>
+      <p class="muted">{{ refs.instructions.call_to_action.subtext }}</p>
+    </div>
+  </section>
 </main>
