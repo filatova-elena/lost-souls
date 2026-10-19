@@ -115,3 +115,19 @@ test('says so when the browser refuses the copy', async () => {
   await click('email');
   expect(status()).toContain('Couldn’t copy');
 });
+
+describe('staying out of search engines', () => {
+  const robots = html => (html.match(/<meta name="robots" content="([^"]*)"/) || [])[1] || '';
+
+  test('the hosted email asks search engines to skip it and the images in it', () => {
+    expect(robots(email)).toContain('noindex');
+    expect(robots(email)).toContain('noimageindex');
+  });
+
+  test('the page itself gets noindex from the shared layout', () => {
+    const base = fs.readFileSync(path.join(__dirname, '../src/_includes/base.njk'), 'utf8');
+    const layout = fs.readFileSync(path.join(__dirname, '../src/_includes/standalone.njk'), 'utf8');
+    expect(robots(base)).toContain('noindex');
+    expect(layout).toContain('extends "base.njk"');
+  });
+});
