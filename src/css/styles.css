@@ -6,25 +6,43 @@
     src: url('../fonts/cinzel-decorative-700-latin.woff2') format('woff2');
 }
 
+@font-face {
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 500 700;
+    font-display: swap;
+    src: url('../fonts/cormorant-garamond-latin.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    font-style: italic;
+    font-weight: 500;
+    font-display: swap;
+    src: url('../fonts/cormorant-garamond-italic-latin.woff2') format('woff2');
+}
+
 :root {
     --primary-dark: #0a0a0a;
-    --secondary-dark: #1a1a2e;
+    --secondary-dark: #151525;
     --accent-gold: #d4a574;
     --accent-purple: #4a148c;
     --text-light: #e0e0e0;
     --gold-bright: #e8be8a;
     --gold-dim: #9e7a52;
     --progress-bar-height: 62px;
+    --font-text: 'Cormorant Garamond', Georgia, serif;
 }
 
 body {
     background-color: var(--primary-dark);
     color: var(--text-light);
-    font-family: Georgia, serif;
+    font-family: var(--font-text);
+    font-variant-numeric: lining-nums;
     line-height: 1.6;
     padding: 10px;
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 @media (min-width: 768px) {
@@ -179,7 +197,6 @@ details[open] > summary::after {
 p {
     margin: 12px 0;
     font-size: 1em;
-    font-family: sans-serif;
     line-height: 1.6;
 }
 
@@ -279,7 +296,6 @@ ul {
 li {
     margin: 10px 0;
     line-height: 1.6;
-    font-family: sans-serif;
 }
 
 @media (min-width: 768px) {
