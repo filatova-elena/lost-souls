@@ -8,7 +8,7 @@ const page = fs.readFileSync(path.join(__dirname, '../src/check/index.njk'), 'ut
   .replace(/\{\{[^}]*\}\}/g, '')
   .replace(/\{%[^%]*%\}/g, '');
 
-const STEP = 800;
+const STEP = 1200;
 let getUserMedia;
 
 function load() {
