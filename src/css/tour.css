@@ -1,0 +1,59 @@
+/* First-time tour: a dimmed screen with a lit-up hole around the target, and a card above it.
+   tour.js only supplies the numbers (--tour-*); the layout is here. */
+.tour {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1100;
+}
+
+.tour-spotlight {
+  position: fixed;
+  left: var(--tour-x);
+  top: var(--tour-y);
+  width: var(--tour-w);
+  height: var(--tour-h);
+  border: 1px solid var(--accent-gold);
+  border-radius: var(--tour-radius);
+  /* Larger than the screen's diagonal, so a round hole still dims the far corners */
+  box-shadow: 0 0 0 200vmax rgba(5, 5, 10, 0.82);
+  pointer-events: none;
+}
+
+.tour-card {
+  position: fixed;
+  left: var(--tour-card-left);
+  bottom: var(--tour-card-bottom);
+  width: var(--tour-card-width);
+  box-sizing: border-box;
+  padding: 16px 18px;
+  background: var(--secondary-dark);
+  border: 1px solid var(--accent-gold);
+  box-shadow: 0 0 26px rgba(212, 165, 116, 0.2);
+}
+
+.tour-card p {
+  margin: 0 0 10px;
+}
+
+.tour-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.tour-actions button {
+  margin: 0;
+  padding: 10px 20px;
+}
+
+.tour[data-last="true"] .tour-skip {
+  display: none;
+}
+
+.tour[data-last="true"] .tour-actions {
+  justify-content: flex-end;
+}

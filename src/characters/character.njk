@@ -8,6 +8,8 @@ permalink: "/characters/{{ character.id }}/index.html"
 layout: base
 title: "Character"
 ---
+<link rel="stylesheet" href="{{ site.baseUrl }}css/tour.css">
+
 <main>
   <header>
     <h1>{{ character.title }}</h1>
@@ -87,33 +89,33 @@ title: "Character"
 {% endif %}
 
 <section class="begin-investigation">
-  <a href="{{ site.baseUrl }}" class="button" id="begin-investigation-btn" aria-label="Begin investigation as {{ character.title }}">Begin Investigation as {{ character.title }}</a>
+  <button type="button" class="button" id="begin-investigation-btn" aria-label="Begin investigation as {{ character.title }}">Begin Investigation as {{ character.title }}</button>
 </section>
 
+<script src="{{ site.baseUrl }}js/tour.js" defer></script>
 <script>
 (function() {
   const characterData = {{ character | json | safe }};
 
-  function handleBeginInvestigation(e) {
-    e.preventDefault();
-
+  function handleBeginInvestigation() {
     if (window.resetInvestigation) {
       window.resetInvestigation();
     }
     if (characterData.skills) {
       storeCharacterProfile(characterData.id, characterData.skills);
     }
-    const storageKeys = window.STORAGE_KEYS || { UNLOCKED_ACTS: 'unlocked_acts' };
-    window.saveToLocalStorage(storageKeys.UNLOCKED_ACTS, ['act_i_setting']);
 
     if (window.renderTypewriterAnimation) {
       const characterName = characterData.title || 'Investigator';
       window.renderTypewriterAnimation(
         characterName,
         'You are now investigating as',
-        'Ready to scan clues'
+        'Ready to scan clues',
+        () => window.startTour()
       );
     }
+
+    window.renderProgressTracker();
   }
 
   function init() {
