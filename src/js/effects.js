@@ -224,7 +224,7 @@ function renderActUnlockAnimation(title, subtitle) {
  * @param {string} typewriterText - The text to type out character by character (e.g., "You are now investigating as")
  * @param {string} statusText - The status/ready text to display (e.g., "Ready to scan clues")
  */
-function renderTypewriterAnimation(name, typewriterText, statusText) {
+function renderTypewriterAnimation(name, typewriterText, statusText, onClosed) {
   // Get or create overlay container
   let overlay = document.getElementById('typewriterOverlay');
   if (overlay) {
@@ -436,6 +436,7 @@ function renderTypewriterAnimation(name, typewriterText, statusText) {
     setTimeout(() => {
       if (overlay && overlay.parentElement) {
         overlay.remove();
+        if (onClosed) onClosed();
       }
     }, 200);
   }

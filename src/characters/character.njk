@@ -90,6 +90,7 @@ title: "Character"
   <a href="{{ site.baseUrl }}" class="button" id="begin-investigation-btn" aria-label="Begin investigation as {{ character.title }}">Begin Investigation as {{ character.title }}</a>
 </section>
 
+<script src="{{ site.baseUrl }}js/tour.js" defer></script>
 <script>
 (function() {
   const characterData = {{ character | json | safe }};
@@ -103,6 +104,9 @@ title: "Character"
     if (characterData.skills) {
       storeCharacterProfile(characterData.id, characterData.skills);
     }
+    if (window.renderProgressTracker) {
+      window.renderProgressTracker();
+    }
     const storageKeys = window.STORAGE_KEYS || { UNLOCKED_ACTS: 'unlocked_acts' };
     window.saveToLocalStorage(storageKeys.UNLOCKED_ACTS, ['act_i_setting']);
 
@@ -111,7 +115,8 @@ title: "Character"
       window.renderTypewriterAnimation(
         characterName,
         'You are now investigating as',
-        'Ready to scan clues'
+        'Ready to scan clues',
+        window.startTour
       );
     }
   }
