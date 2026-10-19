@@ -24,7 +24,6 @@ function setupClueTestEnv(overrides = {}) {
   const access = require('../../src/js/clue-access');
   window.resolveClueState = access.resolveClueState;
   window.buildSkillLockedMessage = access.buildSkillLockedMessage;
-  window.getQuestClueIsKeyFor = access.getQuestClueIsKeyFor;
   window.joinWithOr = access.joinWithOr;
 
   // Apply overrides

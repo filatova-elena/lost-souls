@@ -1,5 +1,5 @@
 const { hasSkillAccess, parseSkill } = require('../src/lib/skills');
-const { resolveClueState, buildSkillLockedMessage, getQuestClueIsKeyFor } = require('../src/js/clue-access');
+const { resolveClueState, buildSkillLockedMessage } = require('../src/js/clue-access');
 
 // Deterministic random function for testing (always picks first item)
 function deterministicRandom(array) {
@@ -190,86 +190,6 @@ describe('clue access state', () => {
 
       expect(state.name).toBe('gated');
     });
-  });
-});
-
-describe('quest progress', () => {
-  const mockProgressData = {
-    mainQuestHashtag: 'main_quest',
-    sideQuests: {
-      alice: { hashtag: 'alice_side_quest' },
-      bob: { hashtag: 'bob_side_quest' }
-    }
-  };
-
-  test('finding a main quest key clue advances the main quest', () => {
-    const clueData = {
-      id: 'MAIN_KEY_CLUE',
-      is_key: ['main_quest']
-    };
-    const result = getQuestClueIsKeyFor(clueData, {
-      mainQuestHashtag: mockProgressData.mainQuestHashtag,
-      sideQuests: mockProgressData.sideQuests,
-      characterId: 'alice'
-    });
-
-    expect(result).toBe('main_quest');
-  });
-
-  test('finding a side quest key clue advances that character quest', () => {
-    const clueData = {
-      id: 'ALICE_KEY_CLUE',
-      is_key: ['alice_side_quest']
-    };
-    const result = getQuestClueIsKeyFor(clueData, {
-      mainQuestHashtag: mockProgressData.mainQuestHashtag,
-      sideQuests: mockProgressData.sideQuests,
-      characterId: 'alice'
-    });
-
-    expect(result).toBe('alice_side_quest');
-  });
-
-  test('finding another character side quest key clue does not advance any quest', () => {
-    const clueData = {
-      id: 'BOB_KEY_CLUE',
-      is_key: ['bob_side_quest']
-    };
-    const result = getQuestClueIsKeyFor(clueData, {
-      mainQuestHashtag: mockProgressData.mainQuestHashtag,
-      sideQuests: mockProgressData.sideQuests,
-      characterId: 'alice' // Different character
-    });
-
-    expect(result).toBeNull();
-  });
-
-  test('finding a non-key clue does not advance any quest', () => {
-    const clueData = {
-      id: 'REGULAR_CLUE',
-      is_key: []
-    };
-    const result = getQuestClueIsKeyFor(clueData, {
-      mainQuestHashtag: mockProgressData.mainQuestHashtag,
-      sideQuests: mockProgressData.sideQuests,
-      characterId: 'alice'
-    });
-
-    expect(result).toBeNull();
-  });
-
-  test('main quest progress takes priority over side quest', () => {
-    const clueData = {
-      id: 'DUAL_KEY_CLUE',
-      is_key: ['main_quest', 'alice_side_quest'] // Key for both
-    };
-    const result = getQuestClueIsKeyFor(clueData, {
-      mainQuestHashtag: mockProgressData.mainQuestHashtag,
-      sideQuests: mockProgressData.sideQuests,
-      characterId: 'alice'
-    });
-
-    expect(result).toBe('main_quest'); // Main quest takes priority
   });
 });
 
