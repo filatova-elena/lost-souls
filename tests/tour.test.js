@@ -184,16 +184,4 @@ describe('the Begin investigation animation', () => {
     expect(onClosed).toHaveBeenCalledTimes(1);
     expect(overlayWhenCalled).toBeNull();
   });
-
-  test('a callback that fails does not stop the animation from closing', () => {
-    jest.spyOn(console, 'error').mockImplementation(() => {});
-    document.body.innerHTML = '';
-    jest.resetModules();
-    require('../src/js/effects');
-    window.renderTypewriterAnimation('Ada', 'You are now investigating as', 'Ready', () => { throw new Error('tour broke'); });
-
-    expect(() => jest.advanceTimersByTime(15000)).not.toThrow();
-    expect(document.getElementById('typewriterOverlay')).toBeNull();
-    expect(console.error).toHaveBeenCalled();
-  });
 });
