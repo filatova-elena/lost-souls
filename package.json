@@ -25,5 +25,11 @@
   "dependencies": {
     "html5-qrcode": "^2.3.8",
     "markdown-it": "^14.1.0"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/_site/"
+    ]
   }
 }
