@@ -31,9 +31,8 @@ const mockNoAccessMessages = {
 
 describe('clue access state', () => {
   // Helper to simulate localStorage state
-  function createAccessState(clueData, { unlockedClues = [], unlockedActs = [], userSkills = [] }) {
+  function createAccessState(clueData, { unlockedActs = [], userSkills = [] }) {
     return resolveClueState(clueData, {
-      unlockedClues,
       unlockedActs,
       userSkills,
       noAccessMessages: mockNoAccessMessages,
@@ -53,7 +52,6 @@ describe('clue access state', () => {
         skills: []
       };
       const state = createAccessState(clueData, {
-        unlockedClues: [],
         unlockedActs: [], // Act II not unlocked
         userSkills: []
       });
@@ -80,7 +78,6 @@ describe('clue access state', () => {
         skills: []
       };
       const state = createAccessState(actIIClue, {
-        unlockedClues: [],
         unlockedActs,
         userSkills: []
       });
@@ -95,7 +92,6 @@ describe('clue access state', () => {
         skills: []
       };
       const state = createAccessState(clueData, {
-        unlockedClues: [],
         unlockedActs: [], // No acts unlocked
         userSkills: []
       });
@@ -110,7 +106,6 @@ describe('clue access state', () => {
         skills: []
       };
       const state = createAccessState(clueData, {
-        unlockedClues: [],
         unlockedActs: [], // No acts unlocked
         userSkills: []
       });
@@ -128,7 +123,6 @@ describe('clue access state', () => {
         type: 'Artifact (Object)'
       };
       const state = createAccessState(clueData, {
-        unlockedClues: [],
         unlockedActs: [],
         userSkills: ['art_1'] // Only level 1, needs level 2
       });
@@ -144,7 +138,6 @@ describe('clue access state', () => {
         skills: ['art_2']
       };
       const state = createAccessState(clueData, {
-        unlockedClues: [],
         unlockedActs: [],
         userSkills: ['art_2'] // Has required level
       });
@@ -160,7 +153,6 @@ describe('clue access state', () => {
         accessChars: ['Alice', 'Bob']
       };
       const state = createAccessState(clueData, {
-        unlockedClues: [],
         unlockedActs: [],
         userSkills: [] // No skills
       });
@@ -176,7 +168,6 @@ describe('clue access state', () => {
         skills: []
       };
       const state = createAccessState(clueData, {
-        unlockedClues: [],
         unlockedActs: [],
         userSkills: [] // No skills at all
       });
@@ -193,39 +184,11 @@ describe('clue access state', () => {
         skills: ['art_2']
       };
       const state = createAccessState(clueData, {
-        unlockedClues: [],
         unlockedActs: [], // Act II not unlocked
         userSkills: ['art_2'] // Has skills, but gate blocks first
       });
 
       expect(state.name).toBe('gated');
-    });
-  });
-
-  describe('octogram bypass', () => {
-    test('player can view a skill-locked clue after solving its octogram puzzle', () => {
-      const clueData = {
-        id: 'CLUE123',
-        act: 'act_i_setting',
-        skills: ['art_2'],
-        unlock_code: 'ABC123'
-      };
-      
-      // Before solving octogram
-      const beforeState = createAccessState(clueData, {
-        unlockedClues: [],
-        unlockedActs: [],
-        userSkills: [] // No skills
-      });
-      expect(beforeState.name).toBe('skill-locked');
-
-      // After solving octogram (clue is manually unlocked)
-      const afterState = createAccessState(clueData, {
-        unlockedClues: ['CLUE123'], // Manually unlocked via octogram
-        unlockedActs: [],
-        userSkills: [] // Still no skills, but bypass works
-      });
-      expect(afterState.name).toBe('unlocked');
     });
   });
 });

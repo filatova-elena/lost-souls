@@ -28,26 +28,6 @@ describe('clue page interactions', () => {
     expect(document.querySelector('.clue-page').dataset.state).toBe('unlocked');
   });
 
-  test('clue content appears after solving octogram puzzle', () => {
-    let octogramCallback;
-    window.buildOctogramLock = jest.fn((container, code, cb) => {
-      octogramCallback = cb;
-    });
-
-    document.body.innerHTML = `
-      <div class="clue-page">
-        <section class="clue-lock"></section>
-        <section class="clue-content">Secret content</section>
-      </div>
-    `;
-
-    loadCluePage({ id: 'CLUE1', act: 'act_i_setting', skills: ['art_2'], type: 'Document', unlock_code: 'ABC' });
-    expect(document.querySelector('.clue-page').dataset.state).toBe('skill-locked');
-
-    octogramCallback();
-    expect(document.querySelector('.clue-page').dataset.state).toBe('unlocked');
-  });
-
   test('player cannot see clue content when skill-locked', () => {
     document.body.innerHTML = `
       <div class="clue-page">

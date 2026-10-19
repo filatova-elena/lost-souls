@@ -14,8 +14,6 @@ function setupClueTestEnv(overrides = {}) {
   window.spawnParticles = jest.fn();
   window.isTrackClue = jest.fn(() => false);
   window.renderProgressTracker = jest.fn();
-  window.triggerUnlockAnimation = jest.fn();
-  window.buildOctogramLock = jest.fn();
   window.renderProgressPip = jest.fn();
   window.__progressData = { mainQuestHashtag: 'main_quest', mainQuestTotal: 3, sideQuests: {} };
   window.__noAccessMessages = {
