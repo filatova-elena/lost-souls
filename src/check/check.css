@@ -121,7 +121,7 @@
 
 .phone-check > .check-begin {
     display: block;
-    margin: 10px auto;
+    margin: 20px auto;
 }
 
 .check-reveal {
@@ -148,7 +148,7 @@
 .check-row[data-state="pass"],
 .check-row[data-state="fail"] {
     display: flex;
-    animation: check-appear 0.4s ease;
+    animation: check-appear 0.6s ease;
 }
 
 .check-row[data-state="fail"] .check-row-error {
@@ -163,7 +163,7 @@
 
 .phone-check[data-state="pass"] .check-reveal {
     display: block;
-    animation: check-appear 0.4s ease;
+    animation: check-appear 0.6s ease;
 }
 
 .phone-check[data-state="fail"] .troubleshooting-section {

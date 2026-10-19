@@ -13,7 +13,7 @@
 const State = Object.freeze({ PENDING: 'pending', RUNNING: 'running', PASS: 'pass', FAIL: 'fail' });
 
 // Each check stays on screen at least this long, so the sequence can be followed
-const STEP_MS = 800;
+const STEP_MS = 1200;
 
 // id: matches data-check in the template.
 // run(): decides by calling this.pass() or this.fail(message); never touches the page.

@@ -73,12 +73,12 @@ title: "Clue"
 {% if clue.previous_id or clue.next_id %}
 <nav class="page-nav" aria-label="Clue navigation">
   {% if clue.previous_id %}
-    <a href="{{ site.baseUrl }}clues/{{ clue.previous_id }}/" class="button" aria-label="Previous clue">← Previous</a>
+    <a href="{{ site.baseUrl }}clues/{{ clue.previous_id }}/" class="button-ghost" aria-label="Previous clue">← Previous</a>
   {% else %}
     <span></span>
   {% endif %}
   {% if clue.next_id %}
-    <a href="{{ site.baseUrl }}clues/{{ clue.next_id }}/" class="button" aria-label="Next clue">Next →</a>
+    <a href="{{ site.baseUrl }}clues/{{ clue.next_id }}/" class="button-ghost" aria-label="Next clue">Next →</a>
   {% else %}
     <span></span>
   {% endif %}

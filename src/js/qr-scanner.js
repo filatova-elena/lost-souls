@@ -20,7 +20,7 @@ function createOverlay() {
   overlay = document.createElement('div');
   overlay.id = 'qr-scanner-overlay';
   overlay.innerHTML = `
-    <button id="qr-scanner-close" aria-label="Close scanner">&times;</button>
+    <button id="qr-scanner-close" aria-label="Close scanner"><svg viewBox="0 0 24 24"><path d="M18 6l-12 12"/><path d="M6 6l12 12"/></svg></button>
     <div id="qr-scanner-viewfinder">
       <div id="qr-scanner-reader"></div>
     </div>

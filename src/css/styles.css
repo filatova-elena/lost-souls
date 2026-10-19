@@ -213,30 +213,67 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Consolidated button utility class */
+/* Primary button */
 .button,
 button.button,
 a.button,
 button {
-    background-color: var(--accent-purple);
-    color: var(--accent-gold);
-    border: 2px solid var(--accent-gold);
-    padding: 12px 30px;
-    font-size: 1em;
-    text-transform: uppercase;
-    cursor: pointer;
     display: inline-block;
     margin: 10px 5px;
+    padding: 14px 28px;
+    font-family: var(--font-text);
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
     text-decoration: none;
-    font-family: sans-serif;
+    color: var(--accent-gold);
+    background: linear-gradient(135deg, rgba(212, 165, 116, 0.2), rgba(212, 165, 116, 0.06));
+    border: 1px solid var(--accent-gold);
+    border-radius: 2px;
+    box-shadow: 0 0 18px rgba(212, 165, 116, 0.15);
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
 }
 
 .button:hover,
 button.button:hover,
 a.button:hover,
 button:hover {
-    background-color: var(--accent-gold);
-    color: var(--primary-dark);
+    color: var(--gold-bright);
+    background: linear-gradient(135deg, rgba(212, 165, 116, 0.32), rgba(212, 165, 116, 0.12));
+    box-shadow: 0 0 26px rgba(212, 165, 116, 0.28);
+    text-decoration: none;
+}
+
+/* Secondary button: a quieter outline, for navigation */
+.button-ghost {
+    display: inline-block;
+    padding: 12px 20px;
+    font-family: var(--font-text);
+    font-size: 0.9em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--accent-gold);
+    background: transparent;
+    border: 1px solid rgba(212, 165, 116, 0.45);
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.button-ghost:hover:not(.disabled) {
+    color: var(--gold-bright);
+    background: rgba(212, 165, 116, 0.1);
+    border-color: var(--accent-gold);
+    text-decoration: none;
+}
+
+.button-ghost.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
 }
 
 strong {
@@ -471,36 +508,40 @@ li {
 }
 
 .tag-pill {
-    background: transparent;
-    border: 1px solid rgba(212, 165, 116, 0.4);
-    color: var(--text-light);
-    padding: 3px 10px;
-    font-size: 0.75em;
-    font-family: sans-serif;
-    cursor: pointer;
-    border-radius: 12px;
-    transition: all 0.15s ease;
-    text-transform: lowercase;
-    margin: 0;
     display: inline-block;
+    margin: 0;
+    padding: 5px 14px;
+    font-family: var(--font-text);
+    font-size: 0.8em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-light);
+    background: transparent;
+    border: 1px solid rgba(212, 165, 116, 0.35);
+    border-radius: 999px;
+    box-shadow: none;
+    cursor: pointer;
+    transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
 }
 
 .tag-pill:hover {
-    border-color: var(--accent-gold);
-    background-color: rgba(212, 165, 116, 0.1);
     color: var(--accent-gold);
+    background: transparent;
+    border-color: var(--accent-gold);
+    box-shadow: none;
 }
 
 .tag-pill.active {
-    background-color: var(--accent-gold);
-    color: var(--primary-dark);
+    color: var(--gold-bright);
+    background: linear-gradient(135deg, rgba(212, 165, 116, 0.28), rgba(212, 165, 116, 0.1));
     border-color: var(--accent-gold);
-    font-weight: 600;
+    box-shadow: 0 0 12px rgba(212, 165, 116, 0.2);
 }
 
 .tag-pill.tag-clear {
+    color: #e57373;
     border-color: rgba(244, 67, 54, 0.4);
-    color: rgba(244, 67, 54, 0.7);
 }
 
 .tag-pill.tag-clear:hover {
