@@ -1,5 +1,5 @@
 const { hasSkillAccess, parseSkill } = require('../src/lib/skills');
-const { resolveClueState, buildSkillLockedMessage, getQuestClueIsKeyFor } = require('../src/js/clue-access');
+const { resolveClueState, buildSkillLockedMessage } = require('../src/js/clue-access');
 
 // Deterministic random function for testing (always picks first item)
 function deterministicRandom(array) {
@@ -31,9 +31,8 @@ const mockNoAccessMessages = {
 
 describe('clue access state', () => {
   // Helper to simulate localStorage state
-  function createAccessState(clueData, { unlockedClues = [], unlockedActs = [], userSkills = [] }) {
+  function createAccessState(clueData, { unlockedActs = [], userSkills = [] }) {
     return resolveClueState(clueData, {
-      unlockedClues,
       unlockedActs,
       userSkills,
       noAccessMessages: mockNoAccessMessages,
@@ -53,7 +52,6 @@ describe('clue access state', () => {
         skills: []
       };
       const state = createAccessState(clueData, {
-        unlockedClues: [],
         unlockedActs: [], // Act II not unlocked
         userSkills: []
       });
@@ -80,7 +78,6 @@ describe('clue access state', () => {
         skills: []
       };
       const state = createAccessState(actIIClue, {
-        unlockedClues: [],
         unlockedActs,
         userSkills: []
       });
@@ -95,7 +92,6 @@ describe('clue access state', () => {
         skills: []
       };
       const state = createAccessState(clueData, {
-        unlockedClues: [],
         unlockedActs: [], // No acts unlocked
         userSkills: []
       });
@@ -110,7 +106,6 @@ describe('clue access state', () => {
         skills: []
       };
       const state = createAccessState(clueData, {
-        unlockedClues: [],
         unlockedActs: [], // No acts unlocked
         userSkills: []
       });
@@ -128,7 +123,6 @@ describe('clue access state', () => {
         type: 'Artifact (Object)'
       };
       const state = createAccessState(clueData, {
-        unlockedClues: [],
         unlockedActs: [],
         userSkills: ['art_1'] // Only level 1, needs level 2
       });
@@ -144,7 +138,6 @@ describe('clue access state', () => {
         skills: ['art_2']
       };
       const state = createAccessState(clueData, {
-        unlockedClues: [],
         unlockedActs: [],
         userSkills: ['art_2'] // Has required level
       });
@@ -160,7 +153,6 @@ describe('clue access state', () => {
         accessChars: ['Alice', 'Bob']
       };
       const state = createAccessState(clueData, {
-        unlockedClues: [],
         unlockedActs: [],
         userSkills: [] // No skills
       });
@@ -176,7 +168,6 @@ describe('clue access state', () => {
         skills: []
       };
       const state = createAccessState(clueData, {
-        unlockedClues: [],
         unlockedActs: [],
         userSkills: [] // No skills at all
       });
@@ -193,120 +184,12 @@ describe('clue access state', () => {
         skills: ['art_2']
       };
       const state = createAccessState(clueData, {
-        unlockedClues: [],
         unlockedActs: [], // Act II not unlocked
         userSkills: ['art_2'] // Has skills, but gate blocks first
       });
 
       expect(state.name).toBe('gated');
     });
-  });
-
-  describe('octogram bypass', () => {
-    test('player can view a skill-locked clue after solving its octogram puzzle', () => {
-      const clueData = {
-        id: 'CLUE123',
-        act: 'act_i_setting',
-        skills: ['art_2'],
-        unlock_code: 'ABC123'
-      };
-      
-      // Before solving octogram
-      const beforeState = createAccessState(clueData, {
-        unlockedClues: [],
-        unlockedActs: [],
-        userSkills: [] // No skills
-      });
-      expect(beforeState.name).toBe('skill-locked');
-
-      // After solving octogram (clue is manually unlocked)
-      const afterState = createAccessState(clueData, {
-        unlockedClues: ['CLUE123'], // Manually unlocked via octogram
-        unlockedActs: [],
-        userSkills: [] // Still no skills, but bypass works
-      });
-      expect(afterState.name).toBe('unlocked');
-    });
-  });
-});
-
-describe('quest progress', () => {
-  const mockProgressData = {
-    mainQuestHashtag: 'main_quest',
-    sideQuests: {
-      alice: { hashtag: 'alice_side_quest' },
-      bob: { hashtag: 'bob_side_quest' }
-    }
-  };
-
-  test('finding a main quest key clue advances the main quest', () => {
-    const clueData = {
-      id: 'MAIN_KEY_CLUE',
-      is_key: ['main_quest']
-    };
-    const result = getQuestClueIsKeyFor(clueData, {
-      mainQuestHashtag: mockProgressData.mainQuestHashtag,
-      sideQuests: mockProgressData.sideQuests,
-      characterId: 'alice'
-    });
-
-    expect(result).toBe('main_quest');
-  });
-
-  test('finding a side quest key clue advances that character quest', () => {
-    const clueData = {
-      id: 'ALICE_KEY_CLUE',
-      is_key: ['alice_side_quest']
-    };
-    const result = getQuestClueIsKeyFor(clueData, {
-      mainQuestHashtag: mockProgressData.mainQuestHashtag,
-      sideQuests: mockProgressData.sideQuests,
-      characterId: 'alice'
-    });
-
-    expect(result).toBe('alice_side_quest');
-  });
-
-  test('finding another character side quest key clue does not advance any quest', () => {
-    const clueData = {
-      id: 'BOB_KEY_CLUE',
-      is_key: ['bob_side_quest']
-    };
-    const result = getQuestClueIsKeyFor(clueData, {
-      mainQuestHashtag: mockProgressData.mainQuestHashtag,
-      sideQuests: mockProgressData.sideQuests,
-      characterId: 'alice' // Different character
-    });
-
-    expect(result).toBeNull();
-  });
-
-  test('finding a non-key clue does not advance any quest', () => {
-    const clueData = {
-      id: 'REGULAR_CLUE',
-      is_key: []
-    };
-    const result = getQuestClueIsKeyFor(clueData, {
-      mainQuestHashtag: mockProgressData.mainQuestHashtag,
-      sideQuests: mockProgressData.sideQuests,
-      characterId: 'alice'
-    });
-
-    expect(result).toBeNull();
-  });
-
-  test('main quest progress takes priority over side quest', () => {
-    const clueData = {
-      id: 'DUAL_KEY_CLUE',
-      is_key: ['main_quest', 'alice_side_quest'] // Key for both
-    };
-    const result = getQuestClueIsKeyFor(clueData, {
-      mainQuestHashtag: mockProgressData.mainQuestHashtag,
-      sideQuests: mockProgressData.sideQuests,
-      characterId: 'alice'
-    });
-
-    expect(result).toBe('main_quest'); // Main quest takes priority
   });
 });
 

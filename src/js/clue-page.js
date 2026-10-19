@@ -107,7 +107,6 @@ function processClueDiscovery(clueData) {
 function determineAccessState(clueData, noAccessMessages) {
   if (window.resolveClueState) {
     return window.resolveClueState(clueData, {
-      unlockedClues: [],
       unlockedActs: window.getFromLocalStorage(STORAGE_KEYS.UNLOCKED_ACTS, []),
       userSkills: window.getCharacterProfile()?.skills || [],
       noAccessMessages,

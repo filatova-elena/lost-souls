@@ -442,58 +442,9 @@ function renderTypewriterAnimation(name, typewriterText, statusText, onClosed) {
   }
 }
 
-/**
- * Trigger unlock animation on a clue page
- * @param {HTMLElement} cluePage - The clue page element (main container)
- * @param {HTMLElement} lockSection - The .clue-no-access section
- * @param {boolean} isKeyClue - Whether this is a key clue (for special effects)
- */
-function triggerUnlockAnimation(cluePage, lockSection, isKeyClue = false) {
-  if (!cluePage || !lockSection) return;
-  
-  // Add unlocking class to trigger CSS animations
-  cluePage.classList.add('unlocking');
-  
-  // After animation completes, hide lock and show content
-  setTimeout(() => {
-    lockSection.style.display = 'none';
-    cluePage.classList.remove('unlocking');
-    
-    // Show content sections (make them visible so CSS animations can run)
-    const narrationSections = cluePage.querySelectorAll('.clue-narration');
-    const contentSections = cluePage.querySelectorAll('.clue-content');
-    narrationSections.forEach(section => section.style.display = '');
-    contentSections.forEach(section => section.style.display = '');
-    
-    // Add just-unlocked class to trigger CSS reveal animation
-    // Use requestAnimationFrame to ensure display change is applied first
-    requestAnimationFrame(() => {
-      cluePage.classList.add('just-unlocked');
-    });
-    
-    // If key clue, add special styling, flash effect, and particles
-    if (isKeyClue) {
-      cluePage.classList.add('is-key-clue');
-      // Show key clue badge if it exists
-      const badge = cluePage.querySelector('.key-clue-badge');
-      if (badge) {
-        badge.classList.add('visible');
-      }
-      // Add flash effect
-      const flash = document.createElement('div');
-      flash.className = 'key-flash';
-      document.body.appendChild(flash);
-      setTimeout(() => flash.remove(), 1200);
-      // Spawn celebration particles
-      spawnParticles();
-    }
-  }, 1500); // Total animation duration (matches CSS timing)
-}
-
 // Expose to global scope
 window.pipSVG = pipSVG;
 window.renderProgressPip = renderProgressPip;
-window.triggerUnlockAnimation = triggerUnlockAnimation;
 window.spawnParticles = spawnParticles;
 window.renderActUnlockAnimation = renderActUnlockAnimation;
 window.renderTypewriterAnimation = renderTypewriterAnimation;
