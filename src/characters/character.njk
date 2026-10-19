@@ -8,6 +8,8 @@ permalink: "/characters/{{ character.id }}/index.html"
 layout: base
 title: "Character"
 ---
+<link rel="stylesheet" href="{{ site.baseUrl }}css/tour.css">
+
 <main>
   <header>
     <h1>{{ character.title }}</h1>
@@ -104,9 +106,7 @@ title: "Character"
     if (characterData.skills) {
       storeCharacterProfile(characterData.id, characterData.skills);
     }
-    if (window.renderProgressTracker) {
-      window.renderProgressTracker();
-    }
+    window.renderProgressTracker();
     const storageKeys = window.STORAGE_KEYS || { UNLOCKED_ACTS: 'unlocked_acts' };
     window.saveToLocalStorage(storageKeys.UNLOCKED_ACTS, ['act_i_setting']);
 
@@ -116,7 +116,7 @@ title: "Character"
         characterName,
         'You are now investigating as',
         'Ready to scan clues',
-        window.startTour
+        () => window.startTour()
       );
     }
   }
