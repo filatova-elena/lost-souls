@@ -33,12 +33,6 @@ act_i_setting:
 act_ii_mystery_emerges:
   name: "Act II: The Mystery Emerges"
   purpose: "Introduce the problem, raise questions, begin investigation"
-  # Any of the 4 aspect-track initial clues unlocks Act II
-  story_gate_clues:
-    - AO79   # Ornate Glass Bottle (adventure)
-    - AO80   # Crystal Ball - Antique Scrying Sphere (paranormal)
-    - AO85   # Unfinished Wedding Dress (gossip)
-    - BH106  # Forked Root Specimen (alchemical)
   contains:
     - "First signs something is wrong"
     - "Initial symptoms or anomalies"
@@ -61,7 +55,6 @@ act_ii_mystery_emerges:
 act_iii_investigation:
   name: "Act III: The Investigation"
   purpose: "Provide informational clues, build the case, narrow possibilities"
-  story_gate_clue: WTD49  # Thaddeus's Diary - March 11, 1924 - On Dr. Morrison and Lesser Minds
   contains:
     - "Factual documentation (formulas, records, certificates)"
     - "Expert consultations and verifications"
@@ -83,7 +76,6 @@ act_iii_investigation:
 act_iv_revelation:
   name: "Act IV: The Revelation"
   purpose: "Directly answer the quest objective"
-  story_gate_clue: DM133  # Forensic Report - Elixir Bottle Analysis
   contains:
     - "The key piece that solves the mystery"
     - "Confession or definitive proof"
