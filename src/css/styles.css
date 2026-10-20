@@ -7,19 +7,19 @@
 }
 
 @font-face {
-    font-family: 'Cormorant Garamond';
+    font-family: 'Literata';
     font-style: normal;
-    font-weight: 500 700;
+    font-weight: 400 700;
     font-display: swap;
-    src: url('../fonts/cormorant-garamond-latin.woff2') format('woff2');
+    src: url('../fonts/literata-latin.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Cormorant Garamond';
+    font-family: 'Literata';
     font-style: italic;
-    font-weight: 500;
+    font-weight: 400 700;
     font-display: swap;
-    src: url('../fonts/cormorant-garamond-italic-latin.woff2') format('woff2');
+    src: url('../fonts/literata-italic-latin.woff2') format('woff2');
 }
 
 :root {
@@ -31,18 +31,17 @@
     --gold-bright: #e8be8a;
     --gold-dim: #9e7a52;
     --progress-bar-height: 62px;
-    --font-text: 'Cormorant Garamond', Georgia, serif;
+    --font-text: 'Literata', Georgia, serif;
 }
 
 body {
     background-color: var(--primary-dark);
     color: var(--text-light);
     font-family: var(--font-text);
-    font-variant-numeric: lining-nums;
     line-height: 1.6;
     padding: 10px;
     margin: 0;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 @media (min-width: 768px) {
