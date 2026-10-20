@@ -8,12 +8,10 @@
 
 const AccessState = {
   UNLOCKED: 'unlocked',
-  GATED: 'gated',
   SKILL_LOCKED: 'skill-locked'
 };
 
 const STORAGE_KEYS = window.STORAGE_KEYS || {
-  UNLOCKED_ACTS: 'unlocked_acts',
   SCANNED: 'scanned'
 };
 
@@ -61,53 +59,12 @@ function recordClueScan(clue) {
 }
 
 // ============================================================================
-// Story gates
-// ============================================================================
-
-const ACT_DISPLAY_INFO = {
-  'act_ii_mystery_emerges': { title: 'Part II Unlocked', subtitle: 'The investigation deepens' },
-  'act_iii_investigation': { title: 'Part III Unlocked', subtitle: 'The mystery unfolds' },
-  'act_iv_revelation': { title: 'Part IV Unlocked', subtitle: 'The truth emerges' },
-  'act_v_conclusions': { title: 'Part V Unlocked', subtitle: 'The final chapter' },
-  'act_v_aftermath': { title: 'Part V Unlocked', subtitle: 'The final chapter' }
-};
-
-function unlockStoryGate(actKey) {
-  if (!actKey) return;
-  const unlocked = window.getFromLocalStorage(STORAGE_KEYS.UNLOCKED_ACTS, []);
-  if (!unlocked.includes(actKey)) {
-    unlocked.push(actKey);
-    window.saveToLocalStorage(STORAGE_KEYS.UNLOCKED_ACTS, unlocked);
-    if (window.renderActUnlockAnimation) {
-      const info = ACT_DISPLAY_INFO[actKey];
-      if (info) {
-        window.renderActUnlockAnimation(info.title, info.subtitle);
-      } else {
-        const match = actKey.match(/act_([ivx]+)/i);
-        const part = match ? match[1].toUpperCase() : 'II';
-        window.renderActUnlockAnimation(`Part ${part} Unlocked`, 'A new chapter begins');
-      }
-    }
-  }
-}
-
-// ============================================================================
-// Clue discovery
-// ============================================================================
-
-function processClueDiscovery(clueData) {
-  recordClueScan(clueData);
-  unlockStoryGate(clueData.story_gate_for);
-}
-
-// ============================================================================
 // Access control
 // ============================================================================
 
 function determineAccessState(clueData, noAccessMessages) {
   if (window.resolveClueState) {
     return window.resolveClueState(clueData, {
-      unlockedActs: window.getFromLocalStorage(STORAGE_KEYS.UNLOCKED_ACTS, []),
       userSkills: window.getCharacterProfile()?.skills || [],
       noAccessMessages,
       hasSkillAccessFn: window.hasSkillAccess,
@@ -147,7 +104,7 @@ function initCluePage() {
   if (state.name === AccessState.UNLOCKED) {
     const scanned = window.getScannedClues();
     if (!scanned.all?.includes(clueData.id)) {
-      processClueDiscovery(clueData);
+      recordClueScan(clueData);
       if (window.isTrackClue(clueData.id) && window.spawnParticles) {
         window.renderProgressTracker(true);
         window.spawnParticles();

@@ -5,14 +5,8 @@
 /* Default: hide everything until JS resolves state */
 .clue-page .clue-narration,
 .clue-page .clue-content,
-.clue-page .clue-gate,
 .clue-page .clue-lock {
     display: none;
-}
-
-/* Gated: show story gate message only */
-.clue-page[data-state="gated"] .clue-gate {
-    display: block;
 }
 
 /* Skill-locked: show skill lock only */

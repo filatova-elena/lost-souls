@@ -64,12 +64,10 @@ function buildSkillLockedMessage(missingSkills, clueType, noAccessMessages, pars
 }
 
 /**
- * Determines the access state of a clue based on gates and skills
- * Checks in order: story gate → skill requirements
+ * Determines the access state of a clue from the skills it requires
  */
 function resolveClueState(clueData, options) {
   const {
-    unlockedActs = [],
     userSkills = [],
     noAccessMessages = {},
     hasSkillAccessFn = null,
@@ -82,17 +80,6 @@ function resolveClueState(clueData, options) {
   if (!hasSkillAccess) {
     throw new Error('hasSkillAccess function is required');
   }
-
-  // Story-gate locking DISABLED — trying the game without act gates.
-  // Clues are no longer locked behind story gates; they resolve straight to
-  // the skill check below. Re-enable by uncommenting this block.
-  // // Check if this clue's act is unlocked
-  // // Prologue and Act I are always unlocked
-  // if (clueData.act && clueData.act !== 'act_prologue' && clueData.act !== 'act_i_setting') {
-  //   if (!unlockedActs.includes(clueData.act)) {
-  //     return { name: 'gated' };
-  //   }
-  // }
 
   // Check skill requirements
   const clueSkills = clueData.skills || [];

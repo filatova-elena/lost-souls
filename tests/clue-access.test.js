@@ -31,9 +31,8 @@ const mockNoAccessMessages = {
 
 describe('clue access state', () => {
   // Helper to simulate localStorage state
-  function createAccessState(clueData, { unlockedActs = [], userSkills = [] }) {
+  function createAccessState(clueData, { userSkills = [] }) {
     return resolveClueState(clueData, {
-      unlockedActs,
       userSkills,
       noAccessMessages: mockNoAccessMessages,
       hasSkillAccessFn: hasSkillAccess,
@@ -41,78 +40,6 @@ describe('clue access state', () => {
       randomFn: deterministicRandom
     });
   }
-
-  describe('story gate progression', () => {
-    // Story-gate locking is currently DISABLED in clue-access.js (trying the
-    // game without act gates). Re-enable that block to restore this test.
-    test.skip('player cannot view clues from a locked act', () => {
-      const clueData = {
-        id: 'CLUE123',
-        act: 'act_ii_mystery_emerges',
-        skills: []
-      };
-      const state = createAccessState(clueData, {
-        unlockedActs: [], // Act II not unlocked
-        userSkills: []
-      });
-
-      expect(state.name).toBe('gated');
-    });
-
-    test('player can view clues after scanning a clue that unlocks the act', () => {
-      // First, simulate scanning any one of the 4 Act II gate clues (AO79 here)
-      const gateClue = {
-        id: 'AO79',
-        act: 'act_i_setting',
-        story_gate_for: 'act_ii_mystery_emerges',
-        skills: []
-      };
-
-      // After scanning gate clue, Act II should be unlocked
-      const unlockedActs = ['act_ii_mystery_emerges'];
-
-      // Now player can view Act II clues
-      const actIIClue = {
-        id: 'CLUE456',
-        act: 'act_ii_mystery_emerges',
-        skills: []
-      };
-      const state = createAccessState(actIIClue, {
-        unlockedActs,
-        userSkills: []
-      });
-
-      expect(state.name).toBe('unlocked');
-    });
-
-    test('player can always view Prologue clues', () => {
-      const clueData = {
-        id: 'PROLOGUE_CLUE',
-        act: 'act_prologue',
-        skills: []
-      };
-      const state = createAccessState(clueData, {
-        unlockedActs: [], // No acts unlocked
-        userSkills: []
-      });
-
-      expect(state.name).toBe('unlocked');
-    });
-
-    test('player can always view Act I clues', () => {
-      const clueData = {
-        id: 'ACTI_CLUE',
-        act: 'act_i_setting',
-        skills: []
-      };
-      const state = createAccessState(clueData, {
-        unlockedActs: [], // No acts unlocked
-        userSkills: []
-      });
-
-      expect(state.name).toBe('unlocked');
-    });
-  });
 
   describe('skill requirements', () => {
     test('player cannot view clue when lacking required expertise', () => {
@@ -123,7 +50,6 @@ describe('clue access state', () => {
         type: 'Artifact (Object)'
       };
       const state = createAccessState(clueData, {
-        unlockedActs: [],
         userSkills: ['art_1'] // Only level 1, needs level 2
       });
 
@@ -138,7 +64,6 @@ describe('clue access state', () => {
         skills: ['art_2']
       };
       const state = createAccessState(clueData, {
-        unlockedActs: [],
         userSkills: ['art_2'] // Has required level
       });
 
@@ -153,7 +78,6 @@ describe('clue access state', () => {
         accessChars: ['Alice', 'Bob']
       };
       const state = createAccessState(clueData, {
-        unlockedActs: [],
         userSkills: [] // No skills
       });
 
@@ -168,27 +92,10 @@ describe('clue access state', () => {
         skills: []
       };
       const state = createAccessState(clueData, {
-        unlockedActs: [],
         userSkills: [] // No skills at all
       });
 
       expect(state.name).toBe('unlocked');
-    });
-
-    // Story-gate locking is currently DISABLED in clue-access.js. Re-enable
-    // that block to restore this test.
-    test.skip('player sees gate message even if they have the required skills', () => {
-      const clueData = {
-        id: 'CLUE123',
-        act: 'act_ii_mystery_emerges',
-        skills: ['art_2']
-      };
-      const state = createAccessState(clueData, {
-        unlockedActs: [], // Act II not unlocked
-        userSkills: ['art_2'] // Has skills, but gate blocks first
-      });
-
-      expect(state.name).toBe('gated');
     });
   });
 });

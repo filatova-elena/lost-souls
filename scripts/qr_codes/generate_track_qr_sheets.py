@@ -1,14 +1,11 @@
 #!/usr/bin/env python3
 """
-Generate two print sheets of QR codes:
+Generate the track key-clue print sheet of QR codes: one column per quest
+track, each column holding the QR codes for that track's clue chain (the "key"
+clues), in order.
 
-1. Track key-clue sheet  — one column per quest track, each column holding the
-   QR codes for that track's clue chain (the "key" clues), in order.
-2. Story gates sheet     — one column per story gate, holding the QR codes for
-   the clues that unlock that gate/act.
-
-Reuses generate_qr() from qr_generator.py. Output is a single-page PNG (and PDF)
-per sheet, sized for 8.5x11" letter printing.
+Reuses generate_qr() from qr_generator.py. Output is a single-page PNG (and PDF),
+sized for 8.5x11" letter printing.
 
 Usage:
     python generate_track_qr_sheets.py
@@ -29,7 +26,6 @@ from qr_generator import generate_qr, parse_color
 
 ROOT = Path(__file__).parent.parent.parent
 QUESTS_DIR = ROOT / "src/_data/quests"
-GATES_FILE = ROOT / "src/_data/refs/story_gates.yaml"
 
 TRACK_FILES = [
     "track_dirty_dealings.yaml",
@@ -182,21 +178,8 @@ def load_track_columns():
     return columns
 
 
-def load_gate_columns():
-    gates = yaml.safe_load(GATES_FILE.read_text())
-    columns = []
-    for gate in gates.values():
-        codes = [(clue_url(c), str(c)) for c in gate.get("clues", [])]
-        columns.append({
-            "title": gate["name"],
-            "subtitle": None,
-            "codes": codes,
-        })
-    return columns
-
-
 def main():
-    parser = argparse.ArgumentParser(description="Generate track + story-gate QR sheets")
+    parser = argparse.ArgumentParser(description="Generate the track key-clue QR sheet")
     parser.add_argument("--dpi", type=int, default=300)
     parser.add_argument("--fg", default="#4a148c")
     parser.add_argument("--bg", default="white")
@@ -207,14 +190,6 @@ def main():
         load_track_columns(),
         "track_key_clues",
         "Key Clue QR Codes by Track",
-        args.dpi, args.fg, args.bg,
-    )
-
-    print("Story gates sheet:")
-    make_sheet(
-        load_gate_columns(),
-        "story_gate_clues",
-        "Story Gate QR Codes",
         args.dpi, args.fg, args.bg,
     )
 

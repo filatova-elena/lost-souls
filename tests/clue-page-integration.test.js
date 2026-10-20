@@ -55,34 +55,6 @@ describe('clue page interactions', () => {
     expect(storage.scanned).toBeUndefined();
   });
 
-  // Story-gate locking is currently DISABLED in clue-access.js (trying the
-  // game without act gates). Re-enable that block to restore this test.
-  test.skip('player cannot see clue content when act is gated', () => {
-    document.body.innerHTML = `
-      <div class="clue-page">
-        <section class="clue-lock"></section>
-        <section class="clue-content">Secret content</section>
-      </div>
-    `;
-
-    loadCluePage({ id: 'CLUE1', act: 'act_ii_mystery_emerges', skills: [] });
-    expect(document.querySelector('.clue-page').dataset.state).toBe('gated');
-  });
-
-  test('player can see clue content after unlocking act', () => {
-    storage.unlocked_acts = ['act_ii_mystery_emerges'];
-
-    document.body.innerHTML = `
-      <div class="clue-page">
-        <section class="clue-lock"></section>
-        <section class="clue-content">Secret content</section>
-      </div>
-    `;
-
-    loadCluePage({ id: 'CLUE1', act: 'act_ii_mystery_emerges', skills: [] });
-    expect(document.querySelector('.clue-page').dataset.state).toBe('unlocked');
-  });
-
   test('player can see clue content when they have required skills', () => {
     window.getCharacterProfile = () => ({ characterId: 'alice', skills: ['art_2'] });
 

@@ -6,7 +6,6 @@ Creates a compact, print-optimized PDF test sheet with scannable QR codes
 organized by act. Only includes:
 - Prologue: Sign-in and test QR codes
 - Per act: One sample clue per level-2 skill, then all key clues grouped by quest
-- Story gate clues shown before the act they unlock
 
 Layout:
 - 4 QR codes per row (each 1.5" wide with label below)
@@ -98,15 +97,6 @@ def load_quests(quests_dir):
     return quests
 
 
-def load_story_gates(story_gates_file):
-    """Load story gates configuration."""
-    gates_path = project_root / story_gates_file
-    if not gates_path.exists():
-        return {}
-    with open(gates_path, 'r', encoding='utf-8') as f:
-        return yaml.safe_load(f) or {}
-
-
 def get_quest_name(hashtag, quests):
     """Get quest title from hashtag."""
     if hashtag in quests:
@@ -128,7 +118,7 @@ def extract_skill_base_and_level(skill_id):
     return skill_id, 0
 
 
-def select_clues_for_act(act_clues, quests, story_gates_clue_ids):
+def select_clues_for_act(act_clues, quests):
     """
     Select which clues to include for an act:
     - One sample clue per level-2 skill (for skill testing)
@@ -137,18 +127,12 @@ def select_clues_for_act(act_clues, quests, story_gates_clue_ids):
     Returns: {
         'skill_samples': [(clue_id, clue_data, skill_name), ...],
         'quest_groups': [(quest_name, [(clue_id, clue_data), ...]), ...],
-        'gate_clues': [(clue_id, clue_data), ...],
     }
     """
     skill_samples = {}  # skill_base -> (clue_id, clue_data)
     quest_clues = defaultdict(list)  # quest_hashtag -> [(clue_id, clue_data)]
-    gate_clues = []
 
     for clue_id, clue_data in act_clues:
-        # Check if this is a story gate clue
-        if clue_data.get('story_gate_for'):
-            gate_clues.append((clue_id, clue_data))
-
         # Collect one sample per level-2 skill
         skills = clue_data.get('skills', [])
         for skill in skills:
@@ -176,7 +160,6 @@ def select_clues_for_act(act_clues, quests, story_gates_clue_ids):
     return {
         'skill_samples': skill_sample_list,
         'quest_groups': quest_groups,
-        'gate_clues': gate_clues,
     }
 
 
@@ -305,7 +288,7 @@ class TestSheetRenderer:
 
 # ── Main generation logic ───────────────────────────────────────────
 
-def generate_test_sheet(clues, quests, story_gates, output_path, base_url=BASE_URL):
+def generate_test_sheet(clues, quests, output_path, base_url=BASE_URL):
     """Generate the test sheet PDF."""
     r = TestSheetRenderer(output_path, base_url)
 
@@ -339,24 +322,11 @@ def generate_test_sheet(clues, quests, story_gates, output_path, base_url=BASE_U
         if not act_clues:
             continue
 
-        # Determine which clue IDs are story gate clues (from story_gates.yaml)
-        gate_clue_ids = set()
-        for gate_key, gate_data in story_gates.items():
-            for cid in gate_data.get('clues', []):
-                gate_clue_ids.add(cid)
-
-        selection = select_clues_for_act(act_clues, quests, gate_clue_ids)
+        selection = select_clues_for_act(act_clues, quests)
 
         r.draw_section_header(act_name)
-        count = len(selection['skill_samples']) + sum(len(g[2]) for g in selection['quest_groups']) + len(selection['gate_clues'])
+        count = len(selection['skill_samples']) + sum(len(g[2]) for g in selection['quest_groups'])
         print(f"  {act_name}: {count} clues selected")
-
-        # Story gate clues for this act
-        if selection['gate_clues']:
-            r.draw_subsection_header("🚪 Story Gate")
-            for clue_id, clue_data in selection['gate_clues']:
-                gate_target = clue_data.get('story_gate_for', '')
-                r.draw_qr_cell(clue_id, f"Unlocks: {gate_target}", tag="GATE")
 
         # Skill sample clues
         if selection['skill_samples']:
@@ -388,8 +358,6 @@ def main():
                         help='Directory containing clue YAML files')
     parser.add_argument('--quests-dir', default='src/_data/quests',
                         help='Directory containing quest YAML files')
-    parser.add_argument('--story-gates', default='src/_data/refs/story_gates.yaml',
-                        help='Path to story gates YAML file')
 
     args = parser.parse_args()
 
@@ -401,12 +369,8 @@ def main():
     quests = load_quests(args.quests_dir)
     print(f"  Loaded {len(quests)} quests")
 
-    print("Loading story gates...")
-    story_gates = load_story_gates(args.story_gates)
-    print(f"  Loaded {len(story_gates)} story gates")
-
     print("\nGenerating test sheet...")
-    generate_test_sheet(clues, quests, story_gates, args.output, args.base_url)
+    generate_test_sheet(clues, quests, args.output, args.base_url)
 
     print("Done!")
 
