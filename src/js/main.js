@@ -4,9 +4,7 @@
 // LocalStorage keys - centralized constants
 const STORAGE_KEYS = {
   CHARACTER_PROFILE: 'character_profile',
-  SCANNED: 'scanned',
-  UNLOCKED: 'unlocked',
-  UNLOCKED_ACTS: 'unlocked_acts'
+  SCANNED: 'scanned'
 };
 
 function saveToLocalStorage(key, value) {
@@ -51,8 +49,6 @@ function clearCharacterProfile() {
 function resetInvestigation() {
   localStorage.removeItem(STORAGE_KEYS.CHARACTER_PROFILE);
   localStorage.removeItem(STORAGE_KEYS.SCANNED);
-  localStorage.removeItem(STORAGE_KEYS.UNLOCKED);
-  localStorage.removeItem(STORAGE_KEYS.UNLOCKED_ACTS);
 }
 
 function becomeGrandmother(charactersData) {

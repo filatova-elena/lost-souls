@@ -17,18 +17,6 @@ title: "Clue"
     {% if clue.subtitle %}<p class="clue-subtitle">{{ clue.subtitle }}</p>{% endif %}
   </header>
 
-  {# Story gate section - shown when clue belongs to a locked act #}
-  {% if clue.act and refs.story_gates[clue.act] %}
-  <section class="clue-gate">
-    <div class="lock-assembly gated">
-      <div class="lock-glow"></div>
-      <div class="lock-shackle"></div>
-      <div class="lock-body"><div class="keyhole"></div></div>
-    </div>
-    <p>{{ refs.story_gates[clue.act].gate_message }}</p>
-  </section>
-  {% endif %}
-
   {# Skill lock section - shown when player lacks required skills #}
   {% if clue.skills and clue.skills.length %}
   <section class="clue-lock"></section>
@@ -93,9 +81,6 @@ title: "Clue"
   window.__clueData = {{ clue | json | safe }};
   window.__clueData.accessChars = {{ accessChars | json | safe }};
   window.__noAccessMessages = {{ refs.no_access_messages | json | safe }};
-  {% if clue.act and refs.story_gates[clue.act] %}
-  window.__clueData.gate_message = {{ refs.story_gates[clue.act].gate_message | json | safe }};
-  {% endif %}
   {% if clue.id == 'SIGN_IN' %}
   window.__characters = {{ characters | json | safe }};
   {% endif %}
